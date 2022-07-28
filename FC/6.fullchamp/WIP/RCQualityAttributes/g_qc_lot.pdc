@@ -1,0 +1,165 @@
+-- Create table
+create table G_QC_LOT
+(
+  qc_lotno          VARCHAR2(50),
+  start_time        DATE default SYSDATE,
+  end_time          DATE,
+  lot_size          NUMBER(6) default 0,
+  sampling_size     NUMBER(6) default 0,
+  pass_qty          NUMBER(6) default 0,
+  fail_qty          NUMBER(6) default 0,
+  qc_result         VARCHAR2(5) default 'N/A',
+  ng_cnt            NUMBER(4) default 0,
+  route_id          NUMBER,
+  pdline_id         NUMBER,
+  stage_id          NUMBER,
+  process_id        NUMBER,
+  terminal_id       NUMBER,
+  customer_id       NUMBER,
+  part_id           NUMBER,
+  work_order        VARCHAR2(25),
+  reject_reason     VARCHAR2(100),
+  shift             VARCHAR2(10),
+  shift_date        VARCHAR2(8),
+  reject_process_id NUMBER,
+  sampling_plan_id  NUMBER,
+  insp_empid        NUMBER,
+  lot_memo          VARCHAR2(1200),
+  qc_type           VARCHAR2(5) default '0',
+  enabled           VARCHAR2(10) default 'Y',
+  sampling_level    VARCHAR2(10)
+)
+tablespace SYSRT
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 2M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table G_QC_LOT
+  is '抽驗記錄表';
+-- Add comments to the columns 
+comment on column G_QC_LOT.qc_lotno
+  is '抽驗批號';
+comment on column G_QC_LOT.start_time
+  is '開始抽驗時間';
+comment on column G_QC_LOT.end_time
+  is '結束抽驗時間';
+comment on column G_QC_LOT.lot_size
+  is '批號總數量';
+comment on column G_QC_LOT.sampling_size
+  is '預定抽驗/訂單數量';
+comment on column G_QC_LOT.pass_qty
+  is '良品數量';
+comment on column G_QC_LOT.fail_qty
+  is '不良品數量';
+comment on column G_QC_LOT.qc_result
+  is '抽驗結果(0:PASS,1:REJECT,2:WAVE)';
+comment on column G_QC_LOT.ng_cnt
+  is '抽驗次數';
+comment on column G_QC_LOT.route_id
+  is '途程代碼';
+comment on column G_QC_LOT.pdline_id
+  is '線別';
+comment on column G_QC_LOT.stage_id
+  is '區段別';
+comment on column G_QC_LOT.process_id
+  is '製程別';
+comment on column G_QC_LOT.terminal_id
+  is '站別';
+comment on column G_QC_LOT.customer_id
+  is '客戶代碼';
+comment on column G_QC_LOT.part_id
+  is '機種';
+comment on column G_QC_LOT.work_order
+  is '工單號碼';
+comment on column G_QC_LOT.reject_reason
+  is '批退原因';
+comment on column G_QC_LOT.shift
+  is '班別';
+comment on column G_QC_LOT.shift_date
+  is '班日期';
+comment on column G_QC_LOT.reject_process_id
+  is '批退製程別';
+comment on column G_QC_LOT.sampling_plan_id
+  is '抽驗計劃';
+comment on column G_QC_LOT.insp_empid
+  is '抽驗人員';
+comment on column G_QC_LOT.lot_memo
+  is '備註';
+comment on column G_QC_LOT.qc_type
+  is '批號種類(0:正常批號,1:Lot批號)';
+comment on column G_QC_LOT.enabled
+  is '資料是否有效(Y:有效,N:無效)';
+comment on column G_QC_LOT.sampling_level
+  is '抽驗等級(0:正常,1:加嚴,2:減量,3:免驗)';
+-- Create/Recreate indexes 
+create index G_QC_LOT_LOT on G_QC_LOT (QC_LOTNO)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 384K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_QC_LOT_MODEL on G_QC_LOT (PART_ID)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 256K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_QC_LOT_PROCESS_IDX on G_QC_LOT (PROCESS_ID)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 256K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create unique index G_QC_LOT_QC_NG on G_QC_LOT (QC_LOTNO, NG_CNT)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 384K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_QC_LOT_TIME_IDX on G_QC_LOT (START_TIME)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 256K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on G_QC_LOT to SJ;
+grant select, insert, update, delete on G_QC_LOT to SMT;
+grant select, insert, update, delete on G_QC_LOT to SYS_USER;

@@ -1,0 +1,29 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634797260174" level="FATAL" thread="1"><log4j:message>數值對 Int32 而言太大或太小。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.OverflowException: 數值對 Int32 而言太大或太小。
+
+Server stack trace: 
+   於 System.Convert.ToInt32(Int64 value)
+   於 MESDAL.ExecuteSQL(String sSQL, Object[][] Params, String sMachineName)
+   於 RemoteObject.ExecuteSQL(String sSQL, Object[][] Params, String sMachineName)
+   於 System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]& outArgs)
+   於 System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   於 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   於 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   於 RemoteObject.ExecuteSQL(String sSQL, Object[][] Params, String sMachineName)
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 FPYReport.fMain.NextNodeDetail(String workOrder, Decimal targetQty, Decimal& passQty, Decimal& failQty, String routeID, String current, String[] processCondition, String dateS, String dateE)
+   於 FPYReport.fMain.NextNodeDetail(String workOrder, Decimal targetQty, Decimal& passQty, Decimal& failQty, String routeID, String current, String[] processCondition, String dateS, String dateE)
+   於 FPYReport.fMain.NextNodeDetail(String workOrder, Decimal targetQty, Decimal& passQty, Decimal& failQty, String routeID, String current, String[] processCondition, String dateS, String dateE)
+   於 FPYReport.fMain.NextNodeDetail(String workOrder, Decimal targetQty, Decimal& passQty, Decimal& failQty, String routeID, String current, String[] processCondition, String dateS, String dateE)
+   於 FPYReport.fMain.NextNodeDetail(String workOrder, Decimal targetQty, Decimal& passQty, Decimal& failQty, String routeID, String current, String[] processCondition, String dateS, String dateE)
+   於 FPYReport.fMain.NextNodeDetail(String workOrder, Decimal targetQty, Decimal& passQty, Decimal& failQty, String routeID, String current, String[] processCondition, String dateS, String dateE)
+   於 FPYReport.fMain.gvData_CellClick(Object sender, DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellClick(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseClick(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Convert" method="Int32 ToInt32(Int64)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>

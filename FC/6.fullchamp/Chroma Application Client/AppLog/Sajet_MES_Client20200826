@@ -1,0 +1,10 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1598405897580" level="ERROR" thread="16"><log4j:message>執行緒已經中止。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.Threading.ThreadAbortException: 執行緒已經中止。
+   於 MS.Win32.UnsafeNativeMethods.IntGetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 MS.Win32.UnsafeNativeMethods.GetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 System.Windows.Threading.Dispatcher.GetMessage(MSG&amp; msg, IntPtr hwnd, Int32 minMessage, Int32 maxMessage)
+   於 System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   於 System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   於 System.Windows.Window.ShowHelper(Object booleanBox)
+   於 System.Windows.Window.Show()
+   於 System.Windows.Window.ShowDialog()
+   於 Sajet_MES_WPF_Style.MainWindow.threadStart(Object Loaction_size)</log4j:throwable><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="threadStart" file="" line="0" /></log4j:event>

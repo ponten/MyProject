@@ -1,0 +1,67 @@
+<?xml version="1.0" standalone="yes"?>
+<ExceptionSolution>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Boolean &lt;CbDownType_SelectedIndexChanged&gt;b__6_0(RCOutput.References.DownType)</AppFunctionName>
+    <AppModuleFileName>RCOutput.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCOutput</AppModuleNameSpace>
+    <AppModuleClassName>fChangeMachine</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Boolean &lt;CbDownType_SelectedIndexChanged&gt;b__11_0(RCOutput.References.DownType)</AppFunctionName>
+    <AppModuleFileName>RCOutput.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCOutput</AppModuleNameSpace>
+    <AppModuleClassName>fChangeMachine</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void GvDefect_CellValueChanged(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)</AppFunctionName>
+    <AppModuleFileName>RCOutput.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCOutput</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void DgvT4_CellClick(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)</AppFunctionName>
+    <AppModuleFileName>RCOutput.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCOutput</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void FShiftHistory_Load(System.Object, System.EventArgs)</AppFunctionName>
+    <AppModuleFileName>RCOutput.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCOutput</AppModuleNameSpace>
+    <AppModuleClassName>fShiftHistory</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void AQLButton_Click(System.Object, System.EventArgs)</AppFunctionName>
+    <AppModuleFileName>RCOutput.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCOutput</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void DgvMachine_EditingControlShowing(System.Object, System.Windows.Forms.DataGridViewEditingControlShowingEventArgs)</AppFunctionName>
+    <AppModuleFileName>RCOutput.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCOutput</AppModuleNameSpace>
+    <AppModuleClassName>fShift</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void FMain_Load(System.Object, System.EventArgs)</AppFunctionName>
+    <AppModuleFileName>RCOutput.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCOutput</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+</ExceptionSolution>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <English>
+    <Message Name="Factory Code" Value="Factory Code"/>
+    <Message Name="Factory Name" Value="Factory Name"/>
+    <Message Name="Description" Value="Description"/>
+  </English>
+  <繁體中文>
+    <Message Name="Factory Code" Value="廠別代碼"/>
+    <Message Name="Factory Name" Value="廠別名稱"/>
+    <Message Name="Description" Value="廠別描述"/>
+  </繁體中文>
+</Chroma>

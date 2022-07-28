@@ -1,0 +1,36 @@
+﻿CREATE OR REPLACE FUNCTION SAJET.SJ_TOOLING_STATUS_CHT(svalue IN VARCHAR2) RETURN VARCHAR2 IS
+str VARCHAR2(16);
+BEGIN
+  IF svalue = 'T' THEN
+    str := '領用';
+  ELSIF svalue = 'R' THEN
+    str := '歸還';
+  ELSIF svalue = 'M' THEN
+    str := '保養';
+  ELSIF svalue = 'S' THEN
+    str := '報廢';
+    
+  ELSIF svalue = 'A' THEN
+    str := '驗收';
+  ELSIF svalue = 'OK' THEN
+    str := '入庫(正常)';
+  ELSIF svalue = 'NG' THEN
+    str := '入庫(異常)';
+
+  ELSIF svalue = 'F' THEN
+    str := '送修';    
+ 
+  ELSE
+    str := '初始';
+  END IF;
+  RETURN str;
+END;
+/
+
+
+
+grant execute on SAJET.SJ_TOOLING_STATUS_CHT to sys_user
+/
+
+grant execute on SAJET.SJ_TOOLING_STATUS_CHT to sj
+/

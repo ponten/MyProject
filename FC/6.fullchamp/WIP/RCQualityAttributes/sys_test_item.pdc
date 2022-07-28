@@ -1,0 +1,55 @@
+-- Create table
+create table SYS_TEST_ITEM
+(
+  item_type_id  NUMBER,
+  item_id       NUMBER,
+  item_name     VARCHAR2(120),
+  item_code     VARCHAR2(30),
+  item_desc     VARCHAR2(120),
+  update_userid NUMBER,
+  update_time   DATE default SYSDATE,
+  enabled       VARCHAR2(10) default 'Y',
+  has_value     CHAR(1) default 'N',
+  value_type    VARCHAR2(5),
+  item_desc2    VARCHAR2(120),
+  min_insp_qty  NUMBER
+)
+tablespace SYSBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 640K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table SYS_TEST_ITEM
+  is '測試小項資料表';
+-- Add comments to the columns 
+comment on column SYS_TEST_ITEM.item_type_id
+  is '測試大項(SYS_TEST_ITEM_TYPE.ITEM_TYPE_ID)';
+comment on column SYS_TEST_ITEM.item_id
+  is '系統產生的唯一值';
+comment on column SYS_TEST_ITEM.item_name
+  is '測試小項名稱';
+comment on column SYS_TEST_ITEM.item_code
+  is '測試小項代碼';
+comment on column SYS_TEST_ITEM.item_desc
+  is '測試小項描述';
+comment on column SYS_TEST_ITEM.update_userid
+  is '資料異動人員(SYS_EMP.EMP_ID)';
+comment on column SYS_TEST_ITEM.update_time
+  is '資料異動時間';
+comment on column SYS_TEST_ITEM.enabled
+  is '資料是否有效(Y:有效,N:失效)';
+comment on column SYS_TEST_ITEM.has_value
+  is '測試值的類型(Y:數值,N:文字)';
+comment on column SYS_TEST_ITEM.value_type
+  is '測試值的類型(0:數值,1:文字)';
+comment on column SYS_TEST_ITEM.item_desc2
+  is '測試大項描述2';
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on SYS_TEST_ITEM to SYS_USER;

@@ -1,0 +1,71 @@
+﻿<Chroma>
+  <繁體中文>
+    <Message Name="Vendor" Value="供應商" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Save" Value="儲存" />
+    <Message Name="Vendor Part" Value="供應商料號" />
+    <Message Name="Version" Value="版本" />
+    <Message Name="Qty" Value="數量" />
+    <Message Name="Part No" Value="料號" />
+    <Message Name="Vendor Lot" Value="供應商批號" />
+    <Message Name="OK" Value="確定" />
+    <Message Name="Search" Value="搜尋條件" />
+    <Message Name="Delete" Value="刪除" />
+    <Message Name="Modify" Value="修改" />
+    <Message Name="Append" Value="新增" />
+    <Message Name="PO No" Value="" />
+    <Message Name="Delivery Notes Maintain" Value="" />
+    <Message Name="RT No" Value="RT單號" />
+    <Message Name="Maintain" Value="" />
+    <Message Name="Date Code" Value="" />
+    <Message Name="DN Item Maintain" Value="" />
+    <Message Name="Item Seq" Value="項次" />
+    <Message Name="Part Spec" Value="品名規格" />
+    <Message Name="RT No" Value="RT單號" />
+    <Message Name="Receive Time" Value="收料時間" />
+    <Message Name="Detail Information" Value="RT項次明細" />
+    <Message Name="RT No List" Value="RT清單" />
+    <Message Name="RT No Error" Value="RT單號錯誤" />
+    <Message Name="Vendor Error" Value="供應商錯誤" />
+    <Message Name="RT No Duplicate" Value="RT單號重複" />
+    <Message Name="RT Data Append OK" Value="RT單號新增完成" />
+    <Message Name="Append Other RT Data" Value="新增其它RT單資料" />
+    <Message Name="Please Input Part No" Value="請輸入料號" />
+    <Message Name="Please input Qty" Value="請輸入數量" />
+    <Message Name="Qty Error" Value="數量錯誤" />
+    <Message Name="RT Item Duplicate" Value="RT項目重複" />
+    <Message Name="Do you want to delete this data ?" Value="確定要刪除此筆資料嗎 ?" />
+    <Message Name="RT Item Append OK" Value="RT項目新增完成" />
+    <Message Name="Append Other RT Item" Value="新增其它RT項目" />
+    <Message Name="RT No Data Append" Value="RT單號新增" />
+    <Message Name="RT No Data Modify" Value="RT單號修改" />
+    <Message Name="RT Item Data Maintain Append" Value="RT項次新增" />
+    <Message Name="RT Item Data Maintain Modify" Value="RT項次修改" />
+    <Message Name="RT Seq" Value="RT項次" />
+    <Message Name="IQC Test Data Exist,Can't Delete RT" Value="IQC檢驗資料已存在,無法刪除此資料" />
+    <Message Name="IQC Test Data Exist" Value="IQC檢驗資料已存在" />
+    <Message Name="Record Count" Value="資料筆數" />
+    <Message Name="Query" Value="查詢" />
+    <Message Name="Vendor Code" Value="供應商代碼" />
+    <Message Name="VENDOR_CODE" Value="供應商代碼" />
+    <Message Name="VENDOR_NAME" Value="供應商名稱" />
+    <Message Name="Vendor Name" Value="供應商名稱" />
+    <Message Name="PO Number" Value="訂單號" />
+    <Message Name="Vendor P/N" Value="供應商料號" />
+    <Message Name="Please Input Query Condition" Value="請輸入查詢條件至少一項" />
+    <Message Name="RT Detail Data Exist,Can't Delete RT Header" Value="此RT單仍有RT細項資料,不能刪除此單號" />
+    <Message Name="Warehouse" Value="倉別" />
+    <Message Name="WAREHOUSE_NAME" Value="倉別" />
+    <Message Name="RT Item Update OK" Value="RT項目修改完成" />
+    <Message Name="Please Input Part No Prefix" Value="請輸入料號查詢條件前置碼" />
+    <Message Name="PART_NO" Value="料號" />
+    <Message Name="SPEC1" Value="規格(1)" />
+    <Message Name="SPEC2" Value="規格(2)" />
+    <Message Name="VERSION" Value="版本" />
+    <Message Name="Incoming Time" Value="收料時間" />
+    <Message Name="Warehouse Name Error" Value="倉別錯誤" />
+    <Message Name="Urgent" Value="急單" />
+    <Message Name="Yes" Value="是" />
+    <Message Name="No" Value="否" />
+  </繁體中文>
+</Chroma>

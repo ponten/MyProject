@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<ExceptionSolution>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>TSource First[TSource](System.Collections.Generic.IEnumerable`1[TSource], System.Func`2[TSource,System.Boolean])</AppFunctionName>
+    <AppModuleFileName>System.Core.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Linq</AppModuleNameSpace>
+    <AppModuleClassName>Enumerable</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Boolean MoveNext()</AppFunctionName>
+    <AppModuleFileName>System.Core.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Linq</AppModuleNameSpace>
+    <AppModuleClassName>&lt;CastIterator&gt;d__97`1</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Boolean Any[TSource](System.Collections.Generic.IEnumerable`1[TSource])</AppFunctionName>
+    <AppModuleFileName>System.Core.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Linq</AppModuleNameSpace>
+    <AppModuleClassName>Enumerable</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>System.Collections.Generic.IEnumerable`1[TResult] Select[TSource,TResult](System.Collections.Generic.IEnumerable`1[TSource], System.Func`2[TSource,TResult])</AppFunctionName>
+    <AppModuleFileName>System.Core.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Linq</AppModuleNameSpace>
+    <AppModuleClassName>Enumerable</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+</ExceptionSolution>

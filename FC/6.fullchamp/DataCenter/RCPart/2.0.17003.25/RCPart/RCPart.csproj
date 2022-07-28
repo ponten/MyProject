@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D386886B-D2ED-48B1-81B1-875376585839}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RCPart</RootNamespace>
+    <AssemblyName>RCPart</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Chroma Application Client\DataCenter\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientUtils">
+      <HintPath>..\..\..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\MessageEnum.cs" />
+    <Compile Include="Models\SysEndProcessModel.cs" />
+    <Compile Include="Services\ChildBomServices.cs" />
+    <Compile Include="Services\EndProcessService.cs" />
+    <Compile Include="Services\ExportExcel.cs" />
+    <Compile Include="fData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fData.Designer.cs">
+      <DependentUpon>fData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDetailRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDetailRoute.Designer.cs">
+      <DependentUpon>fDetailRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFilter.designer.cs">
+      <DependentUpon>fFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHistory.designer.cs">
+      <DependentUpon>fHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMulti.designer.cs">
+      <DependentUpon>fMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPKSPEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPKSPEC.designer.cs">
+      <DependentUpon>fPKSPEC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fProcess.Designer.cs">
+      <DependentUpon>fProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\OtherService.cs" />
+    <Compile Include="Services\SajetCommon.cs" />
+    <Compile Include="Services\SajetTable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDetailRoute.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fDetailRoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFilter.resx">
+      <DependentUpon>fFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHistory.resx">
+      <DependentUpon>fHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMulti.resx">
+      <DependentUpon>fMulti.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPKSPEC.resx">
+      <DependentUpon>fPKSPEC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fProcess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RCPart.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

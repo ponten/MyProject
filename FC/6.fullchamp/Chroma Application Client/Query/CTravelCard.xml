@@ -1,0 +1,60 @@
+﻿<Chroma>
+  <繁體中文>
+    <Message Name="Packing Infomation" Value="包裝作業資訊" />
+    <Message Name="Box No" Value="彩盒號" />
+    <Message Name="Carton No" Value="箱號" />
+    <Message Name="Pallet No" Value="棧板號" />
+    <Message Name="Shipping Infomation" Value="出貨作業資訊" />
+    <Message Name="Ship Time" Value="出貨時間" />
+    <Message Name="Vehicle" Value="車號" />
+    <Message Name="Warranty Day" Value="保固期限" />
+    <Message Name="Container" Value="貨櫃號碼" />
+    <Message Name="Customer" Value="客戶" />
+    <Message Name="Ship To" Value="出貨地" />
+    <Message Name="Export" Value="匯出" />
+    <Message Name="Status" Value="狀態" />
+    <Message Name="Work Order" Value="工單" />
+    <Message Name="Customer Name" Value="客戶名稱" />
+    <Message Name="W/O Type" Value="工單類型" />
+    <Message Name="Spec" Value="描述" />
+    <Message Name="Next Process" Value="下一製程" />
+    <Message Name="Version" Value="版本" />
+    <Message Name="Serial Number" Value="序號" />
+    <Message Name="Production Line" Value="生產線別" />
+    <Message Name="Master W/O" Value="主工單" />
+    <Message Name="Route Name" Value="途程名稱" />
+    <Message Name="Part No" Value="料號" />
+    <Message Name="Customer SN" Value="出貨序號" />
+    <Message Name="Travel Card" Value="流程卡" />
+    <Message Name="Travel" Value="流程" />
+    <Message Name="Repair" Value="維修" />
+    <Message Name="Keypart" Value="料件" />
+    <Message Name="QC" Value="抽驗" />
+    <Message Name="Rework" Value="重工" />
+    <Message Name="Key Part SN" Value="料件序號" />
+    <Message Name="Customer Part" Value="客戶料號" />
+    <Message Name="Process" Value="製程" />
+    <Message Name="Terminal" Value="工作站" />
+    <Message Name="Time" Value="離開製程時間" />
+    <Message Name="Operator" Value="操作人員" />
+    <Message Name="QC Lot" Value="抽驗編號" />
+    <Message Name="Rework No" Value="重工編號" />
+    <Message Name="Defect Process" Value="不良製程" />
+    <Message Name="Defect" Value="不良" />
+    <Message Name="Reason" Value="原因" />
+    <Message Name="Duty" Value="責任別" />
+    <Message Name="Location" Value="不良位置" />
+    <Message Name="Item No" Value="零件代碼" />
+    <Message Name="Repairer" Value="維修人員" />
+    <Message Name="QC Result" Value="品質狀態" />
+    <Message Name="QC Time" Value="抽驗時間" />
+    <Message Name="Keypart Spec" Value="料件規格" />
+    <Message Name="Keypart SN" Value="料件序號" />
+    <Message Name="Type" Value="類型" />
+    <Message Name="Assy. Process" Value="組裝製程" />
+    <Message Name="Rework Time" Value="重工時間" />
+    <Message Name="Remark" Value="備註" />
+    <Message Name="Assy. Time" Value="組裝時間" />
+    <Message Name="Keypart No" Value="料件編號" />
+  </繁體中文>
+</Chroma>

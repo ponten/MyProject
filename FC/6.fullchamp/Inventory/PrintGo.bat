@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Seagull\BarTender Suite\bartend.exe" /F="E:\TDG\Chroma MES Client\Packing\PACKING_CARTON_Y.btw" /D="E:\TDG\Chroma MES Client\Packing\PACKING_CARTON_Y.lst" /P /X /C=1

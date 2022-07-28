@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <繁體中文>
+    <Message Name="Defect Type Code" Value="不良類型代碼"/>
+    <Message Name="Defect Type Desc" Value="不良類型描述"/>
+    <Message Name="Emp No" Value="責任人編號"/>
+    <Message Name="Emp Name" Value="責任人"/>
+    <Message Name="Data No Exist" Value="數據不存在"/>
+    <Message Name="Data Modify OK" Value="數據修改成功"/>
+    <Message Name="Data Is Null" Value="數據為空"/>
+    <Message Name="OK" Value="確定"/>
+    <Message Name="CANCEL" Value="取消"/>
+  </繁體中文>
+  <简体中文>
+    <Message Name="Defect Type Code" Value="不良类型代码"/>
+    <Message Name="Defect Type Desc" Value="不良类型描述"/>
+    <Message Name="Emp No" Value="责任人编号"/>
+    <Message Name="Emp Name" Value="责任人"/>
+    <Message Name="Data No Exist" Value="数据不存在"/>
+    <Message Name="Data Modify OK" Value="数据修改成功"/>
+    <Message Name="Data Is Null" Value="数据为空"/>
+    <Message Name="OK" Value="确定"/>
+    <Message Name="CANCEL" Value="取消"/>
+  </简体中文>
+</Chroma>

@@ -1,0 +1,111 @@
+﻿<Chroma>
+  <繁體中文>
+    <Message Name="Reel No" Value="料卷號" />
+    <Message Name="Part No" Value="料號" />
+    <Message Name="Unit Qty" Value="單位數量" />
+    <Message Name="Date Code" Value="Date Code" />
+    <Message Name="Vendor Code" Value="供應商代碼" />
+    <Message Name="PO Number" Value="訂單號" />
+    <Message Name="RT_NO" Value="RT單號" />
+    <Message Name="Remove" Value="移除" />
+    <Message Name="Record Count" Value="資料筆數" />
+    <Message Name="Print Qty" Value="列印份數" />
+    <Message Name="Print" Value="列印" />
+    <Message Name="Reel Error" Value="料卷錯誤" />
+    <Message Name="Print Finish" Value="列印完成" />
+    <Message Name="Reel Qty" Value="零件(卷/包)數" />
+    <Message Name="Execute" Value="執行" />
+    <Message Name="Prefix" Value="前置碼" />
+    <Message Name="Please Input DateCode" Value="請輸入DateCode" />
+    <Message Name="Part No Error" Value="料號錯誤" />
+    <Message Name="Vendor Code Error" Value="供應商代碼錯誤" />
+    <Message Name="RT No Error" Value="RT單錯誤" />
+    <Message Name="Reel Duplicate" Value="料卷號重複" />
+    <Message Name="Manual Input" Value="手動輸入料卷號" />
+    <Message Name="System Create" Value="系統建立料卷號" />
+    <Message Name="Total Qty" Value="總數量" />
+    <Message Name="Incoming Qty" Value="RT收料數" />
+    <Message Name="IQC Receive Qty" Value="IQC允收數" />
+    <Message Name="Inventory Qty" Value="入庫數" />
+    <Message Name="IQC Result" Value="IQC檢驗結果" />
+    <Message Name="Clear" Value="清除" />
+    <Message Name="RT No" Value="RT單號" />
+    <Message Name="Seq" Value="項次" />
+    <Message Name="Reel No Input" Value="料卷資料輸入" />
+    <Message Name="Input Qty" Value="輸入數量" />
+    <Message Name="Over RT Available Input Qty" Value="超過RT單剩餘可入庫數量" />
+    <Message Name="Continue ?" Value="繼續 ?" />
+    <Message Name="Employee" Value="員工" />
+    <Message Name="DateTime" Value="時間" />
+    <Message Name="Stock In" Value="入庫" />
+    <Message Name="Start No" Value="起始號" />
+    <Message Name="End No" Value="結束號" />
+    <Message Name="Seq Length" Value="流水號長度" />
+    <Message Name="Please Input Start No" Value="請輸入起始號" />
+    <Message Name="Please Input Prefix" Value="請輸入前置碼" />
+    <Message Name="Length of Start No less then Seq Length" Value="起始號長度 小於 流水號長度" />
+    <Message Name="Sequence No Error" Value="流水號錯誤(流水號必須為數值)" />
+    <Message Name="Please Input DateCode / Lot" Value="DateCode 或 Lot 至少輸入一項" />
+    <Message Name="Reel No Total Length Error" Value="料卷號總長度錯誤" />
+    <Message Name="Check Length" Value="檢查料卷號長度" />
+    <Message Name="RT Receive Date" Value="進料日期" />
+    <Message Name="Print?" Value="是否列印" />
+    <Message Name="Length of Sequence No more than" Value="流水號長超過" />
+    <Message Name="Label File Not Found" Value="標籤檔案不存在" />
+    <Message Name="File Not Found" Value="檔案不存在" />
+    <Message Name="Label Type" Value="標籤檔類型" />
+    <Message Name="Large" Value="大標籤" />
+    <Message Name="Small" Value="小標籤" />
+    <Message Name="Middle" Value="中標籤" />
+    <Message Name="Memo" Value="備註" />
+    <Message Name="OK" Value="確定" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Duplicate Reel No" Value="重複的料卷號" />
+    <Message Name="Reel No Range" Value="料卷號展開範圍" />
+    <Message Name="Stock" Value="入庫" />
+    <Message Name="Vendor Name" Value="供應商名稱" />
+    <Message Name="Seq Length must more than 0" Value="流水號長度必須大於0" />
+    <Message Name="RT does not include this Part" Value="RT單不包含此料號" />
+    <Message Name="RT Seq" Value="RT單項次" />
+    <Message Name="Select RT Seq" Value="選擇RT單項次" />
+    <Message Name="VENDOR_CODE" Value="供應商代碼" />
+    <Message Name="VENDOR_NAME" Value="供應商名稱" />
+    <Message Name="VENDOR_DESC" Value="供應商描述" />
+    <Message Name="Search" Value="尋找" />
+    <Message Name="PART_NO" Value="料號" />
+    <Message Name="SPEC1" Value="描述(1)" />
+    <Message Name="SPEC2" Value="描述(2)" />
+
+    <Message Name="Create Reel Finish" Value="料卷號自動建立完成" />
+    <Message Name="Please Input Part No Prefix" Value="請輸入料號前置碼至少一碼" />
+    <Message Name="WAREHOUSE_NAME" Value="倉庫" />
+    <Message Name="Warehouse" Value="倉庫" />
+    <Message Name="Warehouse Error" Value="倉庫錯誤" />
+    <Message Name="Please input Warehouse Name" Value="請輸入倉庫名稱" />
+    <Message Name="Division Qty" Value="拆出數量" />
+    <Message Name="Print original tab?" Value="列印原始標籤" />
+    <Message Name="Division Qty Null!!" Value="拆出數量錯誤" />
+    <Message Name="Division Qty Zero!!" Value="拆出數量不能為0" />
+    <Message Name="Division Qty Error" Value="拆出數量錯誤" />
+    <Message Name="Out of Range" Value="超出範圍" />
+    <Message Name="Reel Division" Value="料卷分拆" />
+    <Message Name="Original Reel" Value="原始料卷" />
+    <Message Name="New Reel" Value="新料卷" />
+    <Message Name="Please Input Reel No" Value="請輸入料卷號" />
+    <Message Name="Modify Unit Qty" Value="修改料卷數量" />
+    <Message Name="Save" Value="儲存" />
+    <Message Name="Reel No Error" Value="料卷號錯誤" />
+	
+	<Message Name="QR Code" Value="二維條碼" />
+	<Message Name="Vendor Part No" Value="供應商料號" />
+	<Message Name="Reprint" Value="補印" />
+	<Message Name="Option 1" Value="選項1" />
+	<Message Name="Option 2" Value="選項2" />
+	<Message Name="Option 3" Value="選項3" />
+	<Message Name="No Data Found!" Value="找不到資料" />
+	<Message Name="Please Input 1 of Option!" Value="輸入選項中的一個" />
+	
+	
+  </繁體中文>
+</Chroma>
+

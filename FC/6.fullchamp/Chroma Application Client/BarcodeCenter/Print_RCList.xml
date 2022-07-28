@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Print_RCList</name>
+    </assembly>
+    <members>
+        <member name="T:Print_RCList.Enums.LabelDataGroupEnum">
+            <summary>
+            標籤列印內容，按照查詢區分成資料組
+            </summary>
+        </member>
+        <member name="F:Print_RCList.Enums.LabelDataGroupEnum.WORK_ORDER">
+            <summary>
+            工單資料組
+            </summary>
+        </member>
+        <member name="F:Print_RCList.Enums.LabelDataGroupEnum.RC_NO">
+            <summary>
+            流程卡資料組
+            </summary>
+        </member>
+        <member name="F:Print_RCList.Enums.LabelDataGroupEnum.PAGE">
+            <summary>
+            排在最後一個、現在沒有在使用的參數
+            </summary>
+        </member>
+        <member name="T:Print_RCList.Enums.ParseTargetTypeEnum">
+            <summary>
+            解析、轉換格式的對象的清單
+            </summary>
+        </member>
+        <member name="F:Print_RCList.Enums.ParseTargetTypeEnum.WorkOrder">
+            <summary>
+            對象是工單號碼
+            </summary>
+        </member>
+        <member name="F:Print_RCList.Enums.ParseTargetTypeEnum.Runcard">
+            <summary>
+            對象是流程卡號碼
+            </summary>
+        </member>
+        <member name="T:Print_RCList.RCListService">
+            <summary>
+            流程卡號碼清單的列印標籤服務
+            </summary>
+        </member>
+        <member name="F:Print_RCList.RCListService.BasePath">
+            <summary>
+            基礎檔案路徑
+            </summary>
+        </member>
+        <member name="F:Print_RCList.RCListService.BaseFileName">
+            <summary>
+            基礎檔案名稱
+            </summary>
+        </member>
+        <member name="M:Print_RCList.RCListService.Print(System.String,System.Boolean,System.String@)">
+            <summary>
+            組成流程卡號碼清單標籤的列印內容，並且視情況列印標籤
+            </summary>
+            <param name="work_order">工單號碼</param>
+            <param name="direct_print">是否直接列印。否，則回傳批次檔指令</param>
+            <param name="message">回傳訊息。若執行失敗則內容為錯誤訊息；若不列印則內容為批次檔指令</param>
+            <returns></returns>
+        </member>
+        <member name="M:Print_RCList.RCListService.PutPrintContent(System.String,System.String)">
+            <summary>
+            把資料內容存到目標文件內
+            </summary>
+            <param name="target_file">目標檔案/位址</param>
+            <param name="content">內容</param>
+        </member>
+        <member name="M:Print_RCList.RCListService.PutBatFile(System.String,System.String)">
+            <summary>
+            把指令存到批次檔
+            </summary>
+            <param name="target_file"></param>
+            <param name="content"></param>
+        </member>
+        <member name="M:Print_RCList.RCListService.GetPrintHeader">
+            <summary>
+            取得列印清單的表頭欄位
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Print_RCList.RCListService.GetPrintContent(System.String,Print_RCList.Enums.LabelDataGroupEnum)">
+            <summary>
+            取得列印資料內容（客製）
+            </summary>
+            <param name="work_order"></param>
+            <param name="data_group"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Print_RCList.RCListService.GetPrintContent(System.Int32,System.Collections.Generic.List{System.String})">
+            <summary>
+            取得列印資料內容（客製）
+            </summary>
+            <param name="runcard_number">流程卡數量</param>
+            <param name="runcard_list">流程卡號碼的清單</param>
+            <returns></returns>
+        </member>
+        <member name="M:Print_RCList.RCListService.LoadBatFile(System.String)">
+            <summary>
+            讀取列印標籤的批次檔指令
+            </summary>
+            <param name="program">呼叫模組</param>
+            <returns></returns>
+        </member>
+        <member name="M:Print_RCList.RCListService.ToLiteral(System.String)">
+            <summary>
+            將傳入的字串加上跳脫字元後輸出
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Print_RCList.RCListService.GetDisplayFormat(System.String,Print_RCList.Enums.ParseTargetTypeEnum)">
+            <summary>
+            重組工單號碼或流程卡號碼，取得顯示用的格式
+            </summary>
+            <param name="target_string">目標字串</param>
+            <param name="target_type">目標種類（工單號碼 / 流程卡號碼）</param>
+            <returns></returns>
+        </member>
+        <member name="M:Print_RCList.RCListService.GetRuncardAndNummber(System.String,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            計算流程卡的數量，並且取得流程卡號碼的清單
+            </summary>
+            <param name="work_order">工單號碼</param>
+            <param name="runcard_name_list">流程卡號碼的清單</param>
+            <returns>計算流程卡的數量</returns>
+        </member>
+        <member name="M:Print_RCList.RCListService.LoopString(System.String)">
+            <summary>
+            迴圈組合參數
+            </summary>
+            <param name="s_sample"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Print_RCList.RCListService.WinExec(System.String,System.Int32)">
+            <summary>
+            呼叫 exe 的方法。使用 UNICODE 編碼。
+            </summary>
+            <param name="exeName">執行目標的位址/名稱</param>
+            <param name="operType">展示方式。詳細請參閱：docs.microsoft.com -&gt; win32/api -&gt; WinExec 的說明</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

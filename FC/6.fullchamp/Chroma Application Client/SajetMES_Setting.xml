@@ -1,0 +1,284 @@
+<Chroma>
+  <English>
+    <Message Name="Exit" Value="Do you want to exit?" />
+    <Message Name="APServerFail" Value="AP Server Fail!" />
+    <Message Name="PasswordError" Value="Password Error!" />
+    <Message Name="PasswordEmpty" Value="Password Empty!" />
+    <Message Name="NewPasswordError" Value="New Password Error!" />
+    <Message Name="UserNotFound" Value="Account Not Found!" />
+    <Message Name="DatabaseError" Value="Database NG!" />
+    <Message Name="FileNotFound" Value="File not found!" />
+    <Message Name="ChangeSucceed" Value="Change Password OK." />
+    <Message Name="DeleteData" Value="Do you want to delete this data?" />
+    <Message Name="NewPasswordEmpty" Value="New Password Empty!" />
+  </English>
+  <繁體中文>
+    <Message Name="Open File" Value="開啟舊檔" />
+    <Message Name="Set App Environment" Value="設定系統環境" />
+    <Message Name="Set App logo Image" Value="設定系統商標圖片" />
+    <Message Name="App Logo Image" Value="系統商標圖片" />
+    <Message Name="Set background image" Value="設定系統背景圖片" />
+    <Message Name="Show Background Image" Value="顯示背景圖片" />
+    <Message Name="App Background Image" Value="背景圖片" />
+    <Message Name="Change Color" Value="變更色彩" />
+    <Message Name="App Background Color" Value="系統底色" />
+    <Message Name="Set background OpacityMask" Value="設定系統背景透明度" />
+    <Message Name="Opacity" Value="透明度" />
+    <Message Name="Menu Button Styles" Value="目錄按鈕樣式" />
+    <Message Name="Set Menu buttons Background Color and Icon Image" Value="設定目錄按鈕底色及圖示" />
+    <Message Name="Menu Button Group" Value="目錄按鈕群組" />
+    <Message Name="Import" Value="匯入" />
+    <Message Name="Outport" Value="匯出" />
+    <Message Name="Accept" Value="接受" />
+    <Message Name="Canel" Value="取消" />
+    <Message Name="MES Module" Value="MES模組" />
+    <Message Name="Data Grid View" Value="資料網格檢視" />
+    <Message Name="Auto Resize Columns" Value="自動重設攔寬" />
+    <Message Name="Font Size" Value="字體大小" />
+    <Message Name="Set font size for Loaded MES Module" Value="設定MES模組字體大小" />
+    <Message Name="Need restart Module" Value="需要重新啟動模組" />
+    <Message Name="Change Font or Not" Value="是否改變字體大小" />
+    <Message Name="Large Font Sample" Value="大字體樣式" />
+    <Message Name="Default Font Sample" Value="預設字體樣式" />
+    <Message Name="Small Font Sample" Value="小字體樣式" />
+    <Message Name="Large Font" Value="大字體" />
+    <Message Name="Default Font" Value="預設字體" />
+    <Message Name="Small Font" Value="小字體" />
+    <Message Name="Version" Value="版本" />
+    <Message Name="Check AP Server" Value="檢查連線" />
+    <Message Name="Account or password Error, please try again" Value="帳號密碼輸入錯誤，請重新輸入" />
+    <Message Name="Check AP Server Error, Press Retry or Exit" Value="檢查連線失敗，請重試或離開系統" />
+    <Message Name="Independent Window" Value="獨立視窗" />
+    <Message Name="Exit" Value="確定要離開?" />
+    <Message Name="APServerFail" Value="AP Server錯誤!" />
+    <Message Name="PasswordError" Value="密碼錯誤!" />
+    <Message Name="PasswordEmpty" Value="未輸入密碼!" />
+    <Message Name="NewPasswordError" Value="新密碼與確認密碼不符合!" />
+    <Message Name="UserNotFound" Value="查無此使用者!" />
+    <Message Name="DatabaseError" Value="資料庫錯誤!" />
+    <Message Name="FileNotFound" Value="檔案不存在!" />
+    <Message Name="ChangeSucceed" Value="密碼更改成功." />
+    <Message Name="DeleteData" Value="確定要刪除資料?" />
+    <Message Name="Host" Value="主機" />
+    <Message Name="Language" Value="語言" />
+    <Message Name="Account" Value="帳號" />
+    <Message Name="Password" Value="密碼" />
+    <Message Name="Close" Value="關閉" />
+    <Message Name="Logout?" Value="登出?" />
+    <Message Name="Login" Value="登入" />
+    <Message Name="&amp;Exit" Value="離開(&amp;X)" />
+    <Message Name="&amp;System" Value="系統(&amp;S)" />
+    <Message Name="&amp;Login" Value="登入(&amp;L)" />
+    <Message Name="Logout" Value="登出" />
+    <Message Name="Exit System" Value="離開系統" />
+    <Message Name="&amp;Logout" Value="登出(&amp;L)" />
+    <Message Name="Change Password" Value="變更密碼" />
+    <Message Name="&amp;Change Password" Value="變更密碼(&amp;C)" />
+    <Message Name="&amp;Window" Value="視窗(&amp;W)" />
+    <Message Name="&amp;Cascade" Value="階梯式並排(&amp;C)" />
+    <Message Name="&amp;OK" Value="確定(&amp;O)" />
+    <Message Name="Tile &amp;Horizontally" Value="水平並排(&amp;H)" />
+    <Message Name="Tile &amp;Vertically" Value="垂直並排(&amp;V)" />
+    <Message Name="&amp;Minimize All" Value="全部最小化(&amp;M)" />
+    <Message Name="&amp;Show All" Value="全部顯示(&amp;S)" />
+    <Message Name="Close &amp;All" Value="全部關閉(&amp;A)" />
+    <Message Name="&amp;Help" Value="說明(&amp;H)" />
+    <Message Name="&amp;About" Value="關於(&amp;A)" />
+    <Message Name="About" Value="關於" />
+    <Message Name="&amp;Option" Value="選項(&amp;O)" />
+    <Message Name="Hide &amp;Bottom" Value="隱藏底部(&amp;B)" />
+    <Message Name="Hide MES &amp;Label" Value="隱藏MES標籤(&amp;L)" />
+    <Message Name="Skin" Value="面板" />
+    <Message Name="Font:" Value="字型:" />
+    <Message Name="Change Font" Value="變更字型" />
+    <Message Name="Font" Value="字型" />
+    <Message Name="Large Font" Value="大字型" />
+    <Message Name="Small Font" Value="小字型" />
+    <Message Name="Show &amp;Host" Value="顯示連線主機(&amp;H)" />
+    <Message Name="User Name: " Value="使用者: " />
+    <Message Name="Version: {0}" Value="版本: {0}" />
+    <Message Name="Button" Value="按鈕" />
+    <Message Name="Module" Value="模組" />
+    <Message Name="Function List" Value="功能列示" />
+    <Message Name="Function" Value="功能" />
+    <Message Name="Background" Value="背景" />
+    <Message Name="Login" Value="登入畫面" />
+    <Message Name="Save" Value="儲存" />
+    <Message Name="None" Value="不選任何模組" />
+    <Message Name="Module Select" Value="模組選取" />
+    <Message Name="Load Image" Value="載入底圖" />
+    <Message Name="First Module" Value="選取第一個模組" />
+    <Message Name="Password Empty!" Value="密碼未填!" />
+    <Message Name="NewPasswordEmpty" Value="新密碼未填!" />
+    <Message Name="Error" Value="錯誤" />
+    <Message Name="Warning" Value="警告" />
+    <Message Name="Confirm" Value="確認" />
+    <Message Name="Current Password" Value="原密碼" />
+    <Message Name="New Password" Value="新密碼" />
+    <Message Name="Confirm Password" Value="確認密碼" />
+    <Message Name="OK" Value="確定" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Module Style" Value="模組樣式" />
+    <Message Name="General" Value="一般" />
+    <Message Name="ComboBox" Value="下拉選單" />
+    <Message Name="2xComboBox" Value="二維下拉選單" />
+    <Message Name="UserQuit" Value="已離職" />
+    <Message Name="UserDisabled" Value="已停用" />
+    <Message Name="APP Log Setting" Value="系統錯誤紀錄設定" />
+    <Message Name="Exception Tips" Value="顯示例外提示" />
+    <Message Name="Exclude known exception Tips" Value="排除提示已知錯誤" />
+    <Message Name="Show known solution" Value="顯示已知解決方案" />
+    <Message Name="Message Setting" Value="訊息功能設定" />
+    <Message Name="Enable Message Function" Value="啟用訊息功能" />
+    <Message Name="Set cycle check time" Value="設定循環查詢訊息的時間" />
+    <Message Name="cycle time" Value="循環時間" />
+    <Message Name="second" Value="秒" />
+    <Message Name="Error Message" Value="錯誤訊息" />
+    <Message Name="Message" Value="訊息功能" />
+    <Message Name="Confirm Update?" Value="確定更新?" />
+    <Message Name="登入" Value="登入-&gt;[未翻譯]" />
+    <Message Name="cancel" Value="取消" />
+    <Message Name="Policy" Value="密碼策略" />
+    <Message Name="Allow User Name Same As Password" Value="允許帳號與密碼相同" />
+    <Message Name="Enable Password Complexity" Value="啟用密碼複雜度設定" />
+    <Message Name="Password expiry" Value="檢查密碼更新期限" />
+    <Message Name="Days" Value="天" />
+    <Message Name="Complexity" Value="複雜度" />
+    <Message Name="Enable Lowercase Letters" Value="必須包含小寫字母" />
+    <Message Name="Enable Capital Letters" Value="必須包含大寫字母" />
+    <Message Name="Enable Special Symbol" Value="必須包含特殊符號" />
+    <Message Name="Enable Digital" Value="必須包含數字" />
+    <Message Name="Enable Length Limit" Value="限制密碼長度" />
+    <Message Name="Maximum Length" Value="最多字元" />
+    <Message Name="Minimum Length" Value="最少字元" />
+    <Message Name="Setting updated!" Value="設定已更新!" />
+    <Message Name="Clock" Value="時鐘" />
+    <Message Name="Show Clock" Value="顯示時鐘" />
+    <Message Name="Please select the time source" Value="請選擇時間來源" />
+    <Message Name="NTP Server URL" Value="NTP 伺服器位址" />
+    <Message Name="Auto Convert Time Zone" Value="自動將取得的時間轉換成指定的時區" />
+    <Message Name="Time Zone" Value="時區" />
+    <Message Name="From NTP Server Time (UTC)" Value="從NTP時間伺服器取得UTC時間" />
+    <Message Name="Convert to local time zone." Value="轉換成本地時區" />
+    <Message Name="Convert to a customiztion time zone." Value="轉換成自訂時區" />
+    <Message Name="From Local Time (UTC)" Value="取得本機UTC時間" />
+  </繁體中文>
+  <简体中文>
+    <Message Name="Open File" Value="开启旧档" />
+    <Message Name="Set App Environment" Value="设定系统环境" />
+    <Message Name="Set App logo Image" Value="设定系统商标图片" />
+    <Message Name="App Logo Image" Value="系统商标图片" />
+    <Message Name="Set background image" Value="设定系统背景图片" />
+    <Message Name="Show Background Image" Value="显示背景图片" />
+    <Message Name="App Background Image" Value="背景图片" />
+    <Message Name="Change Color" Value="变更色彩" />
+    <Message Name="App Background Color" Value="系统底色" />
+    <Message Name="Set background OpacityMask" Value="设定系统背景透明度" />
+    <Message Name="Opacity" Value="透明度" />
+    <Message Name="Menu Button Styles" Value="目录按钮样式" />
+    <Message Name="Set Menu buttons Background Color and Icon Image" Value="设定目录按钮底色及图标" />
+    <Message Name="Menu Button Group" Value="目录按钮群组" />
+    <Message Name="Import" Value="汇入" />
+    <Message Name="Outport" Value="汇出" />
+    <Message Name="Accept" Value="接受" />
+    <Message Name="Canel" Value="取消" />
+    <Message Name="MES Module" Value="MES模块" />
+    <Message Name="Data Grid View" Value="资料网格检视" />
+    <Message Name="Auto Resize Columns" Value="自动重设拦宽" />
+    <Message Name="Font Size" Value="字体大小" />
+    <Message Name="Set font size for Loaded MES Module" Value="设定MES模块字体大小" />
+    <Message Name="Need restart Module" Value="需要重新启动模块" />
+    <Message Name="Change Font or Not" Value="是否改变字体大小" />
+    <Message Name="Large Font Sample" Value="大字体样式" />
+    <Message Name="Default Font Sample" Value="默认字体样式" />
+    <Message Name="Small Font Sample" Value="小字体样式" />
+    <Message Name="Large Font" Value="大字体" />
+    <Message Name="Default Font" Value="默认字体" />
+    <Message Name="Small Font" Value="小字体" />
+    <Message Name="Version" Value="版本" />
+    <Message Name="Check AP Server" Value="检查联机" />
+    <Message Name="Account or password Error, please try again" Value="账号密码输入错误，请重新输入" />
+    <Message Name="Check AP Server Error, Press Retry or Exit" Value="检查联机失败，请重试或离开系统" />
+    <Message Name="Independent Window" Value="独立窗口" />
+    <Message Name="Exit" Value="确定要离开?" />
+    <Message Name="APServerFail" Value="AP Server错误!" />
+    <Message Name="PasswordError" Value="密码错误!" />
+    <Message Name="PasswordEmpty" Value="未输入密码!" />
+    <Message Name="NewPasswordError" Value="新密码与确认密码不符合!" />
+    <Message Name="UserNotFound" Value="查无此使用者!" />
+    <Message Name="DatabaseError" Value="数据库错误!" />
+    <Message Name="FileNotFound" Value="档案不存在!" />
+    <Message Name="ChangeSucceed" Value="密码更改成功." />
+    <Message Name="DeleteData" Value="确定要删除数据?" />
+    <Message Name="Host" Value="主机" />
+    <Message Name="Language" Value="语言" />
+    <Message Name="Account" Value="账号" />
+    <Message Name="Password" Value="密码" />
+    <Message Name="Close" Value="关闭" />
+    <Message Name="Logout?" Value="注销?" />
+    <Message Name="Login" Value="登入" />
+    <Message Name="&amp;Exit" Value="离开(&amp;X)" />
+    <Message Name="&amp;System" Value="系统(&amp;S)" />
+    <Message Name="&amp;Login" Value="登入(&amp;L)" />
+    <Message Name="Logout" Value="注销" />
+    <Message Name="Exit System" Value="离开系统" />
+    <Message Name="&amp;Logout" Value="注销(&amp;L)" />
+    <Message Name="Change Password" Value="变更密码" />
+    <Message Name="&amp;Change Password" Value="变更密码(&amp;C)" />
+    <Message Name="&amp;Window" Value="窗口(&amp;W)" />
+    <Message Name="&amp;Cascade" Value="阶梯式并排(&amp;C)" />
+    <Message Name="&amp;OK" Value="确定(&amp;O)" />
+    <Message Name="Tile &amp;Horizontally" Value="水平并排(&amp;H)" />
+    <Message Name="Tile &amp;Vertically" Value="垂直并排(&amp;V)" />
+    <Message Name="&amp;Minimize All" Value="全部最小化(&amp;M)" />
+    <Message Name="&amp;Show All" Value="全部显示(&amp;S)" />
+    <Message Name="Close &amp;All" Value="全部关闭(&amp;A)" />
+    <Message Name="&amp;Help" Value="说明(&amp;H)" />
+    <Message Name="&amp;About" Value="关于(&amp;A)" />
+    <Message Name="About" Value="关于" />
+    <Message Name="&amp;Option" Value="选项(&amp;O)" />
+    <Message Name="Hide &amp;Bottom" Value="隐藏底部(&amp;B)" />
+    <Message Name="Hide MES &amp;Label" Value="隐藏MES标签(&amp;L)" />
+    <Message Name="Skin" Value="面板" />
+    <Message Name="Font:" Value="字型:" />
+    <Message Name="Change Font" Value="变更字型" />
+    <Message Name="Font" Value="字型" />
+    <Message Name="Large Font" Value="大字型" />
+    <Message Name="Small Font" Value="小字型" />
+    <Message Name="Show &amp;Host" Value="显示联机主机(&amp;H)" />
+    <Message Name="User Name: " Value="使用者: " />
+    <Message Name="Version: {0}" Value="版本: {0}" />
+    <Message Name="Button" Value="按钮" />
+    <Message Name="Module" Value="模块" />
+    <Message Name="Function List" Value="功能列示" />
+    <Message Name="Function" Value="功能" />
+    <Message Name="Background" Value="背景" />
+    <Message Name="Login" Value="登入画面" />
+    <Message Name="Save" Value="储存" />
+    <Message Name="None" Value="不选任何模块" />
+    <Message Name="Module Select" Value="模块选取" />
+    <Message Name="Load Image" Value="载入底图" />
+    <Message Name="First Module" Value="选取第一个模块" />
+    <Message Name="Password Empty!" Value="密码未填!" />
+    <Message Name="NewPasswordEmpty" Value="新密码未填!" />
+    <Message Name="Error" Value="错误" />
+    <Message Name="Warning" Value="警告" />
+    <Message Name="Confirm" Value="确认" />
+    <Message Name="Current Password" Value="原密码" />
+    <Message Name="New Password" Value="新密码" />
+    <Message Name="Confirm Password" Value="确认密码" />
+    <Message Name="OK" Value="确定" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Module Style" Value="模块样式" />
+    <Message Name="General" Value="一般" />
+    <Message Name="ComboBox" Value="下拉选单" />
+    <Message Name="2xComboBox" Value="二维下拉选单" />
+    <Message Name="UserQuit" Value="已离职" />
+    <Message Name="UserDisabled" Value="已停用" />
+    <Message Name="APP Log Setting" Value="系统错误纪录设定" />
+    <Message Name="Exception Tips" Value="显示例外提示" />
+    <Message Name="Exclude known exception Tips" Value="排除提示已知错误" />
+    <Message Name="Show known solution" Value="显示已知解决方案" />
+  </简体中文>
+    <Setting Version="2.7.2104.988" />
+</Chroma>

@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Chroma>
+  <English>
+    <Message Name="Stage Name" Value="Stage Name" />
+    <Message Name="Stage Description" Value="Description" />
+    <Message Name="Stage Code" Value="Stage Code" />
+    <Message Name="Process Name" Value="Process Name" />
+    <Message Name="PROCESS_NAME" Value="Process Name" />
+    <Message Name="Description" Value="Description1" />
+    <Message Name="Description2" Value="Description2" />
+    <Message Name="Process Code" Value="Process Code" />
+    <Message Name="Operate Type" Value="Operate Type" />
+    <Message Name="STAGE_NAME" Value="Stage Name" />
+    <Message Name="has one or more Processes" Value="has one or more Processes" />
+    <Message Name="Can not delete it" Value="Can not delete it" />
+    <Message Name="has one or more Terminals" Value="has one or more Terminals" />
+    <Message Name="SAMPLING_TYPE" Value="Sampling Type" />
+    <Message Name="SAMPLING_DESC" Value="Description" />
+
+    <Message Name="MIN_LOT_SIZE" Value="Sampling batch lower limit" />
+    <Message Name="MAX_LOT_SIZE" Value="Sampling batch upper limit" />
+    <Message Name="SAMPLE_SIZE" Value="Sampling size" />
+    <Message Name="CRITICAL_REJECT_QTY" Value="Critical reject quantity" />
+    <Message Name="MAJOR_REJECT_QTY" Value="Major reject quantity" />
+    <Message Name="MINOR_REJECT_QTY" Value="Minor reject quantity" />
+    <Message Name="FirstPieceInspection" Value="First piece inspection" />
+    <Message Name="LastPieceInspection" Value="Last piece inspection" />
+    <Message Name="FPI" Value="First piece inspection" />
+    <Message Name="LPI" Value="Last piece inspection" />
+    <Message Name="Setting" Value="Setting" />
+    <Message Name="CANCEL" Value="Cancel" />
+    <Message Name="UNIT" Value="Unit" />
+    <Message Name="SPEC1" Value="Product name" />
+    <Message Name="SPEC2" Value="Specification" />
+    <Message Name="FORMER_PART_NO" Value="Former part no" />
+    <Message Name="BLUEPRINT" Value="Blueprint" />
+    <Message Name="STD_WORKTIME" Value="Standard worktime(min)" />
+
+    <!--Message Enum-->
+    <Message Name="EnableAQL" Value="Enable the sampling plan ?" />
+    <Message Name="DisableAQL" Value="Disable the sampling plan ?" />
+    <Message Name="UnknownAQLStatus" Value="Unknown sampling plan status" />
+
+    <!-- Form Text Enum-->
+    <Message Name="EnableOrDisable" Value="Enable / Disable" />
+  </English>
+  <繁體中文>
+    <Message Name="Stage Name" Value="區段名稱" />
+    <Message Name="Stage Description" Value="區段描述" />
+    <Message Name="Stage Code" Value="區段代碼" />
+    <Message Name="Process Name" Value="製程名稱" />
+    <Message Name="PROCESS_NAME" Value="製程名稱" />
+    <Message Name="Description" Value="製程描述" />
+    <Message Name="Description2" Value="製程描述(2)" />
+    <Message Name="Process Code" Value="製程代碼" />
+    <Message Name="Operate Type" Value="製程類型" />
+    <Message Name="STAGE_NAME" Value="區段名稱" />
+    <Message Name="has one or more Processes" Value="已包含製程資料" />
+    <Message Name="Can not delete it" Value="不可刪除" />
+    <Message Name="has one or more Terminals" Value="已包含工作站資料" />
+    <Message Name="Please Select a Item." Value="請選擇產品製程參數項目" />
+    <Message Name="Please Select One Item." Value="請選擇一個產品製程參數項目" />
+    <Message Name="Delete the Item?" Value="刪除此產品製程參數" />
+    <Message Name="Delete Item : " Value="刪除產品製程參數: " />
+    <Message Name=" Error." Value=" 錯誤." />
+    <Message Name="Please Input Part No." Value="請輸入料號" />
+    <Message Name="Please Select Target Process." Value="請選擇製程" />
+    <Message Name="Delete Item Error." Value="刪除此產品製程參數錯誤" />
+    <Message Name="Error Part No." Value="料號錯誤" />
+    <Message Name="Error Copy Part No." Value="複製料號產品製程參數錯誤" />
+    <Message Name="Add another one" Value="新增其他產品製程參數" />
+    <Message Name="Add Error." Value="新增產品製程參數錯誤" />
+    <Message Name="Please Input Default Value." Value="請輸入預設資料" />
+    <Message Name="Please Create List item." Value="請新增選項" />
+    <Message Name="Please Input min Value." Value="請輸入下限值" />
+    <Message Name="Please Input Max Value." Value="請輸入上限值" />
+    <Message Name="Please Input min Value in Number" Value="請輸入下限值為數字" />
+    <Message Name="Please Input Max Value in Number" Value="請輸入上限值為數字" />
+    <Message Name="Item Sequence is Duplicate." Value="產品製程參數顯示順序重複" />
+    <Message Name="Please Input Item Name." Value="請輸入產品製程參數名稱" />
+    <Message Name="Item Name is duplicate." Value="產品製程參數名稱重複" />
+    <Message Name="Check Data Error." Value="檢查輸入資料錯誤" />
+    <Message Name="Error." Value="錯誤." />
+    <Message Name="Please Choose Process." Value="請選擇製程" />
+    <Message Name="Data Duplcate in " Value="資料重複 - 產品製程參數: " />
+    <Message Name="Error Copy." Value="複製料號產品製程參數錯誤" />
+    <Message Name="Origin" Value="來源料號製程" />
+    <Message Name="Target" Value="目標料號製程" />
+    <Message Name="Select All" Value="全選" />
+    <Message Name="OK" Value="確認" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Process" Value="製程" />
+    <Message Name="Add" Value="新增" />
+    <Message Name="Part No" Value="料號" />
+    <Message Name="Version" Value="版本" />
+    <Message Name="Process Condition" Value="製程條件" />
+    <Message Name="Data Collection" Value="資料收集" />
+    <Message Name="SN Process Condition" Value="元件製程條件" />
+    <Message Name="SN Data Collection" Value="元件資料收集" />
+    <Message Name="ITEM_NAME" Value="項目名稱" />
+    <Message Name="ITEM_PHASE" Value="項目階段" />
+    <Message Name="ITEM_TYPE" Value="項目分類" />
+    <Message Name="ITEM_SEQ" Value="項目顯示順序" />
+    <Message Name="VALUE_TYPE" Value="數值類型" />
+    <Message Name="INPUT_TYPE" Value="輸入方式" />
+    <Message Name="VALUE_DEFAULT" Value="預設值" />
+    <Message Name="VALUE_LIST" Value="項目清單" />
+    <Message Name="NECESSARY" Value="必要輸入欄位" />
+    <Message Name="CONVERT_TYPE" Value="輸入值轉換" />
+    <Message Name="UPDATE_USERID" Value="資料異動人員" />
+    <Message Name="UPDATE_TIME" Value="資料異動時間" />
+    <Message Name="ENABLED" Value="是否啟用" />
+    <Message Name="Item Seq" Value="項目顯示順序" />
+    <Message Name="Item Name" Value="項目名稱" />
+    <Message Name="Item Phase" Value="項目階段" />
+    <Message Name="Value Type" Value="數值類型" />
+    <Message Name="Input Type" Value="輸入方式" />
+    <Message Name="Default" Value="預設值" />
+    <Message Name="Item List" Value="項目清單" />
+    <Message Name="Convert Type" Value="輸入值轉換" />
+    <Message Name="Range" Value="範圍" />
+    <Message Name="EMP_NO" Value="資料異動人員" />
+    <Message Name="Necessary" Value="必要輸入欄位" />
+    <Message Name="Collapse" Value="摺疊" />
+    <Message Name="Expand" Value="展開" />
+    <Message Name="Copy" Value="複製料號製程參數" />
+    <Message Name="Item Sequence" Value="順序" />
+    <Message Name="Choose" Value="目標料號製程" />
+    <Message Name="Copy Part Parameter" Value="複製料號產品製程參數" />
+    <Message Name="Please Input Item Value in Number" Value="請輸入值為數字" />
+    <Message Name="Item" Value="項目" />
+    <Message Name="Key In" Value="輸入" />
+    <Message Name="Select List" Value="選項清單" />
+    <Message Name="PART NO" Value="料號" />
+    <Message Name="SPEC1" Value="品名" />
+    <Message Name="SPEC2" Value="規格" />
+    <Message Name="Alert Msg" Value="彈出訊息" />
+    <Message Name="Alert" Value="彈出訊息" />
+    <Message Name="Alert Type" Value="訊息類型" />
+    <Message Name="Title" Value="標題" />
+    <Message Name="Content" Value="內容" />
+    <Message Name="ALERT_TYPE" Value="訊息類型" />
+    <Message Name="ITEM_TITLE" Value="訊息標題" />
+    <Message Name="ITEM_CONTENT" Value="訊息內容" />
+    <Message Name="WIP IN" Value="投入" />
+    <Message Name="WIP OUT" Value="產出" />
+    <Message Name="Info" Value="通知" />
+    <Message Name="Warn" Value="警告" />
+    <Message Name="Error" Value="錯誤" />
+    <Message Name="Needed Item Cannot Be Empty" Value="必輸項不能為空" />
+    <Message Name="Item Name Already Exist" Value="名稱或序號已存在" />
+    <Message Name="Item Name Or Seq Already Exist" Value="名稱或序號已存在" />
+    <Message Name="PROCESS" Value="製程" />
+    <Message Name="PART_ID" Value="料號ID" />
+    <Message Name="VERSION" Value="版本" />
+    <Message Name="Info" Value="通知" />
+    <Message Name="Please Select a Alert Item." Value="請選擇一個項目" />
+    <Message Name="Info" Value="通知" />
+    <Message Name="Link" Value="網路連結" />
+    <Message Name="Print" Value="列印" />
+    <Message Name="Row Item" Value="行" />
+    <Message Name="Column Item" Value="列" />
+    <Message Name="N" Value="否" />
+    <Message Name="Y" Value="是" />
+    <Message Name="Please Input Column Item is Number." Value="請輸入列為正整數" />
+    <Message Name="Please Input Row Item is Number." Value="請輸入列為正整數" />
+    <Message Name="COLUMN_ITEM" Value="列" />
+    <Message Name="ROW_ITEM" Value="行" />
+    <Message Name="Keyparts Collection" Value="料件收集" />
+    <Message Name="PRINT" Value="列印" />
+    <Message Name="PART_NO" Value="料號" />
+    <Message Name="Save" Value="儲存" />
+    <Message Name="Please Input Excel Location is Number." Value="請輸入Excel欄位正確位置" />
+    <Message Name="Save OK." Value="儲存成功" />
+    <Message Name="Save Fail." Value="儲存失敗" />
+    <Message Name="Please Input Excel Location." Value="請輸入Excel欄位" />
+    <Message Name="Unit Empty." Value="單位設定為空值" />
+    <Message Name="Unit" Value="單位" />
+    <Message Name="UNIT_NO" Value="單位" />
+    <Message Name="Input value" Value="輸入值" />
+    <Message Name="SAMPLING_TYPE" Value="抽樣計劃名稱" />
+    <Message Name="SAMPLING_DESC" Value="描述" />
+    <Message Name="QC Collection" Value="品保資料收集" />
+    <Message Name="Overwrite the AQL Item?" Value="覆蓋此抽樣計劃？" />
+    <Message Name="Please Select AQL Item." Value="請選擇抽樣計劃。" />
+    <Message Name="Delete QC Item : " Value="刪除品保資料項目 : " />
+    <Message Name="Please Select QC Item." Value="請選擇品保資料項目。" />
+    <Message Name="Delete the QC Item?" Value="刪除品保資料項目？" />
+    <Message Name="Please Select One QC Item." Value="請選擇一項品保資料項目。" />
+    <Message Name="Delete the AQL Item?" Value="刪除此抽樣計劃？" />
+    <Message Name="Delete AQL Item : " Value="刪除抽樣計劃 : " />
+    <Message Name="Part not found" Value="找不到料號" />
+    <Message Name="Confirm" Value="確認" />
+    <Message Name="Sampling plan" Value="抽樣計劃" />
+    <Message Name="Sampling plan detail" Value="抽樣計劃細節" />
+    <Message Name="Close" Value="關閉" />
+    <Message Name="Query" Value="查詢" />
+
+    <Message Name="MIN_LOT_SIZE" Value="批量範圍下限" />
+    <Message Name="MAX_LOT_SIZE" Value="批量範圍上限" />
+    <Message Name="SAMPLE_SIZE" Value="抽樣數量" />
+    <Message Name="CRITICAL_REJECT_QTY" Value="重缺批退標準" />
+    <Message Name="MAJOR_REJECT_QTY" Value="主缺批退標準" />
+    <Message Name="MINOR_REJECT_QTY" Value="次缺批退標準" />
+    <Message Name="UNIT" Value="單位" />
+    <Message Name="QC Option" Value="品檢設定" />
+    <Message Name="FirstPieceInspection" Value="首件檢" />
+    <Message Name="LastPieceInspection" Value="末件檢" />
+    <Message Name="FPI" Value="首件檢" />
+    <Message Name="LPI" Value="末件檢" />
+    <Message Name="Setting" Value="設定" />
+    <Message Name="CANCEL" Value="取消" />
+    <Message Name="FORMER_PART_NO" Value="舊編" />
+    <Message Name="BLUEPRINT" Value="藍圖" />
+    <Message Name="route name" Value="途程名稱" />
+    <Message Name="Production route is not available" Value="生產途程不是啟用狀態" />
+    <Message Name="STD_WORKTIME" Value="標準工時（秒）" />
+    <Message Name="Standard worktime" Value="標準工時（秒）" />
+    <Message Name="Setting" Value="設定" />
+    <Message Name="Process setting" Value="製程設定" />
+
+    <!--Message Enum-->
+    <Message Name="EnableAQL" Value="是否啟用抽驗計畫？" />
+    <Message Name="DisableAQL" Value="是否停用抽驗計畫？" />
+    <Message Name="UnknownAQLStatus" Value="未知的抽驗計畫狀態" />
+
+    <!-- Form Text Enum-->
+    <Message Name="EnableOrDisable" Value="啟用 / 停用" />
+
+  </繁體中文>
+  <简体中文>
+    <Message Name="Stage Name" Value="区段名称" />
+    <Message Name="Stage Description" Value="区段描述" />
+    <Message Name="Stage Code" Value="区段代码" />
+    <Message Name="Process Name" Value="制程名称" />
+    <Message Name="PROCESS_NAME" Value="制程名称" />
+    <Message Name="Description" Value="制程描述" />
+    <Message Name="Description2" Value="制程描述(2)" />
+    <Message Name="Process Code" Value="制程代码" />
+    <Message Name="Operate Type" Value="制程类型" />
+    <Message Name="STAGE_NAME" Value="区段名称" />
+    <Message Name="has one or more Processes" Value="已包含制程资料" />
+    <Message Name="Can not delete it" Value="不可删除" />
+    <Message Name="has one or more Terminals" Value="已包含工作站资料" />
+    <Message Name="Please Select a Item." Value="请选择产品制程参数项目" />
+    <Message Name="Please Select One Item." Value="请选择一个产品制程参数项目" />
+    <Message Name="Delete the Item?" Value="删除此产品制程参数" />
+    <Message Name="Delete Item : " Value="删除产品制程参数: " />
+    <Message Name=" Error." Value=" 错误." />
+    <Message Name="Please Input Part No." Value="请输入料号" />
+    <Message Name="Please Select Target Process." Value="请选择制程" />
+    <Message Name="Delete Item Error." Value="删除此产品制程参数错误" />
+    <Message Name="Error Part No." Value="料号错误" />
+    <Message Name="Error Copy Part No." Value="复制料号产品制程参数错误" />
+    <Message Name="Add another one" Value="新增其他产品制程参数" />
+    <Message Name="Add Error." Value="新增产品制程参数错误" />
+    <Message Name="Please Input Default Value." Value="请输入默认数据" />
+    <Message Name="Please Create List item." Value="请新增选项" />
+    <Message Name="Please Input min Value." Value="请输入下限值" />
+    <Message Name="Please Input Max Value." Value="请输入上限值" />
+    <Message Name="Please Input min Value in Number" Value="请输入下限值为数字" />
+    <Message Name="Please Input Max Value in Number" Value="请输入上限值为数字" />
+    <Message Name="Item Sequence is Duplicate." Value="产品制程参数显示顺序重复" />
+    <Message Name="Please Input Item Name." Value="请输入产品制程参数名称" />
+    <Message Name="Item Name is duplicate." Value="产品制程参数名称重复" />
+    <Message Name="Check Data Error." Value="检查输入数据错误" />
+    <Message Name="Error." Value="错误." />
+    <Message Name="Please Choose Process." Value="请选择制程" />
+    <Message Name="Data Duplcate in " Value="数据重复 - 产品制程参数: " />
+    <Message Name="Error Copy." Value="复制料号产品制程参数错误" />
+    <Message Name="Origin" Value="来源料号制程" />
+    <Message Name="Target" Value="目标料号制程" />
+    <Message Name="Select All" Value="全选" />
+    <Message Name="OK" Value="确认" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Process" Value="制程" />
+    <Message Name="Add" Value="新增" />
+    <Message Name="Part No" Value="料号" />
+    <Message Name="Version" Value="版本" />
+    <Message Name="Process Condition" Value="制程条件" />
+    <Message Name="Data Collection" Value="资料收集" />
+    <Message Name="SN Process Condition" Value="组件制程条件" />
+    <Message Name="SN Data Collection" Value="组件数据收集" />
+    <Message Name="ITEM_NAME" Value="项目名称" />
+    <Message Name="ITEM_PHASE" Value="项目阶段" />
+    <Message Name="ITEM_TYPE" Value="项目分类" />
+    <Message Name="ITEM_SEQ" Value="项目显示顺序" />
+    <Message Name="VALUE_TYPE" Value="数值类型" />
+    <Message Name="INPUT_TYPE" Value="输入方式" />
+    <Message Name="VALUE_DEFAULT" Value="默认值" />
+    <Message Name="VALUE_LIST" Value="项目列表" />
+    <Message Name="NECESSARY" Value="必要输入字段" />
+    <Message Name="CONVERT_TYPE" Value="输入值转换" />
+    <Message Name="UPDATE_USERID" Value="资料异动人员" />
+    <Message Name="UPDATE_TIME" Value="数据异动时间" />
+    <Message Name="ENABLED" Value="资料是否有效" />
+    <Message Name="Item Seq" Value="项目显示顺序" />
+    <Message Name="Item Name" Value="项目名称" />
+    <Message Name="Item Phase" Value="项目阶段" />
+    <Message Name="Value Type" Value="数值类型" />
+    <Message Name="Input Type" Value="输入方式" />
+    <Message Name="Default" Value="默认值" />
+    <Message Name="Item List" Value="项目列表" />
+    <Message Name="Convert Type" Value="输入值转换" />
+    <Message Name="Range" Value="范围" />
+    <Message Name="EMP_NO" Value="资料异动人员" />
+    <Message Name="Necessary" Value="必要输入字段" />
+    <Message Name="Collapse" Value="折迭" />
+    <Message Name="Expand" Value="展开" />
+    <Message Name="Copy" Value="复制料号制程参数" />
+    <Message Name="Item Sequence" Value="顺序" />
+    <Message Name="Choose" Value="目标料号制程" />
+    <Message Name="Copy Part Parameter" Value="复制料号产品制程参数" />
+    <Message Name="Please Input Item Value in Number" Value="请输入值为数字" />
+    <Message Name="Item" Value="项目" />
+    <Message Name="Key In" Value="输入" />
+    <Message Name="Select List" Value="选项列表" />
+    <Message Name="PART_NO" Value="料号" />
+    <Message Name="SPEC1" Value="描述1" />
+    <Message Name="Alert Msg" Value="弹出消息" />
+    <Message Name="Alert" Value="弹出消息" />
+    <Message Name="Alert Type" Value="消息类型" />
+    <Message Name="Title" Value="标题" />
+    <Message Name="Content" Value="内容" />
+    <Message Name="ALERT_TYPE" Value="消息类型" />
+    <Message Name="ITEM_TITLE" Value="消息标题" />
+    <Message Name="ITEM_CONTENT" Value="消息内容" />
+    <Message Name="WIP IN" Value="投入" />
+    <Message Name="WIP OUT" Value="产出" />
+    <Message Name="Info" Value="通知" />
+    <Message Name="Warn" Value="警告" />
+    <Message Name="Error" Value="错误" />
+    <Message Name="Needed Item Cannot Be Empty" Value="必输项不能为空" />
+    <Message Name="Item Name Already Exist" Value="名称或序号已存在" />
+    <Message Name="Item Name Or Seq Already Exist" Value="名称或序号已存在" />
+    <Message Name="PROCESS" Value="制程" />
+    <Message Name="PART_ID" Value="料号ID" />
+    <Message Name="VERSION" Value="版本" />
+    <Message Name="Info" Value="通知" />
+    <Message Name="Please Select a Alert Item." Value="请选择一个弹出项" />
+    <Message Name="Info" Value="通知" />
+    <Message Name="Link" Value="网路连结" />
+    <Message Name="Print" Value="打印" />
+    <Message Name="SAMPLING_TYPE" Value="抽样计划名称" />
+    <Message Name="SAMPLING_DESC" Value="描述" />
+    <Message Name="QC Collection" Value="品保资料收集" />
+    <Message Name="Overwrite the AQL Item?" Value="覆盖此抽样计划？" />
+    <Message Name="Please Select AQL Item." Value="请选择抽样计划。" />
+    <Message Name="Delete QC Item : " Value="删除品保资料项目 : " />
+    <Message Name="Please Select QC Item." Value="请选择品保资料项目。" />
+    <Message Name="Delete the QC Item?" Value="删除品保资料项目？" />
+    <Message Name="Please Select One QC Item." Value="请选择一项品保资料项目。" />
+    <Message Name="Delete the AQL Item?" Value="删除此抽样计划？" />
+    <Message Name="Delete AQL Item : " Value="删除抽样计划 : " />
+  </简体中文>
+</Chroma>

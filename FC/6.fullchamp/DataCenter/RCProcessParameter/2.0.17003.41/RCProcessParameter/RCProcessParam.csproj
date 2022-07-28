@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80EDBE1B-A267-48CD-8E75-58C27A36BD6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RCProcessParam</RootNamespace>
+    <AssemblyName>RCProcessParam</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Chroma Application Client\DataCenter\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\Chroma Application Client\DataCenter\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientUtils, Version=2.7.106.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FFilter, Version=1.0.17003.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Chroma Application Client\FFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\ActionTypeEnum.cs" />
+    <Compile Include="Enums\FormTextEnum.cs" />
+    <Compile Include="Enums\MessageEnum.cs" />
+    <Compile Include="Enums\TabPageEnum.cs" />
+    <Compile Include="fQCOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQCOption.Designer.cs">
+      <DependentUpon>fQCOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProcessViewModel.cs" />
+    <Compile Include="Models\QCOptionModel.cs" />
+    <Compile Include="Services\AQL.cs" />
+    <Compile Include="fAddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddItem.Designer.cs">
+      <DependentUpon>fAddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAlert.Designer.cs">
+      <DependentUpon>fAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQCCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQCCollection.Designer.cs">
+      <DependentUpon>fQCCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCollection.Designer.cs">
+      <DependentUpon>fCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCondition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCondition.Designer.cs">
+      <DependentUpon>fCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCopyPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCopyPart.Designer.cs">
+      <DependentUpon>fCopyPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAddItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fAddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAlert.resx">
+      <DependentUpon>fAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQCCollection.resx">
+      <DependentUpon>fQCCollection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCollection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCondition.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCopyPart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fCopyPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQCOption.resx">
+      <DependentUpon>fQCOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Services\OtherService.cs" />
+    <Compile Include="Services\QCCollection.cs" />
+    <Compile Include="Models\QC_PlanModel.cs" />
+    <Compile Include="Services\QCOptionService.cs" />
+    <Compile Include="Services\SajetCommon.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RCProcessParam.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

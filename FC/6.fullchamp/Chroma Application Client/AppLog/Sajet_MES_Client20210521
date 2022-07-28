@@ -1,0 +1,823 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1621565849030" level="FATAL" thread="1"><log4j:message>找不到名為  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 RCPart.fData.<>c__DisplayClass21_0.<CombRoute_SelectedIndexChanged>b__0(DataGridViewRow x) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 393
+   於 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   於 RCPart.fData.CombRoute_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 391
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   於 System.Windows.Forms.ComboBox.set_Text(String value)
+   於 RCPart.fData.MenuAppendRoute_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 954
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1621565944490" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_END_PROCESS   A
+    LEFT JOIN SAJET.SYS_RC_ROUTE      B ON A.ROUTE_ID = B.ROUTE_ID
+    LEFT JOIN SAJET.SYS_PROCESS       C ON A.PROCESS_ID = C.PROCESS_ID
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.ROUTE_NAME = :ROUTE_NAME
+    AND A.ENABLED = 'Y'
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1621565959680" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_END_PROCESS   A
+    LEFT JOIN SAJET.SYS_RC_ROUTE      B ON A.ROUTE_ID = B.ROUTE_ID
+    LEFT JOIN SAJET.SYS_PROCESS       C ON A.PROCESS_ID = C.PROCESS_ID
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.ROUTE_NAME = :ROUTE_NAME
+    AND A.ENABLED = 'Y'
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1621565959768" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_END_PROCESS   A
+    LEFT JOIN SAJET.SYS_RC_ROUTE      B ON A.ROUTE_ID = B.ROUTE_ID
+    LEFT JOIN SAJET.SYS_PROCESS       C ON A.PROCESS_ID = C.PROCESS_ID
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.ROUTE_NAME = :ROUTE_NAME
+    AND A.ENABLED = 'Y'
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_END_PROCESS   A
+    LEFT JOIN SAJET.SYS_RC_ROUTE      B ON A.ROUTE_ID = B.ROUTE_ID
+    LEFT JOIN SAJET.SYS_PROCESS       C ON A.PROCESS_ID = C.PROCESS_ID
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.ROUTE_NAME = :ROUTE_NAME
+    AND A.ENABLED = 'Y'
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCPart.Services.EndProcessService.GetCurrentEndProcess(String PART_ID, String ROUTE_NAME) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\Services\EndProcessService.cs: 行 83
+   於 RCPart.fData.CombRoute_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 401
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   於 System.Windows.Forms.ComboBox.set_Text(String value)
+   於 RCPart.fData.MenuAppendRoute_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 954
+   於 RCPart.fData.MenuAppendRoute_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 963
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1621566003662" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_END_PROCESS   A
+    LEFT JOIN SAJET.SYS_RC_ROUTE      B ON A.ROUTE_ID = B.ROUTE_ID
+    LEFT JOIN SAJET.SYS_PROCESS       C ON A.PROCESS_ID = C.PROCESS_ID
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.ROUTE_NAME = :ROUTE_NAME
+    AND A.ENABLED = 'Y'
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1621566012882" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_END_PROCESS   A
+    LEFT JOIN SAJET.SYS_RC_ROUTE      B ON A.ROUTE_ID = B.ROUTE_ID
+    LEFT JOIN SAJET.SYS_PROCESS       C ON A.PROCESS_ID = C.PROCESS_ID
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.ROUTE_NAME = :ROUTE_NAME
+    AND A.ENABLED = 'Y'
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1621566043340" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_END_PROCESS   A
+    LEFT JOIN SAJET.SYS_RC_ROUTE      B ON A.ROUTE_ID = B.ROUTE_ID
+    LEFT JOIN SAJET.SYS_PROCESS       C ON A.PROCESS_ID = C.PROCESS_ID
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.ROUTE_NAME = :ROUTE_NAME
+    AND A.ENABLED = 'Y'
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1621566043405" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_END_PROCESS   A
+    LEFT JOIN SAJET.SYS_RC_ROUTE      B ON A.ROUTE_ID = B.ROUTE_ID
+    LEFT JOIN SAJET.SYS_PROCESS       C ON A.PROCESS_ID = C.PROCESS_ID
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.ROUTE_NAME = :ROUTE_NAME
+    AND A.ENABLED = 'Y'
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_END_PROCESS   A
+    LEFT JOIN SAJET.SYS_RC_ROUTE      B ON A.ROUTE_ID = B.ROUTE_ID
+    LEFT JOIN SAJET.SYS_PROCESS       C ON A.PROCESS_ID = C.PROCESS_ID
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.ROUTE_NAME = :ROUTE_NAME
+    AND A.ENABLED = 'Y'
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCPart.Services.EndProcessService.GetCurrentEndProcess(String PART_ID, String ROUTE_NAME) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\Services\EndProcessService.cs: 行 83
+   於 RCPart.fData.CombRoute_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 401
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   於 System.Windows.Forms.ComboBox.set_Text(String value)
+   於 RCPart.fData.MenuAppendRoute_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 954
+   於 RCPart.fData.MenuAppendRoute_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 963
+   於 RCPart.fData.MenuAppendRoute_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 963
+   於 RCPart.fData.MenuAppendRoute_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.29\RCPart\fData.cs: 行 963
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1621566197767" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: 
+DECLARE
+    FOUND_ROW             NUMBER;
+    FOUND_ROW_STATUS      VARCHAR(5);
+    PARAM_PART_ID         NUMBER;
+    PARAM_ROUTE_ID        NUMBER;
+    PARAM_NODE_ID         NUMBER;
+    PARAM_PROCESS_ID      NUMBER;
+    PARAM_ENABLED         VARCHAR(5);
+    PARAM_UPDATE_USERID   NUMBER;
+    PARAM_UPDATE_TIME     DATE;
+BEGIN
+    --
+    FOUND_ROW := 0;
+    PARAM_PART_ID := :PART_ID;
+    PARAM_ROUTE_ID := :ROUTE_ID;
+    PARAM_UPDATE_USERID := :UPDATE_USERID;
+    PARAM_UPDATE_TIME := :UPDATE_TIME;
+    PARAM_NODE_ID := :NODE_ID;
+    PARAM_PROCESS_ID := :PROCESS_ID;
+    PARAM_ENABLED := :ENABLED;
+    --
+    SELECT
+        COUNT(NODE_ID)
+    INTO FOUND_ROW
+    FROM
+        SAJET.SYS_END_PROCESS
+    WHERE
+        PART_ID = PARAM_PART_ID
+        AND ROUTE_ID = PARAM_ROUTE_ID
+        AND NODE_ID = PARAM_NODE_ID
+        AND PROCESS_ID = PARAM_PROCESS_ID;
+
+    IF FOUND_ROW > 0 THEN
+        SELECT
+            UPPER(TRIM(ENABLED))
+        INTO FOUND_ROW_STATUS
+        FROM
+            SAJET.SYS_END_PROCESS
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND NODE_ID = PARAM_NODE_ID
+            AND PROCESS_ID = PARAM_PROCESS_ID;
+
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'N',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND ENABLED = 'Y'
+            AND NODE_ID <> PARAM_NODE_ID
+            AND PROCESS_ID <> PARAM_PROCESS_ID;
+
+        IF FOUND_ROW_STATUS = 'N' THEN
+
+            UPDATE SAJET.SYS_END_PROCESS
+            SET
+                ENABLED = 'Y',
+                UPDATE_USERID = PARAM_UPDATE_USERID,
+                UPDATE_TIME = PARAM_UPDATE_TIME
+            WHERE
+                PART_ID = PARAM_PART_ID
+                AND ROUTE_ID = PARAM_ROUTE_ID
+                AND NODE_ID = PARAM_NODE_ID
+                AND PROCESS_ID = PARAM_PROCESS_ID;
+
+        END IF;
+
+    ELSE
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'N',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND ENABLED = 'Y'
+            AND NODE_ID <> PARAM_NODE_ID
+            AND PROCESS_ID <> PARAM_PROCESS_ID;
+
+        IF PARAM_PROCESS_ID <> 0 AND PARAM_NODE_ID <> 0 THEN
+            INSERT INTO SAJET.SYS_END_PROCESS (
+                PART_ID,
+                ROUTE_ID,
+                NODE_ID,
+                PROCESS_ID,
+                UPDATE_USERID,
+                UPDATE_TIME,
+                ENABLED
+            ) VALUES (
+                PARAM_PART_ID,
+                PARAM_ROUTE_ID,
+                PARAM_NODE_ID,
+                PARAM_PROCESS_ID,
+                PARAM_UPDATE_USERID,
+                PARAM_UPDATE_TIME,
+                PARAM_ENABLED
+            );
+
+        END IF;
+
+    END IF;
+
+END;
+:並未將物件參考設定為物件的執行個體。]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1621566687116" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: 
+DECLARE
+    FOUND_ROW             NUMBER;
+    FOUND_ROW_STATUS      VARCHAR(5);
+    PARAM_PART_ID         NUMBER;
+    PARAM_ROUTE_ID        NUMBER;
+    PARAM_NODE_ID         NUMBER;
+    PARAM_PROCESS_ID      NUMBER;
+    PARAM_ENABLED         VARCHAR(5);
+    PARAM_UPDATE_USERID   NUMBER;
+    PARAM_UPDATE_TIME     DATE;
+BEGIN
+    --
+    FOUND_ROW := 0;
+    PARAM_PART_ID := :PART_ID;
+    PARAM_ROUTE_ID := :ROUTE_ID;
+    PARAM_UPDATE_USERID := :UPDATE_USERID;
+    PARAM_UPDATE_TIME := :UPDATE_TIME;
+    PARAM_NODE_ID := :NODE_ID;
+    PARAM_PROCESS_ID := :PROCESS_ID;
+    PARAM_ENABLED := :ENABLED;
+    --
+    SELECT
+        COUNT(NODE_ID)
+    INTO FOUND_ROW
+    FROM
+        SAJET.SYS_END_PROCESS
+    WHERE
+        PART_ID = PARAM_PART_ID
+        AND ROUTE_ID = PARAM_ROUTE_ID
+        AND NODE_ID = PARAM_NODE_ID
+        AND PROCESS_ID = PARAM_PROCESS_ID;
+
+    IF FOUND_ROW > 0 THEN
+        SELECT
+            UPPER(TRIM(ENABLED))
+        INTO FOUND_ROW_STATUS
+        FROM
+            SAJET.SYS_END_PROCESS
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND NODE_ID = PARAM_NODE_ID
+            AND PROCESS_ID = PARAM_PROCESS_ID;
+
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'N',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND ENABLED = 'Y'
+            AND NODE_ID <> PARAM_NODE_ID
+            AND PROCESS_ID <> PARAM_PROCESS_ID;
+
+        IF FOUND_ROW_STATUS = 'N' THEN
+
+            UPDATE SAJET.SYS_END_PROCESS
+            SET
+                ENABLED = 'Y',
+                UPDATE_USERID = PARAM_UPDATE_USERID,
+                UPDATE_TIME = PARAM_UPDATE_TIME
+            WHERE
+                PART_ID = PARAM_PART_ID
+                AND ROUTE_ID = PARAM_ROUTE_ID
+                AND NODE_ID = PARAM_NODE_ID
+                AND PROCESS_ID = PARAM_PROCESS_ID;
+
+        END IF;
+
+    ELSE
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'N',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND ENABLED = 'Y'
+            AND NODE_ID <> PARAM_NODE_ID
+            AND PROCESS_ID <> PARAM_PROCESS_ID;
+
+        IF PARAM_PROCESS_ID <> 0 AND PARAM_NODE_ID <> 0 THEN
+            INSERT INTO SAJET.SYS_END_PROCESS (
+                PART_ID,
+                ROUTE_ID,
+                NODE_ID,
+                PROCESS_ID,
+                UPDATE_USERID,
+                UPDATE_TIME,
+                ENABLED
+            ) VALUES (
+                PARAM_PART_ID,
+                PARAM_ROUTE_ID,
+                PARAM_NODE_ID,
+                PARAM_PROCESS_ID,
+                PARAM_UPDATE_USERID,
+                PARAM_UPDATE_TIME,
+                PARAM_ENABLED
+            );
+
+        END IF;
+
+    END IF;
+
+END;
+:並未將物件參考設定為物件的執行個體。]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1621566853095" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: 
+DECLARE
+    FOUND_ROW             NUMBER;
+    FOUND_ROW_STATUS      VARCHAR(5);
+    PARAM_PART_ID         NUMBER;
+    PARAM_ROUTE_ID        NUMBER;
+    PARAM_NODE_ID         NUMBER;
+    PARAM_PROCESS_ID      NUMBER;
+    PARAM_ENABLED         VARCHAR(5);
+    PARAM_UPDATE_USERID   NUMBER;
+    PARAM_UPDATE_TIME     DATE;
+BEGIN
+    --
+    FOUND_ROW := 0;
+    PARAM_PART_ID := :PART_ID;
+    PARAM_ROUTE_ID := :ROUTE_ID;
+    PARAM_UPDATE_USERID := :UPDATE_USERID;
+    PARAM_UPDATE_TIME := :UPDATE_TIME;
+    PARAM_NODE_ID := :NODE_ID;
+    PARAM_PROCESS_ID := :PROCESS_ID;
+    PARAM_ENABLED := :ENABLED;
+    --
+    SELECT
+        COUNT(NODE_ID)
+    INTO FOUND_ROW
+    FROM
+        SAJET.SYS_END_PROCESS
+    WHERE
+        PART_ID = PARAM_PART_ID
+        AND ROUTE_ID = PARAM_ROUTE_ID
+        AND NODE_ID = PARAM_NODE_ID
+        AND PROCESS_ID = PARAM_PROCESS_ID;
+
+    IF FOUND_ROW > 0 THEN
+        SELECT
+            UPPER(TRIM(ENABLED))
+        INTO FOUND_ROW_STATUS
+        FROM
+            SAJET.SYS_END_PROCESS
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND NODE_ID = PARAM_NODE_ID
+            AND PROCESS_ID = PARAM_PROCESS_ID;
+
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'N',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND ENABLED = 'Y'
+            AND NODE_ID <> PARAM_NODE_ID
+            AND PROCESS_ID <> PARAM_PROCESS_ID;
+
+        IF FOUND_ROW_STATUS = 'N' THEN
+
+            UPDATE SAJET.SYS_END_PROCESS
+            SET
+                ENABLED = 'Y',
+                UPDATE_USERID = PARAM_UPDATE_USERID,
+                UPDATE_TIME = PARAM_UPDATE_TIME
+            WHERE
+                PART_ID = PARAM_PART_ID
+                AND ROUTE_ID = PARAM_ROUTE_ID
+                AND NODE_ID = PARAM_NODE_ID
+                AND PROCESS_ID = PARAM_PROCESS_ID;
+
+        END IF;
+
+    ELSE
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'N',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND ENABLED = 'Y'
+            AND NODE_ID <> PARAM_NODE_ID
+            AND PROCESS_ID <> PARAM_PROCESS_ID;
+
+        IF PARAM_PROCESS_ID <> 0 AND PARAM_NODE_ID <> 0 THEN
+            INSERT INTO SAJET.SYS_END_PROCESS (
+                PART_ID,
+                ROUTE_ID,
+                NODE_ID,
+                PROCESS_ID,
+                UPDATE_USERID,
+                UPDATE_TIME,
+                ENABLED
+            ) VALUES (
+                PARAM_PART_ID,
+                PARAM_ROUTE_ID,
+                PARAM_NODE_ID,
+                PARAM_PROCESS_ID,
+                PARAM_UPDATE_USERID,
+                PARAM_UPDATE_TIME,
+                PARAM_ENABLED
+            );
+
+        END IF;
+
+    END IF;
+
+END;
+:並未將物件參考設定為物件的執行個體。]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1621567745775" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    *
+FROM
+    (
+        
+WITH ROUTE_DETAIL AS (
+    SELECT
+        ROWNUM IDX,
+        NODE_CONTENT,
+        ROUTE_ID,
+        NODE_ID
+    FROM
+        SAJET.SYS_RC_ROUTE_DETAIL
+    WHERE
+        ROUTE_ID = :ROUTE_ID
+    START WITH
+        NODE_CONTENT = 'START'
+    CONNECT BY
+        PRIOR NEXT_NODE_ID = NODE_ID
+), ROUTE_PROCESS_DETAIL AS (
+    SELECT
+        NVL(B.ROUTE_NAME, '0') ROUTE_NAME,
+        B.ROUTE_DESC,
+        B.ROUTE_ID,
+        NVL(A.PROCESS_CODE, '0') PROCESS_CODE,
+        A.PROCESS_NAME,
+        A.PROCESS_ID,
+        C.NODE_ID,
+        C.IDX
+    FROM
+        SAJET.SYS_PROCESS    A,
+        SAJET.SYS_RC_ROUTE   B,
+        ROUTE_DETAIL         C
+    WHERE
+        B.ROUTE_ID = :ROUTE_ID
+        AND B.ROUTE_ID = C.ROUTE_ID
+        AND TO_CHAR(A.PROCESS_ID) = C.NODE_CONTENT
+        AND A.ENABLED = 'Y'
+        AND B.ENABLED = 'Y'
+    ORDER BY
+        C.IDX
+), END_PROCESS AS (
+    SELECT
+        NODE_ID
+    FROM
+        SAJET.SYS_END_PROCESS
+    WHERE
+        PART_ID = :PART_ID
+        AND ROUTE_ID = :ROUTE_ID
+        AND ENABLED = 'Y'
+/**/
+    UNION
+    SELECT
+        100006980007 NODE_ID
+    FROM
+        DUAL
+//*/
+)
+SELECT
+    COUNT(D.NODE_ID) END_PROCESS,
+    A.ROUTE_NAME,
+    A.ROUTE_DESC,
+    A.ROUTE_ID,
+    A.PROCESS_CODE,
+    A.PROCESS_NAME,
+    A.PROCESS_ID,
+    A.NODE_ID
+FROM
+    ROUTE_PROCESS_DETAIL   A,
+    END_PROCESS            D
+WHERE
+    A.NODE_ID = D.NODE_ID (+)
+GROUP BY
+    A.ROUTE_NAME,
+    A.ROUTE_DESC,
+    A.ROUTE_ID,
+    A.PROCESS_CODE,
+    A.PROCESS_NAME,
+    A.PROCESS_ID,
+    A.NODE_ID,
+    A.IDX
+ORDER BY
+    A.IDX
+
+    ) base_query
+WHERE
+    0 = 1
+:ORA-00907: 遺漏右括弧</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1621567745829" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    *
+FROM
+    (
+        
+WITH ROUTE_DETAIL AS (
+    SELECT
+        ROWNUM IDX,
+        NODE_CONTENT,
+        ROUTE_ID,
+        NODE_ID
+    FROM
+        SAJET.SYS_RC_ROUTE_DETAIL
+    WHERE
+        ROUTE_ID = :ROUTE_ID
+    START WITH
+        NODE_CONTENT = 'START'
+    CONNECT BY
+        PRIOR NEXT_NODE_ID = NODE_ID
+), ROUTE_PROCESS_DETAIL AS (
+    SELECT
+        NVL(B.ROUTE_NAME, '0') ROUTE_NAME,
+        B.ROUTE_DESC,
+        B.ROUTE_ID,
+        NVL(A.PROCESS_CODE, '0') PROCESS_CODE,
+        A.PROCESS_NAME,
+        A.PROCESS_ID,
+        C.NODE_ID,
+        C.IDX
+    FROM
+        SAJET.SYS_PROCESS    A,
+        SAJET.SYS_RC_ROUTE   B,
+        ROUTE_DETAIL         C
+    WHERE
+        B.ROUTE_ID = :ROUTE_ID
+        AND B.ROUTE_ID = C.ROUTE_ID
+        AND TO_CHAR(A.PROCESS_ID) = C.NODE_CONTENT
+        AND A.ENABLED = 'Y'
+        AND B.ENABLED = 'Y'
+    ORDER BY
+        C.IDX
+), END_PROCESS AS (
+    SELECT
+        NODE_ID
+    FROM
+        SAJET.SYS_END_PROCESS
+    WHERE
+        PART_ID = :PART_ID
+        AND ROUTE_ID = :ROUTE_ID
+        AND ENABLED = 'Y'
+/**/
+    UNION
+    SELECT
+        100006980007 NODE_ID
+    FROM
+        DUAL
+//*/
+)
+SELECT
+    COUNT(D.NODE_ID) END_PROCESS,
+    A.ROUTE_NAME,
+    A.ROUTE_DESC,
+    A.ROUTE_ID,
+    A.PROCESS_CODE,
+    A.PROCESS_NAME,
+    A.PROCESS_ID,
+    A.NODE_ID
+FROM
+    ROUTE_PROCESS_DETAIL   A,
+    END_PROCESS            D
+WHERE
+    A.NODE_ID = D.NODE_ID (+)
+GROUP BY
+    A.ROUTE_NAME,
+    A.ROUTE_DESC,
+    A.ROUTE_ID,
+    A.PROCESS_CODE,
+    A.PROCESS_NAME,
+    A.PROCESS_ID,
+    A.NODE_ID,
+    A.IDX
+ORDER BY
+    A.IDX
+
+    ) base_query
+WHERE
+    0 = 1
+ 】
+
+Exception：ORA-00907: 遺漏右括弧</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    *
+FROM
+    (
+        
+WITH ROUTE_DETAIL AS (
+    SELECT
+        ROWNUM IDX,
+        NODE_CONTENT,
+        ROUTE_ID,
+        NODE_ID
+    FROM
+        SAJET.SYS_RC_ROUTE_DETAIL
+    WHERE
+        ROUTE_ID = :ROUTE_ID
+    START WITH
+        NODE_CONTENT = 'START'
+    CONNECT BY
+        PRIOR NEXT_NODE_ID = NODE_ID
+), ROUTE_PROCESS_DETAIL AS (
+    SELECT
+        NVL(B.ROUTE_NAME, '0') ROUTE_NAME,
+        B.ROUTE_DESC,
+        B.ROUTE_ID,
+        NVL(A.PROCESS_CODE, '0') PROCESS_CODE,
+        A.PROCESS_NAME,
+        A.PROCESS_ID,
+        C.NODE_ID,
+        C.IDX
+    FROM
+        SAJET.SYS_PROCESS    A,
+        SAJET.SYS_RC_ROUTE   B,
+        ROUTE_DETAIL         C
+    WHERE
+        B.ROUTE_ID = :ROUTE_ID
+        AND B.ROUTE_ID = C.ROUTE_ID
+        AND TO_CHAR(A.PROCESS_ID) = C.NODE_CONTENT
+        AND A.ENABLED = 'Y'
+        AND B.ENABLED = 'Y'
+    ORDER BY
+        C.IDX
+), END_PROCESS AS (
+    SELECT
+        NODE_ID
+    FROM
+        SAJET.SYS_END_PROCESS
+    WHERE
+        PART_ID = :PART_ID
+        AND ROUTE_ID = :ROUTE_ID
+        AND ENABLED = 'Y'
+/**/
+    UNION
+    SELECT
+        100006980007 NODE_ID
+    FROM
+        DUAL
+//*/
+)
+SELECT
+    COUNT(D.NODE_ID) END_PROCESS,
+    A.ROUTE_NAME,
+    A.ROUTE_DESC,
+    A.ROUTE_ID,
+    A.PROCESS_CODE,
+    A.PROCESS_NAME,
+    A.PROCESS_ID,
+    A.NODE_ID
+FROM
+    ROUTE_PROCESS_DETAIL   A,
+    END_PROCESS            D
+WHERE
+    A.NODE_ID = D.NODE_ID (+)
+GROUP BY
+    A.ROUTE_NAME,
+    A.ROUTE_DESC,
+    A.ROUTE_ID,
+    A.PROCESS_CODE,
+    A.PROCESS_NAME,
+    A.PROCESS_ID,
+    A.NODE_ID,
+    A.IDX
+ORDER BY
+    A.IDX
+
+    ) base_query
+WHERE
+    0 = 1
+ 】
+
+Exception：ORA-00907: 遺漏右括弧
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 SajetFilter.FFilter.FFilter_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\LoadClient\FFilter\1.0.17003.2\FFilter\fFilter.cs: 行 205
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>

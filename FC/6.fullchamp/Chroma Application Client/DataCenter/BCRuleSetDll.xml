@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <繁體中文>
+    <Message Name="Save" Value="儲存"/>
+    <Message Name="Rule Name" Value="規則名稱"/>
+    <Message Name="Filter" Value="過濾條件"/>
+    <Message Name="Remark" Value="備註說明"/>
+    <Message Name="Sales Order" Value="出貨單號"/>
+    <Message Name="PO Number" Value="訂單編號"/>
+    <Message Name="Master W/O" Value="主工單"/>
+    <Message Name="W/O Type" Value="工單類型"/>
+    <Message Name="Customer" Value="客戶"/>
+    <Message Name="W/O Information" Value="工單資訊"/>
+    <Message Name="Delete" Value="刪除"/>
+    <Message Name="Label Name" Value="標籤名稱"/>
+    <Message Name="Code Name" Value="代碼名稱"/>
+    <Message Name="Code" Value="代碼"/>
+    <Message Name="Line" Value="生產線"/>
+    <Message Name="Append" Value="新增"/>
+    <Message Name="Modify" Value="修改"/>
+    <Message Name="OK" Value="確定"/>
+    <Message Name="Cancel" Value="取消"/>
+    <Message Name="Rule Name duplicate" Value="規則名稱重覆"/>
+    <Message Name="Rule Name is null" Value="規則名稱不能為空白"/>
+    <Message Name="Update Data Complete" Value="資料更新成功"/>
+    <Message Name="Append" Value="新增"/>
+    <Message Name="Error" Value="錯誤"/>
+    <Message Name="Save OK" Value="儲存成功"/>
+    <Message Name="Rule Name is Empty" Value="規則名稱為空值"/>
+  </繁體中文>
+</Chroma>

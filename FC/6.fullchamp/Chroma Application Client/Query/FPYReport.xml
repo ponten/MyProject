@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Chroma>
+	<繁體中文>
+		<Message Name="PART_NO" Value="品名" />
+		<Message Name="OPTION2" Value="舊編" />
+		<Message Name="SPEC1" Value="規格" />
+		<Message Name="PROCESS_NAME" Value="製程名稱" />
+		<Message Name="WORK_ORDER" Value="工單" />
+		<Message Name="TARGET_QTY" Value="目標量" />
+		<Message Name="OUTPUT_QTY" Value="生產數" />
+		<Message Name="PASS_QTY" Value="良品數" />
+		<Message Name="FAIL_QTY" Value="不良品數" />
+		<Message Name="FAIL_RATE" Value="不良率%" />
+	</繁體中文>
+</Chroma>

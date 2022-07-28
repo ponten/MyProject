@@ -1,0 +1,513 @@
+CREATE OR REPLACE PROCEDURE SAJET.SJ_RC_PACK_CARTON(I_ACTION IN VARCHAR2, --0:RC->CARTON; 1:BOX->CARTON
+                                              I_INPUT  IN VARCHAR2,
+                                              I_CARTON IN VARCHAR2,
+                                              I_EMPID  IN VARCHAR2,
+                                              I_LOTNO  IN VARCHAR2,
+                                              O_RES    OUT VARCHAR2,
+                                              O_FLAG   OUT VARCHAR2) IS
+
+  TRC             VARCHAR2(50);
+  TCNT            NUMBER;
+  TWO             VARCHAR2(50);
+  TPARTID         NUMBER;
+  TPROCESSID      NUMBER;
+  TSEQ            NUMBER;
+  TNODEID         NUMBER;
+  TROUTEID        NUMBER;
+  TTRAVELID       NUMBER;
+  TQTY            NUMBER;
+  TSTATUS         NUMBER;
+  TWOFINISH       VARCHAR2(5);
+  TLEVEL          VARCHAR2(5);
+  TPARTNO         VARCHAR2(50);
+  TEMPNAME        VARCHAR2(50);
+  TMASTERWO       VARCHAR2(40);
+  TPONO           VARCHAR2(20);
+  TNEXT_NODE      SAJET.G_RC_STATUS.NODE_ID%TYPE;
+  TNEXT_PROCESS   SAJET.G_RC_STATUS.PROCESS_ID%TYPE;
+  TNEXT_NODE_2    SAJET.G_RC_STATUS.NODE_ID%TYPE;
+  TNEXT_PROCESS_2 SAJET.G_RC_STATUS.PROCESS_ID%TYPE;
+  TSHEET          SAJET.SYS_RC_PROCESS_SHEET.SHEET_NAME%TYPE;
+  TSTDQTY         NUMBER;
+  TSIZE           VARCHAR2(10);
+  TCARTON_QTY     NUMBER;
+  --TCARTON         VARCHAR2(50);
+  --TLOTNO          VARCHAR2(50);
+  -------------------------------------------
+  --Created by : Nancy
+  --Date : 2016.12.13
+  --包装作业 ,过站并入库
+  -------------------------------------------
+BEGIN
+  O_RES := 'OK';
+
+  SELECT EMP_NAME INTO TEMPNAME FROM SAJET.SYS_EMP WHERE EMP_ID = I_EMPID;
+  ---输入RC获取基本信息   Alisa  20170110
+  IF I_ACTION = '0' THEN
+     --获取流程卡
+    SELECT RC_NO INTO TRC FROM SAJET.G_RC_CARTON WHERE BOX_NO = I_INPUT;
+    --获取RC工单,料号,制程
+    SELECT A.WORK_ORDER,
+           A.PART_ID,
+           A.PROCESS_ID,
+           A.NODE_ID,
+           A.ROUTE_ID,
+           A.TRAVEL_ID,
+           A.CURRENT_QTY,
+           B.PART_NO,
+           B.OPTION1,
+           C.MASTER_WO,
+           C.PO_NO,
+           D.LEVEL_CODE
+      INTO TWO,
+           TPARTID,
+           TPROCESSID,
+           TNODEID,
+           TROUTEID,
+           TTRAVELID,
+           TQTY,
+           TPARTNO,
+           TSIZE,
+           TMASTERWO,
+           TPONO,
+           TLEVEL
+      FROM SAJET.G_RC_STATUS A,
+           SAJET.SYS_PART    B,
+           SAJET.G_WO_BASE   C,
+           SAJET.G_RC_LEVEL  D
+     WHERE A.RC_NO = TRC
+       AND A.PART_ID = B.PART_ID
+       AND A.WORK_ORDER = C.WORK_ORDER
+       AND A.RC_NO = D.RC_NO(+);
+  
+  ELSE
+    --获取流程卡
+    SELECT RC_NO INTO TRC FROM SAJET.G_RC_CARTON WHERE BOX_NO = I_INPUT;
+  
+    --获取工单,料号,制程
+    SELECT A.WORK_ORDER,
+           A.PART_ID,
+           A.PROCESS_ID,
+           A.NODE_ID,
+           A.ROUTE_ID,
+           A.TRAVEL_ID,
+           A.CURRENT_QTY,
+           B.PART_NO,
+           B.OPTION1,
+           C.MASTER_WO,
+           C.PO_NO,
+           D.LEVEL_CODE
+      INTO TWO,
+           TPARTID,
+           TPROCESSID,
+           TNODEID,
+           TROUTEID,
+           TTRAVELID,
+           TQTY,
+           TPARTNO,
+           TSIZE,
+           TMASTERWO,
+           TPONO,
+           TLEVEL
+      FROM SAJET.G_RC_STATUS A,
+           SAJET.SYS_PART    B,
+           SAJET.G_WO_BASE   C,
+           SAJET.G_RC_LEVEL  D
+     WHERE A.RC_NO = TRC
+       AND A.PART_ID = B.PART_ID
+       AND A.WORK_ORDER = C.WORK_ORDER
+       AND A.RC_NO = D.RC_NO(+);
+  END IF;
+
+  --获取标准装修数量
+  BEGIN
+    SELECT PARAME_VALUE
+      INTO TSTDQTY
+      FROM SAJET.SYS_MODULE_PARAM
+     WHERE MODULE_NAME = 'PACKING'
+       AND FUNCTION_NAME = 'PACK CARTON'
+       AND PARAME_ITEM = 'CAPACITY'
+       AND PARAME_NAME = TSIZE;
+  EXCEPTION WHEN NO_DATA_FOUND THEN
+    O_RES := 'No Capacity found';
+    ROLLBACK;
+    RETURN;
+  END;
+
+  --获取当前箱号是否存在
+  SELECT COUNT(CARTON_NO)
+    INTO TCNT
+    FROM SAJET.G_PACK_CARTON
+   WHERE CARTON_NO = I_CARTON;
+
+  --装箱
+  UPDATE SAJET.G_RC_CARTON
+     SET CARTON_NO           = I_CARTON,
+         CREATECARTON_EMP_ID = I_EMPID,
+         CREATECARTON_TIME   = SYSDATE
+   WHERE BOX_NO = I_INPUT;
+
+  IF I_ACTION = '0' THEN
+    -- 获取当前箱号数量
+    SELECT SUM(QTY)
+      INTO TCARTON_QTY
+      FROM SAJET.G_RC_CARTON
+     WHERE CARTON_NO = I_CARTON;
+
+    -- 修正箱号数量
+    IF TCARTON_QTY > TSTDQTY THEN
+      UPDATE SAJET.G_RC_CARTON
+         SET QTY = QTY - (TCARTON_QTY - TSTDQTY)
+       WHERE BOX_NO = I_INPUT;
+    END IF;
+  END IF;
+
+  IF TCNT = 0 THEN
+    --获取序号
+    select nvl(max(lot_seq), 0) + 1
+      INTO TSEQ
+      from sajet.g_pack_carton
+     WHERE LOT_NO = I_LOTNO;
+  
+    --新增箱号
+    INSERT INTO SAJET.G_PACK_CARTON
+      (WORK_ORDER,
+       PART_ID,
+       CARTON_NO,
+       CLOSE_FLAG,
+       PROCESS_ID,
+       CREATE_EMP_ID,
+       CREATE_TIME,
+       LOT_NO,
+       LOT_SEQ)
+    VALUES
+      (TWO,
+       TPARTID,
+       I_CARTON,
+       'N',
+       TPROCESSID,
+       I_EMPID,
+       SYSDATE,
+       I_LOTNO,
+       TSEQ);
+  ELSE
+    --检查新装入后是否箱内数量达到300
+    IF I_ACTION = '1' THEN
+      SELECT SUM(QTY)
+        INTO TCNT
+        FROM SAJET.G_RC_CARTON
+       WHERE CARTON_NO = I_CARTON;
+    
+      IF TCNT = TSTDQTY THEN
+        O_FLAG := 'Y';
+        --关箱
+        UPDATE SAJET.G_RC_CARTON
+           SET CLOSECARTON_EMP_ID = I_EMPID, CLOSECARTON_TIME = SYSDATE
+         WHERE CARTON_NO = I_CARTON;
+      
+        UPDATE SAJET.G_PACK_CARTON
+           SET CLOSE_FLAG   = 'Y',
+               CLOSE_TIME   = SYSDATE,
+               CLOSE_EMP_ID = I_EMPID
+         WHERE CARTON_NO = I_CARTON;
+      END IF;
+    END IF;
+  END IF;
+
+  -- RC->CARTON 需拆批，另做處理
+  IF I_ACTION = '1' THEN
+  --流程卡过站 ,由于是单过站 ,需要把投入的数量也一起更新
+  -- Step.1
+    UPDATE SAJET.G_RC_STATUS
+       SET WIP_IN_QTY        = TQTY,
+           WIP_IN_EMPID      = I_EMPID,
+           WIP_IN_MEMO       = '',
+           WIP_IN_TIME       = SYSDATE,
+           WIP_OUT_GOOD_QTY  = TQTY,
+           WIP_OUT_SCRAP_QTY = 0,
+           WIP_OUT_EMPID     = I_EMPID,
+           WIP_OUT_MEMO      = '',
+           WIP_OUT_TIME      = SYSDATE,
+           CURRENT_QTY       = TQTY,
+           CURRENT_STATUS    = DECODE(TQTY, 0, 8, CURRENT_STATUS),
+           UPDATE_TIME       = SYSDATE,
+           UPDATE_USERID     = I_EMPID
+     WHERE RC_NO = TRC;
+    -- Step.2
+    INSERT INTO SAJET.G_RC_TRAVEL
+      (WORK_ORDER,
+       RC_NO,
+       PART_ID,
+       VERSION,
+       ROUTE_ID,
+       FACTORY_ID,
+       PDLINE_ID,
+       STAGE_ID,
+       NODE_ID,
+       PROCESS_ID,
+       TERMINAL_ID,
+       TRAVEL_ID,
+       CURRENT_QTY,
+       IN_PROCESS_EMPID,
+       IN_PROCESS_TIME,
+       WIP_PROCESS,
+       WIP_IN_QTY,
+       WIP_IN_EMPID,
+       WIP_IN_MEMO,
+       WIP_IN_TIME,
+       WIP_OUT_GOOD_QTY,
+       WIP_OUT_SCRAP_QTY,
+       WIP_OUT_EMPID,
+       WIP_OUT_MEMO,
+       WIP_OUT_TIME,
+       OUT_PROCESS_EMPID,
+       OUT_PROCESS_TIME,
+       HAVE_SN,
+       UPDATE_USERID,
+       UPDATE_TIME,
+       CREATE_TIME)
+      SELECT WORK_ORDER,
+             RC_NO,
+             PART_ID,
+             VERSION,
+             ROUTE_ID,
+             FACTORY_ID,
+             PDLINE_ID,
+             STAGE_ID,
+             NODE_ID,
+             PROCESS_ID,
+             TERMINAL_ID,
+             TRAVEL_ID,
+             CURRENT_QTY,
+             IN_PROCESS_EMPID,
+             IN_PROCESS_TIME,
+             NEXT_PROCESS,
+             WIP_IN_QTY,
+             WIP_IN_EMPID,
+             WIP_IN_MEMO,
+             WIP_IN_TIME,
+             WIP_OUT_GOOD_QTY,
+             WIP_OUT_SCRAP_QTY,
+             WIP_OUT_EMPID,
+             WIP_OUT_MEMO,
+             WIP_OUT_TIME,
+             OUT_PROCESS_EMPID,
+             OUT_PROCESS_TIME,
+             HAVE_SN,
+             UPDATE_USERID,
+             UPDATE_TIME,
+             CREATE_TIME
+        FROM SAJET.G_RC_STATUS
+       WHERE RC_NO = TRC;
+/*   mandy mark     
+    --STEP.3
+    UPDATE SAJET.G_SN_STATUS
+       SET UPDATE_USERID     = I_EMPID,
+           UPDATE_TIME       = SYSDATE,
+           OUT_PROCESS_TIME  = SYSDATE,
+           WIP_OUT_TIME      = SYSDATE,
+           OUT_PROCESS_EMPID = I_EMPID,
+           WIP_OUT_EMPID     = I_EMPID
+     WHERE RC_NO = TRC
+       AND PROCESS_ID = TPROCESSID;
+*/  
+/*   mandy mark
+    --STEP.4
+    INSERT INTO SAJET.G_SN_TRAVEL
+      (WORK_ORDER,
+       SERIAL_NUMBER,
+       PART_ID,
+       VERSION,
+       ROUTE_ID,
+       FACTORY_ID,
+       PDLINE_ID,
+       STAGE_ID,
+       NODE_ID,
+       PROCESS_ID,
+       SHEET_NAME,
+       TERMINAL_ID,
+       TRAVEL_ID,
+       NEXT_NODE,
+       NEXT_PROCESS,
+       GOOD_QTY,
+       SCRAP_QTY,
+       IN_PROCESS_EMPID,
+       IN_PROCESS_TIME,
+       WIP_IN_EMPID,
+       WIP_IN_MEMO,
+       WIP_IN_TIME,
+       WIP_OUT_EMPID,
+       WIP_OUT_MEMO,
+       WIP_OUT_TIME,
+       OUT_PROCESS_EMPID,
+       OUT_PROCESS_TIME,
+       UPDATE_USERID,
+       UPDATE_TIME,
+       RC_NO,
+       CSN,
+       PRE_SN,
+       SEQ,
+       CREATE_TIME)
+      -- CASSETTE_NO,
+       --CASSETTE_SEQ)
+      SELECT WORK_ORDER,
+             SERIAL_NUMBER,
+             PART_ID,
+             VERSION,
+             ROUTE_ID,
+             FACTORY_ID,
+             PDLINE_ID,
+             STAGE_ID,
+             NODE_ID,
+             PROCESS_ID,
+             SHEET_NAME,
+             TERMINAL_ID,
+             TRAVEL_ID,
+             NEXT_NODE,
+             NEXT_PROCESS,
+             GOOD_QTY,
+             SCRAP_QTY,
+             IN_PROCESS_EMPID,
+             IN_PROCESS_TIME,
+             WIP_IN_EMPID,
+             WIP_IN_MEMO,
+             WIP_IN_TIME,
+             WIP_OUT_EMPID,
+             WIP_OUT_MEMO,
+             WIP_OUT_TIME,
+             OUT_PROCESS_EMPID,
+             OUT_PROCESS_TIME,
+             UPDATE_USERID,
+             UPDATE_TIME,
+             RC_NO,
+             CSN,
+             PRE_SN,
+             SEQ,
+             CREATE_TIME
+             --CASSETTE_NO,
+             --CASSETTE_SEQ
+        FROM SAJET.G_SN_STATUS
+       WHERE RC_NO = TRC
+         AND PROCESS_ID = TPROCESSID;
+*/  
+    --STEP.5 获取下一站数据
+    SAJET.SJ_OUTPUT_GET_NODE(TRC,
+                             'RC',
+                             'NEXT',
+                             TROUTEID,
+                             TNEXT_NODE,
+                             TNEXT_PROCESS,
+                             TNEXT_NODE_2,
+                             TNEXT_PROCESS_2,
+                             TSHEET,
+                             TSTATUS,
+                             O_RES);
+    IF O_RES <> 'OK' THEN
+      GOTO ENDP;
+    END IF;
+    
+    ---RC状态为9则更新工单产出数量   Alisa   20161228
+    IF TSTATUS = 9 THEN
+      UPDATE SAJET.G_WO_BASE
+         SET OUTPUT_QTY    = TQTY + OUTPUT_QTY,
+             UPDATE_TIME   = SYSDATE,
+             UPDATE_USERID = I_EMPID
+       WHERE WORK_ORDER = TWO;
+    
+      INSERT INTO SAJET.G_HT_WO_BASE
+        SELECT * FROM SAJET.G_WO_BASE WHERE WORK_ORDER = TWO;
+    END IF;
+    --STEP.6 更新下一站数据
+    UPDATE SAJET.G_RC_STATUS
+       SET CURRENT_STATUS    = TSTATUS,
+           TRAVEL_ID         = TTRAVELID + 1,
+           NODE_ID           = TNEXT_NODE,
+           PROCESS_ID        = TNEXT_PROCESS,
+           SHEET_NAME        = TSHEET,
+           NEXT_NODE         = TNEXT_NODE_2,
+           NEXT_PROCESS      = TNEXT_PROCESS_2,
+           ROUTE_ID          = TROUTEID,
+           UPDATE_USERID     = I_EMPID,
+           UPDATE_TIME       = SYSDATE,
+           IN_PROCESS_EMPID  = NULL,
+           IN_PROCESS_TIME   = NULL,
+           WIP_IN_QTY        = NULL,
+           WIP_IN_EMPID      = NULL,
+           WIP_IN_MEMO       = NULL,
+           WIP_IN_TIME       = NULL,
+           WIP_OUT_GOOD_QTY  = NULL,
+           WIP_OUT_SCRAP_QTY = NULL,
+           WIP_OUT_EMPID     = NULL,
+           WIP_OUT_MEMO      = NULL,
+           WIP_OUT_TIME      = NULL,
+           OUT_PROCESS_EMPID = NULL,
+           OUT_PROCESS_TIME  = NULL,
+           BATCH_ID          = NULL
+     WHERE RC_NO = TRC;
+/*   mandy mark
+    UPDATE SAJET.G_SN_STATUS
+       SET NODE_ID        = TNEXT_NODE,
+           PROCESS_ID     = TNEXT_PROCESS,
+           SHEET_NAME     = TSHEET,
+           TRAVEL_ID      = TTRAVELID + 1,
+           NEXT_NODE      = TNEXT_NODE_2,
+           NEXT_PROCESS   = TNEXT_PROCESS_2,
+           ROUTE_ID       = TROUTEID,
+           UPDATE_USERID  = I_EMPID,
+           UPDATE_TIME    = SYSDATE,
+           CURRENT_STATUS = TSTATUS
+     WHERE RC_NO = TRC
+       AND PROCESS_ID = TPROCESSID;
+*/  
+/*   mandy mark
+    --包装结果抛给erp
+    INSERT INTO SAJET.ERP_INVENTORY_TRANSFER
+      (MASTER_WO,
+       PO_NO,
+       PART_NO,
+       WH_NO,
+       QTY,
+       LEVEL_CODE,
+       OPERATION_TYPE,
+       EMP_NAME,
+       IN_TIME,
+       UPDATE_TIME,
+       FLAG,
+       LOT_NO)
+    VALUES
+      (TMASTERWO,
+       TPONO,
+       TPARTNO,
+       '42',
+       TQTY,
+       TLEVEL,
+       'PI',
+       TEMPNAME,
+       SYSDATE,
+       SYSDATE,
+       'N',
+       I_CARTON);
+*/  
+    --检查工单是否完成
+    SELECT SAJET.F_CHK_WO_COMPELETE(TWO) INTO TWOFINISH FROM DUAL;
+    IF TWOFINISH = 'Y' THEN
+      --关闭工单
+      UPDATE SAJET.G_WO_BASE
+         SET WO_STATUS = '6', UPDATE_TIME = SYSDATE, UPDATE_USERID = I_EMPID
+       WHERE WORK_ORDER = TWO;
+    
+      INSERT INTO SAJET.G_HT_WO_BASE
+        SELECT * FROM SAJET.G_WO_BASE WHERE WORK_ORDER = TWO;
+    END IF;
+  END IF;
+
+  <<ENDP>>
+  IF O_RES <> 'OK' THEN
+    ROLLBACK;
+  END IF;
+EXCEPTION
+  WHEN OTHERS THEN
+    O_RES := SQLERRM;
+    ROLLBACK;
+END;
+/

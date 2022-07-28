@@ -1,0 +1,768 @@
+<log4j:event logger="ClientUtils" timestamp="1608535691354" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+BEGIN
+
+    INSERT INTO sajet.sys_process (
+        process_id,
+        process_name,
+        process_desc,
+        process_desc2,
+        process_code,
+        stage_id,
+        operate_id,
+        enabled,
+        update_userid,
+        update_time,
+        wip_erp
+    ) VALUES (
+        :process_id,
+        :process_name,
+        :process_desc,
+        :process_desc2,
+        :process_code,
+        :stage_id,
+        :operate_id,
+        'Y',
+        :update_userid,
+        :update_time,
+        :wip_erp
+    );
+
+    INSERT INTO sys_ht_process (
+        factory_id,
+        process_id,
+        process_name,
+        stage_id,
+        process_code,
+        process_desc,
+        operate_id,
+        update_userid,
+        update_time,
+        enabled,
+        process_desc2,
+        wip_erp
+    )
+        SELECT
+            factory_id,
+            process_id,
+            process_name,
+            stage_id,
+            process_code,
+            process_desc,
+            operate_id,
+            update_userid,
+            update_time,
+            enabled,
+            process_desc2,
+            wip_erp
+        FROM
+            sajet.sys_process
+        WHERE
+            process_id = :process_id;
+
+    INSERT INTO sajet.sys_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        update_userid,
+        update_time
+    ) VALUES (
+        (
+            SELECT
+                factory_id
+            FROM
+                sajet.sys_factory
+            WHERE
+                ROWNUM = 1
+        ),
+        :stage_id,
+        :process_id,
+        :option1,
+        :option2,
+        :option3,
+        :option4,
+        :option5,
+        :update_userid,
+        :update_time
+    );
+
+    INSERT INTO sajet.sys_ht_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        option6,
+        option7,
+        option8,
+        option9,
+        option10,
+        update_userid,
+        update_time
+    )
+        SELECT
+            factory_id,
+            stage_id,
+            process_id,
+            option1,
+            option2,
+            option3,
+            option4,
+            option5,
+            option6,
+            option7,
+            option8,
+            option9,
+            option10,
+            update_userid,
+            update_time
+        FROM
+            sajet.sys_process_option
+        WHERE
+            process_id = :process_id;
+
+    INSERT INTO sajet.sys_rc_process_sheet (
+        process_id,
+        sheet_seq,
+        sheet_name,
+        sheet_phase,
+        next_sheet,
+        link_name,
+        update_userid,
+        update_time
+    ) VALUES (
+        :process_id,
+        :sheet_seq,
+        :sheet_name,
+        :sheet_phase,
+        :next_sheet,
+        :link_name,
+        :update_userid,
+        sysdate
+    );
+END;
+:ORA-06550: 第 30 行, 第 17 個欄位: 
+PL/SQL: ORA-00942: 表格或視觀表不存在
+ORA-06550: 第 30 行, 第 5 個欄位: 
+PL/SQL: SQL Statement ignored</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608536495337" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+BEGIN
+
+    INSERT INTO sajet.sys_process (
+        process_id,
+        process_name,
+        process_desc,
+        process_desc2,
+        process_code,
+        stage_id,
+        operate_id,
+        enabled,
+        update_userid,
+        update_time,
+        wip_erp
+    ) VALUES (
+        :process_id,
+        :process_name,
+        :process_desc,
+        :process_desc2,
+        :process_code,
+        :stage_id,
+        :operate_id,
+        'Y',
+        :update_userid,
+        :update_time,
+        :wip_erp
+    );
+
+    INSERT INTO sys_ht_process (
+        factory_id,
+        process_id,
+        process_name,
+        stage_id,
+        process_code,
+        process_desc,
+        operate_id,
+        update_userid,
+        update_time,
+        enabled,
+        process_desc2,
+        wip_erp
+    )
+        SELECT
+            factory_id,
+            process_id,
+            process_name,
+            stage_id,
+            process_code,
+            process_desc,
+            operate_id,
+            update_userid,
+            update_time,
+            enabled,
+            process_desc2,
+            wip_erp
+        FROM
+            sajet.sys_process
+        WHERE
+            process_id = :process_id;
+
+    INSERT INTO sajet.sys_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        update_userid,
+        update_time
+    ) VALUES (
+        (
+            SELECT
+                factory_id
+            FROM
+                sajet.sys_factory
+            WHERE
+                ROWNUM = 1
+        ),
+        :stage_id,
+        :process_id,
+        :option1,
+        :option2,
+        :option3,
+        :option4,
+        :option5,
+        :update_userid,
+        :update_time
+    );
+
+    INSERT INTO sajet.sys_ht_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        option6,
+        option7,
+        option8,
+        option9,
+        option10,
+        update_userid,
+        update_time
+    )
+        SELECT
+            factory_id,
+            stage_id,
+            process_id,
+            option1,
+            option2,
+            option3,
+            option4,
+            option5,
+            option6,
+            option7,
+            option8,
+            option9,
+            option10,
+            update_userid,
+            update_time
+        FROM
+            sajet.sys_process_option
+        WHERE
+            process_id = :process_id;
+
+    INSERT INTO sajet.sys_rc_process_sheet (
+        process_id,
+        sheet_seq,
+        sheet_name,
+        sheet_phase,
+        next_sheet,
+        link_name,
+        update_userid,
+        update_time
+    ) VALUES (
+        :process_id,
+        :sheet_seq,
+        :sheet_name,
+        :sheet_phase,
+        :next_sheet,
+        :link_name,
+        :update_userid,
+        sysdate
+    );
+END;
+:ORA-06550: 第 30 行, 第 17 個欄位: 
+PL/SQL: ORA-00942: 表格或視觀表不存在
+ORA-06550: 第 30 行, 第 5 個欄位: 
+PL/SQL: SQL Statement ignored</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608536516144" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+BEGIN
+
+    INSERT INTO sajet.sys_process (
+        process_id,
+        process_name,
+        process_desc,
+        process_desc2,
+        process_code,
+        stage_id,
+        operate_id,
+        enabled,
+        update_userid,
+        update_time,
+        wip_erp
+    ) VALUES (
+        :process_id,
+        :process_name,
+        :process_desc,
+        :process_desc2,
+        :process_code,
+        :stage_id,
+        :operate_id,
+        'Y',
+        :update_userid,
+        :update_time,
+        :wip_erp
+    );
+
+    INSERT INTO sys_ht_process (
+        factory_id,
+        process_id,
+        process_name,
+        stage_id,
+        process_code,
+        process_desc,
+        operate_id,
+        update_userid,
+        update_time,
+        enabled,
+        process_desc2,
+        wip_erp
+    )
+        SELECT
+            factory_id,
+            process_id,
+            process_name,
+            stage_id,
+            process_code,
+            process_desc,
+            operate_id,
+            update_userid,
+            update_time,
+            enabled,
+            process_desc2,
+            wip_erp
+        FROM
+            sajet.sys_process
+        WHERE
+            process_id = :process_id;
+
+    INSERT INTO sajet.sys_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        update_userid,
+        update_time
+    ) VALUES (
+        (
+            SELECT
+                factory_id
+            FROM
+                sajet.sys_factory
+            WHERE
+                ROWNUM = 1
+        ),
+        :stage_id,
+        :process_id,
+        :option1,
+        :option2,
+        :option3,
+        :option4,
+        :option5,
+        :update_userid,
+        :update_time
+    );
+
+    INSERT INTO sajet.sys_ht_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        option6,
+        option7,
+        option8,
+        option9,
+        option10,
+        update_userid,
+        update_time
+    )
+        SELECT
+            factory_id,
+            stage_id,
+            process_id,
+            option1,
+            option2,
+            option3,
+            option4,
+            option5,
+            option6,
+            option7,
+            option8,
+            option9,
+            option10,
+            update_userid,
+            update_time
+        FROM
+            sajet.sys_process_option
+        WHERE
+            process_id = :process_id;
+
+    INSERT INTO sajet.sys_rc_process_sheet (
+        process_id,
+        sheet_seq,
+        sheet_name,
+        sheet_phase,
+        next_sheet,
+        link_name,
+        update_userid,
+        update_time
+    ) VALUES (
+        :process_id,
+        :sheet_seq,
+        :sheet_name,
+        :sheet_phase,
+        :next_sheet,
+        :link_name,
+        :update_userid,
+        sysdate
+    );
+END;
+:ORA-06550: 第 30 行, 第 17 個欄位: 
+PL/SQL: ORA-00942: 表格或視觀表不存在
+ORA-06550: 第 30 行, 第 5 個欄位: 
+PL/SQL: SQL Statement ignored</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608541009085" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+BEGIN
+    UPDATE sajet.sys_process
+    SET
+        process_code = :process_code,
+        process_name = :process_name,
+        process_desc = :process_desc,
+        process_desc2 = :process_desc2,
+        operate_id = :operate_id,
+        update_userid = :update_userid,
+        update_time = :update_time,
+        wip_erp = :wip_erp
+    WHERE
+        process_id = :process_id;
+
+    INSERT INTO sys_ht_process (
+        factory_id,
+        process_id,
+        process_name,
+        stage_id,
+        process_code,
+        process_desc,
+        operate_id,
+        update_userid,
+        update_time,
+        enabled,
+        process_desc2,
+        wip_erp
+    )
+        SELECT
+            factory_id,
+            process_id,
+            process_name,
+            stage_id,
+            process_code,
+            process_desc,
+            operate_id,
+            update_userid,
+            update_time,
+            enabled,
+            process_desc2,
+            wip_erp
+        FROM
+            sajet.sys_process
+        WHERE
+            process_id = :process_id;
+
+    UPDATE sajet.sys_process_option
+    SET
+        option1 = :option1,
+        option2 = :option2,
+        option3 = :option3,
+        option4 = :option4,
+        option5 = :option5,
+        update_userid = :update_userid,
+        update_time = :update_time
+    WHERE
+        process_id = :process_id;
+
+    INSERT INTO sajet.sys_ht_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        option6,
+        option7,
+        option8,
+        option9,
+        option10,
+        update_userid,
+        update_time
+    )
+        SELECT
+            factory_id,
+            stage_id,
+            process_id,
+            option1,
+            option2,
+            option3,
+            option4,
+            option5,
+            option6,
+            option7,
+            option8,
+            option9,
+            option10,
+            update_userid,
+            update_time
+        FROM
+            sajet.sys_process_option
+        WHERE
+            process_id = :process_id;
+
+END;
+:ORA-06550: 第 16 行, 第 17 個欄位: 
+PL/SQL: ORA-00942: 表格或視觀表不存在
+ORA-06550: 第 16 行, 第 5 個欄位: 
+PL/SQL: SQL Statement ignored</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608541035211" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+BEGIN
+    UPDATE sajet.sys_process
+    SET
+        process_code = :process_code,
+        process_name = :process_name,
+        process_desc = :process_desc,
+        process_desc2 = :process_desc2,
+        operate_id = :operate_id,
+        update_userid = :update_userid,
+        update_time = :update_time,
+        wip_erp = :wip_erp
+    WHERE
+        process_id = :process_id;
+
+    INSERT INTO sys_ht_process (
+        factory_id,
+        process_id,
+        process_name,
+        stage_id,
+        process_code,
+        process_desc,
+        operate_id,
+        update_userid,
+        update_time,
+        enabled,
+        process_desc2,
+        wip_erp
+    )
+        SELECT
+            factory_id,
+            process_id,
+            process_name,
+            stage_id,
+            process_code,
+            process_desc,
+            operate_id,
+            update_userid,
+            update_time,
+            enabled,
+            process_desc2,
+            wip_erp
+        FROM
+            sajet.sys_process
+        WHERE
+            process_id = :process_id;
+
+    UPDATE sajet.sys_process_option
+    SET
+        option1 = :option1,
+        option2 = :option2,
+        option3 = :option3,
+        option4 = :option4,
+        option5 = :option5,
+        update_userid = :update_userid,
+        update_time = :update_time
+    WHERE
+        process_id = :process_id;
+
+    INSERT INTO sajet.sys_ht_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        option6,
+        option7,
+        option8,
+        option9,
+        option10,
+        update_userid,
+        update_time
+    )
+        SELECT
+            factory_id,
+            stage_id,
+            process_id,
+            option1,
+            option2,
+            option3,
+            option4,
+            option5,
+            option6,
+            option7,
+            option8,
+            option9,
+            option10,
+            update_userid,
+            update_time
+        FROM
+            sajet.sys_process_option
+        WHERE
+            process_id = :process_id;
+
+END;
+:ORA-06550: 第 16 行, 第 17 個欄位: 
+PL/SQL: ORA-00942: 表格或視觀表不存在
+ORA-06550: 第 16 行, 第 5 個欄位: 
+PL/SQL: SQL Statement ignored</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608541053144" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+BEGIN
+    UPDATE sajet.sys_process
+    SET
+        process_code = :process_code,
+        process_name = :process_name,
+        process_desc = :process_desc,
+        process_desc2 = :process_desc2,
+        operate_id = :operate_id,
+        update_userid = :update_userid,
+        update_time = :update_time,
+        wip_erp = :wip_erp
+    WHERE
+        process_id = :process_id;
+
+    INSERT INTO sys_ht_process (
+        factory_id,
+        process_id,
+        process_name,
+        stage_id,
+        process_code,
+        process_desc,
+        operate_id,
+        update_userid,
+        update_time,
+        enabled,
+        process_desc2,
+        wip_erp
+    )
+        SELECT
+            factory_id,
+            process_id,
+            process_name,
+            stage_id,
+            process_code,
+            process_desc,
+            operate_id,
+            update_userid,
+            update_time,
+            enabled,
+            process_desc2,
+            wip_erp
+        FROM
+            sajet.sys_process
+        WHERE
+            process_id = :process_id;
+
+    UPDATE sajet.sys_process_option
+    SET
+        option1 = :option1,
+        option2 = :option2,
+        option3 = :option3,
+        option4 = :option4,
+        option5 = :option5,
+        update_userid = :update_userid,
+        update_time = :update_time
+    WHERE
+        process_id = :process_id;
+
+    INSERT INTO sajet.sys_ht_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        option6,
+        option7,
+        option8,
+        option9,
+        option10,
+        update_userid,
+        update_time
+    )
+        SELECT
+            factory_id,
+            stage_id,
+            process_id,
+            option1,
+            option2,
+            option3,
+            option4,
+            option5,
+            option6,
+            option7,
+            option8,
+            option9,
+            option10,
+            update_userid,
+            update_time
+        FROM
+            sajet.sys_process_option
+        WHERE
+            process_id = :process_id;
+
+END;
+:ORA-06550: 第 16 行, 第 17 個欄位: 
+PL/SQL: ORA-00942: 表格或視觀表不存在
+ORA-06550: 第 16 行, 第 5 個欄位: 
+PL/SQL: SQL Statement ignored</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>

@@ -1,0 +1,284 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636432004613" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1636432011724" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    WHERE 1=1
+   
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      WHERE 1=1
+     
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      WHERE 1=1
+      
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+   WHERE 1=1
+   
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1
+
+ORDER BY SEQ:ORA-01476: 除數等於 0</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636437274273" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1636439298620" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      WHERE 1=1
+     AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      WHERE 1=1
+      AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+   WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1
+AND MACHINE_CODE = :MA
+ORDER BY SEQ:ORA-01476: 除數等於 0]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636440341693" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636442186827" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636451510554" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636451928331" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636452219031" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1636452224703" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT WO_10C.WORK_ORDER ,
+       RC_10C.RC_NO "10C_RC_NO",
+       A.LOAD_PORT,
+       RC_10B.RC_NO "10B_RC_NO",
+       T4.MACHINE_CODE||T4_MAC_D.DATE_CODE T4_BOILER,
+       T6.MACHINE_CODE||T6_MAC_D.DATE_CODE T6_BOILER,
+       VAL_10C.VALUE_DEFAULT
+FROM SAJET.g_rc_travel_machine_down A
+LEFT JOIN  SAJET.G_RC_STATUS RC_10C ON A.RC_NO = RC_10C.RC_NO
+LEFT JOIN SAJET.G_WO_BASE WO_10C ON RC_10C.WORK_ORDER = WO_10C.WORK_ORDER
+LEFT JOIN SAJET.SYS_PART P_10C ON RC_10C.PART_ID = P_10C.PART_ID
+LEFT JOIN SAJET.SYS_CUSTOMER CUS_10C ON WO_10C.CUSTOMER_ID = CUS_10C.CUSTOMER_ID
+LEFT JOIN SAJET.G_RC_STATUS RC_10B ON A.RC_NO = RC_10B.RC_NO
+LEFT JOIN SAJET.SYS_PART P_10B ON RC_10B.PART_ID = P_10B.PART_ID
+LEFT JOIN(SELECT * FROM SAJET.SYS_MACHINE WHERE MACHINE_CODE LIKE 'T4%')T4 ON A.MACHINE_ID = T4.MACHINE_ID
+LEFT JOIN SAJET.G_RC_TRAVEL_MACHINE_DOWN T4_MAC_D ON T4_MAC_D.MACHINE_ID = T4.MACHINE_ID
+LEFT JOIN(SELECT * FROM SAJET.SYS_MACHINE WHERE MACHINE_CODE LIKE 'T6%')T6 ON A.MACHINE_ID = T6.MACHINE_ID
+LEFT JOIN SAJET.G_RC_TRAVEL_MACHINE_DOWN T6_MAC_D ON T6_MAC_D.MACHINE_ID = T6.MACHINE_ID
+LEFT JOIN (SELECT * FROM SAJET.SYS_RC_PROCESS_PARAM_PART WHERE ITEM_NAME LIKE '爐號%' AND PROCESS_ID = '100156')VAL_10C ON RC_10C.PART_ID = VAL_10C.PART_ID
+where 1=1
+ AND  WO_10C.WORK_ORDER = :WorkOrder:ORA-00904: "A"."LOAD_PORT": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636452416509" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636452458519" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636452760553" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1636452764957" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT DISTINCT WO_10C.WO_CREATE_DATE  ,CUS_10C.CUSTOMER_NAME,
+       P_10C.SPEC2 ,P_10C.VERSION ,P_10B.SPEC2 "B_SPEC2" ,P_10C.PART_NO ,
+        WO_10C.WORK_ORDER  "WorkOrder" ,WO_10C.TARGET_QTY 
+   FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+JOIN SAJET.G_RC_STATUS RC_10C ON A.RC_NO = RC_10C.RC_NO
+LEFT JOIN SAJET.G_WO_BASE WO_10C ON RC_10C.WORK_ORDER = WO_10C.WORK_ORDER
+LEFT JOIN SAJET.SYS_PART P_10C ON RC_10C.PART_ID = P_10C.PART_ID
+LEFT JOIN SAJET.SYS_CUSTOMER CUS_10C ON WO_10C.CUSTOMER_ID = CUS_10C.CUSTOMER_ID
+LEFT JOIN SAJET.SYS_MACHINE MAC_10C ON A.MACHINE_ID = MAC_10C.MACHINE_ID
+LEFT JOIN SAJET.G_RC_STATUS RC_10B ON A.RC_NO = RC_10B.RC_NO
+LEFT JOIN SAJET.SYS_PART P_10B ON RC_10B.PART_ID = P_10B.PART_ID
+WHERE 1=1 
+
+
+
+ORDER BY A.START_TIME DESC
+:ORA-01791: 不是選取的表示式</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636452936833" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1636453300006" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>

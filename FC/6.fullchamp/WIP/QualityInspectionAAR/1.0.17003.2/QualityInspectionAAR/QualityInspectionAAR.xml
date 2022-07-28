@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <English>
+    <!-- Form control text -->
+    <Message Name="STAGE_NAME" Value="Stage name" />
+    <Message Name="PROCESS_NAME" Value="Process name" />
+    <Message Name="WORK_ORDER" Value="WorkOrder" />
+    <Message Name="WORK ORDER" Value="WorkOrder" />
+    <Message Name="RC_NO" Value="Runcard no." />
+    <Message Name="SEARCH" Value="Search" />
+    <Message Name="CLEAR" Value="Clear" />
+    <Message Name="SAVE" Value="Save" />
+    <Message Name="CANCEL" Value="Cancel" />
+    <Message Name="CLOSE" Value="Close" />
+    <Message Name="TOTAL QTY" Value="Process total QTY" />
+    <Message Name="SAMPLE PLAN" Value="Sampling plan" />
+    <Message Name="TARGET QTY" Value="Target sampling QTY" />
+    <Message Name="TOTAL SAMPLED QTY" Value="Total sampling QTY" />
+    <Message Name="EMP" Value="Employee" />
+    <Message Name="RC REMAIN QTY" Value="RC remain QTY" />
+    <Message Name="RC SAMPLED QTY" Value="RC sampled QTY" />
+
+    <!-- Data column -->
+    <Message Name="PART_NO" Value="Part no." />
+    <Message Name="FORMER_PART_NO" Value="Former part no." />
+    <Message Name="SPEC" Value="Product name/ Specification" />
+    <Message Name="CURRENT_QTY" Value="Current quantity" />
+    <Message Name="COLLECTED_QTY" Value="Inspected quantity" />
+    <Message Name="IN_PROCESS_TIME" Value="In-process time" />
+    <Message Name="OUT_PROCESS_TIME" Value="Out-process time" />
+    <Message Name="UPDATE_TIME" Value="Update time" />
+    <Message Name="INSPECTION_TIME" Value="Inspection time" />
+    <Message Name="EMP_NAME" Value="Employee" />
+    <Message Name="QCInspection" Value="Inspection" />
+    <Message Name="InputValue" Value="Input value" />
+
+    <!-- Notification -->
+    <Message Name="UnknownRCNO" Value="Unknown runcard no."/>
+    <Message Name="Error" Value="Error"/>
+    <Message Name="SaveDataError" Value="Save data error"/>
+    <Message Name="OutOfRange" Value="Out of range"/>
+    <Message Name="InvalidData" Value="Invalid data"/>
+    <Message Name="EmptyData" Value="Data can not be empty"/>
+    <Message Name="NoAccessibleData" Value="No accessible data"/>
+
+    <!-- Others -->
+    <Message Name="ITEM_NAME" Value="Item name"/>
+    <Message Name="UNIT_NO" Value="Unit"/>
+  </English>
+
+  <繁體中文>
+    <!-- 表單上的文字 -->
+    <Message Name="STAGE_NAME" Value="區段" />
+    <Message Name="PROCESS_NAME" Value="製程" />
+    <Message Name="WORK_ORDER" Value="工單號碼" />
+    <Message Name="WORK ORDER" Value="工單號碼" />
+    <Message Name="RC_NO" Value="流程卡號" />
+    <Message Name="SEARCH" Value="搜尋" />
+    <Message Name="CLEAR" Value="清除" />
+    <Message Name="SAVE" Value="儲存" />
+    <Message Name="CANCEL" Value="取消" />
+    <Message Name="CLOSE" Value="關閉" />
+    <Message Name="TOTAL QTY" Value="製程批量總數" />
+    <Message Name="SAMPLE PLAN" Value="抽驗計畫" />
+    <Message Name="TARGET QTY" Value="應抽數" />
+    <Message Name="TOTAL SAMPLED QTY" Value="已抽數" />
+    <Message Name="EMP" Value="員工" />
+    <Message Name="RC REMAIN QTY" Value="RC 可抽數" />
+    <Message Name="RC SAMPLED QTY" Value="RC 已抽數" />
+
+    <!-- 資料欄位 -->
+    <Message Name="PART_NO" Value="料號" />
+    <Message Name="FORMER_PART_NO" Value="舊編" />
+    <Message Name="SPEC" Value="品名/ 規格" />
+    <Message Name="CURRENT_QTY" Value="當前數量" />
+    <Message Name="COLLECTED_QTY" Value="已抽檢數量" />
+    <Message Name="IN_PROCESS_TIME" Value="投入時間" />
+    <Message Name="OUT_PROCESS_TIME" Value="產出時間" />
+    <Message Name="UPDATE_TIME" Value="更新時間" />
+    <Message Name="INSPECTION_TIME" Value="檢驗時間" />
+    <Message Name="EMP_NAME" Value="員工" />
+    <Message Name="QCInspection" Value="品檢" />
+    <Message Name="InputValue" Value="輸入值" />
+
+    <!-- 提示訊息 -->
+    <Message Name="UnknownRCNO" Value="未知的流程卡號"/>
+    <Message Name="Error" Value="錯誤"/>
+    <Message Name="SaveDataError" Value="儲存資料錯誤"/>
+    <Message Name="OutOfRange" Value="超出範圍"/>
+    <Message Name="InvalidData" Value="無效的數據"/>
+    <Message Name="EmptyData" Value="資料不可為空"/>
+    <Message Name="NoAccessibleData" Value="沒有可存取的資料"/>
+
+    <!-- 其他 -->
+    <Message Name="ITEM_NAME" Value="項目名稱"/>
+    <Message Name="UNIT_NO" Value="單位"/>
+  </繁體中文>
+</Chroma>

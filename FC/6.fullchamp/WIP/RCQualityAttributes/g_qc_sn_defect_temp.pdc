@@ -1,0 +1,20 @@
+-- Create table
+create table G_QC_SN_DEFECT_TEMP
+(
+  qc_lotno      VARCHAR2(50),
+  serial_number VARCHAR2(40),
+  defect_id     NUMBER,
+  defect_qty    NUMBER default 1,
+  item_type_id  NUMBER
+)
+tablespace SYSBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );

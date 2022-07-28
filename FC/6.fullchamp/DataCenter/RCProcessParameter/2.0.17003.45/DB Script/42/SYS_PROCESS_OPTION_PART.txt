@@ -1,0 +1,1 @@
+update SAJET.SYS_PROCESS_OPTION_PART set option1= option1*60 where 1=1 ;

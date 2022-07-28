@@ -1,0 +1,19 @@
+-- Create table
+create table G_PACK_CARTON_LOTNO
+(
+  lot_no      VARCHAR2(50),
+  end_flag    VARCHAR2(5) default 'N',
+  emp_id      NUMBER,
+  update_time DATE default sysdate
+)
+tablespace SYSBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );

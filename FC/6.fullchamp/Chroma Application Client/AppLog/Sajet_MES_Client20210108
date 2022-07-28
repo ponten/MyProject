@@ -1,0 +1,110 @@
+<log4j:event logger="ClientUtils" timestamp="1610071621140" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+INSERT ALL
+
+  INTO SAJET.G_MACHINE_T4_BINDING (
+    RC_NO_10C,
+    PROCESS_ID_10C,
+    RC_NO_T4,
+    PROCESS_ID_T4,
+    MACHINE_ID,
+    BINDING_QTY,
+    UPDATE_USERID,
+    UPDATE_TIME
+) VALUES (
+    :RC_NO_10C_1,
+    :PROCESS_ID_10C_1,
+    :RC_NO_T4_1,
+    :PROCESS_ID_T4_1,
+    :MACHINE_ID_1,
+    :BINDING_QTY_1,
+    :UPDATE_USERID,
+    :UPDATE_TIME
+)
+  INTO SAJET.G_MACHINE_T4_BINDING (
+    RC_NO_10C,
+    PROCESS_ID_10C,
+    RC_NO_T4,
+    PROCESS_ID_T4,
+    MACHINE_ID,
+    BINDING_QTY,
+    UPDATE_USERID,
+    UPDATE_TIME
+) VALUES (
+    :RC_NO_10C_2,
+    :PROCESS_ID_10C_2,
+    :RC_NO_T4_2,
+    :PROCESS_ID_T4_2,
+    :MACHINE_ID_2,
+    :BINDING_QTY_2,
+    :UPDATE_USERID,
+    :UPDATE_TIME
+)
+  INTO SAJET.G_MACHINE_T4_BINDING (
+    RC_NO_10C,
+    PROCESS_ID_10C,
+    RC_NO_T4,
+    PROCESS_ID_T4,
+    MACHINE_ID,
+    BINDING_QTY,
+    UPDATE_USERID,
+    UPDATE_TIME
+) VALUES (
+    :RC_NO_10C_3,
+    :PROCESS_ID_10C_3,
+    :RC_NO_T4_3,
+    :PROCESS_ID_T4_3,
+    :MACHINE_ID_3,
+    :BINDING_QTY_3,
+    :UPDATE_USERID,
+    :UPDATE_TIME
+)
+  INTO SAJET.G_MACHINE_T4_BINDING (
+    RC_NO_10C,
+    PROCESS_ID_10C,
+    RC_NO_T4,
+    PROCESS_ID_T4,
+    MACHINE_ID,
+    BINDING_QTY,
+    UPDATE_USERID,
+    UPDATE_TIME
+) VALUES (
+    :RC_NO_10C_4,
+    :PROCESS_ID_10C_4,
+    :RC_NO_T4_4,
+    :PROCESS_ID_T4_4,
+    :MACHINE_ID_4,
+    :BINDING_QTY_4,
+    :UPDATE_USERID,
+    :UPDATE_TIME
+)
+SELECT 1 FROM DUAL
+:ORA-12899: 資料欄 "SAJET"."G_MACHINE_T4_BINDING"."RC_NO_10C" 的值太大 (實際: 26, 最大值: 20)</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1610072352689" level="FATAL" thread="1"><log4j:message>輸入字串格式不正確。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 輸入字串格式不正確。
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 RCOutput.Services.T4Service.GetT4MachineUsedRecords(String T4RC, String T4ProcessID) 於 C:\FullChamp\fullchamp\WIP\RCOutput\1.0.17003.32\RCOutput\Services\T4Service.cs: 行 282
+   於 RCOutput.fMain.BtnAddT4_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput\1.0.17003.32\RCOutput\fMain.cs: 行 1706
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Number" method="Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1610083301314" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput.fMain.DgvT4_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput\1.0.17003.32\RCOutput\fMain.cs: 行 1841
+   於 RCOutput.fMain.BtnRemoveT4_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput\1.0.17003.32\RCOutput\fMain.cs: 行 1783
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCOutput.fMain" method="Void DgvT4_CellClick(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput.dll" line="0" /></log4j:event>

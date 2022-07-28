@@ -1,0 +1,209 @@
+-- Create table
+create table G_SN_TRAVEL
+(
+  work_order        VARCHAR2(25),
+  serial_number     VARCHAR2(40),
+  part_id           NUMBER,
+  version           VARCHAR2(25),
+  route_id          NUMBER default 0,
+  factory_id        NUMBER default 0,
+  pdline_id         NUMBER default 0,
+  stage_id          NUMBER default 0,
+  node_id           NUMBER default 0,
+  process_id        NUMBER default 0,
+  sheet_name        VARCHAR2(40) default 0,
+  terminal_id       NUMBER default 0,
+  travel_id         NUMBER default 1,
+  next_node         NUMBER default 0,
+  next_process      NUMBER default 0,
+  current_status    VARCHAR2(1) default 0,
+  good_qty          NUMBER default 0,
+  scrap_qty         NUMBER default 0,
+  in_process_empid  NUMBER,
+  in_process_time   DATE,
+  wip_in_empid      NUMBER,
+  wip_in_memo       VARCHAR2(250),
+  wip_in_time       DATE,
+  wip_out_empid     NUMBER,
+  wip_out_memo      VARCHAR2(250),
+  wip_out_time      DATE,
+  out_process_empid NUMBER,
+  out_process_time  DATE,
+  priority_level    NUMBER default 0,
+  update_userid     NUMBER,
+  update_time       DATE,
+  rc_no             VARCHAR2(50) default 'N/A',
+  csn               VARCHAR2(40),
+  pre_sn            VARCHAR2(40),
+  batch_id          NUMBER,
+  seq               NUMBER,
+  create_time       DATE
+)
+tablespace SYSTRAVEL
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 272
+    next 8
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table G_SN_TRAVEL
+  is '在製品管制表';
+-- Add comments to the columns 
+comment on column G_SN_TRAVEL.work_order
+  is '工單號碼';
+comment on column G_SN_TRAVEL.serial_number
+  is '元件序號';
+comment on column G_SN_TRAVEL.part_id
+  is '料號';
+comment on column G_SN_TRAVEL.version
+  is '版本編號';
+comment on column G_SN_TRAVEL.route_id
+  is '途程代碼';
+comment on column G_SN_TRAVEL.factory_id
+  is '廠別編號';
+comment on column G_SN_TRAVEL.pdline_id
+  is '生產線編號';
+comment on column G_SN_TRAVEL.stage_id
+  is '區段編號';
+comment on column G_SN_TRAVEL.node_id
+  is '節點編號';
+comment on column G_SN_TRAVEL.process_id
+  is '製程編號';
+comment on column G_SN_TRAVEL.sheet_name
+  is '製程表單編號';
+comment on column G_SN_TRAVEL.terminal_id
+  is '工作站編號';
+comment on column G_SN_TRAVEL.travel_id
+  is '歷程編號(流水號遞增)';
+comment on column G_SN_TRAVEL.next_node
+  is '下站節點編號';
+comment on column G_SN_TRAVEL.next_process
+  is '下站製程';
+comment on column G_SN_TRAVEL.good_qty
+  is '良品數';
+comment on column G_SN_TRAVEL.scrap_qty
+  is '不良品數';
+comment on column G_SN_TRAVEL.in_process_empid
+  is '進入製程的員工代碼';
+comment on column G_SN_TRAVEL.in_process_time
+  is '進入製程的時間';
+comment on column G_SN_TRAVEL.wip_in_empid
+  is 'INPUT員工代碼';
+comment on column G_SN_TRAVEL.wip_in_memo
+  is 'INPUT說明';
+comment on column G_SN_TRAVEL.wip_in_time
+  is 'INPUT時間';
+comment on column G_SN_TRAVEL.wip_out_empid
+  is 'OUTPUT員工代碼';
+comment on column G_SN_TRAVEL.wip_out_memo
+  is 'OUTPUT說明';
+comment on column G_SN_TRAVEL.wip_out_time
+  is 'OUTPUT時間';
+comment on column G_SN_TRAVEL.out_process_empid
+  is '離開製程的員工代碼';
+comment on column G_SN_TRAVEL.out_process_time
+  is '離開製程的時間';
+comment on column G_SN_TRAVEL.update_userid
+  is '資料異動人員';
+comment on column G_SN_TRAVEL.update_time
+  is '資料異動時間';
+comment on column G_SN_TRAVEL.rc_no
+  is '流程卡號';
+comment on column G_SN_TRAVEL.batch_id
+  is '批次号';
+comment on column G_SN_TRAVEL.seq
+  is '位置';
+-- Create/Recreate indexes 
+create index G_SN_TRAVEL_IDX on G_SN_TRAVEL (SERIAL_NUMBER)
+  tablespace SYSTRAVELIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 41M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_SN_TRAVEL_IN_PROCESS_IDX on G_SN_TRAVEL (IN_PROCESS_TIME)
+  tablespace SYSTRAVELIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 39M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_SN_TRAVEL_MODEL_IDX on G_SN_TRAVEL (PART_ID)
+  tablespace SYSTRAVELIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 38M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_SN_TRAVEL_NEXT_IDX on G_SN_TRAVEL (NEXT_PROCESS)
+  tablespace SYSTRAVELIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 31M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_SN_TRAVEL_OUT_PROCESS_IDX on G_SN_TRAVEL (OUT_PROCESS_TIME)
+  tablespace SYSTRAVELIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 43M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_SN_TRAVEL_PROCESS_IDX on G_SN_TRAVEL (PROCESS_ID)
+  tablespace SYSTRAVELIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 28M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_SN_TRAVEL_WO_IDX on G_SN_TRAVEL (WORK_ORDER)
+  tablespace SYSTRAVELIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 49M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on G_SN_TRAVEL to SJ;
+grant select, insert, update, delete on G_SN_TRAVEL to SMT;
+grant select, insert, update, delete on G_SN_TRAVEL to SYS_USER;

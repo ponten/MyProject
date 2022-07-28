@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<ExceptionSolution>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>NodePath GetNodeByIndex(Int32)</AppFunctionName>
+    <AppModuleFileName>System.Data.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Data</AppModuleNameSpace>
+    <AppModuleClassName>RBTree`1</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void System.Collections.IList.Clear()</AppFunctionName>
+    <AppModuleFileName>System.Data.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Data</AppModuleNameSpace>
+    <AppModuleClassName>DataView</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>System.Data.DataColumn GetDataColumn(System.String)</AppFunctionName>
+    <AppModuleFileName>System.Data.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Data</AppModuleNameSpace>
+    <AppModuleClassName>DataRow</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void InsertRow(System.Data.DataRow, Int64, Int32, Boolean)</AppFunctionName>
+    <AppModuleFileName>System.Data.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Data</AppModuleNameSpace>
+    <AppModuleClassName>DataTable</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void RegisterColumnName(System.String, System.Data.DataColumn)</AppFunctionName>
+    <AppModuleFileName>System.Data.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Data</AppModuleNameSpace>
+    <AppModuleClassName>DataColumnCollection</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+</ExceptionSolution>

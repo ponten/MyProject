@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<ExceptionSolution>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void LoadDataIntoComboBox(System.Data.DataSet ByRef)</AppFunctionName>
+    <AppModuleFileName>MachineAAR.dll</AppModuleFileName>
+    <AppModuleNameSpace>MachineAAR</AppModuleNameSpace>
+    <AppModuleClassName>fFilter</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void DgvMachine_CellClick(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)</AppFunctionName>
+    <AppModuleFileName>MachineAAR.dll</AppModuleFileName>
+    <AppModuleNameSpace>MachineAAR</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void BtnSearch_Click(System.Object, System.EventArgs)</AppFunctionName>
+    <AppModuleFileName>MachineAAR.dll</AppModuleFileName>
+    <AppModuleNameSpace>MachineAAR</AppModuleNameSpace>
+    <AppModuleClassName>fFilter</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void BtnSearch_Click(System.Object, System.EventArgs)</AppFunctionName>
+    <AppModuleFileName>MachineAAR.dll</AppModuleFileName>
+    <AppModuleNameSpace>MachineAAR</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void DgvRuncard_SelectionChanged(System.Object, System.EventArgs)</AppFunctionName>
+    <AppModuleFileName>MachineAAR.dll</AppModuleFileName>
+    <AppModuleNameSpace>MachineAAR</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+</ExceptionSolution>

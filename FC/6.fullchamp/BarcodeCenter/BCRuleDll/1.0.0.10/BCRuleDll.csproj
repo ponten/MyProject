@@ -1,0 +1,115 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80EDBE1B-A267-48CD-8E75-58C27A36BD6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BCRuleDll</RootNamespace>
+    <AssemblyName>BCRuleDll</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Chroma Application Client\BarcodeCenter\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\EEPNetClient\Solution1\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientUtils">
+      <HintPath>..\..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fData.Designer.cs">
+      <DependentUpon>fData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDayCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDayCode.designer.cs">
+      <DependentUpon>fDayCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fModifyRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fModifyRule.Designer.cs">
+      <DependentUpon>fModifyRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fResetSeq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fResetSeq.Designer.cs">
+      <DependentUpon>fResetSeq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fWOData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fWOData.Designer.cs">
+      <DependentUpon>fWOData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDayCode.resx">
+      <DependentUpon>fDayCode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fModifyRule.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fModifyRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fResetSeq.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fResetSeq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fWOData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fWOData.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="SajetCommon.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

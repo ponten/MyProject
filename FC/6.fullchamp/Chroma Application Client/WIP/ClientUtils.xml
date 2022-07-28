@@ -1,0 +1,1050 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClientUtils</name>
+    </assembly>
+    <members>
+        <member name="T:ClientUtils">
+            <summary>
+            連線設定測試專區
+            </summary>
+            <summary>
+            處理Client端登入登出的部分
+            </summary>
+        </member>
+        <member name="M:ClientUtils.getAvatarURLbyPort(System.Int32)">
+            <summary>
+            透過Port取得AVATAR的URL
+            </summary>
+            <param name="AvatarPort"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.SetMainAPServerRemoteObject(System.String)">
+            <summary>
+            設定主要AP SERVER的RemoteObject，設定後會立即同步AVATAR訊息
+            </summary>
+            <param name="APServerURL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.SetAvatarRemoteObject(System.String,AvatarGroupUnit)">
+            <summary>
+            設定 Avatar 的連線 URL
+            </summary>
+            <param name="AvatarURL">Avatar 的連線 URL</param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.CheckADUser(System.String,System.String)">
+            <summary>
+            檢查AD使用者帳號
+            </summary>
+            <param name="UserNO">AD以(MES)帳號</param>
+            <param name="Password">AD密碼</param>
+            <param name="MESUserInfo">查詢結果正確回傳User ID，錯誤回傳錯誤結果</param>
+            <returns>Result,EMP_ID,EMP_NAME,ErrorMessage</returns>
+        </member>
+        <member name="M:ClientUtils.GetMESUserIDbyNO(System.String)">
+            <summary>
+            檢查MES使用者是否存在
+            </summary>
+            <param name="EMP_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.ValidateCredentials(System.String,System.String)">
+            <summary>
+            .Net 3.5 的新驗證方式
+            </summary>
+            <param name="sUserName"></param>
+            <param name="sPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.GetPrincipalContext">
+            <summary>
+            Gets the base principal context
+            </summary>
+            <returns>Returns the PrincipalContext object</returns>
+        </member>
+        <member name="M:ClientUtils.GetUserInfo(System.String,System.String)">
+            <summary>
+            取得使用者AD中的資料(測試用)
+            </summary>
+            <param name="sUserName"></param>
+            <param name="sPassword"></param>
+        </member>
+        <member name="M:ClientUtils.GetCurrentPID_AND_FP">
+            <summary>
+            取得現行模組的PID與硬體指紋
+            </summary>
+        </member>
+        <member name="M:ClientUtils.CheckUser(System.String,System.String)">
+            <summary>
+            2019.03.12 新增是否使用AD方式登入
+            </summary>
+            <param name="IsADMode"></param>
+            <param name="UserNO"></param>
+            <param name="Password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.CheckUser(System.Boolean,System.String,System.String)">
+            <summary>
+            最新測試入口點 2017.06.14
+            2019.03.12 新增判斷是否使用AD方式登入
+            </summary>
+            <param name="IsADMode">是否使用AD模式驗證</param>
+            <param name="UserNO">使用者帳號</param>
+            <param name="Password">使用者密碼</param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.UpdateSajetPasswordPolicy">
+            <summary>
+            更新密碼複雜度
+            </summary>
+            <param name="UserNO"></param>
+            <param name="AdministratorPRIVILEGE"></param>
+            <param name="DaysOfUsersPWChanged"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.Logout">
+            <summary>
+            登出MES帳號並且關閉同步時鐘
+            </summary>
+        </member>
+        <member name="M:ClientUtils.StopAllSyncTimers">
+            <summary>
+            停止全部的同步時鐘
+            </summary>
+        </member>
+        <member name="M:ClientUtils.CleanLoginRecord">
+            <summary>
+            清除登入紀錄
+            </summary>
+        </member>
+        <member name="M:ClientUtils.SetCIU_AGU_Connect(System.String)">
+            <summary>
+            設定Avatar群組(AGU) 以及相關連線設定
+            </summary>
+            <param name="SynchronizeAvatarInfoObject"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ClientUtils.CurrentDomainName">
+            <summary>
+            目前網域名稱
+            </summary>
+        </member>
+        <member name="P:ClientUtils.remoteObject">
+            <summary>
+            RemoteObject選擇器
+            </summary>
+        </member>
+        <member name="P:ClientUtils.APServerVersion">
+            <summary>
+            AP Server 的版本
+            </summary>
+        </member>
+        <member name="P:ClientUtils.APServerActivatedStatus">
+            <summary>
+            顯示於關於中，AP SERVER的註冊狀態
+            </summary>
+        </member>
+        <member name="M:ClientUtils.getAPServerRegistResult(System.String@)">
+            <summary>
+            取得AP SERVER的註冊狀態
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ClientUtils.ExecuteSQL``1(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:ClientUtils.ExecuteSQL``1(System.String,System.Object[][])" -->
+        <member name="M:ClientUtils.CheckColumnLenth(System.String,System.String)">
+            <summary>
+            檢查資料表中的欄位長度
+            </summary>
+            <param name="ColumnName"></param>
+            <param name="TableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.CheckDaysOfUsersPWChanged(System.String)">
+            <summary>
+            查詢使用者距離上次修改密碼的天數
+            </summary>
+            <param name="UserNO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.CheckAdministratorPRIVILEGE(System.String)">
+            <summary>
+            檢查管理者權限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.CheckUserIDByUserNO(System.String)">
+            <summary>
+            透過User NO 查詢USER ID
+            </summary>
+            <param name="UserNO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClientUtils.SetAPServerURL(System.String)">
+            <summary>
+            第一次初始化 Master APServer 的 RemoteObject，設置的時候順便建置 AP Server URL 的 Prefix
+            </summary>
+            <param name="APServerURL">AP Server URL (Ex：8085)</param>
+            <returns></returns>
+        </member>
+        <member name="T:AvatarGroupUnit">
+            <summary>
+            紀錄及統計每組的資訊及狀態
+            </summary>
+        </member>
+        <member name="P:AvatarGroupUnit.ObjectVersion">
+            <summary>
+            用來辨識物件的檔案版本
+            </summary>
+        </member>
+        <member name="F:AvatarGroupUnit.AvatarGroupID">
+            <summary>
+            每個AVATAR群組的ID：G_AvatarIndex_AvatarIndex
+            </summary>
+        </member>
+        <member name="M:AvatarGroupUnit.#ctor(System.String)">
+            <summary>
+            讓Client端快速建置Avatar Group 物件
+            </summary>
+            <param name="JSONAvatarGroupInfoString"></param>
+        </member>
+        <member name="F:AvatarGroupUnit._ClaimRestartSlaveServiceTime">
+            <summary>
+            要求重啟附屬服務的時間點
+            </summary>
+        </member>
+        <member name="F:AvatarGroupUnit._IsNeedManuallySwitch">
+            <summary>
+            2018 新的模擬功能
+            是否需要手動切換Avatar群組
+            </summary>
+        </member>
+        <member name="M:AvatarGroupUnit.chkSWAPIdle">
+            <summary>
+            判斷目前是否為交換停滯，如果交換停滯，則以目前頻率的等比時間記錄交換頻率
+            判斷方式：如果最後一次的頻率等於兩倍時間，則判斷為停滯狀態，若為停滯狀態則立即再次取交換時間值，並設定下次停滯狀態相符時間點
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AvatarGroupUnit.SetSWAPTime(System.DateTime)">
+            <summary>
+            紀錄交換的時間
+            </summary>
+            <param name="LatestSWAPTime"></param>
+        </member>
+        <member name="P:AvatarGroupUnit.ClaimRestartSlaveServiceTimeGap">
+            <summary>
+            要求重啟附屬服務的與現在的時間差
+            </summary>
+        </member>
+        <member name="P:AvatarGroupUnit.SWAPTimes">
+            <summary>
+            交換次數
+            </summary>
+        </member>
+        <member name="M:AvatarGroupUnit.Set_AGU_SwitchOnceTime">
+            <summary>
+            設定手動群組內交換
+            </summary>
+        </member>
+        <member name="M:AvatarGroupUnit.IsMasterServiceOutOfLimitTimesOfMemorySize(System.Int32,System.Int64)">
+            <summary>
+            檢查主要服務的記憶體使用量是否超過預定倍數
+            </summary>
+            <param name="AllowSizeIncreaseTimes">預定倍數</param>
+            <param name="CurrentMemorySize_K">目前服務的記憶體大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:AvatarGroupUnit.IsSlaveServiceOutOfLimitTimesOfMemorySize(System.Int32,System.Int64)">
+            <summary>
+            檢查附屬服務的記憶體使用量是否超過預定倍數
+            </summary>
+            <param name="AllowSizeIncreaseTimes">預定倍數</param>
+            <param name="CurrentMemorySize_K">目前服務的記憶體大小</param>
+            <returns></returns>
+        </member>
+        <member name="P:AvatarGroupUnit.LastTimeDemandAGUSwitch">
+            <summary>
+            上次要求切換AGU內主重關係的時間
+            </summary>
+        </member>
+        <member name="M:AvatarGroupUnit.SWAPAvatarIdentity">
+            <summary>
+            交換AVATAR主從關係
+            </summary>
+        </member>
+        <member name="M:AvatarGroupUnit.CompareByJSONString(System.String)">
+            <summary>
+            讓Client端快速比對差異
+            </summary>
+            <param name="JSONAvatarGroupInfoString"></param>
+        </member>
+        <member name="P:AvatarServiceInfoUnit.ObjectVersion">
+            <summary>
+            用來辨識物件的檔案版本
+            </summary>
+        </member>
+        <member name="P:AvatarServiceInfoUnit.OwnedGroupID">
+            <summary>
+            所屬群組ID
+            </summary>
+        </member>
+        <member name="P:AvatarServiceInfoUnit.IsIdle">
+            <summary>
+            判斷目前記憶體增長狀況是否為停滯狀態(每次偵測記憶體變動小於100K)
+            </summary>
+        </member>
+        <member name="P:AvatarServiceInfoUnit.DisplayName">
+            <summary>
+            服務顯示名稱
+            </summary>
+        </member>
+        <member name="P:AvatarServiceInfoUnit.InnerName">
+            <summary>
+            內部服務名稱
+            </summary>
+        </member>
+        <member name="P:AvatarServiceInfoUnit.Port">
+            <summary>
+            服務埠號
+            </summary>
+        </member>
+        <member name="P:AvatarServiceInfoUnit.IsMasterService">
+            <summary>
+            顯示目前服務是否為其他服務的夥伴(採RAID 0+1 切換技術)
+            </summary>
+        </member>
+        <member name="F:AvatarServiceInfoUnit._CurrentWorkingMemorySize_K">
+            <summary>
+            重設交換次數
+            </summary>
+        </member>
+        <member name="P:AvatarServiceInfoUnit.MoreThenMaxValueTimes">
+            <summary>
+            連續突破最大值的次數(限制在0-3之間)
+            </summary>
+        </member>
+        <member name="P:AvatarServiceInfoUnit.BeginWorkingMemorySize_K">
+            <summary>
+            初始記憶體使用量
+            </summary>
+        </member>
+        <member name="P:AvatarServiceInfoUnit.CurrentWorkingMemorySize_K">
+            <summary>
+            目前記憶體大小
+            </summary>
+        </member>
+        <member name="M:AvatarServiceInfoUnit.ResetBeginWorkingMemorySize">
+            <summary>
+            讓AvatartServer重啟的時候能重設起始記憶體大小
+            </summary>
+        </member>
+        <member name="M:AvatarServiceInfoUnit.IsOutOfLimitTimesOfMemorySize(System.Int32,System.Int64)">
+            <summary>
+            判斷目前AvatarServer的記憶體是否超過增長百分比
+            </summary>
+            <param name="Times">容許增長倍數</param>
+            <param name="CurrentMemorySize">目前記憶體大小</param>
+            <returns></returns>
+        </member>
+        <member name="T:ClientInfoUnit.ServerCommand">
+            <summary>
+            遠端控制項目(由Server評估)
+            =========================================================================================
+            ==============================================================================未定義
+            Unknow 未定義
+            ==============================================================================已定義
+            Normal 正常狀態：平常所保持的狀態，或Client端接收遙控命令後，要求SERVER改回狀態
+            NeedReLogin 需要重新登入：當SERVER 出現無法修復的例外狀況時，會要求CLIENT端重新登入
+            CheckUpdate 檢查更新：要求Client端立即檢查更新，並啟動更新程序
+            ChangeAvatar 更新AVATAR：要求Client端再次向MASTER重新取得AVATAR資訊(用於附載平衡
+            QueryRestart 詢問式重新啟動：跳出倒數詢問視窗
+            Restart 強制重新啟動：不警告使用者，強制讓Client端執行登出並關閉的動作
+            QueryLogout 詢問式登出：跳出倒數計時視窗通知Client端程式即將登出
+            Logout 強制登出：使用者將被強制登出，但Client端仍停留在登入畫面
+            QueryShutdown 詢問式關閉：跳出倒數計時視窗通知Client端程式即將關閉
+            Shutdown 強制關閉：不警告使用者，強制讓Client端執行登出並關閉的動作
+            KillbyProcess 透過PID強制關閉：不警告使用者，透過工作管理員強制關閉使用ClientUtils的處理程序
+            =========================================================================================
+            </summary>
+        </member>
+        <member name="T:ClientInfoUnit.SyncResultType">
+            <summary>
+            同步活動回傳資料的資料型態(由Server評估)
+            =========================================================================================
+            ==============================================================================未定義
+            Unknow 未定義
+            ====================================================================== 以下為正確訊息格式
+            Synchronize 單純同步資料格式
+            SajetLogin
+            AssignClientToNewAG
+            ====================================================================== 以下為錯誤訊息格式
+            UserNotFound 帳號或密碼錯誤，查無此人
+            FPFormatError 硬體指紋格式錯誤
+            DoubleLogin 重複登入 (Sajet MES帳號)
+            FullofSJLogin 登入數量已達上限 (Sajet MES帳號)
+            CIUNotExist 系統中無 Client Infomation 資料
+            AGUNotExist 系統中無 Avatar Group 資料
+            AssignToAGFail 指派Client端到Avatar Group 失敗
+            =========================================================================================
+            </summary>
+        </member>
+        <member name="P:ClientInfoUnit.ClientAcceptCommand">
+            <summary>
+            Client端被控制的狀態
+            </summary>
+        </member>
+        <member name="P:ClientInfoUnit.ClientResponseCommand">
+            <summary>
+            當Client端收到ClientRemoteControl後修改此欄位，由SERVER比對檢查Client是否收到命令
+            </summary>
+        </member>
+        <member name="P:ClientInfoUnit.ClientSyncResultType">
+            <summary>
+            資料封包的同步型態(回傳判斷使用)
+            </summary>
+        </member>
+        <member name="P:ClientInfoUnit.ClientStatus">
+            <summary>
+            Client端的連線狀態
+            </summary>
+        </member>
+        <member name="P:ClientInfoUnit.IsFingerPrintFormatRight">
+            <summary>
+            使用正則表達式判斷硬體指紋是否匹配
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ClientInfoUnit.IsAnonymousLogin">
+            <summary>
+            判斷Client端是否為匿名登入
+            </summary>
+        </member>
+        <member name="P:ClientInfoUnit.IsSajetLogin">
+            <summary>
+            2018.01.09 搭配新的AP SERVER 登入機制
+            判斷是否為SajetMES系統登入，
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ObjectVersion">
+            <summary>
+            用來辨識物件的檔案版本
+            </summary>
+        </member>
+        <member name="T:clientInfoUnit.OnlineStatus">
+            <summary>
+            Client 狀態(由Server評估)
+            =========================================================================================
+            Online 連線中:Sajet MES開啟並持續向AP SERVER更新狀態，但還未登入
+            Logon 登入：使用者已經正常登入
+            Logoff 登出：使用者正常登出
+            offline 離線：曾經連線但程式關閉超過11秒沒向AP SERVER更新
+            Query 查詢資料：Client正在查詢SQL
+            LostContact 沒有回應：CLIENT端停止向MASTER更新資訊10秒內所屬狀態
+            ClientInfoUnitVersionInconsistent 本檔案版本不一致：為了避免JSON還原序列後資料不一致，故需要比對版本
+            LoginStatusInconsistent 登入狀態不一致：當Client端的登入狀態與SERVER紀錄的不同
+            NotExist 不存在於Server上：AP Server可能於Client端登入後重啟，且查無該Client端的歷史登入紀錄，解決方案通常為 NeedReLogin (要求重新登入)
+            Unknow 狀況未明：發生系統中查無此帳號的狀況導致，解決方案通常為 QueryShutdown
+            =========================================================================================
+            </summary>
+        </member>
+        <member name="T:clientInfoUnit.RemoteControl">
+            <summary>
+            遠端控制項目(由Server評估)
+            =========================================================================================
+            Normal 正常狀態：平常所保持的狀態，或Client端接收遙控命令後，要求SERVER改回狀態
+            NeedReLogin 需要重新登入：當SERVER 出現無法修復的例外狀況時，會要求CLIENT端重新登入
+            CheckUpdate 檢查更新：要求Client端立即檢查更新，並啟動更新程序
+            ChangeAvatar 更新AVATAR：要求Client端再次向MASTER重新取得AVATAR資訊(用於附載平衡
+            QueryRestart 詢問式重新啟動：跳出倒數詢問視窗
+            Restart 強制重新啟動：不警告使用者，強制讓Client端執行登出並關閉的動作
+            QueryLogout 詢問式登出：跳出倒數計時視窗通知Client端程式即將登出
+            Logout 強制登出：使用者將被強制登出，但Client端仍停留在登入畫面
+            QueryShutdown 詢問式關閉：跳出倒數計時視窗通知Client端程式即將關閉
+            Shutdown 強制關閉：不警告使用者，強制讓Client端執行登出並關閉的動作
+            =========================================================================================
+            </summary>
+        </member>
+        <member name="T:clientInfoUnit.RequestControl">
+            <summary>
+            Client端 要求控制方式(由Client評估)
+            =========================================================================================
+            Normal 正常狀態：平常所保持的狀態，或Client端接收遙控命令後，要求SERVER改回狀態
+            ChangeAvatar 更換Avatar：當Client端發現Avatar無法連線的時候，嘗試通知AP SERVER執行更換作業
+            DelayRemote 延遲控制：當SERVER以Query方式命令Client端動作時，Client端可以提出延遲需求，需搭配
+            =========================================================================================
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ClientStatus">
+            <summary>
+            Client端目前狀態 ：(由MASTER依照回報頻率判斷)
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ClientRemoteControl">
+            <summary>
+            Client端被控制的狀態
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ClientRemoteControlResponse">
+            <summary>
+            當Client端收到ClientRemoteControl後修改此欄位，由SERVER比對檢查Client是否收到命令
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ClientRequest">
+            <summary>
+            Client端要求事件(Client端要求更換AVATAR之類事件)
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.APServerVersion">
+            <summary>
+            AP SERVER 的版本
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.SajetMESVersion">
+            <summary>
+            Sajet MES 的版本
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.RunningProgramsListJSON">
+            <summary>
+            Client端正在執行的模組清單(JSON)
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.OwnedAvatarGroupID">
+            <summary>
+            Client端所屬AVATAR服務名稱
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.OwnedAvatarServiceDisplayName">
+            <summary>
+            Client端所屬AVATAR服務名稱
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.OwnedAvatarServicePort">
+            <summary>
+            Client端所屬 AVATAR Port
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.OwnedAvatarServiceURL">
+            <summary>
+            Client端所屬 AVATAR URL
+            </summary>
+        </member>
+        <member name="F:clientInfoUnit._DelayRemoteUntilTime">
+            <summary>
+            Client端所屬AVATAR服務名稱
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ClientID">
+            <summary>
+            $"{_UserNo}_{_MachineName}_{_FingerPrint}"
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.Port">
+            <summary>
+            Client端本機埠號
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ClientLogonTime">
+            <summary>
+            登入時間
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ClientLogoffTime">
+            <summary>
+            登出時間
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.DelayRemoteUntilTime">
+            <summary>
+            延遲SERVER控制，直到此時為止
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ClientLastUpdateTime">
+            <summary>
+            Client端向AVATAR SERVER更新的時間
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ClientLostContactSeconds">
+            <summary>
+            Client端失去聯絡時間(秒)：更新時間與目前時間差
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.IPAddress">
+            <summary>
+            可以連線的IP位址
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.IPAddressesString">
+            <summary>
+            Client端全部IP位址(原始字串)
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ClientURL">
+            <summary>
+            最佳連線字串
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.Status">
+            <summary>
+            (將取代)Client狀態 2017.3.2 宇睿新增
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.AssignFailRetryTimes">
+            <summary>
+            (將取代)指派換Port錯誤次數
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.DestinationAvatarServerIndex">
+            <summary>
+            (將取代)指派AvatarServer的指標
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.ExceptionMsg">
+            <summary>
+            錯誤紀錄
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.IsConnectable">
+            <summary>
+            Client端第一次登入後，AP SERVER連線到Client端的測試
+            </summary>
+        </member>
+        <member name="P:clientInfoUnit.FingerPrint">
+            <summary>
+            硬體指紋
+            </summary>
+        </member>
+        <member name="M:clientInfoUnit.#ctor(System.String,System.String,System.String,System.Int32,System.DateTime)">
+            <summary>
+            (已取代)客戶端資訊
+            </summary>
+            <param name="computerName"></param>
+            <param name="userNo"></param>
+            <param name="userName"></param>
+            <param name="Port"></param>
+            <param name="loginTime"></param>
+        </member>
+        <member name="M:clientInfoUnit.#ctor(System.String,System.String,System.String,System.Int32,System.String,System.DateTime)">
+            <summary>
+            (將取代)客戶端資訊
+            </summary>
+            <param name="computerName"></param>
+            <param name="userNo"></param>
+            <param name="userName"></param>
+            <param name="Port"></param>
+            <param name="IPAddresses">IP位址串列</param>
+            <param name="loginTime"></param>
+        </member>
+        <member name="M:clientInfoUnit.#ctor(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            客戶端資訊(新版)
+            </summary>
+            <param name="computerName"></param>
+            <param name="userNo"></param>
+            <param name="userName"></param>
+            <param name="Port"></param>
+            <param name="IPAddresses">IP位址串列</param>
+            <param name="FingerPrint"></param>
+        </member>
+        <member name="P:CPU_RAM_Unit.ObjectVersion">
+            <summary>
+            用來辨識物件的檔案版本
+            </summary>
+        </member>
+        <member name="M:CPU_RAM_Unit.#ctor(System.Single,System.Single,System.UInt64)">
+            <summary>
+            紀錄硬體使用狀況
+            </summary>
+            <param name="CPU_Usage">中央處理器使用百分比</param>
+            <param name="RAM_Usage">記憶體使用百分比</param>
+            <param name="AvailableRAM">可用記憶體</param>
+            <param name="PhysicalRAM">實體記憶體大小</param>
+        </member>
+        <member name="T:APService.ExceptionMessageUnit">
+            <summary>
+            例外訊息暫存
+            </summary>
+        </member>
+        <member name="P:APService.ExceptionMessageUnit.ObjectVersion">
+            <summary>
+            用來辨識物件的檔案版本
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordComplexity.DataVerificationCode">
+            <summary>
+            資料驗證指標，用來簡易判斷資料是否被竄改
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordComplexity.MinPWLengh">
+            <summary>
+            最長密碼長度，0代表不限制
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordComplexity.MaxPWLengh">
+            <summary>
+            最短密碼長度，0代表不限制
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordComplexity.EnableLowercaseLetters">
+            <summary>
+            是否限制一定要小寫字母
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordComplexity.EnableCapitalLetters">
+            <summary>
+            是否限制一定要大寫字母
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordComplexity.EnableDigital">
+            <summary>
+            是否限制一定要有數字 0-9
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordComplexity.EnableSpecialSymbol">
+            <summary>
+            是否限制一定要有特殊符號
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordComplexity.EnableLengthLimit">
+            <summary>
+            是否啟動長度限制
+            </summary>
+        </member>
+        <member name="M:PasswordComplexityPolicy.PasswordComplexity.#ctor">
+            <summary>
+            建置複雜密碼規則 - 預設值，不檢查
+            </summary>
+        </member>
+        <member name="M:PasswordComplexityPolicy.PasswordComplexity.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            建置複雜密碼規則 - 僅限制大小寫
+            </summary>
+            <param name="IsEnableLowercaseLetters">是否限制一定要小寫字母</param>
+            <param name="ISEnableCapitalLetters">是否限制一定要大寫字母</param>
+            <param name="IsEnableSpecialSymbol"></param>
+        </member>
+        <member name="M:PasswordComplexityPolicy.PasswordComplexity.#ctor(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            建置複雜密碼規則 - 限制 
+            </summary>
+            <param name="IsEnableLowercaseLetters">是否限制一定要小寫字母</param>
+            <param name="ISEnableCapitalLetters">是否限制一定要大寫字母</param>
+            <param name="IsEnableSpecialSymbol"></param>
+        </member>
+        <member name="M:PasswordComplexityPolicy.PasswordComplexity.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            建置複雜密碼規則
+            </summary>
+            <param name="IsEnableLowercaseLetters">是否限制一定要小寫字母</param>
+            <param name="ISEnableCapitalLetters">是否限制一定要大寫字母</param>
+            <param name="IsEnableSpecialSymbol"></param>
+        </member>
+        <member name="M:PasswordComplexityPolicy.PasswordComplexity.GetAbbreviations">
+            <summary>
+            取得類別縮寫內容
+            </summary>
+            <returns>類別縮寫內容</returns>
+        </member>
+        <member name="M:PasswordComplexityPolicy.PasswordComplexity.GetSpecialSymbol">
+            <summary>
+            取得特殊符號格式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PasswordComplexityPolicy.PasswordComplexity.RestoreFromAbbreviation(System.String)">
+            <summary>
+            從縮寫內容還原
+            </summary>
+            <param name="AbbreviationsTypeData">縮寫資料</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:PasswordComplexityPolicy.PasswordComplexity.IsMach(System.String)" -->
+        <member name="T:PasswordComplexityPolicy.Policy">
+            <summary>
+            政策
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.Policy.ObjectVersion">
+            <summary>
+            隨機驗證碼
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.Policy.PasswordRuleObject">
+            <summary>
+            密碼主要原則
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.Policy.PasswordComplexityPolicy">
+            <summary>
+            密碼複雜度設定
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.Policy.CurrentDataVerificationCode">
+            <summary>
+            隨機驗證碼
+            </summary>
+        </member>
+        <member name="M:PasswordComplexityPolicy.Policy.#ctor">
+            <summary>
+            取得密碼原則預設值
+            </summary>
+        </member>
+        <member name="M:PasswordComplexityPolicy.Policy.#ctor(System.Boolean,System.Boolean,PasswordComplexityPolicy.PasswordComplexity,System.Int32)">
+            <summary>
+            創建密碼原則
+            </summary>
+            <param name="setAllowUsernameSameAsPassword"></param>
+            <param name="setEnablePasswordComplexity"></param>
+            <param name="setPasswordComplexity"></param>
+            <param name="setPasswordValidityPeriodDay"></param>
+        </member>
+        <member name="M:PasswordComplexityPolicy.Policy.PolicyRestoreFromAbbreviation(System.String,System.String,System.String,System.String)">
+            <summary>
+            密碼政策反序列化 - 以資料庫中的縮寫還原
+            </summary>
+            <param name="DataVerificationCode">驗證資料</param>
+            <param name="PolicyRulesAbbreviation">密碼規則規則縮寫</param>
+            <param name="JSONPasswordComplexityValidityString">密碼複雜度縮寫</param>
+            <returns>"是否成功","失敗點(資料空白)"</returns>
+        </member>
+        <member name="M:PasswordComplexityPolicy.Policy.IsDataVerified">
+            <summary>
+            資料驗證是否通過
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PasswordComplexityPolicy.Policy.GetPolicyRuleAbbreviationsString">
+            <summary>
+            取得密碼規則規則的縮寫
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PasswordComplexityPolicy.Policy.GetPasswordComplexityAbbreviationsString">
+            <summary>
+            取得JSON格式的密碼規則規則
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PasswordComplexityPolicy.Policy.VerificationPassword(System.String,System.String,System.Int32)">
+            <summary>
+            驗證資料是否一致
+            </summary>
+            <param name="Code">雙重驗證碼</param>
+            <returns></returns>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordRule.DataVerificationCode">
+            <summary>
+            資料驗證指標，用來簡易判斷資料是否被竄改
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordRule.AllowUsernameSameAsPassword">
+            <summary>
+            允許使用者名稱與密碼相同 - 預設允許
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordRule.EnablePasswordComplexity">
+            <summary>
+            是否啟用複雜密碼運算 - 預設不啟用(相容舊版)
+            </summary>
+        </member>
+        <member name="P:PasswordComplexityPolicy.PasswordRule.PasswordValidityPeriodDay">
+            <summary>
+            密碼有效期(天為單位)  "-1" 代表沒限制
+            </summary>
+        </member>
+        <member name="M:PasswordComplexityPolicy.PasswordRule.GetAbbreviations">
+            <summary>
+            取得類別縮寫內容
+            </summary>
+            <returns>類別縮寫內容</returns>
+        </member>
+        <member name="M:PasswordComplexityPolicy.PasswordRule.RestoreFromAbbreviation(System.String)">
+            <summary>
+            從縮寫內容還原
+            </summary>
+            <param name="AbbreviationsTypeData">縮寫資料</param>
+        </member>
+        <member name="F:ReflectionLayer.FormatRule.SameAsDatabase">
+            <summary>
+            THIS_IS_FIELD_NAME
+            </summary>
+        </member>
+        <member name="F:ReflectionLayer.FormatRule.CamelCase">
+            <summary>
+            thisIsFieldName
+            </summary>
+        </member>
+        <member name="F:ReflectionLayer.FormatRule.PascalCase">
+            <summary>
+            ThisIsFieldName
+            </summary>
+        </member>
+        <member name="T:ReflectionLayer.TextFormatter.Inflector">
+            <summary>
+            Summary for the Inflector class
+            </summary>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.#cctor">
+            <summary>
+            Initializes the <see cref="T:ReflectionLayer.TextFormatter.Inflector"/> class.
+            </summary>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.AddIrregularRule(System.String,System.String)">
+            <summary>
+            Adds the irregular rule.
+            </summary>
+            <param name="singular">The singular.</param>
+            <param name="plural">The plural.</param>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.AddUnknownCountRule(System.String)">
+            <summary>
+            Adds the unknown count rule.
+            </summary>
+            <param name="word">The word.</param>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.AddPluralRule(System.String,System.String)">
+            <summary>
+            Adds the plural rule.
+            </summary>
+            <param name="rule">The rule.</param>
+            <param name="replacement">The replacement.</param>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.AddSingularRule(System.String,System.String)">
+            <summary>
+            Adds the singular rule.
+            </summary>
+            <param name="rule">The rule.</param>
+            <param name="replacement">The replacement.</param>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.MakePlural(System.String)">
+            <summary>
+            Makes the plural.
+            </summary>
+            <param name="word">The word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.MakeSingular(System.String)">
+            <summary>
+            Makes the singular.
+            </summary>
+            <param name="word">The word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.SetRules(System.Collections.Generic.IList{ReflectionLayer.TextFormatter.Inflector.InflectorRule},System.String)">
+            <summary>
+            Applies the rules.
+            </summary>
+            <param name="rules">The rules.</param>
+            <param name="word">The word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.ToTitleCase(System.String)">
+            <summary>
+            Converts the string to title case.
+            </summary>
+            <param name="word">The word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.ToHumanCase(System.String)">
+            <summary>
+            Converts the string to human case.
+            </summary>
+            <param name="lowercaseAndUnderscoredWord">The lowercase and underscored word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.ToProper(System.String)">
+            <summary>
+            Convert string to proper case
+            </summary>
+            <param name="sourceString">The source string.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.ToPascalCase(System.String)">
+            <summary>
+            Converts the string to pascal case.
+            </summary>
+            <param name="lowercaseAndUnderscoredWord">The lowercase and underscored word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.ToPascalCase(System.String,System.Boolean)">
+            <summary>
+            Converts text to pascal case...
+            </summary>
+            <param name="text">The text.</param>
+            <param name="removeUnderscores">if set to <c>true</c> [remove underscores].</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.ToCamelCase(System.String)">
+            <summary>
+            Converts the string to camel case.
+            </summary>
+            <param name="lowercaseAndUnderscoredWord">The lowercase and underscored word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.AddUnderscores(System.String)">
+            <summary>
+            Adds the underscores.
+            </summary>
+            <param name="pascalCasedWord">The pascal cased word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.MakeInitialCaps(System.String)">
+            <summary>
+            Makes the initial caps.
+            </summary>
+            <param name="word">The word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.MakeInitialLowerCase(System.String)">
+            <summary>
+            Makes the initial lower case.
+            </summary>
+            <param name="word">The word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.ConvertUnderscoresToDashes(System.String)">
+            <summary>
+            Converts the underscores to dashes.
+            </summary>
+            <param name="underscoredWord">The underscored word.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.IsUpperCase(System.String)">
+            <summary>
+            Checks if the first character of a string if capitalized.
+            </summary>
+            <param name="word"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ReflectionLayer.TextFormatter.Inflector.InflectorRule">
+            <summary>
+            Summary for the InflectorRule class
+            </summary>
+        </member>
+        <member name="F:ReflectionLayer.TextFormatter.Inflector.InflectorRule.regex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ReflectionLayer.TextFormatter.Inflector.InflectorRule.replacement">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.InflectorRule.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ReflectionLayer.TextFormatter.Inflector.InflectorRule"/> class.
+            </summary>
+            <param name="regexPattern">The regex pattern.</param>
+            <param name="replacementText">The replacement text.</param>
+        </member>
+        <member name="M:ReflectionLayer.TextFormatter.Inflector.InflectorRule.Apply(System.String)">
+            <summary>
+            Applies the specified word.
+            </summary>
+            <param name="word">The word.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

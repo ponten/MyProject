@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <繁體中文>
+    <Message Name="Work Order" Value="工單"/>
+    <Message Name="PART_NO" Value="料號"/>
+    <Message Name="RC_NO" Value="流程卡"/>
+    <Message Name="SERIAL_NUMBER" Value="序號"/>
+    <Message Name="QUERY" Value="查詢"/>
+    <Message Name="Query" Value="查詢"/>
+    <Message Name="SELECT" Value="勾選"/>
+    <Message Name="Transfer Desc" Value="備註"/>
+    <Message Name="DEFECT_TYPE_DESC" Value="不良類型描述"/>
+    <Message Name="EXCUTE" Value="執行"/>
+    <Message Name="PROCESS_NAME" Value="製程名稱"/>
+    <Message Name="CURRENT_QTY" Value="流程卡數量"/>
+    <Message Name="CURRENT_STATUS" Value="狀態"/>
+    <Message Name="QUERY BUILDER IS NULL" Value="請設定查詢條件"/>
+    <Message Name="RC COMPLETED" Value="該流程卡已執行完成"/>
+    <Message Name="Transfer Desc is Null" Value="請輸入備註"/>
+    <Message Name="DEFECT_TYPE_DESC IS  NULL" Value="不良類型描述為空"/>
+    <Message Name="No relevant data" Value="查詢無相關信息"/>
+    <Message Name="Email IS Null" Value="異常單已處理完成,郵件發送失敗"/>
+    <Message Name="Have informed" Value="已通知"/>
+    <Message Name="Exception list completed" Value="異常單已處理完成"/>
+    <Message Name="Please select RC/SN" Value="請至少選擇一筆流程卡(序號)"/>
+    <Message Name="OK" Value="確定"/>
+    <Message Name="Confirm" Value="確定"/>
+    <Message Name="CANCEL" Value="取消"/>
+    <Message Name="PART_TYPE" Value="料號類型"/>
+    <Message Name="PART_ID" Value="ID"/>
+    <Message Name="The rc_no/sn is process do not hold" Value="某流程卡(序號)生產中,無法暫停"/>
+    <Message Name="ALLSELECT" Value="全選"/>
+    <Message Name="ALLCANCEL" Value="全不選"/>
+    <Message Name="fAlert" Value="尋找"/>
+    <Message Name="please select PartID" Value="請至少勾選一筆料號"/>
+    <Message Name="Line Name" Value="線別名稱"/>
+    <Message Name="PDLINE_ID" Value="ID"/>
+    <Message Name="PDLINE_NAME" Value="線別名稱"/>
+    <Message Name="Please Select Line Name" Value="請選擇線別名稱"/>
+    <Message Name="Please Select Work Order" Value="請選擇轉投工單"/>
+    <Message Name="OPTION1" Value="預留欄位"/>
+    <Message Name="OPTION2" Value="預留欄位"/>
+    <Message Name="OPTION3" Value="預留欄位"/>
+    <Message Name="Please select status" Value="請選擇狀態"/>
+    <Message Name="Hold" Value="暫停"/>
+    <Message Name="Transfer" Value="轉投"/>
+    <Message Name="Work Order " Value="轉投工單"/>
+    <Message Name="Spec1" Value="品名"/>
+    <Message Name="Route Name" Value="途程名稱"/>
+    <Message Name="WORK_ORDER" Value="工單"/>
+    <Message Name="WO_TYPE" Value="工單類型"/>
+    <Message Name="SPEC1" Value="品名"/>
+    <Message Name="ROUTE_NAME" Value="途程名稱"/>
+    <Message Name="Transfer was completed" Value="轉投已執行完成"/>
+    <Message Name="PRIORITY_LEVEL" Value="優先等級"/>
+    <Message Name="Normal" Value="普通"/>
+    <Message Name="Prior" Value="優先"/>
+    <Message Name="Urgent" Value="緊急"/>
+    <Message Name="RC lotsize is full" Value="流程卡轉投次數已滿"/>
+    <Message Name="Available Qty" Value="未投入數量"/>
+    <Message Name="AVAILABLE_QTY" Value="未投入數量"/>
+    <Message Name="Total Current Qty More Than Available Qty" Value="流程卡總數量 > 未投入數量"/>
+    <Message Name="Spec2" Value="規格"/>
+    <Message Name="Version" Value="版本"/>
+    <Message Name="SPEC2" Value="規格"/>
+    <Message Name="VERSION" Value="版本"/>
+  </繁體中文>
+  <简体中文>
+    <Message Name="Work Order" Value="工单"/>
+    <Message Name="PART_NO" Value="料号"/>
+    <Message Name="RC_NO" Value="流程卡"/>
+    <Message Name="SERIAL_NUMBER" Value="序号"/>
+    <Message Name="QUERY" Value="查询"/>
+    <Message Name="SELECT" Value="勾选"/>
+    <Message Name="Transfer Desc" Value="备注"/>
+    <Message Name="DEFECT_TYPE_DESC" Value="不良类型描述"/>
+    <Message Name="EXCUTE" Value="执行"/>
+    <Message Name="PROCESS_NAME" Value="制程名称"/>
+    <Message Name="CURRENT_QTY" Value="流程卡数量"/>
+    <Message Name="CURRENT_STATUS" Value="状态"/>
+    <Message Name="QUERY BUILDER IS NULL" Value="请设定查询条件"/>
+    <Message Name="RC COMPLETED" Value="该流程卡已执行完成"/>
+    <Message Name="Transfer Desc is Null" Value="请输入备注"/>
+    <Message Name="DEFECT_TYPE_DESC IS  NULL" Value="请选择不良类型描述"/>
+    <Message Name="No relevant data" Value="查询无相关信息"/>
+    <Message Name="Email IS Null" Value="异常单已处理完成,邮件发送失败"/>
+    <Message Name="Have informed" Value="已通知"/>
+    <Message Name="Exception list completed" Value="异常单已处理完成"/>
+    <Message Name="Please select RC/SN" Value="请至少选择一笔流程卡(序号)"/>
+    <Message Name="OK" Value="确定"/>
+    <Message Name="CANCEL" Value="取消"/>
+    <Message Name="PART_TYPE" Value="料号类型"/>
+    <Message Name="PART_ID" Value="ID"/>
+    <Message Name="The rc_no/sn is process do not hold" Value="某流程卡(序号)生产中,无法暂停"/>
+    <Message Name="ALLSELECT" Value="全选"/>
+    <Message Name="ALLCANCEL" Value="全不选"/>
+    <Message Name="fAlert" Value="寻找"/>
+    <Message Name="please select PartID" Value="请至少勾选一笔料号"/>
+    <Message Name="Line Name" Value="线别名称"/>
+    <Message Name="PDLINE_ID" Value="ID"/>
+    <Message Name="PDLINE_NAME" Value="线别名称"/>
+    <Message Name="Please Select Line Name" Value="请选择线别名称"/>
+    <Message Name="Please Select Work Order" Value="请选择转投工单"/>
+    <Message Name="OPTION1" Value="预留栏位"/>
+    <Message Name="OPTION2" Value="预留栏位"/>
+    <Message Name="OPTION3" Value="预留栏位"/>
+    <Message Name="Please select status" Value="请选择状态"/>
+    <Message Name="Hold" Value="暂停"/>
+    <Message Name="Transfer" Value="转投"/>
+    <Message Name="Work Order " Value="转投工单"/>
+    <Message Name="Spec1" Value="品名"/>
+    <Message Name="Route Name" Value="途程名称"/>
+    <Message Name="WORK_ORDER" Value="工单"/>
+    <Message Name="WO_TYPE" Value="工单类型"/>
+    <Message Name="SPEC1" Value="品名"/>
+    <Message Name="ROUTE_NAME" Value="途程名称"/>
+    <Message Name="Transfer was completed" Value="转投已执行完成"/>
+    <Message Name="PRIORITY_LEVEL" Value="优先等级"/>
+    <Message Name="Normal" Value="普通"/>
+    <Message Name="Prior" Value="优先"/>
+    <Message Name="Urgent" Value="紧急"/>
+    <Message Name="RC lotsize is full" Value="流程卡转投次数已满"/>
+    <Message Name="Available Qty" Value="未投入数量"/>
+    <Message Name="AVAILABLE_QTY" Value="未投入数量"/>
+    <Message Name="Total Current Qty More Than Available Qty" Value="流程卡总数量 > 未投入数量"/>
+    <Message Name="Spec2" Value="规格"/>
+    <Message Name="Version" Value="版本"/>
+    <Message Name="SPEC2" Value="规格"/>
+    <Message Name="VERSION" Value="版本"/>
+  </简体中文>
+</Chroma>

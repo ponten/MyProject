@@ -1,0 +1,26 @@
+-- Create table
+create table SYS_PART_QC_TESTTYPE
+(
+  recid         NUMBER,
+  item_type_id  NUMBER,
+  sampling_id   NUMBER,
+  update_userid NUMBER,
+  update_time   DATE,
+  enabled       VARCHAR2(25) default 'Y'
+)
+tablespace SYSBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 2M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the columns 
+comment on column SYS_PART_QC_TESTTYPE.recid
+  is 'Á÷Ë®Ì–(êPÂ“ÖÁSYS_PART_QC_PROCESS_RULE.RECID)';
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on SYS_PART_QC_TESTTYPE to SYS_USER;

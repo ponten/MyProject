@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Chroma>
+  <繁體中文>
+    <Message Name="Tooling No" Value="治具編號" />
+    <Message Name="Tooling Name" Value="治具名稱" />
+    <Message Name="Description" Value="治具描述" />
+    <Message Name="Tooling Type" Value="類型" />
+    <Message Name="Tooling" Value="治具" />
+    <Message Name="Knife" Value="刀具" />
+    <Message Name="Warning Used Count" Value="警告使用次數" />
+    <Message Name="Max Used Count" Value="可使用次數" />
+    <Message Name="Max Days" Value="可使用天數" />
+    <Message Name="Warning Days" Value="警告使用天數" />
+    <Message Name="Tooling SN also delete" Value="治具序號也會被同時刪除" />
+    <Message Name="Tooling SN" Value="治具序號" />
+    <Message Name="Tooling SN Desc" Value="治具序號描述" />
+    <Message Name="TOOLING_NO" Value="治具編號" />
+    <Message Name="ENABLED" Value="可用" />
+    <Message Name="EMP_NAME" Value="員工" />
+    <Message Name="UPDATE_TIME" Value="更新時間" />
+    <Message Name="Used Time" Value="已使用次數" />
+    <Message Name="Status" Value="狀態" />
+    <Message Name="MT Remind" Value="保養提醒" />
+    <Message Name="Weekly" Value="週" />
+    <Message Name="Monthly" Value="月" />
+    <Message Name="Quarterly" Value="季" />
+    <Message Name="Half Year" Value="半年" />
+    <Message Name="Last Maintain Time" Value="最後保養時間" />
+    <Message Name="Company" Value="公司" />
+    <Message Name="Location No" Value="儲位" />
+    <Message Name="Result" Value="驗收結果" />
+  </繁體中文>
+</Chroma>

@@ -1,0 +1,269 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608598563970" level="FATAL" thread="1"><log4j:message>找不到名為 PROCESS_ID 的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 PROCESS_ID 的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CProcess.fMain.btnDetailModify_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.5\CProcess\fMain.cs: 行 608
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608598567283" level="FATAL" thread="1"><log4j:message>找不到名為 PROCESS_ID 的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 PROCESS_ID 的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CProcess.fMain.btnDetailModify_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.5\CProcess\fMain.cs: 行 608
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608599153838" level="FATAL" thread="1"><log4j:message>字串未被辨認為有效的 DateTime。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   於 System.DateTime.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 762
+   於 CWoManager.fMain.ShowData(Nullable`1 isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 734
+   於 CWoManager.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 593
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.DateTimeParse" method="System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608599172143" level="FATAL" thread="1"><log4j:message>字串未被辨認為有效的 DateTime。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   於 System.DateTime.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 762
+   於 CWoManager.fMain.ShowData(Nullable`1 isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 734
+   於 CWoManager.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 593
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.DateTimeParse" method="System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608599226359" level="FATAL" thread="1"><log4j:message>字串未被辨認為有效的 DateTime。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   於 System.DateTime.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 762
+   於 CWoManager.fMain.ShowData(Nullable`1 isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 734
+   於 CWoManager.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 593
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.DateTimeParse" method="System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608599268332" level="FATAL" thread="1"><log4j:message>字串未被辨認為有效的 DateTime。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   於 System.DateTime.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 762
+   於 CWoManager.fMain.ShowData(Nullable`1 isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 734
+   於 CWoManager.fMain.btnAppend_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 803
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.DateTimeParse" method="System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608600049005" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    a.process_id,
+    a.process_name  "Process Name",
+    a.process_desc  "Description",
+    a.process_desc2 "Description2",
+    a.process_code  "Process Code",
+    b.type_name     "Operate Type",
+    a.wip_erp       "WIP ERP",
+    nvl(c.option1, 'N') "Print WP Label",
+    nvl(c.option2, 'N') "Is T4 stove",
+    nvl(c.option3, 'N') "Is T6 stove",
+    nvl(c.option4, 'N') "10C starting process",
+    nvl(c.option5, 'N') "10C warehousing process"
+FROM
+    sajet.sys_process          a,
+    sajet.sys_operate_type     b,
+    sajet.sys_process_option   c
+WHERE
+    a.operate_id = b.operate_id (+)
+    AND a.process_id = c.process_id (+)
+    AND a.stage_id = '10001'
+ and a.Enabled = 'Y'  order by Description2 :ORA-00904: "DESCRIPTION2": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608600049051" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    a.process_id,
+    a.process_name  "Process Name",
+    a.process_desc  "Description",
+    a.process_desc2 "Description2",
+    a.process_code  "Process Code",
+    b.type_name     "Operate Type",
+    a.wip_erp       "WIP ERP",
+    nvl(c.option1, 'N') "Print WP Label",
+    nvl(c.option2, 'N') "Is T4 stove",
+    nvl(c.option3, 'N') "Is T6 stove",
+    nvl(c.option4, 'N') "10C starting process",
+    nvl(c.option5, 'N') "10C warehousing process"
+FROM
+    sajet.sys_process          a,
+    sajet.sys_operate_type     b,
+    sajet.sys_process_option   c
+WHERE
+    a.operate_id = b.operate_id (+)
+    AND a.process_id = c.process_id (+)
+    AND a.stage_id = '10001'
+ and a.Enabled = 'Y'  order by Description2  】
+
+Exception：ORA-00904: "DESCRIPTION2": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    a.process_id,
+    a.process_name  "Process Name",
+    a.process_desc  "Description",
+    a.process_desc2 "Description2",
+    a.process_code  "Process Code",
+    b.type_name     "Operate Type",
+    a.wip_erp       "WIP ERP",
+    nvl(c.option1, 'N') "Print WP Label",
+    nvl(c.option2, 'N') "Is T4 stove",
+    nvl(c.option3, 'N') "Is T6 stove",
+    nvl(c.option4, 'N') "10C starting process",
+    nvl(c.option5, 'N') "10C warehousing process"
+FROM
+    sajet.sys_process          a,
+    sajet.sys_operate_type     b,
+    sajet.sys_process_option   c
+WHERE
+    a.operate_id = b.operate_id (+)
+    AND a.process_id = c.process_id (+)
+    AND a.stage_id = '10001'
+ and a.Enabled = 'Y'  order by Description2  】
+
+Exception：ORA-00904: "DESCRIPTION2": 無效的 ID
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CProcess.fMain.ShowDetailData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.5\CProcess\fMain.cs: 行 476
+   於 CProcess.fMain.gvDetail_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.5\CProcess\fMain.cs: 行 574
+   於 System.Windows.Forms.DataGridView.OnCellClick(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseClick(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608600157669" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CProcess.fMain.btnDetailDisabled_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.5\CProcess\fMain.cs: 行 544
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CProcess.fMain" method="Void btnDetailDisabled_Click(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\DataCenter\CProcess.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608600161267" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CProcess.fMain.btnDetailDisabled_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.5\CProcess\fMain.cs: 行 544
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CProcess.fMain" method="Void btnDetailDisabled_Click(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\DataCenter\CProcess.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608606799935" level="FATAL" thread="1"><log4j:message>找不到名為 REASON_ID 的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 REASON_ID 的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CMachineDown.fMain.BtnDetailModify_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CMachineDown\1.0.17003.2\CMachineDown\fMain.cs: 行 445
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608607017918" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+UPDATE
+    SAJET.SYS_MACHINE_DOWN_DETAIL
+SET
+    REASON_CODE = :REASON_CODE
+   ,REASON_DESC = :REASON_DESC
+   ,DESC2 = :DESC2
+   ,EXCLUDE_WORKTIME = :EXCLUDE_WORKTIME
+   ,UPDATE_USERID = :UPDATE_USERID
+   ,UPDATE_TIME = SYSDATE
+WHERE
+    REASON_ID = :REASON_ID
+:ORA-00904: "EXCLUDE_WORKTIME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608607077739" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+INSERT INTO
+    SAJET.SYS_HT_MACHINE_DOWN_DETAIL
+SELECT *
+FROM
+    SAJET.SYS_MACHINE_DOWN_DETAIL
+WHERE
+    REASON_ID = '100046'
+:ORA-00913: 值太多</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>

@@ -1,0 +1,34 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1609897500666" level="FATAL" thread="1"><log4j:message>位置 0 沒有資料列。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.IndexOutOfRangeException: 位置 0 沒有資料列。
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 CWoManager.fData.ListViewOrderDetail1(String operationid, String numberDate, String number, String number3, String woTarget, String type, String ev) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.14\CWoManager\fData.cs: 行 2854
+   於 CWoManager.fData.fData_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.14\CWoManager\fData.cs: 行 410
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Data.RBTree`1" method="NodePath GetNodeByIndex(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1609897509064" level="FATAL" thread="1"><log4j:message>位置 0 沒有資料列。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.IndexOutOfRangeException: 位置 0 沒有資料列。
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 CWoManager.fData.ListViewOrderDetail1(String operationid, String numberDate, String number, String number3, String woTarget, String type, String ev) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.14\CWoManager\fData.cs: 行 2854
+   於 CWoManager.fData.fData_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.14\CWoManager\fData.cs: 行 410
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Data.RBTree`1" method="NodePath GetNodeByIndex(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll" line="0" /></log4j:event>

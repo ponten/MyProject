@@ -1,0 +1,1220 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616035861411" level="FATAL" thread="1"><log4j:message>指定的索引鍵不在字典中。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Collections.Generic.KeyNotFoundException: 指定的索引鍵不在字典中。
+   於 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   於 QualityInspectionAAR.Services.QCService.LoadInput(DataGridView& dgv, TProgramInfo& programInfo, String PART_ID, String PROCESS_ID) 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\Services\QCService_2.cs: 行 175
+   於 QualityInspectionAAR.FData.Form1_Load() 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\fData.cs: 行 111
+   於 QualityInspectionAAR.FData.FData_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\fData.cs: 行 46
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Collections.Generic.Dictionary`2" method="TValue get_Item(TKey)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616035867812" level="FATAL" thread="1"><log4j:message>指定的索引鍵不在字典中。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Collections.Generic.KeyNotFoundException: 指定的索引鍵不在字典中。
+   於 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   於 QualityInspectionAAR.Services.QCService.LoadInput(DataGridView& dgv, TProgramInfo& programInfo, String PART_ID, String PROCESS_ID) 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\Services\QCService_2.cs: 行 175
+   於 QualityInspectionAAR.FData.Form1_Load() 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\fData.cs: 行 111
+   於 QualityInspectionAAR.FData.FData_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\fData.cs: 行 46
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Collections.Generic.Dictionary`2" method="TValue get_Item(TKey)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616035872846" level="FATAL" thread="1"><log4j:message>指定的索引鍵不在字典中。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Collections.Generic.KeyNotFoundException: 指定的索引鍵不在字典中。
+   於 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   於 QualityInspectionAAR.Services.QCService.LoadInput(DataGridView& dgv, TProgramInfo& programInfo, String PART_ID, String PROCESS_ID) 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\Services\QCService_2.cs: 行 175
+   於 QualityInspectionAAR.FData.Form1_Load() 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\fData.cs: 行 111
+   於 QualityInspectionAAR.FData.FData_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\fData.cs: 行 46
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Collections.Generic.Dictionary`2" method="TValue get_Item(TKey)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616035878383" level="FATAL" thread="1"><log4j:message>指定的索引鍵不在字典中。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Collections.Generic.KeyNotFoundException: 指定的索引鍵不在字典中。
+   於 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   於 QualityInspectionAAR.Services.QCService.LoadInput(DataGridView& dgv, TProgramInfo& programInfo, String PART_ID, String PROCESS_ID) 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\Services\QCService_2.cs: 行 175
+   於 QualityInspectionAAR.FData.Form1_Load() 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\fData.cs: 行 111
+   於 QualityInspectionAAR.FData.FData_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\fData.cs: 行 46
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Collections.Generic.Dictionary`2" method="TValue get_Item(TKey)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616035893182" level="FATAL" thread="1"><log4j:message>指定的索引鍵不在字典中。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Collections.Generic.KeyNotFoundException: 指定的索引鍵不在字典中。
+   於 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   於 QualityInspectionAAR.Services.QCService.LoadInput(DataGridView& dgv, TProgramInfo& programInfo, String PART_ID, String PROCESS_ID) 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\Services\QCService_2.cs: 行 175
+   於 QualityInspectionAAR.FData.Form1_Load() 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\fData.cs: 行 111
+   於 QualityInspectionAAR.FData.FData_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\QualityInspectionAAR\1.0.17003.2\QualityInspectionAAR\fData.cs: 行 46
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Collections.Generic.Dictionary`2" method="TValue get_Item(TKey)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1616052334660" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') OPTION1 PrintWaterProofLabel,
+    NVL(C.OPTION2, 'N') OPTION2 UseT4Stove,
+    NVL(C.OPTION3, 'N') OPTION3 UseT6Stove,
+    NVL(C.OPTION4, 'N') OPTION4 StartingProcessOf10C,
+    NVL(C.OPTION5, 'N') OPTION5 WarehousingProcessOf10C,
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) UsingEquipment,
+    E.DEPT_NAME ProductionUnit
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name :ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616052334869" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CProcess.fMain.gvData_CellValueNeeded(Object sender, DataGridViewCellValueEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 329
+   於 System.Windows.Forms.DataGridView.OnCellValueNeeded(DataGridViewCellValueEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellValueNeeded(Int32 columnIndex, Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewCell.GetValue(Int32 rowIndex)
+   於 System.Windows.Forms.DataGridView.OnCellValidating(DataGridViewCell& dataGridViewCell, Int32 columnIndex, Int32 rowIndex, DataGridViewDataErrorContexts context)
+   於 System.Windows.Forms.DataGridView.CommitEdit(DataGridViewCell& dataGridViewCurrentCell, DataGridViewDataErrorContexts context, DataGridViewValidateCellInternal validateCell, Boolean fireCellLeave, Boolean fireCellEnter, Boolean fireRowLeave, Boolean fireRowEnter, Boolean fireLeave)
+   於 System.Windows.Forms.DataGridView.EndEdit(DataGridViewDataErrorContexts context, DataGridViewValidateCellInternal validateCell, Boolean fireCellLeave, Boolean fireCellEnter, Boolean fireRowLeave, Boolean fireRowEnter, Boolean fireLeave, Boolean keepFocus, Boolean resetCurrentCell, Boolean resetAnchorCell)
+   於 System.Windows.Forms.DataGridView.SetCurrentCellAddressCore(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick)
+   於 System.Windows.Forms.DataGridView.ResetCurrentCell()
+   於 System.Windows.Forms.DataGridView.OnDataGridViewElementStateChanging(DataGridViewElement element, Int32 index, DataGridViewElementStates elementState)
+   於 System.Windows.Forms.DataGridViewBand.OnStateChanging(DataGridViewElementStates elementState)
+   於 System.Windows.Forms.DataGridViewBand.set_Visible(Boolean value)
+   於 System.Windows.Forms.DataGridViewColumn.set_Visible(Boolean value)
+   於 CProcess.fMain.ShowData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 142
+   於 CProcess.fMain.combShow_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 103
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.HandleSelectedIndexChanged(Object sender, EventArgs e)
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   於 System.Windows.Forms.ToolStripComboBox.set_SelectedIndex(Int32 value)
+   於 CProcess.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 52
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CProcess.fMain" method="Void gvData_CellValueNeeded(System.Object, System.Windows.Forms.DataGridViewCellValueEventArgs)" file="C:\FullChamp\Chroma Application Client\DataCenter\CProcess.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616052338438" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CProcess.fMain.gvData_CellValueNeeded(Object sender, DataGridViewCellValueEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 329
+   於 System.Windows.Forms.DataGridView.OnCellValueNeeded(DataGridViewCellValueEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellValueNeeded(Int32 columnIndex, Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewCell.GetValue(Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewTextBoxCell.GetPreferredSize(Graphics graphics, DataGridViewCellStyle cellStyle, Int32 rowIndex, Size constraintSize)
+   於 System.Windows.Forms.DataGridViewCell.GetPreferredWidth(Int32 rowIndex, Int32 height)
+   於 System.Windows.Forms.DataGridViewCell.OnCellDataAreaMouseEnterInternal(Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewCell.OnMouseMoveInternal(DataGridViewCellMouseEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellMouseMove(DataGridViewCellMouseEventArgs e)
+   於 System.Windows.Forms.DataGridView.UpdateMouseEnteredCell(HitTestInfo hti, MouseEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseMove(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseMove(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CProcess.fMain" method="Void gvData_CellValueNeeded(System.Object, System.Windows.Forms.DataGridViewCellValueEventArgs)" file="C:\FullChamp\Chroma Application Client\DataCenter\CProcess.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616052340086" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CProcess.fMain.gvData_CellValueNeeded(Object sender, DataGridViewCellValueEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 329
+   於 System.Windows.Forms.DataGridView.OnCellValueNeeded(DataGridViewCellValueEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellValueNeeded(Int32 columnIndex, Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewCell.GetValue(Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewTextBoxCell.GetPreferredSize(Graphics graphics, DataGridViewCellStyle cellStyle, Int32 rowIndex, Size constraintSize)
+   於 System.Windows.Forms.DataGridViewCell.GetPreferredWidth(Int32 rowIndex, Int32 height)
+   於 System.Windows.Forms.DataGridViewCell.OnCellDataAreaMouseEnterInternal(Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewCell.OnMouseMoveInternal(DataGridViewCellMouseEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellMouseMove(DataGridViewCellMouseEventArgs e)
+   於 System.Windows.Forms.DataGridView.UpdateMouseEnteredCell(HitTestInfo hti, MouseEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseMove(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseMove(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CProcess.fMain" method="Void gvData_CellValueNeeded(System.Object, System.Windows.Forms.DataGridViewCellValueEventArgs)" file="C:\FullChamp\Chroma Application Client\DataCenter\CProcess.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1616052366580" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') OPTION1 PrintWaterProofLabel,
+    NVL(C.OPTION2, 'N') OPTION2 UseT4Stove,
+    NVL(C.OPTION3, 'N') OPTION3 UseT6Stove,
+    NVL(C.OPTION4, 'N') OPTION4 StartingProcessOf10C,
+    NVL(C.OPTION5, 'N') OPTION5 WarehousingProcessOf10C,
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) UsingEquipment,
+    E.DEPT_NAME ProductionUnit
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name :ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616052366958" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CProcess.fMain.gvData_CellValueNeeded(Object sender, DataGridViewCellValueEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 329
+   於 System.Windows.Forms.DataGridView.OnCellValueNeeded(DataGridViewCellValueEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellValueNeeded(Int32 columnIndex, Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewCell.GetValue(Int32 rowIndex)
+   於 System.Windows.Forms.DataGridView.OnCellValidating(DataGridViewCell& dataGridViewCell, Int32 columnIndex, Int32 rowIndex, DataGridViewDataErrorContexts context)
+   於 System.Windows.Forms.DataGridView.CommitEdit(DataGridViewCell& dataGridViewCurrentCell, DataGridViewDataErrorContexts context, DataGridViewValidateCellInternal validateCell, Boolean fireCellLeave, Boolean fireCellEnter, Boolean fireRowLeave, Boolean fireRowEnter, Boolean fireLeave)
+   於 System.Windows.Forms.DataGridView.EndEdit(DataGridViewDataErrorContexts context, DataGridViewValidateCellInternal validateCell, Boolean fireCellLeave, Boolean fireCellEnter, Boolean fireRowLeave, Boolean fireRowEnter, Boolean fireLeave, Boolean keepFocus, Boolean resetCurrentCell, Boolean resetAnchorCell)
+   於 System.Windows.Forms.DataGridView.SetCurrentCellAddressCore(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick)
+   於 System.Windows.Forms.DataGridView.ResetCurrentCell()
+   於 System.Windows.Forms.DataGridView.OnDataGridViewElementStateChanging(DataGridViewElement element, Int32 index, DataGridViewElementStates elementState)
+   於 System.Windows.Forms.DataGridViewBand.OnStateChanging(DataGridViewElementStates elementState)
+   於 System.Windows.Forms.DataGridViewBand.set_Visible(Boolean value)
+   於 System.Windows.Forms.DataGridViewColumn.set_Visible(Boolean value)
+   於 CProcess.fMain.ShowData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 142
+   於 CProcess.fMain.combShow_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 103
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.HandleSelectedIndexChanged(Object sender, EventArgs e)
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   於 System.Windows.Forms.ToolStripComboBox.set_SelectedIndex(Int32 value)
+   於 CProcess.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 52
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CProcess.fMain" method="Void gvData_CellValueNeeded(System.Object, System.Windows.Forms.DataGridViewCellValueEventArgs)" file="C:\FullChamp\Chroma Application Client\DataCenter\CProcess.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1616052429645" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') OPTION1 PrintWaterProofLabel,
+    NVL(C.OPTION2, 'N') OPTION2 UseT4Stove,
+    NVL(C.OPTION3, 'N') OPTION3 UseT6Stove,
+    NVL(C.OPTION4, 'N') OPTION4 StartingProcessOf10C,
+    NVL(C.OPTION5, 'N') OPTION5 WarehousingProcessOf10C,
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) UsingEquipment,
+    E.DEPT_NAME ProductionUnit
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name :ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616052429952" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CProcess.fMain.gvData_CellValueNeeded(Object sender, DataGridViewCellValueEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 329
+   於 System.Windows.Forms.DataGridView.OnCellValueNeeded(DataGridViewCellValueEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellValueNeeded(Int32 columnIndex, Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewCell.GetValue(Int32 rowIndex)
+   於 System.Windows.Forms.DataGridView.OnCellValidating(DataGridViewCell& dataGridViewCell, Int32 columnIndex, Int32 rowIndex, DataGridViewDataErrorContexts context)
+   於 System.Windows.Forms.DataGridView.CommitEdit(DataGridViewCell& dataGridViewCurrentCell, DataGridViewDataErrorContexts context, DataGridViewValidateCellInternal validateCell, Boolean fireCellLeave, Boolean fireCellEnter, Boolean fireRowLeave, Boolean fireRowEnter, Boolean fireLeave)
+   於 System.Windows.Forms.DataGridView.EndEdit(DataGridViewDataErrorContexts context, DataGridViewValidateCellInternal validateCell, Boolean fireCellLeave, Boolean fireCellEnter, Boolean fireRowLeave, Boolean fireRowEnter, Boolean fireLeave, Boolean keepFocus, Boolean resetCurrentCell, Boolean resetAnchorCell)
+   於 System.Windows.Forms.DataGridView.SetCurrentCellAddressCore(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick)
+   於 System.Windows.Forms.DataGridView.ResetCurrentCell()
+   於 System.Windows.Forms.DataGridView.OnDataGridViewElementStateChanging(DataGridViewElement element, Int32 index, DataGridViewElementStates elementState)
+   於 System.Windows.Forms.DataGridViewBand.OnStateChanging(DataGridViewElementStates elementState)
+   於 System.Windows.Forms.DataGridViewBand.set_Visible(Boolean value)
+   於 System.Windows.Forms.DataGridViewColumn.set_Visible(Boolean value)
+   於 CProcess.fMain.ShowData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 142
+   於 CProcess.fMain.combShow_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 103
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.HandleSelectedIndexChanged(Object sender, EventArgs e)
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   於 System.Windows.Forms.ToolStripComboBox.set_SelectedIndex(Int32 value)
+   於 CProcess.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 52
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CProcess.fMain" method="Void gvData_CellValueNeeded(System.Object, System.Windows.Forms.DataGridViewCellValueEventArgs)" file="C:\FullChamp\Chroma Application Client\DataCenter\CProcess.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616052476688" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CProcess.fMain.ShowDetailData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 389
+   於 CProcess.fMain.gvData_SelectionChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 474
+   於 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   於 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   於 System.Windows.Forms.DataGridView.ClearSelection(Int32 columnIndexException, Int32 rowIndexException, Boolean selectExceptionElement)
+   於 System.Windows.Forms.DataGridView.SetAndSelectCurrentCellAddress(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick, Boolean clearSelection, Boolean forceCurrentCellSelection)
+   於 System.Windows.Forms.DataGridView.MakeFirstDisplayedCellCurrentCell(Boolean includeNewRow)
+   於 System.Windows.Forms.DataGridView.OnEnter(EventArgs e)
+   於 System.Windows.Forms.Control.NotifyEnter()
+   於 System.Windows.Forms.ContainerControl.UpdateFocusedControl()</log4j:throwable><log4j:locationInfo class="CProcess.fMain" method="Void ShowDetailData()" file="C:\FullChamp\Chroma Application Client\DataCenter\CProcess.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1616052735230" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') OPTION1 PrintWaterProofLabel,
+    NVL(C.OPTION2, 'N') OPTION2 UseT4Stove,
+    NVL(C.OPTION3, 'N') OPTION3 UseT6Stove,
+    NVL(C.OPTION4, 'N') OPTION4 StartingProcessOf10C,
+    NVL(C.OPTION5, 'N') OPTION5 WarehousingProcessOf10C,
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) UsingEquipment,
+    E.DEPT_NAME ProductionUnit
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name :ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616052735306" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') OPTION1 PrintWaterProofLabel,
+    NVL(C.OPTION2, 'N') OPTION2 UseT4Stove,
+    NVL(C.OPTION3, 'N') OPTION3 UseT6Stove,
+    NVL(C.OPTION4, 'N') OPTION4 StartingProcessOf10C,
+    NVL(C.OPTION5, 'N') OPTION5 WarehousingProcessOf10C,
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) UsingEquipment,
+    E.DEPT_NAME ProductionUnit
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name  】
+
+Exception：ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') OPTION1 PrintWaterProofLabel,
+    NVL(C.OPTION2, 'N') OPTION2 UseT4Stove,
+    NVL(C.OPTION3, 'N') OPTION3 UseT6Stove,
+    NVL(C.OPTION4, 'N') OPTION4 StartingProcessOf10C,
+    NVL(C.OPTION5, 'N') OPTION5 WarehousingProcessOf10C,
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) UsingEquipment,
+    E.DEPT_NAME ProductionUnit
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) <> 'DROP'  order by process_name  】
+
+Exception：ORA-00923: 在應出現的位置找不到 FROM 關鍵字
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 CProcess.fMain.ShowDetailData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 444
+   於 CProcess.fMain.gvData_SelectionChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 463
+   於 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   於 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   於 System.Windows.Forms.DataGridView.ClearSelection(Int32 columnIndexException, Int32 rowIndexException, Boolean selectExceptionElement)
+   於 System.Windows.Forms.DataGridView.SetAndSelectCurrentCellAddress(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick, Boolean clearSelection, Boolean forceCurrentCellSelection)
+   於 System.Windows.Forms.DataGridView.MakeFirstDisplayedCellCurrentCell(Boolean includeNewRow)
+   於 System.Windows.Forms.DataGridView.OnRowCollectionChanged_PostNotification(Boolean recreateNewRow, Boolean allowSettingCurrentCell, CollectionChangeAction cca, DataGridViewRow dataGridViewRow, Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged_PostNotification(CollectionChangeAction cca, Int32 rowIndex, Int32 rowCount, DataGridViewRow dataGridViewRow, Boolean changeIsDeletion, Boolean changeIsInsertion, Boolean recreateNewRow, Point newCurrentCell)
+   於 System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged(CollectionChangeEventArgs e, Int32 rowIndex, Int32 rowCount)
+   於 System.Windows.Forms.DataGridViewRowCollection.AddInternal(DataGridViewRow dataGridViewRow)
+   於 System.Windows.Forms.DataGridView.RefreshRows(Boolean scrollIntoView)
+   於 System.Windows.Forms.DataGridView.RefreshColumnsAndRows()
+   於 System.Windows.Forms.DataGridView.OnDataMemberChanged(EventArgs e)
+   於 System.Windows.Forms.DataGridView.set_DataMember(String value)
+   於 CProcess.fMain.ShowData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 132
+   於 CProcess.fMain.combShow_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 100
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.HandleSelectedIndexChanged(Object sender, EventArgs e)
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   於 System.Windows.Forms.ToolStripComboBox.set_SelectedIndex(Int32 value)
+   於 CProcess.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 49
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1616052810744" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') OPTION1 PrintWaterProofLabel,
+    NVL(C.OPTION2, 'N') OPTION2 UseT4Stove,
+    NVL(C.OPTION3, 'N') OPTION3 UseT6Stove,
+    NVL(C.OPTION4, 'N') OPTION4 StartingProcessOf10C,
+    NVL(C.OPTION5, 'N') OPTION5 WarehousingProcessOf10C,
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) UsingEquipment,
+    E.DEPT_NAME ProductionUnit
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name :ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616052810955" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') OPTION1 PrintWaterProofLabel,
+    NVL(C.OPTION2, 'N') OPTION2 UseT4Stove,
+    NVL(C.OPTION3, 'N') OPTION3 UseT6Stove,
+    NVL(C.OPTION4, 'N') OPTION4 StartingProcessOf10C,
+    NVL(C.OPTION5, 'N') OPTION5 WarehousingProcessOf10C,
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) UsingEquipment,
+    E.DEPT_NAME ProductionUnit
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name  】
+
+Exception：ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') OPTION1 PrintWaterProofLabel,
+    NVL(C.OPTION2, 'N') OPTION2 UseT4Stove,
+    NVL(C.OPTION3, 'N') OPTION3 UseT6Stove,
+    NVL(C.OPTION4, 'N') OPTION4 StartingProcessOf10C,
+    NVL(C.OPTION5, 'N') OPTION5 WarehousingProcessOf10C,
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) UsingEquipment,
+    E.DEPT_NAME ProductionUnit
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) <> 'DROP'  order by process_name  】
+
+Exception：ORA-00923: 在應出現的位置找不到 FROM 關鍵字
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 CProcess.fMain.ShowDetailData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 444
+   於 CProcess.fMain.gvData_SelectionChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 463
+   於 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   於 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   於 System.Windows.Forms.DataGridView.ClearSelection(Int32 columnIndexException, Int32 rowIndexException, Boolean selectExceptionElement)
+   於 System.Windows.Forms.DataGridView.SetAndSelectCurrentCellAddress(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick, Boolean clearSelection, Boolean forceCurrentCellSelection)
+   於 System.Windows.Forms.DataGridView.MakeFirstDisplayedCellCurrentCell(Boolean includeNewRow)
+   於 System.Windows.Forms.DataGridView.OnRowCollectionChanged_PostNotification(Boolean recreateNewRow, Boolean allowSettingCurrentCell, CollectionChangeAction cca, DataGridViewRow dataGridViewRow, Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged_PostNotification(CollectionChangeAction cca, Int32 rowIndex, Int32 rowCount, DataGridViewRow dataGridViewRow, Boolean changeIsDeletion, Boolean changeIsInsertion, Boolean recreateNewRow, Point newCurrentCell)
+   於 System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged(CollectionChangeEventArgs e, Int32 rowIndex, Int32 rowCount)
+   於 System.Windows.Forms.DataGridViewRowCollection.AddInternal(DataGridViewRow dataGridViewRow)
+   於 System.Windows.Forms.DataGridView.RefreshRows(Boolean scrollIntoView)
+   於 System.Windows.Forms.DataGridView.RefreshColumnsAndRows()
+   於 System.Windows.Forms.DataGridView.OnDataMemberChanged(EventArgs e)
+   於 System.Windows.Forms.DataGridView.set_DataMember(String value)
+   於 CProcess.fMain.ShowData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 132
+   於 CProcess.fMain.combShow_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 100
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.HandleSelectedIndexChanged(Object sender, EventArgs e)
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   於 System.Windows.Forms.ToolStripComboBox.set_SelectedIndex(Int32 value)
+   於 CProcess.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 49
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1616054634840" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') "PrintWaterProofLabel",
+    NVL(C.OPTION2, 'N') "UseT4Stove",
+    NVL(C.OPTION3, 'N') "UseT6Stove",
+    NVL(C.OPTION4, 'N') "StartingProcessOf10C",
+    NVL(C.OPTION5, 'N') "WarehousingProcessOf10C",
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) "UsingEquipment",
+    E.DEPT_NAME "ProductionUnit"
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name :並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616054634909" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') "PrintWaterProofLabel",
+    NVL(C.OPTION2, 'N') "UseT4Stove",
+    NVL(C.OPTION3, 'N') "UseT6Stove",
+    NVL(C.OPTION4, 'N') "StartingProcessOf10C",
+    NVL(C.OPTION5, 'N') "WarehousingProcessOf10C",
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) "UsingEquipment",
+    E.DEPT_NAME "ProductionUnit"
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name  】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') "PrintWaterProofLabel",
+    NVL(C.OPTION2, 'N') "UseT4Stove",
+    NVL(C.OPTION3, 'N') "UseT6Stove",
+    NVL(C.OPTION4, 'N') "StartingProcessOf10C",
+    NVL(C.OPTION5, 'N') "WarehousingProcessOf10C",
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) "UsingEquipment",
+    E.DEPT_NAME "ProductionUnit"
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) <> 'DROP'  order by process_name  】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 CProcess.fMain.ShowDetailData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 446
+   於 CProcess.fMain.gvData_SelectionChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 469
+   於 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   於 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   於 System.Windows.Forms.DataGridView.ClearSelection(Int32 columnIndexException, Int32 rowIndexException, Boolean selectExceptionElement)
+   於 System.Windows.Forms.DataGridView.SetAndSelectCurrentCellAddress(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick, Boolean clearSelection, Boolean forceCurrentCellSelection)
+   於 System.Windows.Forms.DataGridView.MakeFirstDisplayedCellCurrentCell(Boolean includeNewRow)
+   於 System.Windows.Forms.DataGridView.OnRowCollectionChanged_PostNotification(Boolean recreateNewRow, Boolean allowSettingCurrentCell, CollectionChangeAction cca, DataGridViewRow dataGridViewRow, Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged_PostNotification(CollectionChangeAction cca, Int32 rowIndex, Int32 rowCount, DataGridViewRow dataGridViewRow, Boolean changeIsDeletion, Boolean changeIsInsertion, Boolean recreateNewRow, Point newCurrentCell)
+   於 System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged(CollectionChangeEventArgs e, Int32 rowIndex, Int32 rowCount)
+   於 System.Windows.Forms.DataGridViewRowCollection.AddInternal(DataGridViewRow dataGridViewRow)
+   於 System.Windows.Forms.DataGridView.RefreshRows(Boolean scrollIntoView)
+   於 System.Windows.Forms.DataGridView.RefreshColumnsAndRows()
+   於 System.Windows.Forms.DataGridView.OnDataMemberChanged(EventArgs e)
+   於 System.Windows.Forms.DataGridView.set_DataMember(String value)
+   於 CProcess.fMain.ShowData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 133
+   於 CProcess.fMain.combShow_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 101
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.HandleSelectedIndexChanged(Object sender, EventArgs e)
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   於 System.Windows.Forms.ToolStripComboBox.set_SelectedIndex(Int32 value)
+   於 CProcess.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 51
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1616054661799" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') "PrintWaterProofLabel",
+    NVL(C.OPTION2, 'N') "UseT4Stove",
+    NVL(C.OPTION3, 'N') "UseT6Stove",
+    NVL(C.OPTION4, 'N') "StartingProcessOf10C",
+    NVL(C.OPTION5, 'N') "WarehousingProcessOf10C",
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) "UsingEquipment",
+    E.DEPT_NAME "ProductionUnit"
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name :並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616054662009" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') "PrintWaterProofLabel",
+    NVL(C.OPTION2, 'N') "UseT4Stove",
+    NVL(C.OPTION3, 'N') "UseT6Stove",
+    NVL(C.OPTION4, 'N') "StartingProcessOf10C",
+    NVL(C.OPTION5, 'N') "WarehousingProcessOf10C",
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) "UsingEquipment",
+    E.DEPT_NAME "ProductionUnit"
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) &lt;&gt; 'DROP'  order by process_name  】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    A.PROCESS_ID,
+    A.PROCESS_NAME,
+    A.PROCESS_DESC,
+    A.PROCESS_DESC2,
+    A.PROCESS_CODE,
+    B.TYPE_NAME,
+    A.WIP_ERP,
+    NVL(C.OPTION1, 'N') "PrintWaterProofLabel",
+    NVL(C.OPTION2, 'N') "UseT4Stove",
+    NVL(C.OPTION3, 'N') "UseT6Stove",
+    NVL(C.OPTION4, 'N') "StartingProcessOf10C",
+    NVL(C.OPTION5, 'N') "WarehousingProcessOf10C",
+    TRIM(D.MACHINE_TYPE_NAME)
+    || ' '
+    || TRIM(D.MACHINE_TYPE_DESC) "UsingEquipment",
+    E.DEPT_NAME "ProductionUnit"
+FROM
+    SAJET.SYS_PROCESS          A,
+    SAJET.SYS_OPERATE_TYPE     B,
+    SAJET.SYS_PROCESS_OPTION   C,
+    SAJET.SYS_MACHINE_TYPE     D,
+    SAJET.SYS_DEPT             E
+WHERE
+    A.STAGE_ID = :STAGE_ID
+    AND A.OPERATE_ID = B.OPERATE_ID (+)
+    AND A.PROCESS_ID = C.PROCESS_ID (+)
+    AND C.OPTION6 = TO_CHAR(D.MACHINE_TYPE_ID(+))
+    AND C.OPTION7 = TO_CHAR(E.DEPT_ID(+))
+ AND UPPER(TRIM(a.ENABLED)) <> 'DROP'  order by process_name  】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 CProcess.fMain.ShowDetailData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 446
+   於 CProcess.fMain.gvData_SelectionChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 469
+   於 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   於 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   於 System.Windows.Forms.DataGridView.ClearSelection(Int32 columnIndexException, Int32 rowIndexException, Boolean selectExceptionElement)
+   於 System.Windows.Forms.DataGridView.SetAndSelectCurrentCellAddress(Int32 columnIndex, Int32 rowIndex, Boolean setAnchorCellAddress, Boolean validateCurrentCell, Boolean throughMouseClick, Boolean clearSelection, Boolean forceCurrentCellSelection)
+   於 System.Windows.Forms.DataGridView.MakeFirstDisplayedCellCurrentCell(Boolean includeNewRow)
+   於 System.Windows.Forms.DataGridView.OnRowCollectionChanged_PostNotification(Boolean recreateNewRow, Boolean allowSettingCurrentCell, CollectionChangeAction cca, DataGridViewRow dataGridViewRow, Int32 rowIndex)
+   於 System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged_PostNotification(CollectionChangeAction cca, Int32 rowIndex, Int32 rowCount, DataGridViewRow dataGridViewRow, Boolean changeIsDeletion, Boolean changeIsInsertion, Boolean recreateNewRow, Point newCurrentCell)
+   於 System.Windows.Forms.DataGridViewRowCollection.OnCollectionChanged(CollectionChangeEventArgs e, Int32 rowIndex, Int32 rowCount)
+   於 System.Windows.Forms.DataGridViewRowCollection.AddInternal(DataGridViewRow dataGridViewRow)
+   於 System.Windows.Forms.DataGridView.RefreshRows(Boolean scrollIntoView)
+   於 System.Windows.Forms.DataGridView.RefreshColumnsAndRows()
+   於 System.Windows.Forms.DataGridView.OnDataMemberChanged(EventArgs e)
+   於 System.Windows.Forms.DataGridView.set_DataMember(String value)
+   於 CProcess.fMain.ShowData() 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 133
+   於 CProcess.fMain.combShow_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 101
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ToolStripComboBox.HandleSelectedIndexChanged(Object sender, EventArgs e)
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   於 System.Windows.Forms.ToolStripComboBox.set_SelectedIndex(Int32 value)
+   於 CProcess.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 51
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1616057016105" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    DEPT_ID ID      ID,
+    DEPT_NAME NAME  NAME
+FROM
+    SAJET.SYS_DEPT
+WHERE
+    ENABLED = 'Y'
+ORDER BY
+    2
+:ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616057016167" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    DEPT_ID ID      ID,
+    DEPT_NAME NAME  NAME
+FROM
+    SAJET.SYS_DEPT
+WHERE
+    ENABLED = 'Y'
+ORDER BY
+    2
+ 】
+
+Exception：ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    DEPT_ID ID      ID,
+    DEPT_NAME NAME  NAME
+FROM
+    SAJET.SYS_DEPT
+WHERE
+    ENABLED = 'Y'
+ORDER BY
+    2
+ 】
+
+Exception：ORA-00923: 在應出現的位置找不到 FROM 關鍵字
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CProcess.Services.ProcessOptionService.GetComboBoxItems(ProcessOptionEnum process_ption) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\Services\ProcessOptionService.cs: 行 62
+   於 CProcess.fDetailData.fData_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fDetailData.cs: 行 74
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1616059061521" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+BEGIN
+    UPDATE sajet.sys_process
+    SET
+        process_code = :process_code,
+        process_name = :process_name,
+        process_desc = :process_desc,
+        process_desc2 = :process_desc2,
+        operate_id = :operate_id,
+        update_userid = :update_userid,
+        update_time = :update_time,
+        wip_erp = :wip_erp
+    WHERE
+        process_id = :process_id;
+
+    INSERT INTO sajet.sys_ht_process (
+        factory_id,
+        process_id,
+        process_name,
+        stage_id,
+        process_code,
+        process_desc,
+        operate_id,
+        update_userid,
+        update_time,
+        enabled,
+        process_desc2,
+        wip_erp
+    )
+        SELECT
+            factory_id,
+            process_id,
+            process_name,
+            stage_id,
+            process_code,
+            process_desc,
+            operate_id,
+            update_userid,
+            update_time,
+            enabled,
+            process_desc2,
+            wip_erp
+        FROM
+            sajet.sys_process
+        WHERE
+            process_id = :process_id;
+
+    INSERT INTO sajet.sys_ht_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        option6,
+        option7,
+        option8,
+        option9,
+        option10,
+        update_userid,
+        update_time
+    )
+        SELECT
+            factory_id,
+            stage_id,
+            process_id,
+            option1,
+            option2,
+            option3,
+            option4,
+            option5,
+            option6,
+            option7,
+            option8,
+            option9,
+            option10,
+            update_userid,
+            update_time
+        FROM
+            sajet.sys_process_option
+        WHERE
+            process_id = :process_id;
+
+    DELETE sajet.sys_process_option
+    WHERE
+        process_id = :process_id;
+
+    INSERT INTO sajet.sys_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        option6,
+        option7,
+        update_userid,
+        update_time
+    ) VALUES (
+        (
+            SELECT
+                factory_id
+            FROM
+                sajet.sys_factory
+            WHERE
+                ROWNUM = 1
+        ),
+        :stage_id,
+        :process_id,
+        :option1,
+        :option2,
+        :option3,
+        :option4,
+        :option5,
+        :option6,
+        :option7,
+        :update_userid,
+        :update_time
+    );
+
+END;
+:ORA-12899: 資料欄 "SAJET"."SYS_HT_PROCESS_OPTION"."OPTION6" 的值太大 (實際: 8, 最大值: 5)
+ORA-06512: 在 line 48</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1616059134791" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+BEGIN
+    UPDATE sajet.sys_process
+    SET
+        process_code = :process_code,
+        process_name = :process_name,
+        process_desc = :process_desc,
+        process_desc2 = :process_desc2,
+        operate_id = :operate_id,
+        update_userid = :update_userid,
+        update_time = :update_time,
+        wip_erp = :wip_erp
+    WHERE
+        process_id = :process_id;
+
+    INSERT INTO sajet.sys_ht_process (
+        factory_id,
+        process_id,
+        process_name,
+        stage_id,
+        process_code,
+        process_desc,
+        operate_id,
+        update_userid,
+        update_time,
+        enabled,
+        process_desc2,
+        wip_erp
+    )
+        SELECT
+            factory_id,
+            process_id,
+            process_name,
+            stage_id,
+            process_code,
+            process_desc,
+            operate_id,
+            update_userid,
+            update_time,
+            enabled,
+            process_desc2,
+            wip_erp
+        FROM
+            sajet.sys_process
+        WHERE
+            process_id = :process_id;
+
+    INSERT INTO sajet.sys_ht_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        option6,
+        option7,
+        option8,
+        option9,
+        option10,
+        update_userid,
+        update_time
+    )
+        SELECT
+            factory_id,
+            stage_id,
+            process_id,
+            option1,
+            option2,
+            option3,
+            option4,
+            option5,
+            option6,
+            option7,
+            option8,
+            option9,
+            option10,
+            update_userid,
+            update_time
+        FROM
+            sajet.sys_process_option
+        WHERE
+            process_id = :process_id;
+
+    DELETE sajet.sys_process_option
+    WHERE
+        process_id = :process_id;
+
+    INSERT INTO sajet.sys_process_option (
+        factory_id,
+        stage_id,
+        process_id,
+        option1,
+        option2,
+        option3,
+        option4,
+        option5,
+        option6,
+        option7,
+        update_userid,
+        update_time
+    ) VALUES (
+        (
+            SELECT
+                factory_id
+            FROM
+                sajet.sys_factory
+            WHERE
+                ROWNUM = 1
+        ),
+        :stage_id,
+        :process_id,
+        :option1,
+        :option2,
+        :option3,
+        :option4,
+        :option5,
+        :option6,
+        :option7,
+        :update_userid,
+        :update_time
+    );
+
+END;
+:ORA-12899: 資料欄 "SAJET"."SYS_HT_PROCESS_OPTION"."OPTION6" 的值太大 (實際: 8, 最大值: 5)
+ORA-06512: 在 line 48</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616059415816" level="FATAL" thread="1"><log4j:message>找不到名為  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CProcess.fMain.gvData_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 375
+   於 System.Windows.Forms.DataGridView.OnCellClick(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseClick(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616059420982" level="FATAL" thread="1"><log4j:message>找不到名為  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CProcess.fMain.gvData_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 375
+   於 System.Windows.Forms.DataGridView.OnCellClick(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseClick(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616059442073" level="FATAL" thread="1"><log4j:message>找不到名為  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CProcess.fMain.gvData_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 375
+   於 System.Windows.Forms.DataGridView.OnCellClick(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseClick(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1616059713913" level="FATAL" thread="1"><log4j:message>找不到名為  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CProcess.fMain.gvData_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CProcess\1.1.17003.9\CProcess\fMain.cs: 行 375
+   於 System.Windows.Forms.DataGridView.OnCellClick(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseClick(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>

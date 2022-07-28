@@ -1,0 +1,42 @@
+-- Create table
+create table SYS_PART_QC_PROCESS_RULE
+(
+  recid            NUMBER,
+  part_id          NUMBER,
+  process_id       NUMBER,
+  sampling_rule_id NUMBER,
+  enabled          VARCHAR2(25) default 'Y',
+  update_userid    NUMBER,
+  update_time      DATE
+)
+tablespace SYSBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 2M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table SYS_PART_QC_PROCESS_RULE
+  is '料號在各製程與抽驗規則關係表';
+-- Add comments to the columns 
+comment on column SYS_PART_QC_PROCESS_RULE.recid
+  is '系統產生唯一值(根據PART_ID與PROCESS_ID,關聯SYS_PART_QC_TESTITEM.RECID)';
+comment on column SYS_PART_QC_PROCESS_RULE.part_id
+  is '料號(關聯至SYS_PART.PART_ID)';
+comment on column SYS_PART_QC_PROCESS_RULE.process_id
+  is '製程(關聯至SYS_PROCESS.PROCESS_ID)';
+comment on column SYS_PART_QC_PROCESS_RULE.sampling_rule_id
+  is '抽驗規則(關聯至SYS_QC_SAMPLING_RULE.SAMPLING_RULE_ID)';
+comment on column SYS_PART_QC_PROCESS_RULE.enabled
+  is '資料是否有效(Y:有效,N:失效)';
+comment on column SYS_PART_QC_PROCESS_RULE.update_userid
+  is '資料異動人員(SYS_EMP.EMP_ID)';
+comment on column SYS_PART_QC_PROCESS_RULE.update_time
+  is '資料異動時間';
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on SYS_PART_QC_PROCESS_RULE to SYS_USER;

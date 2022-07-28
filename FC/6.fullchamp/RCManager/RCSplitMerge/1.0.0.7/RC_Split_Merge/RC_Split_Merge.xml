@@ -1,0 +1,38 @@
+﻿<Chroma>
+	<繁體中文>
+		<Message Name="R/C" Value="流程卡號"/>
+		<Message Name="Time" Value="執行時間"/>
+		<Message Name="From R/C" Value="來源流程卡號"/>		
+		<Message Name="From Qty" Value="來源數量"/>
+		<Message Name="To R/C" Value="結果流程卡號"/>
+		<Message Name="To Qty" Value="結果數量"/>
+		<Message Name="Employee" Value="員工"/>
+		<Message Name="ActionType" Value="操作類型"/>
+		<Message Name="Action" Value="操作"/>
+		<Message Name="rc error" Value="流程卡錯誤"/>
+		<Message Name="rc is not split or merge" Value="該流程卡沒有拆併批歷程"/>
+		<Message Name="Merge" Value="合併"/>
+		<Message Name="Split" Value="分批"/>
+		<Message Name="Travel ID" Value="執行過程"/>
+		<Message Name="Process Name" Value="製程"/>
+		
+	</繁體中文>
+	<简体中文>
+		<Message Name="R/C" Value="流程卡号"/>
+		<Message Name="Time" Value="执行时间"/>
+		<Message Name="From R/C" Value="来源流程卡号"/>
+		<Message Name="From Qty" Value="来源数量"/>
+		<Message Name="To R/C" Value="结果流程卡号"/>
+		<Message Name="To Qty" Value="结果数量"/>
+		<Message Name="Employee" Value="员工"/>
+		<Message Name="ActionType" Value="操作类型"/>
+		<Message Name="Action" Value="操作"/>
+		<Message Name="rc error" Value="流程卡错误"/>
+		<Message Name="rc is not split or merge" Value="该流程卡没有拆併批历程"/>
+		<Message Name="Merge" Value="合併"/>
+		<Message Name="Split" Value="分批"/>
+		<Message Name="Travel ID" Value="执行过程"/>
+		<Message Name="Process Name" Value="制程"/>
+		
+	</简体中文>
+</Chroma> 

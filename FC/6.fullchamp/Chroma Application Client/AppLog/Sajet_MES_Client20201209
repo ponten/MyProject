@@ -1,0 +1,55 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1607485115559" level="FATAL" thread="1"><log4j:message>字串未被辨認為有效的 DateTime。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   於 System.DateTime.Parse(String s)
+   於 MachineAAR.Services.<>c.<FindRuncardsWithConditions>b__1_0(DataRow x) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.4\MachineAAR\Services.cs: 行 173
+   於 System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   於 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   於 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   於 MachineAAR.Services.FindRuncardsWithConditions(FilterValueModel filter) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.4\MachineAAR\Services.cs: 行 172
+   於 MachineAAR.fMain.BtnSearch_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.4\MachineAAR\fMain.cs: 行 129
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.DateTimeParse" method="System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1607485122607" level="FATAL" thread="1"><log4j:message>字串未被辨認為有效的 DateTime。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   於 System.DateTime.Parse(String s)
+   於 MachineAAR.Services.<>c.<FindRuncardsWithConditions>b__1_0(DataRow x) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.4\MachineAAR\Services.cs: 行 173
+   於 System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   於 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   於 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   於 MachineAAR.Services.FindRuncardsWithConditions(FilterValueModel filter) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.4\MachineAAR\Services.cs: 行 172
+   於 MachineAAR.fMain.BtnSearch_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.4\MachineAAR\fMain.cs: 行 129
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.DateTimeParse" method="System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1607488002718" level="FATAL" thread="1"><log4j:message>'0001/1/1 上午 12:00:00' 不是 'Value' 的有效值。'Value' 應該介於 'MinDate' 與 'MaxDate' 之間。
+參數名稱: Value</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentOutOfRangeException: '0001/1/1 上午 12:00:00' 不是 'Value' 的有效值。'Value' 應該介於 'MinDate' 與 'MaxDate' 之間。
+參數名稱: Value
+   於 System.Windows.Forms.DateTimePicker.set_Value(DateTime value)
+   於 MachineAAR.fWorkTime..ctor(Nullable`1 startTime, Nullable`1 endTime, DateTime defaultEndTime) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.4\MachineAAR\fWorkTime.cs: 行 31
+   於 MachineAAR.fMain.DgvMachine_CellContentClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.4\MachineAAR\fMain.cs: 行 339
+   於 System.Windows.Forms.DataGridView.OnCellContentClick(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCommonCellContentClick(Int32 columnIndex, Int32 rowIndex, Boolean doubleClick)
+   於 System.Windows.Forms.DataGridViewCell.OnMouseUpInternal(DataGridViewCellMouseEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DateTimePicker" method="Void set_Value(System.DateTime)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>

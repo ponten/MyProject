@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <English>
+    <Message Name="RuncardsSharingMachineDataCanNotUseRCOutput" Value="The runcards set sharing machine dataSetting when input can not use runcard module when output. Use job-report-by-workOrder module instead."/>
+    <Message Name="RuncardNotFound" Value="Runcard information not found"/>
+  </English>
+  <繁體中文>
+    <Message Name="Batch Execute" Value="批次執行"/>
+    <Message Name="Close" Value="取消"/>
+    <Message Name="Closing Date :" Value="關帳區間 :"/>
+    <Message Name="Next process name" Value="下個製程名稱"/>
+    <Message Name="Current quantity" Value="當前數量"/>
+    <Message Name="Clear" Value="清除"/>
+    <Message Name="Delete" Value="刪除"/>
+    <Message Name="Do not support job-report-by-WorkOrder module" Value="不支援工單報工模組"/>
+    <Message Name="EMP ERR" Value="員工編號不正確"/>
+    <Message Name="Employee" Value="員工編號"/>
+    <Message Name="Execute" Value="執行"/>
+    <Message Name="Function not avaliable" Value="未有功能"/>
+    <Message Name="Has been Finish, can not be executed" Value="流程卡狀態 : [已完成]，無法執行報工"/>
+    <Message Name="Has been Hold, can not be executed" Value="流程卡狀態 : [鎖定]，無法執行報工"/>
+    <Message Name="Has been Inv, can not be executed" Value="流程卡狀態 : [入庫]，無法執行報工"/>
+    <Message Name="Has been Merge, can not be executed" Value="流程卡狀態 : [合併]，無法執行報工"/>
+    <Message Name="Has been Scrap, can not be executed" Value="流程卡狀態 : [報廢]，無法執行報工"/>
+    <Message Name="Has been Transfer, can not be executed" Value="流程卡狀態 : [轉移]，無法執行報工"/>
+    <Message Name="Has been Wait Transfer, can not be executed" Value="流程卡狀態 : [待轉移]，無法執行報工"/>
+    <Message Name="Hold" Value="暫停"/>
+    <Message Name="No runcard to wip out" Value="沒有流程卡待產出"/>
+    <Message Name="OK" Value="確認"/>
+    <Message Name=":" Value="："/>
+    <Message Name="PART_NO" Value="料號"/>
+    <Message Name="PROCESS_GROUP" Value="製程群組"/>
+    <Message Name="PROCESS_ID" Value="製程編號"/>
+    <Message Name="PROCESS_NAME" Value="製程名稱"/>
+    <Message Name="PROCESS NAME" Value="製程名稱"/>
+    <Message Name="Part No" Value="料號"/>
+    <Message Name="Part No." Value="料號"/>
+    <Message Name="Part Version" Value="料號版本"/>
+    <Message Name="Please enter the SN binding RC" Value="請輸入元件綁定的流程卡編號執行"/>
+    <Message Name="Please select Process" Value="請選擇製程"/>
+    <Message Name="Runcard history" Value="流程卡歷程"/>
+    <Message Name="Process Or Part Or Sheet Name Different" Value="製程或料號或表單不一致"/>
+    <Message Name="Process cards or components have been completed" Value="流程卡或元件已完工"/>
+    <Message Name="Process choose" Value="製程選擇"/>
+    <Message Name="Process sheet not found" Value="未找到製程表單"/>
+    <Message Name="Process" Value="製程名稱"/>
+    <Message Name="Product name" Value="品名"/>
+    <Message Name="QTY" Value="數量"/>
+    <Message Name="Qty" Value="流程卡數量"/>
+    <Message Name="Query" Value="查詢"/>
+    <Message Name="Queue" Value="待生產"/>
+    <Message Name="RC Already Exist" Value="流程卡已經存在"/>
+    <Message Name="RC Error" Value="流程卡錯誤"/>
+    <Message Name="RC Input" Value="報工投入站"/>
+    <Message Name="RC No" Value="流程卡"/>
+    <Message Name="RC NO" Value="流程卡"/>
+    <Message Name="RC QTY" Value="流程卡數量"/>
+    <Message Name="RC Output" Value="報工產出站"/>
+    <Message Name="RC or SN not found" Value="流程卡不存在"/>
+    <Message Name="RC_NO" Value="流程卡"/>
+    <Message Name="RC_STATUS" Value="狀態"/>
+    <Message Name="RC STATUS" Value="狀態"/>
+    <Message Name="ROUTE_NAME" Value="途程名稱"/>
+    <Message Name="Report by WO" Value="工單報工"/>
+    <Message Name="Change EMP" Value="切換員工"/>
+    <Message Name="Route report" Value="途程報工"/>
+    <Message Name="Route" Value="途程"/>
+    <Message Name="Runcard No." Value="流程卡"/>
+    <Message Name="Runcard status" Value="流程卡狀態"/>
+    <Message Name="Runcard" Value="流程卡"/>
+    <Message Name="Running" Value="生產中"/>
+    <Message Name="Runnung" Value="生產中"/>
+    <Message Name="Route End" Value="途程結束"/>
+    <Message Name="SEQ" Value="編號"/>
+    <Message Name="SERIAL_NUMBER" Value="序號"/>
+    <Message Name="SHEET_NAME" Value="製程配置"/>
+    <Message Name="SPEC" Value="描述"/>
+    <Message Name="STAGE_NAME" Value="區段名稱"/>
+    <Message Name="STATUS" Value="狀態"/>
+    <Message Name="Scrap quantity" Value="不良數量"/>
+    <Message Name="SCRAP QTY" Value="不良數量"/>
+    <Message Name="Selected RC Is Empty" Value="所選流程卡為空"/>
+    <Message Name="Sheet" Value="表單編號"/>
+    <Message Name="Specification" Value="規格"/>
+    <Message Name="Stage Name" Value="區段名稱"/>
+    <Message Name="Travel" Value="歷程"/>
+    <Message Name="The line does not have permission" Value="使用者於該生產線沒有權限"/>
+    <Message Name="The process station where the runcard is located cannot report work with WIP module" Value="流程卡所在製程站不能用 WIP 模組報工"/>
+    <Message Name="This process has been set to execute wip-in and wip-out, so job report by Route is not allowed to use" Value="此製程配置為必須執行投入與產出，所以不能使用 途程 報工"/>
+    <Message Name="This process has been set to execute wip-in and wip-out, so job report by WO / Route is not allowed to use" Value="此製程必須執行投入與產出，所以不能使用 工單 / 途程 報工"/>
+    <Message Name="This process has been set to execute wip-out only, so job report by WO is not allowed to use" Value="此製程配置為只執行產出，所以不能使用 工單 報工"/>
+    <Message Name="Undefine" Value="製程配置未定義"/>
+    <Message Name="User does not have permission on this process station" Value="使用者於此製程站沒有權限"/>
+    <Message Name="User does not have permission on this stage" Value="使用者於此區段沒有權限"/>
+    <Message Name="User does not have permission to use WIP module" Value="使用者沒有權限使用 WIP 模組報工"/>
+    <Message Name="WIP Date :" Value="補報工日 :"/>
+    <Message Name="WIP Time Error" Value="報工日錯誤"/>
+    <Message Name="WIP time" Value="報工時間"/>
+    <Message Name="WIP_IN_TIME" Value="投入時間"/>
+    <Message Name="WIP_OUT_TIME" Value="產出時間"/>
+    <Message Name="WO" Value="工單"/>
+    <Message Name="WORK_ORDER" Value="工單"/>
+    <Message Name="WORK ORDER" Value="工單"/>
+    <Message Name="Work Order Status must be WIP" Value="工單狀態必須是WIP"/>
+    <Message Name="Work order has runcard wip in this process already, so job report by WO / Route is not allowed to use" Value="工單已經有流程卡進站，所以不能使用 工單 / 途程 報工"/>
+    <Message Name="Work order type" Value="工單類型"/>
+    <Message Name="Work order" Value="工單"/>
+    <Message Name="Yield rate" Value="良率"/>
+    <Message Name="choose" Value="選擇"/>
+    <Message Name="Passed" Value="已過站"/>
+    <Message Name="RuncardsSharingMachineDataCanNotUseRCOutput" Value="設定為共用機台資料投入的流程卡，不能再使用流程卡產出模組"/>
+    <Message Name="RuncardNotFound" Value="查無流程卡資訊"/>
+  </繁體中文>
+  <简体中文>
+    <Message Name=" Process cards or components have been completed" Value="流程卡或元件已完工"/>
+    <Message Name="Batch Execute" Value="批次执行"/>
+    <Message Name="Close" Value="取消"/>
+    <Message Name="Closing Date :" Value="关帐区间 :"/>
+    <Message Name="Delete" Value="删除"/>
+    <Message Name="Do not support job-report-by-WorkOrder module" Value="不支援工单报工模组"/>
+    <Message Name="EMP ERR" Value="员工编号有误"/>
+    <Message Name="Employee" Value="员工编号"/>
+    <Message Name="Execute" Value="执行"/>
+    <Message Name="Function not avaliable" Value="未有功能"/>
+    <Message Name="Has been Finish, can not be executed" Value="流程卡状态 : [Finish]，无法执行报工"/>
+    <Message Name="Has been Hold, can not be executed" Value="流程卡状态 : [Hold]，无法执行报工"/>
+    <Message Name="Has been Inv, can not be executed" Value="流程卡状态 : [Inv]，无法执行报工"/>
+    <Message Name="Has been Merge, can not be executed" Value="流程卡状态 : [Merge]，无法执行报工"/>
+    <Message Name="Has been Scrap, can not be executed" Value="流程卡状态 : [Scrap]，无法执行报工"/>
+    <Message Name="Has been Transfer, can not be executed" Value="流程卡状态 : [Transfer]，无法执行报工"/>
+    <Message Name="Has been Wait Transfer, can not be executed" Value="流程卡状态 : [Wait Transfer]，无法执行报工"/>
+    <Message Name="Hold" Value="暂停"/>
+    <Message Name="OK" Value="确认"/>
+    <Message Name="PART_NO" Value="料号"/>
+    <Message Name="PROCESS_GROUP" Value="制程群组"/>
+    <Message Name="PROCESS_ID" Value="制程编号"/>
+    <Message Name="PROCESS_NAME" Value="制程名称"/>
+    <Message Name="PROCESS_NAME" Value="制程名称"/>
+    <Message Name="Part No" Value="料号"/>
+    <Message Name="Part Version" Value="料号版本"/>
+    <Message Name="Please enter the SN binding RC" Value="请输入元件绑定的流程卡编号执行"/>
+    <Message Name="Please select Process" Value="请选择制程"/>
+    <Message Name="Process Or Part Or Sheet Name Different" Value="制程或料号或窗体不一致"/>
+    <Message Name="Process choose" Value="制程选择"/>
+    <Message Name="Process sheet not found" Value="未找到制程窗体"/>
+    <Message Name="Process" Value="制程名称"/>
+    <Message Name="QTY" Value="数量"/>
+    <Message Name="Qty" Value="流程卡数量"/>
+    <Message Name="Query" Value="查询"/>
+    <Message Name="Queue" Value="待生产"/>
+    <Message Name="Queue" Value="生产中"/>
+    <Message Name="RC Already Exist" Value="流程卡已经存在"/>
+    <Message Name="RC Error" Value="流程卡错误"/>
+    <Message Name="RC No" Value="流程卡"/>
+    <Message Name="Runcard" Value="流程卡"/>
+    <Message Name="RC or SN not found" Value="流程卡不存在"/>
+    <Message Name="RC_NO" Value="流程卡"/>
+    <Message Name="RC_STATUS" Value="状态"/>
+    <Message Name="ROUTE_NAME" Value="途程名称"/>
+    <Message Name="Report by WO" Value="工单报工"/>
+    <Message Name="Reset EMP" Value="清除员工"/>
+    <Message Name="Route report" Value="途程报工"/>
+    <Message Name="Route" Value="途程"/>
+    <Message Name="SEQ" Value="编号"/>
+    <Message Name="SERIAL_NUMBER" Value="序号"/>
+    <Message Name="SHEET_NAME" Value="制程配置"/>
+    <Message Name="SPEC" Value="描述"/>
+    <Message Name="STAGE_NAME" Value="区段名称"/>
+    <Message Name="STATUS" Value="状态"/>
+    <Message Name="STATUS" Value="状态"/>
+    <Message Name="Selected RC Is Empty" Value="所选流程卡为空"/>
+    <Message Name="Sheet" Value="窗体编号"/>
+    <Message Name="Stage Name" Value="区段名称"/>
+    <Message Name="The line does not have permission" Value="使用者于该生产线没有权限"/>
+    <Message Name="The process station where the runcard is located cannot report work with WIP module" Value="流程卡所在制程站不能用 WIP 模组报工"/>
+    <Message Name="Undefine" Value="制程配置未定义"/>
+    <Message Name="User does not have permission on this process station" Value="使用者于此制程站没有权限"/>
+    <Message Name="User does not have permission on this stage" Value="使用者于此区段没有权限"/>
+    <Message Name="User does not have permission to use WIP module" Value="使用者没有权限使用 WIP 模组报工"/>
+    <Message Name="WIP Date :" Value="补报工日 :"/>
+    <Message Name="WIP Time Error" Value="报工日错误"/>
+    <Message Name="WO" Value="工单"/>
+    <Message Name="WORK_ORDER" Value="工单"/>
+    <Message Name="Work Order Status must be WIP" Value="工单状态必须是WIP"/>
+    <Message Name="choose" Value="选择"/>
+  </简体中文>
+</Chroma>

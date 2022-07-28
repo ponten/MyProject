@@ -1,0 +1,8 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1602557787588" level="ERROR" thread="1"><log4j:message>【P01 基本資料設定-系統模組】檔案不存在!
+
+Dll Name = CSysProgramName
+File Name = C:\FullChamp\Chroma Application Client\DataCenter\CSysProgramName.dll</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="ShowWinForm" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1602557789751" level="ERROR" thread="1"><log4j:message>【P01 基本資料設定-系統功能】檔案不存在!
+
+Dll Name = CSysProgramFunName
+File Name = C:\FullChamp\Chroma Application Client\DataCenter\CSysProgramFunName.dll</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="ShowWinForm" file="" line="0" /></log4j:event>

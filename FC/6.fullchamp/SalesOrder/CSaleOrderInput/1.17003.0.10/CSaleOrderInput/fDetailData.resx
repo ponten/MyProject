@@ -1,0 +1,1821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelControl.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="editPickerRealDueDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 228</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="editPickerRealDueDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="editPickerRealDueDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 22</value>
+  </data>
+  <data name="editPickerRealDueDate.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;editPickerRealDueDate.Name" xml:space="preserve">
+    <value>editPickerRealDueDate</value>
+  </data>
+  <data name="&gt;&gt;editPickerRealDueDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editPickerRealDueDate.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;editPickerRealDueDate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="editPickerRealDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 228</value>
+  </data>
+  <data name="editPickerRealDate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="editPickerRealDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 22</value>
+  </data>
+  <data name="editPickerRealDate.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;editPickerRealDate.Name" xml:space="preserve">
+    <value>editPickerRealDate</value>
+  </data>
+  <data name="&gt;&gt;editPickerRealDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editPickerRealDate.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;editPickerRealDate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cbCurrency.Items" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cbCurrency.Items1" xml:space="preserve">
+    <value>NTD</value>
+  </data>
+  <data name="cbCurrency.Items2" xml:space="preserve">
+    <value>USD</value>
+  </data>
+  <data name="cbCurrency.Items3" xml:space="preserve">
+    <value>JPY</value>
+  </data>
+  <data name="cbCurrency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 62</value>
+  </data>
+  <data name="cbCurrency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="cbCurrency.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;cbCurrency.Name" xml:space="preserve">
+    <value>cbCurrency</value>
+  </data>
+  <data name="&gt;&gt;cbCurrency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbCurrency.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;cbCurrency.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dtPickerRealDate.CustomFormat" xml:space="preserve">
+    <value>yyyy/MM/dd</value>
+  </data>
+  <data name="dtPickerRealDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 228</value>
+  </data>
+  <data name="dtPickerRealDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="dtPickerRealDate.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;dtPickerRealDate.Name" xml:space="preserve">
+    <value>dtPickerRealDate</value>
+  </data>
+  <data name="&gt;&gt;dtPickerRealDate.Type" xml:space="preserve">
+    <value>DateTimePickerWithBackColor.BCDateTimePicker, CSaleOrderInput, Version=1.17003.0.10, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dtPickerRealDate.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;dtPickerRealDate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dtPickerRealDueDate.CustomFormat" xml:space="preserve">
+    <value>yyyy/MM/dd</value>
+  </data>
+  <data name="dtPickerRealDueDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 228</value>
+  </data>
+  <data name="dtPickerRealDueDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="dtPickerRealDueDate.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;dtPickerRealDueDate.Name" xml:space="preserve">
+    <value>dtPickerRealDueDate</value>
+  </data>
+  <data name="&gt;&gt;dtPickerRealDueDate.Type" xml:space="preserve">
+    <value>DateTimePickerWithBackColor.BCDateTimePicker, CSaleOrderInput, Version=1.17003.0.10, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dtPickerRealDueDate.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;dtPickerRealDueDate.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="gbProduct.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblAmountEquation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAmountEquation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblAmountEquation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 76</value>
+  </data>
+  <data name="lblAmountEquation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 13</value>
+  </data>
+  <data name="lblAmountEquation.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="lblAmountEquation.Text" xml:space="preserve">
+    <value>( = Unit Price x Quantity )</value>
+  </data>
+  <data name="&gt;&gt;lblAmountEquation.Name" xml:space="preserve">
+    <value>lblAmountEquation</value>
+  </data>
+  <data name="&gt;&gt;lblAmountEquation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAmountEquation.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;lblAmountEquation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblWeightEquation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblWeightEquation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblWeightEquation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 51</value>
+  </data>
+  <data name="lblWeightEquation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 13</value>
+  </data>
+  <data name="lblWeightEquation.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="lblWeightEquation.Text" xml:space="preserve">
+    <value>( = Unit Weight x Quantity )</value>
+  </data>
+  <data name="&gt;&gt;lblWeightEquation.Name" xml:space="preserve">
+    <value>lblWeightEquation</value>
+  </data>
+  <data name="&gt;&gt;lblWeightEquation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWeightEquation.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;lblWeightEquation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnCalculateAmount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCalculateAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 73</value>
+  </data>
+  <data name="btnCalculateAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 23</value>
+  </data>
+  <data name="btnCalculateAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="btnCalculateAmount.Text" xml:space="preserve">
+    <value>$</value>
+  </data>
+  <data name="&gt;&gt;btnCalculateAmount.Name" xml:space="preserve">
+    <value>btnCalculateAmount</value>
+  </data>
+  <data name="&gt;&gt;btnCalculateAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCalculateAmount.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;btnCalculateAmount.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnCalculateWeight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCalculateWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 48</value>
+  </data>
+  <data name="btnCalculateWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 23</value>
+  </data>
+  <data name="btnCalculateWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="btnCalculateWeight.Text" xml:space="preserve">
+    <value>Σ</value>
+  </data>
+  <data name="&gt;&gt;btnCalculateWeight.Name" xml:space="preserve">
+    <value>btnCalculateWeight</value>
+  </data>
+  <data name="&gt;&gt;btnCalculateWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCalculateWeight.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;btnCalculateWeight.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblUnitWeightWarning.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblUnitWeightWarning.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblUnitWeightWarning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 51</value>
+  </data>
+  <data name="lblUnitWeightWarning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="lblUnitWeightWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="lblUnitWeightWarning.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="lblUnitWeightWarning.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lblUnitWeightWarning.Name" xml:space="preserve">
+    <value>lblUnitWeightWarning</value>
+  </data>
+  <data name="&gt;&gt;lblUnitWeightWarning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUnitWeightWarning.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;lblUnitWeightWarning.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tbUnitWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 47</value>
+  </data>
+  <data name="tbUnitWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 23</value>
+  </data>
+  <data name="tbUnitWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;tbUnitWeight.Name" xml:space="preserve">
+    <value>tbUnitWeight</value>
+  </data>
+  <data name="&gt;&gt;tbUnitWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbUnitWeight.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;tbUnitWeight.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblUnitWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblUnitWeight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblUnitWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 51</value>
+  </data>
+  <data name="lblUnitWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="lblUnitWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="lblUnitWeight.Text" xml:space="preserve">
+    <value>Unit Weight</value>
+  </data>
+  <data name="&gt;&gt;lblUnitWeight.Name" xml:space="preserve">
+    <value>lblUnitWeight</value>
+  </data>
+  <data name="&gt;&gt;lblUnitWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUnitWeight.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;lblUnitWeight.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnProduceNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnProduceNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 21</value>
+  </data>
+  <data name="btnProduceNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 23</value>
+  </data>
+  <data name="btnProduceNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="btnProduceNumber.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;btnProduceNumber.Name" xml:space="preserve">
+    <value>btnProduceNumber</value>
+  </data>
+  <data name="&gt;&gt;btnProduceNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnProduceNumber.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;btnProduceNumber.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblProductNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblProductNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblProductNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblProductNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 26</value>
+  </data>
+  <data name="lblProductNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="lblProductNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblProductNumber.Text" xml:space="preserve">
+    <value>Produce Number</value>
+  </data>
+  <data name="&gt;&gt;lblProductNumber.Name" xml:space="preserve">
+    <value>lblProductNumber</value>
+  </data>
+  <data name="&gt;&gt;lblProductNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblProductNumber.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;lblProductNumber.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tbProduceNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 22</value>
+  </data>
+  <data name="tbProduceNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 23</value>
+  </data>
+  <data name="tbProduceNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;tbProduceNumber.Name" xml:space="preserve">
+    <value>tbProduceNumber</value>
+  </data>
+  <data name="&gt;&gt;tbProduceNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbProduceNumber.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;tbProduceNumber.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblUnit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblUnit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblUnit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblUnit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 26</value>
+  </data>
+  <data name="lblUnit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="lblUnit.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="lblUnit.Text" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="&gt;&gt;lblUnit.Name" xml:space="preserve">
+    <value>lblUnit</value>
+  </data>
+  <data name="&gt;&gt;lblUnit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUnit.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;lblUnit.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblQuantity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblQuantity.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblQuantity.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblQuantity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 26</value>
+  </data>
+  <data name="lblQuantity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="lblQuantity.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="lblQuantity.Text" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="&gt;&gt;lblQuantity.Name" xml:space="preserve">
+    <value>lblQuantity</value>
+  </data>
+  <data name="&gt;&gt;lblQuantity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblQuantity.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;lblQuantity.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tbUnit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 22</value>
+  </data>
+  <data name="tbUnit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 23</value>
+  </data>
+  <data name="tbUnit.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;tbUnit.Name" xml:space="preserve">
+    <value>tbUnit</value>
+  </data>
+  <data name="&gt;&gt;tbUnit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbUnit.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;tbUnit.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="tbQuantity.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tbQuantity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>745, 22</value>
+  </data>
+  <data name="tbQuantity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 23</value>
+  </data>
+  <data name="tbQuantity.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;tbQuantity.Name" xml:space="preserve">
+    <value>tbQuantity</value>
+  </data>
+  <data name="&gt;&gt;tbQuantity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbQuantity.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;tbQuantity.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblWeight.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblWeight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 51</value>
+  </data>
+  <data name="lblWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="lblWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="lblWeight.Text" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="&gt;&gt;lblWeight.Name" xml:space="preserve">
+    <value>lblWeight</value>
+  </data>
+  <data name="&gt;&gt;lblWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblWeight.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;lblWeight.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="tbWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 47</value>
+  </data>
+  <data name="tbWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 23</value>
+  </data>
+  <data name="tbWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;tbWeight.Name" xml:space="preserve">
+    <value>tbWeight</value>
+  </data>
+  <data name="&gt;&gt;tbWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbWeight.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;tbWeight.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblUnitPrice.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblUnitPrice.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblUnitPrice.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblUnitPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 76</value>
+  </data>
+  <data name="lblUnitPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="lblUnitPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="lblUnitPrice.Text" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="&gt;&gt;lblUnitPrice.Name" xml:space="preserve">
+    <value>lblUnitPrice</value>
+  </data>
+  <data name="&gt;&gt;lblUnitPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUnitPrice.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;lblUnitPrice.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="tbUnitPrice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 72</value>
+  </data>
+  <data name="tbUnitPrice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 23</value>
+  </data>
+  <data name="tbUnitPrice.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;tbUnitPrice.Name" xml:space="preserve">
+    <value>tbUnitPrice</value>
+  </data>
+  <data name="&gt;&gt;tbUnitPrice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbUnitPrice.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;tbUnitPrice.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblAmount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAmount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblAmount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 76</value>
+  </data>
+  <data name="lblAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lblAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="lblAmount.Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="&gt;&gt;lblAmount.Name" xml:space="preserve">
+    <value>lblAmount</value>
+  </data>
+  <data name="&gt;&gt;lblAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAmount.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;lblAmount.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="tbAmount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>448, 72</value>
+  </data>
+  <data name="tbAmount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 23</value>
+  </data>
+  <data name="tbAmount.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;tbAmount.Name" xml:space="preserve">
+    <value>tbAmount</value>
+  </data>
+  <data name="&gt;&gt;tbAmount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbAmount.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;tbAmount.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="btnProductNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnProductNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="btnProductNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 23</value>
+  </data>
+  <data name="btnProductNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btnProductNumber.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;btnProductNumber.Name" xml:space="preserve">
+    <value>btnProductNumber</value>
+  </data>
+  <data name="&gt;&gt;btnProductNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnProductNumber.Parent" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;btnProductNumber.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="gbProduct.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="gbProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 116</value>
+  </data>
+  <data name="gbProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>899, 105</value>
+  </data>
+  <data name="gbProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="gbProduct.Text" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="&gt;&gt;gbProduct.Name" xml:space="preserve">
+    <value>gbProduct</value>
+  </data>
+  <data name="&gt;&gt;gbProduct.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbProduct.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;gbProduct.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tbSpec3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tbSpec3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>750, 253</value>
+  </data>
+  <data name="tbSpec3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="tbSpec3.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;tbSpec3.Name" xml:space="preserve">
+    <value>tbSpec3</value>
+  </data>
+  <data name="&gt;&gt;tbSpec3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSpec3.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbSpec3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tbSpec2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 253</value>
+  </data>
+  <data name="tbSpec2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="tbSpec2.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;tbSpec2.Name" xml:space="preserve">
+    <value>tbSpec2</value>
+  </data>
+  <data name="&gt;&gt;tbSpec2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSpec2.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbSpec2.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tbSpec1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 253</value>
+  </data>
+  <data name="tbSpec1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="tbSpec1.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;tbSpec1.Name" xml:space="preserve">
+    <value>tbSpec1</value>
+  </data>
+  <data name="&gt;&gt;tbSpec1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSpec1.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbSpec1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lblSpec3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSpec3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblSpec3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSpec3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>651, 257</value>
+  </data>
+  <data name="lblSpec3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="lblSpec3.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="lblSpec3.Text" xml:space="preserve">
+    <value>Spec3</value>
+  </data>
+  <data name="&gt;&gt;lblSpec3.Name" xml:space="preserve">
+    <value>lblSpec3</value>
+  </data>
+  <data name="&gt;&gt;lblSpec3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSpec3.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblSpec3.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblSpec2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSpec2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblSpec2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSpec2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 257</value>
+  </data>
+  <data name="lblSpec2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="lblSpec2.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="lblSpec2.Text" xml:space="preserve">
+    <value>Spec2</value>
+  </data>
+  <data name="&gt;&gt;lblSpec2.Name" xml:space="preserve">
+    <value>lblSpec2</value>
+  </data>
+  <data name="&gt;&gt;lblSpec2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSpec2.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblSpec2.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblSpec1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSpec1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblSpec1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSpec1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 257</value>
+  </data>
+  <data name="lblSpec1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="lblSpec1.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="lblSpec1.Text" xml:space="preserve">
+    <value>Spec1</value>
+  </data>
+  <data name="&gt;&gt;lblSpec1.Name" xml:space="preserve">
+    <value>lblSpec1</value>
+  </data>
+  <data name="&gt;&gt;lblSpec1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSpec1.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblSpec1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tbClientProduceNo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tbClientProduceNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>750, 228</value>
+  </data>
+  <data name="tbClientProduceNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="tbClientProduceNo.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;tbClientProduceNo.Name" xml:space="preserve">
+    <value>tbClientProduceNo</value>
+  </data>
+  <data name="&gt;&gt;tbClientProduceNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbClientProduceNo.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbClientProduceNo.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblClientProduceNo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblClientProduceNo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblClientProduceNo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblClientProduceNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>651, 232</value>
+  </data>
+  <data name="lblClientProduceNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="lblClientProduceNo.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="lblClientProduceNo.Text" xml:space="preserve">
+    <value>Client Prod. No.</value>
+  </data>
+  <data name="&gt;&gt;lblClientProduceNo.Name" xml:space="preserve">
+    <value>lblClientProduceNo</value>
+  </data>
+  <data name="&gt;&gt;lblClientProduceNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblClientProduceNo.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblClientProduceNo.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblRealDueDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblRealDueDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblRealDueDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblRealDueDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 232</value>
+  </data>
+  <data name="lblRealDueDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="lblRealDueDate.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="lblRealDueDate.Text" xml:space="preserve">
+    <value>Real Due Date</value>
+  </data>
+  <data name="&gt;&gt;lblRealDueDate.Name" xml:space="preserve">
+    <value>lblRealDueDate</value>
+  </data>
+  <data name="&gt;&gt;lblRealDueDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblRealDueDate.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblRealDueDate.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblRealDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblRealDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblRealDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblRealDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 232</value>
+  </data>
+  <data name="lblRealDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="lblRealDate.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="lblRealDate.Text" xml:space="preserve">
+    <value>Real Date</value>
+  </data>
+  <data name="&gt;&gt;lblRealDate.Name" xml:space="preserve">
+    <value>lblRealDate</value>
+  </data>
+  <data name="&gt;&gt;lblRealDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblRealDate.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblRealDate.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="tbAddress.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tbAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 87</value>
+  </data>
+  <data name="tbAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>788, 22</value>
+  </data>
+  <data name="tbAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;tbAddress.Name" xml:space="preserve">
+    <value>tbAddress</value>
+  </data>
+  <data name="&gt;&gt;tbAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbAddress.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbAddress.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lblAddress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblAddress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 91</value>
+  </data>
+  <data name="lblAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lblAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="lblAddress.Text" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="&gt;&gt;lblAddress.Name" xml:space="preserve">
+    <value>lblAddress</value>
+  </data>
+  <data name="&gt;&gt;lblAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAddress.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblAddress.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="tbPaymentTerms.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tbPaymentTerms.Location" type="System.Drawing.Point, System.Drawing">
+    <value>750, 62</value>
+  </data>
+  <data name="tbPaymentTerms.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="tbPaymentTerms.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;tbPaymentTerms.Name" xml:space="preserve">
+    <value>tbPaymentTerms</value>
+  </data>
+  <data name="&gt;&gt;tbPaymentTerms.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbPaymentTerms.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbPaymentTerms.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="tbExchangeRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 62</value>
+  </data>
+  <data name="tbExchangeRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="tbExchangeRate.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;tbExchangeRate.Name" xml:space="preserve">
+    <value>tbExchangeRate</value>
+  </data>
+  <data name="&gt;&gt;tbExchangeRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbExchangeRate.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbExchangeRate.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lblPaymentTerms.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblPaymentTerms.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblPaymentTerms.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPaymentTerms.Location" type="System.Drawing.Point, System.Drawing">
+    <value>651, 66</value>
+  </data>
+  <data name="lblPaymentTerms.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="lblPaymentTerms.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="lblPaymentTerms.Text" xml:space="preserve">
+    <value>Payment Terms</value>
+  </data>
+  <data name="&gt;&gt;lblPaymentTerms.Name" xml:space="preserve">
+    <value>lblPaymentTerms</value>
+  </data>
+  <data name="&gt;&gt;lblPaymentTerms.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblPaymentTerms.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblPaymentTerms.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lblExchangeRate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblExchangeRate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblExchangeRate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblExchangeRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 66</value>
+  </data>
+  <data name="lblExchangeRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="lblExchangeRate.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="lblExchangeRate.Text" xml:space="preserve">
+    <value>Exchange Rate</value>
+  </data>
+  <data name="&gt;&gt;lblExchangeRate.Name" xml:space="preserve">
+    <value>lblExchangeRate</value>
+  </data>
+  <data name="&gt;&gt;lblExchangeRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblExchangeRate.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblExchangeRate.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="lblCurrency.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCurrency.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblCurrency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblCurrency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 66</value>
+  </data>
+  <data name="lblCurrency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="lblCurrency.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lblCurrency.Text" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="&gt;&gt;lblCurrency.Name" xml:space="preserve">
+    <value>lblCurrency</value>
+  </data>
+  <data name="&gt;&gt;lblCurrency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCurrency.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblCurrency.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="tbQuotes3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tbQuotes3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>750, 37</value>
+  </data>
+  <data name="tbQuotes3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="tbQuotes3.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes3.Name" xml:space="preserve">
+    <value>tbQuotes3</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes3.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes3.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="lblQuotes3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblQuotes3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblQuotes3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblQuotes3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>651, 41</value>
+  </data>
+  <data name="lblQuotes3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lblQuotes3.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lblQuotes3.Text" xml:space="preserve">
+    <value>Quotes3</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes3.Name" xml:space="preserve">
+    <value>lblQuotes3</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes3.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes3.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="tbQuotes2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 37</value>
+  </data>
+  <data name="tbQuotes2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="tbQuotes2.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes2.Name" xml:space="preserve">
+    <value>tbQuotes2</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes2.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes2.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="lblQuotes2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblQuotes2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblQuotes2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblQuotes2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 41</value>
+  </data>
+  <data name="lblQuotes2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lblQuotes2.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lblQuotes2.Text" xml:space="preserve">
+    <value>Quotes2</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes2.Name" xml:space="preserve">
+    <value>lblQuotes2</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes2.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes2.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="tbQuotes1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 37</value>
+  </data>
+  <data name="tbQuotes1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="tbQuotes1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes1.Name" xml:space="preserve">
+    <value>tbQuotes1</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes1.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbQuotes1.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="lblQuotes1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblQuotes1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblQuotes1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblQuotes1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 41</value>
+  </data>
+  <data name="lblQuotes1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lblQuotes1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="lblQuotes1.Text" xml:space="preserve">
+    <value>Quotes1</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes1.Name" xml:space="preserve">
+    <value>lblQuotes1</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes1.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblQuotes1.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="tbSequence.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tbSequence.Location" type="System.Drawing.Point, System.Drawing">
+    <value>750, 12</value>
+  </data>
+  <data name="tbSequence.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="tbSequence.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;tbSequence.Name" xml:space="preserve">
+    <value>tbSequence</value>
+  </data>
+  <data name="&gt;&gt;tbSequence.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbSequence.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbSequence.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="lblSequence.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSequence.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblSequence.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSequence.Location" type="System.Drawing.Point, System.Drawing">
+    <value>651, 16</value>
+  </data>
+  <data name="lblSequence.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="lblSequence.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblSequence.Text" xml:space="preserve">
+    <value>Sequence</value>
+  </data>
+  <data name="&gt;&gt;lblSequence.Name" xml:space="preserve">
+    <value>lblSequence</value>
+  </data>
+  <data name="&gt;&gt;lblSequence.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSequence.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblSequence.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="tbNumber2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 12</value>
+  </data>
+  <data name="tbNumber2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="tbNumber2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;tbNumber2.Name" xml:space="preserve">
+    <value>tbNumber2</value>
+  </data>
+  <data name="&gt;&gt;tbNumber2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbNumber2.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbNumber2.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="lblNumber2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNumber2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblNumber2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNumber2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 16</value>
+  </data>
+  <data name="lblNumber2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="lblNumber2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lblNumber2.Text" xml:space="preserve">
+    <value>Number2</value>
+  </data>
+  <data name="&gt;&gt;lblNumber2.Name" xml:space="preserve">
+    <value>lblNumber2</value>
+  </data>
+  <data name="&gt;&gt;lblNumber2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNumber2.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblNumber2.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="tbNumber1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 12</value>
+  </data>
+  <data name="tbNumber1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
+  </data>
+  <data name="tbNumber1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;tbNumber1.Name" xml:space="preserve">
+    <value>tbNumber1</value>
+  </data>
+  <data name="&gt;&gt;tbNumber1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbNumber1.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;tbNumber1.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="lblNumber1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblNumber1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lblNumber1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNumber1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 16</value>
+  </data>
+  <data name="lblNumber1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="lblNumber1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblNumber1.Text" xml:space="preserve">
+    <value>Number1</value>
+  </data>
+  <data name="&gt;&gt;lblNumber1.Name" xml:space="preserve">
+    <value>lblNumber1</value>
+  </data>
+  <data name="&gt;&gt;lblNumber1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNumber1.Parent" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;lblNumber1.ZOrder" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="panelControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>914, 286</value>
+  </data>
+  <data name="panelControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelControl.Name" xml:space="preserve">
+    <value>panelControl</value>
+  </data>
+  <data name="&gt;&gt;panelControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnCancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>823, 3</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnOK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 3</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 286</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>914, 33</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>914, 319</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="&gt;&gt;errorProvider1.Name" xml:space="preserve">
+    <value>errorProvider1</value>
+  </data>
+  <data name="&gt;&gt;errorProvider1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>fDetailData</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

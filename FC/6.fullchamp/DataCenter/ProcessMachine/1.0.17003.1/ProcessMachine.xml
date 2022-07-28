@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Chroma>
+  <繁體中文>
+    <Message Name="Process Name" Value="製程" />
+    <Message Name="Machine Code" Value="機台" />
+    <Message Name="Description" Value="機台描述" />
+    <Message Name="Machine Desc" Value="機台描述" />
+    <Message Name="PROCESS_NAME" Value="製程" />
+    <Message Name="PROCESS_DESC" Value="描述" />
+    <Message Name="Machine Type" Value="機台類型" />
+    <Message Name="MACHINE_TYPE_NAME" Value="機台類型" />
+    <Message Name="No choose any machine , Continue" Value="尚未選擇任何機台,是否繼續" />
+    <Message Name="Item" Value="項次" />
+    <Message Name="MACHINE_CODE" Value="機台" />
+    <Message Name="MACHINE_TYPE_NAME" Value="機台類型" />
+    <Message Name="MACHINE_DESC" Value="機台描述" />
+    <Message Name="Process is err" Value="製程錯誤" />
+    <Message Name="Add Fail" Value="新增失敗" />
+    <Message Name="Machine is null" Value="設備未選" />
+    <Message Name="Query" Value="查詢" />
+    <Message Name="Confirm" Value="確認" />
+    <Message Name="Cancel" Value="取消" />
+  </繁體中文>
+  <简体中文>
+    <Message Name="Process Name" Value="制程" />
+    <Message Name="Machine Code" Value="机台" />
+    <Message Name="Description" Value="机台描述" />
+    <Message Name="Machine Desc" Value="机台描述" />
+    <Message Name="PROCESS_NAME" Value="制程" />
+    <Message Name="PROCESS_DESC" Value="描述" />
+    <Message Name="Machine Type" Value="机台类型" />
+    <Message Name="MACHINE_TYPE_NAME" Value="机台类型" />
+    <Message Name="No choose any machine , Continue" Value="尚未选择任何机台,是否继续" />
+    <Message Name="Item" Value="项次" />
+    <Message Name="MACHINE_CODE" Value="机台" />
+    <Message Name="MACHINE_TYPE_NAME" Value="机台类型" />
+    <Message Name="MACHINE_DESC" Value="机台描述" />
+    <Message Name="Process is err" Value="制程错误" />
+    <Message Name="Add Fail" Value="新增失败" />
+    <Message Name="Machine is null" Value="设备未选" />
+  </简体中文>
+</Chroma>

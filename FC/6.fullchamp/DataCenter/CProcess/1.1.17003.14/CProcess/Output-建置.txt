@@ -1,0 +1,3 @@
+﻿------ 已開始建置: 專案: CProcess, 組態: Debug Any CPU ------
+  CProcess -> C:\FullChamp\Chroma Application Client\DataCenter\CProcess.dll
+========== 建置: 1 成功、0 失敗、0 最新、0 略過 ==========

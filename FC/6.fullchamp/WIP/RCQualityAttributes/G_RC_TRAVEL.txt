@@ -1,0 +1,151 @@
+-- Create table
+create table G_RC_TRAVEL
+(
+  work_order        VARCHAR2(25),
+  rc_no             VARCHAR2(50),
+  part_id           NUMBER,
+  version           VARCHAR2(25),
+  route_id          NUMBER default 0,
+  factory_id        NUMBER default 0,
+  pdline_id         NUMBER default 0,
+  stage_id          NUMBER default 0,
+  node_id           NUMBER default 0,
+  process_id        NUMBER default 0,
+  terminal_id       NUMBER default 0,
+  travel_id         NUMBER default 1,
+  current_qty       NUMBER default 0,
+  in_process_empid  NUMBER,
+  in_process_time   DATE,
+  wip_process       NUMBER default 0,
+  wip_in_qty        NUMBER default 0,
+  wip_in_empid      NUMBER,
+  wip_in_memo       VARCHAR2(250),
+  wip_in_time       DATE,
+  wip_out_good_qty  NUMBER default 0,
+  wip_out_scrap_qty NUMBER default 0,
+  wip_out_empid     NUMBER,
+  wip_out_memo      VARCHAR2(250),
+  wip_out_time      DATE,
+  out_process_empid NUMBER,
+  out_process_time  DATE,
+  have_sn           NUMBER default 0,
+  update_userid     NUMBER,
+  update_time       DATE,
+  group_type        VARCHAR2(20),
+  create_time       DATE
+)
+tablespace SYSRT
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 16
+    next 8
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table G_RC_TRAVEL
+  is '流程卡歷程紀錄表';
+-- Add comments to the columns 
+comment on column G_RC_TRAVEL.work_order
+  is '工單號碼';
+comment on column G_RC_TRAVEL.rc_no
+  is '流程卡號';
+comment on column G_RC_TRAVEL.part_id
+  is '料號';
+comment on column G_RC_TRAVEL.version
+  is '版本號';
+comment on column G_RC_TRAVEL.route_id
+  is '途程編號';
+comment on column G_RC_TRAVEL.factory_id
+  is '廠別編號';
+comment on column G_RC_TRAVEL.pdline_id
+  is '生產線編號';
+comment on column G_RC_TRAVEL.stage_id
+  is '區段編號';
+comment on column G_RC_TRAVEL.node_id
+  is '節點編號';
+comment on column G_RC_TRAVEL.process_id
+  is '製程編號';
+comment on column G_RC_TRAVEL.terminal_id
+  is '工作站編號';
+comment on column G_RC_TRAVEL.travel_id
+  is '歷程編號(流水號遞增)';
+comment on column G_RC_TRAVEL.current_qty
+  is '目前數量';
+comment on column G_RC_TRAVEL.in_process_empid
+  is '進入製程的員工代碼';
+comment on column G_RC_TRAVEL.in_process_time
+  is '進入製程的時間';
+comment on column G_RC_TRAVEL.wip_process
+  is 'WIP目前製程作業';
+comment on column G_RC_TRAVEL.wip_in_qty
+  is 'INPUT數量';
+comment on column G_RC_TRAVEL.wip_in_empid
+  is 'INPUT員工代碼';
+comment on column G_RC_TRAVEL.wip_in_memo
+  is 'INPUT說明';
+comment on column G_RC_TRAVEL.wip_in_time
+  is 'INPUT時間';
+comment on column G_RC_TRAVEL.wip_out_good_qty
+  is 'OUTPUT良品數';
+comment on column G_RC_TRAVEL.wip_out_scrap_qty
+  is 'OUTPUT報廢數';
+comment on column G_RC_TRAVEL.wip_out_empid
+  is 'OUTPUT員工代碼';
+comment on column G_RC_TRAVEL.wip_out_memo
+  is 'OUTPUT說明';
+comment on column G_RC_TRAVEL.wip_out_time
+  is 'OUTPUT時間';
+comment on column G_RC_TRAVEL.out_process_empid
+  is '離開製程的員工代碼';
+comment on column G_RC_TRAVEL.out_process_time
+  is '離開製程的時間';
+comment on column G_RC_TRAVEL.have_sn
+  is '序號管理(0:否,1:是)';
+comment on column G_RC_TRAVEL.update_userid
+  is '資料異動人員';
+comment on column G_RC_TRAVEL.update_time
+  is '資料異動時間';
+-- Create/Recreate indexes 
+create index G_RC_TRAVEL_PROCESS on G_RC_TRAVEL (PROCESS_ID)
+  tablespace SYSBS
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_RC_TRAVEL_RC on G_RC_TRAVEL (RC_NO)
+  tablespace SYSBS
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_RC_TRAVEL_WO on G_RC_TRAVEL (WORK_ORDER)
+  tablespace SYSBS
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on G_RC_TRAVEL to SJ;
+grant select, insert, update, delete, alter on G_RC_TRAVEL to SYS_USER;

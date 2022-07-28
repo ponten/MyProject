@@ -1,0 +1,43 @@
+CREATE OR REPLACE PROCEDURE SJ_RC_QC_REINSPECT(I_LOTNO     IN VARCHAR2,
+                                               I_PROCESSID IN NUMBER,
+                                               I_EMPID     IN NUMBER,
+                                               O_RES       OUT VARCHAR2) IS
+
+BEGIN
+  O_RES := 'OK';
+
+  /*  DELETE FROM SAJET.G_QC_SN_TESTITEM_TEMP
+  WHERE ITEM_TYPE_ID IN (SELECT ITEM_TYPE_ID
+                           FROM SAJET.G_QC_LOT_TEST_TYPE
+                          WHERE QC_LOTNO = I_LOTNO)
+    AND PROCESS_ID = I_PROCESSID;*/
+  DELETE FROM SAJET.G_QC_SN_TESTITEM_TEMP WHERE QC_LOTNO = I_LOTNO;
+
+  DELETE FROM SAJET.G_QC_LOT_TEST_ITEM WHERE QC_LOTNO = I_LOTNO;
+
+  DELETE FROM SAJET.G_QC_LOT_TEST_TYPE WHERE QC_LOTNO = I_LOTNO;
+  /*  UPDATE SAJET.G_QC_LOT_TEST_TYPE
+    SET SAMPLING_SIZE = '0',
+        PASS_QTY      = '0',
+        FAIL_QTY      = '0',
+        QC_RESULT     = ''
+  WHERE QC_LOTNO = I_LOTNO;*/
+  /*
+  UPDATE SAJET.G_QC_LOT Q
+     SET END_TIME        = NULL,
+         Q.SAMPLING_SIZE = 0,
+         Q.PASS_QTY      = 0,
+         Q.FAIL_QTY      = 0,
+         Q.QC_RESULT     = 'N/A',
+         Q.INSP_EMPID    = I_EMPID
+   WHERE Q.QC_LOTNO = I_LOTNO;*/
+  DELETE FROM SAJET.G_QC_LOT WHERE QC_LOTNO = I_LOTNO;
+
+  DELETE FROM SAJET.G_QC_SN_DEFECT_TEMP WHERE QC_LOTNO = I_LOTNO;
+
+EXCEPTION
+  WHEN OTHERS THEN
+    O_RES := 'SJ_RC_QC_REINSPECT ERROR' || CHR(10) || CHR(13) || SQLERRM;
+    ROLLBACK;
+END;
+/

@@ -1,0 +1,933 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1605163427486" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 MachineAAR.fFilter.LoadDataIntoComboBox(DataSet& d) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.1\fFilter.cs: 行 310
+   於 MachineAAR.fFilter.FFilter_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.1\fFilter.cs: 行 124
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="MachineAAR.fFilter" method="Void LoadDataIntoComboBox(System.Data.DataSet ByRef)" file="C:\FullChamp\Chroma Application Client\WIP\MachineAAR.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1605165205100" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 MachineAAR.fMain.DgvMachine_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.1\fMain.cs: 行 172
+   於 System.Windows.Forms.DataGridViewCellEventHandler.Invoke(Object sender, DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellClick(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseClick(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="MachineAAR.fMain" method="Void DgvMachine_CellClick(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\MachineAAR.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1605165207684" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 MachineAAR.fMain.DgvMachine_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.1\fMain.cs: 行 172
+   於 System.Windows.Forms.DataGridViewCellEventHandler.Invoke(Object sender, DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellClick(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseClick(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="MachineAAR.fMain" method="Void DgvMachine_CellClick(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\MachineAAR.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1605171091502" level="FATAL" thread="1"><log4j:message>指定的索引鍵不在字典中。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Collections.Generic.KeyNotFoundException: 指定的索引鍵不在字典中。
+   於 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   於 MachineAAR.fFilter.BtnSearch_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.1\fFilter.cs: 行 150
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Collections.Generic.Dictionary`2" method="TValue get_Item(TKey)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1605171169515" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 MachineAAR.fFilter.BtnSearch_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.1\fFilter.cs: 行 141
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="MachineAAR.fFilter" method="Void BtnSearch_Click(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\MachineAAR.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1605171171613" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 MachineAAR.fFilter.BtnSearch_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.1\fFilter.cs: 行 141
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="MachineAAR.fFilter" method="Void BtnSearch_Click(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\MachineAAR.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1605171479360" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+BEGIN
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID0
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID0
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID1
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID1
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID2
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID2
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID3
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID3
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+
+DELETE FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+END;
+:ORA-06550: 第 19 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 4 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored
+ORA-06550: 第 82 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 67 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored
+ORA-06550: 第 145 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 130 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored
+ORA-06550: 第 208 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 193 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1605171479408" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+BEGIN
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID0
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID0
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID1
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID1
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID2
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID2
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID3
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID3
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+
+DELETE FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+END;
+ 】
+
+Exception：ORA-06550: 第 19 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 4 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored
+ORA-06550: 第 82 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 67 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored
+ORA-06550: 第 145 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 130 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored
+ORA-06550: 第 208 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 193 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+BEGIN
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID0
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID0
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID1
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID1
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID2
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID2
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,TRAVEL_ID
+   ,:MACHINE_ID3
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+);
+
+INSERT INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,END_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+   ,DATA_STATUS
+   ,WORK_TIME_MINUTE
+   ,WORK_TIME_SECOND
+)
+SELECT
+    RC_NO
+   ,TRAVEL_ID
+   ,NODE_ID
+   ,:MACHINE_ID3
+   ,:START_TIME
+   ,:END_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+   ,2
+   ,NVL(ROUND((TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60 + 29) / 60), 0)
+   ,NVL(ROUND(TO_NUMBER(:END_TIME - :START_TIME) * 24 * 60 * 60, 0), 3)
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+
+DELETE FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+WHERE
+    RC_NO = :RC_NO
+AND NODE_ID = :NODE_ID
+AND DATA_STATUS = 1
+;
+
+END;
+ 】
+
+Exception：ORA-06550: 第 19 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 4 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored
+ORA-06550: 第 82 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 67 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored
+ORA-06550: 第 145 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 130 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored
+ORA-06550: 第 208 行, 第 5 個欄位: 
+PL/SQL: ORA-00984: 不可在此使用資料欄
+ORA-06550: 第 193 行, 第 1 個欄位: 
+PL/SQL: SQL Statement ignored
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 MachineAAR.fMain.AddMachine() 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.1\fMain.cs: 行 554
+   於 MachineAAR.fMain.BtnOK_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineAAR\1.0.17003.1\fMain.cs: 行 192
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>

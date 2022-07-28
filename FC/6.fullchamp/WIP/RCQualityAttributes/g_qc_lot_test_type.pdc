@@ -1,0 +1,94 @@
+-- Create table
+create table G_QC_LOT_TEST_TYPE
+(
+  qc_lotno         VARCHAR2(50),
+  ng_cnt           NUMBER(4) default 0,
+  item_type_id     NUMBER,
+  start_time       DATE default SYSDATE,
+  end_time         DATE,
+  sampling_size    NUMBER(6) default 0,
+  pass_qty         NUMBER(6) default 0,
+  fail_qty         NUMBER(6) default 0,
+  qc_result        VARCHAR2(5) default 'N/A',
+  sampling_plan_id NUMBER,
+  sampling_level   VARCHAR2(10),
+  insp_empid       NUMBER,
+  rc_no            VARCHAR2(50)
+)
+tablespace SYSRT
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 2M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table G_QC_LOT_TEST_TYPE
+  is '測試大項抽驗記錄表';
+-- Add comments to the columns 
+comment on column G_QC_LOT_TEST_TYPE.qc_lotno
+  is '抽驗批號';
+comment on column G_QC_LOT_TEST_TYPE.ng_cnt
+  is '抽驗次數';
+comment on column G_QC_LOT_TEST_TYPE.start_time
+  is '測試大項開始抽驗時間';
+comment on column G_QC_LOT_TEST_TYPE.end_time
+  is '測試大項結束抽驗時間';
+comment on column G_QC_LOT_TEST_TYPE.sampling_size
+  is '測試大項預定抽驗數';
+comment on column G_QC_LOT_TEST_TYPE.pass_qty
+  is '良品數量';
+comment on column G_QC_LOT_TEST_TYPE.fail_qty
+  is '不良品數量';
+comment on column G_QC_LOT_TEST_TYPE.qc_result
+  is '測試大項抽驗結果(0:PASS,1:REJECT)';
+comment on column G_QC_LOT_TEST_TYPE.sampling_plan_id
+  is '抽驗計劃';
+comment on column G_QC_LOT_TEST_TYPE.sampling_level
+  is '抽驗等級(0:正常,1:加嚴,2:減量,3:免驗)';
+comment on column G_QC_LOT_TEST_TYPE.insp_empid
+  is '抽驗人員';
+-- Create/Recreate indexes 
+create index G_QC_TEST_TYPE_LOT on G_QC_LOT_TEST_TYPE (QC_LOTNO)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 448K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create unique index G_QC_TEST_TYPE_NG on G_QC_LOT_TEST_TYPE (QC_LOTNO, NG_CNT, ITEM_TYPE_ID)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 576K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_QC_TEST_TYPE_TIME on G_QC_LOT_TEST_TYPE (START_TIME)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 256K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on G_QC_LOT_TEST_TYPE to SJ;
+grant select, insert, update, delete on G_QC_LOT_TEST_TYPE to SYS_USER;

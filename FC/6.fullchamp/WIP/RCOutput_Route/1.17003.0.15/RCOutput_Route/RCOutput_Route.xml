@@ -1,0 +1,242 @@
+﻿<Chroma>
+  <English>
+    <Message Name="RC Output Route" Value="Job report - Output by Route" />
+    <Message Name="RC Output" Value="Job report - Output by Route" />
+  </English>
+  <繁體中文>
+    <Message Name="Append" Value="新增" />
+    <Message Name="BOM" Value="物料清單" />
+    <Message Name="Blueprint" Value="藍圖" />
+    <Message Name="Bonus / Work Hour" Value="Bonus/工時" />
+    <Message Name="Bouns Quantity Error." Value="請輸入Bonus數量正確數值" />
+    <Message Name="Bouns Quantity Invalid." Value="Bonus數量異常" />
+    <Message Name="CHECK" Value="選取" />
+    <Message Name="Select" Value="選取" />
+    <Message Name="CODE_LEVEL" Value="不良等級" />
+    <Message Name="CURRENT_QTY" Value="當前數量" />
+    <Message Name="CURRENT_STATUS" Value="狀態" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Checked" Value="已選" />
+    <Message Name="DEFECT_CODE" Value="不良現象" />
+    <Message Name="DEFECT_DESC" Value="不良描述" />
+    <Message Name="Data Abnormal" Value="數值異常" />
+    <Message Name="Data Collection" Value="資料收集" />
+    <Message Name="Data Empty" Value="不可為空白" />
+    <Message Name="Data Invalid" Value="只允許填入數字" />
+    <Message Name="Defect Code" Value="不良代碼" />
+    <Message Name="Defect Qty Empty" Value="未輸入不良" />
+    <Message Name="Defect Qty" Value="不良品數量" />
+    <Message Name="Defect Quantity Invalid." Value="不良數量異常" />
+    <Message Name="Defect" Value="不良現象" />
+    <Message Name="Delete" Value="刪除" />
+    <Message Name="EDIT" Value="編輯" />
+    <Message Name="Employee" Value="員工編號" />
+    <Message Name="Exit" Value="選擇製程名稱" />
+    <Message Name="Factory" Value="廠別" />
+    <Message Name="Finish editing, press ENTER." Value="按下 ENTER 完成編輯" />
+    <Message Name="Former NO" Value="舊編" />
+    <Message Name="GOOD_QTY" Value="良品數" />
+    <Message Name="Good Qty Empty" Value="良品數不可為空白" />
+    <Message Name="Good Qty Invalid" Value="良品數不可為負數" />
+    <Message Name="Good Qty" Value="良品數量" />
+    <Message Name="IS_MATERIAL" Value="物料" />
+    <Message Name="ITEM_COUNT" Value="用量" />
+    <Message Name="ITEM_GROUP" Value="料件關係" />
+    <Message Name="ITEM_NAME" Value="項目名稱" />
+    <Message Name="Item Count Error." Value="用量錯誤" />
+    <Message Name="Item Count" Value="用量" />
+    <Message Name="Keypart SN Error." Value="料件序號錯誤" />
+    <Message Name="Keypart SN is Duplicate." Value="料件序號重複輸入" />
+    <Message Name="Keypart SN" Value="料件序號" />
+    <Message Name="Keypart is not in this BOM." Value="BOM沒有設定此料件序號的料號" />
+    <Message Name="Keyparts Collection" Value="料件收集" />
+    <Message Name="Keyparts List" Value="已收集料件序號清單" />
+    <Message Name="MACHINE_CODE" Value="機台代碼" />
+    <Message Name="Machine Multiple choice" Value="機台多選" />
+    <Message Name="Machine Unselect" Value="機台未選" />
+    <Message Name="Machine" Value="機台" />
+    <Message Name="Manually set the WIP out time (for 10B WO only)" Value="人工設定出站時間（僅限 10B 工單）" />
+    <Message Name="Modify" Value="修改" />
+    <Message Name="More than initial quantity" Value="大於初始數量" />
+    <Message Name="More than the current quantity" Value="大於當前數量" />
+    <Message Name="Next Process" Value="下一製程名稱" />
+    <Message Name="No Scrap Wafer" Value="未有不良元件" />
+    <Message Name="No selected runcard." Value="未選取流程卡" />
+    <Message Name="No such runcard." Value="無此流程卡。" />
+    <Message Name="Not allowed input, required integer." Value="不允許的格式，必須為整數。" />
+    <Message Name="Not allowed input, required positive integer." Value="不允許的輸入，必須為正整數。" />
+    <Message Name="OK" Value="確定" />
+    <Message Name="Over flow{0}~{1}" Value="超出範圍{0}~{1}" />
+    <Message Name="PART_NO" Value="料號" />
+    <Message Name="PROCESS_NAME" Value="製程名稱" />
+    <Message Name="Process name" Value="製程名稱" />
+    <Message Name="PURCHASE" Value="是否檢查" />
+    <Message Name="Part No" Value="料號" />
+    <Message Name="Please Add BOM data." Value="請至物料清單新增" />
+    <Message Name="Please Add Process Defect code." Value="請先到製程不良現項新增代碼" />
+    <Message Name="Please Choose one Part NO in BOM." Value="請選擇一個料號" />
+    <Message Name="Please Input Quantity in Positive integer" Value="不良數量請輸入正整數" />
+    <Message Name="Please Input Quantity in Positive number" Value="請輸入正浮點數值" />
+    <Message Name="Please Input Work Hour." Value="請輸入工時" />
+    <Message Name="Please Set up next process sheet first." Value="請先設定下一製程的製程配置" />
+    <Message Name="Please enter up to five digits." Value="請輸入最多五位數字" />
+    <Message Name="Please select runcard(s)." Value="請選擇流程卡" />
+    <Message Name="Process Condition" Value="製程條件" />
+    <Message Name="Process Name" Value="目前製程名稱" />
+    <Message Name="Process Params" Value="製程參數" />
+    <Message Name="Process" Value="製程名稱" />
+    <Message Name="QTY" Value="不良品數" />
+    <Message Name="Qty" Value="數量" />
+    <Message Name="Query" Value="查詢" />
+    <Message Name="RC Input" Value="RC投入" />
+    <Message Name="RC NO Error." Value="流程卡號錯誤" />
+    <Message Name="RC No" Value="流程卡號" />
+    <Message Name="RC Output Route" Value="途程報工產出" />
+    <Message Name="RC Output" Value="途程報工產出站" />
+    <Message Name="RC Qty" Value="流程卡數量" />
+    <Message Name="RC_NO" Value="流程卡號" />
+    <Message Name="RC_STATUS" Value="流程卡狀態" />
+    <Message Name="ROUTE_NAME" Value="途程名稱" />
+    <Message Name="Route name" Value="途程名稱" />
+    <Message Name="Remark" Value="備註" />
+    <Message Name="Reset" Value="重置" />
+    <Message Name="Result quantity less than zero." Value="結果數量小於零。" />
+    <Message Name="Route Error." Value="途程錯誤" />
+    <Message Name="Route No" Value="途程編號" />
+    <Message Name="RunCard" Value="流程卡" />
+    <Message Name="RunCards" Value="流程卡" />
+    <Message Name="SCRAP_QTY" Value="不良品數" />
+    <Message Name="SERIAL_NUMBER" Value="序號" />
+    <Message Name="SN" Value="元件" />
+    <Message Name="SPEC" Value="描述" />
+    <Message Name="SPEC1" Value="規格" />
+    <Message Name="STAGE_NAME" Value="區段名稱" />
+    <Message Name="STATUS" Value="狀態" />
+    <Message Name="STATUS_NAME" Value="設備狀態" />
+    <Message Name="SYSDATE" Value="執行時間" />
+    <Message Name="Scrap Qty Empty" Value="不良品數不可為空白" />
+    <Message Name="Scrap Qty Invalid" Value="不良品數不可為負數" />
+    <Message Name="Search" Value="搜索條件" />
+    <Message Name="Select all" Value="全選" />
+    <Message Name="Select" Value="選取" />
+    <Message Name="Selected RC's QTY:" Value="此 RC 的當前數量：" />
+    <Message Name="Serial Number" Value="元件編號" />
+    <Message Name="Status" Value="連結名稱" />
+    <Message Name="Sum=0" Value="合計不可為零" />
+    <Message Name="The process can not be selected." Value="此製程不能被選為下一個製程" />
+    <Message Name="This Keypart SN Assembled on " Value="此料件序號已組裝在" />
+    <Message Name="TransferProcess" Value="選擇下一製程" />
+    <Message Name="UNIT_NO" Value="單位" />
+    <Message Name="UNIT_NO" Value="單位" />
+    <Message Name="UPDATE_TIME" Value="執行時間" />
+    <Message Name="VALUE_DEFAULT" Value="預設值" />
+    <Message Name="Version" Value="版本號" />
+    <Message Name="WIP Out Time" Value="在製品出站時間" />
+    <Message Name="WIP_QTY" Value="數量" />
+    <Message Name="WO" Value="工單號" />
+    <Message Name="WORK_HOUR" Value="工時" />
+    <Message Name="WORK_ORDER" Value="工單編號" />
+    <Message Name="WorkOrder" Value="工單編號" />
+    <Message Name="Work Hour Error." Value="工時資料異常" />
+    <Message Name="Work Hour" Value="工時" />
+    <Message Name="does not input Keypart" Value="沒有輸入料件序號" />
+    <Message Name="Product name" Value="品名" />
+    <Message Name="Specification" Value="規格" />
+    <Message Name="Select all" Value="全選" />
+    <Message Name="Reset all" Value="重置" />
+    <Message Name="Print WP label" Value="列印防水標籤" />
+    <Message Name="Is T4 stove" Value="T4 爐" />
+    <Message Name="Is T6 stove" Value="T6 爐" />
+    <Message Name="Job-reporting processes does NOT include current selected process" Value="執行報工的製程中， &quot;沒有&quot; 包含當前被選取的製程" />
+  </繁體中文>
+  <简体中文>
+    <Message Name="Append" Value="新增" />
+    <Message Name="Bonus / Work Hour" Value="Bonus/工时" />
+    <Message Name="CHECK" Value="选取" />
+    <Message Name="CODE_LEVEL" Value="不良等级" />
+    <Message Name="CURRENT_QTY" Value="当前数量" />
+    <Message Name="CURRENT_STATUS" Value="状态" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Checked" Value="已选" />
+    <Message Name="DEFECT_CODE" Value="不良现象" />
+    <Message Name="DEFECT_DESC" Value="不良描述" />
+    <Message Name="Data Collection" Value="资料收集" />
+    <Message Name="Data Empty" Value="不可为空白" />
+    <Message Name="Data Invalid" Value="只允许填入数字" />
+    <Message Name="Data Invalid" Value="只允许填入数字" />
+    <Message Name="Defect Code" Value="不良代码" />
+    <Message Name="Defect Qty Empty" Value="未输入不良" />
+    <Message Name="Defect Qty" Value="不良品数量" />
+    <Message Name="Defect" Value="不良现象" />
+    <Message Name="Delete" Value="删除" />
+    <Message Name="EDIT" Value="编辑" />
+    <Message Name="Employee" Value="员工编号" />
+    <Message Name="Factory" Value="厂别" />
+    <Message Name="Finish editing, press ENTER." Value="按下 ENTER 完成编辑" />
+    <Message Name="GOOD_QTY" Value="良品数" />
+    <Message Name="Good Qty Empty" Value="良品数不可为空白" />
+    <Message Name="Good Qty Invalid" Value="良品数不可为负数" />
+    <Message Name="Good Qty" Value="良品数量" />
+    <Message Name="ITEM_NAME" Value="项目名称" />
+    <Message Name="MACHINE_CODE" Value="机台代码" />
+    <Message Name="Machine Unselect" Value="机台未选" />
+    <Message Name="Machine" Value="机台" />
+    <Message Name="Manually set the WIP out time (for 10B WO only)" Value="人工设定出站时间（仅限 10B 工单）" />
+    <Message Name="Modify" Value="修改" />
+    <Message Name="More than initial quantity" Value="大于初始数量" />
+    <Message Name="More than the current quantity" Value="大于当前数量" />
+    <Message Name="No Scrap Wafer" Value="未有不良组件" />
+    <Message Name="No selected runcard." Value="未选取流程卡" />
+    <Message Name="No such runcard." Value="无此流程卡。" />
+    <Message Name="Not allowed input, required integer." Value="不允许的格式，必须为整数。" />
+    <Message Name="Not allowed input, required positive integer." Value="不允许的输入，必须为正整数。" />
+    <Message Name="OK" Value="确定" />
+    <Message Name="Over flow{0}~{1}" Value="超出范围{0}~{1}" />
+    <Message Name="PART_NO" Value="料号" />
+    <Message Name="PROCESS_NAME" Value="制程名称" />
+    <Message Name="Part No" Value="料号" />
+    <Message Name="Please select runcard(s)." Value="请选择流程卡" />
+    <Message Name="Process Condition" Value="制程条件" />
+    <Message Name="Process Params" Value="制程参数" />
+    <Message Name="Process" Value="制程名称" />
+    <Message Name="QTY" Value="不良品数" />
+    <Message Name="Qty" Value="数量" />
+    <Message Name="Query" Value="查询" />
+    <Message Name="RC Input" Value="RC投入" />
+    <Message Name="RC No" Value="流程卡号" />
+    <Message Name="RC Output Route" Value="途程报工产出站" />
+    <Message Name="RC Output" Value="途程报工产出站" />
+    <Message Name="RC Qty" Value="流程卡数量" />
+    <Message Name="RC_NO" Value="流程卡号" />
+    <Message Name="RC_STATUS" Value="流程卡状态" />
+    <Message Name="ROUTE_NAME" Value="途程名称" />
+    <Message Name="Remark" Value="备注" />
+    <Message Name="Reset" Value="重置" />
+    <Message Name="Result quantity less than zero." Value="结果数量小于零。" />
+    <Message Name="Route No" Value="途程编号" />
+    <Message Name="RunCard" Value="流程卡" />
+    <Message Name="RunCards" Value="流程卡" />
+    <Message Name="SCRAP_QTY" Value="不良品数" />
+    <Message Name="SERIAL_NUMBER" Value="序号" />
+    <Message Name="SN" Value="元件" />
+    <Message Name="SPEC" Value="描述" />
+    <Message Name="STAGE_NAME" Value="区段名称" />
+    <Message Name="STATUS" Value="状态" />
+    <Message Name="STATUS_NAME" Value="设备状态" />
+    <Message Name="Scrap Qty Empty" Value="不良品数不可为空白" />
+    <Message Name="Scrap Qty Invalid" Value="不良品数不可为负数" />
+    <Message Name="Search" Value="搜索条件" />
+    <Message Name="Select all" Value="全选" />
+    <Message Name="Select" Value="选取" />
+    <Message Name="Selected RC's QTY:" Value="此 RC 的当前数量：" />
+    <Message Name="Serial Number" Value="元件编号" />
+    <Message Name="Sum=0" Value="合计不可为零" />
+    <Message Name="VALUE_DEFAULT" Value="默认值" />
+    <Message Name="Version" Value="版本号" />
+    <Message Name="WIP Out Time" Value="在制品出站时间" />
+    <Message Name="WIP_QTY" Value="数量" />
+    <Message Name="WO" Value="工单号" />
+    <Message Name="WORK_HOUR" Value="工时" />
+    <Message Name="WORK_ORDER" Value="工单编号" />
+  </简体中文>
+</Chroma>

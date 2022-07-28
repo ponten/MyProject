@@ -1,0 +1,145 @@
+<log4j:event logger="ClientUtils" timestamp="1600047821509" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    B.MACHINE_ID
+   ,MACHINE_CODE
+   ,MACHINE_DESC
+FROM
+    SAJET.SYS_RC_PROCESS_MACHINE A
+   ,SAJET.SYS_MACHINE B
+WHERE
+    A.PROCESS_ID = :PROCESS_ID
+AND A.MACHINE_ID = B.MACHINE_ID
+AND A.ENABLED = 'Y'
+AND B.ENABLED = 'Y'
+AND B.MACHINE_ID NOT IN
+(
+    SELECT
+       GRTM.MACHINE_ID
+    FROM
+        SAJET.G_RC_STATUS GRS
+       ,SAJET.G_RC_TRAVEL_MACHINE GRTM
+       ,SYS_MACHINE SM
+    WHERE
+        GRS.RC_NO = :RC_NO
+    AND GRS.RC_NO = GRTM.RC_NO
+    AND GRS.TRAVEL_ID = GRTM.TRAVEL_ID
+    AND GRTM.MACHINE_ID = SM.MACHINE_ID
+)
+ORDER BY
+    MACHINE_CODE
+:ORA-00942: 表格或視觀表不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1600048452296" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    SM.MACHINE_CODE
+FROM
+    SAJET.G_RC_STATUS GRS
+   ,SAJET.G_RC_TRAVEL_MACHINE GRTM
+   ,SYS_MACHINE SM
+WHERE
+    GRS.RC_NO = :RC_NO
+AND GRS.RC_NO = GRTM.RC_NO
+AND GRS.TRAVEL_ID = GRTM.TRAVEL_ID
+AND GRTM.MACHINE_ID = SM.MACHINE_ID
+:ORA-00942: 表格或視觀表不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1600048694406" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+INSERT ALL
+
+INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,:TRAVEL_ID
+   ,:MACHINE_ID0
+   ,:START_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+)
+
+INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,:TRAVEL_ID
+   ,:MACHINE_ID0
+   ,:START_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+)
+
+SELECT 1 FROM DUAL
+:ORA-01861: 文字與格式字串不符</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1600049101201" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+INSERT ALL
+
+INTO
+    SAJET.G_RC_TRAVEL_MACHINE
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,LOAD_PORT
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,:TRAVEL_ID
+   ,:MACHINE_ID0
+   ,:START_TIME
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+)
+
+INTO
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+(
+    RC_NO
+   ,TRAVEL_ID
+   ,MACHINE_ID
+   ,START_TIME
+   ,REASON_ID
+   ,LOAD_QTY
+   ,UPDATE_USERID
+   ,UPDATE_TIME
+)
+VALUES
+(
+    :RC_NO
+   ,:TRAVEL_ID
+   ,:MACHINE_ID0
+   ,:START_TIME
+   ,0
+   ,0
+   ,:UPDATE_USERID
+   ,:UPDATE_TIME
+)
+
+SELECT 1 FROM DUAL
+:ORA-01722: 無效的數字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>

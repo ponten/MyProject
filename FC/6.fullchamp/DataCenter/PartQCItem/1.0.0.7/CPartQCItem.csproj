@@ -1,0 +1,160 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86D93FC5-6DA8-4069-9D90-F8CC1BB628BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CPartQCItem</RootNamespace>
+    <AssemblyName>CPartQCItem</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Output\DataCenter\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientUtils, Version=1.0.0.24, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Output\ClientUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExportExcel.cs" />
+    <Compile Include="fCopyFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCopyFrom.designer.cs">
+      <DependentUpon>fCopyFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fData.Designer.cs">
+      <DependentUpon>fData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFilter.designer.cs">
+      <DependentUpon>fFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFilterDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFilterDetail.designer.cs">
+      <DependentUpon>fFilterDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHistory.designer.cs">
+      <DependentUpon>fHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SajetCommon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SajetTable.cs" />
+    <Compile Include="fDetailData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDetailData.Designer.cs">
+      <DependentUpon>fDetailData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTypeData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTypeData.Designer.cs">
+      <DependentUpon>fTypeData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TFDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TFDetail.Designer.cs">
+      <DependentUpon>TFDetail.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fCopyFrom.resx">
+      <DependentUpon>fCopyFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFilter.resx">
+      <DependentUpon>fFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFilterDetail.resx">
+      <DependentUpon>fFilterDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHistory.resx">
+      <DependentUpon>fHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDetailData.resx">
+      <DependentUpon>fDetailData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTypeData.resx">
+      <DependentUpon>fTypeData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TFDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TFDetail.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

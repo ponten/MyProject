@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <English>
+    <Message Name="Reason Code" Value="Reason Code"/>
+    <Message Name="Description" Value="Description"/>
+    <Message Name="Description2" Value="Description2"/>
+    <Message Name="Level" Value="Level"/>
+    <Message Name="Parent Reason Code" Value="Parent Reason Code"/>
+    <Message Name="Parent Reason Code Error" Value="Parent Reason Code Error"/>
+    <Message Name="Level-1 Can not input Parent Reason Code" Value="Level-1 Can not input Parent Reason Code"/>
+    <Message Name="Please input Parent Reason Code" Value="Please input Parent Reason Code"/>
+    <Message Name="REASON_CODE" Value="Reason Code"/>
+    <Message Name="REASON_DESC" Value="Description"/>
+    <Message Name="CODE_LEVEL" Value="Level"/>
+  </English>
+  <繁體中文>
+    <Message Name="Reason Code" Value="不良原因代碼"/>
+    <Message Name="Description" Value="不良原因描述"/>
+    <Message Name="Description2" Value="不良原因描述二"/>
+    <Message Name="Level" Value="階層"/>
+    <Message Name="Parent Reason Code" Value="上階不良原因"/>
+    <Message Name="Parent Reason Code Error" Value="上階層不良原因錯誤"/>
+    <Message Name="Level-1 Can not input Parent Reason Code" Value="第一階不需輸入上階層不良原因"/>
+    <Message Name="Please input Parent Reason Code" Value="請輸入上階層不良原因"/>
+    <Message Name="REASON_CODE" Value="不良原因代碼"/>
+    <Message Name="REASON_DESC" Value="不良原因描述"/>
+    <Message Name="CODE_LEVEL" Value="階層"/>
+  </繁體中文>
+</Chroma>

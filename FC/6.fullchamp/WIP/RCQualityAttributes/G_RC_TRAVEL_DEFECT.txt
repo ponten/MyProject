@@ -1,0 +1,89 @@
+-- Create table
+create table G_RC_TRAVEL_DEFECT
+(
+  rc_no           VARCHAR2(50),
+  serial_number   VARCHAR2(40),
+  travel_id       NUMBER,
+  process_id      NUMBER,
+  defect_id       NUMBER,
+  defect_level    VARCHAR2(1),
+  defect_type_id  NUMBER,
+  qty             NUMBER,
+  update_userid   NUMBER,
+  update_time     DATE,
+  exception_type  VARCHAR2(200),
+  reason_analysis VARCHAR2(200),
+  measure         VARCHAR2(200)
+)
+tablespace SYSRT
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 2
+    next 1
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table G_RC_TRAVEL_DEFECT
+  is '流程卡不良紀錄表';
+-- Add comments to the columns 
+comment on column G_RC_TRAVEL_DEFECT.rc_no
+  is '流程卡號';
+comment on column G_RC_TRAVEL_DEFECT.serial_number
+  is '元件序號';
+comment on column G_RC_TRAVEL_DEFECT.travel_id
+  is '歷程編號';
+comment on column G_RC_TRAVEL_DEFECT.process_id
+  is '製程編號';
+comment on column G_RC_TRAVEL_DEFECT.defect_id
+  is '不良現象編號';
+comment on column G_RC_TRAVEL_DEFECT.defect_level
+  is '不良等級';
+comment on column G_RC_TRAVEL_DEFECT.defect_type_id
+  is '不良類型編號';
+comment on column G_RC_TRAVEL_DEFECT.qty
+  is '數量';
+comment on column G_RC_TRAVEL_DEFECT.update_userid
+  is '資料異動人員';
+comment on column G_RC_TRAVEL_DEFECT.update_time
+  is '資料異動時間';
+-- Create/Recreate indexes 
+create index G_RC_TRAVEL_DEFECT_RC on G_RC_TRAVEL_DEFECT (RC_NO)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_RC_TRAVEL_DEFECT_SN on G_RC_TRAVEL_DEFECT (SERIAL_NUMBER)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_RC_TRAVEL_DEFECT_TRAVEL_ID on G_RC_TRAVEL_DEFECT (TRAVEL_ID)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );

@@ -1,0 +1,432 @@
+﻿<Chroma>
+  <English>
+    <Message Name="Exception" Value="Exclude" />
+  </English>
+  <繁體中文>
+    <Message Name="2D Column must be input SQL string!" Value="2D列必須輸入SQL字串" />
+    <Message Name="2D Row must be input SQL string!" Value="2D行必須輸入SQL字串" />
+    <Message Name="Area" Value="區域圖" />
+    <Message Name="Horiz. Bar" Value="橫條圖" />
+    <Message Name="Brush Color" Value="筆刷顏色" />
+    <Message Name="Bottom" Value="下方" />
+    <Message Name="By" Value="以" />
+    <Message Name="Chart" Value="圖表" />
+    <Message Name="TW Desc" Value="繁體中文描述" />
+    <Message Name="Color" Value="顏色" />
+    <Message Name="Title" Value="顯示名稱" />
+    <Message Name="Formula" Value="方程式" />
+    <Message Name="Bar" Value="直條圖" />
+    <Message Name="Column" Value="列" />
+    <Message Name="Data" Value="資料" />
+    <Message Name="Description" Value="描述" />
+    <Message Name="Detail" Value="細項" />
+    <Message Name="Leaves unconditionally" Value="無條件捨去" />
+    <Message Name="Save OK." Value="儲存完成" />
+    <Message Name="Round Off" Value="四捨五入" />
+    <Message Name="None" Value="無" />
+    <Message Name="Carrying Way" Value="進位方式" />
+    <Message Name="Figure" Value="位數" />
+    <Message Name="Detail SQL Command" Value="細項SQL指令" />
+    <Message Name="Title Duplicate" Value="名稱重覆" />
+    <Message Name="ENG Desc" Value="英文描述" />
+    <Message Name="ENG Field Name" Value="英文欄位名稱" />
+    <Message Name="ENG Name" Value="英文報表名稱" />
+    <Message Name="Export" Value="匯出" />
+    <Message Name="Export Detail" Value="匯出細項" />
+    <Message Name="Field" Value="欄位" />
+    <Message Name="Field Name" Value="欄位名稱" />
+    <Message Name="Field Type" Value="資料來源" />
+    <Message Name="Field Value" Value="欄位數值" />
+    <Message Name="Font Color" Value="字型顏色" />
+    <Message Name="From" Value="從" />
+    <Message Name="For" Value="對" />
+    <Message Name="Head" Value="起始" />
+    <Message Name="Line" Value="折線圖" />
+    <Message Name="Main Field" Value="X軸" />
+    <Message Name="Value Field" Value="數值欄位" />
+    <Message Name="Method" Value="運算" />
+    <Message Name="Conditions" Value="條件" />
+    <Message Name="Master" Value="主表" />
+    <Message Name="Necessary Condition" Value="必要狀態" />
+    <Message Name="Alternative" Value="擇一必要" />
+    <Message Name="Yes" Value="是" />
+    <Message Name="No" Value="否" />
+    <Message Name="Operator" Value="操作元" />
+    <Message Name="Parameter Name" Value="參數名稱" />
+    <Message Name="Parameter Type" Value="參數類型" />
+    <Message Name="Parameter Function" Value="參數函數" />
+    <Message Name="Pareto" Value="柏拉圖" />
+    <Message Name="Pie" Value="圓餅圖" />
+    <Message Name="Please Input Chart Value Field!" Value="請輸入圖表數值欄位" />
+    <Message Name="Please input Detail SQL!!" Value="請輸入細項SQL語法" />
+    <Message Name="Please input Master SQL!!" Value="請輸入主表SQL語法" />
+    <Message Name="Please Input Chart Second Field!" Value="請輸入圖表Y軸欄位" />
+    <Message Name="Please Input Travel Card Field!" Value="請輸入流程卡欄位" />
+    <Message Name="Please Setup Detail SQL Command!" Value="請輸入細項SQL指令" />
+    <Message Name="Pointer" Value="泡泡圖" />
+    <Message Name="Position" Value="顯示位置" />
+    <Message Name="Report Name" Value="報表名稱" />
+    <Message Name="Report Type" Value="報表類型" />
+    <Message Name="Report Type Name" Value="報表類型" />
+    <Message Name="Right" Value="靠右" />
+    <Message Name="Left" Value="靠左" />
+    <Message Name="Center" Value="置中" />
+    <Message Name="Auto" Value="不指定" />
+    <Message Name="Row" Value="行" />
+    <Message Name="Row Type need to select Sum(Field) or Field" Value="行類型必需選擇總和(欄位)或是欄位" />
+    <Message Name="Save" Value="儲存" />
+    <Message Name="Save Sql Command OK !" Value="SQL指令儲存成功" />
+    <Message Name="Second Field" Value="Y軸" />
+    <Message Name="Group" Value="群組編號" />
+    <Message Name="Display Seq." Value="顯示順序" />
+    <Message Name="Seq" Value="順序" />
+    <Message Name="Max:" Value="最大值:" />
+    <Message Name="SQL Command" Value="SQL指令" />
+    <Message Name="Sum" Value="總和" />
+    <Message Name="Sum(Field)" Value="總和(欄位)" />
+    <Message Name="Sum(SQL)" Value="總和(SQL)" />
+    <Message Name="Sum(Fields)" Value="欄位總和-可多個欄位" />
+    <Message Name="Sum(SQL-Fields)" Value="SQL總和-可多個欄位" />
+    <Message Name="SQL-Fields" Value="SQL-可多個欄位" />
+    <Message Name="Fields" Value="欄位-可多個欄位" />
+    <Message Name="Tail" Value="結束" />
+    <Message Name="TW Field Name" Value="繁體中文欄位名稱" />
+    <Message Name="TW Name" Value="繁體中文報表名稱" />
+    <Message Name="Travel Card" Value="流程卡" />
+    <Message Name="Type" Value="類型" />
+    <Message Name="Value" Value="數值" />
+    <Message Name="Source" Value="資料來源" />
+    <Message Name="Visible" Value="可見" />
+    <Message Name="Column Type need to select Sum(Field) or Field" Value="列類型必需選擇總和(欄位)或是欄位" />
+    <Message Name="Please input Column Value!!" Value="請輸入列值" />
+    <Message Name="Please Select Report!!" Value="請選擇報表" />
+    <Message Name="Export Success!!" Value="匯出成功" />
+    <Message Name="Export Error!!" Value="匯出失敗" />
+    <Message Name="Import Success!!" Value="匯入成功" />
+    <Message Name="Import" Value="匯入" />
+    <Message Name="Language" Value="語言" />
+    <Message Name="Sample File (Macro Name: Macro)" Value="範本檔 (巨集名稱: Macro)" />
+    <Message Name="Option" Value="選項" />
+    <Message Name="Save As" Value="另存為" />
+    <Message Name="Enabled" Value="可用" />
+    <Message Name="Legend" Value="圖例" />
+    <Message Name="Point Labels" Value="座標數值" />
+    <Message Name="SQL Command will be replaced!" Value="SQL指令將被替換!" />
+    <Message Name="ENG" Value="英文" />
+    <Message Name="TW" Value="繁體中文" />
+    <Message Name="HEADTEXT_ENG" Value="英文" />
+    <Message Name="HEADTEXT_TW" Value="繁體中文" />
+    <Message Name="Upper Limit" Value="上限欄位" />
+    <Message Name="Lower Limit" Value="下限欄位" />
+    <Message Name="Marker Shape" Value="標記形狀" />
+    <Message Name="From Zero Start" Value="由零開始" />
+    <Message Name="Apply" Value="確定" />
+    <Message Name="Exception" Value="排除" />
+    <Message Name="Role Assign" Value="角色" />
+    <Message Name="Role Name" Value="角色名稱" />
+    <Message Name="Select All" Value="全選" />
+    <Message Name="Report Type:" Value="報表類型:" />
+    <Message Name="Select None" Value="取消全選" />
+    <Message Name="Date Range(0 ~)" Value="日期區間(0 ~)" />
+    <Message Name="Date Range/Week Start" Value="日期區間/週起始" />
+    <Message Name="HEADTEXT_CN" Value="簡體中文" />
+    <Message Name="Upper Case" Value="大寫" />
+    <Message Name="CN Desc" Value="簡體中文描述" />
+    <Message Name="Field Position" Value="欄位對齊" />
+    <Message Name="CN Field Name" Value="簡體中文欄位名稱" />
+    <Message Name="Limit" Value="上下限" />
+    <Message Name="Field Value Type" Value="欄位數值類型" />
+    <Message Name="Marker Color" Value="標記顏色" />
+    <Message Name="Sequence" Value="順序" />
+    <Message Name="Enable" Value="可用" />
+    <Message Name="Disable" Value="停用" />
+    <Message Name="Summary" Value="加總" />
+    <Message Name="Once" Value="只匯出一次" />
+    <Message Name="Check Date" Value="日期勾取" />
+    <Message Name="CN Name" Value="簡體中文報表名稱" />
+    <Message Name="Maximum Value" Value="最大值" />
+    <Message Name="Data Load" Value="資料載入" />
+    <Message Name="Virtual Mode" Value="批量模式" />
+    <Message Name="Normal (DataSet)" Value="一般模式" />
+    <Message Name="Page Mode" Value="分頁模式" />
+    <Message Name="ODAC" Value="ODAC" />
+    <Message Name="Ex: TO_CHAR(@, 'YYYYMMDD')" Value="如: TO_CHAR(@, 'YYYYMMDD')" />
+    <Message Name="Data Link" Value="資料連結" />
+    <Message Name="Link Name" Value="連結名稱" />
+    <Message Name="SQL Value" Value="SQL" />
+    <Message Name="Dll File Name" Value="Dll檔案名稱" />
+    <Message Name="ARGS" Value="參數" />
+    <Message Name="CN Link Name" Value="連結名稱(簡中)" />
+    <Message Name="ENG Link Name" Value="連結名稱(英文)" />
+    <Message Name="TW Link Name" Value="連結名稱(繁中)" />
+    <Message Name="Dll File" Value="Dll檔案" />
+    <Message Name="Args" Value="參數" />
+    <Message Name="Serial Number" Value="序號" />
+    <Message Name="Customer SN" Value="客戶序號" />
+    <Message Name="Key Part SN" Value="料件序號" />
+    <Message Name="Statistics" Value="統計" />
+    <Message Name="Head Text" Value="標題文字" />
+    <Message Name="Except Zero" Value="忽略零" />
+    <Message Name="Percent Value" Value="來源數值為百分比" />
+    <Message Name="For Multiply" Value="數值相乘" />
+    <Message Name="Decimal Point" Value="小數位數" />
+    <Message Name="From Zero" Value="由零開始" />
+    <Message Name="Multiply" Value="相乘" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Table" Value="表格" />
+    <Message Name="Sort Order" Value="順序" />
+    <Message Name="Sort" Value="排序" />
+    <Message Name="Owner" Value="擁有者" />
+    <Message Name="Seach" Value="尋找" />
+    <Message Name="Filter" Value="過濾條件" />
+    <Message Name="Object Name" Value="過濾條件" />
+    <Message Name="Check All" Value="全選" />
+    <Message Name="Alias" Value="別名" />
+    <Message Name="Function" Value="函數" />
+    <Message Name="Group by" Value="群組欄位" />
+    <Message Name="TRA Desc" Value="繁體中文描述" />
+    <Message Name="TRA Field Name" Value="繁體中文欄位名稱" />
+    <Message Name="TRA Name" Value="繁體中文報表名稱" />
+    <Message Name="TRA" Value="繁體中文" />
+    <Message Name="CN" Value="簡體中文" />
+    <Message Name="HEADTEXT_TRA" Value="繁體中文" />
+    <Message Name="TRA Link Name" Value="繁體中文名稱" />
+    <Message Name="Excel File (*.xls)|*.xls|Excel Temp File (*.xlt)|*.xlt|All File (*.*)|*.*" Value="Excel 活頁簿(*.xls)|*.xls|範本(*.xlt)|*.xlt|所有檔案(*.*)|*.*" />
+    <Message Name="Delete?" Value="刪除?" />
+    <Message Name="Detail SQL Empty!" Value="未有細項SQL語法" />
+    <Message Name="Master SQL Empty!" Value="未有主表SQL語法" />
+    <Message Name="TW Link Name" Value="繁體中文名稱" />
+    <Message Name="CN Link Name" Value="簡體中文名稱" />
+    <Message Name="ENG Link Name" Value="英文名稱" />
+    <Message Name="Week Start(0~6,-1:ISO)" Value="週起始(0~6,-1:ISO)" />
+    <Message Name="Exclude" Value="排除" />
+    <Message Name="OK" Value="確定" />
+    <Message Name="Refresh Data" Value="重新查詢" />
+    <Message Name="Show Dialog" Value="對話視窗" />
+    <Message Name="Role" Value="權限" />
+    <Message Name="Row Selected" Value="列選取" />
+    <Message Name="Link Type" Value="顯示" />
+    <Message Name="Button" Value="按鈕" />
+    <Message Name="Context Menu" Value="右鍵選單" />
+    <Message Name="Connection Mode" Value="連線模式" />
+    <Message Name="Column Name" Value="欄位名稱" />
+    <Message Name="Necessary" Value="必填" />
+    <Message Name="Value/SQL" Value="值/SQL" />
+    <Message Name="Display" Value="顯示內容" />
+    <Message Name="Maintain" Value="資料維護" />
+    <Message Name="(Value,Display)" Value="(值,顯示內容)" />
+    <Message Name="Stored Procedure" Value="儲存程序" />
+    <Message Name="From Master" Value="主表資料" />
+    <Message Name="Key Value" Value="主鍵值" />
+    <Message Name="Other" Value="其他" />
+    <Message Name="Append" Value="新增" />
+    <Message Name="Modify" Value="修改" />
+    <Message Name="{0} is Exist!\nWould You Want to Replace Extant Report?" Value="{0} 已存在!\n取代已存在之報表?" />
+    <Message Name="Would You Want to Replace Extant Report?" Value="取代已存在之報表?" />
+    <Message Name="Period" Value="區間限制" />
+    <Message Name="Hour" Value="小時" />
+    <Message Name="Max Record Count" Value="最大筆數" />
+    <Message Name="Show Report List" Value="顯示報表明細" />
+    <Message Name="0: No Check" Value="0: 不檢查" />
+    <Message Name="For Value" Value="數值設定" />
+  </繁體中文>
+  <简体中文>
+    <Message Name="2D Column must be input SQL string!" Value="2D列必须输入SQL字符串" />
+    <Message Name="2D Row must be input SQL string!" Value="2D行必须输入SQL字符串" />
+    <Message Name="Area" Value="分区图" />
+    <Message Name="Horiz. Bar" Value="条形图" />
+    <Message Name="Brush Color" Value="笔刷颜色" />
+    <Message Name="Bottom" Value="下方" />
+    <Message Name="By" Value="以" />
+    <Message Name="Chart" Value="图表" />
+    <Message Name="TW Desc" Value="繁体中文描述" />
+    <Message Name="Color" Value="颜色" />
+    <Message Name="Title" Value="显示名称" />
+    <Message Name="Formula" Value="方程式" />
+    <Message Name="Bar" Value="柱形图" />
+    <Message Name="Column" Value="列" />
+    <Message Name="Data" Value="资料" />
+    <Message Name="Description" Value="描述" />
+    <Message Name="Detail" Value="细项" />
+    <Message Name="Leaves unconditionally" Value="无条件舍去" />
+    <Message Name="Save OK." Value="储存完成" />
+    <Message Name="Round Off" Value="四舍五入" />
+    <Message Name="None" Value="无" />
+    <Message Name="Carrying Way" Value="进位方式" />
+    <Message Name="Figure" Value="位数" />
+    <Message Name="Detail SQL Command" Value="细项SQL指令" />
+    <Message Name="Title Duplicate" Value="名称重覆" />
+    <Message Name="ENG Desc" Value="英文描述" />
+    <Message Name="ENG Field Name" Value="英文域名" />
+    <Message Name="ENG Name" Value="英文报表名称" />
+    <Message Name="Export Detail" Value="导出细项" />
+    <Message Name="Field" Value="字段" />
+    <Message Name="Field Name" Value="域名" />
+    <Message Name="Field Type" Value="字段类型" />
+    <Message Name="Field Value" Value="字段数值" />
+    <Message Name="Font Color" Value="字型颜色" />
+    <Message Name="From" Value="从" />
+    <Message Name="For" Value="对" />
+    <Message Name="Head" Value="起始" />
+    <Message Name="Line" Value="折线图" />
+    <Message Name="Main Field" Value="X轴" />
+    <Message Name="Value Field" Value="数值字段" />
+    <Message Name="Method" Value="运算" />
+    <Message Name="Conditions" Value="条件" />
+    <Message Name="Master" Value="主表" />
+    <Message Name="Necessary Condition" Value="必要状态" />
+    <Message Name="Alternative" Value="择一必要" />
+    <Message Name="Yes" Value="是" />
+    <Message Name="No" Value="否" />
+    <Message Name="Operator" Value="操作元" />
+    <Message Name="Parameter Name" Value="参数名称" />
+    <Message Name="Parameter Type" Value="参数类型" />
+    <Message Name="Parameter Function" Value="参数函数" />
+    <Message Name="Pareto" Value="柏拉图" />
+    <Message Name="Pie" Value="圆饼图" />
+    <Message Name="Please Input Chart Value Field!" Value="请输入图表数值字段" />
+    <Message Name="Please input Detail SQL!!" Value="请输入细项SQL语法" />
+    <Message Name="Please input Master SQL!!" Value="请输入主表SQL语法" />
+    <Message Name="Please Input Chart Second Field!" Value="请输入图表次轴字段" />
+    <Message Name="Please Input Travel Card Field!" Value="请输入流程卡字段" />
+    <Message Name="Please Setup Detail SQL Command!" Value="请输入细项SQL指令" />
+    <Message Name="Pointer" Value="泡泡图" />
+    <Message Name="Position" Value="显示位置" />
+    <Message Name="Report Name" Value="报表名称" />
+    <Message Name="Report Type" Value="报表类型" />
+    <Message Name="Report Type Name" Value="报表类型" />
+    <Message Name="Right" Value="靠右" />
+    <Message Name="Left" Value="靠左" />
+    <Message Name="Center" Value="置中" />
+    <Message Name="Auto" Value="不指定" />
+    <Message Name="Row" Value="行" />
+    <Message Name="Row Type need to select Sum(Field) or Field" Value="行类型必需选择总和(字段)或是字段" />
+    <Message Name="Save" Value="储存" />
+    <Message Name="Save Sql Command OK !" Value="SQL指令储存成功" />
+    <Message Name="Second Field" Value="Y轴" />
+    <Message Name="Group" Value="群组编号" />
+    <Message Name="Display Seq." Value="显示顺序" />
+    <Message Name="Seq" Value="顺序" />
+    <Message Name="Max:" Value="最大值:" />
+    <Message Name="SQL Command" Value="SQL指令" />
+    <Message Name="Sum" Value="总和" />
+    <Message Name="Sum(Field)" Value="总和(字段)" />
+    <Message Name="Sum(SQL)" Value="总和(SQL)" />
+    <Message Name="Sum(Fields)" Value="字段总和-可多个字段" />
+    <Message Name="Sum(SQL-Fields)" Value="SQL总和-可多个字段" />
+    <Message Name="SQL-Fields" Value="SQL-可多个字段" />
+    <Message Name="Fields" Value="字段-可多个字段" />
+    <Message Name="Tail" Value="结束" />
+    <Message Name="TW Field Name" Value="繁体中文域名" />
+    <Message Name="TW Name" Value="繁体中文报表名称" />
+    <Message Name="Travel Card" Value="流程卡" />
+    <Message Name="Type" Value="类型" />
+    <Message Name="Value" Value="数值" />
+    <Message Name="Source" Value="数据源" />
+    <Message Name="Visible" Value="可见" />
+    <Message Name="Column Type need to select Sum(Field) or Field" Value="列类型必需选择总和(字段)或是字段" />
+    <Message Name="Please input Column Value!!" Value="请输入列值" />
+    <Message Name="Please Select Report!!" Value="请选择报表" />
+    <Message Name="Export Success!!" Value="导出成功" />
+    <Message Name="Export Error!!" Value="导出失败" />
+    <Message Name="Import Success!!" Value="汇入成功" />
+    <Message Name="Import" Value="汇入" />
+    <Message Name="Language" Value="语言" />
+    <Message Name="Sample File (Macro Name: Macro)" Value="模板文件 (宏名称: Macro)" />
+    <Message Name="Option" Value="选项" />
+    <Message Name="Save As" Value="另存为" />
+    <Message Name="Enabled" Value="可用" />
+    <Message Name="Legend" Value="图例" />
+    <Message Name="Point Labels" Value="坐标数值" />
+    <Message Name="SQL Command will be replaced!" Value="SQL指令将被替换!" />
+    <Message Name="ENG" Value="英文" />
+    <Message Name="TW" Value="繁体中文" />
+    <Message Name="HEADTEXT_ENG" Value="英文" />
+    <Message Name="HEADTEXT_TW" Value="繁体中文" />
+    <Message Name="Upper Limit" Value="上限栏位" />
+    <Message Name="Lower Limit" Value="下限栏位" />
+    <Message Name="Marker Shape" Value="标记形状" />
+    <Message Name="From Zero Start" Value="由零开始" />
+    <Message Name="Apply" Value="确定" />
+    <Message Name="Exception" Value="排除" />
+    <Message Name="Role Assign" Value="角色" />
+    <Message Name="Role Name" Value="角色名称" />
+    <Message Name="Select All" Value="全选" />
+    <Message Name="Report Type:" Value="报表类型:" />
+    <Message Name="Select None" Value="取消全选" />
+    <Message Name="Date Range(0 ~)" Value="日期区间(0 ~)" />
+    <Message Name="Date Range/Week Start" Value="日期区间/周起始" />
+    <Message Name="HEADTEXT_CN" Value="简体中文" />
+    <Message Name="Upper Case" Value="大写" />
+    <Message Name="CN Desc" Value="简体中文描述" />
+    <Message Name="Field Position" Value="栏位对齐" />
+    <Message Name="CN Field Name" Value="简体中文域名" />
+    <Message Name="Limit" Value="上下限" />
+    <Message Name="Field Value Type" Value="栏位数值类型" />
+    <Message Name="Marker Color" Value="标记颜色" />
+    <Message Name="Sequence" Value="顺序" />
+    <Message Name="Enable" Value="可用" />
+    <Message Name="Disable" Value="停用" />
+    <Message Name="Summary" Value="加总" />
+    <Message Name="Once" Value="只汇出一次" />
+    <Message Name="Check Date" Value="日期勾取" />
+    <Message Name="CN Name" Value="简体中文报表名称" />
+    <Message Name="Maximum Value" Value="最大值" />
+    <Message Name="Virtual Mode" Value="批量模式" />
+    <Message Name="Page Mode" Value="分页模式" />
+    <Message Name="Normal (DataSet)" Value="一般模式" />
+    <Message Name="ODAC" Value="ODAC" />
+    <Message Name="Data Load" Value="资料载入" />
+    <Message Name="Ex: TO_CHAR(@, 'YYYYMMDD')" Value="如: TO_CHAR(@,'YYYYMMDD')" />
+    <Message Name="Data Link" Value="资料连结" />
+    <Message Name="Link Name" Value="连结名称" />
+    <Message Name="SQL Value" Value="SQL" />
+    <Message Name="Dll File Name" Value="Dll档案名称" />
+    <Message Name="ARGS" Value="参数" />
+    <Message Name="CN Link Name" Value="连结名称(简中)" />
+    <Message Name="ENG Link Name" Value="连结名称(英文)" />
+    <Message Name="TW Link Name" Value="连结名称(繁中)" />
+    <Message Name="Dll File" Value="Dll档案" />
+    <Message Name="Args" Value="参数" />
+    <Message Name="Serial Number" Value="序号" />
+    <Message Name="Customer SN" Value="客户序号" />
+    <Message Name="Key Part SN" Value="料件序号" />
+    <Message Name="Statistics" Value="统计" />
+    <Message Name="Head Text" Value="标题文字" />
+    <Message Name="Except Zero" Value="忽略零" />
+    <Message Name="Percent Value" Value="来源数值为百分比" />
+    <Message Name="For Multiply" Value="数值相乘" />
+    <Message Name="Decimal Point" Value="小数位数" />
+    <Message Name="From Zero" Value="由零开始" />
+    <Message Name="Multiply" Value="相乘" />
+    <Message Name="Exclude" Value="排除" />
+    <Message Name="Show Dialog" Value="模式化窗体" />
+    <Message Name="Refresh Data" Value="重新查询" />
+    <Message Name="Role" Value="角色" />
+    <Message Name="Row Selected" Value="列选取" />
+    <Message Name="Link Type" Value="显示" />
+    <Message Name="Button" Value="按钮" />
+    <Message Name="Context Menu" Value="右键选单" />
+    <Message Name="Connection Mode" Value="联机模式" />
+    <Message Name="Column Name" Value="域名" />
+    <Message Name="Necessary" Value="必填" />
+    <Message Name="Value/SQL" Value="值/SQL" />
+    <Message Name="Display" Value="显示内容" />
+    <Message Name="Maintain" Value="数据维护" />
+    <Message Name="(Value,Display)" Value="(值,显示内容)" />
+    <Message Name="Stored Procedure" Value="储存程序" />
+    <Message Name="From Master" Value="主表资料" />
+    <Message Name="Key Value" Value="主键值" />
+    <Message Name="Other" Value="其他" />
+    <Message Name="Append" Value="新增" />
+    <Message Name="Modify" Value="修改" />
+    <Message Name="{0} is Exist!\nWould You Want to Replace Extant Report?" Value="{0} 已存在!\n取代已存在之报表?" />
+    <Message Name="Would You Want to Replace Extant Report?" Value="取代已存在之报表?" />
+    <Message Name="Period" Value="区间限制" />
+    <Message Name="Hour" Value="小时" />
+    <Message Name="Max Record Count" Value="最大笔数" />
+    <Message Name="Show Report List" Value="显示报表明细" />
+    <Message Name="0: No Check" Value="0: 不检查" />
+    <Message Name="For Value" Value="数值设定" />
+  </简体中文>
+</Chroma>

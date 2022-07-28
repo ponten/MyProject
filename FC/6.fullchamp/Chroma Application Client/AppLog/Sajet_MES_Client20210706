@@ -1,0 +1,677 @@
+<log4j:event logger="ClientUtils" timestamp="1625536089525" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    TRIM(D.PROCESS_NAME) PROCESS_NAME,
+    A.RC_NO,
+    '['
+    || TRIM(B.DEFECT_CODE)
+    || ']'
+    || TRIM(B.DEFECT_DESC) DEFECT,
+    A.QTY,
+    C.EMP_NAME,
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/DD HH24@MI @SS') UPDATE_TIME
+FROM
+    SAJET.G_RC_TRAVEL_DEFECT   A,
+    SAJET.SYS_DEFECT           B,
+    SAJET.SYS_EMP              C,
+    SAJET.SYS_PROCESS          D
+WHERE
+    A.DEFECT_ID = B.DEFECT_ID
+    AND A.UPDATE_USERID = C.EMP_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+[AND A.RC_NO = @RC_NO]
+[AND A.PROCESS_ID = @PROCESS_ID]
+ORDER BY
+    A.RC_NO,
+    A.UPDATE_TIME:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1625536089646" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT
+    TRIM(D.PROCESS_NAME) PROCESS_NAME,
+    A.RC_NO,
+    '['
+    || TRIM(B.DEFECT_CODE)
+    || ']'
+    || TRIM(B.DEFECT_DESC) DEFECT,
+    A.QTY,
+    C.EMP_NAME,
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/DD HH24@MI @SS') UPDATE_TIME
+FROM
+    SAJET.G_RC_TRAVEL_DEFECT   A,
+    SAJET.SYS_DEFECT           B,
+    SAJET.SYS_EMP              C,
+    SAJET.SYS_PROCESS          D
+WHERE
+    A.DEFECT_ID = B.DEFECT_ID
+    AND A.UPDATE_USERID = C.EMP_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+[AND A.RC_NO = @RC_NO]
+[AND A.PROCESS_ID = @PROCESS_ID]
+ORDER BY
+    A.RC_NO,
+    A.UPDATE_TIME 】
+
+Exception：ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT
+    TRIM(D.PROCESS_NAME) PROCESS_NAME,
+    A.RC_NO,
+    '['
+    || TRIM(B.DEFECT_CODE)
+    || ']'
+    || TRIM(B.DEFECT_DESC) DEFECT,
+    A.QTY,
+    C.EMP_NAME,
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/DD HH24@MI @SS') UPDATE_TIME
+FROM
+    SAJET.G_RC_TRAVEL_DEFECT   A,
+    SAJET.SYS_DEFECT           B,
+    SAJET.SYS_EMP              C,
+    SAJET.SYS_PROCESS          D
+WHERE
+    A.DEFECT_ID = B.DEFECT_ID
+    AND A.UPDATE_USERID = C.EMP_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+[AND A.RC_NO = @RC_NO]
+[AND A.PROCESS_ID = @PROCESS_ID]
+ORDER BY
+    A.RC_NO,
+    A.UPDATE_TIME 】
+
+Exception：ORA-00933: SQL 命令的結束有問題
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1625536136477" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    TRIM(D.PROCESS_NAME) PROCESS_NAME,
+    A.RC_NO,
+    '['
+    || TRIM(B.DEFECT_CODE)
+    || ']'
+    || TRIM(B.DEFECT_DESC) DEFECT,
+    A.QTY,
+    C.EMP_NAME,
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/DD HH24@MI @SS') UPDATE_TIME
+FROM
+    SAJET.G_RC_TRAVEL_DEFECT   A,
+    SAJET.SYS_DEFECT           B,
+    SAJET.SYS_EMP              C,
+    SAJET.SYS_PROCESS          D
+WHERE
+    A.DEFECT_ID = B.DEFECT_ID
+    AND A.UPDATE_USERID = C.EMP_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+[AND A.RC_NO = @RC_NO]
+[AND A.PROCESS_ID = @PROCESS_ID]
+ORDER BY
+    A.RC_NO,
+    A.UPDATE_TIME:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1625536136482" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT
+    TRIM(D.PROCESS_NAME) PROCESS_NAME,
+    A.RC_NO,
+    '['
+    || TRIM(B.DEFECT_CODE)
+    || ']'
+    || TRIM(B.DEFECT_DESC) DEFECT,
+    A.QTY,
+    C.EMP_NAME,
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/DD HH24@MI @SS') UPDATE_TIME
+FROM
+    SAJET.G_RC_TRAVEL_DEFECT   A,
+    SAJET.SYS_DEFECT           B,
+    SAJET.SYS_EMP              C,
+    SAJET.SYS_PROCESS          D
+WHERE
+    A.DEFECT_ID = B.DEFECT_ID
+    AND A.UPDATE_USERID = C.EMP_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+[AND A.RC_NO = @RC_NO]
+[AND A.PROCESS_ID = @PROCESS_ID]
+ORDER BY
+    A.RC_NO,
+    A.UPDATE_TIME 】
+
+Exception：ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT
+    TRIM(D.PROCESS_NAME) PROCESS_NAME,
+    A.RC_NO,
+    '['
+    || TRIM(B.DEFECT_CODE)
+    || ']'
+    || TRIM(B.DEFECT_DESC) DEFECT,
+    A.QTY,
+    C.EMP_NAME,
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/DD HH24@MI @SS') UPDATE_TIME
+FROM
+    SAJET.G_RC_TRAVEL_DEFECT   A,
+    SAJET.SYS_DEFECT           B,
+    SAJET.SYS_EMP              C,
+    SAJET.SYS_PROCESS          D
+WHERE
+    A.DEFECT_ID = B.DEFECT_ID
+    AND A.UPDATE_USERID = C.EMP_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+[AND A.RC_NO = @RC_NO]
+[AND A.PROCESS_ID = @PROCESS_ID]
+ORDER BY
+    A.RC_NO,
+    A.UPDATE_TIME 】
+
+Exception：ORA-00933: SQL 命令的結束有問題
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1625536460583" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    TRIM(D.PROCESS_NAME) "PROCESS_NAME",
+    A.RC_NO,
+    '['||TRIM(B.DEFECT_CODE)||']'||TRIM(B.DEFECT_DESC) "DEFECT",
+    A.QTY,
+    C.EMP_NAME,
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/DD HH24@MI @SS') "UPDATE_TIME"
+FROM
+    SAJET.G_RC_TRAVEL_DEFECT   A,
+    SAJET.SYS_DEFECT           B,
+    SAJET.SYS_EMP              C,
+    SAJET.SYS_PROCESS          D
+WHERE
+    A.DEFECT_ID = B.DEFECT_ID
+    AND A.UPDATE_USERID = C.EMP_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+[AND A.RC_NO = @RC_NO]
+[AND A.PROCESS_ID = @PROCESS_ID]
+ORDER BY
+    A.RC_NO,
+    A.UPDATE_TIME:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1625536460610" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT
+    TRIM(D.PROCESS_NAME) "PROCESS_NAME",
+    A.RC_NO,
+    '['||TRIM(B.DEFECT_CODE)||']'||TRIM(B.DEFECT_DESC) "DEFECT",
+    A.QTY,
+    C.EMP_NAME,
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/DD HH24@MI @SS') "UPDATE_TIME"
+FROM
+    SAJET.G_RC_TRAVEL_DEFECT   A,
+    SAJET.SYS_DEFECT           B,
+    SAJET.SYS_EMP              C,
+    SAJET.SYS_PROCESS          D
+WHERE
+    A.DEFECT_ID = B.DEFECT_ID
+    AND A.UPDATE_USERID = C.EMP_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+[AND A.RC_NO = @RC_NO]
+[AND A.PROCESS_ID = @PROCESS_ID]
+ORDER BY
+    A.RC_NO,
+    A.UPDATE_TIME 】
+
+Exception：ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT
+    TRIM(D.PROCESS_NAME) "PROCESS_NAME",
+    A.RC_NO,
+    '['||TRIM(B.DEFECT_CODE)||']'||TRIM(B.DEFECT_DESC) "DEFECT",
+    A.QTY,
+    C.EMP_NAME,
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/DD HH24@MI @SS') "UPDATE_TIME"
+FROM
+    SAJET.G_RC_TRAVEL_DEFECT   A,
+    SAJET.SYS_DEFECT           B,
+    SAJET.SYS_EMP              C,
+    SAJET.SYS_PROCESS          D
+WHERE
+    A.DEFECT_ID = B.DEFECT_ID
+    AND A.UPDATE_USERID = C.EMP_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+[AND A.RC_NO = @RC_NO]
+[AND A.PROCESS_ID = @PROCESS_ID]
+ORDER BY
+    A.RC_NO,
+    A.UPDATE_TIME 】
+
+Exception：ORA-00933: SQL 命令的結束有問題
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1625540644165" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT DISTINCT
+    I.PROCESS_NAME,
+    A.NODE_ID,
+    F.WORK_ORDER,
+    A.RC_NO,
+    H.PART_NO,
+    NVL(H.OPTION2, 'N/A') FORMER_PART_NO,
+    H.SPEC1,
+    H.SPEC2
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN   A,
+    SAJET.G_RC_TRAVEL                F,
+    SAJET.SYS_RC_ROUTE_DETAIL        G,
+    SAJET.SYS_PART                   H,
+    SAJET.SYS_PROCESS                I
+WHERE
+    1 = 1
+    AND A.RC_NO = F.RC_NO
+    AND A.NODE_ID = G.NODE_ID
+    AND G.NODE_CONTENT = TO_CHAR(I.PROCESS_ID(+))
+    AND F.PART_ID = H.PART_ID
+    AND A.END_TIME IS NOT NULL
+
+
+
+
+
+
+
+AND A.END_TIME  &gt;=  :P9_1 AND A.END_TIME &lt; :P9_2
+ORDER BY
+    RC_NO,
+    PROCESS_CODE:ORA-01791: 不是選取的表示式</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1625555674110" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    SPRO.PROCESS_CODE,
+    SPRO.PROCESS_NAME,
+    GRTMD.NODE_ID,
+    GRS.WORK_ORDER,
+    GRTMD.RC_NO,
+    SPAR.PART_NO,
+    NVL(SPAR.OPTION2, 'N/A') FORMER_PART_NO,
+    SPAR.SPEC1,
+    SPAR.SPEC2,
+    SM.MACHINE_CODE,
+    SM.MACHINE_DESC,
+    GRTMD.REMARK,
+    SE.EMP_NAME
+    TO_CHAR(GRTMD.START_TIME, 'YYYY/MM/DD HH24@MI@SS') "START_TIME",
+    TO_CHAR(GRTMD.END_TIME, 'YYYY/MM/DD HH24@MI@SS') "END_TIME",
+    GRTMD.WORK_TIME_MINUTE,
+    GRTMD.WORK_TIME_SECOND,
+    CASE GRTMD.COUNT_WORKTIME
+        WHEN 0 THEN
+            'Y'
+        ELSE
+            'N'
+    END COUNT_WORKTIME,
+    SMDT.TYPE_CODE,
+    SMDT.TYPE_DESC,
+    SMDD.REASON_CODE,
+    SMDD.REASON_DESC
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN   GRTMD,
+    SAJET.SYS_MACHINE_DOWN_DETAIL    SMDD,
+    SAJET.SYS_MACHINE_DOWN_TYPE      SMDT,
+    SAJET.SYS_MACHINE                SM,
+    SAJET.G_RC_STATUS                GRS,
+    SAJET.SYS_RC_ROUTE_DETAIL        SRRD,
+    SAJET.SYS_PART                   SPAR,
+    SAJET.SYS_PROCESS                SPRO,
+    SAJET.SYS_EMP        SE
+WHERE
+    1 = 1
+    AND GRTMD.REASON_ID = SMDD.REASON_ID (+)
+    AND SMDD.TYPE_ID = SMDT.TYPE_ID (+)
+    AND GRTMD.MACHINE_ID = SM.MACHINE_ID (+)
+    AND GRTMD.RC_NO = GRS.RC_NO
+    AND GRTMD.NODE_ID = SRRD.NODE_ID
+    AND SRRD.NODE_CONTENT = TO_CHAR(SPRO.PROCESS_ID(+))
+    AND GRS.PART_ID = SPAR.PART_ID
+    AND GRTMD.END_TIME IS NOT NULL
+    AND GRTMD.UPDATE_USERID = SE.EMP_ID
+AND GRS.WORK_ORDER Like ''
+AND GRTMD.RC_NO Like ''
+AND SPAR.PART_NO Like ''
+AND SPAR.SPEC1 Like ''
+AND SPAR.SPEC2 = ''
+AND SPRO.PROCESS_NAME In  ('') 
+AND SM.MACHINE_CODE = ''
+AND SPAR.OPTION2 Like ''
+AND GRTMD.END_TIME BETWEEN  sysdate and sysdate 
+ORDER BY
+    RC_NO,
+    START_TIME,
+    PROCESS_CODE,
+    MACHINE_CODE:ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1625555674180" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT
+    SPRO.PROCESS_CODE,
+    SPRO.PROCESS_NAME,
+    GRTMD.NODE_ID,
+    GRS.WORK_ORDER,
+    GRTMD.RC_NO,
+    SPAR.PART_NO,
+    NVL(SPAR.OPTION2, 'N/A') FORMER_PART_NO,
+    SPAR.SPEC1,
+    SPAR.SPEC2,
+    SM.MACHINE_CODE,
+    SM.MACHINE_DESC,
+    GRTMD.REMARK,
+    SE.EMP_NAME
+    TO_CHAR(GRTMD.START_TIME, 'YYYY/MM/DD HH24@MI@SS') "START_TIME",
+    TO_CHAR(GRTMD.END_TIME, 'YYYY/MM/DD HH24@MI@SS') "END_TIME",
+    GRTMD.WORK_TIME_MINUTE,
+    GRTMD.WORK_TIME_SECOND,
+    CASE GRTMD.COUNT_WORKTIME
+        WHEN 0 THEN
+            'Y'
+        ELSE
+            'N'
+    END COUNT_WORKTIME,
+    SMDT.TYPE_CODE,
+    SMDT.TYPE_DESC,
+    SMDD.REASON_CODE,
+    SMDD.REASON_DESC
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN   GRTMD,
+    SAJET.SYS_MACHINE_DOWN_DETAIL    SMDD,
+    SAJET.SYS_MACHINE_DOWN_TYPE      SMDT,
+    SAJET.SYS_MACHINE                SM,
+    SAJET.G_RC_STATUS                GRS,
+    SAJET.SYS_RC_ROUTE_DETAIL        SRRD,
+    SAJET.SYS_PART                   SPAR,
+    SAJET.SYS_PROCESS                SPRO,
+    SAJET.SYS_EMP        SE
+WHERE
+    1 = 1
+    AND GRTMD.REASON_ID = SMDD.REASON_ID (+)
+    AND SMDD.TYPE_ID = SMDT.TYPE_ID (+)
+    AND GRTMD.MACHINE_ID = SM.MACHINE_ID (+)
+    AND GRTMD.RC_NO = GRS.RC_NO
+    AND GRTMD.NODE_ID = SRRD.NODE_ID
+    AND SRRD.NODE_CONTENT = TO_CHAR(SPRO.PROCESS_ID(+))
+    AND GRS.PART_ID = SPAR.PART_ID
+    AND GRTMD.END_TIME IS NOT NULL
+    AND GRTMD.UPDATE_USERID = SE.EMP_ID
+AND GRS.WORK_ORDER Like ''
+AND GRTMD.RC_NO Like ''
+AND SPAR.PART_NO Like ''
+AND SPAR.SPEC1 Like ''
+AND SPAR.SPEC2 = ''
+AND SPRO.PROCESS_NAME In  ('') 
+AND SM.MACHINE_CODE = ''
+AND SPAR.OPTION2 Like ''
+AND GRTMD.END_TIME BETWEEN  sysdate and sysdate 
+ORDER BY
+    RC_NO,
+    START_TIME,
+    PROCESS_CODE,
+    MACHINE_CODE 】
+
+Exception：ORA-00923: 在應出現的位置找不到 FROM 關鍵字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT
+    SPRO.PROCESS_CODE,
+    SPRO.PROCESS_NAME,
+    GRTMD.NODE_ID,
+    GRS.WORK_ORDER,
+    GRTMD.RC_NO,
+    SPAR.PART_NO,
+    NVL(SPAR.OPTION2, 'N/A') FORMER_PART_NO,
+    SPAR.SPEC1,
+    SPAR.SPEC2,
+    SM.MACHINE_CODE,
+    SM.MACHINE_DESC,
+    GRTMD.REMARK,
+    SE.EMP_NAME
+    TO_CHAR(GRTMD.START_TIME, 'YYYY/MM/DD HH24@MI@SS') "START_TIME",
+    TO_CHAR(GRTMD.END_TIME, 'YYYY/MM/DD HH24@MI@SS') "END_TIME",
+    GRTMD.WORK_TIME_MINUTE,
+    GRTMD.WORK_TIME_SECOND,
+    CASE GRTMD.COUNT_WORKTIME
+        WHEN 0 THEN
+            'Y'
+        ELSE
+            'N'
+    END COUNT_WORKTIME,
+    SMDT.TYPE_CODE,
+    SMDT.TYPE_DESC,
+    SMDD.REASON_CODE,
+    SMDD.REASON_DESC
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN   GRTMD,
+    SAJET.SYS_MACHINE_DOWN_DETAIL    SMDD,
+    SAJET.SYS_MACHINE_DOWN_TYPE      SMDT,
+    SAJET.SYS_MACHINE                SM,
+    SAJET.G_RC_STATUS                GRS,
+    SAJET.SYS_RC_ROUTE_DETAIL        SRRD,
+    SAJET.SYS_PART                   SPAR,
+    SAJET.SYS_PROCESS                SPRO,
+    SAJET.SYS_EMP        SE
+WHERE
+    1 = 1
+    AND GRTMD.REASON_ID = SMDD.REASON_ID (+)
+    AND SMDD.TYPE_ID = SMDT.TYPE_ID (+)
+    AND GRTMD.MACHINE_ID = SM.MACHINE_ID (+)
+    AND GRTMD.RC_NO = GRS.RC_NO
+    AND GRTMD.NODE_ID = SRRD.NODE_ID
+    AND SRRD.NODE_CONTENT = TO_CHAR(SPRO.PROCESS_ID(+))
+    AND GRS.PART_ID = SPAR.PART_ID
+    AND GRTMD.END_TIME IS NOT NULL
+    AND GRTMD.UPDATE_USERID = SE.EMP_ID
+AND GRS.WORK_ORDER Like ''
+AND GRTMD.RC_NO Like ''
+AND SPAR.PART_NO Like ''
+AND SPAR.SPEC1 Like ''
+AND SPAR.SPEC2 = ''
+AND SPRO.PROCESS_NAME In  ('') 
+AND SM.MACHINE_CODE = ''
+AND SPAR.OPTION2 Like ''
+AND GRTMD.END_TIME BETWEEN  sysdate and sysdate 
+ORDER BY
+    RC_NO,
+    START_TIME,
+    PROCESS_CODE,
+    MACHINE_CODE 】
+
+Exception：ORA-00923: 在應出現的位置找不到 FROM 關鍵字
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.SajetCommon.AddMasterField(String strMasterSql, DataGridView gvParam)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1625560080134" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    A.NODE_ID,
+    C.SPEC1,
+    C.SPEC2,
+    C.PART_NO,
+    C.OPTION2             FORMER_PART_NO,
+    A.WORK_ORDER,
+    A.RC_NO,
+    B.PROCESS_NAME,
+    A.WIP_OUT_GOOD_QTY    GOOD_QTY,
+    A.WIP_OUT_SCRAP_QTY   SCRAP_QTY,
+    A.CURRENT_QTY,
+    A.CURRENT_QTY * D.OPTION8 STANDARD_WORKTIME,
+    NVL(E.OP_COUNT, 1) OP_COUNT,
+    TO_CHAR(A.IN_PROCESS_TIME, 'YYYY/  MM/DD HH24:MI  :SS') IN_PROCESS_TIME,
+    TO_CHAR(A.OUT_PROCESS_TIME, 'YYYY/  MM/DD HH24:MI  :SS') OUT_PROCESS_TIME,
+    A.PROCESS_ID
+FROM
+    SAJET.G_RC_TRAVEL          A,
+    SAJET.SYS_PROCESS          B,
+    SAJET.SYS_PART             C,
+    SAJET.SYS_PROCESS_OPTION   D,
+    SAJET.G_RC_OP_LOG          E
+WHERE
+    A.PROCESS_ID = B.PROCESS_ID
+    AND A.PART_ID = C.PART_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+    AND A.PROCESS_ID IN (
+        SELECT
+            PROCESS_ID
+        FROM
+            SAJET.SYS_RC_PROCESS_MACHINE
+    )
+    AND RC_NO IN (
+        SELECT
+            RC_NO
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN   A,
+            SAJET.SYS_MACHINE                B
+        WHERE
+            A.MACHINE_ID = B.MACHINE_ID
+           
+    )
+    AND A.RC_NO = E.RC_NO (+)
+    AND A.NODE_ID = E.NODE_ID (+)
+
+
+
+
+
+
+
+
+AND OUT_PROCESS_TIME  &gt;=  :P9_1 AND OUT_PROCESS_TIME &lt; :P9_2
+
+ORDER BY
+    A.WORK_ORDER,
+    A.RC_NO,
+    B.PROCESS_NAME:ORA-00918: 資料欄的定義不明確</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1625562741529" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: WITH SEEK_ROWS AS (
+    SELECT
+        A.NODE_ID,
+        A.RC_NO
+    FROM
+        SAJET.G_RC_TRAVEL_MACHINE_DOWN   A,
+        SYS_MACHINE                      B
+    WHERE
+        A.MACHINE_ID = B.MACHINE_ID
+       
+)
+SELECT
+    A.NODE_ID,
+    C.SPEC1,
+    C.SPEC2,
+    C.PART_NO,
+    C.OPTION2             FORMER_PART_NO,
+    A.WORK_ORDER,
+    A.RC_NO,
+    B.PROCESS_NAME,
+    A.WIP_OUT_GOOD_QTY    GOOD_QTY,
+    A.WIP_OUT_SCRAP_QTY   SCRAP_QTY,
+    A.CURRENT_QTY,
+    A.CURRENT_QTY * D.OPTION8 STANDARD_WORKTIME,
+    NVL(E.OP_COUNT, 1) OP_COUNT,
+    TO_CHAR(A.IN_PROCESS_TIME, 'YYYY/  MM/DD HH24:MI  :SS') IN_PROCESS_TIME,
+    TO_CHAR(A.OUT_PROCESS_TIME, 'YYYY/  MM/DD HH24:MI  :SS') OUT_PROCESS_TIME,
+    A.PROCESS_ID
+FROM
+    SAJET.G_RC_TRAVEL          A,
+    SAJET.SYS_PROCESS          B,
+    SAJET.SYS_PART             C,
+    SAJET.SYS_PROCESS_OPTION   D,
+    SAJET.G_RC_OP_LOG          E,
+    SEEK_ROWS                  F
+WHERE
+    A.PROCESS_ID = B.PROCESS_ID
+    AND A.PART_ID = C.PART_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+    AND A.PROCESS_ID IN (
+        SELECT
+            PROCESS_ID
+        FROM
+            SAJET.SYS_RC_PROCESS_MACHINE
+    )
+    AND A.RC_NO = E.RC_NO (+)
+    AND A.NODE_ID = E.NODE_ID (+)
+--    AND A.RC_NO = F.RC_NO
+    AND A.NODE_ID = F.NODE_ID
+
+
+
+
+
+
+
+
+AND OUT_PROCESS_TIME  &gt;=  :P9_1 AND OUT_PROCESS_TIME &lt; :P9_2
+
+ORDER BY
+    A.WORK_ORDER,
+    A.RC_NO,
+    B.PROCESS_NAME:ORA-00942: 表格或視觀表不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1625562941095" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    A.NODE_ID,
+    C.SPEC1,
+    C.SPEC2,
+    C.PART_NO,
+    C.OPTION2             FORMER_PART_NO,
+    A.WORK_ORDER,
+    A.RC_NO,
+    B.PROCESS_NAME,
+    A.WIP_OUT_GOOD_QTY    GOOD_QTY,
+    A.WIP_OUT_SCRAP_QTY   SCRAP_QTY,
+    A.CURRENT_QTY,
+    A.CURRENT_QTY * D.OPTION8 STANDARD_WORKTIME,
+    NVL(E.OP_COUNT, 1) OP_COUNT,
+    TO_CHAR(A.IN_PROCESS_TIME, 'YYYY/  MM/DD HH24:MI  :SS') IN_PROCESS_TIME,
+    TO_CHAR(A.OUT_PROCESS_TIME, 'YYYY/  MM/DD HH24:MI  :SS') OUT_PROCESS_TIME,
+    A.PROCESS_ID
+FROM
+    SAJET.G_RC_TRAVEL          A,
+    SAJET.SYS_PROCESS          B,
+    SAJET.SYS_PART             C,
+    SAJET.SYS_PROCESS_OPTION   D,
+    SAJET.G_RC_OP_LOG          E
+WHERE
+    A.PROCESS_ID = B.PROCESS_ID
+    AND A.PART_ID = C.PART_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+    AND A.PROCESS_ID IN (
+        SELECT
+            PROCESS_ID
+        FROM
+            SAJET.SYS_RC_PROCESS_MACHINE
+    )
+    AND A.RC_NO = E.RC_NO (+)
+    AND A.NODE_ID = E.NODE_ID (+)
+--    AND A.RC_NO = F.RC_NO
+    AND A.NODE_ID IN (
+        SELECT
+            A.NODE_ID,
+            A.RC_NO
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN   A,
+            SAJET.SYS_MACHINE                B
+        WHERE
+            A.MACHINE_ID = B.MACHINE_ID
+           
+    )
+
+
+
+
+
+
+
+
+AND OUT_PROCESS_TIME  &gt;=  :P9_1 AND OUT_PROCESS_TIME &lt; :P9_2
+
+ORDER BY
+    A.WORK_ORDER,
+    A.RC_NO,
+    B.PROCESS_NAME:ORA-00913: 值太多</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>

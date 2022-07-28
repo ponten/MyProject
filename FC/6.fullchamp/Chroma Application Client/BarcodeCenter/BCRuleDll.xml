@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <繁體中文>
+    <Message Name="Code" Value="特徵碼組成"/>
+    <Message Name="Sequence Format" Value="流水號格式"/>
+    <Message Name="OK" Value="確定"/>
+    <Message Name="Cancel" Value="取消"/>
+    <Message Name="Function" Value="函數"/>
+    <Message Name="Field" Value="欄位"/>
+    <Message Name="Date Code" Value="日期"/>
+    <Message Name="Value" Value="數值"/>
+    <Message Name="(Sequence:)" Value="(目前流水號:)"/>
+    <Message Name="Reset Sequence" Value="重設流水號"/>
+    <Message Name="Save" Value="儲存"/>
+    <Message Name="Rule Name" Value="規則名稱"/>
+    <Message Name="Filter" Value="過濾條件"/>
+    <Message Name="Delete" Value="刪除"/>
+    <Message Name="Sequence (User Define)" Value="流水號 (使用者自定)"/>
+    <Message Name="Sequence" Value="流水號"/>
+    <Message Name="Add" Value="新增"/>
+    <Message Name="Modify" Value="修改"/>
+    <Message Name="Other Function" Value="其他函數"/>
+    <Message Name="Day Code(User Define)" Value="日期碼(使用者自定)"/>
+    <Message Name="m : Month Code" Value="m : 月份代碼"/>
+    <Message Name="d : Day Code" Value="d : 日期代碼"/>
+    <Message Name="w : Week Code" Value="w : 週別代碼"/>
+    <Message Name="k : Day of Week Code" Value="k : 週的日代碼"/>
+    <Message Name="Default" Value="預設成品號"/>
+    <Message Name="S : Sequence" Value="S : 流水號"/>
+    <Message Name="Hexadecimal (16)" Value="十六進位"/>
+    <Message Name="Decimal (10)" Value="十進位"/>
+    <Message Name="Y : Year" Value="Y : 年"/>
+    <Message Name="M : Month" Value="M : 月"/>
+    <Message Name="X: Checksum" Value="X: 檢查碼"/>
+    <Message Name="D : Day" Value="D : 日"/>
+    <Message Name="L : Constant Letter" Value="L : 英文字母"/>
+    <Message Name="9 : Number" Value="9 : 數字"/>
+    <Message Name="F : Day of Year" Value="F : 年的日"/>
+    <Message Name="W : Week of Year" Value="W : 年的週"/>
+    <Message Name="K : Day of Week" Value="K : 週的日"/>
+    <Message Name="C : Letter or Number or Symbol" Value="C : 英文字母或數字"/>
+    <Message Name="Rule Description" Value="規則描述"/>
+    <Message Name="Append" Value="新增"/>
+    <Message Name="Create Sequence Mode" Value="流水號產生方式"/>
+    <Message Name="Manual" Value="手動"/>
+    <Message Name="Automatic" Value="自動"/>
+    <Message Name="Description" Value="描述"/>
+    <Message Name="Reset" Value="重設"/>
+    <Message Name="Name" Value="名稱"/>
+    <Message Name="Start" Value="起始"/>
+    <Message Name="Work Order" Value="工單"/>
+    <Message Name="Part No" Value="料號"/>
+    <Message Name="Target Qty" Value="目標數"/>
+    <Message Name="Input Qty" Value="投入數"/>
+    <Message Name="Output Qty" Value="產出數"/>
+    <Message Name="Select ALL" Value="全選"/>
+    <Message Name="Select None" Value="全不選"/>
+    <Message Name="Work Order List" Value="工單清單"/>
+    <Message Name="Save OK" Value="儲存成功"/>
+    <Message Name="WO Rule" Value="工單規則"/>
+    <Message Name="Copy From" Value="由..複製"/>
+    <Message Name="Group Qty" Value="群組數"/>
+    <Message Name="Safety Stock" Value="安全庫存量"/>
+    <Message Name="Rule Name is Empty" Value="規則名稱為空值"/>
+  </繁體中文>
+  <简体中文>
+    <Message Name="Code" Value="特徵码组成"/>
+    <Message Name="Sequence Format" Value="流水号格式"/>
+    <Message Name="OK" Value="确定"/>
+    <Message Name="Cancel" Value="取消"/>
+    <Message Name="Function" Value="函数"/>
+    <Message Name="Field" Value="栏位"/>
+    <Message Name="Date Code" Value="日期"/>
+    <Message Name="Value" Value="数值"/>
+    <Message Name="(Sequence:)" Value="(目前流水号:)"/>
+    <Message Name="Reset Sequence" Value="重设流水号"/>
+    <Message Name="Save" Value="储存"/>
+    <Message Name="Rule Name" Value="规则名称"/>
+    <Message Name="Filter" Value="过滤条件"/>
+    <Message Name="Delete" Value="删除"/>
+    <Message Name="Sequence (User Define)" Value="流水号 (使用者自定)"/>
+    <Message Name="Sequence" Value="流水号"/>
+    <Message Name="Add" Value="新增"/>
+    <Message Name="Modify" Value="修改"/>
+    <Message Name="Other Function" Value="其他函数"/>
+    <Message Name="Day Code(User Define)" Value="日期码(使用者自定)"/>
+    <Message Name="m : Month Code" Value="m : 月份代码"/>
+    <Message Name="d : Day Code" Value="d : 日期代码"/>
+    <Message Name="w : Week Code" Value="w : 周别代码"/>
+    <Message Name="k : Day of Week Code" Value="k : 周的日代码"/>
+    <Message Name="Default" Value="预设成品号"/>
+    <Message Name="S : Sequence" Value="S : 流水号"/>
+    <Message Name="Hexadecimal (16)" Value="十六进位"/>
+    <Message Name="Decimal (10)" Value="十进位"/>
+    <Message Name="Y : Year" Value="Y : 年"/>
+    <Message Name="M : Month" Value="M : 月"/>
+    <Message Name="X: Checksum" Value="X: 检查码"/>
+    <Message Name="D : Day" Value="D : 日"/>
+    <Message Name="L : Constant Letter" Value="L : 英文字母"/>
+    <Message Name="9 : Number" Value="9 : 数字"/>
+    <Message Name="F : Day of Year" Value="F : 年的日"/>
+    <Message Name="W : Week of Year" Value="W : 年的周"/>
+    <Message Name="K : Day of Week" Value="K : 周的日"/>
+    <Message Name="C : Letter or Number or Symbol" Value="C : 英文字母或数字"/>
+    <Message Name="Rule Description" Value="规则描述"/>
+    <Message Name="Append" Value="新增"/>
+    <Message Name="Create Sequence Mode" Value="流水号产生方式"/>
+    <Message Name="Manual" Value="手动"/>
+    <Message Name="Automatic" Value="自动"/>
+    <Message Name="Description" Value="描述"/>
+    <Message Name="Reset" Value="重设"/>
+    <Message Name="Name" Value="名称"/>
+    <Message Name="Start" Value="起始"/>
+    <Message Name="Work Order" Value="工单"/>
+    <Message Name="Part No" Value="料号"/>
+    <Message Name="Target Qty" Value="目标数"/>
+    <Message Name="Input Qty" Value="投入数"/>
+    <Message Name="Output Qty" Value="产出数"/>
+    <Message Name="Select ALL" Value="全选"/>
+    <Message Name="Select None" Value="全不选"/>
+    <Message Name="Work Order List" Value="工单清单"/>
+    <Message Name="Save OK" Value="储存成功"/>
+    <Message Name="WO Rule" Value="工单规则"/>
+    <Message Name="Copy From" Value="由..复制"/>
+    <Message Name="Group Qty" Value="群组数"/>
+    <Message Name="Safety Stock" Value="安全库存量"/>
+    <Message Name="Rule Name is Empty" Value="规则名称为空值"/>
+  </简体中文>
+</Chroma>

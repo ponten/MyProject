@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 505</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>821, 33</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 3</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnOK.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9pt</value>
+  </data>
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 3</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbLength.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbLength.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbLength.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbLength.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 79</value>
+  </data>
+  <data name="lbLength.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="lbLength.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lbLength.Text" xml:space="preserve">
+    <value>LENGTH</value>
+  </data>
+  <data name="&gt;&gt;lbLength.Name" xml:space="preserve">
+    <value>lbLength</value>
+  </data>
+  <data name="&gt;&gt;lbLength.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbLength.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbLength.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="lbBarCode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbBarCode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbBarCode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbBarCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 23</value>
+  </data>
+  <data name="lbBarCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="lbBarCode.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbBarCode.Text" xml:space="preserve">
+    <value>BARCODE</value>
+  </data>
+  <data name="&gt;&gt;lbBarCode.Name" xml:space="preserve">
+    <value>lbBarCode</value>
+  </data>
+  <data name="&gt;&gt;lbBarCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbBarCode.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbBarCode.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="LabName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="LabName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LabName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 48</value>
+  </data>
+  <data name="LabName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="LabName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LabName.Text" xml:space="preserve">
+    <value>SPEC</value>
+  </data>
+  <data name="&gt;&gt;LabName.Name" xml:space="preserve">
+    <value>LabName</value>
+  </data>
+  <data name="&gt;&gt;LabName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabName.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;LabName.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="editBARCODE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 20</value>
+  </data>
+  <data name="editBARCODE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
+  </data>
+  <data name="editBARCODE.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;editBARCODE.Name" xml:space="preserve">
+    <value>editBARCODE</value>
+  </data>
+  <data name="&gt;&gt;editBARCODE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editBARCODE.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;editBARCODE.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="editLENGTH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 76</value>
+  </data>
+  <data name="editLENGTH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 22</value>
+  </data>
+  <data name="editLENGTH.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="editLENGTH.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;editLENGTH.Name" xml:space="preserve">
+    <value>editLENGTH</value>
+  </data>
+  <data name="&gt;&gt;editLENGTH.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editLENGTH.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;editLENGTH.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lbDiameter.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbDiameter.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbDiameter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbDiameter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 107</value>
+  </data>
+  <data name="lbDiameter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="lbDiameter.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lbDiameter.Text" xml:space="preserve">
+    <value>DIAMETER</value>
+  </data>
+  <data name="&gt;&gt;lbDiameter.Name" xml:space="preserve">
+    <value>lbDiameter</value>
+  </data>
+  <data name="&gt;&gt;lbDiameter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbDiameter.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbDiameter.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="editDIAMETER.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 104</value>
+  </data>
+  <data name="editDIAMETER.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 22</value>
+  </data>
+  <data name="editDIAMETER.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="editDIAMETER.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;editDIAMETER.Name" xml:space="preserve">
+    <value>editDIAMETER</value>
+  </data>
+  <data name="&gt;&gt;editDIAMETER.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editDIAMETER.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;editDIAMETER.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lbOrderid.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbOrderid.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbOrderid.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbOrderid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 135</value>
+  </data>
+  <data name="lbOrderid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="lbOrderid.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lbOrderid.Text" xml:space="preserve">
+    <value>ORDER_ID</value>
+  </data>
+  <data name="&gt;&gt;lbOrderid.Name" xml:space="preserve">
+    <value>lbOrderid</value>
+  </data>
+  <data name="&gt;&gt;lbOrderid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbOrderid.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbOrderid.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="editORDERID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 132</value>
+  </data>
+  <data name="editORDERID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 22</value>
+  </data>
+  <data name="editORDERID.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;editORDERID.Name" xml:space="preserve">
+    <value>editORDERID</value>
+  </data>
+  <data name="&gt;&gt;editORDERID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editORDERID.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;editORDERID.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lbOrderTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbOrderTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbOrderTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbOrderTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 175</value>
+  </data>
+  <data name="lbOrderTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="lbOrderTime.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lbOrderTime.Text" xml:space="preserve">
+    <value>ORDER_TIME</value>
+  </data>
+  <data name="&gt;&gt;lbOrderTime.Name" xml:space="preserve">
+    <value>lbOrderTime</value>
+  </data>
+  <data name="&gt;&gt;lbOrderTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbOrderTime.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbOrderTime.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lbFurnaceNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbFurnaceNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbFurnaceNumber.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbFurnaceNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 23</value>
+  </data>
+  <data name="lbFurnaceNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 13</value>
+  </data>
+  <data name="lbFurnaceNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbFurnaceNumber.Text" xml:space="preserve">
+    <value>FURNACE_NUMBER</value>
+  </data>
+  <data name="&gt;&gt;lbFurnaceNumber.Name" xml:space="preserve">
+    <value>lbFurnaceNumber</value>
+  </data>
+  <data name="&gt;&gt;lbFurnaceNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbFurnaceNumber.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbFurnaceNumber.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="editFURNACENUMBER.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 23</value>
+  </data>
+  <data name="editFURNACENUMBER.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="editFURNACENUMBER.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;editFURNACENUMBER.Name" xml:space="preserve">
+    <value>editFURNACENUMBER</value>
+  </data>
+  <data name="&gt;&gt;editFURNACENUMBER.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editFURNACENUMBER.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;editFURNACENUMBER.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="editSPEC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 48</value>
+  </data>
+  <data name="editSPEC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>479, 22</value>
+  </data>
+  <data name="editSPEC.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;editSPEC.Name" xml:space="preserve">
+    <value>editSPEC</value>
+  </data>
+  <data name="&gt;&gt;editSPEC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editSPEC.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;editSPEC.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lbWeight.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbWeight.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbWeight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbWeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 79</value>
+  </data>
+  <data name="lbWeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="lbWeight.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lbWeight.Text" xml:space="preserve">
+    <value>WEIGHT</value>
+  </data>
+  <data name="&gt;&gt;lbWeight.Name" xml:space="preserve">
+    <value>lbWeight</value>
+  </data>
+  <data name="&gt;&gt;lbWeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbWeight.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbWeight.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="editWEIGHT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 76</value>
+  </data>
+  <data name="editWEIGHT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 22</value>
+  </data>
+  <data name="editWEIGHT.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="editWEIGHT.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;editWEIGHT.Name" xml:space="preserve">
+    <value>editWEIGHT</value>
+  </data>
+  <data name="&gt;&gt;editWEIGHT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editWEIGHT.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;editWEIGHT.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="dtpORDERTIME.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 166</value>
+  </data>
+  <data name="dtpORDERTIME.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="dtpORDERTIME.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;dtpORDERTIME.Name" xml:space="preserve">
+    <value>dtpORDERTIME</value>
+  </data>
+  <data name="&gt;&gt;dtpORDERTIME.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtpORDERTIME.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;dtpORDERTIME.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lbOnsiteTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbOnsiteTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbOnsiteTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbOnsiteTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 207</value>
+  </data>
+  <data name="lbOnsiteTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="lbOnsiteTime.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lbOnsiteTime.Text" xml:space="preserve">
+    <value>ONSITE_TIME</value>
+  </data>
+  <data name="&gt;&gt;lbOnsiteTime.Name" xml:space="preserve">
+    <value>lbOnsiteTime</value>
+  </data>
+  <data name="&gt;&gt;lbOnsiteTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbOnsiteTime.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbOnsiteTime.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="dtpONSITETIME.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 205</value>
+  </data>
+  <data name="dtpONSITETIME.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="dtpONSITETIME.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;dtpONSITETIME.Name" xml:space="preserve">
+    <value>dtpONSITETIME</value>
+  </data>
+  <data name="&gt;&gt;dtpONSITETIME.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtpONSITETIME.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;dtpONSITETIME.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lbReceiveTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbReceiveTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbReceiveTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbReceiveTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 207</value>
+  </data>
+  <data name="lbReceiveTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="lbReceiveTime.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lbReceiveTime.Text" xml:space="preserve">
+    <value>RECEIVED_TIME</value>
+  </data>
+  <data name="&gt;&gt;lbReceiveTime.Name" xml:space="preserve">
+    <value>lbReceiveTime</value>
+  </data>
+  <data name="&gt;&gt;lbReceiveTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbReceiveTime.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbReceiveTime.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lbOutputtime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbOutputtime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbOutputtime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbOutputtime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 173</value>
+  </data>
+  <data name="lbOutputtime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="lbOutputtime.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="lbOutputtime.Text" xml:space="preserve">
+    <value>OUTPUT_TIME</value>
+  </data>
+  <data name="&gt;&gt;lbOutputtime.Name" xml:space="preserve">
+    <value>lbOutputtime</value>
+  </data>
+  <data name="&gt;&gt;lbOutputtime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbOutputtime.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbOutputtime.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="dtpRECEIVEDTIME.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 205</value>
+  </data>
+  <data name="dtpRECEIVEDTIME.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="dtpRECEIVEDTIME.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;dtpRECEIVEDTIME.Name" xml:space="preserve">
+    <value>dtpRECEIVEDTIME</value>
+  </data>
+  <data name="&gt;&gt;dtpRECEIVEDTIME.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtpRECEIVEDTIME.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;dtpRECEIVEDTIME.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbSpec.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSelectAll.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkSelectAll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkSelectAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>625, 213</value>
+  </data>
+  <data name="chkSelectAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 16</value>
+  </data>
+  <data name="chkSelectAll.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="chkSelectAll.Text" xml:space="preserve">
+    <value>SelectAll</value>
+  </data>
+  <data name="chkSelectAll.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;chkSelectAll.Name" xml:space="preserve">
+    <value>chkSelectAll</value>
+  </data>
+  <data name="&gt;&gt;chkSelectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSelectAll.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;chkSelectAll.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gvBarCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-2, 235</value>
+  </data>
+  <data name="gvBarCode.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="gvBarCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1003, 327</value>
+  </data>
+  <data name="gvBarCode.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;gvBarCode.Name" xml:space="preserve">
+    <value>gvBarCode</value>
+  </data>
+  <data name="&gt;&gt;gvBarCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gvBarCode.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;gvBarCode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="editSITE_AREA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 140</value>
+  </data>
+  <data name="editSITE_AREA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 22</value>
+  </data>
+  <data name="editSITE_AREA.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;editSITE_AREA.Name" xml:space="preserve">
+    <value>editSITE_AREA</value>
+  </data>
+  <data name="&gt;&gt;editSITE_AREA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editSITE_AREA.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;editSITE_AREA.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lbSiteArea.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbSiteArea.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbSiteArea.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbSiteArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 141</value>
+  </data>
+  <data name="lbSiteArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="lbSiteArea.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="lbSiteArea.Text" xml:space="preserve">
+    <value>SITE_AREA</value>
+  </data>
+  <data name="&gt;&gt;lbSiteArea.Name" xml:space="preserve">
+    <value>lbSiteArea</value>
+  </data>
+  <data name="&gt;&gt;lbSiteArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbSiteArea.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbSiteArea.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="editRC_NO.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 107</value>
+  </data>
+  <data name="editRC_NO.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 22</value>
+  </data>
+  <data name="editRC_NO.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="editRC_NO.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;editRC_NO.Name" xml:space="preserve">
+    <value>editRC_NO</value>
+  </data>
+  <data name="&gt;&gt;editRC_NO.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editRC_NO.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;editRC_NO.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lbRcno.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbRcno.Font" type="System.Drawing.Font, System.Drawing">
+    <value>新細明體, 9.75pt</value>
+  </data>
+  <data name="lbRcno.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbRcno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 107</value>
+  </data>
+  <data name="lbRcno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="lbRcno.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="lbRcno.Text" xml:space="preserve">
+    <value>RC_NO</value>
+  </data>
+  <data name="lbRcno.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lbRcno.Name" xml:space="preserve">
+    <value>lbRcno</value>
+  </data>
+  <data name="&gt;&gt;lbRcno.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbRcno.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbRcno.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dgvDummy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>646, 321</value>
+  </data>
+  <data name="dgvDummy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 50</value>
+  </data>
+  <data name="dgvDummy.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="dgvDummy.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dgvDummy.Name" xml:space="preserve">
+    <value>dgvDummy</value>
+  </data>
+  <data name="&gt;&gt;dgvDummy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDummy.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;dgvDummy.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="dtpOUTPUTTIME.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 168</value>
+  </data>
+  <data name="dtpOUTPUTTIME.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="dtpOUTPUTTIME.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;dtpOUTPUTTIME.Name" xml:space="preserve">
+    <value>dtpOUTPUTTIME</value>
+  </data>
+  <data name="&gt;&gt;dtpOUTPUTTIME.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dtpOUTPUTTIME.Parent" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;dtpOUTPUTTIME.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lbSpec.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lbSpec.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lbSpec.Size" type="System.Drawing.Size, System.Drawing">
+    <value>821, 505</value>
+  </data>
+  <data name="lbSpec.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lbSpec.Name" xml:space="preserve">
+    <value>lbSpec</value>
+  </data>
+  <data name="&gt;&gt;lbSpec.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbSpec.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbSpec.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>821, 538</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>fData</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

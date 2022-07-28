@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<ExceptionSolution>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void BtnOK_Click(System.Object, System.EventArgs)</AppFunctionName>
+    <AppModuleFileName>RCInput.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCInput</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+</ExceptionSolution>

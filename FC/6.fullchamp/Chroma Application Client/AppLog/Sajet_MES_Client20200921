@@ -1,0 +1,214 @@
+<log4j:event logger="ClientUtils" timestamp="1600657628089" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+BEGIN
+
+
+UPDATE
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+SET
+    END_TIME = :NOW_TIME
+   ,WORK_TIME_MINUTE = NVL(ROUND((TO_NUMBER(:END_TIME - START_TIME) * 24 * 60 * 60 + 59) / 60), 0)
+   ,UPDATE_USERID = :UPDATE_USERID
+   ,UPDATE_TIME = :NOW_TIME
+WHERE
+    RC_NO = :RC_NO
+AND TRAVEL_ID = :TRAVEL_ID
+AND NODE_ID = :NODE_ID
+AND MACHINE_ID = :MACHINE_ID0
+;
+
+UPDATE
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+SET
+    END_TIME = :NOW_TIME
+   ,WORK_TIME_MINUTE = NVL(ROUND((TO_NUMBER(:END_TIME - START_TIME) * 24 * 60 * 60 + 59) / 60), 0)
+   ,UPDATE_USERID = :UPDATE_USERID
+   ,UPDATE_TIME = :NOW_TIME
+WHERE
+    RC_NO = :RC_NO
+AND TRAVEL_ID = :TRAVEL_ID
+AND NODE_ID = :NODE_ID
+AND MACHINE_ID = :MACHINE_ID1
+;
+
+-- 未選機台的記錄也更新結束時間
+UPDATE
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+SET
+    END_TIME = :NOW_TIME
+   ,WORK_TIME_MINUTE = NVL(ROUND(TO_NUMBER(:NOW_TIME - START_TIME) * 24 * 60), 0)
+WHERE
+    RC_NO = :RC_NO
+AND TRAVEL_ID = :TRAVEL_ID
+AND NODE_ID = :NODE_ID
+AND MACHINE_ID = 0
+;
+END;
+:無效的參數連結
+參數名稱: END_TIME</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600657628165" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+BEGIN
+
+
+UPDATE
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+SET
+    END_TIME = :NOW_TIME
+   ,WORK_TIME_MINUTE = NVL(ROUND((TO_NUMBER(:END_TIME - START_TIME) * 24 * 60 * 60 + 59) / 60), 0)
+   ,UPDATE_USERID = :UPDATE_USERID
+   ,UPDATE_TIME = :NOW_TIME
+WHERE
+    RC_NO = :RC_NO
+AND TRAVEL_ID = :TRAVEL_ID
+AND NODE_ID = :NODE_ID
+AND MACHINE_ID = :MACHINE_ID0
+;
+
+UPDATE
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+SET
+    END_TIME = :NOW_TIME
+   ,WORK_TIME_MINUTE = NVL(ROUND((TO_NUMBER(:END_TIME - START_TIME) * 24 * 60 * 60 + 59) / 60), 0)
+   ,UPDATE_USERID = :UPDATE_USERID
+   ,UPDATE_TIME = :NOW_TIME
+WHERE
+    RC_NO = :RC_NO
+AND TRAVEL_ID = :TRAVEL_ID
+AND NODE_ID = :NODE_ID
+AND MACHINE_ID = :MACHINE_ID1
+;
+
+-- 未選機台的記錄也更新結束時間
+UPDATE
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+SET
+    END_TIME = :NOW_TIME
+   ,WORK_TIME_MINUTE = NVL(ROUND(TO_NUMBER(:NOW_TIME - START_TIME) * 24 * 60), 0)
+WHERE
+    RC_NO = :RC_NO
+AND TRAVEL_ID = :TRAVEL_ID
+AND NODE_ID = :NODE_ID
+AND MACHINE_ID = 0
+;
+END;
+ 】
+
+Exception：無效的參數連結
+參數名稱: END_TIME</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+BEGIN
+
+
+UPDATE
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+SET
+    END_TIME = :NOW_TIME
+   ,WORK_TIME_MINUTE = NVL(ROUND((TO_NUMBER(:END_TIME - START_TIME) * 24 * 60 * 60 + 59) / 60), 0)
+   ,UPDATE_USERID = :UPDATE_USERID
+   ,UPDATE_TIME = :NOW_TIME
+WHERE
+    RC_NO = :RC_NO
+AND TRAVEL_ID = :TRAVEL_ID
+AND NODE_ID = :NODE_ID
+AND MACHINE_ID = :MACHINE_ID0
+;
+
+UPDATE
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+SET
+    END_TIME = :NOW_TIME
+   ,WORK_TIME_MINUTE = NVL(ROUND((TO_NUMBER(:END_TIME - START_TIME) * 24 * 60 * 60 + 59) / 60), 0)
+   ,UPDATE_USERID = :UPDATE_USERID
+   ,UPDATE_TIME = :NOW_TIME
+WHERE
+    RC_NO = :RC_NO
+AND TRAVEL_ID = :TRAVEL_ID
+AND NODE_ID = :NODE_ID
+AND MACHINE_ID = :MACHINE_ID1
+;
+
+-- 未選機台的記錄也更新結束時間
+UPDATE
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN
+SET
+    END_TIME = :NOW_TIME
+   ,WORK_TIME_MINUTE = NVL(ROUND(TO_NUMBER(:NOW_TIME - START_TIME) * 24 * 60), 0)
+WHERE
+    RC_NO = :RC_NO
+AND TRAVEL_ID = :TRAVEL_ID
+AND NODE_ID = :NODE_ID
+AND MACHINE_ID = 0
+;
+END;
+ 】
+
+Exception：無效的參數連結
+參數名稱: END_TIME
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCOutput.fMain.RecordMachine(DataRow RcInfo, List`1 Machines) 於 C:\FullChamp\fullchamp\WIP\RCOutput\1.0.17003.22\RCOutput\fMain.cs: 行 2639
+   於 RCOutput.fMain.BtnOK_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput\1.0.17003.22\RCOutput\fMain.cs: 行 1144
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600666952211" level="ERROR" thread="24"><log4j:message>執行緒已經中止。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.Threading.ThreadAbortException: 執行緒已經中止。
+   於 MS.Win32.UnsafeNativeMethods.IntGetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 MS.Win32.UnsafeNativeMethods.GetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 System.Windows.Threading.Dispatcher.GetMessage(MSG&amp; msg, IntPtr hwnd, Int32 minMessage, Int32 maxMessage)
+   於 System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   於 System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   於 System.Windows.Window.ShowHelper(Object booleanBox)
+   於 System.Windows.Window.Show()
+   於 System.Windows.Window.ShowDialog()
+   於 Sajet_MES_WPF_Style.MainWindow.threadStart(Object Loaction_size)</log4j:throwable><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="threadStart" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600671198005" level="ERROR" thread="66"><log4j:message>執行緒已經中止。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.Threading.ThreadAbortException: 執行緒已經中止。
+   於 MS.Win32.UnsafeNativeMethods.IntGetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 MS.Win32.UnsafeNativeMethods.GetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 System.Windows.Threading.Dispatcher.GetMessage(MSG&amp; msg, IntPtr hwnd, Int32 minMessage, Int32 maxMessage)
+   於 System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   於 System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   於 System.Windows.Window.ShowHelper(Object booleanBox)
+   於 System.Windows.Window.Show()
+   於 System.Windows.Window.ShowDialog()
+   於 Sajet_MES_WPF_Style.MainWindow.threadStart(Object Loaction_size)</log4j:throwable><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="threadStart" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600672292755" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput.fMain.GvDefect_CellValueChanged(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput\1.0.17003.22\RCOutput\fMain.cs: 行 1537
+   於 System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellValueChangedInternal(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridViewCell.SetValue(Int32 rowIndex, Object value)
+   於 System.Windows.Forms.DataGridView.PushFormattedValue(DataGridViewCell& dataGridViewCurrentCell, Object formattedValue, Exception& exception)
+   於 System.Windows.Forms.DataGridView.CommitEdit(DataGridViewCell& dataGridViewCurrentCell, DataGridViewDataErrorContexts context, DataGridViewValidateCellInternal validateCell, Boolean fireCellLeave, Boolean fireCellEnter, Boolean fireRowLeave, Boolean fireRowEnter, Boolean fireLeave)
+   於 System.Windows.Forms.DataGridView.CommitEdit(DataGridViewDataErrorContexts context, Boolean forCurrentCellChange, Boolean forCurrentRowChange)
+   於 System.Windows.Forms.DataGridView.OnCellMouseDown(HitTestInfo hti, Boolean isShiftDown, Boolean isControlDown)
+   於 System.Windows.Forms.DataGridView.OnCellMouseDown(DataGridViewCellMouseEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseDown(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCOutput.fMain" method="Void GvDefect_CellValueChanged(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600673102550" level="ERROR" thread="83"><log4j:message>執行緒已經中止。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.Threading.ThreadAbortException: 執行緒已經中止。
+   於 MS.Win32.UnsafeNativeMethods.IntGetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 MS.Win32.UnsafeNativeMethods.GetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 System.Windows.Threading.Dispatcher.GetMessage(MSG&amp; msg, IntPtr hwnd, Int32 minMessage, Int32 maxMessage)
+   於 System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   於 System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   於 System.Windows.Window.ShowHelper(Object booleanBox)
+   於 System.Windows.Window.Show()
+   於 System.Windows.Window.ShowDialog()
+   於 Sajet_MES_WPF_Style.MainWindow.threadStart(Object Loaction_size)</log4j:throwable><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="threadStart" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600682971447" level="ERROR" thread="13"><log4j:message>執行緒已經中止。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.Threading.ThreadAbortException: 執行緒已經中止。
+   於 MS.Win32.UnsafeNativeMethods.IntGetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 MS.Win32.UnsafeNativeMethods.GetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 System.Windows.Threading.Dispatcher.GetMessage(MSG&amp; msg, IntPtr hwnd, Int32 minMessage, Int32 maxMessage)
+   於 System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   於 System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   於 System.Windows.Window.ShowHelper(Object booleanBox)
+   於 System.Windows.Window.Show()
+   於 System.Windows.Window.ShowDialog()
+   於 Sajet_MES_WPF_Style.MainWindow.threadStart(Object Loaction_size)</log4j:throwable><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="threadStart" file="" line="0" /></log4j:event>

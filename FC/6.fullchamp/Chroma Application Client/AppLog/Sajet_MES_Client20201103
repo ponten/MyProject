@@ -1,0 +1,136 @@
+<log4j:event logger="ClientUtils" timestamp="1604390894770" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    a.work_order     "WorkOrder",
+    c.part_no     "PartNo",
+    c.spec1          "Desc",
+    c.spec2          "Spec",
+    d.process_name   "ProcessName",
+    SUM(a.output_qty) "OutputQty",
+    a.process_id
+FROM
+    sajet.g_rc_count    a,
+    sajet.g_wo_base     b,
+    sajet.sys_part      c,
+    sajet.sys_process   d
+WHERE
+    a.work_order = b.work_order
+    AND a.part_id = c.part_id
+    AND a.process_id = d.process_id
+AND a.work_order Like ''
+AND d.process_name In  ('') 
+AND c.part_no Like ''
+AND c.spec1 Like ''
+GROUP BY
+    a.work_order,
+    a.process_id,
+    d.process_name,
+    b.wo_type,
+    c.spec1,
+    c.spec2
+ORDER BY
+    a.work_order ASC,
+    d.process_name ASC:ORA-00979: 不是一個 GROUP BY 表示式</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1604390894862" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT
+    a.work_order     "WorkOrder",
+    c.part_no     "PartNo",
+    c.spec1          "Desc",
+    c.spec2          "Spec",
+    d.process_name   "ProcessName",
+    SUM(a.output_qty) "OutputQty",
+    a.process_id
+FROM
+    sajet.g_rc_count    a,
+    sajet.g_wo_base     b,
+    sajet.sys_part      c,
+    sajet.sys_process   d
+WHERE
+    a.work_order = b.work_order
+    AND a.part_id = c.part_id
+    AND a.process_id = d.process_id
+AND a.work_order Like ''
+AND d.process_name In  ('') 
+AND c.part_no Like ''
+AND c.spec1 Like ''
+GROUP BY
+    a.work_order,
+    a.process_id,
+    d.process_name,
+    b.wo_type,
+    c.spec1,
+    c.spec2
+ORDER BY
+    a.work_order ASC,
+    d.process_name ASC 】
+
+Exception：ORA-00979: 不是一個 GROUP BY 表示式</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT
+    a.work_order     "WorkOrder",
+    c.part_no     "PartNo",
+    c.spec1          "Desc",
+    c.spec2          "Spec",
+    d.process_name   "ProcessName",
+    SUM(a.output_qty) "OutputQty",
+    a.process_id
+FROM
+    sajet.g_rc_count    a,
+    sajet.g_wo_base     b,
+    sajet.sys_part      c,
+    sajet.sys_process   d
+WHERE
+    a.work_order = b.work_order
+    AND a.part_id = c.part_id
+    AND a.process_id = d.process_id
+AND a.work_order Like ''
+AND d.process_name In  ('') 
+AND c.part_no Like ''
+AND c.spec1 Like ''
+GROUP BY
+    a.work_order,
+    a.process_id,
+    d.process_name,
+    b.wo_type,
+    c.spec1,
+    c.spec2
+ORDER BY
+    a.work_order ASC,
+    d.process_name ASC 】
+
+Exception：ORA-00979: 不是一個 GROUP BY 表示式
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.SajetCommon.AddMasterField(String strMasterSql, DataGridView gvParam)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1604390927216" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1604390948684" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>

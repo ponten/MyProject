@@ -1,0 +1,94 @@
+CREATE OR REPLACE PROCEDURE SJ_RC_OUTPUT_MACHINE_STATUS(RCSN      IN VARCHAR2,
+                                                        TEMP      IN NUMBER,
+                                                        TTRAVELID IN NUMBER,
+                                                        TRES      OUT VARCHAR2) IS
+
+  CMACHINEID SAJET.G_RC_TRAVEL_MACHINE.MACHINE_ID%TYPE;
+  /*TMACHINEID       SAJET.G_RC_TRAVEL_MACHINE.MACHINE_ID%TYPE;*/
+  CCOUNT      NUMBER;
+  CAUTORUN    SAJET.SYS_MACHINE.AUTO_RUN%TYPE;
+  CUPDATETIME SAJET.G_MACHINE_STATUS.STATUS_UPDATE_TIME%TYPE;
+
+BEGIN
+  TRES := 'OK';
+  DECLARE
+    CURSOR MACHINEID_CURSOR IS
+      SELECT MACHINE_ID
+        INTO CMACHINEID
+        FROM SAJET.G_RC_TRAVEL_MACHINE
+       WHERE RC_NO = RCSN
+         AND TRAVEL_ID = TTRAVELID
+         AND END_TIME IS NULL;
+  BEGIN
+    LOOP
+      IF NOT MACHINEID_CURSOR%ISOPEN THEN
+        OPEN MACHINEID_CURSOR;
+      END IF;
+      FETCH MACHINEID_CURSOR
+        INTO CMACHINEID;
+      EXIT WHEN MACHINEID_CURSOR%NOTFOUND;
+      --删除g_machine_loadport
+      DELETE FROM SAJET.G_MACHINE_LOADPORT
+       WHERE MACHINE_ID = CMACHINEID
+         AND RC_NO = RCSN;
+      --判断该机台是否还有其他rc在生产
+      SELECT COUNT(*)
+        INTO CCOUNT
+        FROM SAJET.G_MACHINE_LOADPORT
+       WHERE MACHINE_ID = CMACHINEID;
+      --该机台无rc在生产
+      IF CCOUNT = 0 THEN
+        --查看是否为自动变更状态
+        SELECT AUTO_RUN
+          INTO CAUTORUN
+          FROM SAJET.SYS_MACHINE
+         WHERE MACHINE_ID = CMACHINEID;
+        IF CAUTORUN = 'Y' THEN
+          --UPDATE SAJET.G_MACHINE_STATUS
+          SELECT STATUS_UPDATE_TIME
+            INTO CUPDATETIME
+            FROM SAJET.G_MACHINE_STATUS
+           WHERE MACHINE_ID = CMACHINEID;
+          UPDATE SAJET.G_MACHINE_STATUS
+             SET STATUS_END_TIME   = SYSDATE,
+                 STATUS_TOTAL_TIME = TO_CHAR(SYSDATE, 'yyyymmddhh24miss') -
+                                     TO_CHAR(CUPDATETIME, 'yyyymmddhh24miss'),
+                 UPDATE_USERID     = TEMP
+           WHERE MACHINE_ID = CMACHINEID;
+          --INSERT SAJET.G_MACHINE_HISTORY
+          INSERT INTO SAJET.G_MACHINE_HISTORY
+            (MACHINE_ID,
+             CURRENT_STATUS_ID,
+             STATUS_UPDATE_TIME,
+             STATUS_END_TIME,
+             STATUS_TOTAL_TIME,
+             DOWN_STATUS,
+             UPDATE_USERID)
+            SELECT MACHINE_ID,
+                   CURRENT_STATUS_ID,
+                   STATUS_UPDATE_TIME,
+                   STATUS_END_TIME,
+                   STATUS_TOTAL_TIME,
+                   DOWN_STATUS,
+                   UPDATE_USERID
+              FROM G_MACHINE_STATUS
+             WHERE MACHINE_ID = CMACHINEID;
+        
+          UPDATE SAJET.G_MACHINE_STATUS
+             SET CURRENT_STATUS_ID  = '0',
+                 STATUS_UPDATE_TIME = SYSDATE,
+                 STATUS_END_TIME    = '',
+                 STATUS_TOTAL_TIME  = '',
+                 UPDATE_USERID      = TEMP
+           WHERE MACHINE_ID = CMACHINEID;
+        END IF;
+      END IF;
+    END LOOP;
+    COMMIT;
+  END;
+
+EXCEPTION
+  WHEN OTHERS THEN
+    TRES := SQLERRM;
+    ROLLBACK;
+END;

@@ -1,0 +1,12 @@
+-- Create sequence 
+create sequence SAJET.S_PACK_CARTON_LOTNO
+minvalue 1
+maxvalue 999
+start with 1
+increment by 1
+nocache 
+cycle;
+
+
+
+

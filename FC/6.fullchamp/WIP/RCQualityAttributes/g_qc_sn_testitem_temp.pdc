@@ -1,0 +1,25 @@
+-- Create table
+create table G_QC_SN_TESTITEM_TEMP
+(
+  serial_number VARCHAR2(40),
+  process_id    NUMBER,
+  item_type_id  NUMBER,
+  item_id       NUMBER,
+  insp_value    VARCHAR2(120),
+  insp_result   VARCHAR2(10),
+  qc_lotno      VARCHAR2(40)
+)
+tablespace SYSRT
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 2M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on G_QC_SN_TESTITEM_TEMP to SJ;
+grant select, insert, update, delete, alter on G_QC_SN_TESTITEM_TEMP to SYS_USER;

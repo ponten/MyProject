@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<ExceptionSolution>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void .ctor(Single, Single, Single, Single)</AppFunctionName>
+    <AppModuleFileName>Lassalle.Flow.dll</AppModuleFileName>
+    <AppModuleNameSpace>Lassalle.Flow</AppModuleNameSpace>
+    <AppModuleClassName>Node</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+</ExceptionSolution>

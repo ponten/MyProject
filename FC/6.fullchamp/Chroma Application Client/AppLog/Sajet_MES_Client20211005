@@ -1,0 +1,217 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633396609268" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633396617153" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633399092148" level="FATAL" thread="1"><log4j:message>找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+   於 CCustomerReport.fMain.ShowDetail(String strDetailSql)
+   於 CCustomerReport.fMain.ShowData()
+   於 CCustomerReport.fMain.btnQuery_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633399094623" level="FATAL" thread="1"><log4j:message>找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+   於 CCustomerReport.fMain.ShowDetail(String strDetailSql)
+   於 CCustomerReport.fMain.dataGridView1_SelectionChanged(Object sender, EventArgs e)
+   於 System.Windows.Forms.DataGridView.OnSelectionChanged(EventArgs e)
+   於 System.Windows.Forms.DataGridView.FlushSelectionChanged()
+   於 System.Windows.Forms.DataGridView.set_NoSelectionChangeCount(Int32 value)
+   於 System.Windows.Forms.DataGridView.OnCellMouseDown(HitTestInfo hti, Boolean isShiftDown, Boolean isControlDown)
+   於 System.Windows.Forms.DataGridView.OnCellMouseDown(DataGridViewCellMouseEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnMouseDown(MouseEventArgs e)
+   於 System.Windows.Forms.Control.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633399151214" level="FATAL" thread="1"><log4j:message>找不到名為 WO_10C.WORK_ORDER   的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 WO_10C.WORK_ORDER   的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+   於 CCustomerReport.fMain.ShowDetail(String strDetailSql)
+   於 CCustomerReport.fMain.ShowData()
+   於 CCustomerReport.fMain.btnQuery_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633399284264" level="FATAL" thread="1"><log4j:message>找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+   於 CCustomerReport.fMain.ShowDetail(String strDetailSql)
+   於 CCustomerReport.fMain.ShowData()
+   於 CCustomerReport.fMain.btnQuery_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633399375376" level="FATAL" thread="1"><log4j:message>找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+   於 CCustomerReport.fMain.ShowDetail(String strDetailSql)
+   於 CCustomerReport.fMain.ShowData()
+   於 CCustomerReport.fMain.btnQuery_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633399455024" level="FATAL" thread="1"><log4j:message>找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+   於 CCustomerReport.fMain.ShowDetail(String strDetailSql)
+   於 CCustomerReport.fMain.ShowData()
+   於 CCustomerReport.fMain.btnQuery_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633399511825" level="FATAL" thread="1"><log4j:message>找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 WORK_ORDER  的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+   於 CCustomerReport.fMain.ShowDetail(String strDetailSql)
+   於 CCustomerReport.fMain.ShowData()
+   於 CCustomerReport.fMain.btnQuery_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1633400453984" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT * FROM (SELECT WO_10C.WO_CREATE_DATE  ,CUS_10C.CUSTOMER_NAME,
+       P_10C.SPEC2 ,P_10C.VERSION ,P_10B.SPEC2 ,P_10C.PART_NO ,
+        WO_10C.WORK_ORDER  "WorkOrder" ,WO_10C.TARGET_QTY 
+   FROM SAJET.G_MACHINE_T4_BINDING A
+JOIN SAJET.G_RC_STATUS RC_10C ON A.RC_NO_10C = RC_10C.RC_NO
+LEFT JOIN SAJET.G_WO_BASE WO_10C ON RC_10C.WORK_ORDER = WO_10C.WORK_ORDER
+LEFT JOIN SAJET.SYS_PART P_10C ON RC_10C.PART_ID = P_10C.PART_ID
+LEFT JOIN SAJET.SYS_CUSTOMER CUS_10C ON WO_10C.CUSTOMER_ID = CUS_10C.CUSTOMER_ID
+LEFT JOIN SAJET.SYS_MACHINE MAC_10C ON A.MACHINE_ID = MAC_10C.MACHINE_ID
+LEFT JOIN SAJET.G_RC_STATUS RC_10B ON A.RC_NO_T4 = RC_10B.RC_NO
+LEFT JOIN SAJET.SYS_PART P_10B ON RC_10B.PART_ID = P_10B.PART_ID
+) JEAN WHERE ROWNUM = 1:ORA-00918: 資料欄的定義不明確</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1633400457599" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT * FROM (SELECT WO_10C.WO_CREATE_DATE  ,CUS_10C.CUSTOMER_NAME,
+       P_10C.SPEC2 ,P_10C.VERSION ,P_10B.SPEC2 ,P_10C.PART_NO ,
+        WO_10C.WORK_ORDER  "WorkOrder" ,WO_10C.TARGET_QTY 
+   FROM SAJET.G_MACHINE_T4_BINDING A
+JOIN SAJET.G_RC_STATUS RC_10C ON A.RC_NO_10C = RC_10C.RC_NO
+LEFT JOIN SAJET.G_WO_BASE WO_10C ON RC_10C.WORK_ORDER = WO_10C.WORK_ORDER
+LEFT JOIN SAJET.SYS_PART P_10C ON RC_10C.PART_ID = P_10C.PART_ID
+LEFT JOIN SAJET.SYS_CUSTOMER CUS_10C ON WO_10C.CUSTOMER_ID = CUS_10C.CUSTOMER_ID
+LEFT JOIN SAJET.SYS_MACHINE MAC_10C ON A.MACHINE_ID = MAC_10C.MACHINE_ID
+LEFT JOIN SAJET.G_RC_STATUS RC_10B ON A.RC_NO_T4 = RC_10B.RC_NO
+LEFT JOIN SAJET.SYS_PART P_10B ON RC_10B.PART_ID = P_10B.PART_ID
+) JEAN WHERE ROWNUM = 1:ORA-00918: 資料欄的定義不明確</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633402662183" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633405350685" level="ERROR" thread="1"><log4j:message>Error：Repeat Sub Menu Name "直通率報表"</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="CreateSubMenu" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633405455753" level="ERROR" thread="1"><log4j:message>Error：Repeat Sub Menu Name "直通率報表"</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="CreateSubMenu" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1633405547797" level="ERROR" thread="1"><log4j:message>Error：Repeat Sub Menu Name "直通率報表"</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="CreateSubMenu" file="" line="0" /></log4j:event>

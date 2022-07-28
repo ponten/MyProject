@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{54507FBB-1750-484A-9729-00A58C381B8F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RCOutput</RootNamespace>
+    <AssemblyName>RCOutput</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Chroma Application Client\WIP\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientUtils">
+      <HintPath>..\..\..\..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="FTransferProcess, Version=1.0.17003.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Chroma Application Client\WIP\FTransferProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="PrintLabel">
+      <HintPath>..\..\..\..\..\..\Chroma Application Client\PrintLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\ControlNameEnum.cs" />
+    <Compile Include="Enums\ControlTextEnum.cs" />
+    <Compile Include="Enums\LabelHeaderEnum.cs" />
+    <Compile Include="Enums\QCOptionEnum.cs" />
+    <Compile Include="fShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fShift.Designer.cs">
+      <DependentUpon>fShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fShiftHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fShiftHistory.Designer.cs">
+      <DependentUpon>fShiftHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\OtherService.cs" />
+    <Compile Include="Services\QCOptionService.cs" />
+    <Compile Include="Services\QCService.cs" />
+    <Compile Include="Enums\MessageEnum.cs" />
+    <Compile Include="fMachineAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMachineAdd.Designer.cs">
+      <DependentUpon>fMachineAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMachineChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMachineChange.Designer.cs">
+      <DependentUpon>fMachineChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMachineRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMachineRemove.Designer.cs">
+      <DependentUpon>fMachineRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MachineDownCodeModel.cs" />
+    <Compile Include="Models\MachineDownModel.cs" />
+    <Compile Include="Models\T4MachineModel.cs" />
+    <Compile Include="Services\PrintRCLabel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\references.cs" />
+    <Compile Include="Services\SajetCommon.cs" />
+    <Compile Include="Services\MachineService.cs" />
+    <Compile Include="Services\RuncardService.cs" />
+    <Compile Include="Services\ShiftService.cs" />
+    <Compile Include="Services\T4Service.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fMachineAdd.resx">
+      <DependentUpon>fMachineAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMachineChange.resx">
+      <DependentUpon>fMachineChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMachineRemove.resx">
+      <DependentUpon>fMachineRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fShift.resx">
+      <DependentUpon>fShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fShiftHistory.resx">
+      <DependentUpon>fShiftHistory.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RCOutput.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\RCOutput.Models.MachineDownModel.datasource" />
+    <None Include="Properties\DataSources\RCOutput.Models.T4MachineModel.datasource" />
+    <None Include="Properties\DataSources\RCOutput.References.MachineDownModel.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+<log4j:event logger="ClientUtils" timestamp="1626928543512" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT C.PART_NO, C.SPEC1, B.ITEM_GROUP, B.PURCHASE
+FROM 
+SAJET.SYS_BOM_INFO A,
+SAJET.SYS_BOM B,
+SAJET.SYS_PART C
+WHERE 1=1
+AND A.PART_ID = :PART_ID
+AND B.PROCESS_ID = :PROCESS_ID
+AND A.BOM_ID = B.BOM_ID
+AND C.PART_ID = B.ITEM_PART_ID
+AND C.ENABLED = 'Y'
+ORDER BY B.ITEM_GROUP DESC,C.PART_NO :ORA-01722: 無效的數字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>

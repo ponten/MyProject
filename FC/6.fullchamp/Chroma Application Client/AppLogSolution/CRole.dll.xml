@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<ExceptionSolution>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void ShowData()</AppFunctionName>
+    <AppModuleFileName>CRole.dll</AppModuleFileName>
+    <AppModuleNameSpace>CRole</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+</ExceptionSolution>

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{832B9138-3A2E-4F8F-8FE6-74F82C5C1998}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IQCbyLot</RootNamespace>
+    <AssemblyName>IQCbyLot</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/IQCbyLot/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\MES Client\IQC\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientUtils, Version=1.0.0.21, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\MES Client\ClientUtils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\MES Client\Excel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExportExcel.cs" />
+    <Compile Include="ExportOfficeExcel.cs" />
+    <Compile Include="fAQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAQL.Designer.cs">
+      <DependentUpon>fAQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCopyRTResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCopyRTResult.Designer.cs">
+      <DependentUpon>fCopyRTResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fData.designer.cs">
+      <DependentUpon>fData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fExceptionProcessMemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fExceptionProcessMemo.Designer.cs">
+      <DependentUpon>fExceptionProcessMemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFilter.designer.cs">
+      <DependentUpon>fFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHistory.designer.cs">
+      <DependentUpon>fHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHold.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHold.Designer.cs">
+      <DependentUpon>fHold.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fImage.Designer.cs">
+      <DependentUpon>fImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInspHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInspHistory.Designer.cs">
+      <DependentUpon>fInspHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInspHistoryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInspHistoryDetail.Designer.cs">
+      <DependentUpon>fInspHistoryDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInspItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInspItem.Designer.cs">
+      <DependentUpon>fInspItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInspNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInspNotes.Designer.cs">
+      <DependentUpon>fInspNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLotExceptionMemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLotExceptionMemo.Designer.cs">
+      <DependentUpon>fLotExceptionMemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLotMemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLotMemo.Designer.cs">
+      <DependentUpon>fLotMemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMPN.Designer.cs">
+      <DependentUpon>fMPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRoHSItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRoHSItem.Designer.cs">
+      <DependentUpon>fRoHSItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fShowRT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fShowRT.Designer.cs">
+      <DependentUpon>fShowRT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTestItemInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTestItemInput.Designer.cs">
+      <DependentUpon>fTestItemInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTestResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTestResult.Designer.cs">
+      <DependentUpon>fTestResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTooling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTooling.Designer.cs">
+      <DependentUpon>fTooling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTypeMemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTypeMemo.Designer.cs">
+      <DependentUpon>fTypeMemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fViewPhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fViewPhoto.Designer.cs">
+      <DependentUpon>fViewPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fWaive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fWaive.Designer.cs">
+      <DependentUpon>fWaive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SajetCommon.cs" />
+    <Compile Include="SajetTable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fAQL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fAQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCopyRTResult.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fCopyRTResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fData.resx">
+      <DependentUpon>fData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fExceptionProcessMemo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fExceptionProcessMemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFilter.resx">
+      <DependentUpon>fFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHistory.resx">
+      <DependentUpon>fHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHold.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fHold.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fImage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInspHistory.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fInspHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInspHistoryDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fInspHistoryDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInspItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fInspItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInspNotes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fInspNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLotExceptionMemo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fLotExceptionMemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLotMemo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fLotMemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMPN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fMPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRoHSItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fRoHSItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fShowRT.resx">
+      <DependentUpon>fShowRT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTestItemInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fTestItemInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTestResult.resx">
+      <DependentUpon>fTestResult.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTooling.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fTooling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTypeMemo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fTypeMemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fViewPhoto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>fViewPhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fWaive.resx">
+      <DependentUpon>fWaive.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

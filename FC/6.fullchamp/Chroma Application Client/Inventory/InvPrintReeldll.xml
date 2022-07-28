@@ -1,0 +1,47 @@
+﻿<Chroma>
+  <繁體中文>
+    <Message Name="Inventory Date" Value="入庫日期" />
+    <Message Name="Reel No" Value="料卷號" />
+    <Message Name="Part No" Value="料號" />
+    <Message Name="Unit Qty" Value="單位數量" />
+    <Message Name="Date Code" Value="Date Code" />
+    <Message Name="Vendor Code" Value="供應商代碼" />
+    <Message Name="Remove" Value="移除" />
+    <Message Name="Record Count" Value="資料筆數" />
+    <Message Name="Print Qty" Value="列印份數" />
+    <Message Name="Print" Value="列印" />
+
+    <Message Name="Reel Error" Value="料卷錯誤" />
+    <Message Name="Print Finish" Value="列印完成" />
+    <Message Name="RT No" Value="RT單號" />
+    <Message Name="Vendor Name" Value="供應商名稱" />
+    <Message Name="Prepare to Print Record Count" Value="準備列印資料筆數" />
+    <Message Name="Reel No Duplicate" Value="料卷重複輸入" />
+    <Message Name="Clear" Value="清除" />
+    <Message Name="Clear Reel List ?" Value="清除料卷列印清單 ?" />
+    <Message Name="Query" Value="查詢" />
+    <Message Name="Query Result" Value="查詢結果" />
+    <Message Name="Add" Value="加入" />
+    <Message Name="Select ALL" Value="全選" />
+    <Message Name="Select None" Value="全不選" />
+    <Message Name="Lot" Value="Lot" />
+    <Message Name="Search" Value="搜尋" />
+    <Message Name="OK" Value="確定" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Label Type" Value="標籤檔類型" />
+    <Message Name="Large" Value="大標籤" />
+    <Message Name="Small" Value="小標籤" />
+    <Message Name="Middle" Value="中標籤" />
+    <Message Name="Memo" Value="備註" />
+    <Message Name="PART_NO" Value="料號" />
+    <Message Name="SPEC1" Value="規格1" />
+    <Message Name="SPEC2" Value="規格2" />
+    <Message Name="REEL_NO" Value="料卷號" />
+    <Message Name="VENDOR_CODE" Value="供應商代碼" />
+    <Message Name="VENDOR_NAME" Value="供應商名稱" /> 
+    <Message Name="RT_NO" Value="RT單號" />
+    <Message Name="Please Input Part No Prefix" Value="請輸入料號關鍵字至少一碼" />
+    <Message Name="Modify Unit Qty" Value="修改單位數量" />
+    <Message Name="Save" Value="儲存" />
+  </繁體中文>
+</Chroma>

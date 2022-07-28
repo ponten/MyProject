@@ -1,0 +1,42 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1624340715380" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 MachineDownTime.fMain.Dgv_Machine_InUse_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineDownTime\1.0.17003.1\MachineDownTime\fMain.cs: 行 442
+   於 MachineDownTime.fMain.Btn_OK_2_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineDownTime\1.0.17003.1\MachineDownTime\fMain.cs: 行 229
+   於 MachineDownTime.fMain.Tb_RC_KeyPress(Object sender, KeyPressEventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineDownTime\1.0.17003.1\MachineDownTime\fMain.cs: 行 406
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="MachineDownTime.fMain" method="Void Dgv_Machine_InUse_CellClick(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\MachineDownTime.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1624340766381" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 MachineDownTime.fMain.Dgv_Machine_InUse_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineDownTime\1.0.17003.1\MachineDownTime\fMain.cs: 行 442
+   於 MachineDownTime.fMain.Btn_OK_2_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineDownTime\1.0.17003.1\MachineDownTime\fMain.cs: 行 229
+   於 MachineDownTime.fMain.Tb_RC_KeyPress(Object sender, KeyPressEventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineDownTime\1.0.17003.1\MachineDownTime\fMain.cs: 行 406
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="MachineDownTime.fMain" method="Void Dgv_Machine_InUse_CellClick(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\MachineDownTime.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1624340790491" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 MachineDownTime.fMain.Dgv_Machine_InUse_CellClick(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineDownTime\1.0.17003.1\MachineDownTime\fMain.cs: 行 442
+   於 MachineDownTime.fMain.Btn_OK_2_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineDownTime\1.0.17003.1\MachineDownTime\fMain.cs: 行 229
+   於 MachineDownTime.fMain.Tb_RC_KeyPress(Object sender, KeyPressEventArgs e) 於 C:\FullChamp\fullchamp\WIP\MachineDownTime\1.0.17003.1\MachineDownTime\fMain.cs: 行 406
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="MachineDownTime.fMain" method="Void Dgv_Machine_InUse_CellClick(System.Object, System.Windows.Forms.DataGridViewCellEventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\MachineDownTime.dll" line="0" /></log4j:event>

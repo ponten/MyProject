@@ -1,0 +1,1496 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634696000050" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CCustomerReport.fMain.CreateChartTable()
+   於 CCustomerReport.fMain.cmbSecond_SelectedIndexChanged(Object sender, EventArgs e)
+   於 System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   於 System.Windows.Forms.ComboBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CCustomerReport.fMain" method="Boolean CreateChartTable()" file="C:\FullChamp\Chroma Application Client\Query\CCustomerReport.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634696003928" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CCustomerReport.fMain.CreateChartTable()
+   於 CCustomerReport.fMain.cmbSecond_SelectedIndexChanged(Object sender, EventArgs e)
+   於 System.Windows.Forms.CheckBox.OnCheckedChanged(EventArgs e)
+   於 System.Windows.Forms.CheckBox.set_CheckState(CheckState value)
+   於 System.Windows.Forms.CheckBox.OnClick(EventArgs e)
+   於 System.Windows.Forms.CheckBox.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CCustomerReport.fMain" method="Boolean CreateChartTable()" file="C:\FullChamp\Chroma Application Client\Query\CCustomerReport.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634708501200" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634708508668" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1
+[ＡＮＤ　X.MACHINE_CODE=＠MACHINE_CODE]
+〔ＡＮＤ　X.TYPE_DESC=＠TYPE_DESC〕
+ORDER BY SEQ:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634708815849" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634708823209" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1
+[ＡＮＤ　X.MACHINE_CODE=＠MACHINE_CODE]
+〔ＡＮＤ　X.TYPE_DESC=＠TYPE_DESC〕
+ORDER BY SEQ:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634708948700" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634708951809" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE =1=1 X.MACHINE_CODE='CC03' AND X.TYPE_DESC='換版換模'
+ORDER BY SEQ:ORA-00936: 遺漏表示式</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634709003295" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634709006818" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1 X.MACHINE_CODE='CC03' AND X.TYPE_DESC='換版換模'
+ORDER BY SEQ:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634709066560" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634709069815" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1 AND X.MACHINE_CODE='CC03' AND X.TYPE_DESC='換版換模'
+ORDER BY SEQ:ORA-00942: 表格或視觀表不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634709113299" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634709116317" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1 AND X.MACHINE_CODE='CC03' AND X.TYPE_DESC='換版換模'
+ORDER BY SEQ:ORA-00942: 表格或視觀表不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634709145410" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1 AND X.MACHINE_CODE='CC03' AND X.TYPE_DESC='換版換模'
+ORDER BY SEQ:ORA-00942: 表格或視觀表不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634709199274" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634709202564" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1 AND X.MACHINE_CODE='CC03' AND X.TYPE_DESC='換版換模'
+ORDER BY SEQ:ORA-00942: 表格或視觀表不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634709263039" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634709266297" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1 AND X.MACHINE_CODE='CC03' AND X.TYPE_DESC='換版換模'
+ORDER BY SEQ:ORA-00942: 表格或視觀表不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634709377751" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634709483907" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634709544995" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634709957600" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634709973118" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1-- MACHINE_CODE='CC03' 
+AND MACHINE_CODE In ('CC04','CC03')
+ORDER BY SEQ:ORA-01476: 除數等於 0</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634710006351" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710009507" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1-- MACHINE_CODE='CC03' 
+
+ORDER BY SEQ:ORA-01476: 除數等於 0</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710024571" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1-- MACHINE_CODE='CC03' 
+AND MACHINE_CODE In :MA
+ORDER BY SEQ:ORA-01476: 除數等於 0</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710033874" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1-- MACHINE_CODE='CC03' 
+AND MACHINE_CODE In :MA
+ORDER BY SEQ:ORA-01476: 除數等於 0</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634710111388" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634710459462" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710493677" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      WHERE 1=1
+     AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      WHERE 1=1
+      AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+   WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1
+AND MACHINE_CODE In :MA
+ORDER BY SEQ:ORA-01476: 除數等於 0]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710564380" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      WHERE 1=1
+     AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      WHERE 1=1
+      AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+   WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1
+AND MACHINE_CODE In :MA
+ORDER BY SEQ:ORA-01476: 除數等於 0]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710653066" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      WHERE 1=1
+     AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      WHERE 1=1
+      AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+   WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1
+AND MACHINE_CODE In :MA
+ORDER BY SEQ:ORA-01476: 除數等於 0]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710674424" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      WHERE 1=1
+     AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      WHERE 1=1
+      AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+   WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1
+AND MACHINE_CODE In :MA
+ORDER BY SEQ:ORA-01476: 除數等於 0]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710688614" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      WHERE 1=1
+     AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      WHERE 1=1
+      AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+   WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1
+AND MACHINE_CODE In :MA
+ORDER BY SEQ:ORA-01476: 除數等於 0]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634710718942" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710856495" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634710856556" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ 】
+
+Exception：ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ 】
+
+Exception：ORA-00933: SQL 命令的結束有問題
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710858788" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634710858810" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ 】
+
+Exception：ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ 】
+
+Exception：ORA-00933: SQL 命令的結束有問題
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710877534" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634710877553" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ 】
+
+Exception：ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ 】
+
+Exception：ORA-00933: SQL 命令的結束有問題
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634710894667" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634710896523" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    WHERE 1=1
+   
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      WHERE 1=1
+     
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      WHERE 1=1
+      
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+   WHERE 1=1
+   
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1
+
+ORDER BY SEQ:ORA-01476: 除數等於 0</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634710930694" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634711587403" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634711771574" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: SELECT MACHINE_CODE, TYPE_DESC, TYPE_MINS, PERCENT ,type_desc||'('||PERCENT ||'%)'col_label
+FROM 
+(
+  SELECT X.MACHINE_CODE, X.TYPE_DESC, X.TOTAL_MINS TYPE_MINS, Y.TOTAL_MINS TOTAL_MINS, 
+  ROUND(X.TOTAL_MINS / Y.TOTAL_MINS, 4) * 100 PERCENT, SEQ 
+  FROM 
+  (
+    SELECT A.MACHINE_ID, C.MACHINE_CODE, D.TYPE_DESC, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS, 1 SEQ 
+    FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+    JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+    JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+    JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+    WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID, B.TYPE_ID, C.MACHINE_CODE, D.TYPE_DESC
+    UNION ALL 
+    SELECT X.MACHINE_ID, X.MACHINE_CODE, '有效工時', Y.TOTAL_MINS-X.DOWN_MINS, 2 FROM 
+    (
+      SELECT A.MACHINE_ID, B.MACHINE_CODE, SUM(A.WORK_TIME_MINUTE) DOWN_MINS 
+      FROM SAJET.G_MACHINE_DOWN_EXCLUDE A 
+      JOIN SAJET.SYS_MACHINE B ON A.MACHINE_ID=B.MACHINE_ID 
+      WHERE 1=1
+     AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID, B.MACHINE_CODE
+    ) X 
+    JOIN 
+    (
+      SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+      FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+      WHERE 1=1
+      AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+      GROUP BY A.MACHINE_ID 
+    ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+  ) X 
+  JOIN 
+  (
+    SELECT A.MACHINE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_MINS 
+    FROM SAJET.G_RC_TRAVEL_MACHINE_DOWN A
+   WHERE 1=1
+   AND A.START_TIME >= :TIME_1 AND A.START_TIME< :TIME_2
+    GROUP BY A.MACHINE_ID 
+  ) Y ON X.MACHINE_ID=Y.MACHINE_ID
+) WHERE  1=1
+AND MACHINE_CODE In :MA
+ORDER BY SEQ:ORA-01476: 除數等於 0]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634711925101" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634711925125" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ 】
+
+Exception：ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  AND X.MACHINE_CODE=''CHINE_CODE  AND ROWNUM = 1 
+ORDER BY SEQ 】
+
+Exception：ORA-00933: SQL 命令的結束有問題
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634712085009" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1634712128788" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  
+AND X.MACHINE_CODE=''CHINE_CODE
+  AND ROWNUM = 1 
+ORDER BY SEQ:ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634712128812" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  
+AND X.MACHINE_CODE=''CHINE_CODE
+  AND ROWNUM = 1 
+ORDER BY SEQ 】
+
+Exception：ORA-00933: SQL 命令的結束有問題</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT X.MACHINE_CODE, X.TYPE_DESC, X.REASON_DESC, X.DOWN_TIME, ROUND(X.DOWN_TIME/Y.TOTAL_TIME, 4) * 100 PERCENT 
+FROM 
+(
+SELECT 
+A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC, SUM(A.WORK_TIME_MINUTE) DOWN_TIME, 1 SEQ 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, B.REASON_DESC 
+UNION ALL 
+SELECT A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC, D.TYPE_DESC, SUM(WORK_TIME_MINUTE), 2 
+FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+JOIN SAJET.SYS_MACHINE C ON A.MACHINE_ID=C.MACHINE_ID 
+JOIN SAJET.SYS_MACHINE_DOWN_TYPE D ON B.TYPE_ID=D.TYPE_ID 
+GROUP BY A.MACHINE_ID, C.MACHINE_CODE, B.TYPE_ID, D.TYPE_DESC
+) X 
+JOIN 
+(
+     SELECT A.MACHINE_ID, B.TYPE_ID, SUM(A.WORK_TIME_MINUTE) TOTAL_TIME 
+     FROM SAJET.G_MACHINE_DOWN_EXCLUDE A
+     JOIN SAJET.SYS_MACHINE_DOWN_DETAIL B ON A.REASON_ID=B.REASON_ID 
+     GROUP BY A.MACHINE_ID, B.TYPE_ID
+) Y ON X.MACHINE_ID=Y.MACHINE_ID AND X.TYPE_ID=Y.TYPE_ID 
+WHERE 1=1  
+AND X.MACHINE_CODE=''CHINE_CODE
+  AND ROWNUM = 1 
+ORDER BY SEQ 】
+
+Exception：ORA-00933: SQL 命令的結束有問題
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1634712208007" level="FATAL" thread="1"><log4j:message>SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.InvalidOperationException: SplitterDistance 必須介於 Panel1MinSize 和 Width - Panel2MinSize 之間。
+   於 System.Windows.Forms.SplitContainer.set_SplitterDistance(Int32 value)
+   於 System.Windows.Forms.SplitContainer.set_Orientation(Orientation value)
+   於 CCustomerReport.fMain.fMain_Shown(Object sender, EventArgs e)
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="System.Windows.Forms.SplitContainer" method="Void set_SplitterDistance(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>

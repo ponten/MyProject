@@ -1,0 +1,99 @@
+<?xml version="1.0" standalone="yes"?>
+<ExceptionSolution>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void FCallDivide(System.Decimal ByRef, System.Decimal ByRef)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System</AppModuleNameSpace>
+    <AppModuleClassName>Decimal</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>TValue get_Item(TKey)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Collections.Generic</AppModuleNameSpace>
+    <AppModuleClassName>Dictionary`2</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System</AppModuleNameSpace>
+    <AppModuleClassName>Number</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>System.Object get_Item(Int32)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.Collections</AppModuleNameSpace>
+    <AppModuleClassName>ArrayList</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System</AppModuleNameSpace>
+    <AppModuleClassName>Number</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System</AppModuleNameSpace>
+    <AppModuleClassName>DateTimeParse</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>System.String Substring(Int32, Int32)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System</AppModuleNameSpace>
+    <AppModuleClassName>String</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void WinIOError(Int32, System.String)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System.IO</AppModuleNameSpace>
+    <AppModuleClassName>__Error</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void ThrowArgumentOutOfRangeException(System.ExceptionArgument, System.ExceptionResource)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System</AppModuleNameSpace>
+    <AppModuleClassName>ThrowHelper</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>System.Object CreateInstance(System.RuntimeType, Boolean, Boolean, Boolean ByRef, System.RuntimeMethodHandleInternal ByRef, Boolean ByRef)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System</AppModuleNameSpace>
+    <AppModuleClassName>RuntimeTypeHandle</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Int32 ToInt32(Int64)</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System</AppModuleNameSpace>
+    <AppModuleClassName>Convert</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>System.Object InvokeDispMethod(System.String, System.Reflection.BindingFlags, System.Object, System.Object[], Boolean[], Int32, System.String[])</AppFunctionName>
+    <AppModuleFileName>mscorlib.dll</AppModuleFileName>
+    <AppModuleNameSpace>System</AppModuleNameSpace>
+    <AppModuleClassName>RuntimeType</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+</ExceptionSolution>

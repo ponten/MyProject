@@ -1,0 +1,302 @@
+<log4j:event logger="ClientUtils" timestamp="1630569475180" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+WITH ROUTE_DETAIL AS (
+    SELECT
+        ROWNUM IDX,
+        NODE_CONTENT,
+        NODE_ID
+    FROM
+        SAJET.SYS_RC_ROUTE_DETAIL
+    START WITH ROUTE_ID = :ROUTE_ID
+               AND NODE_CONTENT = 'START' CONNECT BY PRIOR NEXT_NODE_ID = NODE_ID
+                                                     OR PRIOR NEXT_NODE_ID = GROUP_ID
+), PROCESSES AS (
+    SELECT
+        B.IDX,
+        C.PROCESS_NAME,
+        B.NODE_ID
+    FROM
+        ROUTE_DETAIL        B,
+        SAJET.SYS_PROCESS   C
+    WHERE
+        B.NODE_CONTENT = TO_CHAR(C.PROCESS_ID)
+), PROCESS_OPTIONS AS (
+    SELECT
+        PART_ID,
+        ROUTE_ID,
+        NODE_ID,
+        PROCESS_ID,
+        OPTION1
+    FROM
+        SAJET.SYS_PROCESS_OPTION_PART
+    WHERE
+        PART_ID = :PART_ID
+        AND ROUTE_ID = :ROUTE_ID
+)
+SELECT
+    A.PROCESS_NAME,
+    A.NODE_ID,
+    NVL(B.OPTION1, 0) STD_WORKTIME
+FROM
+    PROCESSES         A,
+    PROCESS_OPTIONS   B
+WHERE
+    A.NODE_ID = B.NODE_ID (+)
+ORDER BY
+    IDX
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1630569475342" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+WITH ROUTE_DETAIL AS (
+    SELECT
+        ROWNUM IDX,
+        NODE_CONTENT,
+        NODE_ID
+    FROM
+        SAJET.SYS_RC_ROUTE_DETAIL
+    START WITH ROUTE_ID = :ROUTE_ID
+               AND NODE_CONTENT = 'START' CONNECT BY PRIOR NEXT_NODE_ID = NODE_ID
+                                                     OR PRIOR NEXT_NODE_ID = GROUP_ID
+), PROCESSES AS (
+    SELECT
+        B.IDX,
+        C.PROCESS_NAME,
+        B.NODE_ID
+    FROM
+        ROUTE_DETAIL        B,
+        SAJET.SYS_PROCESS   C
+    WHERE
+        B.NODE_CONTENT = TO_CHAR(C.PROCESS_ID)
+), PROCESS_OPTIONS AS (
+    SELECT
+        PART_ID,
+        ROUTE_ID,
+        NODE_ID,
+        PROCESS_ID,
+        OPTION1
+    FROM
+        SAJET.SYS_PROCESS_OPTION_PART
+    WHERE
+        PART_ID = :PART_ID
+        AND ROUTE_ID = :ROUTE_ID
+)
+SELECT
+    A.PROCESS_NAME,
+    A.NODE_ID,
+    NVL(B.OPTION1, 0) STD_WORKTIME
+FROM
+    PROCESSES         A,
+    PROCESS_OPTIONS   B
+WHERE
+    A.NODE_ID = B.NODE_ID (+)
+ORDER BY
+    IDX
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.Exception: ExecuteSQL#2: →【 
+WITH ROUTE_DETAIL AS (
+    SELECT
+        ROWNUM IDX,
+        NODE_CONTENT,
+        NODE_ID
+    FROM
+        SAJET.SYS_RC_ROUTE_DETAIL
+    START WITH ROUTE_ID = :ROUTE_ID
+               AND NODE_CONTENT = 'START' CONNECT BY PRIOR NEXT_NODE_ID = NODE_ID
+                                                     OR PRIOR NEXT_NODE_ID = GROUP_ID
+), PROCESSES AS (
+    SELECT
+        B.IDX,
+        C.PROCESS_NAME,
+        B.NODE_ID
+    FROM
+        ROUTE_DETAIL        B,
+        SAJET.SYS_PROCESS   C
+    WHERE
+        B.NODE_CONTENT = TO_CHAR(C.PROCESS_ID)
+), PROCESS_OPTIONS AS (
+    SELECT
+        PART_ID,
+        ROUTE_ID,
+        NODE_ID,
+        PROCESS_ID,
+        OPTION1
+    FROM
+        SAJET.SYS_PROCESS_OPTION_PART
+    WHERE
+        PART_ID = :PART_ID
+        AND ROUTE_ID = :ROUTE_ID
+)
+SELECT
+    A.PROCESS_NAME,
+    A.NODE_ID,
+    NVL(B.OPTION1, 0) STD_WORKTIME
+FROM
+    PROCESSES         A,
+    PROCESS_OPTIONS   B
+WHERE
+    A.NODE_ID = B.NODE_ID (+)
+ORDER BY
+    IDX
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCProcessParam.Services.PartOptionService.GetData(String part_id, String route_id) 於 C:\FullChamp\fullchamp\DataCenter\RCProcessParameter\2.0.17003.43\RCProcessParameter\Services\PartOptionService.cs: 行 97
+   於 RCProcessParam.fMain.Show_Preview() 於 C:\FullChamp\fullchamp\DataCenter\RCProcessParameter\2.0.17003.43\RCProcessParameter\fMain.cs: 行 2764
+   於 RCProcessParam.fMain.Tc_1_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCProcessParameter\2.0.17003.43\RCProcessParameter\fMain.cs: 行 1568
+   於 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.TabControl.WmSelChange()
+   於 System.Windows.Forms.TabControl.WndProc(Message&amp; m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message&amp; m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message&amp; m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)</log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1630569499063" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+WITH ROUTE_DETAIL AS (
+    SELECT
+        ROWNUM IDX,
+        NODE_CONTENT,
+        NODE_ID
+    FROM
+        SAJET.SYS_RC_ROUTE_DETAIL
+    START WITH ROUTE_ID = :ROUTE_ID
+               AND NODE_CONTENT = 'START' CONNECT BY PRIOR NEXT_NODE_ID = NODE_ID
+                                                     OR PRIOR NEXT_NODE_ID = GROUP_ID
+), PROCESSES AS (
+    SELECT
+        B.IDX,
+        C.PROCESS_NAME,
+        B.NODE_ID
+    FROM
+        ROUTE_DETAIL        B,
+        SAJET.SYS_PROCESS   C
+    WHERE
+        B.NODE_CONTENT = TO_CHAR(C.PROCESS_ID)
+), PROCESS_OPTIONS AS (
+    SELECT
+        PART_ID,
+        ROUTE_ID,
+        NODE_ID,
+        PROCESS_ID,
+        OPTION1
+    FROM
+        SAJET.SYS_PROCESS_OPTION_PART
+    WHERE
+        PART_ID = :PART_ID
+        AND ROUTE_ID = :ROUTE_ID
+)
+SELECT
+    A.PROCESS_NAME,
+    A.NODE_ID,
+    NVL(B.OPTION1, 0) STD_WORKTIME
+FROM
+    PROCESSES         A,
+    PROCESS_OPTIONS   B
+WHERE
+    A.NODE_ID = B.NODE_ID (+)
+ORDER BY
+    IDX
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1630569499082" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+WITH ROUTE_DETAIL AS (
+    SELECT
+        ROWNUM IDX,
+        NODE_CONTENT,
+        NODE_ID
+    FROM
+        SAJET.SYS_RC_ROUTE_DETAIL
+    START WITH ROUTE_ID = :ROUTE_ID
+               AND NODE_CONTENT = 'START' CONNECT BY PRIOR NEXT_NODE_ID = NODE_ID
+                                                     OR PRIOR NEXT_NODE_ID = GROUP_ID
+), PROCESSES AS (
+    SELECT
+        B.IDX,
+        C.PROCESS_NAME,
+        B.NODE_ID
+    FROM
+        ROUTE_DETAIL        B,
+        SAJET.SYS_PROCESS   C
+    WHERE
+        B.NODE_CONTENT = TO_CHAR(C.PROCESS_ID)
+), PROCESS_OPTIONS AS (
+    SELECT
+        PART_ID,
+        ROUTE_ID,
+        NODE_ID,
+        PROCESS_ID,
+        OPTION1
+    FROM
+        SAJET.SYS_PROCESS_OPTION_PART
+    WHERE
+        PART_ID = :PART_ID
+        AND ROUTE_ID = :ROUTE_ID
+)
+SELECT
+    A.PROCESS_NAME,
+    A.NODE_ID,
+    NVL(B.OPTION1, 0) STD_WORKTIME
+FROM
+    PROCESSES         A,
+    PROCESS_OPTIONS   B
+WHERE
+    A.NODE_ID = B.NODE_ID (+)
+ORDER BY
+    IDX
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.Exception: ExecuteSQL#2: →【 
+WITH ROUTE_DETAIL AS (
+    SELECT
+        ROWNUM IDX,
+        NODE_CONTENT,
+        NODE_ID
+    FROM
+        SAJET.SYS_RC_ROUTE_DETAIL
+    START WITH ROUTE_ID = :ROUTE_ID
+               AND NODE_CONTENT = 'START' CONNECT BY PRIOR NEXT_NODE_ID = NODE_ID
+                                                     OR PRIOR NEXT_NODE_ID = GROUP_ID
+), PROCESSES AS (
+    SELECT
+        B.IDX,
+        C.PROCESS_NAME,
+        B.NODE_ID
+    FROM
+        ROUTE_DETAIL        B,
+        SAJET.SYS_PROCESS   C
+    WHERE
+        B.NODE_CONTENT = TO_CHAR(C.PROCESS_ID)
+), PROCESS_OPTIONS AS (
+    SELECT
+        PART_ID,
+        ROUTE_ID,
+        NODE_ID,
+        PROCESS_ID,
+        OPTION1
+    FROM
+        SAJET.SYS_PROCESS_OPTION_PART
+    WHERE
+        PART_ID = :PART_ID
+        AND ROUTE_ID = :ROUTE_ID
+)
+SELECT
+    A.PROCESS_NAME,
+    A.NODE_ID,
+    NVL(B.OPTION1, 0) STD_WORKTIME
+FROM
+    PROCESSES         A,
+    PROCESS_OPTIONS   B
+WHERE
+    A.NODE_ID = B.NODE_ID (+)
+ORDER BY
+    IDX
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCProcessParam.Services.PartOptionService.GetData(String part_id, String route_id) 於 C:\FullChamp\fullchamp\DataCenter\RCProcessParameter\2.0.17003.43\RCProcessParameter\Services\PartOptionService.cs: 行 97
+   於 RCProcessParam.fMain.Show_Preview() 於 C:\FullChamp\fullchamp\DataCenter\RCProcessParameter\2.0.17003.43\RCProcessParameter\fMain.cs: 行 2764
+   於 RCProcessParam.fMain.Tc_1_SelectedIndexChanged(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCProcessParameter\2.0.17003.43\RCProcessParameter\fMain.cs: 行 1568
+   於 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   於 System.Windows.Forms.TabControl.WmSelChange()
+   於 System.Windows.Forms.TabControl.WndProc(Message&amp; m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message&amp; m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message&amp; m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)</log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>

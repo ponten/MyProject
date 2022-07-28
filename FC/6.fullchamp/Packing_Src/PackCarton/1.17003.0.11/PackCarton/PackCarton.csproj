@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FB2085A-3E55-4036-9EBF-D75E1C2E80C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PackCarton</RootNamespace>
+    <AssemblyName>PackCarton</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Chroma Application Client\Packing\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClientUtils">
+      <HintPath>..\..\..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Excel">
+      <HintPath>..\..\..\..\..\Chroma Application Client\Excel.DLL</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Vbe.Interop.Forms">
+      <HintPath>..\..\..\..\..\Chroma Application Client\Microsoft.Vbe.Interop.Forms.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PrintLabel, Version=1.17003.0.18, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Chroma Application Client\PrintLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Check.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComConfig.cs" />
+    <Compile Include="ExportOfficeExcel.cs" />
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPrintNewRC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPrintNewRC.Designer.cs">
+      <DependentUpon>fPrintNewRC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReprint.Designer.cs">
+      <DependentUpon>fReprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fWeightCarton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fWeightCarton.Designer.cs">
+      <DependentUpon>fWeightCarton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackExe.cs" />
+    <Compile Include="PrintLabel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SajetCommon.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPrintNewRC.resx">
+      <DependentUpon>fPrintNewRC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReprint.resx">
+      <DependentUpon>fReprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fWeightCarton.resx">
+      <DependentUpon>fWeightCarton.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PackCarton.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PackCartonCOMConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

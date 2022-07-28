@@ -1,0 +1,54 @@
+-- Create table
+create table SYS_QC_SAMPLING_PLAN
+(
+  sampling_id   NUMBER not null,
+  sampling_type VARCHAR2(25),
+  sampling_desc VARCHAR2(50),
+  update_userid NUMBER,
+  update_time   DATE default SYSDATE,
+  enabled       VARCHAR2(10) default 'Y'
+)
+tablespace SYSBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table SYS_QC_SAMPLING_PLAN
+  is '抽樣計劃資料表';
+-- Add comments to the columns 
+comment on column SYS_QC_SAMPLING_PLAN.sampling_id
+  is '系統產生唯一的值';
+comment on column SYS_QC_SAMPLING_PLAN.sampling_type
+  is '抽樣計劃名稱';
+comment on column SYS_QC_SAMPLING_PLAN.sampling_desc
+  is '描述';
+comment on column SYS_QC_SAMPLING_PLAN.update_userid
+  is 'SYS_EMP.EMP_ID';
+comment on column SYS_QC_SAMPLING_PLAN.update_time
+  is '資料異動時間';
+comment on column SYS_QC_SAMPLING_PLAN.enabled
+  is '資料是否有效';
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table SYS_QC_SAMPLING_PLAN
+  add constraint SYS_SAMPLING_PLAN_PK primary key (SAMPLING_ID)
+  using index 
+  tablespace SYSBSIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on SYS_QC_SAMPLING_PLAN to SYS_USER;

@@ -1,0 +1,13 @@
+--------------------------------------------------------
+--  已建立檔案 - 星期二-十二月-29-2020   
+--------------------------------------------------------
+REM INSERTING into SAJET.SYS_PROGRAM_FUN_AUTHORITY
+SET DEFINE OFF;
+Insert into SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) values ('WIP','IPQC',0,'Read Only');
+Insert into SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) values ('WIP','IPQC',1,'Allow To Change');
+Insert into SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) values ('WIP','IPQC',2,'Full Control');
+Insert into SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) values ('WIP','IPQC',3,'Allow To Execute');
+Insert into SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) values ('WIP','Repair',0,'Read Only');
+Insert into SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) values ('WIP','Repair',1,'Allow To Change');
+Insert into SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) values ('WIP','Repair',2,'Full Control');
+Insert into SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) values ('WIP','Repair',3,'Allow To Execute');

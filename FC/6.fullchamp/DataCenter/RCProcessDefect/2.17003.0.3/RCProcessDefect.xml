@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <English>
+    <Message Name="Stage Name" Value="Stage Name"/>
+    <Message Name="Stage Description" Value="Description"/>
+    <Message Name="Stage Code" Value="Stage Code"/>
+    <Message Name="Process Name" Value="Process Name"/>
+    <Message Name="Description" Value="Description"/>
+    <Message Name="Description2" Value="Description2"/>
+    <Message Name="Process Code" Value="Process Code"/>
+    <Message Name="Operate Type" Value="Operate Type"/>
+    <Message Name="STAGE_NAME" Value="Stage Name"/>
+    <Message Name="has one or more Processes" Value="has one or more Processes"/>
+    <Message Name="Can not delete it" Value="Can not delete it"/>
+    <Message Name="has one or more Terminals" Value="has one or more Terminals"/>
+    <Message Name="PROCESS_NAME" Value="Process Name"/> 
+    <Message Name="PROCESS_DESC" Value="Description"/>
+    <Message Name="Click" Value="Click"/>
+  </English>
+  <繁體中文>
+    <Message Name="Stage Name" Value="區段名稱"/>
+    <Message Name="Stage Description" Value="區段描述"/>
+    <Message Name="Stage Code" Value="區段代碼"/>
+    <Message Name="Process Name" Value="製程名稱"/>
+    <Message Name="Description" Value="製程描述"/>
+    <Message Name="Description2" Value="製程描述(2)"/>
+    <Message Name="Process Code" Value="製程代碼"/>
+    <Message Name="Operate Type" Value="製程類型"/>
+    <Message Name="STAGE_NAME" Value="區段名稱"/>
+    <Message Name="has one or more Processes" Value="已包含製程資料"/>
+    <Message Name="Can not delete it" Value="不可刪除"/>
+    <Message Name="has one or more Terminals" Value="已包含工作站資料"/>
+    <Message Name="Please Select a Item." Value="請選擇產品製程參數項目"/>
+    <Message Name="Please Select One Item." Value="請選擇一個產品製程參數項目"/>
+    <Message Name="Delete the Item?" Value="刪除此產品製程參數"/>
+    <Message Name="Delete Item : " Value="刪除產品製程參數: "/>
+    <Message Name="Check Input Data Error." Value="輸入資料檢查錯誤"/>
+    <Message Name="Data Duplicate" Value="資料重複"/>
+    <Message Name="Data is null" Value="請輸入製程"/>
+    <Message Name="Delete Item Error." Value="刪除此產品製程參數錯誤"/>
+    <Message Name="Process Description" Value="製程描述"/>
+    <Message Name="Defect Code" Value="不良代碼"/>
+    <Message Name="Defect Description" Value="不良描述"/>
+    <Message Name="EMP NO" Value="更新資料人員"/>
+    <Message Name="Update Time" Value="更新時間"/>
+    <Message Name="Select All" Value="全選"/>
+    <Message Name="PROCESS_NAME" Value="製程名稱"/> 
+    <Message Name="PROCESS_DESC" Value="製程描述"/>
+    <Message Name="Click" Value="勾選"/>
+  </繁體中文>
+</Chroma>

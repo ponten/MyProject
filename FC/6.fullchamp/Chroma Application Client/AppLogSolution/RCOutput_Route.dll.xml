@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<ExceptionSolution>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void fMain_Shown(System.Object, System.EventArgs)</AppFunctionName>
+    <AppModuleFileName>RCOutput_Route.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCOutput_Route</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Void GetRouteProcess()</AppFunctionName>
+    <AppModuleFileName>RCOutput_Route.dll</AppModuleFileName>
+    <AppModuleNameSpace>RCOutput_Route</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+</ExceptionSolution>

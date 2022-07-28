@@ -1,0 +1,1039 @@
+<log4j:event logger="ClientUtils" timestamp="1600303120499" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    AAA.PROCESS_CODE
+   ,AAA.PROCESS_NAME
+   ,AAA.WORK_ORDER
+   ,AAA.RC_NO
+   ,AAA.PART_NO
+   ,AAA.SPEC1
+   ,AAA.SPEC2
+   ,BBB.MACHINE_CODE
+   ,BBB.MACHINE_DESC
+   ,BBB.TYPE_CODE
+   ,BBB.TYPE_DESC
+   ,BBB.REASON_CODE
+   ,BBB.REASON_DESC
+   ,BBB.REMARK
+   ,BBB.START_TIME
+   ,BBB.END_TIME
+   ,BBB.WORK_TIME
+FROM
+    (
+        SELECT
+            SPS.PROCESS_CODE
+           ,SPS.PROCESS_NAME
+           ,GRT.TRAVEL_ID
+           ,GRT.WORK_ORDER
+           ,GRT.RC_NO
+           ,SPT.PART_NO
+           ,SPT.SPEC1
+           ,SPT.SPEC2
+        FROM
+            (
+                SELECT * FROM SAJET.G_RC_STATUS
+                UNION
+                SELECT * FROM SAJET.G_RC_TRAVEL
+            ) GRT
+           ,SAJET.SYS_PROCESS SPS
+           ,SAJET.SYS_PART SPT
+        WHERE 1 = 1
+        AND GRT.PROCESS_ID = SPS.PROCESS_ID
+        AND GRT.PART_ID = SPT.PART_ID
+    ) AAA
+   ,(
+        SELECT
+            GRTMD.TRAVEL_ID
+           ,GRTMD.RC_NO
+           ,SMDT.TYPE_CODE
+           ,SMDT.TYPE_DESC
+           ,SMDD.REASON_CODE
+           ,SMDD.REASON_DESC
+           ,SM.MACHINE_CODE
+           ,SM.MACHINE_DESC
+           ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24:MI:SS') "START_TIME"
+           ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24:MI:SS') "END_TIME"
+           ,GRTMD.WORK_TIME
+           ,GRTMD.REMARK
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+           ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+           ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+           ,SAJET.SYS_MACHINE SM
+        WHERE 1 = 1
+        AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+        AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+        AND GRTMD.MACHINE_ID = SM.MACHINE_ID
+    ) BBB
+WHERE 1 = 1
+AND AAA.TRAVEL_ID = BBB.TRAVEL_ID(+)
+AND AAA.RC_NO = BBB.RC_NO(+)
+
+
+
+
+
+
+ORDER BY
+    AAA.PROCESS_CODE
+   ,AAA.RC_NO
+   ,BBB.MACHINE_CODE
+   ,BBB.START_TIME:ORA-00904: "GRTMD"."WORK_TIME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1600303165688" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    AAA.PROCESS_CODE
+   ,AAA.PROCESS_NAME
+   ,AAA.WORK_ORDER
+   ,AAA.RC_NO
+   ,AAA.PART_NO
+   ,AAA.SPEC1
+   ,AAA.SPEC2
+   ,BBB.MACHINE_CODE
+   ,BBB.MACHINE_DESC
+   ,BBB.TYPE_CODE
+   ,BBB.TYPE_DESC
+   ,BBB.REASON_CODE
+   ,BBB.REASON_DESC
+   ,BBB.REMARK
+   ,BBB.START_TIME
+   ,BBB.END_TIME
+   ,BBB.WORK_TIME_MINUTE
+FROM
+    (
+        SELECT
+            SPS.PROCESS_CODE
+           ,SPS.PROCESS_NAME
+           ,GRT.TRAVEL_ID
+           ,GRT.WORK_ORDER
+           ,GRT.RC_NO
+           ,SPT.PART_NO
+           ,SPT.SPEC1
+           ,SPT.SPEC2
+        FROM
+            (
+                SELECT * FROM SAJET.G_RC_STATUS
+                UNION
+                SELECT * FROM SAJET.G_RC_TRAVEL
+            ) GRT
+           ,SAJET.SYS_PROCESS SPS
+           ,SAJET.SYS_PART SPT
+        WHERE 1 = 1
+        AND GRT.PROCESS_ID = SPS.PROCESS_ID
+        AND GRT.PART_ID = SPT.PART_ID
+    ) AAA
+   ,(
+        SELECT
+            GRTMD.TRAVEL_ID
+           ,GRTMD.RC_NO
+           ,SMDT.TYPE_CODE
+           ,SMDT.TYPE_DESC
+           ,SMDD.REASON_CODE
+           ,SMDD.REASON_DESC
+           ,SM.MACHINE_CODE
+           ,SM.MACHINE_DESC
+           ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24@MI@SS') "START_TIME"
+           ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24@MI@SS') "END_TIME"
+           ,GRTMD.WORK_TIME
+           ,GRTMD.REMARK
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+           ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+           ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+           ,SAJET.SYS_MACHINE SM
+        WHERE 1 = 1
+        AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+        AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+        AND GRTMD.MACHINE_ID = SM.MACHINE_ID
+    ) BBB
+WHERE 1 = 1
+AND AAA.TRAVEL_ID = BBB.TRAVEL_ID(+)
+AND AAA.RC_NO = BBB.RC_NO(+)
+AND AAA.WORK_ORDER Like ''
+AND AAA.RC_NO Like ''
+AND AAA.PART_NO Like ''
+AND AAA.SPEC1 Like ''
+AND AAA.SPEC2 = ''
+AND AAA.PROCESS_NAME In  ('') 
+ORDER BY
+    AAA.PROCESS_CODE
+   ,AAA.RC_NO
+   ,BBB.MACHINE_CODE
+   ,BBB.START_TIME:ORA-00904: "GRTMD"."WORK_TIME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600303165720" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT
+    AAA.PROCESS_CODE
+   ,AAA.PROCESS_NAME
+   ,AAA.WORK_ORDER
+   ,AAA.RC_NO
+   ,AAA.PART_NO
+   ,AAA.SPEC1
+   ,AAA.SPEC2
+   ,BBB.MACHINE_CODE
+   ,BBB.MACHINE_DESC
+   ,BBB.TYPE_CODE
+   ,BBB.TYPE_DESC
+   ,BBB.REASON_CODE
+   ,BBB.REASON_DESC
+   ,BBB.REMARK
+   ,BBB.START_TIME
+   ,BBB.END_TIME
+   ,BBB.WORK_TIME_MINUTE
+FROM
+    (
+        SELECT
+            SPS.PROCESS_CODE
+           ,SPS.PROCESS_NAME
+           ,GRT.TRAVEL_ID
+           ,GRT.WORK_ORDER
+           ,GRT.RC_NO
+           ,SPT.PART_NO
+           ,SPT.SPEC1
+           ,SPT.SPEC2
+        FROM
+            (
+                SELECT * FROM SAJET.G_RC_STATUS
+                UNION
+                SELECT * FROM SAJET.G_RC_TRAVEL
+            ) GRT
+           ,SAJET.SYS_PROCESS SPS
+           ,SAJET.SYS_PART SPT
+        WHERE 1 = 1
+        AND GRT.PROCESS_ID = SPS.PROCESS_ID
+        AND GRT.PART_ID = SPT.PART_ID
+    ) AAA
+   ,(
+        SELECT
+            GRTMD.TRAVEL_ID
+           ,GRTMD.RC_NO
+           ,SMDT.TYPE_CODE
+           ,SMDT.TYPE_DESC
+           ,SMDD.REASON_CODE
+           ,SMDD.REASON_DESC
+           ,SM.MACHINE_CODE
+           ,SM.MACHINE_DESC
+           ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24@MI@SS') "START_TIME"
+           ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24@MI@SS') "END_TIME"
+           ,GRTMD.WORK_TIME
+           ,GRTMD.REMARK
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+           ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+           ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+           ,SAJET.SYS_MACHINE SM
+        WHERE 1 = 1
+        AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+        AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+        AND GRTMD.MACHINE_ID = SM.MACHINE_ID
+    ) BBB
+WHERE 1 = 1
+AND AAA.TRAVEL_ID = BBB.TRAVEL_ID(+)
+AND AAA.RC_NO = BBB.RC_NO(+)
+AND AAA.WORK_ORDER Like ''
+AND AAA.RC_NO Like ''
+AND AAA.PART_NO Like ''
+AND AAA.SPEC1 Like ''
+AND AAA.SPEC2 = ''
+AND AAA.PROCESS_NAME In  ('') 
+ORDER BY
+    AAA.PROCESS_CODE
+   ,AAA.RC_NO
+   ,BBB.MACHINE_CODE
+   ,BBB.START_TIME 】
+
+Exception：ORA-00904: "GRTMD"."WORK_TIME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT
+    AAA.PROCESS_CODE
+   ,AAA.PROCESS_NAME
+   ,AAA.WORK_ORDER
+   ,AAA.RC_NO
+   ,AAA.PART_NO
+   ,AAA.SPEC1
+   ,AAA.SPEC2
+   ,BBB.MACHINE_CODE
+   ,BBB.MACHINE_DESC
+   ,BBB.TYPE_CODE
+   ,BBB.TYPE_DESC
+   ,BBB.REASON_CODE
+   ,BBB.REASON_DESC
+   ,BBB.REMARK
+   ,BBB.START_TIME
+   ,BBB.END_TIME
+   ,BBB.WORK_TIME_MINUTE
+FROM
+    (
+        SELECT
+            SPS.PROCESS_CODE
+           ,SPS.PROCESS_NAME
+           ,GRT.TRAVEL_ID
+           ,GRT.WORK_ORDER
+           ,GRT.RC_NO
+           ,SPT.PART_NO
+           ,SPT.SPEC1
+           ,SPT.SPEC2
+        FROM
+            (
+                SELECT * FROM SAJET.G_RC_STATUS
+                UNION
+                SELECT * FROM SAJET.G_RC_TRAVEL
+            ) GRT
+           ,SAJET.SYS_PROCESS SPS
+           ,SAJET.SYS_PART SPT
+        WHERE 1 = 1
+        AND GRT.PROCESS_ID = SPS.PROCESS_ID
+        AND GRT.PART_ID = SPT.PART_ID
+    ) AAA
+   ,(
+        SELECT
+            GRTMD.TRAVEL_ID
+           ,GRTMD.RC_NO
+           ,SMDT.TYPE_CODE
+           ,SMDT.TYPE_DESC
+           ,SMDD.REASON_CODE
+           ,SMDD.REASON_DESC
+           ,SM.MACHINE_CODE
+           ,SM.MACHINE_DESC
+           ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24@MI@SS') "START_TIME"
+           ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24@MI@SS') "END_TIME"
+           ,GRTMD.WORK_TIME
+           ,GRTMD.REMARK
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+           ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+           ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+           ,SAJET.SYS_MACHINE SM
+        WHERE 1 = 1
+        AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+        AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+        AND GRTMD.MACHINE_ID = SM.MACHINE_ID
+    ) BBB
+WHERE 1 = 1
+AND AAA.TRAVEL_ID = BBB.TRAVEL_ID(+)
+AND AAA.RC_NO = BBB.RC_NO(+)
+AND AAA.WORK_ORDER Like ''
+AND AAA.RC_NO Like ''
+AND AAA.PART_NO Like ''
+AND AAA.SPEC1 Like ''
+AND AAA.SPEC2 = ''
+AND AAA.PROCESS_NAME In  ('') 
+ORDER BY
+    AAA.PROCESS_CODE
+   ,AAA.RC_NO
+   ,BBB.MACHINE_CODE
+   ,BBB.START_TIME 】
+
+Exception：ORA-00904: "GRTMD"."WORK_TIME": 無效的 ID
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.SajetCommon.AddMasterField(String strMasterSql, DataGridView gvParam)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1600303167992" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    AAA.PROCESS_CODE
+   ,AAA.PROCESS_NAME
+   ,AAA.WORK_ORDER
+   ,AAA.RC_NO
+   ,AAA.PART_NO
+   ,AAA.SPEC1
+   ,AAA.SPEC2
+   ,BBB.MACHINE_CODE
+   ,BBB.MACHINE_DESC
+   ,BBB.TYPE_CODE
+   ,BBB.TYPE_DESC
+   ,BBB.REASON_CODE
+   ,BBB.REASON_DESC
+   ,BBB.REMARK
+   ,BBB.START_TIME
+   ,BBB.END_TIME
+   ,BBB.WORK_TIME_MINUTE
+FROM
+    (
+        SELECT
+            SPS.PROCESS_CODE
+           ,SPS.PROCESS_NAME
+           ,GRT.TRAVEL_ID
+           ,GRT.WORK_ORDER
+           ,GRT.RC_NO
+           ,SPT.PART_NO
+           ,SPT.SPEC1
+           ,SPT.SPEC2
+        FROM
+            (
+                SELECT * FROM SAJET.G_RC_STATUS
+                UNION
+                SELECT * FROM SAJET.G_RC_TRAVEL
+            ) GRT
+           ,SAJET.SYS_PROCESS SPS
+           ,SAJET.SYS_PART SPT
+        WHERE 1 = 1
+        AND GRT.PROCESS_ID = SPS.PROCESS_ID
+        AND GRT.PART_ID = SPT.PART_ID
+    ) AAA
+   ,(
+        SELECT
+            GRTMD.TRAVEL_ID
+           ,GRTMD.RC_NO
+           ,SMDT.TYPE_CODE
+           ,SMDT.TYPE_DESC
+           ,SMDD.REASON_CODE
+           ,SMDD.REASON_DESC
+           ,SM.MACHINE_CODE
+           ,SM.MACHINE_DESC
+           ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24@MI@SS') "START_TIME"
+           ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24@MI@SS') "END_TIME"
+           ,GRTMD.WORK_TIME
+           ,GRTMD.REMARK
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+           ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+           ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+           ,SAJET.SYS_MACHINE SM
+        WHERE 1 = 1
+        AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+        AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+        AND GRTMD.MACHINE_ID = SM.MACHINE_ID
+    ) BBB
+WHERE 1 = 1
+AND AAA.TRAVEL_ID = BBB.TRAVEL_ID(+)
+AND AAA.RC_NO = BBB.RC_NO(+)
+AND AAA.WORK_ORDER Like ''
+AND AAA.RC_NO Like ''
+AND AAA.PART_NO Like ''
+AND AAA.SPEC1 Like ''
+AND AAA.SPEC2 = ''
+AND AAA.PROCESS_NAME In  ('') 
+ORDER BY
+    AAA.PROCESS_CODE
+   ,AAA.RC_NO
+   ,BBB.MACHINE_CODE
+   ,BBB.START_TIME:ORA-00904: "GRTMD"."WORK_TIME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600303168008" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT
+    AAA.PROCESS_CODE
+   ,AAA.PROCESS_NAME
+   ,AAA.WORK_ORDER
+   ,AAA.RC_NO
+   ,AAA.PART_NO
+   ,AAA.SPEC1
+   ,AAA.SPEC2
+   ,BBB.MACHINE_CODE
+   ,BBB.MACHINE_DESC
+   ,BBB.TYPE_CODE
+   ,BBB.TYPE_DESC
+   ,BBB.REASON_CODE
+   ,BBB.REASON_DESC
+   ,BBB.REMARK
+   ,BBB.START_TIME
+   ,BBB.END_TIME
+   ,BBB.WORK_TIME_MINUTE
+FROM
+    (
+        SELECT
+            SPS.PROCESS_CODE
+           ,SPS.PROCESS_NAME
+           ,GRT.TRAVEL_ID
+           ,GRT.WORK_ORDER
+           ,GRT.RC_NO
+           ,SPT.PART_NO
+           ,SPT.SPEC1
+           ,SPT.SPEC2
+        FROM
+            (
+                SELECT * FROM SAJET.G_RC_STATUS
+                UNION
+                SELECT * FROM SAJET.G_RC_TRAVEL
+            ) GRT
+           ,SAJET.SYS_PROCESS SPS
+           ,SAJET.SYS_PART SPT
+        WHERE 1 = 1
+        AND GRT.PROCESS_ID = SPS.PROCESS_ID
+        AND GRT.PART_ID = SPT.PART_ID
+    ) AAA
+   ,(
+        SELECT
+            GRTMD.TRAVEL_ID
+           ,GRTMD.RC_NO
+           ,SMDT.TYPE_CODE
+           ,SMDT.TYPE_DESC
+           ,SMDD.REASON_CODE
+           ,SMDD.REASON_DESC
+           ,SM.MACHINE_CODE
+           ,SM.MACHINE_DESC
+           ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24@MI@SS') "START_TIME"
+           ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24@MI@SS') "END_TIME"
+           ,GRTMD.WORK_TIME
+           ,GRTMD.REMARK
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+           ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+           ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+           ,SAJET.SYS_MACHINE SM
+        WHERE 1 = 1
+        AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+        AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+        AND GRTMD.MACHINE_ID = SM.MACHINE_ID
+    ) BBB
+WHERE 1 = 1
+AND AAA.TRAVEL_ID = BBB.TRAVEL_ID(+)
+AND AAA.RC_NO = BBB.RC_NO(+)
+AND AAA.WORK_ORDER Like ''
+AND AAA.RC_NO Like ''
+AND AAA.PART_NO Like ''
+AND AAA.SPEC1 Like ''
+AND AAA.SPEC2 = ''
+AND AAA.PROCESS_NAME In  ('') 
+ORDER BY
+    AAA.PROCESS_CODE
+   ,AAA.RC_NO
+   ,BBB.MACHINE_CODE
+   ,BBB.START_TIME 】
+
+Exception：ORA-00904: "GRTMD"."WORK_TIME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT
+    AAA.PROCESS_CODE
+   ,AAA.PROCESS_NAME
+   ,AAA.WORK_ORDER
+   ,AAA.RC_NO
+   ,AAA.PART_NO
+   ,AAA.SPEC1
+   ,AAA.SPEC2
+   ,BBB.MACHINE_CODE
+   ,BBB.MACHINE_DESC
+   ,BBB.TYPE_CODE
+   ,BBB.TYPE_DESC
+   ,BBB.REASON_CODE
+   ,BBB.REASON_DESC
+   ,BBB.REMARK
+   ,BBB.START_TIME
+   ,BBB.END_TIME
+   ,BBB.WORK_TIME_MINUTE
+FROM
+    (
+        SELECT
+            SPS.PROCESS_CODE
+           ,SPS.PROCESS_NAME
+           ,GRT.TRAVEL_ID
+           ,GRT.WORK_ORDER
+           ,GRT.RC_NO
+           ,SPT.PART_NO
+           ,SPT.SPEC1
+           ,SPT.SPEC2
+        FROM
+            (
+                SELECT * FROM SAJET.G_RC_STATUS
+                UNION
+                SELECT * FROM SAJET.G_RC_TRAVEL
+            ) GRT
+           ,SAJET.SYS_PROCESS SPS
+           ,SAJET.SYS_PART SPT
+        WHERE 1 = 1
+        AND GRT.PROCESS_ID = SPS.PROCESS_ID
+        AND GRT.PART_ID = SPT.PART_ID
+    ) AAA
+   ,(
+        SELECT
+            GRTMD.TRAVEL_ID
+           ,GRTMD.RC_NO
+           ,SMDT.TYPE_CODE
+           ,SMDT.TYPE_DESC
+           ,SMDD.REASON_CODE
+           ,SMDD.REASON_DESC
+           ,SM.MACHINE_CODE
+           ,SM.MACHINE_DESC
+           ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24@MI@SS') "START_TIME"
+           ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24@MI@SS') "END_TIME"
+           ,GRTMD.WORK_TIME
+           ,GRTMD.REMARK
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+           ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+           ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+           ,SAJET.SYS_MACHINE SM
+        WHERE 1 = 1
+        AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+        AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+        AND GRTMD.MACHINE_ID = SM.MACHINE_ID
+    ) BBB
+WHERE 1 = 1
+AND AAA.TRAVEL_ID = BBB.TRAVEL_ID(+)
+AND AAA.RC_NO = BBB.RC_NO(+)
+AND AAA.WORK_ORDER Like ''
+AND AAA.RC_NO Like ''
+AND AAA.PART_NO Like ''
+AND AAA.SPEC1 Like ''
+AND AAA.SPEC2 = ''
+AND AAA.PROCESS_NAME In  ('') 
+ORDER BY
+    AAA.PROCESS_CODE
+   ,AAA.RC_NO
+   ,BBB.MACHINE_CODE
+   ,BBB.START_TIME 】
+
+Exception：ORA-00904: "GRTMD"."WORK_TIME": 無效的 ID
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.SajetCommon.AddMasterField(String strMasterSql, DataGridView gvParam)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1600303181299" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    AAA.PROCESS_CODE
+   ,AAA.PROCESS_NAME
+   ,AAA.WORK_ORDER
+   ,AAA.RC_NO
+   ,AAA.PART_NO
+   ,AAA.SPEC1
+   ,AAA.SPEC2
+   ,BBB.MACHINE_CODE
+   ,BBB.MACHINE_DESC
+   ,BBB.TYPE_CODE
+   ,BBB.TYPE_DESC
+   ,BBB.REASON_CODE
+   ,BBB.REASON_DESC
+   ,BBB.REMARK
+   ,BBB.START_TIME
+   ,BBB.END_TIME
+   ,BBB.WORK_TIME_MINUTE
+FROM
+    (
+        SELECT
+            SPS.PROCESS_CODE
+           ,SPS.PROCESS_NAME
+           ,GRT.TRAVEL_ID
+           ,GRT.WORK_ORDER
+           ,GRT.RC_NO
+           ,SPT.PART_NO
+           ,SPT.SPEC1
+           ,SPT.SPEC2
+        FROM
+            (
+                SELECT * FROM SAJET.G_RC_STATUS
+                UNION
+                SELECT * FROM SAJET.G_RC_TRAVEL
+            ) GRT
+           ,SAJET.SYS_PROCESS SPS
+           ,SAJET.SYS_PART SPT
+        WHERE 1 = 1
+        AND GRT.PROCESS_ID = SPS.PROCESS_ID
+        AND GRT.PART_ID = SPT.PART_ID
+    ) AAA
+   ,(
+        SELECT
+            GRTMD.TRAVEL_ID
+           ,GRTMD.RC_NO
+           ,SMDT.TYPE_CODE
+           ,SMDT.TYPE_DESC
+           ,SMDD.REASON_CODE
+           ,SMDD.REASON_DESC
+           ,SM.MACHINE_CODE
+           ,SM.MACHINE_DESC
+           ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24@MI@SS') "START_TIME"
+           ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24@MI@SS') "END_TIME"
+           ,GRTMD.WORK_TIME
+           ,GRTMD.REMARK
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+           ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+           ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+           ,SAJET.SYS_MACHINE SM
+        WHERE 1 = 1
+        AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+        AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+        AND GRTMD.MACHINE_ID = SM.MACHINE_ID
+    ) BBB
+WHERE 1 = 1
+AND AAA.TRAVEL_ID = BBB.TRAVEL_ID(+)
+AND AAA.RC_NO = BBB.RC_NO(+)
+AND AAA.WORK_ORDER Like ''
+AND AAA.RC_NO Like ''
+AND AAA.PART_NO Like ''
+AND AAA.SPEC1 Like ''
+AND AAA.SPEC2 = ''
+AND AAA.PROCESS_NAME In  ('') 
+ORDER BY
+    AAA.PROCESS_CODE
+   ,AAA.RC_NO
+   ,BBB.MACHINE_CODE
+   ,BBB.START_TIME:ORA-00904: "GRTMD"."WORK_TIME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600303181315" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 SELECT
+    AAA.PROCESS_CODE
+   ,AAA.PROCESS_NAME
+   ,AAA.WORK_ORDER
+   ,AAA.RC_NO
+   ,AAA.PART_NO
+   ,AAA.SPEC1
+   ,AAA.SPEC2
+   ,BBB.MACHINE_CODE
+   ,BBB.MACHINE_DESC
+   ,BBB.TYPE_CODE
+   ,BBB.TYPE_DESC
+   ,BBB.REASON_CODE
+   ,BBB.REASON_DESC
+   ,BBB.REMARK
+   ,BBB.START_TIME
+   ,BBB.END_TIME
+   ,BBB.WORK_TIME_MINUTE
+FROM
+    (
+        SELECT
+            SPS.PROCESS_CODE
+           ,SPS.PROCESS_NAME
+           ,GRT.TRAVEL_ID
+           ,GRT.WORK_ORDER
+           ,GRT.RC_NO
+           ,SPT.PART_NO
+           ,SPT.SPEC1
+           ,SPT.SPEC2
+        FROM
+            (
+                SELECT * FROM SAJET.G_RC_STATUS
+                UNION
+                SELECT * FROM SAJET.G_RC_TRAVEL
+            ) GRT
+           ,SAJET.SYS_PROCESS SPS
+           ,SAJET.SYS_PART SPT
+        WHERE 1 = 1
+        AND GRT.PROCESS_ID = SPS.PROCESS_ID
+        AND GRT.PART_ID = SPT.PART_ID
+    ) AAA
+   ,(
+        SELECT
+            GRTMD.TRAVEL_ID
+           ,GRTMD.RC_NO
+           ,SMDT.TYPE_CODE
+           ,SMDT.TYPE_DESC
+           ,SMDD.REASON_CODE
+           ,SMDD.REASON_DESC
+           ,SM.MACHINE_CODE
+           ,SM.MACHINE_DESC
+           ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24@MI@SS') "START_TIME"
+           ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24@MI@SS') "END_TIME"
+           ,GRTMD.WORK_TIME
+           ,GRTMD.REMARK
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+           ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+           ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+           ,SAJET.SYS_MACHINE SM
+        WHERE 1 = 1
+        AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+        AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+        AND GRTMD.MACHINE_ID = SM.MACHINE_ID
+    ) BBB
+WHERE 1 = 1
+AND AAA.TRAVEL_ID = BBB.TRAVEL_ID(+)
+AND AAA.RC_NO = BBB.RC_NO(+)
+AND AAA.WORK_ORDER Like ''
+AND AAA.RC_NO Like ''
+AND AAA.PART_NO Like ''
+AND AAA.SPEC1 Like ''
+AND AAA.SPEC2 = ''
+AND AAA.PROCESS_NAME In  ('') 
+ORDER BY
+    AAA.PROCESS_CODE
+   ,AAA.RC_NO
+   ,BBB.MACHINE_CODE
+   ,BBB.START_TIME 】
+
+Exception：ORA-00904: "GRTMD"."WORK_TIME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 SELECT
+    AAA.PROCESS_CODE
+   ,AAA.PROCESS_NAME
+   ,AAA.WORK_ORDER
+   ,AAA.RC_NO
+   ,AAA.PART_NO
+   ,AAA.SPEC1
+   ,AAA.SPEC2
+   ,BBB.MACHINE_CODE
+   ,BBB.MACHINE_DESC
+   ,BBB.TYPE_CODE
+   ,BBB.TYPE_DESC
+   ,BBB.REASON_CODE
+   ,BBB.REASON_DESC
+   ,BBB.REMARK
+   ,BBB.START_TIME
+   ,BBB.END_TIME
+   ,BBB.WORK_TIME_MINUTE
+FROM
+    (
+        SELECT
+            SPS.PROCESS_CODE
+           ,SPS.PROCESS_NAME
+           ,GRT.TRAVEL_ID
+           ,GRT.WORK_ORDER
+           ,GRT.RC_NO
+           ,SPT.PART_NO
+           ,SPT.SPEC1
+           ,SPT.SPEC2
+        FROM
+            (
+                SELECT * FROM SAJET.G_RC_STATUS
+                UNION
+                SELECT * FROM SAJET.G_RC_TRAVEL
+            ) GRT
+           ,SAJET.SYS_PROCESS SPS
+           ,SAJET.SYS_PART SPT
+        WHERE 1 = 1
+        AND GRT.PROCESS_ID = SPS.PROCESS_ID
+        AND GRT.PART_ID = SPT.PART_ID
+    ) AAA
+   ,(
+        SELECT
+            GRTMD.TRAVEL_ID
+           ,GRTMD.RC_NO
+           ,SMDT.TYPE_CODE
+           ,SMDT.TYPE_DESC
+           ,SMDD.REASON_CODE
+           ,SMDD.REASON_DESC
+           ,SM.MACHINE_CODE
+           ,SM.MACHINE_DESC
+           ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24@MI@SS') "START_TIME"
+           ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24@MI@SS') "END_TIME"
+           ,GRTMD.WORK_TIME
+           ,GRTMD.REMARK
+        FROM
+            SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+           ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+           ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+           ,SAJET.SYS_MACHINE SM
+        WHERE 1 = 1
+        AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+        AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+        AND GRTMD.MACHINE_ID = SM.MACHINE_ID
+    ) BBB
+WHERE 1 = 1
+AND AAA.TRAVEL_ID = BBB.TRAVEL_ID(+)
+AND AAA.RC_NO = BBB.RC_NO(+)
+AND AAA.WORK_ORDER Like ''
+AND AAA.RC_NO Like ''
+AND AAA.PART_NO Like ''
+AND AAA.SPEC1 Like ''
+AND AAA.SPEC2 = ''
+AND AAA.PROCESS_NAME In  ('') 
+ORDER BY
+    AAA.PROCESS_CODE
+   ,AAA.RC_NO
+   ,BBB.MACHINE_CODE
+   ,BBB.START_TIME 】
+
+Exception：ORA-00904: "GRTMD"."WORK_TIME": 無效的 ID
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 CCustomerReportCfg.SajetCommon.AddMasterField(String strMasterSql, DataGridView gvParam)
+   於 CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1600315256853" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT E.PART_NO, A.PRINT, A.COLUMN_ITEM, A.ROW_ITEM, G.EMP_NO, A.UPDATE_TIME 
+                                    FROM SAJET.SYS_RC_PROCESS_PARAM_PART A,
+                                         SAJET.SYS_BOM_INFO B,
+                                         SAJET.SYS_BOM C,
+                                         SAJET.SYS_PART E,
+                                         SAJET.SYS_PROCESS F,
+                                         SAJET.SYS_EMP G
+                                    WHERE 1=1
+                                    AND B.PART_ID = A.PART_ID
+                                    AND B.BOM_ID = C.BOM_ID
+                                    AND E.PART_ID = C.ITEM_PART_ID
+                                    AND F.PROCESS_ID = C.PROCESS_ID
+                                    AND A.PROCESS_ID = C.PROCESS_ID
+                                    AND A.ITEM_NAME = E.PART_NO
+                                    AND G.EMP_ID = A.UPDATE_USERID  AND B.PART_ID =  AND F.PROCESS_NAME = 'N/A' ORDER BY E.PART_NO :ORA-00936: 遺漏表示式</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600319099078" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CCustomerReport.fSQLMultiList.textBox1_KeyPress(Object sender, KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CCustomerReport.fSQLMultiList" method="Void textBox1_KeyPress(System.Object, System.Windows.Forms.KeyPressEventArgs)" file="C:\FullChamp\Chroma Application Client\Query\CCustomerReport.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600319102142" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 CCustomerReport.fSQLMultiList.textBox1_KeyPress(Object sender, KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="CCustomerReport.fSQLMultiList" method="Void textBox1_KeyPress(System.Object, System.Windows.Forms.KeyPressEventArgs)" file="C:\FullChamp\Chroma Application Client\Query\CCustomerReport.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600319884435" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput_WO.fMain.CountRC() 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 2733
+   於 RCOutput_WO.fMain.dgvRC_CellValueChanged(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 643
+   於 System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellValueChangedInternal(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridViewColumnHeaderCell.SetValue(Int32 rowIndex, Object value)
+   於 System.Windows.Forms.DataGridViewColumn.set_HeaderText(String value)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.SetLanguage(Control ctrl, String xmlFileName, String moduleName, Boolean changeFont)
+   於 ClientUtils.SetLanguage(Control ctrl, String moduleName, String xmlFileName)
+   於 SajetClass.SajetCommon.SetLanguageControl(Control c) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\SajetCommon.cs: 行 112
+   於 RCOutput_WO.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 264
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCOutput_WO.fMain" method="Void CountRC()" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_WO.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600319889223" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput_WO.fMain.CountRC() 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 2733
+   於 RCOutput_WO.fMain.dgvRC_CellValueChanged(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 643
+   於 System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellValueChangedInternal(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridViewColumnHeaderCell.SetValue(Int32 rowIndex, Object value)
+   於 System.Windows.Forms.DataGridViewColumn.set_HeaderText(String value)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.SetLanguage(Control ctrl, String xmlFileName, String moduleName, Boolean changeFont)
+   於 ClientUtils.SetLanguage(Control ctrl, String moduleName, String xmlFileName)
+   於 SajetClass.SajetCommon.SetLanguageControl(Control c) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\SajetCommon.cs: 行 112
+   於 RCOutput_WO.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 264
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCOutput_WO.fMain" method="Void CountRC()" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_WO.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600320681121" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput_WO.fMain.CountRC() 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 2733
+   於 RCOutput_WO.fMain.dgvRC_CellValueChanged(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 643
+   於 System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellValueChangedInternal(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridViewColumnHeaderCell.SetValue(Int32 rowIndex, Object value)
+   於 System.Windows.Forms.DataGridViewColumn.set_HeaderText(String value)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.SetLanguage(Control ctrl, String xmlFileName, String moduleName, Boolean changeFont)
+   於 ClientUtils.SetLanguage(Control ctrl, String moduleName, String xmlFileName)
+   於 SajetClass.SajetCommon.SetLanguageControl(Control c) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\SajetCommon.cs: 行 112
+   於 RCOutput_WO.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 264
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCOutput_WO.fMain" method="Void CountRC()" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_WO.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600320764195" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput_WO.fMain.CountRC() 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 2733
+   於 RCOutput_WO.fMain.dgvRC_CellValueChanged(Object sender, DataGridViewCellEventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 643
+   於 System.Windows.Forms.DataGridView.OnCellValueChanged(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridView.OnCellValueChangedInternal(DataGridViewCellEventArgs e)
+   於 System.Windows.Forms.DataGridViewColumnHeaderCell.SetValue(Int32 rowIndex, Object value)
+   於 System.Windows.Forms.DataGridViewColumn.set_HeaderText(String value)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.GetControls(Control ctrl, String fileName, String path, Boolean changeFont)
+   於 Localization.SetLanguage(Control ctrl, String xmlFileName, String moduleName, Boolean changeFont)
+   於 ClientUtils.SetLanguage(Control ctrl, String moduleName, String xmlFileName)
+   於 SajetClass.SajetCommon.SetLanguageControl(Control c) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\SajetCommon.cs: 行 112
+   於 RCOutput_WO.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 264
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCOutput_WO.fMain" method="Void CountRC()" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_WO.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600321313789" level="FATAL" thread="1"><log4j:message>索引在陣列的界限之外。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 RCOutput_Route.fMain.fMain_Shown(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.4\RCOutput_Route\fMain.cs: 行 313
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="RCOutput_Route.fMain" method="Void fMain_Shown(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_Route.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600327291239" level="ERROR" thread="15"><log4j:message>執行緒已經中止。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.Threading.ThreadAbortException: 執行緒已經中止。
+   於 MS.Win32.UnsafeNativeMethods.IntGetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 MS.Win32.UnsafeNativeMethods.GetMessageW(MSG&amp; msg, HandleRef hWnd, Int32 uMsgFilterMin, Int32 uMsgFilterMax)
+   於 System.Windows.Threading.Dispatcher.GetMessage(MSG&amp; msg, IntPtr hwnd, Int32 minMessage, Int32 maxMessage)
+   於 System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   於 System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   於 System.Windows.Window.ShowHelper(Object booleanBox)
+   於 System.Windows.Window.Show()
+   於 System.Windows.Window.ShowDialog()
+   於 Sajet_MES_WPF_Style.MainWindow.threadStart(Object Loaction_size)</log4j:throwable><log4j:locationInfo class="Sajet_MES_WPF_Style.MainWindow" method="threadStart" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600331145891" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput_WO.fMain.fMain_Shown(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 372
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="RCOutput_WO.fMain" method="Void fMain_Shown(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_WO.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1600331198339" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput_WO.fMain.fMain_Shown(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.12\RCOutput_WO\fMain.cs: 行 372
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="RCOutput_WO.fMain" method="Void fMain_Shown(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_WO.dll" line="0" /></log4j:event>

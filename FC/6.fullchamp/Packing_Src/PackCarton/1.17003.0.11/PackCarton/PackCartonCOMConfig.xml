@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ComPort PortName="COM1" StopBits="One" DataBits="8" BaudRate="2400" Parity="None"/>

@@ -1,0 +1,35 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1609377042326" level="FATAL" thread="1"><log4j:message>ゼ盢ン把σ砞﹚ン磅︽砰</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: ゼ盢ン把σ砞﹚ン磅︽砰
+    RCInput.fMain.BtnOK_Click(Object sender, EventArgs e)  C:\FullChamp\fullchamp\WIP\RCInput\1.0.17003.20\RCInput\fMain.cs: ︽ 1086
+    System.Windows.Forms.Control.OnClick(EventArgs e)
+    System.Windows.Forms.Button.OnClick(EventArgs e)
+    System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+    System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+    System.Windows.Forms.Control.WndProc(Message& m)
+    System.Windows.Forms.ButtonBase.WndProc(Message& m)
+    System.Windows.Forms.Button.WndProc(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+    System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCInput.fMain" method="Void BtnOK_Click(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\RCInput.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1609387197910" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT DISTINCT
+    d.rc_no,
+    d.travel_id,
+    d.node_id
+FROM
+    sajet.g_rc_status                a,
+    sajet.g_rc_travel_machine_down   b,
+    sajet.g_rc_status                c,
+    sajet.g_rc_travel_machine_down   d
+WHERE
+    a.rc_no = :rc_no --'10C20201200010310112000000'
+    AND a.rc_no = b.rc_no
+    AND a.node_id = b.node_id
+    AND b.report_type = :report_type
+    AND a.work_order = c.work_order
+    AND c.rc_no = d.rc_no
+    AND c.node_id = d.node_id
+    AND d.report_type = :report_type
+    AND b.machine_id = d.machine_id
+    AND b.start_time = d.start_time
+:礚把计硈挡
+把计嘿: report_type</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>

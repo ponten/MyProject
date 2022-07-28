@@ -1,0 +1,60 @@
+CREATE OR REPLACE FUNCTION SJ_GET_RC_ROUTE_PROCESS (
+    V_ROUTE_ID IN VARCHAR2
+) RETURN RC_ROUTE_PROCESS
+    PIPELINED
+AS 
+  -- 回傳Table 
+
+    V_TAB            RC_ROUTE_PROCESS := RC_ROUTE_PROCESS();
+    C_NODE_ID        SAJET.SYS_RC_ROUTE_DETAIL.NEXT_NODE_ID%TYPE;
+    C_NEXT_NODE_ID   SAJET.SYS_RC_ROUTE_DETAIL.NEXT_NODE_ID%TYPE;
+    C_PROCESSID      NUMBER;
+    C_PROCESSNAME    SAJET.SYS_PROCESS.PROCESS_NAME%TYPE;
+    C_PROCESSCODE    SAJET.SYS_PROCESS.PROCESS_CODE%TYPE;
+    C_SORTINDEX      NUMBER;
+BEGIN
+    C_SORTINDEX := 0;
+    SELECT
+        NEXT_NODE_ID
+    INTO C_NODE_ID
+    FROM
+        SAJET.SYS_RC_ROUTE_DETAIL
+    WHERE
+        ROUTE_ID = V_ROUTE_ID
+        AND NODE_TYPE = '0'
+        AND ROWNUM = 1;
+
+    WHILE TRUE LOOP
+        BEGIN
+            SELECT
+                B.PROCESS_ID,
+                A.NEXT_NODE_ID,
+                B.PROCESS_NAME,
+                PROCESS_CODE
+            INTO
+                C_PROCESSID,
+                C_NEXT_NODE_ID,
+                C_PROCESSNAME,
+                C_PROCESSCODE
+            FROM
+                SAJET.SYS_RC_ROUTE_DETAIL   A,
+                SAJET.SYS_PROCESS           B
+            WHERE
+                A.ROUTE_ID = V_ROUTE_ID
+                AND A.NODE_ID = C_NODE_ID
+                AND A.NODE_CONTENT = TO_CHAR(B.PROCESS_ID)
+                AND A.LINK_NAME = 'NEXT'
+                AND ROWNUM = 1;
+
+        EXCEPTION
+            WHEN OTHERS THEN
+                EXIT;
+        END;
+
+        C_NODE_ID := C_NEXT_NODE_ID;
+        C_SORTINDEX := C_SORTINDEX + 1;
+        PIPE ROW ( TYPE_RC_ROUTE_PROCESS(V_ROUTE_ID, C_PROCESSID, C_PROCESSNAME, C_SORTINDEX, C_PROCESSCODE) );
+    END LOOP;
+
+    RETURN;
+END;

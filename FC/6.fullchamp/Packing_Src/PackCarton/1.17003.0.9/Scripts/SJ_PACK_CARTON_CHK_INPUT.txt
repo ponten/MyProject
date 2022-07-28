@@ -1,0 +1,263 @@
+CREATE OR REPLACE PROCEDURE SAJET.SJ_PACK_CARTON_CHK_INPUT(I_INPUT   IN VARCHAR2,
+                                                     I_ACTION  IN NUMBER, --0:RC->CARTON; 1:BOX->CARTON
+                                                     I_BASE    IN NUMBER, --0:WO; 1:PART NO
+                                                     I_CARTON  IN VARCHAR2, --目前使用的箱号
+                                                     I_PROCESS IN NUMBER, --包装站编号
+                                                     O_RES     OUT VARCHAR2,
+                                                     O_FLAG    OUT VARCHAR2, --是否为箱内第一笔资料
+                                                     O_CARTON  OUT VARCHAR2)
+
+ AS
+
+  TCARTON        VARCHAR2(50);
+  TWO            VARCHAR2(50);
+  TINPUT_PARTID  NUMBER; --投入流程卡的料号
+  TINPUT_RC      VARCHAR2(50); --投入的流程卡
+  TINPUT_PROCESS NUMBER; --投入的站点
+  TINPUT_LEVEL   VARCHAR2(5); --投入流程卡的等级
+  TCARTON_PARTID NUMBER; --目前使用包装箱内料号
+  TCARTON_LEVEL  VARCHAR2(5); --目前使用包装箱内等级
+  TCURRENT_QTY   SAJET.G_RC_STATUS.CURRENT_QTY%TYPE;
+  TCNT           NUMBER;
+  cOperateType   VARCHAR2(20);
+  cNextProcess   SAJET.SYS_PROCESS.PROCESS_NAME%TYPE;
+  -------------------------------------------
+  --Created by : Nancy
+  --Date : 2016.11.3
+  --检查输入的数据的有效性
+  -------------------------------------------
+
+BEGIN
+  O_RES := 'OK';
+  -------------------------------------------
+  --update by : alisa 
+  --Date : 2017.8.10
+  --检查输入为RC的有效性
+  -------------------------------------------
+  IF I_ACTION = 0 THEN
+  
+    --检查RC是否存在
+    SELECT COUNT(RC_NO)
+      INTO TCNT
+      FROM SAJET.G_RC_STATUS
+     WHERE RC_NO = I_INPUT;
+    IF TCNT = 0 THEN
+      O_RES := 'RC ERROR';
+      RETURN;
+    END IF;
+  
+    --获取当前流程卡所在站点、等级、料号、工单和数量
+    SELECT A.PROCESS_ID,
+           B.LEVEL_CODE,
+           A.PART_ID,
+           A.WORK_ORDER,
+           A.CURRENT_QTY
+      INTO TINPUT_PROCESS, TINPUT_LEVEL, TINPUT_PARTID, TWO, TCURRENT_QTY
+      FROM SAJET.G_RC_STATUS A, SAJET.G_RC_LEVEL B
+     WHERE A.RC_NO = I_INPUT
+       AND A.RC_NO = B.RC_NO(+);
+  
+    --判断流程卡是否到包装
+    IF TINPUT_PROCESS IS NOT NULL THEN
+      begin
+        select UPPER(B.TYPE_NAME),A.PROCESS_NAME INTO cOperateType,cNextProcess 
+        from sajet.sys_process a,sajet.sys_operate_type b
+        where process_id=TINPUT_PROCESS
+        and A.OPERATE_ID = B.OPERATE_ID(+);
+      exception
+        when others then
+           cOperateType:='N/A';
+      end;       
+    END IF;
+    
+    IF TINPUT_PROCESS IS NULL OR cOperateType <> 'PACKING' THEN
+      IF cNextProcess IS NULL THEN
+        O_RES := 'PROCESS ERROR';
+      ELSE  
+        O_RES := 'PROCESS ERROR - '||cNextProcess;
+      END IF;
+      RETURN;
+    END IF;
+    
+    /*
+    IF TINPUT_PROCESS IS NULL OR TINPUT_PROCESS <> I_PROCESS THEN
+      O_RES := 'PROCESS ERROR';
+      RETURN;
+    END IF;
+    */
+    --若该RC在G_RC_CARTON中无记录则添加
+    SELECT COUNT(RC_NO)
+      INTO TCNT
+      FROM SAJET.G_RC_CARTON
+     WHERE RC_NO = I_INPUT;
+    IF TCNT = 0 THEN
+      INSERT INTO SAJET.G_RC_CARTON
+        (WORK_ORDER,
+         PART_ID,
+         RC_NO,
+         BOX_NO,
+         QTY,
+         CLOSE_FLAG,
+         CREATEBOX_TIME)
+      VALUES
+        (TWO, TINPUT_PARTID, I_INPUT, I_INPUT, TCURRENT_QTY, 'Y', sysdate);
+    --ELSE
+      --O_RES := 'RC is already in the box';
+      --RETURN;
+    END IF;
+  ELSE
+    --检查是否为盒号
+    SELECT CARTON_NO, WORK_ORDER, PART_ID, RC_NO
+      INTO TCARTON, TWO, TINPUT_PARTID, TINPUT_RC
+      FROM SAJET.G_RC_CARTON
+     WHERE BOX_NO = I_INPUT;
+  
+    --检查是否该盒已经装箱
+    IF TCARTON IS NOT NULL THEN
+      O_RES := 'BOX NO PACKED';
+      RETURN;
+    END IF;
+  
+    --获取当前流程卡所在站点和等级
+    SELECT A.PROCESS_ID, B.LEVEL_CODE
+      INTO TINPUT_PROCESS, TINPUT_LEVEL
+      FROM SAJET.G_RC_STATUS A, SAJET.G_RC_LEVEL B
+     WHERE A.RC_NO = TINPUT_RC
+       AND A.RC_NO = B.RC_NO(+);
+  
+    --判断流程卡是否到包装
+    IF TINPUT_PROCESS IS NULL OR TINPUT_PROCESS <> I_PROCESS THEN
+      O_RES := 'PROCESS ERROR';
+      RETURN;
+    END IF;
+  END IF;
+
+  --如果目前已经使用包装箱
+  IF I_CARTON IS NOT NULL THEN
+    --检查原包装箱内料号等级与新输入是否一致
+    SELECT LEVEL_CODE, PART_ID
+      INTO TCARTON_LEVEL, TCARTON_PARTID
+      FROM SAJET.G_PACK_CARTON
+     WHERE CARTON_NO = I_CARTON;
+  
+    IF TINPUT_LEVEL <> TCARTON_LEVEL THEN
+      O_RES := 'LEVEL NOT MATCH';
+      RETURN;
+    END IF;
+  
+    --检查目前使用包装箱内料号与新输入是否一致
+    IF I_BASE = 0 THEN
+      NULL;
+    ELSE
+      IF TINPUT_PARTID <> TCARTON_PARTID THEN
+        O_RES := 'PART NO NOT MATCH';
+      END IF;
+    END IF;
+    --END IF;
+    O_CARTON := I_CARTON;
+    O_FLAG   := 'N';
+    --如果目前没有包装箱
+  ELSE
+    --检查是否有符合该盒条件的未关闭的箱子
+    IF I_BASE = 0 THEN
+      IF TINPUT_LEVEL IS NULL THEN
+        SELECT COUNT(CARTON_NO)
+          INTO TCNT
+          FROM SAJET.G_PACK_CARTON
+         WHERE WORK_ORDER = TWO
+           AND PART_ID = TINPUT_PARTID
+           AND CLOSE_FLAG = 'N'
+           AND LEVEL_CODE IS NULL;
+      ELSE
+        SELECT COUNT(CARTON_NO)
+          INTO TCNT
+          FROM SAJET.G_PACK_CARTON
+         WHERE WORK_ORDER = TWO
+           AND PART_ID = TINPUT_PARTID
+           AND CLOSE_FLAG = 'N'
+           AND LEVEL_CODE = TINPUT_LEVEL;
+      END IF;
+    ELSE
+      IF TINPUT_LEVEL IS NULL THEN
+        SELECT COUNT(CARTON_NO)
+          INTO TCNT
+          FROM SAJET.G_PACK_CARTON
+         WHERE PART_ID = TINPUT_PARTID
+           AND CLOSE_FLAG = 'N'
+           AND LEVEL_CODE IS NULL;
+      ELSE
+        SELECT COUNT(CARTON_NO)
+          INTO TCNT
+          FROM SAJET.G_PACK_CARTON
+         WHERE PART_ID = TINPUT_PARTID
+           AND CLOSE_FLAG = 'N'
+           AND LEVEL_CODE = TINPUT_LEVEL;
+      END IF;
+    END IF;
+  
+    IF TCNT = 0 THEN
+      --没有满足的箱号,则要创建新箱号,此流程卡将会成为第一笔资料
+      O_FLAG := 'Y';
+    ELSIF TCNT = 1 THEN
+      O_FLAG := 'N';
+      IF I_BASE = 0 THEN
+        --获取符合该盒条件的未关箱的箱号
+        IF TINPUT_LEVEL IS NULL THEN
+          SELECT CARTON_NO
+            INTO O_CARTON
+            FROM SAJET.G_PACK_CARTON
+           WHERE WORK_ORDER = TWO
+             AND PART_ID = TINPUT_PARTID
+             AND CLOSE_FLAG = 'N'
+             AND LEVEL_CODE IS NULL;
+        ELSE
+          SELECT CARTON_NO
+            INTO O_CARTON
+            FROM SAJET.G_PACK_CARTON
+           WHERE WORK_ORDER = TWO
+             AND PART_ID = TINPUT_PARTID
+             AND CLOSE_FLAG = 'N'
+             AND LEVEL_CODE = TINPUT_LEVEL;
+        END IF;
+      ELSE
+        IF TINPUT_LEVEL IS NULL THEN
+          SELECT CARTON_NO
+            INTO O_CARTON
+            FROM SAJET.G_PACK_CARTON
+           WHERE PART_ID = TINPUT_PARTID
+             AND CLOSE_FLAG = 'N'
+             AND LEVEL_CODE IS NULL;
+        ELSE
+          SELECT CARTON_NO
+            INTO O_CARTON
+            FROM SAJET.G_PACK_CARTON
+           WHERE PART_ID = TINPUT_PARTID
+             AND CLOSE_FLAG = 'N'
+             AND LEVEL_CODE = TINPUT_LEVEL;
+        END IF;
+      END IF;
+    
+      --检查是否箱内数量达到300
+      IF I_ACTION = 1 THEN
+        SELECT SUM(QTY)
+          INTO TCNT
+          FROM SAJET.G_RC_CARTON
+         WHERE CARTON_NO = O_CARTON;
+      
+        IF TCNT + 25 > 300 THEN
+          O_RES := 'QTY MORE THAN 300';
+          RETURN;
+          RETURN;
+        END IF;
+      END IF;
+    ELSIF TCNT > 1 THEN
+      --超过一个未关箱则报错
+      O_RES := 'UNCLOSED CARTON MORE THAN 1';
+      RETURN;
+    END IF;
+  END IF;
+EXCEPTION
+  WHEN OTHERS THEN
+    O_RES := SQLERRM;
+END;
+/

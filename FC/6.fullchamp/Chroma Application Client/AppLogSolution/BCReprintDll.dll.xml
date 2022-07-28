@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<ExceptionSolution>
+  <Table1>
+    <NeedCloseActiveWindows>False</NeedCloseActiveWindows>
+    <AppFunctionName>Boolean Print_Label(System.Windows.Forms.ListView)</AppFunctionName>
+    <AppModuleFileName>BCReprintDll.dll</AppModuleFileName>
+    <AppModuleNameSpace>BCReprintDll</AppModuleNameSpace>
+    <AppModuleClassName>fMain</AppModuleClassName>
+    <AppExceptionSolution>NA</AppExceptionSolution>
+  </Table1>
+</ExceptionSolution>

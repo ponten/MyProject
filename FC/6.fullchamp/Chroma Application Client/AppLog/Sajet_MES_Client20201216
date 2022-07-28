@@ -1,0 +1,80 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608079870981" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput_Route.fMain.GetRouteProcess() 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.10\RCOutput_Route\fMain.cs: 行 598
+   於 RCOutput_Route.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.10\RCOutput_Route\fMain.cs: 行 269
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCOutput_Route.fMain" method="Void GetRouteProcess()" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_Route.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608080215236" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput_Route.fMain.GetRouteProcess() 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.10\RCOutput_Route\fMain.cs: 行 598
+   於 RCOutput_Route.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.10\RCOutput_Route\fMain.cs: 行 269
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCOutput_Route.fMain" method="Void GetRouteProcess()" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_Route.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608080237689" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput_Route.fMain.GetRouteProcess() 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.10\RCOutput_Route\fMain.cs: 行 598
+   於 RCOutput_Route.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.10\RCOutput_Route\fMain.cs: 行 269
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCOutput_Route.fMain" method="Void GetRouteProcess()" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_Route.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608080309373" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCOutput_Route.fMain.GetRouteProcess() 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.10\RCOutput_Route\fMain.cs: 行 598
+   於 RCOutput_Route.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.10\RCOutput_Route\fMain.cs: 行 269
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="RCOutput_Route.fMain" method="Void GetRouteProcess()" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_Route.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608103620289" level="FATAL" thread="1"><log4j:message>無法載入檔案或組件 'PrintLabel, Version=1.17003.0.20, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。 系統找不到指定的檔案。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.IO.FileNotFoundException: 無法載入檔案或組件 'PrintLabel, Version=1.17003.0.20, Culture=neutral, PublicKeyToken=null' 或其相依性的其中之一。 系統找不到指定的檔案。
+檔案名稱: 'PrintLabel, Version=1.17003.0.20, Culture=neutral, PublicKeyToken=null'
+   於 BCReprintDll.fMain.Print_Label(ListView listbPrint)
+   於 BCReprintDll.fMain.btnReprint_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+警告: 組件繫結記錄切換為 OFF。
+若要記錄組件繫結失敗，請將登錄值 [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) 設為 1。
+注意: 與組件繫結失敗記錄相關的效能會有部分負面影響。
+若要關閉此功能，請移除登錄值 [HKLM\Software\Microsoft\Fusion!EnableLog]。
+]]></log4j:throwable><log4j:locationInfo class="BCReprintDll.fMain" method="Boolean Print_Label(System.Windows.Forms.ListView)" file="C:\FullChamp\Chroma Application Client\BarcodeCenter\BCReprintDll.dll" line="0" /></log4j:event>

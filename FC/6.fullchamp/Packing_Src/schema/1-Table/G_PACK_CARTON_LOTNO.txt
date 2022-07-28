@@ -1,0 +1,14 @@
+create table SAJET.G_PACK_CARTON_LOTNO
+(
+  lot_no      VARCHAR2(50),
+  end_flag    VARCHAR2(5) default 'N',
+  emp_id      NUMBER,
+  update_time DATE default sysdate
+)
+tablespace SYSRT;
+
+
+
+GRANT DELETE, INSERT, SELECT, UPDATE ON SAJET.G_PACK_CARTON_LOTNO TO SJ;
+
+GRANT DELETE, INSERT, SELECT, UPDATE ON SAJET.G_PACK_CARTON_LOTNO TO SYS_USER;

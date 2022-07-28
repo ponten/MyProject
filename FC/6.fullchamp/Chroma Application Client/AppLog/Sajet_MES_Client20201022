@@ -1,0 +1,215 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603350654281" level="FATAL" thread="1"><log4j:message>тぃ WIP Time 戈︽
+把计嘿: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: тぃ WIP Time 戈︽
+把计嘿: columnName
+    System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.ShowDetail(String strDetailSql)
+    CCustomerReport.fMain.ShowData()
+    CCustomerReport.fMain.btnQuery_Click(Object sender, EventArgs e)
+    System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+    System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+    System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+    System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+    System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+    System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+    System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+    System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+    System.Windows.Forms.Control.WndProc(Message& m)
+    System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+    System.Windows.Forms.ToolStrip.WndProc(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+    System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603350676037" level="FATAL" thread="1"><log4j:message>тぃ WIP Time 戈︽
+把计嘿: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: тぃ WIP Time 戈︽
+把计嘿: columnName
+    System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.DisplayDetail(String& strDetailSql)
+    CCustomerReport.fMain.ShowDetail(String strDetailSql)
+    CCustomerReport.fMain.ShowData()
+    CCustomerReport.fMain.btnQuery_Click(Object sender, EventArgs e)
+    System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+    System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+    System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+    System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+    System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+    System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+    System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+    System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+    System.Windows.Forms.Control.WndProc(Message& m)
+    System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+    System.Windows.Forms.ToolStrip.WndProc(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+    System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1603350825039" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT I.PROCESS_NAME "Process Name",I.PROCESS_INQTY "Process Input Qty",I.PROCESS_OUTQTY "Process Output Qty",I.PROCESS_YIELD "Process Yield(%)",
+A.WORK_ORDER "Work Order",C.SPEC1 "Desc",C.SPEC2 "Spec",A.RC_NO "RC No"
+FROM
+SAJET.G_RC_TRAVEL A,
+SAJET.SYS_PART C
+(SELECT D.PROCESS_NAME,A.PROCESS_ID,SUM(A.WIP_IN_QTY) PROCESS_INQTY,SUM(A.WIP_OUT_GOOD_QTY) PROCESS_OUTQTY,
+ROUND((SUM(A.WIP_OUT_GOOD_QTY) / SUM(A.WIP_IN_QTY)) * 100,3) PROCESS_YIELD
+FROM
+SAJET.G_RC_TRAVEL A,
+SAJET.G_WO_BASE B,
+SAJET.SYS_PART C,
+SAJET.SYS_PROCESS D
+WHERE A.WORK_ORDER = B.WORK_ORDER
+AND A.PART_ID = C.PART_ID
+AND A.PROCESS_ID = D.PROCESS_ID
+
+
+
+AND A.WIP_OUT_TIME  &gt;=  :P5_1 AND A.WIP_OUT_TIME &lt; :P5_2
+GROUP BY D.PROCESS_NAME,A.PROCESS_ID) I
+WHERE A.PART_ID = C.PART_ID
+AND A.PROCESS_ID = I.PROCESS_ID
+AND A.RC_NO = :RC_No
+AND A.WIP_OUT_TIME = :WIP_OUT_TIME:ORA-00933: SQL ㏑挡Τ拜肈</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1603350880169" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT I.PROCESS_NAME "Process Name",I.PROCESS_INQTY "Process Input Qty",I.PROCESS_OUTQTY "Process Output Qty",I.PROCESS_YIELD "Process Yield(%)",
+A.WORK_ORDER "Work Order",C.SPEC1 "Desc",C.SPEC2 "Spec",A.RC_NO "RC No"
+FROM
+SAJET.G_RC_TRAVEL A,
+SAJET.SYS_PART C,
+(SELECT D.PROCESS_NAME,A.PROCESS_ID,SUM(A.WIP_IN_QTY) PROCESS_INQTY,SUM(A.WIP_OUT_GOOD_QTY) PROCESS_OUTQTY,
+ROUND((SUM(A.WIP_OUT_GOOD_QTY) / SUM(A.WIP_IN_QTY)) * 100,3) PROCESS_YIELD
+FROM
+SAJET.G_RC_TRAVEL A,
+SAJET.G_WO_BASE B,
+SAJET.SYS_PART C,
+SAJET.SYS_PROCESS D
+WHERE A.WORK_ORDER = B.WORK_ORDER
+AND A.PART_ID = C.PART_ID
+AND A.PROCESS_ID = D.PROCESS_ID
+
+
+
+AND A.WIP_OUT_TIME  &gt;=  :P5_1 AND A.WIP_OUT_TIME &lt; :P5_2
+GROUP BY D.PROCESS_NAME,A.PROCESS_ID) I
+WHERE A.PART_ID = C.PART_ID
+AND A.PROCESS_ID = I.PROCESS_ID
+AND A.RC_NO = :RC_No
+AND A.WIP_OUT_TIME = :WIP_OUT_TIME:ORA-01861: ゅ籔Α﹃ぃ才</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1603352483722" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    GRS.WORK_ORDER
+   ,GRTR.RC_NO
+   ,SPAR.PART_NO
+   ,SPAR.SPEC1
+   ,SPAR.SPEC2
+   ,SPRO.PROCESS_CODE
+   ,SPRO.PROCESS_NAME
+   ,GRTR.REWORK_QTY
+   ,SE.EMP_NO
+   ,SE.EMP_NAME
+   ,TO_CHAR(GRTR.WIP_OUT_TIME,'YYYY/ MM/ DD HH24@ MI@ SS') "WIP_OUT_TIME"
+FROM
+    SAJET.G_RC_TRAVEL_REWORK GRTR
+   ,SAJET.G_RC_STATUS GRS
+   ,SAJET.SYS_RC_ROUTE_DETAIL SRRD
+   ,SAJET.SYS_PROCESS SPRO
+   ,SAJET.SYS_PART SPAR
+   ,SAJET.SYS_EMP SE
+WHERE 1 = 1
+AND GRTR.RC_NO = GRS.RC_NO
+AND GRTR.NODE_ID = SRRD.NODE_ID
+AND SRRD.NODE_CONTENT = SPRO.PROCESS_ID
+AND GRS.PART_ID = SPAR.PART_ID
+AND GRTR.UPDATE_USERID = SE.EMP_ID
+AND SPRO.PROCESS_NAME In  ('') 
+AND GRS.WORK_ORDER Like ''
+AND GRTR.RC_NO Like ''
+AND SPAR.PART_NO Like ''
+AND SPAR.SPEC1 Like ''
+AND SPAR.SPEC2 Like ''
+AND GRTR.WIP_OUT_TIME BETWEEN  sysdate and sysdate :ORA-00904: "GRTR"."WIP_OUT_TIME": 礚 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603352483811" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: △ SELECT
+    GRS.WORK_ORDER
+   ,GRTR.RC_NO
+   ,SPAR.PART_NO
+   ,SPAR.SPEC1
+   ,SPAR.SPEC2
+   ,SPRO.PROCESS_CODE
+   ,SPRO.PROCESS_NAME
+   ,GRTR.REWORK_QTY
+   ,SE.EMP_NO
+   ,SE.EMP_NAME
+   ,TO_CHAR(GRTR.WIP_OUT_TIME,'YYYY/ MM/ DD HH24@ MI@ SS') "WIP_OUT_TIME"
+FROM
+    SAJET.G_RC_TRAVEL_REWORK GRTR
+   ,SAJET.G_RC_STATUS GRS
+   ,SAJET.SYS_RC_ROUTE_DETAIL SRRD
+   ,SAJET.SYS_PROCESS SPRO
+   ,SAJET.SYS_PART SPAR
+   ,SAJET.SYS_EMP SE
+WHERE 1 = 1
+AND GRTR.RC_NO = GRS.RC_NO
+AND GRTR.NODE_ID = SRRD.NODE_ID
+AND SRRD.NODE_CONTENT = SPRO.PROCESS_ID
+AND GRS.PART_ID = SPAR.PART_ID
+AND GRTR.UPDATE_USERID = SE.EMP_ID
+AND SPRO.PROCESS_NAME In  ('') 
+AND GRS.WORK_ORDER Like ''
+AND GRTR.RC_NO Like ''
+AND SPAR.PART_NO Like ''
+AND SPAR.SPEC1 Like ''
+AND SPAR.SPEC2 Like ''
+AND GRTR.WIP_OUT_TIME BETWEEN  sysdate and sysdate  
+
+ExceptionORA-00904: "GRTR"."WIP_OUT_TIME": 礚 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: △ SELECT
+    GRS.WORK_ORDER
+   ,GRTR.RC_NO
+   ,SPAR.PART_NO
+   ,SPAR.SPEC1
+   ,SPAR.SPEC2
+   ,SPRO.PROCESS_CODE
+   ,SPRO.PROCESS_NAME
+   ,GRTR.REWORK_QTY
+   ,SE.EMP_NO
+   ,SE.EMP_NAME
+   ,TO_CHAR(GRTR.WIP_OUT_TIME,'YYYY/ MM/ DD HH24@ MI@ SS') "WIP_OUT_TIME"
+FROM
+    SAJET.G_RC_TRAVEL_REWORK GRTR
+   ,SAJET.G_RC_STATUS GRS
+   ,SAJET.SYS_RC_ROUTE_DETAIL SRRD
+   ,SAJET.SYS_PROCESS SPRO
+   ,SAJET.SYS_PART SPAR
+   ,SAJET.SYS_EMP SE
+WHERE 1 = 1
+AND GRTR.RC_NO = GRS.RC_NO
+AND GRTR.NODE_ID = SRRD.NODE_ID
+AND SRRD.NODE_CONTENT = SPRO.PROCESS_ID
+AND GRS.PART_ID = SPAR.PART_ID
+AND GRTR.UPDATE_USERID = SE.EMP_ID
+AND SPRO.PROCESS_NAME In  ('') 
+AND GRS.WORK_ORDER Like ''
+AND GRTR.RC_NO Like ''
+AND SPAR.PART_NO Like ''
+AND SPAR.SPEC1 Like ''
+AND SPAR.SPEC2 Like ''
+AND GRTR.WIP_OUT_TIME BETWEEN  sysdate and sysdate  
+
+ExceptionORA-00904: "GRTR"."WIP_OUT_TIME": 礚 ID
+    ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+    ClientUtils.ExecuteSQL(String sSQL)
+    CCustomerReportCfg.SajetCommon.AddMasterField(String strMasterSql, DataGridView gvParam)
+    CCustomerReportCfg.fFieldData.btnField_Name_Click(Object sender, EventArgs e)
+    System.Windows.Forms.Control.OnClick(EventArgs e)
+    System.Windows.Forms.Button.OnClick(EventArgs e)
+    System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+    System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+    System.Windows.Forms.Control.WndProc(Message& m)
+    System.Windows.Forms.ButtonBase.WndProc(Message& m)
+    System.Windows.Forms.Button.WndProc(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+    System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>

@@ -1,0 +1,56 @@
+-- Create table
+create table SYS_QC_SAMPLING_PLAN_DETAIL
+(
+  sampling_id         NUMBER,
+  min_lot_size        NUMBER(10),
+  max_lot_size        NUMBER(10),
+  sample_size         NUMBER(10),
+  critical_reject_qty NUMBER(4),
+  major_reject_qty    NUMBER(4),
+  minor_reject_qty    NUMBER(4),
+  update_userid       NUMBER,
+  update_time         DATE default SYSDATE,
+  sampling_level      VARCHAR2(10) default '0',
+  sampling_unit       VARCHAR2(10) default '0'
+)
+tablespace SYSBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table SYS_QC_SAMPLING_PLAN_DETAIL
+  is '抽樣計劃';
+-- Add comments to the columns 
+comment on column SYS_QC_SAMPLING_PLAN_DETAIL.sampling_id
+  is 'SYS_QC_SAMPLING_PLAN_SAMPLING_ID';
+comment on column SYS_QC_SAMPLING_PLAN_DETAIL.min_lot_size
+  is '批量範圍下限';
+comment on column SYS_QC_SAMPLING_PLAN_DETAIL.max_lot_size
+  is '批量範圍上限';
+comment on column SYS_QC_SAMPLING_PLAN_DETAIL.sample_size
+  is '抽驗取樣量';
+comment on column SYS_QC_SAMPLING_PLAN_DETAIL.critical_reject_qty
+  is '嚴重不良批退的數量';
+comment on column SYS_QC_SAMPLING_PLAN_DETAIL.major_reject_qty
+  is '主缺批退的數量';
+comment on column SYS_QC_SAMPLING_PLAN_DETAIL.minor_reject_qty
+  is '次缺批退的數量';
+comment on column SYS_QC_SAMPLING_PLAN_DETAIL.update_userid
+  is 'SYS_EMP.EMP_ID';
+comment on column SYS_QC_SAMPLING_PLAN_DETAIL.update_time
+  is '資料異動時間';
+comment on column SYS_QC_SAMPLING_PLAN_DETAIL.sampling_level
+  is '抽驗等級(0:正常,1:加嚴,2:減量,3:免驗)';
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table SYS_QC_SAMPLING_PLAN_DETAIL
+  add constraint SYS_SAMP_PLAN_DETAIL_SAMP_FK foreign key (SAMPLING_ID)
+  references SYS_QC_SAMPLING_PLAN (SAMPLING_ID);
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on SYS_QC_SAMPLING_PLAN_DETAIL to SYS_USER;

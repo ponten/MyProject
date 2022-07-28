@@ -1,0 +1,81 @@
+-- Create table
+create table G_PACK_CARTON
+(
+  work_order    VARCHAR2(25),
+  part_id       NUMBER,
+  carton_no     VARCHAR2(30),
+  close_flag    VARCHAR2(8),
+  process_id    NUMBER,
+  create_emp_id NUMBER,
+  create_time   DATE default SYSDATE,
+  pkspec_id     NUMBER,
+  close_time    DATE,
+  close_emp_id  NUMBER,
+  lot_seq       NUMBER,
+  lot_no        VARCHAR2(30),
+  level_code    VARCHAR2(5)
+)
+tablespace SYSRT
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 3M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table G_PACK_CARTON
+  is '包裝站包裝箱號狀態表';
+-- Add comments to the columns 
+comment on column G_PACK_CARTON.work_order
+  is '工單號碼';
+comment on column G_PACK_CARTON.part_id
+  is '機種名稱';
+comment on column G_PACK_CARTON.carton_no
+  is '箱號';
+comment on column G_PACK_CARTON.close_flag
+  is '裝箱狀況(N:未滿,Y:已滿)';
+comment on column G_PACK_CARTON.process_id
+  is '站別';
+comment on column G_PACK_CARTON.create_emp_id
+  is '建立人員';
+comment on column G_PACK_CARTON.create_time
+  is '建立時間';
+comment on column G_PACK_CARTON.lot_seq
+  is '箱内序号';
+comment on column G_PACK_CARTON.lot_no
+  is '批次号';
+comment on column G_PACK_CARTON.level_code
+  is '等级';
+-- Create/Recreate indexes 
+create index G_PACK_CARTON_CARTON on G_PACK_CARTON (CARTON_NO)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 512K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+create index G_PACK_CARTON_MODEL_IDX on G_PACK_CARTON (PART_ID)
+  tablespace SYSRTIDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 512K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on G_PACK_CARTON to SJ;
+grant select, insert, update, delete on G_PACK_CARTON to SMT;
+grant select, insert, update, delete on G_PACK_CARTON to SYS_USER;

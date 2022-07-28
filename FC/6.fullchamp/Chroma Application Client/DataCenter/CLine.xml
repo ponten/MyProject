@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <English>
+    <Message Name="Factory" Value="Factory"/>
+    <Message Name="Line Name" Value="Line Name"/>
+    <Message Name="Description" Value="Description"/>
+    <Message Name="Description2" Value="Description2"/>
+    <Message Name="FACTORY_NAME" Value="Factory"/>
+  </English>
+  <繁體中文>
+    <Message Name="Factory" Value="廠別"/>
+    <Message Name="Line Name" Value="線別名稱"/>
+    <Message Name="Description" Value="線別描述"/>
+    <Message Name="Description2" Value="線別描述二"/>
+    <Message Name="FACTORY_NAME" Value="廠別"/>
+    <Message Name="Shift Group Name" Value="班別群組"/>
+  </繁體中文>
+</Chroma>

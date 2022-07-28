@@ -1,0 +1,118 @@
+<log4j:event logger="ClientUtils" timestamp="1605066287096" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    B.MACHINE_CODE
+   ,B.MACHINE_NAME
+   ,D.STATUS_NAME
+   ,D.RUN_FLAG
+   ,D.DEFAULT_STATUS
+   ,B.MACHINE_ID
+FROM
+    SAJET.SYS_RC_PROCESS_MACHINE A
+   ,SAJET.SYS_MACHINE B
+   ,SAJET.G_MACHINE_STATUS C
+   ,SAJET.SYS_MACHINE_STATUS D
+WHERE
+    A.PROCESS_ID = :PROCESS_ID
+AND A.MACHINE_ID = B.MACHINE_ID
+AND A.MACHINE_ID = C.MACHINE_ID
+AND C.CURRENT_STATUS_ID = D.STATUS_ID
+AND A.ENABLED = 'Y'
+AND B.ENABLED = 'Y'
+ORDER BY
+    B.MACHINE_CODE
+:ORA-00904: "B"."MACHINE_NAME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1605066320967" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    B.MACHINE_CODE
+   ,B.MACHINE_NAME
+   ,D.STATUS_NAME
+   ,D.RUN_FLAG
+   ,D.DEFAULT_STATUS
+   ,B.MACHINE_ID
+FROM
+    SAJET.SYS_RC_PROCESS_MACHINE A
+   ,SAJET.SYS_MACHINE B
+   ,SAJET.G_MACHINE_STATUS C
+   ,SAJET.SYS_MACHINE_STATUS D
+WHERE
+    A.PROCESS_ID = :PROCESS_ID
+AND A.MACHINE_ID = B.MACHINE_ID
+AND A.MACHINE_ID = C.MACHINE_ID
+AND C.CURRENT_STATUS_ID = D.STATUS_ID
+AND A.ENABLED = 'Y'
+AND B.ENABLED = 'Y'
+ORDER BY
+    B.MACHINE_CODE
+:ORA-00904: "B"."MACHINE_NAME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1605066355730" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    B.MACHINE_CODE
+   ,B.MACHINE_NAME
+   ,D.STATUS_NAME
+   ,D.RUN_FLAG
+   ,D.DEFAULT_STATUS
+   ,B.MACHINE_ID
+FROM
+    SAJET.SYS_RC_PROCESS_MACHINE A
+   ,SAJET.SYS_MACHINE B
+   ,SAJET.G_MACHINE_STATUS C
+   ,SAJET.SYS_MACHINE_STATUS D
+WHERE
+    A.PROCESS_ID = :PROCESS_ID
+AND A.MACHINE_ID = B.MACHINE_ID
+AND A.MACHINE_ID = C.MACHINE_ID
+AND C.CURRENT_STATUS_ID = D.STATUS_ID
+AND A.ENABLED = 'Y'
+AND B.ENABLED = 'Y'
+ORDER BY
+    B.MACHINE_CODE
+:ORA-00904: "B"."MACHINE_NAME": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1605081640800" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    SPRO.PROCESS_CODE
+   ,SPRO.PROCESS_NAME
+   ,GRS.WORK_ORDER
+   ,GRTMD.RC_NO
+   ,SPAR.PART_NO
+   ,SPAR.SPEC1
+   ,SPAR.SPEC2
+   ,SM.MACHINE_CODE
+   ,SM.MACHINE_DESC
+   ,SMDT.TYPE_CODE
+   ,SMDT.TYPE_DESC
+   ,SMDD.REASON_CODE
+   ,SMDD.REASON_DESC
+   ,GRTMD.REMARK
+   ,TO_CHAR(GRTMD.START_TIME,'YYYY/MM/DD HH24:MI:SS') "START_TIME"
+   ,TO_CHAR(GRTMD.END_TIME,'YYYY/MM/DD HH24:MI:SS') "END_TIME"
+   ,GRTMD.WORK_TIME_MINUTE
+   ,GRTMD.WORK_TIME_SECOND
+FROM
+    SAJET.G_RC_TRAVEL_MACHINE_DOWN GRTMD
+   ,SAJET.SYS_MACHINE_DOWN_DETAIL SMDD
+   ,SAJET.SYS_MACHINE_DOWN_TYPE SMDT
+   ,SAJET.SYS_MACHINE SM
+   ,SAJET.G_RC_STATUS GRS
+   ,SAJET.SYS_RC_ROUTE_DETAIL SRRD
+   ,SAJET.SYS_PART SPAR
+   ,SAJET.SYS_PROCESS SPRO
+WHERE 1 = 1
+AND GRTMD.REASON_ID = SMDD.REASON_ID(+)
+AND SMDD.TYPE_ID = SMDT.TYPE_ID(+)
+AND GRTMD.MACHINE_ID = SM.MACHINE_ID(+)
+AND GRTMD.RC_NO = GRS.RC_NO
+AND GRTMD.NODE_ID = SRRD.NODE_ID
+AND SRRD.NODE_CONTENT = SPRO.PROCESS_ID(+)
+AND GRS.PART_ID = SPAR.PART_ID
+AND GRTMD.END_TIME IS NOT NULL
+
+
+
+
+
+
+
+ORDER BY
+    RC_NO
+   ,START_TIME
+   ,PROCESS_CODE
+   ,MACHINE_CODE:ORA-01722: 無效的數字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>

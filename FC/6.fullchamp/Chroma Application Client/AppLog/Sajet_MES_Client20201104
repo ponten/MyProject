@@ -1,0 +1,94 @@
+<log4j:event logger="ClientUtils" timestamp="1604457549389" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+INSERT INTO sajet.sys_ord_d (
+    number1,
+    number2,
+    quotes1,
+    quotes2,
+    quotes3,
+    currency,
+    exchange_rate,
+    payment_method,
+    address,
+    produce_number,
+    unit,
+    quantity,
+    weight,
+    unit_price,
+    amount,
+    real_date,
+    real_due_date,
+    client_produce_number,
+    spec1,
+    spec2,
+    spec3,
+    sequence
+)
+    SELECT
+        :new_number1,
+        :new_number2,
+        quotes1,
+        quotes2,
+        quotes3,
+        currency,
+        exchange_rate,
+        payment_method,
+        address,
+        produce_number,
+        unit,
+        quantity,
+        weight,
+        unit_price,
+        amount,
+        real_date,
+        real_due_date,
+        client_produce_number,
+        spec1,
+        spec2,
+        spec3,
+        sequence
+    FROM
+        sajet.sys_ord_d
+    WHERE
+        number1 = :prev_number1
+        AND number2 = :prev_number2;
+:ORA-00911: 字元無效</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1604468570588" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 SajetFilter.fFilter.editValue_KeyPress(Object sender, KeyPressEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.14\RCPart\fFilter.cs: 行 62
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="SajetFilter.fFilter" method="Void editValue_KeyPress(System.Object, System.Windows.Forms.KeyPressEventArgs)" file="C:\FullChamp\Chroma Application Client\DataCenter\RCPart.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1604468575452" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 SajetFilter.fFilter.editValue_KeyPress(Object sender, KeyPressEventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.14\RCPart\fFilter.cs: 行 62
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="SajetFilter.fFilter" method="Void editValue_KeyPress(System.Object, System.Windows.Forms.KeyPressEventArgs)" file="C:\FullChamp\Chroma Application Client\DataCenter\RCPart.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1604476120175" level="FATAL" thread="1"><log4j:message>嘗試以零除。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.DivideByZeroException: 嘗試以零除。
+   於 System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   於 System.Decimal.Remainder(Decimal d1, Decimal d2)
+   於 System.Decimal.op_Modulus(Decimal d1, Decimal d2)
+   於 BCLabelDll.fMain.Show_WoData(String sWO, Boolean bRelease, String sRule) 於 C:\FullChamp\fullchamp\BarcodeCenter\BCLabelDll\1.4.17003.21\BCLabelDll\fMain.cs: 行 427
+   於 BCLabelDll.fMain.editWO_KeyPress(Object sender, KeyPressEventArgs e) 於 C:\FullChamp\fullchamp\BarcodeCenter\BCLabelDll\1.4.17003.21\BCLabelDll\fMain.cs: 行 2259
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Decimal" method="Void FCallDivide(System.Decimal ByRef, System.Decimal ByRef)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>

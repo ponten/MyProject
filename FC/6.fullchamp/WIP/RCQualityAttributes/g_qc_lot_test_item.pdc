@@ -1,0 +1,37 @@
+-- Create table
+create table G_QC_LOT_TEST_ITEM
+(
+  qc_lotno      VARCHAR2(50),
+  item_type_id  NUMBER,
+  item_id       NUMBER,
+  serial_number VARCHAR2(40),
+  information   VARCHAR2(300),
+  qcresult      VARCHAR2(20),
+  update_time   DATE default SYSDATE
+)
+tablespace SYSBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 16K
+    next 8K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the columns 
+comment on column G_QC_LOT_TEST_ITEM.qc_lotno
+  is '检验编号';
+comment on column G_QC_LOT_TEST_ITEM.item_type_id
+  is '测试大项';
+comment on column G_QC_LOT_TEST_ITEM.item_id
+  is '测试小项';
+comment on column G_QC_LOT_TEST_ITEM.serial_number
+  is '编号或SN';
+comment on column G_QC_LOT_TEST_ITEM.information
+  is '信息';
+comment on column G_QC_LOT_TEST_ITEM.qcresult
+  is '是否合格';
+comment on column G_QC_LOT_TEST_ITEM.update_time
+  is '更新时间';

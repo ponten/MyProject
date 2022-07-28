@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <English>
+    <Message Name="Enabled" Value="Enabled"/>
+    <Message Name="Disabled" Value="Disabled"/>
+    <Message Name="All" Value="All"/>
+    <Message Name="Type Code" Value="Down type code"/>
+    <Message Name="Down Type" Value="Machine Down type"/>
+    <Message Name="TypeCode" Value="Down type code"/>
+    <Message Name="Type Description" Value="Down type description"/>
+    <Message Name="TypeDesc" Value="Down type description"/>
+    <Message Name="Type Desc" Value="Down type description"/>
+    <Message Name="Reason Code" Value="Down reason code"/>
+    <Message Name="ReasonCode" Value="Down reason code"/>
+    <Message Name="Description" Value="Description 1"/>
+    <Message Name="Description 2" Value="Description 2"/>
+    <Message Name="TYPE_CODE" Value="Down type code"/>
+    <Message Name="TYPE_DESC" Value="Down type description"/>
+    <Message Name="ENABLED" Value="Enabled"/>
+    <Message Name="EMP_NAME" Value="Editor name"/>
+    <Message Name="UPDATE_TIME" Value="Update time"/>
+    <Message Name="REASON_CODE" Value="Down reason code"/>
+    <Message Name="REASON_DESC" Value="Description 1"/>
+    <Message Name="ReasonDesc" Value="Description"/>
+    <Message Name="DESC2" Value="Description 2"/>
+    <Message Name="has been referenced" Value="has been referenced"/>
+  </English>
+  <繁體中文>
+    <Message Name="Enabled" Value="啟用"/>
+    <Message Name="Disabled" Value="停用"/>
+    <Message Name="All" Value="全部"/>
+    <Message Name="Down Type" Value="異常類型"/>
+    <Message Name="Type Code" Value="異常類型代碼"/>
+    <Message Name="TypeCode" Value="異常類型代碼"/>
+    <Message Name="TYPE_CODE" Value="異常類型代碼"/>
+    <Message Name="Type Description" Value="異常類型描述"/>
+    <Message Name="TypeDesc" Value="異常類型描述"/>
+    <Message Name="Type Desc" Value="異常類型描述"/>
+    <Message Name="Reason Code" Value="異常代碼"/>
+    <Message Name="ReasonCode" Value="異常代碼"/>
+    <Message Name="REASON_CODE" Value="異常代碼"/>
+    <Message Name="Description" Value="異常描述一"/>
+    <Message Name="Description 2" Value="異常描述二"/>
+    <Message Name="TYPE_DESC" Value="異常類型描述"/>
+    <Message Name="ENABLED" Value="啟用狀態"/>
+    <Message Name="EMP_NAME" Value="異動人員名稱"/>
+    <Message Name="UPDATE_TIME" Value="最後更新時間"/>
+    <Message Name="REASON_DESC" Value="異常描述一"/>
+    <Message Name="ReasonDesc" Value="異常描述"/>
+    <Message Name="DESC2" Value="異常描述二"/>
+    <Message Name="Data is null" Value="資料為空"/>
+    <Message Name="Data Duplicate" Value="資料重複"/>
+    <Message Name="Data Append OK" Value="資料新增成功"/>
+    <Message Name="Append Other Data" Value="新增其他資料"/>
+    <Message Name="has been referenced" Value="已被參考使用"/>
+    <Message Name="Can not delete it" Value="不可以刪除"/>
+  </繁體中文>
+</Chroma>

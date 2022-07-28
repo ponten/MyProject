@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Chroma>
+  <English>
+    <Message Name=":" Value=": " />
+    <Message Name="All" Value="All " />
+    <Message Name="Choose" Value="Choose " />
+    <Message Name="Print" Value="Print " />
+    <Message Name="Label" Value=" Label" />
+    <Message Name="WORK_ORDER" Value="work order" />
+    <Message Name="RC_NO" Value="runcard" />
+    <Message Name="RC No" Value="runcard" />
+  </English>
+  <繁體中文>
+    <Message Name=":" Value="：" />
+    <Message Name="?" Value="？" />
+    <Message Name="Print" Value="列印" />
+    <Message Name="Query" Value="查詢" />
+    <Message Name="Input Type" Value="輸入條件" />
+    <Message Name="Reprint Type" Value="補印種類" />
+    <Message Name="All" Value="所有" />
+    <Message Name="Choose" Value="選擇" />
+    <Message Name="Label Information" Value="標籤資訊" />
+    <Message Name="Label File:" Value="標籤檔:" />
+    <Message Name="Print Method:" Value="列印方式:" />
+    <Message Name="Print Qty:" Value="列印數量:" />
+    <Message Name="Serial Number" Value="產品序號" />
+    <Message Name="Panel No" Value="SMT板邊號" />
+    <Message Name="Work Order" Value="工單號" />
+    <Message Name="Carton No" Value="外箱" />
+    <Message Name="Pallet No" Value="棧板" />
+    <Message Name="Customer SN" Value="客戶序號" />
+    <Message Name="Sub Board" Value="小(子)板序號" />
+    <Message Name="Label" Value="標籤" />
+    <Message Name="WORK_ORDER" Value="工單" />
+    <Message Name="RC_NO" Value="流程卡" />
+    <Message Name="RC No" Value="流程卡" />
+    <Message Name="Waterproof label" Value="防水標籤" />
+    <Message Name="Print runcard list" Value="列印流程卡清單" />
+    <Message Name="WORK_ORDER" Value="工單號碼" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="WorkOrder not found" Value="找不到工單號碼" />
+  </繁體中文>
+  <简体中文>
+    <Message Name="" Value="" />
+  </简体中文>
+</Chroma>

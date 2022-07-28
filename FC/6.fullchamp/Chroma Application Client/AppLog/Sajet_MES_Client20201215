@@ -1,0 +1,478 @@
+<log4j:event logger="ClientUtils" timestamp="1608006339216" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+DECLARE
+    main_bom_id          sajet.sys_bom_info.bom_id%TYPE;
+    main_part_id         sajet.sys_part.part_id%TYPE;
+    main_part_no         sajet.sys_part.part_no%TYPE;
+    main_part_version    sajet.sys_part.version%TYPE;
+    child_part_id        sajet.sys_part.part_id%TYPE;
+    child_part_no        sajet.sys_part.part_no%TYPE;
+    child_part_version   sajet.sys_part.version%TYPE;
+    update_user_id       sajet.sys_part.update_userid%TYPE;
+    date_time_now        sajet.sys_part.update_time%TYPE;
+    work_type            VARCHAR(10);
+    counter              NUMBER;
+    output_message       VARCHAR(4000);
+BEGIN
+    /*設定參數*/
+    main_part_no := :main_part_no;
+    main_part_version := :main_part_version;
+    child_part_no := :child_part_no;
+    update_user_id := :update_user_id;
+    date_time_now := sysdate;
+
+    /*檢查執行模式*/
+    SELECT
+        COUNT(1)
+    INTO counter
+    FROM
+        sajet.sys_part       a,
+        sajet.sys_bom_info   b
+    WHERE
+        a.part_no = :main_part_no
+        AND a.version = :main_part_version
+        AND a.part_id = b.part_id
+        AND a.version = b.version;
+
+    IF counter &gt; 0 THEN
+        work_type := 'UPDATE';
+    ELSE
+        work_type := 'INSERT';
+    END IF;
+
+    SELECT
+        COUNT(1)
+    INTO counter
+    FROM
+        sajet.sys_bom_info   a,
+        sajet.sys_bom        b,
+        sajet.sys_part       c,
+        sajet.sys_part       d
+    WHERE
+        a.bom_id = b.bom_id
+        AND a.part_id = c.part_id
+        AND b.item_part_id = d.part_id
+        AND a.enabled = 'Y'
+        AND b.enabled = 'Y'
+        AND c.part_no = main_part_no
+        AND c.version = coalesce(main_part_version, 'N/A')
+        AND d.part_no = child_part_no;
+
+    IF counter &gt; 0 THEN
+        work_type := 'DO_NOTHING';
+    END IF;
+
+    /*取得主料號 ID*/
+    SELECT
+        part_id
+    INTO main_part_id
+    FROM
+        sajet.sys_part
+    WHERE
+        part_no = main_part_no;
+
+    /*取得子件料號資訊*/
+
+    SELECT
+        part_id,
+        version
+    INTO
+        child_part_id,
+        child_part_version
+    FROM
+        sajet.sys_part
+    WHERE
+        part_no = child_part_no;
+
+    /*更新子階料號*/
+
+    CASE work_type
+        WHEN 'DO_NOTHING' THEN
+            NULL;
+        WHEN 'INSERT' THEN
+            SELECT
+                coalesce(bom_id + 1, 10000001)
+            INTO main_bom_id
+            FROM
+                sajet.sys_bom_info;
+
+            INSERT ALL INTO sajet.sys_bom_info (
+                bom_id,
+                part_id,
+                version,
+                update_userid,
+                update_time,
+                enabled
+            ) VALUES (
+                main_bom_id,
+                main_part_id,
+                main_part_version,
+                update_user_id,
+                date_time_now,
+                'Y'
+            ) INTO sajet.sys_bom (
+                bom_id,
+                item_part_id,
+                item_group,
+                item_count,
+                process_id,
+                version,
+                update_userid,
+                update_time,
+                enabled
+            ) VALUES (
+                main_bom_id,
+                child_part_id,
+                0,
+                1,
+                0,
+                child_part_version,
+                update_user_id,
+                date_time_now,
+                'Y'
+            ) SELECT
+                  1
+              FROM
+                  dual;
+
+        WHEN 'UPDATE' THEN
+            SELECT
+                bom_id
+            INTO main_bom_id
+            FROM
+                sajet.sys_bom_info
+            WHERE
+                part_id = main_part_id
+                AND version = main_part_version
+                AND ROWNUM = 1;
+
+            INSERT INTO sajet.sys_ht_bom (
+                bom_id,
+                item_part_id,
+                item_group,
+                item_count,
+                process_id,
+                version,
+                update_userid,
+                update_time,
+                enabled,
+                location,
+                unit,
+                item_seq,
+                is_material,
+                purchase
+            )
+                SELECT
+                    bom_id,
+                    item_part_id,
+                    item_group,
+                    item_count,
+                    process_id,
+                    version,
+                    update_userid,
+                    update_time,
+                    enabled,
+                    location,
+                    unit,
+                    item_seq,
+                    is_material,
+                    purchase
+                FROM
+                    sajet.sys_bom
+                WHERE
+                    bom_id = main_bom_id;
+
+            DELETE FROM sajet.sys_bom
+            WHERE
+                bom_id = main_bom_id;
+
+            INSERT INTO sajet.sys_bom (
+                bom_id,
+                item_part_id,
+                item_group,
+                item_count,
+                process_id,
+                version,
+                update_userid,
+                update_time,
+                enabled
+            ) VALUES (
+                main_bom_id,
+                child_part_id,
+                0,
+                1,
+                0,
+                child_part_version,
+                update_user_id,
+                date_time_now,
+                'Y'
+            );
+
+    END CASE;
+
+    output_message := 'OK';
+END;
+:ORA-01422: 精確擷取傳回的列數超過所要求的列數
+ORA-06512: 在 line 92</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608006418843" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+DECLARE
+    main_bom_id          sajet.sys_bom_info.bom_id%TYPE;
+    main_part_id         sajet.sys_part.part_id%TYPE;
+    main_part_no         sajet.sys_part.part_no%TYPE;
+    main_part_version    sajet.sys_part.version%TYPE;
+    child_part_id        sajet.sys_part.part_id%TYPE;
+    child_part_no        sajet.sys_part.part_no%TYPE;
+    child_part_version   sajet.sys_part.version%TYPE;
+    update_user_id       sajet.sys_part.update_userid%TYPE;
+    date_time_now        sajet.sys_part.update_time%TYPE;
+    work_type            VARCHAR(10);
+    counter              NUMBER;
+    output_message       VARCHAR(4000);
+BEGIN
+    /*設定參數*/
+    main_part_no := :main_part_no;
+    main_part_version := :main_part_version;
+    child_part_no := :child_part_no;
+    update_user_id := :update_user_id;
+    date_time_now := sysdate;
+
+    /*檢查執行模式*/
+    SELECT
+        COUNT(1)
+    INTO counter
+    FROM
+        sajet.sys_part       a,
+        sajet.sys_bom_info   b
+    WHERE
+        a.part_no = :main_part_no
+        AND a.version = :main_part_version
+        AND a.part_id = b.part_id
+        AND a.version = b.version;
+
+    IF counter &gt; 0 THEN
+        work_type := 'UPDATE';
+    ELSE
+        work_type := 'INSERT';
+    END IF;
+
+    SELECT
+        COUNT(1)
+    INTO counter
+    FROM
+        sajet.sys_bom_info   a,
+        sajet.sys_bom        b,
+        sajet.sys_part       c,
+        sajet.sys_part       d
+    WHERE
+        a.bom_id = b.bom_id
+        AND a.part_id = c.part_id
+        AND b.item_part_id = d.part_id
+        AND a.enabled = 'Y'
+        AND b.enabled = 'Y'
+        AND c.part_no = main_part_no
+        AND c.version = coalesce(main_part_version, 'N/A')
+        AND d.part_no = child_part_no;
+
+    IF counter &gt; 0 THEN
+        work_type := 'DO_NOTHING';
+    END IF;
+
+    /*取得主料號 ID*/
+    SELECT
+        part_id
+    INTO main_part_id
+    FROM
+        sajet.sys_part
+    WHERE
+        part_no = main_part_no;
+
+    /*取得子件料號資訊*/
+
+    SELECT
+        part_id,
+        version
+    INTO
+        child_part_id,
+        child_part_version
+    FROM
+        sajet.sys_part
+    WHERE
+        part_no = child_part_no;
+
+    /*更新子階料號*/
+
+    CASE work_type
+        WHEN 'DO_NOTHING' THEN
+            NULL;
+        WHEN 'INSERT' THEN
+            SELECT
+                coalesce(bom_id + 1, 10000001)
+            INTO main_bom_id
+            FROM
+                sajet.sys_bom_info;
+
+            INSERT ALL INTO sajet.sys_bom_info (
+                bom_id,
+                part_id,
+                version,
+                update_userid,
+                update_time,
+                enabled
+            ) VALUES (
+                main_bom_id,
+                main_part_id,
+                main_part_version,
+                update_user_id,
+                date_time_now,
+                'Y'
+            ) INTO sajet.sys_bom (
+                bom_id,
+                item_part_id,
+                item_group,
+                item_count,
+                process_id,
+                version,
+                update_userid,
+                update_time,
+                enabled
+            ) VALUES (
+                main_bom_id,
+                child_part_id,
+                0,
+                1,
+                0,
+                child_part_version,
+                update_user_id,
+                date_time_now,
+                'Y'
+            ) SELECT
+                  1
+              FROM
+                  dual;
+
+        WHEN 'UPDATE' THEN
+            SELECT
+                bom_id
+            INTO main_bom_id
+            FROM
+                sajet.sys_bom_info
+            WHERE
+                part_id = main_part_id
+                AND version = main_part_version
+                AND ROWNUM = 1;
+
+            INSERT INTO sajet.sys_ht_bom (
+                bom_id,
+                item_part_id,
+                item_group,
+                item_count,
+                process_id,
+                version,
+                update_userid,
+                update_time,
+                enabled,
+                location,
+                unit,
+                item_seq,
+                is_material,
+                purchase
+            )
+                SELECT
+                    bom_id,
+                    item_part_id,
+                    item_group,
+                    item_count,
+                    process_id,
+                    version,
+                    update_userid,
+                    update_time,
+                    enabled,
+                    location,
+                    unit,
+                    item_seq,
+                    is_material,
+                    purchase
+                FROM
+                    sajet.sys_bom
+                WHERE
+                    bom_id = main_bom_id;
+
+            DELETE FROM sajet.sys_bom
+            WHERE
+                bom_id = main_bom_id;
+
+            INSERT INTO sajet.sys_bom (
+                bom_id,
+                item_part_id,
+                item_group,
+                item_count,
+                process_id,
+                version,
+                update_userid,
+                update_time,
+                enabled
+            ) VALUES (
+                main_bom_id,
+                child_part_id,
+                0,
+                1,
+                0,
+                child_part_version,
+                update_user_id,
+                date_time_now,
+                'Y'
+            );
+
+    END CASE;
+
+    output_message := 'OK';
+END;
+:ORA-01422: 精確擷取傳回的列數超過所要求的列數
+ORA-06512: 在 line 92</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608015100983" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    *
+FROM
+    sajet.sys_rc_process_machine
+WHERE
+    process_id = :process_id
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608015101079" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    *
+FROM
+    sajet.sys_rc_process_machine
+WHERE
+    process_id = :process_id
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    *
+FROM
+    sajet.sys_rc_process_machine
+WHERE
+    process_id = :process_id
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCOutput.References.References.GetProcessMachineList(String processID) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.19\RCOutput_WO\Reference\references.cs: 行 174
+   於 RCOutput_WO.fMain.ButtonOK_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.19\RCOutput_WO\fMain.cs: 行 1235
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608015162489" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    *
+FROM
+    sajet.sys_rc_process_machine
+WHERE
+    process_id = :process_id
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>

@@ -1,0 +1,481 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611551520818" level="FATAL" thread="1"><log4j:message>Out of allowed area.</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[Lassalle.Flow.AddFlowException: Out of allowed area.
+   於 Lassalle.Flow.Node..ctor(Single left, Single top, Single width, Single height)
+   於 CRoute.fEdit.btnGroup_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CRoute\1.1.17003.16\CRoute\fEdit.cs: 行 684
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="Lassalle.Flow.Node" method="Void .ctor(Single, Single, Single, Single)" file="C:\FullChamp\Chroma Application Client\Lassalle.Flow.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611551539686" level="FATAL" thread="1"><log4j:message>Out of allowed area.</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[Lassalle.Flow.AddFlowException: Out of allowed area.
+   於 Lassalle.Flow.Node..ctor(Single left, Single top, Single width, Single height)
+   於 CRoute.fEdit.btnGroup_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\CRoute\1.1.17003.16\CRoute\fEdit.cs: 行 684
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="Lassalle.Flow.Node" method="Void .ctor(Single, Single, Single, Single)" file="C:\FullChamp\Chroma Application Client\Lassalle.Flow.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611552309152" level="FATAL" thread="1"><log4j:message>位置 0 沒有資料列。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.IndexOutOfRangeException: 位置 0 沒有資料列。
+   於 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   於 System.Data.DataRowCollection.get_Item(Int32 index)
+   於 CWoManager.fData.ListViewProduceDetail(String part_no, String route_name) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.15\CWoManager\fData.cs: 行 3040
+   於 CWoManager.fData.fData_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.15\CWoManager\fData.cs: 行 413
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Data.RBTree`1" method="NodePath GetNodeByIndex(Int32)" file="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611555176834" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    A.WORK_ORDER     "WORK ORDER",
+    B.WO_TYPE        "W/O TYPE",
+    C.PART_NO        "PART NO",
+    C.SPEC1          "PRODUCT NAME",
+    C.SPEC2          "SPECIFICATION",
+    A.RC_NO          "RC NO",
+    NVL(A.WIP_OUT_GOOD_QTY, A.CURRENT_QTY) "RC QTY",
+    NVL(A.WIP_OUT_SCRAP_QTY, 0) "SCRAP QTY",
+    ROUND(NVL(A.WIP_OUT_GOOD_QTY, A.CURRENT_QTY) /(NVL(A.WIP_OUT_GOOD_QTY, A.CURRENT_QTY) + NVL(A.WIP_OUT_SCRAP_QTY, 0)) * 100, 3
+    )
+    || '%' "YIELD RATE",
+    D.PROCESS_NAME   "PROCESS NAME",
+    SAJET.SJ_RC_STATUS(A.CURRENT_STATUS) "RC STATUS",
+    TO_CHAR(A.WIP_IN_TIME, 'YYYY/ MM/ DD HH24: MI: SS') "WIP_IN_TIME",
+    TO_CHAR(A.OUT_PROCESS_TIME, 'YYYY/ MM/ DD HH24: MI: SS') "WIP_OUT_TIME",
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/ DD HH24: MI: SS') "UPDATE_TIME",
+    D.PROCESS_ID     "PROCESS_ID"
+FROM
+    (
+        SELECT
+            WORK_ORDER,
+            RC_NO,
+            PART_ID,
+            PROCESS_ID,
+            CURRENT_QTY,
+            CURRENT_STATUS,
+            WIP_OUT_GOOD_QTY,
+            WIP_OUT_SCRAP_QTY,
+            WIP_IN_TIME,
+            OUT_PROCESS_TIME,
+            NULL UPDATE_TIME
+        FROM
+            SAJET.G_RC_STATUS
+        WHERE
+            1 = 1
+            AND A.RC_NO = :P1
+        UNION
+        SELECT
+            WORK_ORDER,
+            RC_NO,
+            PART_ID,
+            PROCESS_ID,
+            CURRENT_QTY,
+            CURRENT_STATUS,
+            WIP_OUT_GOOD_QTY,
+            WIP_OUT_SCRAP_QTY,
+            WIP_IN_TIME,
+            OUT_PROCESS_TIME,
+            UPDATE_TIME
+        FROM
+            SAJET.G_RC_TRAVEL
+        WHERE
+            1 = 1
+            AND A.RC_NO = :P1
+    ) A,
+    SAJET.G_WO_BASE     B,
+    SAJET.SYS_PART      C,
+    SAJET.SYS_PROCESS   D
+WHERE
+    A.WORK_ORDER = B.WORK_ORDER
+    AND A.PART_ID = C.PART_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+    AND A.CURRENT_STATUS IN (
+        0,
+        1,
+        2,
+        11
+    )
+    AND B.WO_STATUS IN (
+        2,
+        3,
+        4,
+        5,
+        6
+    )
+    AND A.RC_NO = :P1
+ORDER BY
+    A.RC_NO ASC,
+    A.UPDATE_TIME ASC,
+    A.OUT_PROCESS_TIME ASC,
+    A.WIP_IN_TIME ASC:ORA-00904: "A"."RC_NO": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611557113098" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: SELECT
+    A.WORK_ORDER     "WORK ORDER",
+    B.WO_TYPE        "W/O TYPE",
+    C.PART_NO        "PART NO",
+    C.SPEC1          "PRODUCT NAME",
+    C.SPEC2          "SPECIFICATION",
+    A.RC_NO          "RC NO",
+    NVL(A.WIP_OUT_GOOD_QTY, A.CURRENT_QTY) "RC QTY",
+    NVL(A.WIP_OUT_SCRAP_QTY, 0) "SCRAP QTY",
+    ROUND(NVL(A.WIP_OUT_GOOD_QTY, A.CURRENT_QTY) /(NVL(A.WIP_OUT_GOOD_QTY, A.CURRENT_QTY) + NVL(A.WIP_OUT_SCRAP_QTY, 0)) * 100, 3
+    )
+    || '%' "YIELD RATE",
+    D.PROCESS_NAME   "PROCESS NAME",
+    A.CURRENT_STATUS "RC STATUS",
+    TO_CHAR(A.WIP_IN_TIME, 'YYYY/ MM/ DD HH24: MI: SS') "WIP_IN_TIME",
+    TO_CHAR(A.OUT_PROCESS_TIME, 'YYYY/ MM/ DD HH24: MI: SS') "WIP_OUT_TIME",
+    TO_CHAR(A.UPDATE_TIME, 'YYYY/ MM/ DD HH24: MI: SS') "UPDATE_TIME",
+    D.PROCESS_ID     "PROCESS_ID"
+FROM
+    (
+        SELECT
+            A.WORK_ORDER,
+            A.RC_NO,
+            A.PART_ID,
+            A.PROCESS_ID,
+            A.CURRENT_QTY,
+            CASE A.CURRENT_STATUS
+                WHEN 0   THEN
+                    '待生產'
+                WHEN 1   THEN
+                    '生產中'
+                WHEN 2   THEN
+                    '鎖定'
+                ELSE
+                    SAJET.SJ_RC_STATUS(CURRENT_STATUS)
+            END CURRENT_STATUS,
+            A.WIP_OUT_GOOD_QTY,
+            A.WIP_OUT_SCRAP_QTY,
+            A.WIP_IN_TIME,
+            A.OUT_PROCESS_TIME,
+            NULL UPDATE_TIME
+        FROM
+            SAJET.G_RC_STATUS A
+        WHERE
+            1 = 1
+            AND A.RC_NO = :P1
+        UNION
+        SELECT
+            A.WORK_ORDER,
+            A.RC_NO,
+            A.PART_ID,
+            A.PROCESS_ID,
+            A.CURRENT_QTY,
+            '已過站' CURRENT_STATUS,
+            A.WIP_OUT_GOOD_QTY,
+            A.WIP_OUT_SCRAP_QTY,
+            A.WIP_IN_TIME,
+            A.OUT_PROCESS_TIME,
+            A.UPDATE_TIME
+        FROM
+            SAJET.G_RC_TRAVEL A
+        WHERE
+            1 = 1
+            AND A.RC_NO = :P1
+    ) A,
+    SAJET.G_WO_BASE     B,
+    SAJET.SYS_PART      C,
+    SAJET.SYS_PROCESS   D
+WHERE
+    A.WORK_ORDER = B.WORK_ORDER
+    AND A.PART_ID = C.PART_ID
+    AND A.PROCESS_ID = D.PROCESS_ID
+    AND A.CURRENT_STATUS IN (
+        0,
+        1,
+        2,
+        11
+    )
+    AND B.WO_STATUS IN (
+        2,
+        3,
+        4,
+        5,
+        6
+    )
+    AND A.RC_NO = :P1
+ORDER BY
+    A.RC_NO ASC,
+    A.UPDATE_TIME ASC,
+    A.OUT_PROCESS_TIME ASC,
+    A.WIP_IN_TIME ASC:ORA-01722: 無效的數字</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611565634778" level="ERROR" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: 
+DECLARE
+    FOUND_ROW_STATUS      VARCHAR(5);
+    PARAM_PART_ID         NUMBER;
+    PARAM_ROUTE_ID        NUMBER;
+    PARAM_NODE_ID         NUMBER;
+    PARAM_PROCESS_ID      NUMBER;
+    PARAM_ENABLED         VARCHAR(5);
+    PARAM_UPDATE_USERID   NUMBER;
+    PARAM_UPDATE_TIME     DATE;
+BEGIN
+    --
+    PARAM_PART_ID := :PART_ID;
+    PARAM_ROUTE_ID := :ROUTE_ID;
+    PARAM_UPDATE_USERID := :UPDATE_USERID;
+    PARAM_UPDATE_TIME := :UPDATE_TIME;
+    PARAM_NODE_ID := :NODE_ID;
+    PARAM_PROCESS_ID := :PROCESS_ID;
+    PARAM_ENABLED := :ENABLED;
+    --
+    SELECT
+        UPPER(TRIM(ENABLED))
+    INTO FOUND_ROW_STATUS
+    FROM
+        SAJET.SYS_END_PROCESS
+    WHERE
+        PART_ID = PARAM_PART_ID
+        AND ROUTE_ID = PARAM_ROUTE_ID
+        AND NODE_ID = PARAM_NODE_ID
+        AND PROCESS_ID = PARAM_PROCESS_ID;
+
+    IF FOUND_ROW_STATUS = 'Y' THEN
+        NULL;
+    ELSIF FOUND_ROW_STATUS = 'N' THEN
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'N',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND ENABLED = 'Y'
+            AND NODE_ID <> PARAM_NODE_ID
+            AND PROCESS_ID <> PARAM_PROCESS_ID;
+
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'Y',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND NODE_ID = PARAM_NODE_ID
+            AND PROCESS_ID = PARAM_PROCESS_ID;
+
+    ELSIF PARAM_PROCESS_ID <> 0 AND PARAM_NODE_ID <> 0 THEN
+        INSERT INTO SAJET.SYS_END_PROCESS (
+            PART_ID,
+            ROUTE_ID,
+            NODE_ID,
+            PROCESS_ID,
+            UPDATE_USERID,
+            UPDATE_TIME,
+            ENABLED
+        ) VALUES (
+            PARAM_PART_ID,
+            PARAM_ROUTE_ID,
+            PARAM_NODE_ID,
+            PARAM_PROCESS_ID,
+            PARAM_UPDATE_USERID,
+            PARAM_UPDATE_TIME,
+            PARAM_ENABLED
+        );
+
+    END IF;
+
+END;
+:ORA-01403: 找不到資料
+ORA-06512: 在 line 21]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611565634876" level="FATAL" thread="1"><log4j:message><![CDATA[ExecuteSQL#2: →【 
+DECLARE
+    FOUND_ROW_STATUS      VARCHAR(5);
+    PARAM_PART_ID         NUMBER;
+    PARAM_ROUTE_ID        NUMBER;
+    PARAM_NODE_ID         NUMBER;
+    PARAM_PROCESS_ID      NUMBER;
+    PARAM_ENABLED         VARCHAR(5);
+    PARAM_UPDATE_USERID   NUMBER;
+    PARAM_UPDATE_TIME     DATE;
+BEGIN
+    --
+    PARAM_PART_ID := :PART_ID;
+    PARAM_ROUTE_ID := :ROUTE_ID;
+    PARAM_UPDATE_USERID := :UPDATE_USERID;
+    PARAM_UPDATE_TIME := :UPDATE_TIME;
+    PARAM_NODE_ID := :NODE_ID;
+    PARAM_PROCESS_ID := :PROCESS_ID;
+    PARAM_ENABLED := :ENABLED;
+    --
+    SELECT
+        UPPER(TRIM(ENABLED))
+    INTO FOUND_ROW_STATUS
+    FROM
+        SAJET.SYS_END_PROCESS
+    WHERE
+        PART_ID = PARAM_PART_ID
+        AND ROUTE_ID = PARAM_ROUTE_ID
+        AND NODE_ID = PARAM_NODE_ID
+        AND PROCESS_ID = PARAM_PROCESS_ID;
+
+    IF FOUND_ROW_STATUS = 'Y' THEN
+        NULL;
+    ELSIF FOUND_ROW_STATUS = 'N' THEN
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'N',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND ENABLED = 'Y'
+            AND NODE_ID <> PARAM_NODE_ID
+            AND PROCESS_ID <> PARAM_PROCESS_ID;
+
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'Y',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND NODE_ID = PARAM_NODE_ID
+            AND PROCESS_ID = PARAM_PROCESS_ID;
+
+    ELSIF PARAM_PROCESS_ID <> 0 AND PARAM_NODE_ID <> 0 THEN
+        INSERT INTO SAJET.SYS_END_PROCESS (
+            PART_ID,
+            ROUTE_ID,
+            NODE_ID,
+            PROCESS_ID,
+            UPDATE_USERID,
+            UPDATE_TIME,
+            ENABLED
+        ) VALUES (
+            PARAM_PART_ID,
+            PARAM_ROUTE_ID,
+            PARAM_NODE_ID,
+            PARAM_PROCESS_ID,
+            PARAM_UPDATE_USERID,
+            PARAM_UPDATE_TIME,
+            PARAM_ENABLED
+        );
+
+    END IF;
+
+END;
+ 】
+
+Exception：ORA-01403: 找不到資料
+ORA-06512: 在 line 21]]></log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+DECLARE
+    FOUND_ROW_STATUS      VARCHAR(5);
+    PARAM_PART_ID         NUMBER;
+    PARAM_ROUTE_ID        NUMBER;
+    PARAM_NODE_ID         NUMBER;
+    PARAM_PROCESS_ID      NUMBER;
+    PARAM_ENABLED         VARCHAR(5);
+    PARAM_UPDATE_USERID   NUMBER;
+    PARAM_UPDATE_TIME     DATE;
+BEGIN
+    --
+    PARAM_PART_ID := :PART_ID;
+    PARAM_ROUTE_ID := :ROUTE_ID;
+    PARAM_UPDATE_USERID := :UPDATE_USERID;
+    PARAM_UPDATE_TIME := :UPDATE_TIME;
+    PARAM_NODE_ID := :NODE_ID;
+    PARAM_PROCESS_ID := :PROCESS_ID;
+    PARAM_ENABLED := :ENABLED;
+    --
+    SELECT
+        UPPER(TRIM(ENABLED))
+    INTO FOUND_ROW_STATUS
+    FROM
+        SAJET.SYS_END_PROCESS
+    WHERE
+        PART_ID = PARAM_PART_ID
+        AND ROUTE_ID = PARAM_ROUTE_ID
+        AND NODE_ID = PARAM_NODE_ID
+        AND PROCESS_ID = PARAM_PROCESS_ID;
+
+    IF FOUND_ROW_STATUS = 'Y' THEN
+        NULL;
+    ELSIF FOUND_ROW_STATUS = 'N' THEN
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'N',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND ENABLED = 'Y'
+            AND NODE_ID <> PARAM_NODE_ID
+            AND PROCESS_ID <> PARAM_PROCESS_ID;
+
+        UPDATE SAJET.SYS_END_PROCESS
+        SET
+            ENABLED = 'Y',
+            UPDATE_USERID = PARAM_UPDATE_USERID,
+            UPDATE_TIME = PARAM_UPDATE_TIME
+        WHERE
+            PART_ID = PARAM_PART_ID
+            AND ROUTE_ID = PARAM_ROUTE_ID
+            AND NODE_ID = PARAM_NODE_ID
+            AND PROCESS_ID = PARAM_PROCESS_ID;
+
+    ELSIF PARAM_PROCESS_ID <> 0 AND PARAM_NODE_ID <> 0 THEN
+        INSERT INTO SAJET.SYS_END_PROCESS (
+            PART_ID,
+            ROUTE_ID,
+            NODE_ID,
+            PROCESS_ID,
+            UPDATE_USERID,
+            UPDATE_TIME,
+            ENABLED
+        ) VALUES (
+            PARAM_PART_ID,
+            PARAM_ROUTE_ID,
+            PARAM_NODE_ID,
+            PARAM_PROCESS_ID,
+            PARAM_UPDATE_USERID,
+            PARAM_UPDATE_TIME,
+            PARAM_ENABLED
+        );
+
+    END IF;
+
+END;
+ 】
+
+Exception：ORA-01403: 找不到資料
+ORA-06512: 在 line 21
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCPart.Services.EndProcessService.SaveEndProcessSetting(String PART_ID, String ROUTE_ID, SysEndProcessModel node) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.24\RCPart\Services\EndProcessService.cs: 行 277
+   於 RCPart.fData.TsmiRouteDetail_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.24\RCPart\fData.cs: 行 1120
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>

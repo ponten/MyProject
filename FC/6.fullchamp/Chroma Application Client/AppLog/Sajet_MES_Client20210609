@@ -1,0 +1,327 @@
+<log4j:event logger="ClientUtils" timestamp="1623208094712" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+INSERT INTO MESUSER.G_WO_STATUS (
+    JOB_NUMBER,
+    JOB_STATUS
+) VALUES (
+    :WORK_ORDER,
+    8
+):ORA-01400: 無法將 NULL 插入 ("MESUSER"."G_WO_STATUS"."JOB_NUMBER")</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623208094775" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+INSERT INTO MESUSER.G_WO_STATUS (
+    JOB_NUMBER,
+    JOB_STATUS
+) VALUES (
+    :WORK_ORDER,
+    8
+) 】
+
+Exception：ORA-01400: 無法將 NULL 插入 ("MESUSER"."G_WO_STATUS"."JOB_NUMBER")</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+INSERT INTO MESUSER.G_WO_STATUS (
+    JOB_NUMBER,
+    JOB_STATUS
+) VALUES (
+    :WORK_ORDER,
+    8
+) 】
+
+Exception：ORA-01400: 無法將 NULL 插入 ("MESUSER"."G_WO_STATUS"."JOB_NUMBER")
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCTransfer.fMain.Btn_Excute_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\RCManager\RCTransfer\1.0.17003.7\RCTransfer\fMain.cs: 行 556
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623208841046" level="FATAL" thread="1"><log4j:message>輸入字串格式不正確。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 輸入字串格式不正確。
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 835
+   於 CWoManager.fMain.ShowData(Boolean isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 798
+   於 CWoManager.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 352
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Number" method="Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623208866522" level="FATAL" thread="1"><log4j:message>輸入字串格式不正確。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 輸入字串格式不正確。
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 835
+   於 CWoManager.fMain.ShowData(Boolean isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 798
+   於 CWoManager.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 352
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Number" method="Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623208874394" level="FATAL" thread="1"><log4j:message>輸入字串格式不正確。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 輸入字串格式不正確。
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 835
+   於 CWoManager.fMain.ShowData(Boolean isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 798
+   於 CWoManager.fMain.btnSearch_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 454
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Number" method="Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623209420693" level="FATAL" thread="1"><log4j:message>輸入字串格式不正確。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 輸入字串格式不正確。
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 835
+   於 CWoManager.fMain.ShowData(Boolean isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 798
+   於 CWoManager.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 352
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Number" method="Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623209500673" level="FATAL" thread="1"><log4j:message>輸入字串格式不正確。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 輸入字串格式不正確。
+   於 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   於 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   於 System.Int32.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 835
+   於 CWoManager.fMain.ShowData(Boolean isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 798
+   於 CWoManager.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.20\CWoManager\fMain.cs: 行 352
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Number" method="Void StringToNumber(System.String, System.Globalization.NumberStyles, NumberBuffer ByRef, System.Globalization.NumberFormatInfo, Boolean)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623226039319" level="FATAL" thread="1"><log4j:message>找不到路徑 'C:\FullChamp\Chroma Application Client\WOManager\RC_HOLD\RC_Hold.xlsx' 的一部分。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.IO.DirectoryNotFoundException: 找不到路徑 'C:\FullChamp\Chroma Application Client\WOManager\RC_HOLD\RC_Hold.xlsx' 的一部分。
+   於 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   於 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   於 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   於 ExportExcel.UpdateExcel.Export(DataSet tHold, String hold_no) 於 C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.7\RCHold\UpdateExcel.cs: 行 41
+   於 RCHold.fMain.Excute_button_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.7\RCHold\fMain.cs: 行 543
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.IO.__Error" method="Void WinIOError(Int32, System.String)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623228211973" level="FATAL" thread="1"><log4j:message>擷取元件 (CLSID 為 {00024500-0000-0000-C000-000000000046}) 的 COM Class Factory 失敗，因為發生下列錯誤: 80040154 類別未登錄 (發生例外狀況於 HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG))。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Runtime.InteropServices.COMException (0x80040154): 擷取元件 (CLSID 為 {00024500-0000-0000-C000-000000000046}) 的 COM Class Factory 失敗，因為發生下列錯誤: 80040154 類別未登錄 (發生例外狀況於 HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG))。
+   於 System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   於 System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   於 System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   於 System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   於 System.Activator.CreateInstance(Type type)
+   於 ExportExcel.UpdateExcel.Export(DataSet tHold, String hold_no) 於 C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.8\RCHold\UpdateExcel.cs: 行 43
+   於 RCHold.fMain.Excute_button_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.8\RCHold\fMain.cs: 行 543
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.RuntimeTypeHandle" method="System.Object CreateInstance(System.RuntimeType, Boolean, Boolean, Boolean ByRef, System.RuntimeMethodHandleInternal ByRef, Boolean ByRef)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623228287604" level="FATAL" thread="1"><log4j:message>擷取元件 (CLSID 為 {00024500-0000-0000-C000-000000000046}) 的 COM Class Factory 失敗，因為發生下列錯誤: 80040154 類別未登錄 (發生例外狀況於 HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG))。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Runtime.InteropServices.COMException (0x80040154): 擷取元件 (CLSID 為 {00024500-0000-0000-C000-000000000046}) 的 COM Class Factory 失敗，因為發生下列錯誤: 80040154 類別未登錄 (發生例外狀況於 HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG))。
+   於 System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   於 System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   於 System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   於 System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   於 System.Activator.CreateInstance(Type type)
+   於 ExportExcel.UpdateExcel.Export(DataSet tHold, String hold_no) 於 C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.8\RCHold\UpdateExcel.cs: 行 43
+   於 RCHold.fMain.Excute_button_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.8\RCHold\fMain.cs: 行 543
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.RuntimeTypeHandle" method="System.Object CreateInstance(System.RuntimeType, Boolean, Boolean, Boolean ByRef, System.RuntimeMethodHandleInternal ByRef, Boolean ByRef)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623228813657" level="FATAL" thread="1"><log4j:message>擷取元件 (CLSID 為 {00024500-0000-0000-C000-000000000046}) 的 COM Class Factory 失敗，因為發生下列錯誤: 80040154 類別未登錄 (發生例外狀況於 HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG))。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Runtime.InteropServices.COMException (0x80040154): 擷取元件 (CLSID 為 {00024500-0000-0000-C000-000000000046}) 的 COM Class Factory 失敗，因為發生下列錯誤: 80040154 類別未登錄 (發生例外狀況於 HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG))。
+   於 System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   於 System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   於 System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   於 System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   於 System.Activator.CreateInstance(Type type)
+   於 ExportExcel.UpdateExcel.Export(DataSet tHold, String hold_no) 於 C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.8\RCHold\UpdateExcel.cs: 行 43
+   於 RCHold.fMain.Excute_button_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.8\RCHold\fMain.cs: 行 543
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.RuntimeTypeHandle" method="System.Object CreateInstance(System.RuntimeType, Boolean, Boolean, Boolean ByRef, System.RuntimeMethodHandleInternal ByRef, Boolean ByRef)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623229658604" level="FATAL" thread="1"><log4j:message>擷取元件 (CLSID 為 {00024500-0000-0000-C000-000000000046}) 的 COM Class Factory 失敗，因為發生下列錯誤: 80040154 類別未登錄 (發生例外狀況於 HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG))。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Runtime.InteropServices.COMException (0x80040154): 擷取元件 (CLSID 為 {00024500-0000-0000-C000-000000000046}) 的 COM Class Factory 失敗，因為發生下列錯誤: 80040154 類別未登錄 (發生例外狀況於 HRESULT: 0x80040154 (REGDB_E_CLASSNOTREG))。
+   於 System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   於 System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   於 System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   於 System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   於 System.Activator.CreateInstance(Type type)
+   於 ExportExcel.UpdateExcel.Export(DataSet tHold, String hold_no) 於 C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.8\RCHold\UpdateExcel.cs: 行 43
+   於 RCHold.fMain.Excute_button_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.8\RCHold\fMain.cs: 行 543
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.RuntimeTypeHandle" method="System.Object CreateInstance(System.RuntimeType, Boolean, Boolean, Boolean ByRef, System.RuntimeMethodHandleInternal ByRef, Boolean ByRef)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623230902288" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 ExportExcel.CreateExcel.ExportToExcel(DataGridView GridView)
+   於 CProcess.fMain.btnExport_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ExportExcel.CreateExcel" method="Void ExportToExcel(System.Windows.Forms.DataGridView)" file="C:\FullChamp\Chroma Application Client\DataCenter\CProcess.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1623232103086" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    *
+FROM
+    (
+        
+SELECT
+    PART_ID,
+    PART_NO,
+    OPTION2 FORMER_PART_NO,
+    SPEC1,
+    SPEC2
+FROM
+    SAJET.SYS_PART
+WHERE
+    ENABLED = 'Y'
+ORDER BY
+    PART_NO
+ AND (UPPER(PART_NO) LIKE :PARAM_1 || '%' OR UPPER(OPTION2) LIKE :PARAM_1 || '%') 
+    ) base_query
+WHERE
+    0 = 1
+:ORA-00907: 遺漏右括弧</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623232103211" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    *
+FROM
+    (
+        
+SELECT
+    PART_ID,
+    PART_NO,
+    OPTION2 FORMER_PART_NO,
+    SPEC1,
+    SPEC2
+FROM
+    SAJET.SYS_PART
+WHERE
+    ENABLED = 'Y'
+ORDER BY
+    PART_NO
+ AND (UPPER(PART_NO) LIKE :PARAM_1 || '%' OR UPPER(OPTION2) LIKE :PARAM_1 || '%') 
+    ) base_query
+WHERE
+    0 = 1
+ 】
+
+Exception：ORA-00907: 遺漏右括弧</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    *
+FROM
+    (
+        
+SELECT
+    PART_ID,
+    PART_NO,
+    OPTION2 FORMER_PART_NO,
+    SPEC1,
+    SPEC2
+FROM
+    SAJET.SYS_PART
+WHERE
+    ENABLED = 'Y'
+ORDER BY
+    PART_NO
+ AND (UPPER(PART_NO) LIKE :PARAM_1 || '%' OR UPPER(OPTION2) LIKE :PARAM_1 || '%') 
+    ) base_query
+WHERE
+    0 = 1
+ 】
+
+Exception：ORA-00907: 遺漏右括弧
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 SajetFilter.FFilter.FFilter_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\LoadClient\FFilter\1.0.17003.2\FFilter\fFilter.cs: 行 205
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>

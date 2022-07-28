@@ -1,0 +1,112 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603086120081" level="FATAL" thread="1"><log4j:message>索引在陣列的界限之外。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 RCOutput_Route.fMain.fMain_Shown(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.6\RCOutput_Route\fMain.cs: 行 317
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="RCOutput_Route.fMain" method="Void fMain_Shown(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_Route.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603086131543" level="FATAL" thread="1"><log4j:message>索引在陣列的界限之外。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 RCOutput_Route.fMain.fMain_Shown(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.6\RCOutput_Route\fMain.cs: 行 317
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="RCOutput_Route.fMain" method="Void fMain_Shown(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_Route.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603086349055" level="FATAL" thread="1"><log4j:message>索引在陣列的界限之外。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 RCOutput_Route.fMain.fMain_Shown(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.6\RCOutput_Route\fMain.cs: 行 317
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="RCOutput_Route.fMain" method="Void fMain_Shown(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_Route.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603086456750" level="FATAL" thread="1"><log4j:message>索引在陣列的界限之外。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.IndexOutOfRangeException: 索引在陣列的界限之外。
+   於 RCOutput_Route.fMain.fMain_Shown(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.6\RCOutput_Route\fMain.cs: 行 317
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="RCOutput_Route.fMain" method="Void fMain_Shown(System.Object, System.EventArgs)" file="C:\FullChamp\Chroma Application Client\WIP\RCOutput_Route.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603093507305" level="FATAL" thread="1"><log4j:message>無法清除這個清單。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 無法清除這個清單。
+   於 System.Data.DataView.System.Collections.IList.Clear()
+   於 System.Windows.Forms.DataGridViewRowCollection.Clear()
+   於 RCTravel.fMain.txtSN_KeyPress(Object sender, KeyPressEventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 549
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Data.DataView" method="Void System.Collections.IList.Clear()" file="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603093514782" level="FATAL" thread="1"><log4j:message>無法清除這個清單。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 無法清除這個清單。
+   於 System.Data.DataView.System.Collections.IList.Clear()
+   於 System.Windows.Forms.DataGridViewRowCollection.Clear()
+   於 RCTravel.fMain.txtSN_KeyPress(Object sender, KeyPressEventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 549
+   於 RCTravel.fMain.BtnEnter_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 563
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Data.DataView" method="Void System.Collections.IList.Clear()" file="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603096562287" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCTravel.fMain.ClearDataGridView(DataGridView&amp; DGV) 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 1384
+   於 RCTravel.fMain.DisableFrom() 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 1159
+   於 RCTravel.fMain.fMain_Shown(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 183
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="RCTravel.fMain" method="Void ClearDataGridView(System.Windows.Forms.DataGridView ByRef)" file="C:\FullChamp\Chroma Application Client\WIP\RCTravel.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603096568797" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCTravel.fMain.ClearDataGridView(DataGridView&amp; DGV) 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 1384
+   於 RCTravel.fMain.DisableFrom() 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 1159
+   於 RCTravel.fMain.fMain_Shown(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 183
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="RCTravel.fMain" method="Void ClearDataGridView(System.Windows.Forms.DataGridView ByRef)" file="C:\FullChamp\Chroma Application Client\WIP\RCTravel.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1603096592073" level="FATAL" thread="1"><log4j:message>並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable>System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 RCTravel.fMain.ClearDataGridView(DataGridView&amp; DGV) 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 1384
+   於 RCTravel.fMain.DisableFrom() 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 1159
+   於 RCTravel.fMain.fMain_Shown(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCTravel\1.3.17003.33\RCTravel\fMain.cs: 行 183
+   於 System.Windows.Forms.Form.OnShown(EventArgs e)
+   於 System.Windows.Forms.Form.CallShownEvent()
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   於 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   於 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   於 System.Windows.Forms.Control.InvokeMarshaledCallbacks()</log4j:throwable><log4j:locationInfo class="RCTravel.fMain" method="Void ClearDataGridView(System.Windows.Forms.DataGridView ByRef)" file="C:\FullChamp\Chroma Application Client\WIP\RCTravel.dll" line="0" /></log4j:event>

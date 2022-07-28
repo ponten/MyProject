@@ -1,0 +1,105 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623044597782" level="FATAL" thread="1"><log4j:message>тぃ隔畖 'C:\FullChamp\Chroma Application Client\Query\RC_HOLD\RC_Hold.xlsx' 场だ</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.IO.DirectoryNotFoundException: тぃ隔畖 'C:\FullChamp\Chroma Application Client\Query\RC_HOLD\RC_Hold.xlsx' 场だ
+    System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+    System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+    System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+    ExportExcel.UpdateExcel.Export(DataSet tHold, String hold_no)  C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.7\RCHold\UpdateExcel.cs: ︽ 41
+    RCHold.fMain.Excute_button_Click(Object sender, EventArgs e)  C:\FullChamp\fullchamp\RCManager\RCHold\1.6.17003.7\RCHold\fMain.cs: ︽ 494
+    System.Windows.Forms.Control.OnClick(EventArgs e)
+    System.Windows.Forms.Button.OnClick(EventArgs e)
+    System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+    System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+    System.Windows.Forms.Control.WndProc(Message& m)
+    System.Windows.Forms.ButtonBase.WndProc(Message& m)
+    System.Windows.Forms.Button.WndProc(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+    System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.IO.__Error" method="Void WinIOError(Int32, System.String)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1623059055578" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    *
+FROM
+    (
+        
+SELECT
+    PART_ID,
+    PART_NO,
+    OPTION2 FORMER_PART_NO,
+    SPEC1,
+    SPEC2
+FROM
+    SAJET.SYS_PART
+WHERE
+    ENABLED = 'Y'
+ORDER BY
+    PART_NO
+ AND (UPPER(PART_NO) LIKE :PARAM_1 || '%' OR UPPER(OPTION2) LIKE :PAARAM_1 || '%') 
+    ) base_query
+WHERE
+    0 = 1
+:礚把计硈挡
+把计嘿: PAARAM_1</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1623059055710" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: △ 
+SELECT
+    *
+FROM
+    (
+        
+SELECT
+    PART_ID,
+    PART_NO,
+    OPTION2 FORMER_PART_NO,
+    SPEC1,
+    SPEC2
+FROM
+    SAJET.SYS_PART
+WHERE
+    ENABLED = 'Y'
+ORDER BY
+    PART_NO
+ AND (UPPER(PART_NO) LIKE :PARAM_1 || '%' OR UPPER(OPTION2) LIKE :PAARAM_1 || '%') 
+    ) base_query
+WHERE
+    0 = 1
+ 
+
+Exception礚把计硈挡
+把计嘿: PAARAM_1</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: △ 
+SELECT
+    *
+FROM
+    (
+        
+SELECT
+    PART_ID,
+    PART_NO,
+    OPTION2 FORMER_PART_NO,
+    SPEC1,
+    SPEC2
+FROM
+    SAJET.SYS_PART
+WHERE
+    ENABLED = 'Y'
+ORDER BY
+    PART_NO
+ AND (UPPER(PART_NO) LIKE :PARAM_1 || '%' OR UPPER(OPTION2) LIKE :PAARAM_1 || '%') 
+    ) base_query
+WHERE
+    0 = 1
+ 
+
+Exception礚把计硈挡
+把计嘿: PAARAM_1
+    ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+    SajetFilter.FFilter.FFilter_Load(Object sender, EventArgs e)  C:\FullChamp\fullchamp\LoadClient\FFilter\1.0.17003.2\FFilter\fFilter.cs: ︽ 205
+    System.Windows.Forms.Form.OnLoad(EventArgs e)
+    System.Windows.Forms.Form.OnCreateControl()
+    System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+    System.Windows.Forms.Control.CreateControl()
+    System.Windows.Forms.Control.WmShowWindow(Message& m)
+    System.Windows.Forms.Control.WndProc(Message& m)
+    System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+    System.Windows.Forms.Form.WmShowWindow(Message& m)
+    System.Windows.Forms.Form.WndProc(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+    System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+    System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>

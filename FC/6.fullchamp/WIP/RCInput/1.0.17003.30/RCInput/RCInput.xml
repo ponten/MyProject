@@ -1,0 +1,301 @@
+﻿<Chroma>
+  <English>
+    <Message Name="RC Input" Value="Job report - Runcard Input" />
+    <Message Name="DATE_CODE" Value="DateCode" />
+    <Message Name="LOAD_QTY" Value="Load" />
+
+    <Message Name="TheInProcessTimeIsSetEarlierThanTheOutPutTimeOfPreviousProcess"
+             Value="The in-process time is set earlier than the output time of the previous process" />
+    <Message Name="TheInProcessTimeIsSetEarlierThanTheLastUpdateTime"
+             Value="The in-process time is set earlier than the last update time" />
+    <Message Name="TheInProcessTimeMustBeEarlierThanNow"
+             Value="The in-process time must be earlier than now" />
+    <Message Name="MachineNotFound" Value="Machine not found" />
+  </English>
+  <繁體中文>
+    <Message Name="Append" Value="新增" />
+    <Message Name="BOM" Value="物料清單" />
+    <Message Name="Blueprint" Value="藍圖" />
+    <Message Name="CURRENT_STATUS" Value="狀態" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Data Collection" Value="製程參數 - 資料收集" />
+    <Message Name="Data Empty" Value="不可為空白" />
+    <Message Name="Data Invalid" Value="只允許填入數字" />
+    <Message Name="Defect Qty" Value="不良品數量" />
+    <Message Name="Defect" Value="不良現象" />
+    <Message Name="Delete" Value="刪除" />
+    <Message Name="Employee" Value="員工編號" />
+    <Message Name="Factory" Value="廠別" />
+    <Message Name="Former NO" Value="舊編" />
+    <Message Name="GOOD_QTY" Value="良品數" />
+    <Message Name="Good Qty" Value="良品數量" />
+    <Message Name="IS_MATERIAL" Value="物料" />
+    <Message Name="ITEM_COUNT" Value="用量" />
+    <Message Name="ITEM_GROUP" Value="料件關係" />
+    <Message Name="ITEM_NAME" Value="項目名稱" />
+    <Message Name="Item Count Error." Value="用量錯誤" />
+    <Message Name="Item Count" Value="用量" />
+    <Message Name="Keypart SN Error." Value="料件序號錯誤" />
+    <Message Name="Keypart SN is Duplicate." Value="料件序號重複輸入" />
+    <Message Name="Keypart SN" Value="料件序號" />
+    <Message Name="Keypart is not in this BOM." Value="BOM沒有設定此料件序號的料號" />
+    <Message Name="Keyparts Collection" Value="料件收集" />
+    <Message Name="Keyparts List" Value="已收集料件序號清單" />
+    <Message Name="MACHINE_CODE" Value="機台代碼" />
+    <Message Name="MACHINE_DESC" Value="機台" />
+    <Message Name="Machine Multiple choice" Value="機台多選" />
+    <Message Name="Machine Unselect" Value="機台未選" />
+    <Message Name="Machine" Value="機台" />
+    <Message Name="Input time" Value="投入時間" />
+    <Message Name="OK" Value="確定" />
+    <Message Name="Over flow{0}~{1}" Value="超出範圍{0}~{1}" />
+    <Message Name="PART_NO" Value="料號" />
+    <Message Name="PROCESS_NAME" Value="製程名稱" />
+    <Message Name="PURCHASE" Value="是否檢查" />
+    <Message Name="Part No" Value="料號" />
+    <Message Name="Please Add BOM data." Value="請至物料清單新增" />
+    <Message Name="Please Choose one Part NO in BOM." Value="請選擇一個料號" />
+    <Message Name="Please Input Quantity in Positive number" Value="請輸入正浮點數值" />
+    <Message Name="Process Condition" Value="製程條件" />
+    <Message Name="Process Params" Value="製程參數" />
+    <Message Name="Process" Value="製程名稱" />
+    <Message Name="QTY" Value="數量" />
+    <Message Name="Query" Value="查詢" />
+    <Message Name="RC Input" Value="流程卡報工投入站" />
+    <Message Name="RC No" Value="流程卡號" />
+    <Message Name="RC Qty" Value="流程卡數量" />
+    <Message Name="RC_NO" Value="流程卡號" />
+    <Message Name="RC_STATUS" Value="流程卡狀態" />
+    <Message Name="ROUTE_NAME" Value="途程名稱" />
+    <Message Name="Remark" Value="備註" />
+    <Message Name="Route No" Value="途程編號" />
+    <Message Name="SCRAP_QTY" Value="不良品數" />
+    <Message Name="SERIAL_NUMBER" Value="序號" />
+    <Message Name="SN" Value="元件" />
+    <Message Name="SPEC" Value="描述" />
+    <Message Name="SPEC1" Value="規格" />
+    <Message Name="STAGE_NAME" Value="區段名稱" />
+    <Message Name="STATUS" Value="狀態" />
+    <Message Name="STATUS_NAME" Value="設備狀態" />
+    <Message Name="SYSDATE" Value="執行時間" />
+    <Message Name="Select" Value="選取" />
+    <Message Name="This Keypart SN Assembled on " Value="此料件序號已組裝在" />
+    <Message Name="UNIT_NO" Value="單位" />
+    <Message Name="UPDATE_TIME" Value="執行時間" />
+    <Message Name="VALUE_DEFAULT" Value="預設值" />
+    <Message Name="Version" Value="版本號" />
+    <Message Name="In Process Time" Value="投入製程時間" />
+    <Message Name="WIP_QTY" Value="數量" />
+    <Message Name="WO" Value="工單號" />
+    <Message Name="WORK_ORDER" Value="工單編號" />
+    <Message Name="does not input Keypart" Value="沒有輸入料件序號" />
+    <Message Name="LOAD_QTY" Value="數量" />
+    <Message Name="DATE_CODE" Value="日期碼" />
+    <Message Name="STOVE_SEQ" Value="爐序" />
+    <Message Name="DateCode and stove sequence should be collected at the same time if needed"
+             Value="如果有需要，日期碼和爐序要一起蒐集" />
+    <Message Name="The total load of the machine must match the runcard's current quantity"
+             Value="機台的總加工數量必須匹配流程卡的當前數量" />
+    <Message Name="Invalid DateCode format" Value="日期碼的格式不正確" />
+    <Message Name="Require 6 or 8 digits number" Value="必須為 6 碼或 8 碼數字" />
+    <Message Name="Require 6 or 8 digits DateTime format" Value="必須為 6 碼或 8 碼日期時間格式" />
+    <Message Name="The load of the machine must record" Value="機台的數量必須記錄" />
+    <Message Name="The load of the machine must be a number" Value="機台的數量必須為數字" />
+    <Message Name="The load of the machine must be a non-negative number" Value="機台的數量必須為非負數字" />
+    <Message Name="The load of the machine must be a greater-than-zero number"
+             Value="機台的數量必須為大於零的數字" />
+    <Message Name="Count workTime" Value="計算工時" />
+    <Message Name="Has use T4 stove" Value="有使用 T4 爐" />
+    <Message Name="Has use T6 stove" Value="有使用 T6 爐" />
+    <Message Name="Each machine must record the dateCode" Value="每個機台都要登記日期碼" />
+    <Message Name="DateCode" Value="日期碼" />
+    <Message Name="Load" Value="數量" />
+    <Message Name="Stove sequence" Value="爐序" />
+    <Message Name="Input value" Value="輸入值" />
+    <Message Name="Enter" Value="確認" />
+    <Message Name="Last report time" Value="前一次報工時間：" />
+
+    <Message Name="TheInProcessTimeIsSetEarlierThanTheOutPutTimeOfPreviousProcess"
+             Value="投入時間設定比上一個製程的產出時間早" />
+    <Message Name="TheInProcessTimeIsSetEarlierThanTheLastUpdateTime"
+             Value="投入時間設定比最後的更新時間早" />
+    <Message Name="TheInProcessTimeMustBeEarlierThanNow" Value="投入時間必須比現在早" />
+    <Message Name="MachineNotFound" Value="找不到機台" />
+  </繁體中文>
+  <ไทย>
+    <Message Name="Append" Value="เพิ่ม" />
+    <Message Name="BOM" Value="รายการวัสดุ" />
+    <Message Name="Blueprint" Value="ใบพิมพ์เขียว" />
+    <Message Name="CURRENT_STATUS" Value="สถานะ" />
+    <Message Name="Cancel" Value="ยกเลิก" />
+    <Message Name="Data Collection" Value="ประมวลผลพารามิเตอร์ - การรวบรวมข้อมูล" />
+    <Message Name="Data Empty" Value="ไม่สามารถเว้นว่างได้" />
+    <Message Name="Data Invalid" Value="อนุญาตลงเฉพาะตัวเลข" />
+    <Message Name="Defect Qty" Value="จำนวนงานที่มีตำหนิ" />
+    <Message Name="Defect" Value="สถานะที่มีตำหนิ" />
+    <Message Name="Delete" Value="ลบทิ้ง" />
+    <Message Name="Employee" Value="รหัสพนักงาน" />
+    <Message Name="Factory" Value="โรงงาน" />
+    <Message Name="Former NO" Value="รหัสเก่า" />
+    <Message Name="GOOD_QTY" Value="จำนวนงานที่ใช้ได้" />
+    <Message Name="Good Qty" Value="ปริมาณงานที่ใช้ได้" />
+    <Message Name="IS_MATERIAL" Value="วัสดุ" />
+    <Message Name="ITEM_COUNT" Value="ปริมาณ" />
+    <Message Name="ITEM_GROUP" Value="ความสัมพันธ์ทางวัตถุ" />
+    <Message Name="ITEM_NAME" Value="ชื่อโครงการ" />
+    <Message Name="Item Count Error." Value="การใช้งานที่ไม่ถูกต้อง" />
+    <Message Name="Item Count" Value="ปริมาณที่ใช้" />
+    <Message Name="Keypart SN Error." Value="ลำดับวัสดุผิดพลาด" />
+    <Message Name="Keypart SN is Duplicate." Value="ป้อนลำดับวัสดุซ้ำ" />
+    <Message Name="Keypart SN" Value="ลำดับวัสดุ" />
+    <Message Name="Keypart is not in this BOM." Value="ไม่ได้ตั้งค่าลำดับหมายเลขงานของรายการนี้" />
+    <Message Name="Keyparts Collection" Value="การรวบรวมวัสดุ" />
+    <Message Name="Keyparts List" Value="รายการหมายเลขวัสดุที่รวบรวม" />
+    <Message Name="MACHINE_CODE" Value="รหัสเครื่อง" />
+    <Message Name="MACHINE_DESC" Value="เครื่องจักร" />
+    <Message Name="Machine Multiple choice" Value="เครื่องจักรที่เลือก" />
+    <Message Name="Machine Unselect" Value="เครื่องจักรที่ไม่ได้เลือก" />
+    <Message Name="Machine" Value="เครื่องจักร" />
+    <Message Name="Input time" Value="เวลาที่ลงทุน" />
+    <Message Name="OK" Value="ยืนยัน" />
+    <Message Name="Over flow{0}~{1}" Value="ไม่อยู่ในขอบเขต{0}~{1} " />
+    <Message Name="PART_NO" Value="รหัสวัตถุ" />
+    <Message Name="PROCESS_NAME" Value="ชื่อกระบวนการ" />
+    <Message Name="PURCHASE" Value="ตรวจสอบหรือไม่" />
+    <Message Name="Part No" Value="รหัสวัสดุ" />
+    <Message Name="Please Add BOM data." Value="กรุณาเพิ่มในรายการวัสดุ" />
+    <Message Name="Please Choose one Part NO in BOM." Value="กรุณาเลือกวัสดุหนึ่งรายการ" />
+    <Message Name="Please Input Quantity in Positive number" Value="โปรดป้อนค่าทศนิยมที่เป็นค่าบวก" />
+    <Message Name="Process Condition" Value="เงื่อนไขกระบวนการ" />
+    <Message Name="Process Params" Value="ขอบจำนวนกระบวนการ" />
+    <Message Name="Process" Value="ชื่อกระบวนการ" />
+    <Message Name="QTY" Value="จำนวน" />
+    <Message Name="Query" Value="ตรวจสอบ" />
+    <Message Name="RC Input" Value="ประมวลผลการ์ดรายงานให้ทำงานและนำไปไว้ในคลัง" />
+    <Message Name="RC No" Value="หมายเลขการ์ดกระบวนการ" />
+    <Message Name="RC Qty" Value="จำนวนกระบวนการการ์ด" />
+    <Message Name="RC_NO" Value="หมายเลขการ์ดกระบวนการ" />
+    <Message Name="RC_STATUS" Value="สถานะกระบวนการการ์ด" />
+    <Message Name="ROUTE_NAME" Value="ชื่อเส้นทาง" />
+    <Message Name="Remark" Value="หมายเหตุ" />
+    <Message Name="Route No" Value="ชื่อเส้นทาง" />
+    <Message Name="SCRAP_QTY" Value="จำนวนงานที่มีตำหนิ" />
+    <Message Name="SERIAL_NUMBER" Value="ลำดับ" />
+    <Message Name="SN" Value="องค์ประกอบ" />
+    <Message Name="SPEC" Value="คำอธิบาย" />
+    <Message Name="SPEC1" Value="สเปคงาน" />
+    <Message Name="STAGE_NAME" Value="ชื่อส่วน" />
+    <Message Name="STATUS" Value="สถานะ" />
+    <Message Name="STATUS_NAME" Value="สถานะอุปกรณ์" />
+    <Message Name="SYSDATE" Value="เวลาดำเนินการ" />
+    <Message Name="Select" Value="เลือก" />
+    <Message Name="This Keypart SN Assembled on " Value="หมายเลขวัสดุนี้ถูกประกอบเข้าด้วยกัน" />
+    <Message Name="UNIT_NO" Value="แผนก" />
+    <Message Name="UPDATE_TIME" Value="เวลาดำเนินการ" />
+    <Message Name="VALUE_DEFAULT" Value="ค่าที่ตั้งไว้ล่วงหน้า" />
+    <Message Name="Version" Value="หมายเลขเวอร์ชัน" />
+    <Message Name="In Process Time" Value="เวลาดำเนินกระบวนการป้อนข้อมูล" />
+    <Message Name="WIP_QTY" Value="จำนวน" />
+    <Message Name="WO" Value="รหัสใบงาน" />
+    <Message Name="WORK_ORDER" Value="รหัสใบสั่งงาน" />
+    <Message Name="does not input Keypart" Value="ไม่ได้ป้อนลำดับวัสดุงาน" />
+    <Message Name="LOAD_QTY" Value="จำนวน" />
+    <Message Name="DATE_CODE" Value="โค้ดวันที่" />
+    <Message Name="STOVE_SEQ" Value="ลำดับเตา" />
+    <Message Name="DateCode and stove sequence should be collected at the same time if needed"
+             Value="หากจำเป็นควรรวบรวมรหัสวันที่และลำดับเตาเข้าด้วยกัน" />
+    <Message Name="The total load of the machine must match the runcard's current quantity"
+             Value="ปริมาณการประมวลผลทั้งหมดของเครื่องต้องตรงกับปริมาณปัจจุบันของการ์ดกระบวนการ" />
+    <Message Name="Invalid DateCode format" Value="รูปแบบของรหัสวันที่ไม่ถูกต้อง" />
+    <Message Name="Require 6 or 8 digits number" Value="ต้องเป็นตัวเลข 6 หรือ 8 หลัก" />
+    <Message Name="Require 6 or 8 digits DateTime format" Value="ต้องเป็นรูปแบบวันที่และเวลา 6 หลักหรือ 8 หลัก" />
+    <Message Name="The load of the machine must record" Value="ต้องบันทึกจำนวนเครื่อง" />
+    <Message Name="The load of the machine must be a number" Value="จำนวนเครื่องต้องเป็นตัวเลข" />
+    <Message Name="The load of the machine must be a non-negative number" Value="จำนวนเครื่องต้องเป็นจำนวนที่ไม่ติดลบ" />
+    <Message Name="The load of the machine must be a greater-than-zero number"
+             Value="จำนวนเครื่องต้องเป็นตัวเลขที่มากกว่าศูนย์" />
+    <Message Name="Count workTime" Value="คำนวณชั่วโมงการทำงาน" />
+    <Message Name="Has use T4 stove" Value="ใช้เตา T4 " />
+    <Message Name="Has use T6 stove" Value="ใช้เตา T6 " />
+    <Message Name="Each machine must record the dateCode" Value="แต่ละเครื่องต้องลงทะเบียนรหัสวันที่" />
+    <Message Name="DateCode" Value="โค้ดวันที่" />
+    <Message Name="Load" Value="จำนวน" />
+    <Message Name="Stove sequence" Value="ลำดับเตา" />
+    <Message Name="Input value" Value="ค่าที่ป้อนงาน" />
+    <Message Name="Enter" Value="ยืนยัน" />
+    <Message Name="Last report time" Value="ครั้งสุดท้ายสำหรับการรายงานงาน" />
+
+    <Message Name="TheInProcessTimeIsSetEarlierThanTheOutPutTimeOfPreviousProcess"
+             Value="เวลาในการลงทุนถูกกำหนดไว้ก่อนหน้าเวลาที่ส่งออกของกระบวนการก่อนหน้านี้" />
+    <Message Name="TheInProcessTimeIsSetEarlierThanTheLastUpdateTime"
+             Value="เวลาในการลงทุนถูกกำหนดไว้ก่อนหน้าเวลาอัปเดตล่าสุด" />
+    <Message Name="TheInProcessTimeMustBeEarlierThanNow" Value="เวลาในการลงทุนต้องเร็วกว่านี้" />
+    <Message Name="MachineNotFound" Value="ไม่พบเครื่อง" />
+
+    <Message Name="工單" Value="รหัสใบสั่งงาน" />
+    <Message Name="料號" Value="รหัสวัสดุ" />
+    <Message Name="流程卡" Value="หมายเลขการ์ดกระบวนการ" />
+    <Message Name="版本" Value="หมายเลขเวอร์ชัน" />
+    <Message Name="品名" Value="ชื่อผลิตภัณฑ์" />
+    <Message Name="流程卡數量" Value="จำนวนกระบวนการการ์ด" />
+    <Message Name="途程名稱" Value="ชื่อเส้นทาง" />
+    <Message Name="廠別代碼" Value="โรงงาน" />
+    <Message Name="製程名稱" Value="ชื่อกระบวนการ" />
+    <Message Name="規格" Value="สเปคงาน" />
+    <Message Name="良品數" Value="จำนวนงานที่ใช้ได้" />
+    <Message Name="不良品數" Value="จำนวนงานที่มีตำหนิ" />
+    <Message Name="備註" Value="หมายเหตุ" />
+
+  </ไทย>
+  <简体中文>
+    <Message Name="Blueprint" Value="蓝图" />
+    <Message Name="CURRENT_STATUS" Value="状态" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Data Collection" Value="制程参数 - 资料收集" />
+    <Message Name="Data Empty" Value="不可为空白" />
+    <Message Name="Data Invalid" Value="只允许填入数字" />
+    <Message Name="Defect Qty" Value="不良品数量" />
+    <Message Name="Defect" Value="不良现象" />
+    <Message Name="Employee" Value="员工编号" />
+    <Message Name="Factory" Value="厂别" />
+    <Message Name="Former NO" Value="旧编" />
+    <Message Name="GOOD_QTY" Value="良品数" />
+    <Message Name="Good Qty" Value="良品数量" />
+    <Message Name="ITEM_NAME" Value="项目名称" />
+    <Message Name="MACHINE_CODE" Value="机台代码" />
+    <Message Name="Machine Unselect" Value="机台未选" />
+    <Message Name="Machine" Value="机台" />
+    <Message Name="Custom report time" Value="人工设定进站时间" />
+    <Message Name="OK" Value="确定" />
+    <Message Name="Over flow{0}~{1}" Value="超出范围{0}~{1}" />
+    <Message Name="PART_NO" Value="料号" />
+    <Message Name="PROCESS_NAME" Value="制程名称" />
+    <Message Name="Part No" Value="料号" />
+    <Message Name="Process Condition" Value="制程条件" />
+    <Message Name="Process Params" Value="制程参数" />
+    <Message Name="Process" Value="制程名称" />
+    <Message Name="Query" Value="查询" />
+    <Message Name="RC Input" Value="流程卡报工投入站" />
+    <Message Name="RC No" Value="流程卡号" />
+    <Message Name="RC Qty" Value="流程卡数量" />
+    <Message Name="RC_NO" Value="流程卡号" />
+    <Message Name="RC_STATUS" Value="流程卡状态" />
+    <Message Name="ROUTE_NAME" Value="途程名称" />
+    <Message Name="Remark" Value="备注" />
+    <Message Name="Route No" Value="途程编号" />
+    <Message Name="SCRAP_QTY" Value="不良品数" />
+    <Message Name="SERIAL_NUMBER" Value="序号" />
+    <Message Name="SN" Value="元件" />
+    <Message Name="SPEC" Value="描述" />
+    <Message Name="STAGE_NAME" Value="区段名称" />
+    <Message Name="STATUS" Value="状态" />
+    <Message Name="STATUS_NAME" Value="设备状态" />
+    <Message Name="Select" Value="选取" />
+    <Message Name="VALUE_DEFAULT" Value="默认值" />
+    <Message Name="Version" Value="版本号" />
+    <Message Name="WIP Out Time" Value="在制品进站时间" />
+    <Message Name="WIP_QTY" Value="数量" />
+    <Message Name="WO" Value="工单号" />
+    <Message Name="WORK_ORDER" Value="工单编号" />
+  </简体中文>
+</Chroma>

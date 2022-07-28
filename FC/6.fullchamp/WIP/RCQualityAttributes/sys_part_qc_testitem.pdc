@@ -1,0 +1,57 @@
+-- Create table
+create table SYS_PART_QC_TESTITEM
+(
+  recid               NUMBER,
+  item_id             NUMBER,
+  upper_limit         NUMBER,
+  lower_limit         NUMBER,
+  middle_limit        NUMBER,
+  upper_control_limit NUMBER,
+  lower_control_limit NUMBER,
+  unit                VARCHAR2(25),
+  update_userid       NUMBER,
+  update_time         DATE,
+  enabled             VARCHAR2(25) default 'Y',
+  sort_index          VARCHAR2(10)
+)
+tablespace SYSBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 5M
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table SYS_PART_QC_TESTITEM
+  is '料號在各製程的測試小項關係表';
+-- Add comments to the columns 
+comment on column SYS_PART_QC_TESTITEM.recid
+  is '流水號(關聯至SYS_PART_QC_PROCESS_RULE.RECID)';
+comment on column SYS_PART_QC_TESTITEM.item_id
+  is '測試小項(SYS_TEST_ITEM.ITEM_ID)';
+comment on column SYS_PART_QC_TESTITEM.upper_limit
+  is '規格上限';
+comment on column SYS_PART_QC_TESTITEM.lower_limit
+  is '規格下限';
+comment on column SYS_PART_QC_TESTITEM.middle_limit
+  is '中心';
+comment on column SYS_PART_QC_TESTITEM.upper_control_limit
+  is '管制上限';
+comment on column SYS_PART_QC_TESTITEM.lower_control_limit
+  is '管制下限';
+comment on column SYS_PART_QC_TESTITEM.unit
+  is '單位';
+comment on column SYS_PART_QC_TESTITEM.update_userid
+  is '資料異動人員(SYS_EMP.EMP_ID)';
+comment on column SYS_PART_QC_TESTITEM.update_time
+  is '資料異動時間';
+comment on column SYS_PART_QC_TESTITEM.enabled
+  is '資料是否有效(Y:有效,N:失效)';
+comment on column SYS_PART_QC_TESTITEM.sort_index
+  is '輸入測試值的順序';
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on SYS_PART_QC_TESTITEM to SYS_USER;

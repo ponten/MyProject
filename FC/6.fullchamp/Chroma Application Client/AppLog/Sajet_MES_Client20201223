@@ -1,0 +1,115 @@
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608691850704" level="FATAL" thread="1"><log4j:message>字串未被辨認為有效的 DateTime。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   於 System.DateTime.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 762
+   於 CWoManager.fMain.ShowData(Nullable`1 isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 734
+   於 CWoManager.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 593
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.DateTimeParse" method="System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608691918456" level="FATAL" thread="1"><log4j:message>字串未被辨認為有效的 DateTime。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   於 System.DateTime.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 762
+   於 CWoManager.fMain.ShowData(Nullable`1 isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 734
+   於 CWoManager.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 593
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.DateTimeParse" method="System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608691960265" level="FATAL" thread="1"><log4j:message>字串未被辨認為有效的 DateTime。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.FormatException: 字串未被辨認為有效的 DateTime。
+   於 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   於 System.DateTime.Parse(String s)
+   於 CWoManager.fMain.SelectRealStartEndDate() 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 762
+   於 CWoManager.fMain.ShowData(Nullable`1 isSerachButtonClicked) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 734
+   於 CWoManager.fMain.fMain_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WOManager\CWoManager\2.0.17003.12\CWoManager\fMain.cs: 行 593
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.DateTimeParse" method="System.DateTime Parse(System.String, System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608707509426" level="FATAL" thread="1"><log4j:message>找不到名為 QTY 的資料行。
+參數名稱: columnName</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentException: 找不到名為 QTY 的資料行。
+參數名稱: columnName
+   於 System.Windows.Forms.DataGridViewCellCollection.get_Item(String columnName)
+   於 RCOutput_WO.fMain.ButtonOK_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_WO\1.0.17003.19\RCOutput_WO\fMain.cs: 行 1427
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.Windows.Forms.DataGridViewCellCollection" method="System.Windows.Forms.DataGridViewCell get_Item(System.String)" file="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1608712884462" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    a.machine_id
+FROM
+    sajet.sys_rc_process_machine   a,
+    sys_rc_route_detail            b
+WHERE
+    to_char(a.process_id) = b.node_content
+    AND b.node_id = :node_id
+:ORA-00942: 表格或視觀表不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1608712884549" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    a.machine_id
+FROM
+    sajet.sys_rc_process_machine   a,
+    sys_rc_route_detail            b
+WHERE
+    to_char(a.process_id) = b.node_content
+    AND b.node_id = :node_id
+ 】
+
+Exception：ORA-00942: 表格或視觀表不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    a.machine_id
+FROM
+    sajet.sys_rc_process_machine   a,
+    sys_rc_route_detail            b
+WHERE
+    to_char(a.process_id) = b.node_content
+    AND b.node_id = :node_id
+ 】
+
+Exception：ORA-00942: 表格或視觀表不存在
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCOutput_Route.fMain.RecordMachine(DataRow RcInfo) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.11\RCOutput_Route\fMain.cs: 行 783
+   於 RCOutput_Route.fMain.ButtonOK_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\RCOutput_Route\1.17003.0.11\RCOutput_Route\fMain.cs: 行 221
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   於 System.Windows.Forms.Button.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>

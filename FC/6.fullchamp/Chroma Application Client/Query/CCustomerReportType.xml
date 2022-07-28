@@ -1,0 +1,46 @@
+﻿<Chroma>
+  <English>
+    <Message Name="Exception" Value="Exclude" />
+  </English>
+  <繁體中文>
+    <Message Name="TRA Type Name" Value="繁體中文類型名稱" />
+    <Message Name="Description" Value="報表類型描述" />
+    <Message Name="Report Type Name" Value="報表類型名稱" />
+    <Message Name="ENG Type Name" Value="英文類型名稱" />
+    <Message Name="Role Assign" Value="角色" />
+    <Message Name="Role Name" Value="角色名稱" />
+    <Message Name="Select All" Value="全選" />
+    <Message Name="Report Type:" Value="報表類型:" />
+    <Message Name="Select None" Value="取消全選" />
+    <Message Name="Language" Value="語言" />
+    <Message Name="Type Name" Value="類型名稱" />
+    <Message Name="Apply" Value="確定" />
+    <Message Name="Exception" Value="排除" />
+    <Message Name="Display Seq." Value="顯示順序" />
+    <Message Name="CN Type Name" Value="簡中類型名稱" />
+    <Message Name="TW Type Name" Value="繁中類型名稱" />
+    <Message Name="TRA Type Name" Value="繁中類型名稱" />
+    <Message Name="Max:" Value="最大:" />
+    <Message Name="Exclude" Value="排除" />
+  </繁體中文>
+  <简体中文>
+    <Message Name="TRA Type Name" Value="繁体中文类型名称" />
+    <Message Name="Description" Value="报表类型描述" />
+    <Message Name="Report Type Name" Value="报表类型名称" />
+    <Message Name="ENG Type Name" Value="英文类型名称" />
+    <Message Name="Role Assign" Value="角色" />
+    <Message Name="Role Name" Value="角色名称" />
+    <Message Name="Select All" Value="全选" />
+    <Message Name="Report Type:" Value="报表类型:" />
+    <Message Name="Select None" Value="取消全选" />
+    <Message Name="Language" Value="语言" />
+    <Message Name="Type Name" Value="类型名称" />
+    <Message Name="Apply" Value="确定" />
+    <Message Name="Exception" Value="排除" />
+    <Message Name="Display Seq." Value="显示顺序" />
+    <Message Name="CN Type Name" Value="简中类型名称" />
+    <Message Name="TW Type Name" Value="繁中类型名称" />
+    <Message Name="Max:" Value="最大:" />
+    <Message Name="Exclude" Value="排除" />
+  </简体中文>
+</Chroma>

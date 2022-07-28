@@ -1,0 +1,51 @@
+-- Create table
+create table SYS_TEST_ITEM_TYPE
+(
+  item_type_id    NUMBER,
+  item_type_name  VARCHAR2(30),
+  item_type_code  VARCHAR2(30),
+  item_type_desc  VARCHAR2(120),
+  update_userid   NUMBER,
+  update_time     DATE default SYSDATE,
+  enabled         VARCHAR2(10) default 'Y',
+  sampling_id     NUMBER,
+  item_type_desc2 VARCHAR2(120),
+  min_insp_qty    NUMBER default 0
+)
+tablespace SYSBS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table SYS_TEST_ITEM_TYPE
+  is '測試大項資料表';
+-- Add comments to the columns 
+comment on column SYS_TEST_ITEM_TYPE.item_type_id
+  is '系統產生的唯一值';
+comment on column SYS_TEST_ITEM_TYPE.item_type_name
+  is '測試大項名稱';
+comment on column SYS_TEST_ITEM_TYPE.item_type_code
+  is '測試大項代碼';
+comment on column SYS_TEST_ITEM_TYPE.item_type_desc
+  is '測試大項描述';
+comment on column SYS_TEST_ITEM_TYPE.update_userid
+  is '資料異動人員(SYS_EMP.EMP_ID)';
+comment on column SYS_TEST_ITEM_TYPE.update_time
+  is '資料異動時間';
+comment on column SYS_TEST_ITEM_TYPE.enabled
+  is '資料是否有效(Y:有效,N:失效)';
+comment on column SYS_TEST_ITEM_TYPE.sampling_id
+  is '使用的抽驗計畫(SYS_QC_SAMPLING_PLAN.SAMPLING_ID)';
+comment on column SYS_TEST_ITEM_TYPE.item_type_desc2
+  is '測試大項描述2';
+comment on column SYS_TEST_ITEM_TYPE.min_insp_qty
+  is '最少檢驗個數';
+-- Grant/Revoke object privileges 
+grant select, insert, update, delete on SYS_TEST_ITEM_TYPE to SYS_USER;

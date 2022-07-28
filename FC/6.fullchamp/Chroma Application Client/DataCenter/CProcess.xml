@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <English>
+    <Message Name="Stage Name" Value="Stage Name"/>
+    <Message Name="Stage Description" Value="Stage Description"/>
+    <Message Name="Stage Code" Value="Stage Code"/>
+    <Message Name="PROCESS_NAME" Value="Process Name"/>
+    <Message Name="PROCESS_DESC" Value="Description"/>
+    <Message Name="PROCESS_DESC2" Value="Description2"/>
+    <Message Name="PROCESS_CODE" Value="Process Code"/>
+    <Message Name="TYPE_NAME" Value="Operate Type"/>
+    <Message Name="STAGE_NAME" Value="Stage Name"/>
+    <Message Name="has one or more Processes" Value="has one or more Processes"/>
+    <Message Name="Can not delete it" Value="Can not delete it"/>
+    <Message Name="has one or more Terminals" Value="has one or more Terminals"/>
+    <Message Name="WIP_ERP" Value="WIP Enabled"/>
+    <Message Name="WIP ERP" Value="WIP Enabled"/>
+
+    <!-- Column Name Enum-->
+    <Message Name="PrintWaterProofLabel" Value="Print WP Label"/>
+    <Message Name="UseT4Stove" Value="Use T4 stove"/>
+    <Message Name="UseT6Stove" Value="Use T6 stove"/>
+    <Message Name="StartingProcessOf10C" Value="10C starting process"/>
+    <Message Name="WarehousingProcessOf10C" Value="10C warehousing process"/>
+    <Message Name="UsingEquipment" Value="Using equipment (machine type)"/>
+    <Message Name="ProductionUnit" Value="Department"/>
+    <Message Name="StandardWorkTime" Value="Standard worktime(min)"/>
+
+  </English>
+  <繁體中文>
+    <Message Name="Stage Name" Value="區段名稱"/>
+    <Message Name="Stage Description" Value="區段描述"/>
+    <Message Name="Stage Code" Value="區段代碼"/>
+    <Message Name="PROCESS_NAME" Value="製程名稱"/>
+    <Message Name="Process Name" Value="製程名稱"/>
+    <Message Name="PROCESS_DESC" Value="製程描述"/>
+    <Message Name="Description" Value="製程描述"/>
+    <Message Name="PROCESS_DESC2" Value="製程描述二"/>
+    <Message Name="Description2" Value="製程描述二"/>
+    <Message Name="PROCESS_CODE" Value="製程代碼"/>
+    <Message Name="Process Code" Value="製程代碼"/>
+    <Message Name="TYPE_NAME" Value="製程類型"/>
+    <Message Name="Operate Type" Value="製程類型"/>
+    <Message Name="STAGE_NAME" Value="區段名稱"/>
+    <Message Name="has one or more Processes" Value="已包含製程資料"/>
+    <Message Name="Can not delete it" Value="不可刪除"/>
+    <Message Name="has one or more Terminals" Value="已包含工作站資料"/>
+    <Message Name="WIP_ERP" Value="是否報工ERP"/>
+    <Message Name="WIP ERP" Value="是否報工ERP"/>
+    <Message Name="Print WP Label" Value="列印防水標籤"/>
+    <Message Name="Is T4 stove" Value="T4 爐"/>
+    <Message Name="Is T6 stove" Value="T6 爐"/>
+    <Message Name="10C starting process" Value="10C 投入站"/>
+    <Message Name="10C warehousing process" Value="10C 入庫站"/>
+    <Message Name="Yes" Value="是"/>
+    <Message Name="No" Value="否"/>
+
+    <!-- Column Name Enum-->
+    <Message Name="PrintWaterProofLabel" Value="列印防水標籤"/>
+    <Message Name="UseT4Stove" Value="T4 爐"/>
+    <Message Name="UseT6Stove" Value="T6 爐"/>
+    <Message Name="StartingProcessOf10C" Value="10C 投入站"/>
+    <Message Name="WarehousingProcessOf10C" Value="10C 入庫站"/>
+    <Message Name="UsingEquipment" Value="設備使用（機台類型）"/>
+    <Message Name="ProductionUnit" Value="生產單位（部門）"/>
+    <Message Name="StandardWorkTime" Value="標準工時（分鐘）"/>
+
+  </繁體中文>
+</Chroma>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FTransferProcess</name>
+    </assembly>
+    <members>
+        <member name="M:FTransferProcess.Services.TransferService.GetRouteDetailList(System.String)">
+            <summary>
+            取得生產途程的節點細節
+            </summary>
+            <param name="route_id">生產途程 ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:FTransferProcess.Services.TransferService.GetNextNodeIDs(System.Collections.Generic.List{System.Data.DataRow},System.String,System.String)">
+            <summary>
+            取得下一個製程節點 ID 的清單
+            </summary>
+            <param name="route_detail">生產途程的節點細節</param>
+            <param name="node_id">生產途程節點 ID</param>
+            <param name="rc_no">流程卡號</param>
+            <returns></returns>
+        </member>
+        <member name="F:FTransferProcess.TransferProcess.sNode_type">
+            <summary>
+            生產途程節點類型（0：起點/ 1：NEXT/ 2：AND 群組/ 3：OR 群組/ 9：終點/）
+            </summary>
+        </member>
+        <member name="F:FTransferProcess.TransferProcess.sRoute_Id">
+            <summary>
+            生產途程 ID
+            </summary>
+        </member>
+        <member name="F:FTransferProcess.TransferProcess.sNode_Id">
+            <summary>
+            生產途程節點 ID
+            </summary>
+        </member>
+        <member name="F:FTransferProcess.TransferProcess.sProcess_Id">
+            <summary>
+            製程 ID
+            </summary>
+        </member>
+        <member name="F:FTransferProcess.TransferProcess.sNext_Node">
+            <summary>
+            下一個生產途程節點 ID
+            </summary>
+        </member>
+        <member name="F:FTransferProcess.TransferProcess.sNext_Process">
+            <summary>
+            下一個製程 ID
+            </summary>
+        </member>
+        <member name="F:FTransferProcess.TransferProcess.sRc_No">
+            <summary>
+            流程卡號
+            </summary>
+        </member>
+        <member name="M:FTransferProcess.TransferProcess.#ctor">
+            <summary>
+            製程選擇器
+            </summary>
+        </member>
+        <member name="F:FTransferProcess.TransferProcess.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FTransferProcess.TransferProcess.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FTransferProcess.TransferProcess.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,424 @@
+<log4j:event logger="ClientUtils" timestamp="1611277134078" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611277134312" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCPart.Services.EndProcessService.GetCurrentEndProcess(String PART_ID) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.22\RCPart\Services\EndProcessService.cs: 行 43
+   於 RCPart.fData.TsmiRouteDetail_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.22\RCPart\fData.cs: 行 1129
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611277189221" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611277189236" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCPart.Services.EndProcessService.GetCurrentEndProcess(String PART_ID) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.22\RCPart\Services\EndProcessService.cs: 行 43
+   於 RCPart.fData.TsmiRouteDetail_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.22\RCPart\fData.cs: 行 1129
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611277924892" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611277925042" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCPart.Services.EndProcessService.GetCurrentEndProcess(String PART_ID) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.22\RCPart\Services\EndProcessService.cs: 行 43
+   於 RCPart.fData.TsmiRouteDetail_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.22\RCPart\fData.cs: 行 1129
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611278033593" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611278033740" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCPart.Services.EndProcessService.GetCurrentEndProcess(String PART_ID) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.22\RCPart\Services\EndProcessService.cs: 行 43
+   於 RCPart.fData.TsmiRouteDetail_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.22\RCPart\fData.cs: 行 1129
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611278082150" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+:並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611278082265" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    C.PROCESS_NAME
+FROM
+    SAJET.SYS_PART          A,
+    SAJET.SYS_END_PROCESS   B,
+    SAJET.SYS_PROCESS       C
+WHERE
+    A.PART_ID = :PART_ID
+    AND B.PART_ID = :PART_ID
+    AND A.ROUTE_ID = B.ROUTE_ID
+    AND B.PROCESS_ID = C.PROCESS_ID
+    AND B.ENABLED = 'Y'
+    AND C.ENABLED = 'Y'
+ 】
+
+Exception：並未將物件參考設定為物件的執行個體。
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 RCPart.Services.EndProcessService.GetCurrentEndProcess(String PART_ID) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.22\RCPart\Services\EndProcessService.cs: 行 43
+   於 RCPart.fData.TsmiRouteDetail_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\DataCenter\RCPart\2.0.17003.22\RCPart\fData.cs: 行 1129
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611285798329" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2:  Drop Sequence SAJET.S_RC_WOID :ORA-02289: 設定的序列不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611285798446" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【  Drop Sequence SAJET.S_RC_WOID  】
+
+Exception：ORA-02289: 設定的序列不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【  Drop Sequence SAJET.S_RC_WOID  】
+
+Exception：ORA-02289: 設定的序列不存在
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 BCLabelDll.fMain.editWO_KeyPress(Object sender, KeyPressEventArgs e) 於 C:\FullChamp\fullchamp\BarcodeCenter\BCLabelDll\1.4.17003.25\BCLabelDll\fMain.cs: 行 2330
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611285858774" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2:  Drop Sequence S_RC_WOID :ORA-02289: 設定的序列不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611285858850" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【  Drop Sequence S_RC_WOID  】
+
+Exception：ORA-02289: 設定的序列不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【  Drop Sequence S_RC_WOID  】
+
+Exception：ORA-02289: 設定的序列不存在
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 ClientUtils.ExecuteSQL(String sSQL)
+   於 BCLabelDll.fMain.editWO_KeyPress(Object sender, KeyPressEventArgs e) 於 C:\FullChamp\fullchamp\BarcodeCenter\BCLabelDll\1.4.17003.25\BCLabelDll\fMain.cs: 行 2330
+   於 System.Windows.Forms.Control.OnKeyPress(KeyPressEventArgs e)
+   於 System.Windows.Forms.Control.ProcessKeyEventArgs(Message& m)
+   於 System.Windows.Forms.Control.ProcessKeyMessage(Message& m)
+   於 System.Windows.Forms.Control.WmKeyChar(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.TextBoxBase.WndProc(Message& m)
+   於 System.Windows.Forms.TextBox.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611286123007" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2:  Drop Sequence S_RC_WOID :ORA-02289: 設定的序列不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611286126524" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2:  Drop Sequence S_RC_WOID :ORA-02289: 設定的序列不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611286127894" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2:  Drop Sequence S_RC_WOID :ORA-02289: 設定的序列不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611286128221" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2:  Drop Sequence S_RC_WOID :ORA-02289: 設定的序列不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="ClientUtils" timestamp="1611286921637" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2:  Drop Sequence S_RC_WOID :ORA-02289: 設定的序列不存在</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611299057695" level="FATAL" thread="1"><log4j:message>索引和長度必須參考字串中的位置。
+參數名稱: length</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentOutOfRangeException: 索引和長度必須參考字串中的位置。
+參數名稱: length
+   於 System.String.Substring(Int32 startIndex, Int32 length)
+   於 CCustomerReport.fMain.ReplaceSelect(String strSql, String sPos)
+   於 CCustomerReport.fMain.ReplaceSQL(String strSql, String strParamName)
+   於 CCustomerReport.fMain.GetMasterSQL()
+   於 CCustomerReport.fMain.ShowData()
+   於 CCustomerReport.fMain.btnQuery_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.String" method="System.String Substring(Int32, Int32)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1611299096013" level="FATAL" thread="1"><log4j:message>索引和長度必須參考字串中的位置。
+參數名稱: length</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.ArgumentOutOfRangeException: 索引和長度必須參考字串中的位置。
+參數名稱: length
+   於 System.String.Substring(Int32 startIndex, Int32 length)
+   於 CCustomerReport.fMain.ReplaceSelect(String strSql, String sPos)
+   於 CCustomerReport.fMain.ReplaceSQL(String strSql, String strParamName)
+   於 CCustomerReport.fMain.GetMasterSQL()
+   於 CCustomerReport.fMain.ShowData()
+   於 CCustomerReport.fMain.btnQuery_Click(Object sender, EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   於 System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   於 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   於 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   於 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   於 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="System.String" method="System.String Substring(Int32, Int32)" file="C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll" line="0" /></log4j:event>

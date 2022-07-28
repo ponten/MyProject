@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Chroma>
+  <English>
+    <Message Name="Machine Code" Value="Machine Code" />
+    <Message Name="Description" Value="Description" />
+    <Message Name="Location" Value="Location" />
+    <Message Name="Utilization" Value="Utilization" />
+    <Message Name="Machine Type" Value="Machine Type" />
+    <Message Name="Vendor Name" Value="Vendor Name" />
+    <Message Name="Arrival Date" Value="Arrival Date" />
+    <Message Name="Warranty Date" Value="Warranty Date" />
+    <Message Name="Vendor No" Value="Vendor No" />
+    <Message Name="Vendor Description" Value="Vendor Description" />
+    <Message Name="AUTO RUN" Value="WIP module integration" />
+  </English>
+  <繁體中文>
+    <Message Name="Machine Code" Value="機台代碼" />
+    <Message Name="Description" Value="機台描述" />
+    <Message Name="Location" Value="位置" />
+    <Message Name="Utilization" Value="計算稼動率" />
+    <Message Name="Machine Type" Value="機台類型" />
+    <Message Name="Vendor Name" Value="供應商名稱" />
+    <Message Name="Arrival Date" Value="到廠日期" />
+    <Message Name="Warranty Date" Value="保固日期" />
+    <Message Name="Vendor No" Value="供應商代碼" />
+    <Message Name="Vendor Description" Value="供應商描述" />
+    <Message Name="AUTO RUN" Value="WIP模組整合" />
+  </繁體中文>
+  <简体中文>
+    <Message Name="Machine Code" Value="机台代码" />
+    <Message Name="Description" Value="机台描述" />
+    <Message Name="Location" Value="位置" />
+    <Message Name="Utilization" Value="计算稼动率" />
+    <Message Name="Machine Type" Value="机台类型" />
+    <Message Name="Vendor Name" Value="供应商名称" />
+    <Message Name="Arrival Date" Value="到厂日期" />
+    <Message Name="Warranty Date" Value="保固日期" />
+    <Message Name="Vendor No" Value="供应商代码" />
+    <Message Name="Vendor Description" Value="供应商描述" />
+    <Message Name="AUTO RUN" Value="WIP模组整合" />
+  </简体中文>
+</Chroma>

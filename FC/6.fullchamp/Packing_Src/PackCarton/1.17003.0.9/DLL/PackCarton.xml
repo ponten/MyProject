@@ -1,0 +1,177 @@
+﻿<Chroma>
+  <English />
+  <繁體中文>
+  </繁體中文>
+  <简体中文>
+    <Message Name="OK" Value="确定" />
+    <Message Name="Pack Parton" Value="成品包箱" />
+    <Message Name="SN" Value="生产序号" />
+    <Message Name="Pack Base" Value="包装依据" />
+    <Message Name="Pack Action" Value="包装行为" />
+    <Message Name="WO" Value="工单" />
+    <Message Name="Part No" Value="料号" />
+    <Message Name="Reset" Value="重置" />
+    <Message Name="Carton Capacity" Value="箱子容量" />
+    <Message Name="Carton No" Value="箱号" />
+    <Message Name="Carton Qty" Value="已包数量" />
+    <Message Name="CARTON QTY" Value="已包数量" />
+    <Message Name="Carton Content" Value="箱子内容" />
+    <Message Name="Carton List" Value="包箱记录" />
+    <Message Name="SN IS NULL" Value="生产序号为空" />
+    <Message Name="Check MAC" Value="检查MAC" />
+    <Message Name="Weight Carton" Value="称重" />
+    <Message Name="Print Label" Value="打印标签" />
+    <Message Name="Force Close" Value="强制关闭" />
+    <Message Name="PACK CARTON:NOT CONFIG WEIGHT CARTON" Value="成品包箱:没有配置是否称重" />
+    <Message Name="PACK CARTON:NOT CONFIG CHECK MAC" Value="成品包箱:没有配置是否检查MAC" />
+    <Message Name="PACK CARTON:NOT CONFIG PACK BASE" Value="成品包箱:没有配置包装依据" />
+    <Message Name="PACK CARTON:NOT CONFIG PACK ACTION" Value="成品包箱:没有配置包装方式" />
+    
+    <Message Name="PACK CARTON:Unknown Pack Base:" Value="成品包箱:未知的包装依据" />
+    <Message Name="Part No Is Empty" Value="料号为空" />
+    <Message Name="Get Part Pack Spec Error:" Value="获取料号包装规格错误" />
+    <Message Name="Get WO Pack Spec Error:" Value="获取工单包装规格错误" />
+    <Message Name="No This Part No(" Value="没有此料号(" />
+    <Message Name="No This WO(" Value="没有此工单(" />
+    <Message Name=") Pack Spec" Value=")的包装规格" />
+    <Message Name="WO Version" Value="工单版本" />
+    <Message Name="WO Different:" Value="工单不一样:" />
+    <Message Name="Part No Different:" Value="料号不一样:" />
+    <Message Name="WO Version Different:" Value="工单版本不一样:" />
+    <Message Name="Get Carton No Error:" Value="获取箱号错误:" />
+    <Message Name="PART NO" Value="料号" />
+    <Message Name="WORK ORDER" Value="工单" />
+    <Message Name="WO VERSION" Value="工单版本" />
+    <Message Name="PDLine" Value="线别" />
+    <Message Name="CARTON NO" Value="箱号" />
+    <Message Name="More Than One Carton Unfinish" Value="有超过不止一个未满箱" />
+    <Message Name="Find A Full Carton Should Be Close,Please Force Close Carton[" Value="发现一个满箱需要关闭，请强制关闭[" />
+    
+    <Message Name="Carton No Is Empty" Value="外箱序号为空" />
+    <Message Name="CARTON_NO" Value="箱号" />
+<Message Name="SERIAL_NUMBER" Value="生产序号" />
+    <Message Name="This SN NO MAC" Value="此产品序号没有MAC" />
+    <Message Name="MAC Is Different:" Value="MAC不匹配:" />
+    <Message Name="Do not need Check MAC" Value="没必要检查MAC" />
+    <Message Name="PACK CARTON:Unknown Config Item:" Value="成品包箱:未知的配置项：" />
+    <Message Name="Get Carton Info Error:" Value="获取箱号信息错误：" />
+    <Message Name="No This Carton Record" Value="没有此箱号记录" />
+    
+    <Message Name="Get New Carton No Error:" Value="获取新箱号错误：" />
+    
+    <Message Name="Get Part No Rule Data Error:" Value="获取料号编码规则错误" />
+   
+    <Message Name="Label Type Or Part No Is Empty" Value="标签类型或料号为空" />
+    
+    <Message Name="MAC is Null" Value="MAC为空" />
+    <Message Name="Reset?" Value="重置?" />
+    <Message Name="Question" Value="询问" />
+    <Message Name="Force Close Carton[" Value="强制关箱[" />
+    <Message Name="No Part NO Weight Info" Value="没有维护此料号的重量信息" />
+    <Message Name="Close Carton" Value="关箱" />
+    <Message Name="Open CodeSoft Fail:" Value="打开CodeSoft失败:" />
+    
+    <Message Name="Print Carton Label Error:" Value="打印外箱标签错误:" />
+    
+    <Message Name="Get Print Data Error:" Value="箱号错误：" />
+    
+    <Message Name="Label File Not Exist:" Value="标签范本文件不存在：" />
+    
+    <Message Name="Com Is Null" Value="COM口为空" />
+   
+    <Message Name="Carton NO Is Empty" Value="箱号为空" />
+    <Message Name="Part No Is Empty" Value="料号为空" />
+    
+    <Message Name="Please Weight Carton" Value="请称重" />
+    <Message Name="Min Weight" Value="最小重量" />
+<Message Name="Max Weight" Value="最大重量" />
+    <Message Name="Test Value" Value="测量值" />
+    <Message Name="Result" Value="测试结果" />
+    <Message Name="Standard Weight" Value="标准重量" />
+    <Message Name="UnFull Carton No[" Value="未满的箱号[" />
+    <Message Name="],Part NO[" Value="],料号[" />
+    <Message Name="];Part No Different:" Value="];料号不一样：" />
+    <Message Name="Weight Carton" Value="外箱称重" />
+    <Message Name="Pack Carton Error:" Value="包箱错误:" />
+    <Message Name="SN Error" Value="生产序号错误" />
+    <Message Name="Close Carton Error:" Value="关箱错误:" />
+    
+    <Message Name="SN[" Value="生产序号[" />
+    <Message Name="] Need Weight Box" Value="]需要彩盒称重" />
+    <Message Name="Part No No Fill Weight" Value="料号没有维护填充物重量" />
+<Message Name="Get Part No Weight standard info error:" Value="获取料号标准重量信息错误:" />
+    <Message Name="Part No No Carton Up Weight" Value="料号没有维护外箱上浮重量" />
+<Message Name="Part No No CartonMaterial Weight" Value="料号没有维护包材重量" />
+    <Message Name="Part No No Carton Down Weight" Value="料号没有维护外箱下浮重量" />
+    <Message Name="Cancel" Value="取消" />
+    <Message Name="Load COM Config Error:" Value="加载COM口配置错误：" />
+    <Message Name="Please Config Terminal" Value="请配置工作站" />
+    <Message Name="COM Config" Value="COM口设定" />
+    <Message Name="COM" Value="串口" />
+    <Message Name="Baud Rate" Value="波特率" />
+    <Message Name="Data Bits" Value="数据位" />
+    <Message Name="Stop Bits" Value="停止位" />
+    <Message Name="Parity" Value="校验位" />
+    <Message Name="Setting" Value="设定" />
+    <Message Name="Part Version" Value="料号版本" />
+    <Message Name="SN Is Null" Value="SN为空" />
+    <Message Name="Route OK" Value="途程正确" />
+    <Message Name="Find A Unclose Carton" Value="发现一个未关闭箱" />
+    <Message Name="Not Find Unclose Carton" Value="没发现未关闭箱" />
+    <Message Name="BOX" Value="彩盒号" />
+    <Message Name="SN Pack Carton OK" Value="产品序号包箱成功" />
+    <Message Name="Box Is Null" Value="彩盒号为空" />
+    <Message Name="Unknown Pack Action" Value="未知的包装行为" />
+    <Message Name="BOX_NO" Value="彩盒号" />
+    <Message Name="No This Box No" Value="没有此彩盒号" />
+    <Message Name="Carton List:" Value="包箱记录:" />
+    <Message Name="Route Error:" Value="途程错误:" />
+    <Message Name="Box Pack Carton OK" Value="彩盒包箱成功" />
+    <Message Name="RC No" Value="流程卡号" />
+    <Message Name="RC Qty" Value="剩余数量" />
+    <Message Name="RC No Is Null" Value="流程卡号为空" />
+    <Message Name="RC No Error" Value="流程卡号错误" />
+    <Message Name="Data Duplicate" Value="数据重复" />
+    <Message Name="RC No Surplus Qty is 0" Value="此流程卡已包装" />
+    <Message Name="RC OUTPUT ERR" Value="流程卡产出错误" />
+    <Message Name="RC INPUT ERR" Value="流程卡投入错误" />
+    <Message Name="Carton Qty Is 0" Value="已包装数量为0" />
+    <Message Name="Carton Is Empty" Value="箱号为空" />
+    <Message Name="QTY" Value="数量" />
+    <Message Name="RC_NO" Value="流程卡号" />
+    <Message Name="RC Pack Carton OK" Value="流程卡包装成功" />
+    <Message Name="Pack Carton Error:" Value="包装箱号错误:" />
+    <Message Name="WO Qty" Value="工单数量" />
+    <Message Name="CARTON_NO" Value="箱号" />
+    <Message Name="Can not Find RC No(" Value="不能找到流程卡(" />
+    <Message Name=")Info" Value=")的信息" />
+    <Message Name="Force Close Carton OK" Value="强制关闭箱号成功" />
+    <Message Name="RePrint" Value="补印" />
+    <Message Name="Reprint OK" Value="补印OK" />
+    <Message Name="Get Print Data Error:" Value="箱号错误" />
+    <Message Name="Input Data" Value="输入" />
+    <Message Name="Lot No" Value="批次号" />
+    <Message Name="LOT_NO" Value="批次号" />
+    <Message Name="LEVEL" Value="等级" />
+    <Message Name="BOX NO ERROR" Value="盒号有误" />
+    <Message Name="BOX NO PACKED" Value="盒号已经包装" />
+    <Message Name="PROCESS ERROR" Value="制程异常" />
+    <Message Name="LEVEL NOT MATCH" Value="等级不匹配" />
+    <Message Name="PART NO NOT MATCH" Value="料号不匹配" />
+    <Message Name="QTY MORE THAN 300" Value="超过箱内容量300" />
+    <Message Name="UNCLOSED CARTON MORE THAN 1" Value="未关箱不止一个" />
+    <Message Name="Lot End" Value="结批" />
+    <Message Name="BOX_NO" Value="盒号" />
+    <Message Name="PART_NO" Value="料号" />
+    <Message Name="QTY" Value="数量" />
+    <Message Name="LEVEL_CODE" Value="等级" />
+    <Message Name="START_NO" Value="起始刻号" />
+    <Message Name="END_NO" Value="终止刻号" />
+    <Message Name="Carton Error" Value="箱号有误" />
+    <Message Name="RePrint" Value="补印" />
+    <Message Name="Create Pack List Error" Value="创建包装清单异常" />
+    <Message Name="PACK CARTON:NOT CONFIG CARTON CAPACITY" Value="成品包箱:没有配置箱子容量" />
+    <Message Name="PACK CARTON:NOT CONFIG PACKCARTON PROCESS" Value="成品包箱:没有配置包箱制程" />
+    <Message Name="RePrint" Value="补印" />
+  </简体中文>
+</Chroma>

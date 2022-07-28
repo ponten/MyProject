@@ -1,0 +1,69 @@
+<log4j:event logger="ClientUtils" timestamp="1620899006181" level="ERROR" thread="1"><log4j:message>ExecuteSQL#2: 
+SELECT
+    A.NODE_ID,
+    A.NODE_CONTENT,
+    B.PROCESS_NAME,
+    A.LINK_NAME
+FROM
+    SAJET.SYS_RC_ROUTE_DETAIL   A,
+    SAJET.SYS_PROCESS           B
+WHERE
+    A.ROUTE_ID = :ROUTE_ID
+    AND A.NODE_CONTENT = TO_CHAR(B.PROCESS_ID)
+    AND A.NODE_ID IN (NODE_IDS)
+ORDER BY
+    B.PROCESS_NAME
+:ORA-00904: "NODE_IDS": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:locationInfo class="ClientUtils" method="addConnLog" file="" line="0" /></log4j:event>
+<log4j:event logger="Sajet_MES_WPF_Style.App" timestamp="1620899006332" level="FATAL" thread="1"><log4j:message>ExecuteSQL#2: →【 
+SELECT
+    A.NODE_ID,
+    A.NODE_CONTENT,
+    B.PROCESS_NAME,
+    A.LINK_NAME
+FROM
+    SAJET.SYS_RC_ROUTE_DETAIL   A,
+    SAJET.SYS_PROCESS           B
+WHERE
+    A.ROUTE_ID = :ROUTE_ID
+    AND A.NODE_CONTENT = TO_CHAR(B.PROCESS_ID)
+    AND A.NODE_ID IN (NODE_IDS)
+ORDER BY
+    B.PROCESS_NAME
+ 】
+
+Exception：ORA-00904: "NODE_IDS": 無效的 ID</log4j:message><log4j:properties><log4j:data name="log4net:HostName" value="Robert-Dev-PC" /><log4j:data name="log4jmachinename" value="Robert-Dev-PC" /><log4j:data name="LogFileName" value="Sajet_MES_Client" /><log4j:data name="log4net:Identity" value="" /><log4j:data name="log4net:UserName" value="ROBERT-DEV-PC\Administrator" /><log4j:data name="log4japp" value="Sajet MES.exe" /></log4j:properties><log4j:throwable><![CDATA[System.Exception: ExecuteSQL#2: →【 
+SELECT
+    A.NODE_ID,
+    A.NODE_CONTENT,
+    B.PROCESS_NAME,
+    A.LINK_NAME
+FROM
+    SAJET.SYS_RC_ROUTE_DETAIL   A,
+    SAJET.SYS_PROCESS           B
+WHERE
+    A.ROUTE_ID = :ROUTE_ID
+    AND A.NODE_CONTENT = TO_CHAR(B.PROCESS_ID)
+    AND A.NODE_ID IN (NODE_IDS)
+ORDER BY
+    B.PROCESS_NAME
+ 】
+
+Exception：ORA-00904: "NODE_IDS": 無效的 ID
+   於 ClientUtils.ExecuteSQL(String sSQL, Object[][] Params)
+   於 FTransferProcess.TransferProcess.Btn_OK_Click(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\FTransferProcess\1.0.17003.1\FTransferProcess\TransferProcess.cs: 行 210
+   於 System.Windows.Forms.Control.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.OnClick(EventArgs e)
+   於 System.Windows.Forms.Button.PerformClick()
+   於 FTransferProcess.TransferProcess.TransferProcess_Load(Object sender, EventArgs e) 於 C:\FullChamp\fullchamp\WIP\FTransferProcess\1.0.17003.1\FTransferProcess\TransferProcess.cs: 行 154
+   於 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   於 System.Windows.Forms.Form.OnCreateControl()
+   於 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   於 System.Windows.Forms.Control.CreateControl()
+   於 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Control.WndProc(Message& m)
+   於 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   於 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   於 System.Windows.Forms.Form.WndProc(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   於 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   於 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)]]></log4j:throwable><log4j:locationInfo class="ClientUtils" method="System.Data.DataSet ExecuteSQL(System.String, System.Object[][])" file="C:\FullChamp\Chroma Application Client\ClientUtils.dll" line="0" /></log4j:event>

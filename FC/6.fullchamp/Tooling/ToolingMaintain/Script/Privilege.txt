@@ -1,0 +1,29 @@
+DELETE SAJET.SYS_PROGRAM_NAME  WHERE PROGRAM ='Tooling Manager'; 
+INSERT INTO SAJET.SYS_PROGRAM_NAME  (PROGRAM,EXE_FILENAME,TITLE_NAME,UPDATE_USERID,UPDATE_TIME,ENABLED,PROGRAM_TW ,PROGRAM_CN  )  VALUES  ('Tooling Manager','ToolingManager','Sajet MES / [ Tooling Manager ]',0,SYSDATE,'Y','P34 刀/治具管理' ,'P34 刀/治具管理' ); 
+
+DELETE SAJET.SYS_PROGRAM_FUN_NAME  WHERE PROGRAM ='Tooling Manager'    AND FUNCTION ='Tooling Acceptance' ; 
+DELETE SAJET.SYS_PROGRAM_FUN_AUTHORITY  WHERE PROGRAM ='Tooling Manager'    AND FUNCTION ='Tooling Acceptance' ; 
+INSERT INTO SAJET.SYS_PROGRAM_FUN_NAME  (PROGRAM,FUNCTION,FUN_IDX,DLL_FILENAME,FUN_PARAM,FUN_TW   ,FUN_TYPE,FUN_TYPE_IDX,FUN_TYPE_TW   ,ENABLED,WEB_FLAG,SHOW_FLAG,FORM_NAME ,FUN_TYPE_CN,FUN_CN )  VALUES (  'Tooling Manager', 'Tooling Acceptance', '1', 'ToolingAcceptancedll.dll', 'Acceptance', '刀治具驗收', 'Tooling Manager', '2', '刀治具管理', 'Y', 'N', '0', 'fMain' ,''  ,''  ); 
+INSERT INTO SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) VALUES (  'Tooling Manager', 'Tooling Acceptance', '3', 'Allow To Execute');
+
+DELETE SAJET.SYS_PROGRAM_FUN_NAME  WHERE PROGRAM ='Tooling Manager'    AND FUNCTION ='Tooling Take Out' ; 
+DELETE SAJET.SYS_PROGRAM_FUN_AUTHORITY  WHERE PROGRAM ='Tooling Manager'    AND FUNCTION ='Tooling Take Out' ; 
+INSERT INTO SAJET.SYS_PROGRAM_FUN_NAME  (PROGRAM,FUNCTION,FUN_IDX,DLL_FILENAME,FUN_PARAM,FUN_TW   ,FUN_TYPE,FUN_TYPE_IDX,FUN_TYPE_TW   ,ENABLED,WEB_FLAG,SHOW_FLAG,FORM_NAME ,FUN_TYPE_CN,FUN_CN )  VALUES (  'Tooling Manager', 'Tooling Take Out', '2', 'ToolingMaintaindll.dll', 'Take', '刀治具領用', 'Tooling Manager', '2', '刀治具管理', 'Y', 'N', '0', 'fMain' ,''  ,''  ); 
+INSERT INTO SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) VALUES (  'Tooling Manager', 'Tooling Take Out', '3', 'Allow To Execute');
+
+DELETE SAJET.SYS_PROGRAM_FUN_NAME  WHERE PROGRAM ='Tooling Manager'    AND FUNCTION ='Tooling Return' ; 
+DELETE SAJET.SYS_PROGRAM_FUN_AUTHORITY  WHERE PROGRAM ='Tooling Manager'    AND FUNCTION ='Tooling Return' ; 
+INSERT INTO SAJET.SYS_PROGRAM_FUN_NAME  (PROGRAM,FUNCTION,FUN_IDX,DLL_FILENAME,FUN_PARAM,FUN_TW   ,FUN_TYPE,FUN_TYPE_IDX,FUN_TYPE_TW   ,ENABLED,WEB_FLAG,SHOW_FLAG,FORM_NAME ,FUN_TYPE_CN,FUN_CN )  VALUES (  'Tooling Manager', 'Tooling Return', '3', 'ToolingMaintaindll.dll', 'Return', '刀治具歸還', 'Tooling Manager', '2', '刀治具管理', 'Y', 'N', '0', 'fMain' ,''  ,''  ); 
+INSERT INTO SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) VALUES (  'Tooling Manager', 'Tooling Return', '3', 'Allow To Execute');
+
+DELETE SAJET.SYS_PROGRAM_FUN_NAME  WHERE PROGRAM ='Tooling Manager'    AND FUNCTION ='Tooling Scrap' ; 
+DELETE SAJET.SYS_PROGRAM_FUN_AUTHORITY  WHERE PROGRAM ='Tooling Manager'    AND FUNCTION ='Tooling Scrap' ; 
+INSERT INTO SAJET.SYS_PROGRAM_FUN_NAME  (PROGRAM,FUNCTION,FUN_IDX,DLL_FILENAME,FUN_PARAM,FUN_TW   ,FUN_TYPE,FUN_TYPE_IDX,FUN_TYPE_TW   ,ENABLED,WEB_FLAG,SHOW_FLAG,FORM_NAME ,FUN_TYPE_CN,FUN_CN )  VALUES (  'Tooling Manager', 'Tooling Scrap', '4', 'ToolingMaintaindll.dll', 'Scrap', '刀治具報廢', 'Tooling Manager', '2', '刀治具管理', 'Y', 'N', '0', 'fMain' ,''  ,''  ); 
+INSERT INTO SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) VALUES (  'Tooling Manager', 'Tooling Scrap', '3', 'Allow To Execute');
+
+DELETE SAJET.SYS_PROGRAM_FUN_NAME  WHERE PROGRAM ='Tooling Manager'    AND FUNCTION ='Tooling Repair' ; 
+DELETE SAJET.SYS_PROGRAM_FUN_AUTHORITY  WHERE PROGRAM ='Tooling Manager'    AND FUNCTION ='Tooling Repair' ; 
+INSERT INTO SAJET.SYS_PROGRAM_FUN_NAME  (PROGRAM,FUNCTION,FUN_IDX,DLL_FILENAME,FUN_PARAM,FUN_TW   ,FUN_TYPE,FUN_TYPE_IDX,FUN_TYPE_TW   ,ENABLED,WEB_FLAG,SHOW_FLAG,FORM_NAME ,FUN_TYPE_CN,FUN_CN )  VALUES (  'Tooling Manager', 'Tooling Repair', '5', 'ToolingMaintaindll.dll', 'Repair', '刀治具送修', 'Tooling Manager', '2', '刀治具管理', 'Y', 'N', '0', 'fMain' ,''  ,''  ); 
+INSERT INTO SAJET.SYS_PROGRAM_FUN_AUTHORITY (PROGRAM,FUNCTION,AUTH_SEQ,AUTHORITYS) VALUES (  'Tooling Manager', 'Tooling Repair', '3', 'Allow To Execute');
+
+commit;
