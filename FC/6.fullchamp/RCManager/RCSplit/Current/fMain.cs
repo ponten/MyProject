@@ -36,7 +36,7 @@ namespace RCSplit
             g_sFunction = ClientUtils.fFunctionName;
             SajetCommon.SetLanguageControl(this);
 
-            if (string.IsNullOrEmpty(sRC_CallByOthers) == false)
+            if (!string.IsNullOrEmpty(sRC_CallByOthers)  )
             {
                editRC.Text = sRC_CallByOthers;
                editRC_KeyPress(null, new KeyPressEventArgs((char)Keys.Return));
@@ -881,6 +881,42 @@ WHERE
                     rcParams[39] = new object[] { ParameterDirection.Input, OracleType.VarChar, "INITIAL_QTY", dInitialQtyNew };
                     rcParams[40] = new object[] { ParameterDirection.Input, OracleType.VarChar, "RELEASE", 'Y' };
                     ClientUtils.ExecuteSQL(sSQL, rcParams);
+
+
+
+                    // 複製 G_RC_TRAVEL_MACHINE_DOWN
+                    sSQL = $@"
+                    DECLARE 
+                       rw sajet.G_RC_TRAVEL_MACHINE_DOWN%ROWTYPE;
+                       vRC VARCHAR2(100) := '{sRcNo}';
+                    BEGIN 
+                    
+                    FOR x IN    (
+                        SELECT *  
+                        FROM sajet.G_RC_TRAVEL_MACHINE_DOWN r         
+                        WHERE r.update_time = ( SELECT MAX(a.update_time) 
+                                                FROM sajet.G_RC_TRAVEL_MACHINE_DOWN a 
+                                                WHERE a.rc_no=r.rc_no  )
+                        AND EXISTS(SELECT * FROM sajet.g_rc_split s 
+                                   WHERE s.rc_no = vRC
+                                   AND  s.source_rc_no =  r.rc_no )    
+                    )LOOP     
+                    
+                        SELECT r.rc_no, r.travel_id 
+                        INTO   x.rc_no, x.travel_id 
+                        FROM   sajet.g_rc_status r 
+                        WHERE  r.rc_no = vRC;                        
+                        INSERT INTO  sajet.G_RC_TRAVEL_MACHINE_DOWN 
+                        VALUES x;
+                        
+                    END LOOP;    
+                    EXCEPTION WHEN OTHERS THEN 
+                       dbms_output.put_line(
+                       DBMS_UTILITY.FORMAT_ERROR_BACKTRACE || DBMS_UTILITY.FORMAT_ERROR_STACK);
+                    END ;
+                    ";
+                    ClientUtils.ExecuteSQL(sSQL);
+
                 }
 
 
