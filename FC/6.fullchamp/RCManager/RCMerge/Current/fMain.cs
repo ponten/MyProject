@@ -53,6 +53,11 @@ namespace RCMerge
                 editRC.Text = lsRcToMerge.FirstOrDefault();
                 editRC_KeyPress(null, new KeyPressEventArgs((char)Keys.Return));
                 SetSelected(lsRcToMerge.ToArray());
+                editRC.Enabled = false;
+                btnSearchWo.Enabled = false;
+                gvData.ReadOnly = true;
+                btnSelectAll.Enabled = false;
+                btnSelectNone.Enabled = false;
             }
         }
 
@@ -177,8 +182,13 @@ namespace RCMerge
                  + " AND RC_NO <> '" + editRC.Text + "'"
                  + " AND CURRENT_STATUS >= 0 AND CURRENT_STATUS < 2 "
                  + " AND A.RELEASE = 'Y' "
-                 + " AND C.WO_STATUS = '3' "
-                 + " ORDER BY " + TableDefine.gsDef_OrderField;
+                 + " AND C.WO_STATUS = '3' ";
+
+            if (lsRcToMerge.Count > 0)
+                sSQL += $" ORDER BY  CASE WHEN RC_NO IN ('{string.Join("','", lsRcToMerge)}') THEN 0 ELSE 1 END, RC_NO   ";
+            else
+                sSQL += " ORDER BY " + TableDefine.gsDef_OrderField;
+
             dsMergeData = ClientUtils.ExecuteSQL(sSQL);
 
             gvData.DataSource = dsMergeData;
@@ -309,7 +319,10 @@ namespace RCMerge
                 string sMsg = SajetCommon.SetLanguage("Data Append OK", 2) + " !";
                 SajetCommon.Show_Message(sMsg, 1);
                 if (lsRcToMerge.Count > 0)
+                {
+                    this.DialogResult = DialogResult.OK;
                     this.Close();
+                }
                 else
                 {
                     ClearData();

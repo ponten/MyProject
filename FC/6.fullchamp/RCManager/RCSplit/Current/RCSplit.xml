@@ -50,6 +50,8 @@
     <Message Name="Spec2" Value="規格"/>
     <Message Name="RC number not release" Value="流程卡尚未展開"/>
     <Message Name="Work Order Status must be WIP" Value="工單狀態必須是WIP"/>
+    <Message Name="Part qty Error" Value="數量錯"/>
+    
   </繁體中文>
   <简体中文>
     <Message Name="WORK_ORDER" Value="工单"/>
@@ -91,5 +93,6 @@
     <Message Name="Spec2" Value="规格"/>
     <Message Name="RC number not release" Value="流程卡尚未展开"/>
     <Message Name="Work Order Status must be WIP" Value="工单状态必须是WIP"/>
+    <Message Name="Part qty Error" Value="数量错"/>
   </简体中文>
 </Chroma>

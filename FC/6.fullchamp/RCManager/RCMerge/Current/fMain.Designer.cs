@@ -36,6 +36,8 @@
             this.LabWO = new System.Windows.Forms.Label();
             this.editRC = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LabSpec2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LabPart = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,8 +59,6 @@
             this.btnMerge = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.gvData = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.LabSpec2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -83,7 +83,7 @@
             // 
             this.btnSearchWo.BackColor = System.Drawing.Color.Transparent;
             this.btnSearchWo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSearchWo.Location = new System.Drawing.Point(323, 8);
+            this.btnSearchWo.Location = new System.Drawing.Point(430, 10);
             this.btnSearchWo.Name = "btnSearchWo";
             this.btnSearchWo.Size = new System.Drawing.Size(37, 25);
             this.btnSearchWo.TabIndex = 11;
@@ -121,7 +121,7 @@
             this.editRC.Font = new System.Drawing.Font("新細明體", 12F);
             this.editRC.Location = new System.Drawing.Point(120, 9);
             this.editRC.Name = "editRC";
-            this.editRC.Size = new System.Drawing.Size(174, 27);
+            this.editRC.Size = new System.Drawing.Size(304, 27);
             this.editRC.TabIndex = 0;
             this.editRC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.editRC_KeyPress);
             // 
@@ -147,6 +147,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(819, 111);
             this.panel1.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("新細明體", 12F);
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(320, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 16);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Spec2";
+            // 
+            // LabSpec2
+            // 
+            this.LabSpec2.BackColor = System.Drawing.Color.Transparent;
+            this.LabSpec2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LabSpec2.Font = new System.Drawing.Font("新細明體", 12F);
+            this.LabSpec2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LabSpec2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.LabSpec2.Location = new System.Drawing.Point(430, 42);
+            this.LabSpec2.Name = "LabSpec2";
+            this.LabSpec2.Size = new System.Drawing.Size(174, 24);
+            this.LabSpec2.TabIndex = 63;
             // 
             // label3
             // 
@@ -403,30 +427,6 @@
             this.gvData.Size = new System.Drawing.Size(581, 259);
             this.gvData.TabIndex = 68;
             this.gvData.SelectionChanged += new System.EventHandler(this.gvData_SelectionChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("新細明體", 12F);
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(320, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 16);
-            this.label1.TabIndex = 62;
-            this.label1.Text = "Spec2";
-            // 
-            // LabSpec2
-            // 
-            this.LabSpec2.BackColor = System.Drawing.Color.Transparent;
-            this.LabSpec2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LabSpec2.Font = new System.Drawing.Font("新細明體", 12F);
-            this.LabSpec2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LabSpec2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.LabSpec2.Location = new System.Drawing.Point(430, 42);
-            this.LabSpec2.Name = "LabSpec2";
-            this.LabSpec2.Size = new System.Drawing.Size(174, 24);
-            this.LabSpec2.TabIndex = 63;
             // 
             // fMain
             // 

@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 組件的一般資訊是由下列的屬性集控制。
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
-[assembly: AssemblyTitle("RCMerge")]
+[assembly: AssemblyTitle("RCOutput")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("RCMerge")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2015")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("RCOutput")]
+[assembly: AssemblyCopyright("Copyright (C)  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 下列 GUID 為專案公開 (Expose) 至 COM 時所要使用的 typelib ID
-[assembly: Guid("25a82fe3-a9a4-4c5a-ae2e-ce1222f91852")]
+[assembly: Guid("1fe70fc1-1891-4b9b-b83b-f642f0870a58")]
 
 // 組件的版本資訊是由下列四項值構成:
 //
@@ -29,8 +29,7 @@ using System.Runtime.InteropServices;
 //      組建編號
 //      修訂編號
 //
-// 您可以指定所有的值，也可以依照以下的方式，使用 '*' 將組建和修訂編號
+// 您可以指定所有的值，也可以依照以下的方式，使用 '*' 將修訂和組建編號
 // 指定為預設值:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.5.16006.3")]
-[assembly: AssemblyFileVersion("1.5.16006.3")]
+[assembly: AssemblyVersion("1.0.17003.80")]
+[assembly: AssemblyFileVersion("1.0.17003.80")]

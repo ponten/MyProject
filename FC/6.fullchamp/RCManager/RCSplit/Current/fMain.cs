@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Data.OracleClient;
 using SajetClass;
 using SajetFilter;
+using System.Linq;
 
 namespace RCSplit
 {
@@ -38,8 +39,10 @@ namespace RCSplit
 
             if (!string.IsNullOrEmpty(sRC_CallByOthers)  )
             {
-               editRC.Text = sRC_CallByOthers;
-               editRC_KeyPress(null, new KeyPressEventArgs((char)Keys.Return));
+                editRC.Text = sRC_CallByOthers;
+                editRC.Enabled = false ;
+                btnSearchWo.Enabled = false;
+                editRC_KeyPress(null, new KeyPressEventArgs((char)Keys.Return));
             }
         }
 
@@ -237,7 +240,7 @@ namespace RCSplit
 
             if (!Int32.TryParse(editQty.Text, out iQty) || iQty <= 0)
             {
-                if (!decimal.TryParse(editQty.Text, out d_inputQty) || d_inputQty <= 0)
+                if (!decimal.TryParse(editQty.Text, out d_inputQty) || d_inputQty <= 0 || !string.IsNullOrEmpty(sRC_CallByOthers))
                 {
                     ClearGvComponent();
 
@@ -313,7 +316,7 @@ namespace RCSplit
                     ClearGvComponent();
                     // 2016.4.27 End
 
-                    SajetCommon.Show_Message("Part qty must larger than 1", 0);
+                    SajetCommon.Show_Message("Part qty Error", 0);
                     editQty.Focus();
                     editQty.SelectAll();
                     return;
@@ -341,7 +344,10 @@ WHERE
     RC_NO LIKE :RC_NO || '%'
 ";//*/
 
-                sSQL = @"
+                if (string.IsNullOrEmpty(sRC_CallByOthers))
+                {
+                    //直接開起 此程式 而不是被調用
+                    sSQL = @"
 SELECT
     LPAD(MAX(SUBSTR(RC_NO, - 3, 3) + 1), 3, 0) AS RC_END
 FROM
@@ -356,23 +362,55 @@ WHERE
             RC_NO = :RC_NO
     )
 ";
-                var Params = new object[1][];
-                Params[0] = new object[] { ParameterDirection.Input, OracleType.VarChar, "RC_NO", editRC.Text.Trim().ToUpper() };
-                dsTemp = ClientUtils.ExecuteSQL(sSQL, Params);
+                    var Params = new object[1][];
+                    Params[0] = new object[] { ParameterDirection.Input, OracleType.VarChar, "RC_NO", editRC.Text.Trim().ToUpper() };
+                    dsTemp = ClientUtils.ExecuteSQL(sSQL, Params);
 
-                if (dsTemp.Tables[0].Rows.Count > 0)
-                {
-                    //if (Convert.ToInt32(dsTemp.Tables[0].Rows[0]["RC_END"].ToString()) > 9)
-                    if (Convert.ToInt32(dsTemp.Tables[0].Rows[0]["RC_END"].ToString()) > 999)
+                    if (dsTemp.Tables[0].Rows.Count > 0)
                     {
-                        SajetCommon.Show_Message("RC lotsize is full", 0);
-                        editQty.Focus();
-                        editQty.SelectAll();
-                        return;
-                    }
+                        //if (Convert.ToInt32(dsTemp.Tables[0].Rows[0]["RC_END"].ToString()) > 9)
+                        if (Convert.ToInt32(dsTemp.Tables[0].Rows[0]["RC_END"].ToString()) > 999)
+                        {
+                            SajetCommon.Show_Message("RC lotsize is full", 0);
+                            editQty.Focus();
+                            editQty.SelectAll();
+                            return;
+                        }
 
-                    //s_RC_End = editRC.Text.Substring(0, editRC.Text.Length - 2) + dsTemp.Tables[0].Rows[0]["RC_END"].ToString();
-                    s_RC_End = editRC.Text.Split('-')[0] + "-" + dsTemp.Tables[0].Rows[0]["RC_END"].ToString();
+                        //s_RC_End = editRC.Text.Substring(0, editRC.Text.Length - 2) + dsTemp.Tables[0].Rows[0]["RC_END"].ToString();
+                        s_RC_End = editRC.Text.Split('-')[0] + "-" + dsTemp.Tables[0].Rows[0]["RC_END"].ToString();
+                    }
+                }
+                else
+                {
+                    // 被 RCOutout調用
+                    sSQL = @"
+                    SELECT rs.rc_no FROM sajet.g_rc_split rs  
+                    WHERE  rs.source_rc_no = :RC_NO
+                    AND    rs.rc_no LIKE rs.source_rc_no || '-%' 
+                    AND    sajet.isnumber(SUBSTR((rs.rc_no),　INSTR((rs.rc_no),'-', -1)+1))='TRUE'
+                    ORDER  BY LENGTH(rs.rc_no)DESC, rs.RC_NO DESC";
+                    var Params = new object[1][];
+                    Params[0] = new object[] { ParameterDirection.Input, OracleType.VarChar, "RC_NO", editRC.Text.Trim().ToUpper() };
+                    dsTemp = ClientUtils.ExecuteSQL(sSQL, Params);
+                    if (dsTemp.Tables[0].Rows.Count > 0)
+                    {
+                        string sMaxRc = dsTemp.Tables[0].Rows[0]["RC_NO"].ToString();                         
+                        string sLastString = sMaxRc.Substring(sMaxRc.LastIndexOf('-') + 1);
+                        int iSeq = Convert.ToInt32(sLastString);
+
+                        if (++iSeq > 999)
+                        {
+                            SajetCommon.Show_Message("RC lotsize is full", 0);
+                            editQty.Focus();
+                            editQty.SelectAll();
+                            return;
+                        }
+                        s_RC_End = sMaxRc.Substring(0, sMaxRc.LastIndexOf('-')) + "-" + iSeq.ToString().PadLeft(3, '0');
+
+                    }
+                    else
+                        s_RC_End = editRC.Text.Trim().ToUpper() + "-001";
                 }
 
                 if (iQty == 0)
@@ -411,7 +449,7 @@ WHERE
             }
 
             var bList = new BindingList<childRC>(childRCs);
-            var bSource = new BindingSource(bList, null);
+            var bSource = new BindingSource(bList.OrderBy(c => c.CHILD_RC_NO), null);
 
             gvData.DataSource = bSource;
             gvData.Columns["CHILD_RC_NO"].HeaderText = SajetCommon.SetLanguage("Child Rc No", 1);
@@ -433,6 +471,8 @@ WHERE
                     btnPick.Enabled = true;
                 }
             }
+
+            gvData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnSplit_Click(object sender, EventArgs e)
@@ -521,7 +561,10 @@ WHERE
                 SajetCommon.Show_Message(sMsg, 1);
 
                 if (!string.IsNullOrEmpty(sRC_CallByOthers))
+                {
+                    this.DialogResult = DialogResult.OK;
                     this.Close();
+                }
                 else
                 {
                     ClearData();
