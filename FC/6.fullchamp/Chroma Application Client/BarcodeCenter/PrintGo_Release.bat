@@ -1,1 +1,0 @@
-"C:\Program Files\Seagull\BarTender Suite\Bartend.exe" /F="C:\FullChamp\Chroma Application Client\BarcodeCenter\BR_DEFAULT_1.btw" /D="C:\FullChamp\Chroma Application Client\BarcodeCenter\BR_DEFAULT_1.lst" /PD /X /C=1
