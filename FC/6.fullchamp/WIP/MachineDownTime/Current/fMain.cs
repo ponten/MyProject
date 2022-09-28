@@ -149,6 +149,11 @@ namespace MachineDownTime
 
             string message;
 
+
+            this.CB_Process.SelectedIndexChanged -= new System.EventHandler(this.CB_Process_SelectedIndexChanged);
+            CB_Process.DataSource = null;
+
+
             // 取得流程卡資訊
             if (!RcSrv.GetInformation(
                 rc_no: RC_NO,
@@ -220,17 +225,23 @@ namespace MachineDownTime
                 return;
             }
 
+
+
             // 顯示流程卡資訊
             Loading(
                 control_group: FormControlGroupEnum.RuncardInformation,
                 data: rc_no_info);
 
-            NODE_ID = rc_no_info.Tables[0].Rows[0]["NODE_ID"].ToString();
-
             // 顯示使用中的機台的資訊
-            Loading(
+                Loading(
                 control_group: FormControlGroupEnum.MachineInUse,
                 data: machine_in_use);
+ 
+            // 走過的製程站         
+            Loading(
+                control_group: FormControlGroupEnum.PastProcess, 
+                data : rc_no_info); 
+            NODE_ID = rc_no_info.Tables[0].Rows[0]["NODE_ID"].ToString();
 
             // 取得並且顯示指定機台的停機記錄
             string machine_id = Dgv_Machine_InUse.Rows[0].Cells["MACHINE_ID"].Value.ToString();
@@ -559,15 +570,15 @@ namespace MachineDownTime
                 Tb_Good.Text = data_row["GOOD_QTY"].ToString();
                 Tb_Scrap.Text = data_row["SCRAP_QTY"].ToString();
                 Lb_Process.Text
-                    = SajetCommon.SetLanguage(FormTextEnum.Process.ToString())
-                    + " : "
-                    + data_row["PROCESS_NAME"].ToString();
+                    = SajetCommon.SetLanguage(FormTextEnum.Process.ToString());
+                    //+ " : "
+                    //+ data_row["PROCESS_NAME"].ToString();
                 Lb_Inprocess_Time.Text
                     = SajetCommon.SetLanguage(FormTextEnum.InProcessTime.ToString())
                     + " : "
                     + data_row["IN_PROCESS_TIME"].ToString();
             }
-            if (control_group == FormControlGroupEnum.MachineInUse)
+            else if (control_group == FormControlGroupEnum.MachineInUse)
             {
                 Dgv_Machine_InUse.DataSource = data;
                 Dgv_Machine_InUse.DataMember = data.Tables[0].ToString();
@@ -582,7 +593,7 @@ namespace MachineDownTime
                 }
                 OtSrv.RearrangeDataGridView(ref Dgv_Machine_InUse);
             }
-            if (control_group == FormControlGroupEnum.DownTimeLog)
+            else if (control_group == FormControlGroupEnum.DownTimeLog)
             {
                 Dgv_DownTime_Log.DataSource = data;
                 Dgv_DownTime_Log.DataMember = data.Tables[0].ToString();
@@ -594,6 +605,49 @@ namespace MachineDownTime
                 }
                 OtSrv.RearrangeDataGridView(ref Dgv_DownTime_Log);
             }
+            else if (control_group == FormControlGroupEnum.PastProcess)
+            {
+                this.CB_Process.SelectedIndexChanged -= new System.EventHandler(this.CB_Process_SelectedIndexChanged);
+                DataSet ds = null;
+                OtSrv.GetNowAndBeforeProcess(RC_NO, out ds);
+                CB_Process.DataSource = ds.Tables[0];
+                CB_Process.DisplayMember = "PROCESS_NAME";
+                CB_Process.ValueMember = "PROCESS_ID";
+                DataRow data_row = data.Tables[0].Rows[0];
+
+                this.CB_Process.SelectedIndexChanged += new System.EventHandler(this.CB_Process_SelectedIndexChanged);
+                CB_Process.SelectedIndex =
+                      ((DataTable)CB_Process.DataSource).Rows.IndexOf(
+                           ((DataTable)CB_Process.DataSource).Select($"PROCESS_ID={data_row["PROCESS_ID"].ToString()}")[0]
+                      );
+
+                CB_Process_SelectedIndexChanged(null,null);
+
+                if (data_row["CURRENT_STATUS"].ToString() == "1")
+                {                
+                    CB_Process.Enabled = false;
+                }
+                else
+                {
+                    CB_Process.Enabled = true;
+                }
+            }
+        }
+
+        private void CB_Process_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet machine_in_use = new DataSet();
+            string message = "";
+            McSrv.GetProcessMachine(
+                Tb_RC.Text,
+                CB_Process.SelectedValue.ToString(),
+                out machine_in_use,
+                out message);
+
+            Loading(
+                FormControlGroupEnum.MachineInUse,
+                machine_in_use
+                );
         }
     }
 }

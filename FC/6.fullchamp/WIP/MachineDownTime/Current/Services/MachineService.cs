@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.OracleClient;
 using System.Linq;
 using System.Text;
+using RcSrv = MachineDownTime.Services.RuncardService;
 
 namespace MachineDownTime.Services
 {
@@ -151,15 +152,75 @@ SELECT
 FROM
     SAJET.G_RC_STATUS A,
     SAJET.sys_rc_process_machine B,
-    SAJET.SYS_MACHINE c
+    SAJET.SYS_MACHINE c,
+
+    sajet.Sys_Rc_Route_Detail r ,
+    sajet.sys_process p
 WHERE
     A.RC_NO = :RC_NO
     AND A.Process_Id = b.process_id
     AND B.MACHINE_ID = C.MACHINE_ID
+
+    AND a.route_id = r.route_id
+    AND r.node_type =1 
+    AND r.node_content = p.process_id
+
 order by c.machine_code";
 
             object[][] p = new object[1][];
             p[0] = new object[] { ParameterDirection.Input, OracleType.VarChar, "RC_NO", rc_no };
+            machine_in_use = ClientUtils.ExecuteSQL(s, p);
+
+            if (machine_in_use != null &&
+                machine_in_use.Tables[0].Rows.Count > 0)
+            {
+                message = string.Empty;
+
+                return true;
+            }
+            else
+            {
+                message = SajetCommon.SetLanguage(MessageEnum.MachineNotFoundOrNoMachineInUse.ToString());
+
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// 取得製程的可用機台
+        /// </summary>
+        /// <param name="process_id"></param>
+        /// <param name="machine_in_use"></param>
+        /// <param name="message"></param>
+        /// <returns></returns>
+        internal static bool GetProcessMachine(
+            string RC_NO,
+            string process_id,
+            out DataSet machine_in_use,
+            out string message)
+        {
+
+            string sSQL = $"select r.route_id from sajet.g_rc_status r where r.rc_no ='{RC_NO}'";
+            DataTable rc_no_info = ClientUtils.ExecuteSQL(sSQL).Tables[0];
+              string s = $@"
+SELECT
+    '{RC_NO}' RC_NO, 
+    B.MACHINE_ID,
+    C.MACHINE_CODE,
+    '['
+    || TRIM(C.MACHINE_CODE)
+    || ']'
+    || TRIM(C.MACHINE_DESC) MACHINE_NAME,
+    '' START_TIME
+FROM
+    SAJET.sys_rc_process_machine B,
+    SAJET.SYS_MACHINE c
+WHERE   b.Process_Id = :Process_Id
+    AND B.MACHINE_ID = C.MACHINE_ID
+order by c.machine_code";
+
+            object[][] p = new object[1][];
+            p[0] = new object[] { ParameterDirection.Input, OracleType.VarChar, "Process_Id", process_id };
             machine_in_use = ClientUtils.ExecuteSQL(s, p);
 
             if (machine_in_use != null &&

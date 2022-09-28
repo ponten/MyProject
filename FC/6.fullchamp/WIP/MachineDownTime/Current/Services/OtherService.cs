@@ -131,5 +131,22 @@ FROM
 
             x.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
         }
+
+
+        public static void GetNowAndBeforeProcess(string rc_no, out DataSet ds)
+        {
+            ds = new DataSet();
+            string sSQL = $"select sajet.F_GET_PAST_PROCESS(r.route_id, r.process_id) proc from sajet.g_rc_status r where r.rc_no='{rc_no}' and rownum =1";
+            string sProcess = default;
+            using (DataTable dt = ClientUtils.ExecuteSQL(sSQL).Tables[0])
+            {
+                sProcess = Convert.ToString( dt.Rows[0][0] );
+            }
+
+            sProcess = string.Join("','", sProcess.Split(','));
+
+            sSQL = $"select process_id, process_code, process_name from sajet.sys_process r where r.process_id in ('{sProcess}')";
+            ds = ClientUtils.ExecuteSQL(sSQL);
+        }
     }
 }

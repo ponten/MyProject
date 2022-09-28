@@ -17,5 +17,9 @@
         /// 停機記錄區塊
         /// </summary>
         DownTimeLog,
+        /// <summary>
+        /// 已走過的製程
+        /// </summary>
+        PastProcess,
     }
 }

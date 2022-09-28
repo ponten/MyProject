@@ -82,6 +82,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.Btn_Clear = new System.Windows.Forms.Button();
+            this.CB_Process = new System.Windows.Forms.ComboBox();
             this.Tlp_Form.SuspendLayout();
             this.Tlp_Grid.SuspendLayout();
             this.Gb_RCInfo.SuspendLayout();
@@ -410,6 +411,7 @@
             this.Tlp_Query.Controls.Add(this.label8, 0, 0);
             this.Tlp_Query.Controls.Add(this.label10, 4, 0);
             this.Tlp_Query.Controls.Add(this.Btn_Clear, 10, 0);
+            this.Tlp_Query.Controls.Add(this.CB_Process, 8, 0);
             this.Tlp_Query.Name = "Tlp_Query";
             // 
             // Btn_OK_1
@@ -459,6 +461,13 @@
             resources.ApplyResources(this.Btn_Clear, "Btn_Clear");
             this.Btn_Clear.Name = "Btn_Clear";
             this.Btn_Clear.UseVisualStyleBackColor = true;
+            // 
+            // CB_Process
+            // 
+            resources.ApplyResources(this.CB_Process, "CB_Process");
+            this.CB_Process.FormattingEnabled = true;
+            this.CB_Process.Name = "CB_Process";
+            this.CB_Process.SelectedIndexChanged += new System.EventHandler(this.CB_Process_SelectedIndexChanged);
             // 
             // fMain
             // 
@@ -537,5 +546,6 @@
         private System.Windows.Forms.DateTimePicker Dtp_Start_Date;
         private System.Windows.Forms.DateTimePicker Dtp_Start_Time;
         private System.Windows.Forms.DateTimePicker Dtp_End_Time;
+        private System.Windows.Forms.ComboBox CB_Process;
     }
 }
