@@ -1,0 +1,6 @@
+ForitClient 
+user: mes
+pwd: Fullchamp@0318
+VPN 10.23.7.24 
+user: FCT-MESAP1\administrator
+pwd: 2wsx!QAZ1qaz
