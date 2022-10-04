@@ -3170,6 +3170,15 @@ AND PROCESS_ID = :PROCESS_ID
                     }
             }
 
+            //檢查長度限制 20220326 v1.0.17003.80 add
+            if (!string.IsNullOrEmpty(DgvInput.Rows[e.RowIndex].Cells["VALUE_LENGTH"].EditedFormattedValue.ToString()))
+            {
+                if (cell.Value.ToString().Length != Convert.ToInt32(DgvInput.Rows[e.RowIndex].Cells["VALUE_LENGTH"].EditedFormattedValue.ToString()))
+                {
+                    cell.ErrorText = SajetCommon.SetLanguage("Length Error", 1)+" : "+ DgvInput.Rows[e.RowIndex].Cells["VALUE_LENGTH"].EditedFormattedValue.ToString();
+                }
+            }
+
             switch (DgvInput.Rows[e.RowIndex].Cells["INPUT_TYPE"].EditedFormattedValue.ToString())
             {
                 case "R":
@@ -3202,7 +3211,7 @@ AND PROCESS_ID = :PROCESS_ID
                     }
                 default:
                     {
-                        if (DgvInput.Rows[e.RowIndex].Cells["VALUE_TYPE"].EditedFormattedValue.ToString() == "N")
+                        if (DgvInput.Rows[e.RowIndex].Cells["VALUE_TYPE"].EditedFormattedValue.ToString() == "N") //Number
                         {
                             try
                             {
@@ -3216,7 +3225,13 @@ AND PROCESS_ID = :PROCESS_ID
                                 }
                             }
                         }
-
+                        else if (DgvInput.Rows[e.RowIndex].Cells["VALUE_TYPE"].EditedFormattedValue.ToString() == "E") //英數 20220326 v1.0.17003.80 add
+                        {
+                            if (!IsNatural_Number(cell.EditedFormattedValue.ToString()))
+                            {
+                                cell.ErrorText = SajetCommon.SetLanguage("Data Invalid-English or Number", 1);
+                            }
+                        }
                         break;
                     }
             }

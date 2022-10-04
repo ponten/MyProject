@@ -347,6 +347,10 @@
              Value="請設定機台加工數量" />
     <Message Name="PleaseLogOperatorNumber"
              Value="請記錄作業人數" />
+   <Message Name="Data Invalid-English or Number"
+			Value="必須為英數" />
+	  <Message Name=" Length Error"
+		   Value="長度錯誤" />
     <Message Name="Merge / Split RC" Value="拆併批" />
     <Message Name="Function" Value="功能" />
     <Message Name="Merge" Value="併批" />
