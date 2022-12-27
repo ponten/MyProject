@@ -226,8 +226,9 @@ namespace RCOutput
             //SajetCommon.SetLanguageControl(this);
             programInfo.iSNInput = new int[2];
             sFunctionName = ClientUtils.fFunctionName;
-            //載入 RCMerge, RCSplit dll
-            Load_dll();
+
+            //刪除工單目錄下的 RCMerge, RCSplit dll
+            Delete_dll();
 
 
             if (string.IsNullOrEmpty(tsEmp.Text))
@@ -4786,6 +4787,24 @@ AND ROWNUM = 1
                 foreach (string fileName in new string[] { "RCSplit", "RCMerge" })
                     foreach (string extension in new string[] { ".dll", ".xml" })
                         try { File.Copy(Path.Combine(sRoot, "RCManager", fileName + extension), Path.Combine(sWoFolder, fileName + extension), true); }
+                        catch { }
+            }
+            catch { }
+        }
+
+        private static void Delete_dll()
+        {
+            try
+            {
+                string sWoFile = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                string sWoFolder = sWoFile.Substring(0, sWoFile.LastIndexOf(@"\"));
+                string sRoot = sWoFolder.Substring(0, sWoFolder.LastIndexOf(@"\"));
+
+
+  
+                foreach (string fileName in new string[] { "RCSplit", "RCMerge" })
+                    foreach (string extension in new string[] { ".dll", ".xml" })
+                        try { File.Delete(Path.Combine(sWoFolder, fileName + extension)); }
                         catch { }
             }
             catch { }

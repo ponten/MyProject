@@ -3645,6 +3645,9 @@ WHERE
             {
                 foreach (var RC in RcDetails)
                 {
+                    if (temp.Where(x => x.RC_NO == RC.RC_NO).Count() == 0)
+                        continue;
+
                     // 不良數量
                     temp.First(x => x.RC_NO == RC.RC_NO).Defects
                         = RC.Defects.Select(x => new Defect(x))
@@ -3991,7 +3994,14 @@ END;
             RCSplit.fMain f = new RCSplit.fMain();           
             f.sRC_CallByOthers = saRC[0];
             f.ShowDialog();
+
             ShowData();
+
+            // 取得所有製程不良現象（項目，與設定數量無關）
+            DefectItems = CreateDefectList();
+
+            // 所有流程卡的資料模型
+            RcDetails = CreateRCsList(DefectItems);
 
         }
 
@@ -4021,6 +4031,12 @@ END;
             f.ShowDialog();
 
             ShowData();
+
+            // 取得所有製程不良現象（項目，與設定數量無關）
+            DefectItems = CreateDefectList();
+
+            // 所有流程卡的資料模型
+            RcDetails = CreateRCsList(DefectItems);
         }
     }
 }
