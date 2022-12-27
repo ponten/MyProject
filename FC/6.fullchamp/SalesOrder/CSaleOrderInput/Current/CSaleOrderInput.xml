@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chroma>
+  <English>
+    <Message Name="Operation ID" Value="Operation ID"/>
+    <Message Name="Operation Name" Value="Operation Name"/>
+    <Message Name="Number1" Value="Number"/>
+    <Message Name="Number2" Value="Serial Number"/>
+    <Message Name="Customer ID" Value="Customer ID"/>
+    <Message Name="Customer Name" Value="Customer Title"/>
+    <Message Name="Account ID" Value="Account ID"/>
+    <Message Name="Account Name" Value="Account Title"/>
+    <Message Name="To Send ID" Value="Receiver ID"/>
+    <Message Name="To Send Name" Value="Receiver Title"/>
+    <Message Name="Sale ID" Value="Sales ID"/>
+    <Message Name="Sale Name" Value="Sales Name"/>
+    <Message Name="Real Date" Value="Creation Date"/>
+    <Message Name="Real Due Date" Value="Due Date"/>
+    <Message Name="Customize" Value="Customization"/>
+    <Message Name="Number3" Value="Remarks"/>
+
+    <Message Name="Customer" Value="Customer"/>
+    <Message Name="Account" Value="Account"/>
+    <Message Name="To_Send" Value="Receiver"/>
+    <Message Name="Sale" Value="Sales"/>
+    <Message Name="ID" Value="ID"/>
+    <Message Name="Title" Value="Title"/>
+    <Message Name="Name" Value="Name"/>
+
+    <Message Name="Quotes1" Value="Quote1"/>
+    <Message Name="Quotes2" Value="Quote2"/>
+    <Message Name="Quotes3" Value="Quote3"/>
+    <Message Name="Currency" Value="Currency"/>
+    <Message Name="Exchange Rate" Value="Exchange Rate"/>
+    <Message Name="Payment Terms" Value="Payment Terms"/>
+    <Message Name="Address" Value="Address"/>
+    <Message Name="Produce Number" Value="Produce No."/>
+    <Message Name="Unit" Value="Unit"/>
+    <Message Name="Quantity" Value="Quantity"/>
+    <Message Name="Weight" Value="Weight"/>
+    <Message Name="Unit Price" Value="Unit Price"/>
+    <Message Name="Amount" Value="Amount"/>
+    <Message Name="Client Prod. No." Value="Client Prod. No."/>
+    <Message Name="Spec1" Value="Spec1"/>
+    <Message Name="Spec2" Value="Spec2"/>
+    <Message Name="Spec3" Value="Spec3"/>
+    <Message Name="Sequence" Value="Sequence No."/>
+    <Message Name="Product" Value="Product"/>
+    <Message Name="CUSTOMER_CODE" Value="Code"/>
+    <Message Name="CUSTOMER_NAME" Value="Title"/>
+    <Message Name="EMP_NO" Value="Code"/>
+    <Message Name="EMP_NAME" Value="Name"/>
+    <Message Name="PART_NO" Value="Produce Number"/>
+    <Message Name="'Produce Number' cannot be empty!" Value="'Produce Number' cannot be empty!"/>
+    <Message Name="'Quantity' cannot be empty!" Value="'Quantity' cannot be empty!"/>
+    <Message Name="The selected data is disabled. Please enable it to append details." Value="The selected data is disabled. Please enable it to append details."/>
+
+    <Message Name="SEQUENCE" Value="Sequence No."/>
+    <Message Name="QUOTES1" Value="Quote1"/>
+    <Message Name="QUOTES2" Value="Quote2"/>
+    <Message Name="QUOTES3" Value="Quote3"/>
+    <Message Name="CURRENCY" Value="Currency"/>
+    <Message Name="EXCHANGE_RATE" Value="Exchange Rate"/>
+    <Message Name="PAYMENT_METHOD" Value="Payment Terms"/>
+    <Message Name="ADDRESS" Value="Address"/>
+    <Message Name="PRODUCE_NUMBER" Value="Produce No."/>
+    <Message Name="OPTION5" Value="Unit Weight"/>
+    <Message Name="Unit Weight" Value="Unit Weight"/>
+    <Message Name="UNIT" Value="Unit"/>
+    <Message Name="QUANTITY" Value="Quantity"/>
+    <Message Name="WEIGHT" Value="Weight"/>
+    <Message Name="UNIT_PRICE" Value="Unit Price"/>
+    <Message Name="AMOUNT" Value="Amount"/>
+    <Message Name="CLIENT_PRODUCE_NUMBER" Value="Client Produce Number"/>
+    <Message Name="SPEC1" Value="Spec1"/>
+    <Message Name="SPEC2" Value="Spec2"/>
+    <Message Name="SPEC3" Value="Spec3"/>
+    <Message Name="CUSTOMER_ID1" Value="Customer ID"/>
+    <Message Name="CUSTOMER_NAME1" Value="Customer Name"/>
+    <Message Name="fFilter_Part" Value="Find Part NO"/>
+
+    <Message Name="Disabled" Value="Disabled"/>
+    <Message Name="Enabled" Value="Enabled"/>
+    <Message Name="Delete" Value="Delete"/>
+    <Message Name="Append" Value="Append"/>
+    <Message Name="Modify" Value="Modify"/>
+    <Message Name="Export" Value="Export"/>
+    <Message Name="All" Value="All"/>
+    <Message Name="Filter" Value="Filter"/>
+    <Message Name="History Log" Value="History Log"/>
+    <Message Name="OK" Value="OK"/>
+    <Message Name="Cancel" Value="Cancel"/>
+    <Message Name="Search" Value="Search"/>
+    <Message Name="Remove" Value="Remove"/>
+    <Message Name="EMP_NAME" Value="Update User"/>
+    <Message Name="UPDATE_TIME" Value="Update Time"/>
+    <Message Name="ENABLED" Value="Enabled"/>
+    <Message Name="Data Duplicate" Value="Data Duplicate"/>
+    <Message Name="Data Append OK" Value="Data Append OK"/>
+    <Message Name="Append Other Data" Value="Append Other Data"/>
+    <Message Name="Data is null" Value="Data is null"/>
+    <Message Name="Export All" Value="Export All"/>
+    <Message Name="Copy" Value="Copy"/>
+    
+    <!-- Message Enum-->
+    <Message Name="Sequence4DigitsMost" Value="Sequence can set 3 digits most"/>
+    <Message Name="SerialNumber4DigitsMost" Value="Serial number can set 4 digits most"/>
+    <Message Name="Require6DigitsYearMonthNumber" Value="Year-month number requires 6 digits date format"/>
+    
+  </English>
+  <繁體中文>
+    <Message Name="Operation ID" Value="作業"/>
+    <Message Name="Operation Name" Value="作業名稱"/>
+    <Message Name="Number1" Value="號碼"/>
+    <Message Name="Number2" Value="當月流水碼"/>
+    <Message Name="Customer ID" Value="客戶編號"/>
+    <Message Name="Customer Name" Value="客戶名稱"/>
+    <Message Name="Account ID" Value="帳務編號"/>
+    <Message Name="Account Name" Value="帳務名稱"/>
+    <Message Name="To Send ID" Value="指送編號"/>
+    <Message Name="To Send Name" Value="指送名稱"/>
+    <Message Name="Sale ID" Value="業務編號"/>
+    <Message Name="Sale Name" Value="業務姓名"/>
+    <Message Name="Real Date" Value="日期"/>
+    <Message Name="Real Due Date" Value="交期"/>
+    <Message Name="Customize" Value="客訂"/>
+    <Message Name="Number3" Value="備註"/>
+
+    <Message Name="Customer" Value="客戶"/>
+    <Message Name="Account" Value="帳務"/>
+    <Message Name="To_Send" Value="指送"/>
+    <Message Name="Sale" Value="業務"/>
+    <Message Name="ID" Value="編號"/>
+    <Message Name="Title" Value="名稱"/>
+    <Message Name="Name" Value="姓名"/>
+
+    <Message Name="Quotes1" Value="報價1"/>
+    <Message Name="Quotes2" Value="報價2"/>
+    <Message Name="Quotes3" Value="報價3"/>
+    <Message Name="Currency" Value="幣別"/>
+    <Message Name="Exchange Rate" Value="幣別匯率"/>
+    <Message Name="Payment Terms" Value="付款方式"/>
+    <Message Name="Address" Value="地址"/>
+    <Message Name="Produce Number" Value="產編/報價單號"/>
+    <Message Name="Unit" Value="單位"/>
+    <Message Name="Quantity" Value="數量"/>
+    <Message Name="Weight" Value="總重量"/>
+    <Message Name="Unit Price" Value="單價"/>
+    <Message Name="Amount" Value="總金額"/>
+    <Message Name="Client Prod. No." Value="客戶產編"/>
+    <Message Name="Spec1" Value="規格1"/>
+    <Message Name="Spec2" Value="規格2"/>
+    <Message Name="Spec3" Value="規格3"/>
+    <Message Name="Sequence" Value="序號"/>
+    <Message Name="Product" Value="產品"/>
+
+    <Message Name="CUSTOMER_CODE" Value="編號"/>
+    <Message Name="CUSTOMER_NAME" Value="客戶名稱"/>
+    <Message Name="CUSTOMER_NAME1" Value="客戶名稱"/>
+    <Message Name="CUSTOMER_ID" Value="客戶代碼"/>
+    <Message Name="CUSTOMER_ID1" Value="客戶代碼"/>
+    <Message Name="EMP_NO" Value="編號"/>
+    <Message Name="EMP_NAME" Value="姓名"/>
+    <Message Name="PART_NO" Value="產編/報價單號"/>
+    <Message Name="'Number' cannot be empty!" Value="'號碼'不能為空值"/>
+    <Message Name="'Serial Number' cannot be empty!" Value="'當月流水碼'不能為空值"/>
+    <Message Name="'Produce Number' cannot be empty!" Value="'產編/報價單號'不能為空值"/>
+    <Message Name="'Quantity' cannot be empty!" Value="'數量'不能為空值"/>
+    <Message Name="'Amount' cannot be empty!" Value="'總金額'不能為空值"/>
+    <Message Name="'Creation Date' cannot be empty!" Value="'日期'不能為空值"/>
+    <Message Name="'Due Date' cannot be empty!" Value="'交期'不能為空值"/>
+    <Message Name="'APPEND" Value="新增"/>
+    <Message Name="The selected data is disabled. Please enable it to append details." Value="此筆資料目前'停用', 請先設為'可用'後再新增"/>
+
+    <Message Name="SEQUENCE" Value="序號"/>
+    <Message Name="QUOTES1" Value="報價1"/>
+    <Message Name="QUOTES2" Value="報價2"/>
+    <Message Name="QUOTES3" Value="報價3"/>
+    <Message Name="CURRENCY" Value="幣別"/>
+    <Message Name="EXCHANGE_RATE" Value="幣別匯率"/>
+    <Message Name="PAYMENT_METHOD" Value="付款方式"/>
+    <Message Name="ADDRESS" Value="地址"/>
+    <Message Name="PRODUCE_NUMBER" Value="產編/報價單號"/>
+    <Message Name="OPTION5" Value="成品重量"/>
+    <Message Name="Unit Weight" Value="成品重量"/>
+    <Message Name="UNIT" Value="單位"/>
+    <Message Name="QUANTITY" Value="數量"/>
+    <Message Name="WEIGHT" Value="總重量"/>
+    <Message Name="UNIT_PRICE" Value="單價"/>
+    <Message Name="AMOUNT" Value="總金額"/>
+    <Message Name="CLIENT_PRODUCE_NUMBER" Value="客戶產編"/>
+    <Message Name="SPEC1" Value="品名"/>
+    <Message Name="SPEC2" Value="規格2"/>
+    <Message Name="SPEC3" Value="規格3"/>
+    <Message Name="Empty" Value="空值"/>
+    <Message Name="Not a number" Value="不是一個數字"/>
+    <Message Name="( = Unit Weight x Quantity )" Value="( = 成品重量 x 數量 )"/>
+    <Message Name="( = Unit Price x Quantity )" Value="( = 單價 x 數量 )"/>
+    <Message Name="'Unit Weight' and 'Quantity' must be numbers" Value="'成品重量'與'數量'必須為數字"/>
+    <Message Name="'Unit Price' and 'Quantity' must be numbers" Value="'單價'與'數量'必須為數字"/>
+    <Message Name="Must be a number" Value="必須為數字"/>
+    <Message Name="Not all input data is valid. Please check again." Value="資料輸入錯誤, 請再檢查一次."/>
+    <Message Name="REAL_DATE_Detail" Value="日期(附表)"/>
+    <Message Name="REAL_DUE_DATE_Detail" Value="交期(附表)"/>
+    <Message Name="Append" Value="新增"/>
+    <Message Name="Modify" Value="修改"/>
+    <Message Name="Copy" Value="複製"/>
+    <Message Name="DateTime format error" Value="日期格式錯誤"/>
+    <Message Name="Part NO not found" Value="找不到料號"/>
+    <Message Name="Part No do not exist" Value="料號不存在"/>
+    <Message Name="Duplicate number/serial number pair" Value="號碼/當月流水碼組合重複"/>
+    <Message Name="Please check part NO (obsolete data)" Value="請檢查產編(資料已過時)"/>
+    <Message Name="fFilter_Part" Value="搜尋產編"/>
+
+    <Message Name="Search" Value="搜尋"/>
+    <Message Name="OK" Value="確定"/>
+    <Message Name="Cancel" Value="取消"/>
+    <Message Name="Filter" Value="篩選"/>
+    <Message Name="Export" Value="匯出"/>
+    <Message Name="Enabled" Value="啟用"/>
+    <Message Name="Disabled" Value="停用"/>
+    <Message Name="All" Value="全部"/>
+    <Message Name="Export All" Value="全部匯出"/>
+    <Message Name="Confirm" Value="確認"/>
+    <Message Name="Data Append OK" Value="新增資料完成"/>
+    <Message Name="Append Other Data" Value="再新增資料"/>
+
+    <Message Name="Disabled" Value="停用"/>
+    <Message Name="Enabled" Value="可用"/>
+    <Message Name="Delete" Value="刪除"/>
+    <Message Name="Append" Value="新增"/>
+    <Message Name="Modify" Value="修改"/>
+    <Message Name="Export" Value="匯出"/>
+    <Message Name="All" Value="全部"/>
+    <Message Name="Filter" Value="過濾條件"/>
+    <Message Name="History Log" Value="歷史紀錄"/>
+    <Message Name="OK" Value="確定"/>
+    <Message Name="Cancel" Value="取消"/>
+    <Message Name="Search" Value="尋找"/>
+    <Message Name="Remove" Value="移除"/>
+    <Message Name="EMP_NAME" Value="異動人員"/>
+    <Message Name="UPDATE_TIME" Value="異動時間"/>
+    <Message Name="ENABLED" Value="是否有效"/>
+    <Message Name="Data Duplicate" Value="資料重複"/>
+    <Message Name="Data Append OK" Value="資料新增成功"/>
+    <Message Name="Append Other Data" Value="繼續新增其他資料"/>
+    <Message Name="Data is null" Value="資料未輸入"/>
+    <Message Name="Export All" Value="全部匯出"/>
+    <Message Name="Copy" Value="複製"/>
+    <Message Name="Cannot find data from {0} Form." Value="從 {0} 表單找不到資料"/>
+    <Message Name="Part No do not exist" Value="料號不存在"/>
+
+    <!-- Message Enum-->
+    <Message Name="Sequence3DigitsMost" Value="序號最多可以設定 3 碼"/>
+    <Message Name="SerialNumber4DigitsMost" Value="當月流水碼最多可以設定 4 碼"/>
+    <Message Name="Require6DigitsYearMonthNumber" Value="年月號碼必須為 6 碼日期格式"/>
+
+    <Message Name="[MES] SaleOrder Notify" Value="[MES] 銷售訂單"/>
+    
+
+  </繁體中文>
+</Chroma>
