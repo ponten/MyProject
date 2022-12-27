@@ -518,7 +518,7 @@ where
                 select EMAIL 
                 from  sajet.sys_role_emp sre
                 join sajet.sys_emp se on sre.emp_id=se.emp_id
-                where role_id='10000006' and se.EMAIL is not null");
+                where role_id='10000022' and se.EMAIL is not null");
 
             DataSet ds = ClientUtils.ExecuteSQL(sSQL);
 
