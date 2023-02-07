@@ -90,6 +90,17 @@
             this.toolStripLabel7 = new System.Windows.Forms.ToolStripLabel();
             this.btnAppend = new System.Windows.Forms.ToolStripButton();
             this.btnDelete = new System.Windows.Forms.ToolStripButton();
+            this.tpMergeSplit = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnSplit = new System.Windows.Forms.Button();
+            this.btnMerge = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.DgvRc = new System.Windows.Forms.DataGridView();
+            this.colChk = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.colSOURCE_RC_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRC_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCURRENT_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -130,6 +141,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvKeypart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            this.tpMergeSplit.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvRc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -175,8 +191,8 @@
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 122F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(880, 124);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 126F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(880, 128);
             this.tableLayoutPanel1.TabIndex = 11;
             // 
             // tsDetial
@@ -297,7 +313,7 @@
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 37);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 124F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(884, 29);
             this.tableLayoutPanel2.TabIndex = 41;
             // 
@@ -308,6 +324,7 @@
             this.TcData.Controls.Add(this.TpInTime);
             this.TcData.Controls.Add(this.TpSN);
             this.TcData.Controls.Add(this.TpKeyParts);
+            this.TcData.Controls.Add(this.tpMergeSplit);
             this.TcData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TcData.Location = new System.Drawing.Point(0, 66);
             this.TcData.Name = "TcData";
@@ -761,6 +778,126 @@
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
+            // tpMergeSplit
+            // 
+            this.tpMergeSplit.Controls.Add(this.tableLayoutPanel6);
+            this.tpMergeSplit.Location = new System.Drawing.Point(4, 22);
+            this.tpMergeSplit.Name = "tpMergeSplit";
+            this.tpMergeSplit.Padding = new System.Windows.Forms.Padding(3);
+            this.tpMergeSplit.Size = new System.Drawing.Size(876, 441);
+            this.tpMergeSplit.TabIndex = 6;
+            this.tpMergeSplit.Text = "Merge";
+            this.tpMergeSplit.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.Controls.Add(this.groupBox5, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.groupBox6, 0, 1);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(870, 435);
+            this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnSplit);
+            this.groupBox5.Controls.Add(this.btnMerge);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox5.Location = new System.Drawing.Point(3, 3);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(864, 44);
+            this.groupBox5.TabIndex = 0;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Function";
+            // 
+            // btnSplit
+            // 
+            this.btnSplit.Location = new System.Drawing.Point(249, 12);
+            this.btnSplit.Name = "btnSplit";
+            this.btnSplit.Size = new System.Drawing.Size(75, 29);
+            this.btnSplit.TabIndex = 1;
+            this.btnSplit.Text = "Split";
+            this.btnSplit.UseVisualStyleBackColor = true;
+            this.btnSplit.Visible = false;
+            // 
+            // btnMerge
+            // 
+            this.btnMerge.Location = new System.Drawing.Point(105, 12);
+            this.btnMerge.Name = "btnMerge";
+            this.btnMerge.Size = new System.Drawing.Size(75, 29);
+            this.btnMerge.TabIndex = 0;
+            this.btnMerge.Text = "Merge";
+            this.btnMerge.UseVisualStyleBackColor = true;
+            this.btnMerge.Click += new System.EventHandler(this.btnMerge_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.DgvRc);
+            this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox6.Location = new System.Drawing.Point(3, 53);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(864, 379);
+            this.groupBox6.TabIndex = 1;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Mergeable List";
+            // 
+            // DgvRc
+            // 
+            this.DgvRc.AllowUserToAddRows = false;
+            this.DgvRc.AllowUserToDeleteRows = false;
+            this.DgvRc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvRc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colChk,
+            this.colSOURCE_RC_NO,
+            this.colRC_NO,
+            this.colCURRENT_QTY});
+            this.DgvRc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgvRc.Location = new System.Drawing.Point(3, 18);
+            this.DgvRc.Name = "DgvRc";
+            this.DgvRc.RowHeadersWidth = 15;
+            this.DgvRc.RowTemplate.Height = 24;
+            this.DgvRc.Size = new System.Drawing.Size(858, 358);
+            this.DgvRc.TabIndex = 0;
+            // 
+            // colChk
+            // 
+            this.colChk.DataPropertyName = "CHK";
+            this.colChk.FalseValue = "N";
+            this.colChk.HeaderText = "";
+            this.colChk.MinimumWidth = 40;
+            this.colChk.Name = "colChk";
+            this.colChk.TrueValue = "Y";
+            this.colChk.Width = 40;
+            // 
+            // colSOURCE_RC_NO
+            // 
+            this.colSOURCE_RC_NO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colSOURCE_RC_NO.DataPropertyName = "SOURCE_RC_NO";
+            this.colSOURCE_RC_NO.HeaderText = "SOURCE_RC_NO";
+            this.colSOURCE_RC_NO.Name = "colSOURCE_RC_NO";
+            this.colSOURCE_RC_NO.Width = 119;
+            // 
+            // colRC_NO
+            // 
+            this.colRC_NO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colRC_NO.DataPropertyName = "RC_NO";
+            this.colRC_NO.HeaderText = "RC_NO";
+            this.colRC_NO.Name = "colRC_NO";
+            this.colRC_NO.Width = 68;
+            // 
+            // colCURRENT_QTY
+            // 
+            this.colCURRENT_QTY.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colCURRENT_QTY.DataPropertyName = "CURRENT_QTY";
+            this.colCURRENT_QTY.HeaderText = "CURRENT_QTY";
+            this.colCURRENT_QTY.Name = "colCURRENT_QTY";
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 4;
@@ -897,6 +1034,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            this.tpMergeSplit.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvRc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -978,5 +1120,16 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripLabel TslForm;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.TabPage tpMergeSplit;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button btnSplit;
+        private System.Windows.Forms.Button btnMerge;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.DataGridView DgvRc;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn colChk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSOURCE_RC_NO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRC_NO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCURRENT_QTY;
     }
 }

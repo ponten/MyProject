@@ -391,5 +391,29 @@ FROM
 
             return NumberPattern.IsMatch(strNumber);
         }
+
+        /// <summary>
+        /// 取得流程卡的詳細資訊。
+        /// </summary>
+        /// <returns></returns>
+        public static DataRow GetRcNoInfo(string Runcard)
+        {
+            string s = @"
+SELECT
+    *
+FROM
+    SAJET.G_RC_STATUS
+WHERE
+    RC_NO = :RC_NO
+";
+            var p = new List<object[]>
+            {
+                new object[] { ParameterDirection.Input, OracleType.VarChar, "RC_NO", Runcard },
+            };
+
+            var d = ClientUtils.ExecuteSQL(s, p.ToArray());
+
+            return d.Tables[0].Rows[0];
+        }
     }
 }

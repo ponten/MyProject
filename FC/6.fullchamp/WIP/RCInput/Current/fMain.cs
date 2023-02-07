@@ -26,6 +26,8 @@ namespace RCInput
 
         List<string> DateGridViewComboBoxItems = new List<string>();
 
+        DataRow RC_NO_INFO = null;
+
         struct TProgramInfo
         {
             public string sProgram;
@@ -455,6 +457,9 @@ WHERE
             }
 
             #endregion
+
+            // 流程卡資訊
+            RC_NO_INFO = Services.GetRcNoInfo(txtInput.Text);
         }
 
         private void FMain_Shown(object sender, EventArgs e)
@@ -1953,7 +1958,11 @@ ORDER BY
                 col.SortMode = DataGridViewColumnSortMode.NotSortable;
             }
 
-            # endregion
+            #endregion
+
+            #region Display Mergeable RC
+            MergeableRC(txtInput.Text);
+            #endregion
         }
 
         private void CheckInput()
@@ -2285,6 +2294,50 @@ SELECT 1 FROM DUAL
             gvSN.Columns.Clear();
 
             gvInput.Rows.Clear();
+        }
+
+        private void btnMerge_Click(object sender, EventArgs e)
+        {
+            RCMerge.fMain f = new RCMerge.fMain();
+            f.lsRcToMerge.Add(RC_NO_INFO["RC_NO"].ToString());
+            f.lsRcToMerge.AddRange(DgvRc.Rows.Cast<DataGridViewRow>()
+                         .Where(c => Convert.ToBoolean(c.Cells[colChk.Name].FormattedValue))
+                         .Select(s => Convert.ToString(s.Cells[colRC_NO.Name].Value)).ToList());
+            f.lsRcToMerge = f.lsRcToMerge.Distinct().OrderBy(c => c.Length).OrderBy(c => c).ToList();
+            f.ShowDialog();
+            if (f.DialogResult == DialogResult.OK)
+            {
+                this.Close();
+            }
+        }
+
+
+        void MergeableRC(string sRC)
+        {
+            string sSQL = $@"
+            SELECT DISTINCT 'N' Chk, r.source_rc_no, r.rc_no ,rc1.current_qty 
+            FROM   sajet.G_RC_SPLIT r 
+                  ,sajet.g_rc_status rc1
+            WHERE  r.rc_no=rc1.rc_no 
+            AND    r.rc_no != '{sRC}'
+            AND    EXISTS (SELECT * 
+                           FROM  sajet.g_rc_status rc
+                                ,sajet.G_RC_SPLIT o 
+                           WHERE rc.rc_no = '{sRC}'
+                           AND   o.rc_no=rc.rc_no
+                           AND   o.source_rc_no = r.source_rc_no 
+                           AND   rc.process_id = rc1.process_id
+                           AND   rc.current_status=rc1.current_status
+                           AND   r.rc_no != rc.rc_no
+                          )
+            ORDER BY rc_no
+            ";
+            using (DataTable dt = ClientUtils.ExecuteSQL(sSQL).Tables[0])
+            {
+                DgvRc.DataSource = dt;
+                btnMerge.Enabled = dt.Rows.Count > 0;
+            }
+
         }
 
     }

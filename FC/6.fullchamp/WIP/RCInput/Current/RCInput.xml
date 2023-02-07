@@ -11,6 +11,7 @@
     <Message Name="TheInProcessTimeMustBeEarlierThanNow"
              Value="The in-process time must be earlier than now" />
     <Message Name="MachineNotFound" Value="Machine not found" />
+    <Message Name="CURRENT_QTY" Value="Current quantity" />
   </English>
   <繁體中文>
     <Message Name="Append" Value="新增" />
@@ -121,6 +122,14 @@
              Value="投入時間設定比最後的更新時間早" />
     <Message Name="TheInProcessTimeMustBeEarlierThanNow" Value="投入時間必須比現在早" />
     <Message Name="MachineNotFound" Value="找不到機台" />
+
+    <Message Name="Merge / Split RC" Value="拆併批" />
+    <Message Name="Function" Value="功能" />
+    <Message Name="Merge" Value="併批" />
+    <Message Name="Split" Value="拆批" />
+    <Message Name="SOURCE_RC_NO" Value="母批" />
+    <Message Name="Mergeable List" Value="可併批清單" />
+    <Message Name="CURRENT_QTY" Value="當前數量" />
   </繁體中文>
   <ไทย>
     <Message Name="Append" Value="เพิ่ม" />
@@ -247,6 +256,7 @@
     <Message Name="備註" Value="หมายเหตุ" />
     <Message Name="藍圖" Value="ใบพิมพ์เขียว" />
     <Message Name="舊編" Value="รหัสเก่า" />
+    <Message Name="CURRENT_QTY" Value="ปริมาณปัจจุบัน" />
 
   </ไทย>
   <简体中文>
