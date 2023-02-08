@@ -250,6 +250,12 @@ namespace RCOutput
 
             DateTime end_time = DtpEnd.Value;
 
+            //換班的REASON_ID
+            int iReason_ID_shift = 0;
+            DataRow[] raReason = fMain.g_SYS_BASE.Select("PARAM_NAME='REASON_ID-SHIFT'");
+            iReason_ID_shift = raReason.Length > 0 ? int.Parse(raReason[0]["PARAM_VALUE"].ToString()) : 0;
+
+
             int i = 0;
 
             string s = string.Empty;
@@ -257,7 +263,7 @@ namespace RCOutput
             var p = new List<object[]>
             {
                 new object[] { ParameterDirection.Input, OracleType.DateTime, "END_TIME", end_time },
-                new object[] { ParameterDirection.Input, OracleType.Number, "REASON_ID", 0 },
+                new object[] { ParameterDirection.Input, OracleType.Number, "REASON_ID", iReason_ID_shift },
                 new object[] { ParameterDirection.Input, OracleType.VarChar, "REMARK", "" },
                 new object[] { ParameterDirection.Input, OracleType.Number, "UPDATE_USERID", EmpID },
                 new object[] { ParameterDirection.Input, OracleType.DateTime, "UPDATE_TIME", now },

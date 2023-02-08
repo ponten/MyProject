@@ -50,6 +50,8 @@ namespace RCOutput
 
         DataRow RC_NO_INFO;
 
+        public static DataTable g_SYS_BASE = null;
+
         /// <summary>
         /// 流程卡的投入時間
         /// </summary>
@@ -230,6 +232,8 @@ namespace RCOutput
             //刪除工單目錄下的 RCMerge, RCSplit dll
             Delete_dll();
 
+            //Get SYS_BASE
+            g_SYS_BASE = ClientUtils.ExecuteSQL("SELECT r.*  FROM sajet.sys_base r where r.program ='RC Output'").Tables[0];
 
             if (string.IsNullOrEmpty(tsEmp.Text))
             {

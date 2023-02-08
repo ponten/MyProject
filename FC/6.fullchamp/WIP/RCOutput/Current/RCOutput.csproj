@@ -37,7 +37,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\Chroma Application Client\WIP\</OutputPath>
+    <OutputPath>..\..\..\..\..\Chroma Application Client\WIP\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -52,22 +52,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClientUtils">
-      <HintPath>..\..\..\..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
+      <HintPath>..\..\..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
     </Reference>
     <Reference Include="FTransferProcess, Version=1.0.17003.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Chroma Application Client\WIP\FTransferProcess.dll</HintPath>
+      <HintPath>..\..\..\..\..\Chroma Application Client\WIP\FTransferProcess.dll</HintPath>
     </Reference>
     <Reference Include="PrintLabel">
-      <HintPath>..\..\..\..\..\..\Chroma Application Client\PrintLabel.dll</HintPath>
+      <HintPath>..\..\..\..\..\Chroma Application Client\PrintLabel.dll</HintPath>
     </Reference>
     <Reference Include="RCMerge, Version=1.5.16006.2, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Chroma Application Client\RCManager\RCMerge.dll</HintPath>
+      <HintPath>..\..\..\..\..\Chroma Application Client\RCMerge.dll</HintPath>
     </Reference>
     <Reference Include="RCSplit, Version=1.5.17003.4, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Chroma Application Client\RCManager\RCSplit.dll</HintPath>
+      <HintPath>..\..\..\..\..\Chroma Application Client\RCSplit.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
