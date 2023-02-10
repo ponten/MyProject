@@ -104,12 +104,13 @@ SELECT
  where 1=1
  order by WIP_IN_DATE ,WIP_IN_TIME ,MACHINE_CODE
 
-','Y','select RC_NO,SUM(QTY) QTY ,emp_name from 
+','Y','select RC_NO,SUM(QTY) QTY ,emp_name , reason_code, reason_desc from 
 (
-select m.rc_no,SUM( m.Load_QTY) QTY ,Se.emp_No,SE.emp_name
+select m.rc_no,SUM( m.Load_QTY) QTY ,Se.emp_No,SE.emp_name, d.reason_code, d.reason_desc
 from sajet.g_rc_travel_machine_down  m 
 join sajet.sys_emp se on m.update_userID=se.emp_id
 join sajet.sys_machine sm on sm.machine_id=m.machine_id
+join sajet.SYS_MACHINE_DOWN_DETAIL d on m.reason_id = d.reason_id
 where 1=1
  [AND  m.rc_no=@RC_NO]
  [AND  m.start_time    >=  :TIME ]
@@ -117,11 +118,11 @@ where 1=1
  [AND m.travel_id = @travel_id]
 and m.Load_QTY <>0
 and m.machine_id <> 0
-group by  m.rc_no,sm.machine_code,Se.emp_No,SE.emp_name
+group by  m.rc_no,sm.machine_code,Se.emp_No,SE.emp_name,d.reason_code, d.reason_desc
 order by SE.emp_name
 ) tt
 where 1=1
-group by RC_NO,emp_name','','','','','','','Y','N','0','0','','','','N','N','N','0','0','0','0','','8-生產日報表接班',:DISPLAY_IDX,'','0','1','0','N','0','N','N','','','')
+group by RC_NO,emp_name, reason_code, reason_desc','','','','','','','Y','N','0','0','','','','N','N','N','0','0','0','0','','8-生產日報表接班',:DISPLAY_IDX,'','0','1','0','N','0','N','N','','','')
 
 INSERT INTO SAJET.SYS_CUST_REPORT_PARAM (REPORT_ID,PARAM_SEQ,PARAM_NAME,PARAM_TYPE,FIELD_NAME,PARAM_OPERATOR,HEAD_VALUE,TAIL_VALUE,PARAM_VALUE,PARAM_DESC,UPDATE_USERID,UPDATE_TIME,CONDITION_FLAG,DESC_ENG,DESC_TW,DISPLAY_SEQ,PARAM_FUNCTION,UPPER_FLAG,DATE_CHECKED,DATE_RANGE,DESC_CN,PERIOD_RANGE,PARAM_FOR,DESC_TRA,DESC_TH) VALUES (:REPORT_ID,'1','Machine_Code','0','SM.MACHINE_CODE','Like','','%','','Machine_Code',:UPDATE_USERID,SYSDATE,'0','','機台代碼','1','','0','0','1','','0','0','','')
 INSERT INTO SAJET.SYS_CUST_REPORT_PARAM (REPORT_ID,PARAM_SEQ,PARAM_NAME,PARAM_TYPE,FIELD_NAME,PARAM_OPERATOR,HEAD_VALUE,TAIL_VALUE,PARAM_VALUE,PARAM_DESC,UPDATE_USERID,UPDATE_TIME,CONDITION_FLAG,DESC_ENG,DESC_TW,DISPLAY_SEQ,PARAM_FUNCTION,UPPER_FLAG,DATE_CHECKED,DATE_RANGE,DESC_CN,PERIOD_RANGE,PARAM_FOR,DESC_TRA,DESC_TH) VALUES (:REPORT_ID,'1','WORK_ORDER','0','RC.WORK_ORDER','Like','%','%','','WORK_ORDER',:UPDATE_USERID,SYSDATE,'0','','工單','2','','0','0','1','','0','0','','')
