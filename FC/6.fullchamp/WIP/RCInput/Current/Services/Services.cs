@@ -391,7 +391,6 @@ FROM
 
             return NumberPattern.IsMatch(strNumber);
         }
-
         /// <summary>
         /// 取得流程卡的詳細資訊。
         /// </summary>

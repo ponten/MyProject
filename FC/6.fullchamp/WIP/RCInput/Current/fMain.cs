@@ -27,7 +27,6 @@ namespace RCInput
         List<string> DateGridViewComboBoxItems = new List<string>();
 
         DataRow RC_NO_INFO = null;
-
         struct TProgramInfo
         {
             public string sProgram;
@@ -1887,7 +1886,7 @@ ORDER BY
             # endregion
 
             # region Keyparts Collection
-
+            /*
             // Show BOM information
             gvBOM.Columns.Clear();
 
@@ -1906,7 +1905,7 @@ ORDER BY
             Params = new List<object[]>
             {
                 new object[] { ParameterDirection.Input, OracleType.Number, "PROCESS_ID", programInfo.dsRC.Tables[0].Rows[0]["PROCESS_ID"].ToString() },
-                new object[] { ParameterDirection.Input, OracleType.Number, "PART_ID", programInfo.dsRC.Tables[0].Rows[0]["WO_OPTION2"].ToString() }
+                new object[] { ParameterDirection.Input, OracleType.Number, "PART_ID", programInfo.dsRC.Tables[0].Rows[0]["PART_ID"].ToString() }
             };
 
             ds = ClientUtils.ExecuteSQL(programInfo.sSQL["KEYPARTS COLLECTION"], Params.ToArray());
@@ -1957,7 +1956,8 @@ ORDER BY
             {
                 col.SortMode = DataGridViewColumnSortMode.NotSortable;
             }
-
+            //*/
+            this.TpKeyParts.Parent = null;
             #endregion
 
             #region Display Mergeable RC
@@ -2311,7 +2311,6 @@ SELECT 1 FROM DUAL
             }
         }
 
-
         void MergeableRC(string sRC)
         {
             string sSQL = $@"
@@ -2339,6 +2338,5 @@ SELECT 1 FROM DUAL
             }
 
         }
-
     }
 }

@@ -51,9 +51,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ClientUtils, Version=3.9.2104.1088, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="ClientUtils, Version=1.0.0.37, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
+      <HintPath>D:\Project\MyProject\Chroma Application Client\ClientUtils.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="RCMerge">
       <HintPath>..\..\..\..\..\Chroma Application Client\RCMerge.dll</HintPath>

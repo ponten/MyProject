@@ -802,7 +802,7 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(870, 435);
-            this.tableLayoutPanel6.TabIndex = 1;
+            this.tableLayoutPanel6.TabIndex = 2;
             // 
             // groupBox5
             // 
