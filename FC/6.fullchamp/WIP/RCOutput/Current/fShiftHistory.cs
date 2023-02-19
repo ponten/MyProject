@@ -31,7 +31,10 @@ namespace RCOutput
 
         private void FShiftHistory_Load(object sender, EventArgs e)
         {
-            var d = SfSrv.GetShiftHistory(rc_info);
+            DataRow[] d0 = SfSrv.GetShiftHistory(rc_info).Tables[0].Select($"REASON_ID='{fMain.g_iReason_ID_shift}'") ;
+            var d = new DataSet();
+            if (d0.Count() > 0)
+                d.Tables.Add(d0[0].Table.Copy());
 
             if (d != null && d.Tables[0] != null)
             {
@@ -98,6 +101,9 @@ namespace RCOutput
 
             foreach (DataGridViewColumn column in DgvData.Columns)
             {
+                if (column.Name.ToUpper() == "REASON_ID")
+                    column.Visible = false;
+
                 column.HeaderText = SajetCommon.SetLanguage(column.Name);
 
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;

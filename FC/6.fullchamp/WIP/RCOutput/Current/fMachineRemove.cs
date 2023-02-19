@@ -525,6 +525,9 @@ ORDER BY
             {
                 foreach (DataRow row in downDetails.Tables[0].Rows)
                 {
+                    if(MachineDownTypes
+                        .FirstOrDefault(e => e.ID == row["TYPE_ID"].ToString()) != null)
+
                     MachineDownTypes
                         .FirstOrDefault(e => e.ID == row["TYPE_ID"].ToString())
                         .DownDetails.Add(new DownDetail

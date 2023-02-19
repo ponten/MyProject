@@ -199,7 +199,7 @@
             this.CbType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.CbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbType.FormattingEnabled = true;
-            this.CbType.Location = new System.Drawing.Point(2, 6);
+            this.CbType.Location = new System.Drawing.Point(2, 3);
             this.CbType.Margin = new System.Windows.Forms.Padding(2);
             this.CbType.Name = "CbType";
             this.CbType.Size = new System.Drawing.Size(111, 28);
@@ -212,7 +212,7 @@
             this.CbDetail.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.CbDetail.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbDetail.FormattingEnabled = true;
-            this.CbDetail.Location = new System.Drawing.Point(117, 6);
+            this.CbDetail.Location = new System.Drawing.Point(117, 3);
             this.CbDetail.Margin = new System.Windows.Forms.Padding(2);
             this.CbDetail.Name = "CbDetail";
             this.CbDetail.Size = new System.Drawing.Size(112, 28);

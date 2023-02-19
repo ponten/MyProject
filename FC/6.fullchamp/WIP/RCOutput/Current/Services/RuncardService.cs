@@ -21,13 +21,15 @@ namespace RCOutput.Services
         /// <returns></returns>
         public static DataRow GetRcNoInfo(string Runcard)
         {
-            string s = @"
+            string s = $@"
 SELECT
-    *
+    a.*, NVL(b.load_qty,0) LOAD_QTY
 FROM
-    SAJET.G_RC_STATUS
+    SAJET.G_RC_STATUS a
+  , (SELECT RC_NO, SUM(r.load_qty) load_qty from SAJET.G_RC_TRAVEL_MACHINE_DOWN  r WHERE r.reason_id='{fMain.g_iReason_ID_shift}' GROUP BY RC_NO) b
 WHERE
-    RC_NO = :RC_NO
+     a.RC_NO = :RC_NO
+AND  a.RC_NO =b.RC_NO(+) 
 ";
             var p = new List<object[]>
             {

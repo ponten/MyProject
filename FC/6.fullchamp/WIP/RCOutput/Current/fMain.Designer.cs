@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -73,6 +73,20 @@
             this.TpMachine = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.DgvMachine = new System.Windows.Forms.DataGridView();
+            this.selectDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.mACHINEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mACHINECODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mACHINEDESCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sTATUSNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tYPEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rEASONIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sTARTTIMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eNDTIMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lOADQTYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dATECODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sTOVESEQDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.rEMARKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.machineDownModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.TlpShift = new System.Windows.Forms.TableLayoutPanel();
             this.CbShift = new System.Windows.Forms.CheckBox();
             this.DtpShift = new System.Windows.Forms.DateTimePicker();
@@ -93,8 +107,43 @@
             this.ScT4T6 = new System.Windows.Forms.SplitContainer();
             this.GbT4 = new System.Windows.Forms.GroupBox();
             this.DgvT4 = new System.Windows.Forms.DataGridView();
+            this.checkStateDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.rCNO10CDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROCESSID10CDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nODEID10CDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rCNOT4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cURRENTQTYT4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROCESSIDT4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nODEIDT4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROCESSCODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROCESSNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mACHINEIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mACHINECODEDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mACHINEDESCDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dATECODEDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lOADDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sTOVESEQDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bOUNDQTYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bINDINGQTYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.t4MachineModelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.GbT6 = new System.Windows.Forms.GroupBox();
             this.DgvT6 = new System.Windows.Forms.DataGridView();
+            this.checkStateDataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.rCNO10CDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROCESSID10CDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rCNOT4DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cURRENTQTYT4DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROCESSIDT4DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROCESSCODEDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROCESSNAMEDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mACHINEIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mACHINECODEDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mACHINEDESCDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dATECODEDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sTOVESEQDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lOADDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bINDINGQTYDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.t6MachineModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.CbT4CheckBOM = new System.Windows.Forms.CheckBox();
             this.TpOperator = new System.Windows.Forms.TabPage();
             this.Tb_OP_count = new System.Windows.Forms.TextBox();
@@ -139,6 +188,10 @@
             this.btnMerge = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.DgvRc = new System.Windows.Forms.DataGridView();
+            this.colChk = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.colSOURCE_RC_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRC_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCURRENT_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -148,59 +201,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsMsg = new System.Windows.Forms.ToolStripStatusLabel();
-            this.colChk = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.colSOURCE_RC_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRC_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCURRENT_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.selectDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.mACHINEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mACHINECODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mACHINEDESCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTATUSNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tYPEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rEASONIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTARTTIMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eNDTIMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lOADQTYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATECODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTOVESEQDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.rEMARKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.machineDownModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.checkStateDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.rCNO10CDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROCESSID10CDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nODEID10CDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rCNOT4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cURRENTQTYT4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROCESSIDT4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nODEIDT4DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROCESSCODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROCESSNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mACHINEIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mACHINECODEDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mACHINEDESCDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATECODEDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lOADDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTOVESEQDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bOUNDQTYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bINDINGQTYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.t4MachineModelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.checkStateDataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.rCNO10CDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROCESSID10CDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rCNOT4DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cURRENTQTYT4DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROCESSIDT4DataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROCESSCODEDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROCESSNAMEDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mACHINEIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mACHINECODEDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mACHINEDESCDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dATECODEDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sTOVESEQDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lOADDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bINDINGQTYDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.t6MachineModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.t4MachineModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.contextMenuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -219,6 +219,7 @@
             this.TpMachine.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMachine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machineDownModelBindingSource)).BeginInit();
             this.TlpShift.SuspendLayout();
             this.TpDefect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDefect)).BeginInit();
@@ -230,8 +231,10 @@
             this.ScT4T6.SuspendLayout();
             this.GbT4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvT4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t4MachineModelBindingSource1)).BeginInit();
             this.GbT6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvT6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t6MachineModelBindingSource)).BeginInit();
             this.TpOperator.SuspendLayout();
             this.TpOutTime.SuspendLayout();
             this.TpRework.SuspendLayout();
@@ -257,9 +260,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.machineDownModelBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.t4MachineModelBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.t6MachineModelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t4MachineModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -427,7 +427,7 @@
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 30);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 415F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 419F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1184, 28);
             this.tableLayoutPanel2.TabIndex = 41;
             // 
@@ -604,6 +604,135 @@
             this.DgvMachine.RowTemplate.Height = 24;
             this.DgvMachine.Size = new System.Drawing.Size(1170, 442);
             this.DgvMachine.TabIndex = 4;
+            // 
+            // selectDataGridViewCheckBoxColumn
+            // 
+            this.selectDataGridViewCheckBoxColumn.DataPropertyName = "Select";
+            this.selectDataGridViewCheckBoxColumn.HeaderText = "Select";
+            this.selectDataGridViewCheckBoxColumn.Name = "selectDataGridViewCheckBoxColumn";
+            this.selectDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.selectDataGridViewCheckBoxColumn.Visible = false;
+            this.selectDataGridViewCheckBoxColumn.Width = 38;
+            // 
+            // mACHINEIDDataGridViewTextBoxColumn
+            // 
+            this.mACHINEIDDataGridViewTextBoxColumn.DataPropertyName = "MACHINE_ID";
+            this.mACHINEIDDataGridViewTextBoxColumn.HeaderText = "MACHINE_ID";
+            this.mACHINEIDDataGridViewTextBoxColumn.Name = "mACHINEIDDataGridViewTextBoxColumn";
+            this.mACHINEIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mACHINEIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.mACHINEIDDataGridViewTextBoxColumn.Visible = false;
+            this.mACHINEIDDataGridViewTextBoxColumn.Width = 82;
+            // 
+            // mACHINECODEDataGridViewTextBoxColumn
+            // 
+            this.mACHINECODEDataGridViewTextBoxColumn.DataPropertyName = "MACHINE_CODE";
+            this.mACHINECODEDataGridViewTextBoxColumn.HeaderText = "Machine code";
+            this.mACHINECODEDataGridViewTextBoxColumn.Name = "mACHINECODEDataGridViewTextBoxColumn";
+            this.mACHINECODEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mACHINECODEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.mACHINECODEDataGridViewTextBoxColumn.Width = 92;
+            // 
+            // mACHINEDESCDataGridViewTextBoxColumn
+            // 
+            this.mACHINEDESCDataGridViewTextBoxColumn.DataPropertyName = "MACHINE_DESC";
+            this.mACHINEDESCDataGridViewTextBoxColumn.HeaderText = "Machine";
+            this.mACHINEDESCDataGridViewTextBoxColumn.Name = "mACHINEDESCDataGridViewTextBoxColumn";
+            this.mACHINEDESCDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mACHINEDESCDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.mACHINEDESCDataGridViewTextBoxColumn.Width = 68;
+            // 
+            // sTATUSNAMEDataGridViewTextBoxColumn
+            // 
+            this.sTATUSNAMEDataGridViewTextBoxColumn.DataPropertyName = "STATUS_NAME";
+            this.sTATUSNAMEDataGridViewTextBoxColumn.HeaderText = "STATUS_NAME";
+            this.sTATUSNAMEDataGridViewTextBoxColumn.Name = "sTATUSNAMEDataGridViewTextBoxColumn";
+            this.sTATUSNAMEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sTATUSNAMEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.sTATUSNAMEDataGridViewTextBoxColumn.Visible = false;
+            this.sTATUSNAMEDataGridViewTextBoxColumn.Width = 92;
+            // 
+            // tYPEIDDataGridViewTextBoxColumn
+            // 
+            this.tYPEIDDataGridViewTextBoxColumn.DataPropertyName = "TYPE_ID";
+            this.tYPEIDDataGridViewTextBoxColumn.HeaderText = "TYPE_ID";
+            this.tYPEIDDataGridViewTextBoxColumn.Name = "tYPEIDDataGridViewTextBoxColumn";
+            this.tYPEIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tYPEIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.tYPEIDDataGridViewTextBoxColumn.Visible = false;
+            this.tYPEIDDataGridViewTextBoxColumn.Width = 57;
+            // 
+            // rEASONIDDataGridViewTextBoxColumn
+            // 
+            this.rEASONIDDataGridViewTextBoxColumn.DataPropertyName = "REASON_ID";
+            this.rEASONIDDataGridViewTextBoxColumn.HeaderText = "REASON_ID";
+            this.rEASONIDDataGridViewTextBoxColumn.Name = "rEASONIDDataGridViewTextBoxColumn";
+            this.rEASONIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rEASONIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.rEASONIDDataGridViewTextBoxColumn.Visible = false;
+            this.rEASONIDDataGridViewTextBoxColumn.Width = 74;
+            // 
+            // sTARTTIMEDataGridViewTextBoxColumn
+            // 
+            this.sTARTTIMEDataGridViewTextBoxColumn.DataPropertyName = "START_TIME";
+            dataGridViewCellStyle13.Format = "yyyy/ MM/ dd HH: mm: ss";
+            this.sTARTTIMEDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle13;
+            this.sTARTTIMEDataGridViewTextBoxColumn.HeaderText = "Start time";
+            this.sTARTTIMEDataGridViewTextBoxColumn.Name = "sTARTTIMEDataGridViewTextBoxColumn";
+            this.sTARTTIMEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.sTARTTIMEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.sTARTTIMEDataGridViewTextBoxColumn.Width = 66;
+            // 
+            // eNDTIMEDataGridViewTextBoxColumn
+            // 
+            this.eNDTIMEDataGridViewTextBoxColumn.DataPropertyName = "END_TIME";
+            this.eNDTIMEDataGridViewTextBoxColumn.HeaderText = "END_TIME";
+            this.eNDTIMEDataGridViewTextBoxColumn.Name = "eNDTIMEDataGridViewTextBoxColumn";
+            this.eNDTIMEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.eNDTIMEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.eNDTIMEDataGridViewTextBoxColumn.Visible = false;
+            this.eNDTIMEDataGridViewTextBoxColumn.Width = 68;
+            // 
+            // lOADQTYDataGridViewTextBoxColumn
+            // 
+            this.lOADQTYDataGridViewTextBoxColumn.DataPropertyName = "LOAD_QTY";
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lOADQTYDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
+            this.lOADQTYDataGridViewTextBoxColumn.HeaderText = "Load";
+            this.lOADQTYDataGridViewTextBoxColumn.Name = "lOADQTYDataGridViewTextBoxColumn";
+            this.lOADQTYDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.lOADQTYDataGridViewTextBoxColumn.Width = 46;
+            // 
+            // dATECODEDataGridViewTextBoxColumn
+            // 
+            this.dATECODEDataGridViewTextBoxColumn.DataPropertyName = "DATE_CODE";
+            this.dATECODEDataGridViewTextBoxColumn.HeaderText = "DateCode";
+            this.dATECODEDataGridViewTextBoxColumn.Name = "dATECODEDataGridViewTextBoxColumn";
+            this.dATECODEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dATECODEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dATECODEDataGridViewTextBoxColumn.Width = 76;
+            // 
+            // sTOVESEQDataGridViewTextBoxColumn
+            // 
+            this.sTOVESEQDataGridViewTextBoxColumn.DataPropertyName = "STOVE_SEQ";
+            this.sTOVESEQDataGridViewTextBoxColumn.HeaderText = "Stove sequence";
+            this.sTOVESEQDataGridViewTextBoxColumn.Name = "sTOVESEQDataGridViewTextBoxColumn";
+            this.sTOVESEQDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // rEMARKDataGridViewTextBoxColumn
+            // 
+            this.rEMARKDataGridViewTextBoxColumn.DataPropertyName = "REMARK";
+            this.rEMARKDataGridViewTextBoxColumn.HeaderText = "REMARK";
+            this.rEMARKDataGridViewTextBoxColumn.Name = "rEMARKDataGridViewTextBoxColumn";
+            this.rEMARKDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rEMARKDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.rEMARKDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.rEMARKDataGridViewTextBoxColumn.Visible = false;
+            this.rEMARKDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // machineDownModelBindingSource
+            // 
+            this.machineDownModelBindingSource.DataSource = typeof(RCOutput.Models.MachineDownModel);
             // 
             // TlpShift
             // 
@@ -882,6 +1011,164 @@
             this.DgvT4.Size = new System.Drawing.Size(1164, 205);
             this.DgvT4.TabIndex = 0;
             // 
+            // checkStateDataGridViewCheckBoxColumn
+            // 
+            this.checkStateDataGridViewCheckBoxColumn.DataPropertyName = "CheckState";
+            this.checkStateDataGridViewCheckBoxColumn.HeaderText = "CheckState";
+            this.checkStateDataGridViewCheckBoxColumn.Name = "checkStateDataGridViewCheckBoxColumn";
+            this.checkStateDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.checkStateDataGridViewCheckBoxColumn.Visible = false;
+            // 
+            // rCNO10CDataGridViewTextBoxColumn
+            // 
+            this.rCNO10CDataGridViewTextBoxColumn.DataPropertyName = "RC_NO_10C";
+            this.rCNO10CDataGridViewTextBoxColumn.HeaderText = "RC_NO_10C";
+            this.rCNO10CDataGridViewTextBoxColumn.Name = "rCNO10CDataGridViewTextBoxColumn";
+            this.rCNO10CDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rCNO10CDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.rCNO10CDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // pROCESSID10CDataGridViewTextBoxColumn
+            // 
+            this.pROCESSID10CDataGridViewTextBoxColumn.DataPropertyName = "PROCESS_ID_10C";
+            this.pROCESSID10CDataGridViewTextBoxColumn.HeaderText = "PROCESS_ID_10C";
+            this.pROCESSID10CDataGridViewTextBoxColumn.Name = "pROCESSID10CDataGridViewTextBoxColumn";
+            this.pROCESSID10CDataGridViewTextBoxColumn.ReadOnly = true;
+            this.pROCESSID10CDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.pROCESSID10CDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nODEID10CDataGridViewTextBoxColumn
+            // 
+            this.nODEID10CDataGridViewTextBoxColumn.DataPropertyName = "NODE_ID_10C";
+            this.nODEID10CDataGridViewTextBoxColumn.HeaderText = "NODE_ID_10C";
+            this.nODEID10CDataGridViewTextBoxColumn.Name = "nODEID10CDataGridViewTextBoxColumn";
+            this.nODEID10CDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nODEID10CDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.nODEID10CDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // rCNOT4DataGridViewTextBoxColumn
+            // 
+            this.rCNOT4DataGridViewTextBoxColumn.DataPropertyName = "RC_NO_T4";
+            this.rCNOT4DataGridViewTextBoxColumn.HeaderText = "T4 RC NO";
+            this.rCNOT4DataGridViewTextBoxColumn.Name = "rCNOT4DataGridViewTextBoxColumn";
+            this.rCNOT4DataGridViewTextBoxColumn.ReadOnly = true;
+            this.rCNOT4DataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // cURRENTQTYT4DataGridViewTextBoxColumn
+            // 
+            this.cURRENTQTYT4DataGridViewTextBoxColumn.DataPropertyName = "CURRENT_QTY_T4";
+            this.cURRENTQTYT4DataGridViewTextBoxColumn.HeaderText = "CURRENT_QTY_T4";
+            this.cURRENTQTYT4DataGridViewTextBoxColumn.Name = "cURRENTQTYT4DataGridViewTextBoxColumn";
+            this.cURRENTQTYT4DataGridViewTextBoxColumn.ReadOnly = true;
+            this.cURRENTQTYT4DataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.cURRENTQTYT4DataGridViewTextBoxColumn.Visible = false;
+            // 
+            // pROCESSIDT4DataGridViewTextBoxColumn
+            // 
+            this.pROCESSIDT4DataGridViewTextBoxColumn.DataPropertyName = "PROCESS_ID_T4";
+            this.pROCESSIDT4DataGridViewTextBoxColumn.HeaderText = "PROCESS_ID_T4";
+            this.pROCESSIDT4DataGridViewTextBoxColumn.Name = "pROCESSIDT4DataGridViewTextBoxColumn";
+            this.pROCESSIDT4DataGridViewTextBoxColumn.ReadOnly = true;
+            this.pROCESSIDT4DataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.pROCESSIDT4DataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nODEIDT4DataGridViewTextBoxColumn
+            // 
+            this.nODEIDT4DataGridViewTextBoxColumn.DataPropertyName = "NODE_ID_T4";
+            this.nODEIDT4DataGridViewTextBoxColumn.HeaderText = "NODE_ID_T4";
+            this.nODEIDT4DataGridViewTextBoxColumn.Name = "nODEIDT4DataGridViewTextBoxColumn";
+            this.nODEIDT4DataGridViewTextBoxColumn.ReadOnly = true;
+            this.nODEIDT4DataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.nODEIDT4DataGridViewTextBoxColumn.Visible = false;
+            // 
+            // pROCESSCODEDataGridViewTextBoxColumn
+            // 
+            this.pROCESSCODEDataGridViewTextBoxColumn.DataPropertyName = "PROCESS_CODE";
+            this.pROCESSCODEDataGridViewTextBoxColumn.HeaderText = "PROCESS_CODE";
+            this.pROCESSCODEDataGridViewTextBoxColumn.Name = "pROCESSCODEDataGridViewTextBoxColumn";
+            this.pROCESSCODEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.pROCESSCODEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.pROCESSCODEDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // pROCESSNAMEDataGridViewTextBoxColumn
+            // 
+            this.pROCESSNAMEDataGridViewTextBoxColumn.DataPropertyName = "PROCESS_NAME";
+            this.pROCESSNAMEDataGridViewTextBoxColumn.HeaderText = "Process name";
+            this.pROCESSNAMEDataGridViewTextBoxColumn.Name = "pROCESSNAMEDataGridViewTextBoxColumn";
+            this.pROCESSNAMEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.pROCESSNAMEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // mACHINEIDDataGridViewTextBoxColumn1
+            // 
+            this.mACHINEIDDataGridViewTextBoxColumn1.DataPropertyName = "MACHINE_ID";
+            this.mACHINEIDDataGridViewTextBoxColumn1.HeaderText = "MACHINE_ID";
+            this.mACHINEIDDataGridViewTextBoxColumn1.Name = "mACHINEIDDataGridViewTextBoxColumn1";
+            this.mACHINEIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.mACHINEIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.mACHINEIDDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // mACHINECODEDataGridViewTextBoxColumn1
+            // 
+            this.mACHINECODEDataGridViewTextBoxColumn1.DataPropertyName = "MACHINE_CODE";
+            this.mACHINECODEDataGridViewTextBoxColumn1.HeaderText = "Machine code";
+            this.mACHINECODEDataGridViewTextBoxColumn1.Name = "mACHINECODEDataGridViewTextBoxColumn1";
+            this.mACHINECODEDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.mACHINECODEDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // mACHINEDESCDataGridViewTextBoxColumn1
+            // 
+            this.mACHINEDESCDataGridViewTextBoxColumn1.DataPropertyName = "MACHINE_DESC";
+            this.mACHINEDESCDataGridViewTextBoxColumn1.HeaderText = "MACHINE_DESC";
+            this.mACHINEDESCDataGridViewTextBoxColumn1.Name = "mACHINEDESCDataGridViewTextBoxColumn1";
+            this.mACHINEDESCDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.mACHINEDESCDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.mACHINEDESCDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dATECODEDataGridViewTextBoxColumn1
+            // 
+            this.dATECODEDataGridViewTextBoxColumn1.DataPropertyName = "DATE_CODE";
+            this.dATECODEDataGridViewTextBoxColumn1.HeaderText = "DateCode";
+            this.dATECODEDataGridViewTextBoxColumn1.Name = "dATECODEDataGridViewTextBoxColumn1";
+            this.dATECODEDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dATECODEDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // lOADDataGridViewTextBoxColumn
+            // 
+            this.lOADDataGridViewTextBoxColumn.DataPropertyName = "LOAD";
+            this.lOADDataGridViewTextBoxColumn.HeaderText = "Load";
+            this.lOADDataGridViewTextBoxColumn.Name = "lOADDataGridViewTextBoxColumn";
+            this.lOADDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // sTOVESEQDataGridViewTextBoxColumn1
+            // 
+            this.sTOVESEQDataGridViewTextBoxColumn1.DataPropertyName = "STOVE_SEQ";
+            this.sTOVESEQDataGridViewTextBoxColumn1.HeaderText = "STOVE_SEQ";
+            this.sTOVESEQDataGridViewTextBoxColumn1.Name = "sTOVESEQDataGridViewTextBoxColumn1";
+            this.sTOVESEQDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.sTOVESEQDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.sTOVESEQDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // bOUNDQTYDataGridViewTextBoxColumn
+            // 
+            this.bOUNDQTYDataGridViewTextBoxColumn.DataPropertyName = "BOUND_QTY";
+            this.bOUNDQTYDataGridViewTextBoxColumn.HeaderText = "Bound quantity";
+            this.bOUNDQTYDataGridViewTextBoxColumn.Name = "bOUNDQTYDataGridViewTextBoxColumn";
+            this.bOUNDQTYDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bOUNDQTYDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // bINDINGQTYDataGridViewTextBoxColumn
+            // 
+            this.bINDINGQTYDataGridViewTextBoxColumn.DataPropertyName = "BINDING_QTY";
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.bINDINGQTYDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle15;
+            this.bINDINGQTYDataGridViewTextBoxColumn.HeaderText = "Binding quantity";
+            this.bINDINGQTYDataGridViewTextBoxColumn.Name = "bINDINGQTYDataGridViewTextBoxColumn";
+            this.bINDINGQTYDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // t4MachineModelBindingSource1
+            // 
+            this.t4MachineModelBindingSource1.DataSource = typeof(RCOutput.Models.T4MachineModel);
+            // 
             // GbT6
             // 
             this.GbT6.Controls.Add(this.DgvT6);
@@ -924,6 +1211,172 @@
             this.DgvT6.RowTemplate.Height = 24;
             this.DgvT6.Size = new System.Drawing.Size(1164, 191);
             this.DgvT6.TabIndex = 0;
+            // 
+            // checkStateDataGridViewCheckBoxColumn1
+            // 
+            this.checkStateDataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.checkStateDataGridViewCheckBoxColumn1.DataPropertyName = "CheckState";
+            this.checkStateDataGridViewCheckBoxColumn1.HeaderText = "CheckState";
+            this.checkStateDataGridViewCheckBoxColumn1.Name = "checkStateDataGridViewCheckBoxColumn1";
+            this.checkStateDataGridViewCheckBoxColumn1.ReadOnly = true;
+            this.checkStateDataGridViewCheckBoxColumn1.Visible = false;
+            // 
+            // rCNO10CDataGridViewTextBoxColumn1
+            // 
+            this.rCNO10CDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.rCNO10CDataGridViewTextBoxColumn1.DataPropertyName = "RC_NO_10C";
+            this.rCNO10CDataGridViewTextBoxColumn1.HeaderText = "10C RC NO";
+            this.rCNO10CDataGridViewTextBoxColumn1.Name = "rCNO10CDataGridViewTextBoxColumn1";
+            this.rCNO10CDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.rCNO10CDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.rCNO10CDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // pROCESSID10CDataGridViewTextBoxColumn1
+            // 
+            this.pROCESSID10CDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.pROCESSID10CDataGridViewTextBoxColumn1.DataPropertyName = "PROCESS_ID_10C";
+            this.pROCESSID10CDataGridViewTextBoxColumn1.HeaderText = "PROCESS_ID_10C";
+            this.pROCESSID10CDataGridViewTextBoxColumn1.Name = "pROCESSID10CDataGridViewTextBoxColumn1";
+            this.pROCESSID10CDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.pROCESSID10CDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.pROCESSID10CDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // rCNOT4DataGridViewTextBoxColumn1
+            // 
+            this.rCNOT4DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.rCNOT4DataGridViewTextBoxColumn1.DataPropertyName = "RC_NO_T4";
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.rCNOT4DataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle16;
+            this.rCNOT4DataGridViewTextBoxColumn1.HeaderText = "T6 RC NO";
+            this.rCNOT4DataGridViewTextBoxColumn1.Name = "rCNOT4DataGridViewTextBoxColumn1";
+            this.rCNOT4DataGridViewTextBoxColumn1.ReadOnly = true;
+            this.rCNOT4DataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // cURRENTQTYT4DataGridViewTextBoxColumn1
+            // 
+            this.cURRENTQTYT4DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.cURRENTQTYT4DataGridViewTextBoxColumn1.DataPropertyName = "CURRENT_QTY_T4";
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.cURRENTQTYT4DataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle17;
+            this.cURRENTQTYT4DataGridViewTextBoxColumn1.HeaderText = "T6 Good quantity";
+            this.cURRENTQTYT4DataGridViewTextBoxColumn1.Name = "cURRENTQTYT4DataGridViewTextBoxColumn1";
+            this.cURRENTQTYT4DataGridViewTextBoxColumn1.ReadOnly = true;
+            this.cURRENTQTYT4DataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.cURRENTQTYT4DataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // pROCESSIDT4DataGridViewTextBoxColumn1
+            // 
+            this.pROCESSIDT4DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.pROCESSIDT4DataGridViewTextBoxColumn1.DataPropertyName = "PROCESS_ID_T4";
+            this.pROCESSIDT4DataGridViewTextBoxColumn1.HeaderText = "PROCESS_ID_T4";
+            this.pROCESSIDT4DataGridViewTextBoxColumn1.Name = "pROCESSIDT4DataGridViewTextBoxColumn1";
+            this.pROCESSIDT4DataGridViewTextBoxColumn1.ReadOnly = true;
+            this.pROCESSIDT4DataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.pROCESSIDT4DataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // pROCESSCODEDataGridViewTextBoxColumn1
+            // 
+            this.pROCESSCODEDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.pROCESSCODEDataGridViewTextBoxColumn1.DataPropertyName = "PROCESS_CODE";
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.pROCESSCODEDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle18;
+            this.pROCESSCODEDataGridViewTextBoxColumn1.HeaderText = "Process code";
+            this.pROCESSCODEDataGridViewTextBoxColumn1.Name = "pROCESSCODEDataGridViewTextBoxColumn1";
+            this.pROCESSCODEDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.pROCESSCODEDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.pROCESSCODEDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // pROCESSNAMEDataGridViewTextBoxColumn1
+            // 
+            this.pROCESSNAMEDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.pROCESSNAMEDataGridViewTextBoxColumn1.DataPropertyName = "PROCESS_NAME";
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.pROCESSNAMEDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle19;
+            this.pROCESSNAMEDataGridViewTextBoxColumn1.HeaderText = "Process name";
+            this.pROCESSNAMEDataGridViewTextBoxColumn1.Name = "pROCESSNAMEDataGridViewTextBoxColumn1";
+            this.pROCESSNAMEDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.pROCESSNAMEDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // mACHINEIDDataGridViewTextBoxColumn2
+            // 
+            this.mACHINEIDDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.mACHINEIDDataGridViewTextBoxColumn2.DataPropertyName = "MACHINE_ID";
+            this.mACHINEIDDataGridViewTextBoxColumn2.HeaderText = "MACHINE_ID";
+            this.mACHINEIDDataGridViewTextBoxColumn2.Name = "mACHINEIDDataGridViewTextBoxColumn2";
+            this.mACHINEIDDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.mACHINEIDDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.mACHINEIDDataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // mACHINECODEDataGridViewTextBoxColumn2
+            // 
+            this.mACHINECODEDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.mACHINECODEDataGridViewTextBoxColumn2.DataPropertyName = "MACHINE_CODE";
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.mACHINECODEDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle20;
+            this.mACHINECODEDataGridViewTextBoxColumn2.HeaderText = "Machine code";
+            this.mACHINECODEDataGridViewTextBoxColumn2.Name = "mACHINECODEDataGridViewTextBoxColumn2";
+            this.mACHINECODEDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.mACHINECODEDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // mACHINEDESCDataGridViewTextBoxColumn2
+            // 
+            this.mACHINEDESCDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.mACHINEDESCDataGridViewTextBoxColumn2.DataPropertyName = "MACHINE_DESC";
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.mACHINEDESCDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle21;
+            this.mACHINEDESCDataGridViewTextBoxColumn2.HeaderText = "Machine";
+            this.mACHINEDESCDataGridViewTextBoxColumn2.Name = "mACHINEDESCDataGridViewTextBoxColumn2";
+            this.mACHINEDESCDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.mACHINEDESCDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.mACHINEDESCDataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // dATECODEDataGridViewTextBoxColumn2
+            // 
+            this.dATECODEDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dATECODEDataGridViewTextBoxColumn2.DataPropertyName = "DATE_CODE";
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dATECODEDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle22;
+            this.dATECODEDataGridViewTextBoxColumn2.HeaderText = "DateCode";
+            this.dATECODEDataGridViewTextBoxColumn2.Name = "dATECODEDataGridViewTextBoxColumn2";
+            this.dATECODEDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dATECODEDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // sTOVESEQDataGridViewTextBoxColumn2
+            // 
+            this.sTOVESEQDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.sTOVESEQDataGridViewTextBoxColumn2.DataPropertyName = "STOVE_SEQ";
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.sTOVESEQDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle23;
+            this.sTOVESEQDataGridViewTextBoxColumn2.HeaderText = "Stove sequence";
+            this.sTOVESEQDataGridViewTextBoxColumn2.Name = "sTOVESEQDataGridViewTextBoxColumn2";
+            this.sTOVESEQDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.sTOVESEQDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.sTOVESEQDataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // lOADDataGridViewTextBoxColumn1
+            // 
+            this.lOADDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.lOADDataGridViewTextBoxColumn1.DataPropertyName = "LOAD";
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.lOADDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle24;
+            this.lOADDataGridViewTextBoxColumn1.HeaderText = "Load";
+            this.lOADDataGridViewTextBoxColumn1.Name = "lOADDataGridViewTextBoxColumn1";
+            this.lOADDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.lOADDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // bINDINGQTYDataGridViewTextBoxColumn1
+            // 
+            this.bINDINGQTYDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.bINDINGQTYDataGridViewTextBoxColumn1.DataPropertyName = "BINDING_QTY";
+            this.bINDINGQTYDataGridViewTextBoxColumn1.HeaderText = "BINDING_QTY";
+            this.bINDINGQTYDataGridViewTextBoxColumn1.Name = "bINDINGQTYDataGridViewTextBoxColumn1";
+            this.bINDINGQTYDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.bINDINGQTYDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.bINDINGQTYDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // t6MachineModelBindingSource
+            // 
+            this.t6MachineModelBindingSource.DataSource = typeof(RCOutput.Models.T4MachineModel);
             // 
             // CbT4CheckBOM
             // 
@@ -1259,6 +1712,7 @@
             // editKPSN
             // 
             this.editKPSN.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.editKPSN.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.editKPSN.Name = "editKPSN";
             this.editKPSN.Size = new System.Drawing.Size(150, 40);
             this.editKPSN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EditKPSN_KeyPress);
@@ -1284,6 +1738,7 @@
             // editCount
             // 
             this.editCount.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.editCount.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F);
             this.editCount.Name = "editCount";
             this.editCount.Size = new System.Drawing.Size(100, 40);
             this.editCount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EditCount_KeyPress);
@@ -1400,6 +1855,39 @@
             this.DgvRc.Size = new System.Drawing.Size(1164, 416);
             this.DgvRc.TabIndex = 0;
             // 
+            // colChk
+            // 
+            this.colChk.DataPropertyName = "CHK";
+            this.colChk.FalseValue = "N";
+            this.colChk.HeaderText = "";
+            this.colChk.MinimumWidth = 40;
+            this.colChk.Name = "colChk";
+            this.colChk.TrueValue = "Y";
+            this.colChk.Width = 40;
+            // 
+            // colSOURCE_RC_NO
+            // 
+            this.colSOURCE_RC_NO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colSOURCE_RC_NO.DataPropertyName = "SOURCE_RC_NO";
+            this.colSOURCE_RC_NO.HeaderText = "SOURCE_RC_NO";
+            this.colSOURCE_RC_NO.Name = "colSOURCE_RC_NO";
+            this.colSOURCE_RC_NO.Width = 150;
+            // 
+            // colRC_NO
+            // 
+            this.colRC_NO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colRC_NO.DataPropertyName = "RC_NO";
+            this.colRC_NO.HeaderText = "RC_NO";
+            this.colRC_NO.Name = "colRC_NO";
+            this.colRC_NO.Width = 83;
+            // 
+            // colCURRENT_QTY
+            // 
+            this.colCURRENT_QTY.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colCURRENT_QTY.DataPropertyName = "CURRENT_QTY";
+            this.colCURRENT_QTY.HeaderText = "CURRENT_QTY";
+            this.colCURRENT_QTY.Name = "colCURRENT_QTY";
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 4;
@@ -1490,492 +1978,6 @@
             this.tsMsg.Name = "tsMsg";
             this.tsMsg.Size = new System.Drawing.Size(0, 17);
             // 
-            // colChk
-            // 
-            this.colChk.DataPropertyName = "CHK";
-            this.colChk.FalseValue = "N";
-            this.colChk.HeaderText = "";
-            this.colChk.MinimumWidth = 40;
-            this.colChk.Name = "colChk";
-            this.colChk.TrueValue = "Y";
-            this.colChk.Width = 40;
-            // 
-            // colSOURCE_RC_NO
-            // 
-            this.colSOURCE_RC_NO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colSOURCE_RC_NO.DataPropertyName = "SOURCE_RC_NO";
-            this.colSOURCE_RC_NO.HeaderText = "SOURCE_RC_NO";
-            this.colSOURCE_RC_NO.Name = "colSOURCE_RC_NO";
-            this.colSOURCE_RC_NO.Width = 150;
-            // 
-            // colRC_NO
-            // 
-            this.colRC_NO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colRC_NO.DataPropertyName = "RC_NO";
-            this.colRC_NO.HeaderText = "RC_NO";
-            this.colRC_NO.Name = "colRC_NO";
-            this.colRC_NO.Width = 83;
-            // 
-            // colCURRENT_QTY
-            // 
-            this.colCURRENT_QTY.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colCURRENT_QTY.DataPropertyName = "CURRENT_QTY";
-            this.colCURRENT_QTY.HeaderText = "CURRENT_QTY";
-            this.colCURRENT_QTY.Name = "colCURRENT_QTY";
-            // 
-            // selectDataGridViewCheckBoxColumn
-            // 
-            this.selectDataGridViewCheckBoxColumn.DataPropertyName = "Select";
-            this.selectDataGridViewCheckBoxColumn.HeaderText = "Select";
-            this.selectDataGridViewCheckBoxColumn.Name = "selectDataGridViewCheckBoxColumn";
-            this.selectDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.selectDataGridViewCheckBoxColumn.Visible = false;
-            this.selectDataGridViewCheckBoxColumn.Width = 38;
-            // 
-            // mACHINEIDDataGridViewTextBoxColumn
-            // 
-            this.mACHINEIDDataGridViewTextBoxColumn.DataPropertyName = "MACHINE_ID";
-            this.mACHINEIDDataGridViewTextBoxColumn.HeaderText = "MACHINE_ID";
-            this.mACHINEIDDataGridViewTextBoxColumn.Name = "mACHINEIDDataGridViewTextBoxColumn";
-            this.mACHINEIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.mACHINEIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.mACHINEIDDataGridViewTextBoxColumn.Visible = false;
-            this.mACHINEIDDataGridViewTextBoxColumn.Width = 82;
-            // 
-            // mACHINECODEDataGridViewTextBoxColumn
-            // 
-            this.mACHINECODEDataGridViewTextBoxColumn.DataPropertyName = "MACHINE_CODE";
-            this.mACHINECODEDataGridViewTextBoxColumn.HeaderText = "Machine code";
-            this.mACHINECODEDataGridViewTextBoxColumn.Name = "mACHINECODEDataGridViewTextBoxColumn";
-            this.mACHINECODEDataGridViewTextBoxColumn.ReadOnly = true;
-            this.mACHINECODEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.mACHINECODEDataGridViewTextBoxColumn.Width = 92;
-            // 
-            // mACHINEDESCDataGridViewTextBoxColumn
-            // 
-            this.mACHINEDESCDataGridViewTextBoxColumn.DataPropertyName = "MACHINE_DESC";
-            this.mACHINEDESCDataGridViewTextBoxColumn.HeaderText = "Machine";
-            this.mACHINEDESCDataGridViewTextBoxColumn.Name = "mACHINEDESCDataGridViewTextBoxColumn";
-            this.mACHINEDESCDataGridViewTextBoxColumn.ReadOnly = true;
-            this.mACHINEDESCDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.mACHINEDESCDataGridViewTextBoxColumn.Width = 68;
-            // 
-            // sTATUSNAMEDataGridViewTextBoxColumn
-            // 
-            this.sTATUSNAMEDataGridViewTextBoxColumn.DataPropertyName = "STATUS_NAME";
-            this.sTATUSNAMEDataGridViewTextBoxColumn.HeaderText = "STATUS_NAME";
-            this.sTATUSNAMEDataGridViewTextBoxColumn.Name = "sTATUSNAMEDataGridViewTextBoxColumn";
-            this.sTATUSNAMEDataGridViewTextBoxColumn.ReadOnly = true;
-            this.sTATUSNAMEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.sTATUSNAMEDataGridViewTextBoxColumn.Visible = false;
-            this.sTATUSNAMEDataGridViewTextBoxColumn.Width = 92;
-            // 
-            // tYPEIDDataGridViewTextBoxColumn
-            // 
-            this.tYPEIDDataGridViewTextBoxColumn.DataPropertyName = "TYPE_ID";
-            this.tYPEIDDataGridViewTextBoxColumn.HeaderText = "TYPE_ID";
-            this.tYPEIDDataGridViewTextBoxColumn.Name = "tYPEIDDataGridViewTextBoxColumn";
-            this.tYPEIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tYPEIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.tYPEIDDataGridViewTextBoxColumn.Visible = false;
-            this.tYPEIDDataGridViewTextBoxColumn.Width = 57;
-            // 
-            // rEASONIDDataGridViewTextBoxColumn
-            // 
-            this.rEASONIDDataGridViewTextBoxColumn.DataPropertyName = "REASON_ID";
-            this.rEASONIDDataGridViewTextBoxColumn.HeaderText = "REASON_ID";
-            this.rEASONIDDataGridViewTextBoxColumn.Name = "rEASONIDDataGridViewTextBoxColumn";
-            this.rEASONIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.rEASONIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.rEASONIDDataGridViewTextBoxColumn.Visible = false;
-            this.rEASONIDDataGridViewTextBoxColumn.Width = 74;
-            // 
-            // sTARTTIMEDataGridViewTextBoxColumn
-            // 
-            this.sTARTTIMEDataGridViewTextBoxColumn.DataPropertyName = "START_TIME";
-            dataGridViewCellStyle1.Format = "yyyy/ MM/ dd HH: mm: ss";
-            this.sTARTTIMEDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.sTARTTIMEDataGridViewTextBoxColumn.HeaderText = "Start time";
-            this.sTARTTIMEDataGridViewTextBoxColumn.Name = "sTARTTIMEDataGridViewTextBoxColumn";
-            this.sTARTTIMEDataGridViewTextBoxColumn.ReadOnly = true;
-            this.sTARTTIMEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.sTARTTIMEDataGridViewTextBoxColumn.Width = 66;
-            // 
-            // eNDTIMEDataGridViewTextBoxColumn
-            // 
-            this.eNDTIMEDataGridViewTextBoxColumn.DataPropertyName = "END_TIME";
-            this.eNDTIMEDataGridViewTextBoxColumn.HeaderText = "END_TIME";
-            this.eNDTIMEDataGridViewTextBoxColumn.Name = "eNDTIMEDataGridViewTextBoxColumn";
-            this.eNDTIMEDataGridViewTextBoxColumn.ReadOnly = true;
-            this.eNDTIMEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.eNDTIMEDataGridViewTextBoxColumn.Visible = false;
-            this.eNDTIMEDataGridViewTextBoxColumn.Width = 68;
-            // 
-            // lOADQTYDataGridViewTextBoxColumn
-            // 
-            this.lOADQTYDataGridViewTextBoxColumn.DataPropertyName = "LOAD_QTY";
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.lOADQTYDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.lOADQTYDataGridViewTextBoxColumn.HeaderText = "Load";
-            this.lOADQTYDataGridViewTextBoxColumn.Name = "lOADQTYDataGridViewTextBoxColumn";
-            this.lOADQTYDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.lOADQTYDataGridViewTextBoxColumn.Width = 46;
-            // 
-            // dATECODEDataGridViewTextBoxColumn
-            // 
-            this.dATECODEDataGridViewTextBoxColumn.DataPropertyName = "DATE_CODE";
-            this.dATECODEDataGridViewTextBoxColumn.HeaderText = "DateCode";
-            this.dATECODEDataGridViewTextBoxColumn.Name = "dATECODEDataGridViewTextBoxColumn";
-            this.dATECODEDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dATECODEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dATECODEDataGridViewTextBoxColumn.Width = 76;
-            // 
-            // sTOVESEQDataGridViewTextBoxColumn
-            // 
-            this.sTOVESEQDataGridViewTextBoxColumn.DataPropertyName = "STOVE_SEQ";
-            this.sTOVESEQDataGridViewTextBoxColumn.HeaderText = "Stove sequence";
-            this.sTOVESEQDataGridViewTextBoxColumn.Name = "sTOVESEQDataGridViewTextBoxColumn";
-            this.sTOVESEQDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // rEMARKDataGridViewTextBoxColumn
-            // 
-            this.rEMARKDataGridViewTextBoxColumn.DataPropertyName = "REMARK";
-            this.rEMARKDataGridViewTextBoxColumn.HeaderText = "REMARK";
-            this.rEMARKDataGridViewTextBoxColumn.Name = "rEMARKDataGridViewTextBoxColumn";
-            this.rEMARKDataGridViewTextBoxColumn.ReadOnly = true;
-            this.rEMARKDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.rEMARKDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.rEMARKDataGridViewTextBoxColumn.Visible = false;
-            this.rEMARKDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // machineDownModelBindingSource
-            // 
-            this.machineDownModelBindingSource.DataSource = typeof(RCOutput.Models.MachineDownModel);
-            // 
-            // checkStateDataGridViewCheckBoxColumn
-            // 
-            this.checkStateDataGridViewCheckBoxColumn.DataPropertyName = "CheckState";
-            this.checkStateDataGridViewCheckBoxColumn.HeaderText = "CheckState";
-            this.checkStateDataGridViewCheckBoxColumn.Name = "checkStateDataGridViewCheckBoxColumn";
-            this.checkStateDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.checkStateDataGridViewCheckBoxColumn.Visible = false;
-            // 
-            // rCNO10CDataGridViewTextBoxColumn
-            // 
-            this.rCNO10CDataGridViewTextBoxColumn.DataPropertyName = "RC_NO_10C";
-            this.rCNO10CDataGridViewTextBoxColumn.HeaderText = "RC_NO_10C";
-            this.rCNO10CDataGridViewTextBoxColumn.Name = "rCNO10CDataGridViewTextBoxColumn";
-            this.rCNO10CDataGridViewTextBoxColumn.ReadOnly = true;
-            this.rCNO10CDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.rCNO10CDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // pROCESSID10CDataGridViewTextBoxColumn
-            // 
-            this.pROCESSID10CDataGridViewTextBoxColumn.DataPropertyName = "PROCESS_ID_10C";
-            this.pROCESSID10CDataGridViewTextBoxColumn.HeaderText = "PROCESS_ID_10C";
-            this.pROCESSID10CDataGridViewTextBoxColumn.Name = "pROCESSID10CDataGridViewTextBoxColumn";
-            this.pROCESSID10CDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pROCESSID10CDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pROCESSID10CDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // nODEID10CDataGridViewTextBoxColumn
-            // 
-            this.nODEID10CDataGridViewTextBoxColumn.DataPropertyName = "NODE_ID_10C";
-            this.nODEID10CDataGridViewTextBoxColumn.HeaderText = "NODE_ID_10C";
-            this.nODEID10CDataGridViewTextBoxColumn.Name = "nODEID10CDataGridViewTextBoxColumn";
-            this.nODEID10CDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nODEID10CDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.nODEID10CDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // rCNOT4DataGridViewTextBoxColumn
-            // 
-            this.rCNOT4DataGridViewTextBoxColumn.DataPropertyName = "RC_NO_T4";
-            this.rCNOT4DataGridViewTextBoxColumn.HeaderText = "T4 RC NO";
-            this.rCNOT4DataGridViewTextBoxColumn.Name = "rCNOT4DataGridViewTextBoxColumn";
-            this.rCNOT4DataGridViewTextBoxColumn.ReadOnly = true;
-            this.rCNOT4DataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // cURRENTQTYT4DataGridViewTextBoxColumn
-            // 
-            this.cURRENTQTYT4DataGridViewTextBoxColumn.DataPropertyName = "CURRENT_QTY_T4";
-            this.cURRENTQTYT4DataGridViewTextBoxColumn.HeaderText = "CURRENT_QTY_T4";
-            this.cURRENTQTYT4DataGridViewTextBoxColumn.Name = "cURRENTQTYT4DataGridViewTextBoxColumn";
-            this.cURRENTQTYT4DataGridViewTextBoxColumn.ReadOnly = true;
-            this.cURRENTQTYT4DataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.cURRENTQTYT4DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // pROCESSIDT4DataGridViewTextBoxColumn
-            // 
-            this.pROCESSIDT4DataGridViewTextBoxColumn.DataPropertyName = "PROCESS_ID_T4";
-            this.pROCESSIDT4DataGridViewTextBoxColumn.HeaderText = "PROCESS_ID_T4";
-            this.pROCESSIDT4DataGridViewTextBoxColumn.Name = "pROCESSIDT4DataGridViewTextBoxColumn";
-            this.pROCESSIDT4DataGridViewTextBoxColumn.ReadOnly = true;
-            this.pROCESSIDT4DataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pROCESSIDT4DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // nODEIDT4DataGridViewTextBoxColumn
-            // 
-            this.nODEIDT4DataGridViewTextBoxColumn.DataPropertyName = "NODE_ID_T4";
-            this.nODEIDT4DataGridViewTextBoxColumn.HeaderText = "NODE_ID_T4";
-            this.nODEIDT4DataGridViewTextBoxColumn.Name = "nODEIDT4DataGridViewTextBoxColumn";
-            this.nODEIDT4DataGridViewTextBoxColumn.ReadOnly = true;
-            this.nODEIDT4DataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.nODEIDT4DataGridViewTextBoxColumn.Visible = false;
-            // 
-            // pROCESSCODEDataGridViewTextBoxColumn
-            // 
-            this.pROCESSCODEDataGridViewTextBoxColumn.DataPropertyName = "PROCESS_CODE";
-            this.pROCESSCODEDataGridViewTextBoxColumn.HeaderText = "PROCESS_CODE";
-            this.pROCESSCODEDataGridViewTextBoxColumn.Name = "pROCESSCODEDataGridViewTextBoxColumn";
-            this.pROCESSCODEDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pROCESSCODEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pROCESSCODEDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // pROCESSNAMEDataGridViewTextBoxColumn
-            // 
-            this.pROCESSNAMEDataGridViewTextBoxColumn.DataPropertyName = "PROCESS_NAME";
-            this.pROCESSNAMEDataGridViewTextBoxColumn.HeaderText = "Process name";
-            this.pROCESSNAMEDataGridViewTextBoxColumn.Name = "pROCESSNAMEDataGridViewTextBoxColumn";
-            this.pROCESSNAMEDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pROCESSNAMEDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // mACHINEIDDataGridViewTextBoxColumn1
-            // 
-            this.mACHINEIDDataGridViewTextBoxColumn1.DataPropertyName = "MACHINE_ID";
-            this.mACHINEIDDataGridViewTextBoxColumn1.HeaderText = "MACHINE_ID";
-            this.mACHINEIDDataGridViewTextBoxColumn1.Name = "mACHINEIDDataGridViewTextBoxColumn1";
-            this.mACHINEIDDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.mACHINEIDDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.mACHINEIDDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // mACHINECODEDataGridViewTextBoxColumn1
-            // 
-            this.mACHINECODEDataGridViewTextBoxColumn1.DataPropertyName = "MACHINE_CODE";
-            this.mACHINECODEDataGridViewTextBoxColumn1.HeaderText = "Machine code";
-            this.mACHINECODEDataGridViewTextBoxColumn1.Name = "mACHINECODEDataGridViewTextBoxColumn1";
-            this.mACHINECODEDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.mACHINECODEDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // mACHINEDESCDataGridViewTextBoxColumn1
-            // 
-            this.mACHINEDESCDataGridViewTextBoxColumn1.DataPropertyName = "MACHINE_DESC";
-            this.mACHINEDESCDataGridViewTextBoxColumn1.HeaderText = "MACHINE_DESC";
-            this.mACHINEDESCDataGridViewTextBoxColumn1.Name = "mACHINEDESCDataGridViewTextBoxColumn1";
-            this.mACHINEDESCDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.mACHINEDESCDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.mACHINEDESCDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dATECODEDataGridViewTextBoxColumn1
-            // 
-            this.dATECODEDataGridViewTextBoxColumn1.DataPropertyName = "DATE_CODE";
-            this.dATECODEDataGridViewTextBoxColumn1.HeaderText = "DateCode";
-            this.dATECODEDataGridViewTextBoxColumn1.Name = "dATECODEDataGridViewTextBoxColumn1";
-            this.dATECODEDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dATECODEDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // lOADDataGridViewTextBoxColumn
-            // 
-            this.lOADDataGridViewTextBoxColumn.DataPropertyName = "LOAD";
-            this.lOADDataGridViewTextBoxColumn.HeaderText = "Load";
-            this.lOADDataGridViewTextBoxColumn.Name = "lOADDataGridViewTextBoxColumn";
-            this.lOADDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // sTOVESEQDataGridViewTextBoxColumn1
-            // 
-            this.sTOVESEQDataGridViewTextBoxColumn1.DataPropertyName = "STOVE_SEQ";
-            this.sTOVESEQDataGridViewTextBoxColumn1.HeaderText = "STOVE_SEQ";
-            this.sTOVESEQDataGridViewTextBoxColumn1.Name = "sTOVESEQDataGridViewTextBoxColumn1";
-            this.sTOVESEQDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.sTOVESEQDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.sTOVESEQDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // bOUNDQTYDataGridViewTextBoxColumn
-            // 
-            this.bOUNDQTYDataGridViewTextBoxColumn.DataPropertyName = "BOUND_QTY";
-            this.bOUNDQTYDataGridViewTextBoxColumn.HeaderText = "Bound quantity";
-            this.bOUNDQTYDataGridViewTextBoxColumn.Name = "bOUNDQTYDataGridViewTextBoxColumn";
-            this.bOUNDQTYDataGridViewTextBoxColumn.ReadOnly = true;
-            this.bOUNDQTYDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // bINDINGQTYDataGridViewTextBoxColumn
-            // 
-            this.bINDINGQTYDataGridViewTextBoxColumn.DataPropertyName = "BINDING_QTY";
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.bINDINGQTYDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bINDINGQTYDataGridViewTextBoxColumn.HeaderText = "Binding quantity";
-            this.bINDINGQTYDataGridViewTextBoxColumn.Name = "bINDINGQTYDataGridViewTextBoxColumn";
-            this.bINDINGQTYDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // t4MachineModelBindingSource1
-            // 
-            this.t4MachineModelBindingSource1.DataSource = typeof(RCOutput.Models.T4MachineModel);
-            // 
-            // checkStateDataGridViewCheckBoxColumn1
-            // 
-            this.checkStateDataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.checkStateDataGridViewCheckBoxColumn1.DataPropertyName = "CheckState";
-            this.checkStateDataGridViewCheckBoxColumn1.HeaderText = "CheckState";
-            this.checkStateDataGridViewCheckBoxColumn1.Name = "checkStateDataGridViewCheckBoxColumn1";
-            this.checkStateDataGridViewCheckBoxColumn1.ReadOnly = true;
-            this.checkStateDataGridViewCheckBoxColumn1.Visible = false;
-            // 
-            // rCNO10CDataGridViewTextBoxColumn1
-            // 
-            this.rCNO10CDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.rCNO10CDataGridViewTextBoxColumn1.DataPropertyName = "RC_NO_10C";
-            this.rCNO10CDataGridViewTextBoxColumn1.HeaderText = "10C RC NO";
-            this.rCNO10CDataGridViewTextBoxColumn1.Name = "rCNO10CDataGridViewTextBoxColumn1";
-            this.rCNO10CDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.rCNO10CDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.rCNO10CDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // pROCESSID10CDataGridViewTextBoxColumn1
-            // 
-            this.pROCESSID10CDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.pROCESSID10CDataGridViewTextBoxColumn1.DataPropertyName = "PROCESS_ID_10C";
-            this.pROCESSID10CDataGridViewTextBoxColumn1.HeaderText = "PROCESS_ID_10C";
-            this.pROCESSID10CDataGridViewTextBoxColumn1.Name = "pROCESSID10CDataGridViewTextBoxColumn1";
-            this.pROCESSID10CDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.pROCESSID10CDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pROCESSID10CDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // rCNOT4DataGridViewTextBoxColumn1
-            // 
-            this.rCNOT4DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.rCNOT4DataGridViewTextBoxColumn1.DataPropertyName = "RC_NO_T4";
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.rCNOT4DataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle4;
-            this.rCNOT4DataGridViewTextBoxColumn1.HeaderText = "T6 RC NO";
-            this.rCNOT4DataGridViewTextBoxColumn1.Name = "rCNOT4DataGridViewTextBoxColumn1";
-            this.rCNOT4DataGridViewTextBoxColumn1.ReadOnly = true;
-            this.rCNOT4DataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // cURRENTQTYT4DataGridViewTextBoxColumn1
-            // 
-            this.cURRENTQTYT4DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.cURRENTQTYT4DataGridViewTextBoxColumn1.DataPropertyName = "CURRENT_QTY_T4";
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.cURRENTQTYT4DataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle5;
-            this.cURRENTQTYT4DataGridViewTextBoxColumn1.HeaderText = "T6 Good quantity";
-            this.cURRENTQTYT4DataGridViewTextBoxColumn1.Name = "cURRENTQTYT4DataGridViewTextBoxColumn1";
-            this.cURRENTQTYT4DataGridViewTextBoxColumn1.ReadOnly = true;
-            this.cURRENTQTYT4DataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.cURRENTQTYT4DataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // pROCESSIDT4DataGridViewTextBoxColumn1
-            // 
-            this.pROCESSIDT4DataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.pROCESSIDT4DataGridViewTextBoxColumn1.DataPropertyName = "PROCESS_ID_T4";
-            this.pROCESSIDT4DataGridViewTextBoxColumn1.HeaderText = "PROCESS_ID_T4";
-            this.pROCESSIDT4DataGridViewTextBoxColumn1.Name = "pROCESSIDT4DataGridViewTextBoxColumn1";
-            this.pROCESSIDT4DataGridViewTextBoxColumn1.ReadOnly = true;
-            this.pROCESSIDT4DataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pROCESSIDT4DataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // pROCESSCODEDataGridViewTextBoxColumn1
-            // 
-            this.pROCESSCODEDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.pROCESSCODEDataGridViewTextBoxColumn1.DataPropertyName = "PROCESS_CODE";
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.pROCESSCODEDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.pROCESSCODEDataGridViewTextBoxColumn1.HeaderText = "Process code";
-            this.pROCESSCODEDataGridViewTextBoxColumn1.Name = "pROCESSCODEDataGridViewTextBoxColumn1";
-            this.pROCESSCODEDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.pROCESSCODEDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.pROCESSCODEDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // pROCESSNAMEDataGridViewTextBoxColumn1
-            // 
-            this.pROCESSNAMEDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.pROCESSNAMEDataGridViewTextBoxColumn1.DataPropertyName = "PROCESS_NAME";
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.pROCESSNAMEDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle7;
-            this.pROCESSNAMEDataGridViewTextBoxColumn1.HeaderText = "Process name";
-            this.pROCESSNAMEDataGridViewTextBoxColumn1.Name = "pROCESSNAMEDataGridViewTextBoxColumn1";
-            this.pROCESSNAMEDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.pROCESSNAMEDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // mACHINEIDDataGridViewTextBoxColumn2
-            // 
-            this.mACHINEIDDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.mACHINEIDDataGridViewTextBoxColumn2.DataPropertyName = "MACHINE_ID";
-            this.mACHINEIDDataGridViewTextBoxColumn2.HeaderText = "MACHINE_ID";
-            this.mACHINEIDDataGridViewTextBoxColumn2.Name = "mACHINEIDDataGridViewTextBoxColumn2";
-            this.mACHINEIDDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.mACHINEIDDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.mACHINEIDDataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // mACHINECODEDataGridViewTextBoxColumn2
-            // 
-            this.mACHINECODEDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.mACHINECODEDataGridViewTextBoxColumn2.DataPropertyName = "MACHINE_CODE";
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.mACHINECODEDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle8;
-            this.mACHINECODEDataGridViewTextBoxColumn2.HeaderText = "Machine code";
-            this.mACHINECODEDataGridViewTextBoxColumn2.Name = "mACHINECODEDataGridViewTextBoxColumn2";
-            this.mACHINECODEDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.mACHINECODEDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // mACHINEDESCDataGridViewTextBoxColumn2
-            // 
-            this.mACHINEDESCDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.mACHINEDESCDataGridViewTextBoxColumn2.DataPropertyName = "MACHINE_DESC";
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.mACHINEDESCDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle9;
-            this.mACHINEDESCDataGridViewTextBoxColumn2.HeaderText = "Machine";
-            this.mACHINEDESCDataGridViewTextBoxColumn2.Name = "mACHINEDESCDataGridViewTextBoxColumn2";
-            this.mACHINEDESCDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.mACHINEDESCDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.mACHINEDESCDataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // dATECODEDataGridViewTextBoxColumn2
-            // 
-            this.dATECODEDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dATECODEDataGridViewTextBoxColumn2.DataPropertyName = "DATE_CODE";
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dATECODEDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dATECODEDataGridViewTextBoxColumn2.HeaderText = "DateCode";
-            this.dATECODEDataGridViewTextBoxColumn2.Name = "dATECODEDataGridViewTextBoxColumn2";
-            this.dATECODEDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dATECODEDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // sTOVESEQDataGridViewTextBoxColumn2
-            // 
-            this.sTOVESEQDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.sTOVESEQDataGridViewTextBoxColumn2.DataPropertyName = "STOVE_SEQ";
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.sTOVESEQDataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle11;
-            this.sTOVESEQDataGridViewTextBoxColumn2.HeaderText = "Stove sequence";
-            this.sTOVESEQDataGridViewTextBoxColumn2.Name = "sTOVESEQDataGridViewTextBoxColumn2";
-            this.sTOVESEQDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.sTOVESEQDataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.sTOVESEQDataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // lOADDataGridViewTextBoxColumn1
-            // 
-            this.lOADDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.lOADDataGridViewTextBoxColumn1.DataPropertyName = "LOAD";
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.lOADDataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle12;
-            this.lOADDataGridViewTextBoxColumn1.HeaderText = "Load";
-            this.lOADDataGridViewTextBoxColumn1.Name = "lOADDataGridViewTextBoxColumn1";
-            this.lOADDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.lOADDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // bINDINGQTYDataGridViewTextBoxColumn1
-            // 
-            this.bINDINGQTYDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.bINDINGQTYDataGridViewTextBoxColumn1.DataPropertyName = "BINDING_QTY";
-            this.bINDINGQTYDataGridViewTextBoxColumn1.HeaderText = "BINDING_QTY";
-            this.bINDINGQTYDataGridViewTextBoxColumn1.Name = "bINDINGQTYDataGridViewTextBoxColumn1";
-            this.bINDINGQTYDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.bINDINGQTYDataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.bINDINGQTYDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // t6MachineModelBindingSource
-            // 
-            this.t6MachineModelBindingSource.DataSource = typeof(RCOutput.Models.T4MachineModel);
-            // 
             // t4MachineModelBindingSource
             // 
             this.t4MachineModelBindingSource.DataSource = typeof(RCOutput.Models.T4MachineModel);
@@ -2014,6 +2016,7 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMachine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.machineDownModelBindingSource)).EndInit();
             this.TlpShift.ResumeLayout(false);
             this.TlpShift.PerformLayout();
             this.TpDefect.ResumeLayout(false);
@@ -2027,8 +2030,10 @@
             this.ScT4T6.ResumeLayout(false);
             this.GbT4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvT4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t4MachineModelBindingSource1)).EndInit();
             this.GbT6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvT6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t6MachineModelBindingSource)).EndInit();
             this.TpOperator.ResumeLayout(false);
             this.TpOperator.PerformLayout();
             this.TpOutTime.ResumeLayout(false);
@@ -2062,9 +2067,6 @@
             this.tableLayoutPanel3.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.machineDownModelBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.t4MachineModelBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.t6MachineModelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.t4MachineModelBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

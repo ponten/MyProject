@@ -93,6 +93,10 @@ namespace RCOutput
 
         string sFunctionName = "";
 
+        //換班的REASON_ID
+        public static int g_iReason_ID_shift = 0;
+  
+
         #region Isaac 2021/01/20 AQL 元件宣告
         Button _button = new Button()
         {
@@ -234,6 +238,8 @@ namespace RCOutput
 
             //Get SYS_BASE
             g_SYS_BASE = ClientUtils.ExecuteSQL("SELECT r.*  FROM sajet.sys_base r where r.program ='RC Output'").Tables[0];
+            DataRow[] raReason = g_SYS_BASE.Select("PARAM_NAME='REASON_ID-SHIFT'");
+            g_iReason_ID_shift = raReason.Length > 0 ? int.Parse(raReason[0]["PARAM_VALUE"].ToString()) : 0;
 
             if (string.IsNullOrEmpty(tsEmp.Text))
             {
@@ -4654,12 +4660,14 @@ AND ROWNUM = 1
 
             int processed_qty = 0;
 
-            foreach (DataRow row in d.Tables[0].Rows)
+            foreach (DataRow row in d.Tables[0].Select($"REASON_ID={fMain.g_iReason_ID_shift}"))
             {
                 int.TryParse(row["Load"].ToString(), out int load_qty);
 
                 processed_qty += load_qty;
             }
+            if (processed_qty > 0 && TpMergeSplit.Parent != null && TpMergeSplit.Parent.Controls.Contains(TpMergeSplit))
+                TpMergeSplit.Parent.Controls.Remove(TpMergeSplit);
 
             m_tControlData
                 .First(x => x.sFieldName == "PROCESSED_QTY")
@@ -4813,6 +4821,5 @@ AND ROWNUM = 1
             }
             catch { }
         }
-
     }
 }

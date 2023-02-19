@@ -87,7 +87,7 @@ namespace RCOutput
 
             var d = SfSrv.GetShiftHistory(RcInfo);
 
-            if (d != null && d.Tables[0].Rows.Count > 0)
+            if (d != null && d.Tables[0].Select($"REASON_ID='0'").Count() > 0)
             {
                 List<string> machine_names
                     = d.Tables[0].Rows.Cast<DataRow>()

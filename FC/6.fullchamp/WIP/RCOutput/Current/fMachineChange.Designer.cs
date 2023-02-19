@@ -31,10 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.DgvMachine = new System.Windows.Forms.DataGridView();
-            this.machineDownModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.BtnRemove = new System.Windows.Forms.Button();
-            this.BtnOK = new System.Windows.Forms.Button();
-            this.BtnAdd = new System.Windows.Forms.Button();
             this.selectDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.mACHINEIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mACHINECODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +44,10 @@
             this.dATECODEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sTOVESEQDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rEMARKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.machineDownModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.BtnRemove = new System.Windows.Forms.Button();
+            this.BtnOK = new System.Windows.Forms.Button();
+            this.BtnAdd = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMachine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.machineDownModelBindingSource)).BeginInit();
@@ -113,44 +113,6 @@
             this.DgvMachine.RowTemplate.Height = 24;
             this.DgvMachine.Size = new System.Drawing.Size(466, 271);
             this.DgvMachine.TabIndex = 0;
-            // 
-            // machineDownModelBindingSource
-            // 
-            this.machineDownModelBindingSource.DataSource = typeof(RCOutput.Models.MachineDownModel);
-            // 
-            // BtnRemove
-            // 
-            this.BtnRemove.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnRemove.Location = new System.Drawing.Point(42, 7);
-            this.BtnRemove.Margin = new System.Windows.Forms.Padding(2, 2, 50, 2);
-            this.BtnRemove.Name = "BtnRemove";
-            this.BtnRemove.Size = new System.Drawing.Size(150, 30);
-            this.BtnRemove.TabIndex = 0;
-            this.BtnRemove.Text = "Remove machine";
-            this.BtnRemove.UseVisualStyleBackColor = true;
-            // 
-            // BtnOK
-            // 
-            this.BtnOK.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnOK.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.BtnOK.Location = new System.Drawing.Point(375, 322);
-            this.BtnOK.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnOK.Name = "BtnOK";
-            this.BtnOK.Size = new System.Drawing.Size(100, 30);
-            this.BtnOK.TabIndex = 1;
-            this.BtnOK.Text = "OK";
-            this.BtnOK.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdd
-            // 
-            this.BtnAdd.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnAdd.Location = new System.Drawing.Point(292, 7);
-            this.BtnAdd.Margin = new System.Windows.Forms.Padding(50, 2, 2, 2);
-            this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(150, 30);
-            this.BtnAdd.TabIndex = 1;
-            this.BtnAdd.Text = "Add machine";
-            this.BtnAdd.UseVisualStyleBackColor = true;
             // 
             // selectDataGridViewCheckBoxColumn
             // 
@@ -276,7 +238,45 @@
             this.rEMARKDataGridViewTextBoxColumn.Visible = false;
             this.rEMARKDataGridViewTextBoxColumn.Width = 78;
             // 
-            // fChangeMachine
+            // machineDownModelBindingSource
+            // 
+            this.machineDownModelBindingSource.DataSource = typeof(RCOutput.Models.MachineDownModel);
+            // 
+            // BtnRemove
+            // 
+            this.BtnRemove.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnRemove.Location = new System.Drawing.Point(42, 7);
+            this.BtnRemove.Margin = new System.Windows.Forms.Padding(2, 2, 50, 2);
+            this.BtnRemove.Name = "BtnRemove";
+            this.BtnRemove.Size = new System.Drawing.Size(150, 30);
+            this.BtnRemove.TabIndex = 0;
+            this.BtnRemove.Text = "Remove machine";
+            this.BtnRemove.UseVisualStyleBackColor = true;
+            // 
+            // BtnOK
+            // 
+            this.BtnOK.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnOK.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.BtnOK.Location = new System.Drawing.Point(375, 322);
+            this.BtnOK.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnOK.Name = "BtnOK";
+            this.BtnOK.Size = new System.Drawing.Size(100, 30);
+            this.BtnOK.TabIndex = 1;
+            this.BtnOK.Text = "OK";
+            this.BtnOK.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdd
+            // 
+            this.BtnAdd.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnAdd.Location = new System.Drawing.Point(292, 7);
+            this.BtnAdd.Margin = new System.Windows.Forms.Padding(50, 2, 2, 2);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(150, 30);
+            this.BtnAdd.TabIndex = 1;
+            this.BtnAdd.Text = "Add machine";
+            this.BtnAdd.UseVisualStyleBackColor = true;
+            // 
+            // fMachineChange
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -284,7 +284,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "fChangeMachine";
+            this.Name = "fMachineChange";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Machine in production";
             this.tableLayoutPanel1.ResumeLayout(false);
