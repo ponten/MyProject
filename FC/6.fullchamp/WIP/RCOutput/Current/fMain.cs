@@ -240,6 +240,12 @@ namespace RCOutput
             g_SYS_BASE = ClientUtils.ExecuteSQL("SELECT r.*  FROM sajet.sys_base r where r.program ='RC Output'").Tables[0];
             DataRow[] raReason = g_SYS_BASE.Select("PARAM_NAME='REASON_ID-SHIFT'");
             g_iReason_ID_shift = raReason.Length > 0 ? int.Parse(raReason[0]["PARAM_VALUE"].ToString()) : 0;
+            if (g_iReason_ID_shift == 0)
+            {
+                ClientUtils.ShowMessage("Not found 'REASON_ID-SHIFT' in 'sys_base'. (PARAM_NAME='REASON_ID-SHIFT' and program ='RC Output')", -1);
+                this.Close();
+            }
+
 
             if (string.IsNullOrEmpty(tsEmp.Text))
             {
@@ -1533,7 +1539,6 @@ AND A.RC_NO = :RC_NO
                     return;
                 }
             }
-
             #endregion
 
             # region Keyparts Collection

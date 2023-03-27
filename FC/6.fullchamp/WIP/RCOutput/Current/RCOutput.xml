@@ -331,6 +331,8 @@
              Value="機台加工數量必須為大於零的整數" />
     <Message Name="TheMachineloadExceededCurrentQuantity"
              Value="機台加工數量超過流程卡當前數量" />
+    <Message Name="TheMachineloadMustEqualRemainQuantity"
+             Value="機台加工數量應等於流程卡剩餘數量" />
     <Message Name="TheTotalProcessingQtyHasExceededTheCurrentQtyOfTheRuncard"
              Value="總加工數量已超過流程卡的當前數量" />
     <Message Name="TheTotalProcessingQtyIsEqualToTheCurrentQtyOfTheRuncard"
@@ -610,6 +612,9 @@
     <Message Name="藍圖" Value="พิมพ์เขียว" />
     <Message Name="舊編" Value="รหัสเก่า" />
     <Message Name="REASON_DESC" Value="เหตุผล" />
+    <Message Name="TheMachineloadMustEqualRemainQuantity"
+             Value="ปริมาณการประมวลผลของเครื่องจักรควรเท่ากับปริมาณที่เหลืออยู่ของการ์ดกระบวนการ" />
+    
 
   </ไทย>
   <简体中文>
@@ -689,5 +694,7 @@
     <Message Name="SOURCE_RC_NO" Value="母批" />
     <Message Name="Mergeable List" Value="可并批清单" />
     <Message Name="REASON_DESC" Value="原因" />
+    <Message Name="TheMachineloadMustEqualRemainQuantity"
+             Value="机台加工数量应等于流程卡剩余数量" />
   </简体中文>
 </Chroma>

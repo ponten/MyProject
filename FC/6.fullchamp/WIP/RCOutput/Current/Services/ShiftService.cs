@@ -131,7 +131,7 @@ AND END_TIME IS NULL
 
             string node_id = rc_info["NODE_ID"].ToString();
 
-            string s = @"
+            string s = $@"
 SELECT
     SUM(LOAD_QTY) TOTAL_LOAD
 FROM
@@ -140,8 +140,8 @@ WHERE
     RC_NO = :RC_NO 
     AND NODE_ID = :NODE_ID
     AND MACHINE_ID <> 0
-    AND REASON_ID = 0
-    AND COUNT_WORKTIME = 0
+    AND REASON_ID = {fMain.g_iReason_ID_shift}
+    --AND COUNT_WORKTIME = 0
     AND END_TIME IS NOT NULL
 ";
             var p = new List<object[]>
@@ -170,7 +170,7 @@ WHERE
         /// <returns></returns>
         public static int GetOperatorCount(DataRow rc_info, string emp_id)
         {
-            string s = @"
+            string s = $@"
 SELECT DISTINCT
     UPDATE_USERID
 FROM
@@ -178,7 +178,7 @@ FROM
 WHERE
     RC_NO = :RC_NO
     AND NODE_ID = :NODE_ID
-    AND REASON_ID = 0
+    AND REASON_ID = {fMain.g_iReason_ID_shift}
 ";
             var p = new List<object[]>
             {
@@ -219,7 +219,7 @@ WHERE
         /// <returns></returns>
         public static DataSet GetShiftHistory(DataRow rc_info)
         {
-            string s = @"
+            string s = $@"
 SELECT
     '['
     || TRIM(C.MACHINE_CODE)
@@ -242,7 +242,7 @@ WHERE
     A.RC_NO = :RC_NO
     AND A.NODE_ID = :NODE_ID
     AND C.MACHINE_ID <> 0
-   --AND A.REASON_ID = 0
+   AND A.REASON_ID = {fMain.g_iReason_ID_shift}
     AND A.COUNT_WORKTIME = 0
     AND A.UPDATE_USERID = B.EMP_ID
     AND A.MACHINE_ID = C.MACHINE_ID
