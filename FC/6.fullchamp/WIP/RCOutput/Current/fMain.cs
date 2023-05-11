@@ -1695,20 +1695,20 @@ AND A.RC_NO = :RC_NO
 
 
                 /// victor add新增判斷 輸入是否為12碼 跟數字跟英文
-                if (dr.Cells["ITEM_NAME"].EditedFormattedValue.ToString().Contains("爐號"))
-                {
-                    if (dr.Cells["VALUE_DEFAULT"].EditedFormattedValue.ToString().Length != 12)
-                    {
-                        SajetCommon.Show_Message("限制只輸入12碼", 0);
-                        return;
-                    }
+                //if (dr.Cells["ITEM_NAME"].EditedFormattedValue.ToString().Contains("爐號"))
+                //{
+                //    if (dr.Cells["VALUE_DEFAULT"].EditedFormattedValue.ToString().Length != 12)
+                //    {
+                //        SajetCommon.Show_Message("限制只輸入12碼", 0);
+                //        return;
+                //    }
 
-                    if (!IsNatural_Number(dr.Cells["VALUE_DEFAULT"].EditedFormattedValue.ToString()))
-                    {
-                        SajetCommon.Show_Message("限制只輸入數字跟英文", 0);
-                        return;
-                    } 
-                }
+                //    if (!IsNatural_Number(dr.Cells["VALUE_DEFAULT"].EditedFormattedValue.ToString()))
+                //    {
+                //        SajetCommon.Show_Message("限制只輸入數字跟英文", 0);
+                //        return;
+                //    } 
+                //}
 
 
                 if (!string.IsNullOrEmpty(dr.Cells["VALUE_DEFAULT"].EditedFormattedValue.ToString()))
