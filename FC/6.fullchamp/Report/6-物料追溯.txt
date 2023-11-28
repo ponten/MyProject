@@ -33,10 +33,12 @@ UNION
       SELECT r.WORK_ORDER   , NULL "10C_RC_NO" , NULL "LOAD_QTY", NULL"10B_RC_NO", ''''"T4_BOILER" ,NULL "T6_BOILER" ,t.rc_no "10A_RC_NO",t.ITEM_VALUE mat_BOILER, NULL RECIVE_BOILER   
       FROM  SAJET.G_RC_TRAVEL_PARAM t, SAJET.G_RC_STATUS r 
       WHERE t.rc_no=r.rc_no AND t.ITEM_NAME LIKE ''原料爐號''  
+      AND   NOT EXISTS (SELECT * FROM sajet.V_G_MACHINE_T4_BINDING ma WHERE ma.RC_NO_10A= t.rc_no)
     UNION 
        SELECT rc.WORK_ORDER   , tc.rc_no "10C_RC_NO" , NULL "LOAD_QTY", NULL"10B_RC_NO", ''''"T4_BOILER" ,NULL "T6_BOILER" ,NULL "10A_RC_NO",NULL  mat_BOILER, tc.ITEM_VALUE RECIVE_BOILER  
       FROM  SAJET.G_RC_TRAVEL_PARAM tc, SAJET.G_RC_STATUS rc 
       WHERE tc.rc_no=rc.rc_no AND tc.ITEM_NAME LIKE ''領料爐號''  
+      AND   NOT EXISTS (SELECT * FROM sajet.G_MACHINE_T4_BINDING mc WHERE mc.RC_NO_10C= tc.rc_no)
     UNION
       SELECT rb.WORK_ORDER, NULL "10C_RC_NO" , NULL "LOAD_QTY", md6.rc_no "10B_RC_NO", m4.machine_code||md4.date_code "T4_BOILER" ,m6.machine_code||md6.date_code "T6_BOILER" ,NULL "10A_RC_NO", NULL mat_BOILER, NULL RECIVE_BOILER   
       FROM sajet.G_RC_STATUS rb
@@ -51,8 +53,10 @@ UNION
       AND  rb.rc_no=md4.rc_no(+)
       AND  md4.machine_id=m4.machine_id(+)
       AND  md4.date_code IS NOT NULL
-      AND  m4.machine_code LIKE ''T4%''      
-    )a WHERE 0= (SELECT COUNT(*)  FROM sajet.V_WO_MAPPING mb WHERE mb.WO=a.work_order)  
+      AND  m4.machine_code LIKE ''T4%''   
+      AND   NOT EXISTS (SELECT * FROM sajet.G_MACHINE_T4_BINDING mb WHERE mb.RC_NO_T4= rb.rc_no)   
+    )a WHERE 1=1
+/*AND 0= (SELECT COUNT(*)  FROM sajet.V_WO_MAPPING mb WHERE mb.WO=a.work_order)  */
 ) B 
 where 1=1
    [AND  B.WORK_ORDER = @WorkOrder]
