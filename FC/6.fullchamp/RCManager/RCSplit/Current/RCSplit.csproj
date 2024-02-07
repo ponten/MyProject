@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClientUtils">
-      <HintPath>..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
+      <HintPath>..\..\..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

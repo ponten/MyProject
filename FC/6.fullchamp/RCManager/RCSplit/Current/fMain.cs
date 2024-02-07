@@ -945,8 +945,8 @@ WHERE
                                    AND  s.source_rc_no =  r.rc_no )    
                     )LOOP     
                     
-                        SELECT r.rc_no, r.travel_id 
-                        INTO   x.rc_no, x.travel_id 
+                        SELECT r.rc_no, r.travel_id , ''
+                        INTO   x.rc_no, x.travel_id , x.reason_id
                         FROM   sajet.g_rc_status r 
                         WHERE  r.rc_no = vRC;                        
                         INSERT INTO  sajet.G_RC_TRAVEL_MACHINE_DOWN 

@@ -819,12 +819,11 @@ ORDER BY
         {
             bool bRes = true;
 
-            if (editName.SelectedItem.ToString().Contains("爐號"))
+            if (editName.Text.Contains("爐號") || (editName.SelectedItem != null && editName.SelectedItem.ToString().Contains("爐號")))
             {
                 if (editDefault.Text.Length != 12)
                 {
-                    SajetCommon.Show_Message("限制只輸入12碼", 0);
-                   
+                    SajetCommon.Show_Message("限制只輸入12碼", 0);                   
                     bRes=false;
                 }
                 if (editDefault.Text.Length == 12)
@@ -835,7 +834,6 @@ ORDER BY
                         bRes = false;
                     }
                 }
-
             }
             return bRes;
         }

@@ -39,7 +39,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\..\Chroma Application Client\DataCenter\</OutputPath>
+    <OutputPath>..\..\..\..\..\..\Chroma Application Client\DataCenter\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -57,12 +57,12 @@
   <ItemGroup>
     <Reference Include="ClientUtils, Version=2.7.106.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Chroma Application Client\DataCenter\ClientUtils.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Chroma Application Client\ClientUtils.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="FFilter, Version=1.0.17003.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Chroma Application Client\DataCenter\FFilter.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Chroma Application Client\FFilter.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
